@@ -1,0 +1,41 @@
+{
+  "id": "2026-10-28-2-meta-ad-library",
+  "post_at": "2026-10-28T19:30:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "Stop paying for ad spy tools. Meta gives you this for free. 🔍\n\nMeta Ad Library shows every ad running on Facebook and Instagram.\n1. Search a competitor or keyword\n2. Set the country to Australia\n3. Look for ads running for months: brands keep paying for what works\n4. Copy the idea, never the ad itself\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#metaads #marketing #smallbusiness #facebookads",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "Comment TIER for a tool to spy on any brand's ads",
+      "stamp": "GATED GUIDE",
+      "stampColor": "gate",
+      "vo": "This reel sells a paid spy tool. Meta made a free one."
+    },
+    {
+      "type": "title",
+      "text": "Meta\n*Ad Library.*",
+      "vo": "It's called the Meta Ad Library. It's free."
+    },
+    {
+      "type": "steps",
+      "heading": "How to use it",
+      "items": [
+        "Search a competitor",
+        "Set country to Australia",
+        "Find ads running for months",
+        "Copy the idea, not the ad"
+      ],
+      "vo": "Search a competitor. Find the ads that have run for months. They work."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4343,
+  "duration": 12.919
+}

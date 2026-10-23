@@ -1,0 +1,50 @@
+{
+  "id": "2026-10-27-1-harvey-sales-agent",
+  "post_at": "2026-10-27T12:30:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "\"Comment HARVEY for the repo\" 🙄 It's free and public. Here's what it is.\n\nHarvey is an open-source sales agent that runs on Claude Code on your own computer:\n1. Finds local businesses\n2. Checks their website and scores them\n3. Writes a personal cold email\n4. Waits for YOU to approve every send\n\nRuns on your Claude plan, no API bill. In Australia, cold emails must follow the Spam Act: business addresses only, your name, an unsubscribe link.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#claudeai #aiagents #sidehustle #coldemail",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "Comment HARVEY and I'll send you the repo",
+      "note": "It's free and public on GitHub.",
+      "stamp": "GATED GUIDE",
+      "stampColor": "gate",
+      "vo": "This reel wanted a comment for a free GitHub link. Here it is."
+    },
+    {
+      "type": "title",
+      "text": "A free AI agent\nthat finds\n*clients.*",
+      "vo": "Harvey. A free AI sales agent that runs on your own computer."
+    },
+    {
+      "type": "checks",
+      "heading": "What it does",
+      "label": "HARVEY · OPEN SOURCE",
+      "items": [
+        "Finds local businesses",
+        "Scores each one",
+        "Writes the cold email",
+        "You approve every send"
+      ],
+      "lastWarn": true,
+      "vo": "It finds businesses, scores them, writes the email, and waits for you to approve it."
+    },
+    {
+      "type": "title",
+      "text": "Follow the\n*Spam Act.*",
+      "bg": "ink",
+      "vo": "And in Australia, follow the Spam Act. Business emails only."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4528,
+  "duration": 18.548
+}

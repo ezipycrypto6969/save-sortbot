@@ -1,0 +1,41 @@
+{
+  "id": "2026-11-01-1-simple-offer",
+  "post_at": "2026-11-01T12:30:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "Your offer is too complicated. Fix it with one sentence: ✍️\n\n\"I'll [result] for [who] in [time] for [price].\"\n\nThen add a guarantee that removes the risk, and give ONE next step. Cut everything else.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#marketing #smallbusiness #sales #copywriting",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Your offer is",
+        "*too complicated.*"
+      ],
+      "vo": "Your offer is too complicated."
+    },
+    {
+      "type": "title",
+      "text": "I'll get *[result]*\nfor *[who]*\nin *[time]*.",
+      "vo": "Write it in one sentence. What, for who, how fast, how much."
+    },
+    {
+      "type": "steps",
+      "heading": "Then",
+      "items": [
+        "Add a guarantee",
+        "Give one next step",
+        "Cut everything else"
+      ],
+      "vo": "Add a guarantee. Give one next step. Cut everything else."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 2967,
+  "duration": 12.023
+}

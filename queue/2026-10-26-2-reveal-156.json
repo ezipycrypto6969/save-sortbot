@@ -1,0 +1,51 @@
+{
+  "id": "2026-10-26-2-reveal-156",
+  "post_at": "2026-10-26T19:30:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "I saved 156 reels. I watched none of them again. 💀\n\nSo I sorted them:\n✅ 24 actually worth doing\n🤷 61 said nothing without the video\n⚠️ 7 were hype or straight-up scams\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#savedreels #productivity #aitools #sidehustle",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "I saved",
+        "*156 reels.*"
+      ],
+      "vo": "I saved a hundred and fifty six reels."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Watched again:",
+        "*zero.*"
+      ],
+      "slow": true,
+      "grey": true,
+      "vo": "Watched them again? Zero."
+    },
+    {
+      "type": "stat",
+      "value": 24,
+      "label": "actually worth doing",
+      "color": "go",
+      "vo": "Twenty four were actually useful. Past me had taste."
+    },
+    {
+      "type": "quote",
+      "quote": "Claude has a secret Founder Thinking Mode",
+      "note": "That feature doesn't exist. It's a prompt dressed up as a secret.",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "A secret Claude mode? Mate. No."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 3471,
+  "duration": 12.864
+}

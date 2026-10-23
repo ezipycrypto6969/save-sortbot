@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-01-2-offline-computer",
+  "post_at": "2026-11-01T19:30:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "A saved reel: \"someone open sourced a computer that works when the internet goes down.\" It's real. 🛰️\n\nProject N.O.M.A.D. is free and open source:\n• Offline Wikipedia\n• A local AI assistant\n• Offline maps\n• Khan Academy courses\n\nRuns on an old PC or mini PC. Storage is the main cost.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#opensource #tech #offline #prepping",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "A computer that works when the internet goes down",
+      "vo": "A computer that works when the whole internet goes down? It's real."
+    },
+    {
+      "type": "checks",
+      "heading": "What's on it",
+      "label": "PROJECT NOMAD · FREE",
+      "items": [
+        "Offline Wikipedia",
+        "A local AI assistant",
+        "Offline maps",
+        "Free courses"
+      ],
+      "vo": "Offline Wikipedia, a local AI, maps and courses. Free."
+    },
+    {
+      "type": "title",
+      "text": "Old PC.\n*New life.*",
+      "vo": "Put it on an old computer. Storage is the only real cost."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4640,
+  "duration": 14.372
+}

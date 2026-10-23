@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-31-1-unclaimed-money",
+  "post_at": "2026-10-31T12:30:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "A saved reel: a guy finds families owed insurance money and keeps a big cut. 💸\n\nIn Australia you don't need a middle-man. It's free:\n1. Search your name and your family's on moneysmart.gov.au (unclaimed money)\n2. Check for lost super through myGov\n\nTakes five minutes.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#money #australia #superannuation #moneytips",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "He found families owed insurance money and kept a cut",
+      "vo": "This guy finds money people are owed, and keeps a cut."
+    },
+    {
+      "type": "title",
+      "text": "You can search\n*for free.*",
+      "vo": "In Australia you can search for free."
+    },
+    {
+      "type": "steps",
+      "heading": "Five minutes",
+      "items": [
+        "Go to Moneysmart",
+        "Search unclaimed money",
+        "Search your family too",
+        "Check lost super on myGov"
+      ],
+      "vo": "Search Moneysmart for unclaimed money. Then check your lost super on myGov."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4149,
+  "duration": 12.919
+}

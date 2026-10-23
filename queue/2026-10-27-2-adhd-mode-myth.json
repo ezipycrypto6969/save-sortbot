@@ -1,0 +1,41 @@
+{
+  "id": "2026-10-27-2-adhd-mode-myth",
+  "post_at": "2026-10-27T19:30:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "There is no \"ADHD Executive Function Mode\" in Claude. 🚫\n\nBut the prompts in that reel actually work:\n1. Break a task into steps under 1 minute, give me only the first\n2. Act as my body double and check in every 10 minutes\n3. Turn this boring task into a quest with a reward\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#adhd #productivity #claudeai #aitips",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "BREAKING: Claude has an ADHD Executive Function Mode",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "Breaking news. Claude does not have an ADHD mode."
+    },
+    {
+      "type": "title",
+      "text": "It's just a\n*prompt.*",
+      "vo": "It's just a prompt. But honestly? A good one."
+    },
+    {
+      "type": "steps",
+      "heading": "Prompts that work",
+      "items": [
+        "Break it into one minute steps",
+        "Give me only the first step",
+        "Check in every ten minutes",
+        "Make the boring task a quest"
+      ],
+      "vo": "Ask for tiny steps. Just the first one. Check ins every ten minutes. Make it a quest."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4205,
+  "duration": 14.102
+}

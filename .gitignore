@@ -1,0 +1,7 @@
+out/
+models/kokoro.onnx
+models/voices.bin
+__pycache__/
+*.pyc
+node_modules/
+out_build.log

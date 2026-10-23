@@ -1,0 +1,42 @@
+{
+  "id": "2026-10-30-2-clone-any-store",
+  "post_at": "2026-10-30T19:30:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "\"This AI can clone any ecom store in minutes.\" 🚩\n\nCopying another brand's design, photos or product text can breach copyright and trademark law. Fast way to get your store shut down.\n\nUse AI to build YOUR store faster: your own name, your own photos, your own words.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#ecommerce #shopify #dropshipping #aitools",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "This AI can clone any ecom store in minutes",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "Clone any store in minutes? Sure. Then enjoy the copyright letter."
+    },
+    {
+      "type": "title",
+      "text": "Copying a brand\n= *trouble.*",
+      "bg": "ink",
+      "vo": "Copying their design and photos can breach copyright."
+    },
+    {
+      "type": "steps",
+      "heading": "Do this instead",
+      "items": [
+        "Your own brand name",
+        "Your own photos",
+        "Your own product copy",
+        "AI to build it faster"
+      ],
+      "vo": "Use AI to build your own brand faster. Not someone else's."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4754,
+  "duration": 13.418
+}

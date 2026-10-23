@@ -1,0 +1,41 @@
+{
+  "id": "2026-10-30-1-data-cleanup",
+  "post_at": "2026-10-30T12:30:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "A saved reel said someone used AI to scrub their personal data off the internet in a weekend. Here's the free version. 🧹\n\n1. Check your email on haveibeenpwned.com and change breached passwords\n2. Find old accounts and how to delete them on justdeleteme.xyz\n3. Use Google's \"Results about you\" to remove your phone and address from search\n4. Ask Claude to draft the deletion requests\n\nIn Australia, the Privacy Act gives you the right to access and correct your data.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#privacy #cybersecurity #aitools #onlinesafety",
+  "scenes": [
+    {
+      "type": "quote",
+      "quote": "He used AI to clean his data off the internet in one weekend",
+      "vo": "Someone cleaned their data off the internet in a weekend. Here's how."
+    },
+    {
+      "type": "checks",
+      "heading": "Free tools",
+      "label": "PRIVACY CLEANUP",
+      "items": [
+        "Have I Been Pwned",
+        "Just Delete Me",
+        "Results about you",
+        "Claude drafts the emails"
+      ],
+      "vo": "Check your breaches. Delete old accounts. Remove your address from Google."
+    },
+    {
+      "type": "title",
+      "text": "Change breached\n*passwords.*",
+      "bg": "ink",
+      "vo": "And change every breached password today."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 4702,
+  "duration": 13.106
+}

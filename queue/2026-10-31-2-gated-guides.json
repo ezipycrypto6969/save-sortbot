@@ -1,0 +1,38 @@
+{
+  "id": "2026-10-31-2-gated-guides",
+  "post_at": "2026-10-31T19:30:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "voice": "af_heart",
+  "caption": "22 of my 156 saved reels hid the actual info behind \"comment GUIDE\" or \"DM me\". 🙄\n\nSaveSort flags those and works out what they were hinting at, so you get the guide without the DM funnel.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Comment *GUIDE*",
+        "for the guide."
+      ],
+      "vo": "Comment guide for the guide."
+    },
+    {
+      "type": "stat",
+      "value": 22,
+      "label": "of my saves did this",
+      "color": "warn",
+      "vo": "Twenty two of my saved reels did this."
+    },
+    {
+      "type": "title",
+      "text": "We find the\n*actual guide.*",
+      "vo": "So SaveSort finds the actual guide. No comment needed."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your own saves free. Link in bio."
+    }
+  ],
+  "cover_offset_ms": 2662,
+  "duration": 10.527
+}
