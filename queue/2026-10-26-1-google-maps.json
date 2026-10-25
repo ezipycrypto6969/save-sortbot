@@ -53,5 +53,7 @@
     }
   ],
   "speed": 1.22,
-  "music": "sfx"
+  "music": "sfx",
+  "cover_offset_ms": 3948,
+  "duration": 15.954
 }
