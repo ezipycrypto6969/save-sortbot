@@ -4,6 +4,9 @@ on:
     # 12:20 and 19:20 Perth time (AWST = UTC+8). GitHub can start scheduled runs a few minutes late.
     - cron: "20 4 * * *"
     - cron: "20 11 * * *"
+    # Backup runs 40 minutes later in case GitHub skips or delays one. Already-posted reels are never posted twice.
+    - cron: "0 5 * * *"
+    - cron: "0 12 * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
