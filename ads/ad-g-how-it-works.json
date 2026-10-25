@@ -1,0 +1,70 @@
+{
+  "id": "ad-g-how-it-works",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE 30-SECOND FIX"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Your saved reels\nare a *mess.*",
+      "mood": "shocked",
+      "vo": "Your saved reels are a mess. Let's fix that in 30 seconds."
+    },
+    {
+      "type": "steps",
+      "heading": "How it works",
+      "items": [
+        "Download your Instagram data",
+        "Tick only \"Saved\"",
+        "Drop the zip into SaveSort",
+        "Get your sorted list"
+      ],
+      "vo": "Download your Instagram data. Tick saved. Drop the zip into SaveSort. Done."
+    },
+    {
+      "type": "checks",
+      "heading": "You instantly see",
+      "label": "YOUR SAVESORT LIST",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "What's hiding a guide"
+      ],
+      "lastWarn": true,
+      "vo": "Every save sorted by topic. What's worth doing, what's just hype, and what's hiding a guide."
+    },
+    {
+      "type": "talk",
+      "text": "Free. *Private.*\nNothing gets uploaded.",
+      "mood": "smug",
+      "vo": "It's free, and it runs right in your browser. Nothing gets uploaded."
+    },
+    {
+      "type": "talk",
+      "text": "Your saves.\n*Finally useful.*",
+      "mood": "happy",
+      "wave": true,
+      "payoff": true,
+      "vo": "Your saves, finally useful."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 4189,
+  "duration": 19.512
+}

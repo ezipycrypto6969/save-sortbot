@@ -1,0 +1,82 @@
+{
+  "id": "ad-h-time-money",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "STOP WASTING YOUR SAVES"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "You saved it",
+        "to *do it later.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "You saved it to do it later. Later never came."
+    },
+    {
+      "type": "talk",
+      "text": "Hours of scrolling.\n*Nothing done.*",
+      "mood": "sad",
+      "vo": "Hours of scrolling. Nothing actually done."
+    },
+    {
+      "type": "stat",
+      "value": 24,
+      "label": "of my 156 saves were\n*worth my time*",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Only 24 of my 156 saves were worth my time."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1000 a day dropshipping",
+      "mood": "suspicious",
+      "verdict": "HYPE",
+      "verdictColor": "warn",
+      "vo": "SaveSort flags hype like this, before you waste money on it."
+    },
+    {
+      "type": "checks",
+      "heading": "Save time and money",
+      "label": "SAVESORT",
+      "items": [
+        "Skip the hype",
+        "Find what's worth doing",
+        "Stop rewatching",
+        "Focus your time"
+      ],
+      "vo": "Skip the hype. Find what's worth doing. Stop rewatching. Focus your time."
+    },
+    {
+      "type": "talk",
+      "text": "Feel *in control*\nof your feed.",
+      "mood": "happy",
+      "payoff": true,
+      "vo": "And finally feel in control of your feed."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Try SaveSort free. Link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 3564,
+  "duration": 20.04
+}

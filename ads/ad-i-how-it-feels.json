@@ -1,0 +1,70 @@
+{
+  "id": "ad-i-how-it-feels",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "FROM 156 SAVES TO 1 LIST"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "That feeling when\nyour saved tab is *full*",
+      "mood": "sad",
+      "vo": "That feeling when your saved tab is full, and you've done none of it."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*0 done.*"
+      ],
+      "slow": true,
+      "grey": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "156 saves. Zero done."
+    },
+    {
+      "type": "talk",
+      "text": "Now imagine\n*one clear list.*",
+      "mood": "happy",
+      "vo": "Now imagine one clear list of what's actually worth doing."
+    },
+    {
+      "type": "steps",
+      "heading": "SaveSort gives you",
+      "items": [
+        "Your best saves first",
+        "Hype flagged",
+        "Sorted by topic",
+        "All in one place"
+      ],
+      "payoff": true,
+      "vo": "Your best saves first. Hype flagged. Everything sorted, in one place."
+    },
+    {
+      "type": "talk",
+      "text": "Less scrolling.\n*More doing.*",
+      "mood": "smug",
+      "vo": "Less scrolling. More doing. It feels so much lighter."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your saves free. Link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 3909,
+  "duration": 17.362
+}
