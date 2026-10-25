@@ -40,7 +40,12 @@ Scene types (each scene stretches to fit its `vo` line; keep each line under ~12
 | `count` | `n` (3, 2, 1), `label` | countdown lists ("3 saved reels that lied to me") |
 | `end` | `line`, `pill` | always last: "Sort your saves.\n*Free.*" / "Link in bio →" |
 
+| `talk` | `text` (speech bubble, `\n` and `*marker*`), `mood`, optional `wave` | Sorty speaks to camera |
+| `react` | `quote`, `label`, `mood`, `verdict` ("BE CAREFUL" / "WORTH DOING" / "GATED GUIDE" / "NO DETAILS"), `verdictColor` warn/go/gate | Sorty reacts to a saved reel |
+
 Any scene can take `"payoff": true` to mark where the open loop is answered.
+
+**Sorty** is the brand mascot: a blue bookmark-ribbon character who lip-syncs to the voiceover. Moods: `happy`, `shocked`, `suspicious`, `smug`, `sad`. He appears automatically in `talk` and `react` scenes; add him to other scenes with `"mascot": {"pos": "tr", "mood": "happy"}` (`tr` = top-right for stat, count and end scenes; `bl` = bottom-left only on `hook` scenes). Use him in at least half the reels: open with a `talk` scene, react to claims with `react` scenes. He's dry, a bit cheeky, never mean.
 
 Top-level `fx` (optional): `{"hook": "#1 IS ILLEGAL IN WA"}` shows an open-loop banner at the top until the `payoff` scene (or the end card). Word-by-word captions, the progress bar, cut flashes and a slow push-in are on by default (`"captions": false`, `"progress": false`, `"flash": false` turn them off). Captions show the `vo` text, so write numbers as digits in `vo` ("156", not "a hundred and fifty six").
 
