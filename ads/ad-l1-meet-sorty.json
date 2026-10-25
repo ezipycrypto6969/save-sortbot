@@ -1,0 +1,98 @@
+{
+  "id": "ad-l1-meet-sorty",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "fx": {
+    "hook": "WAIT FOR THE ONE THAT LIED"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Help.\nI live in your\n*saved tab.*",
+      "mood": "shocked",
+      "vo": "Help. I live in your saved tab."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 reels saved.",
+        "*Zero* opened."
+      ],
+      "slow": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "You saved 156 reels. You opened zero of them."
+    },
+    {
+      "type": "talk",
+      "text": "So I read\n*every single one.*",
+      "mood": "smug",
+      "vo": "So I read every single one. Yes. Even the gym ones."
+    },
+    {
+      "type": "stat",
+      "value": 24,
+      "label": "were actually\n*worth doing*",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "24 were actually worth doing."
+    },
+    {
+      "type": "react",
+      "quote": "Claude has a secret Founder Thinking Mode",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "payoff": true,
+      "vo": "And this one? That mode doesn't exist. I checked."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "This one hid the guide behind a DM. I found it anyway."
+    },
+    {
+      "type": "checks",
+      "heading": "For the good ones",
+      "label": "EVERY BREAKDOWN",
+      "items": [
+        "The real tool",
+        "The steps",
+        "The cost",
+        "The catch"
+      ],
+      "lastWarn": true,
+      "vo": "For the good ones, I write the real tool, the steps, the cost, and the catch."
+    },
+    {
+      "type": "talk",
+      "text": "I'm *Sorty.*\nI sort your saves.",
+      "mood": "happy",
+      "wave": true,
+      "vo": "I'm Sorty. I sort your saves, so you can actually do them."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Try it free. Link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 3023,
+  "duration": 28.759
+}

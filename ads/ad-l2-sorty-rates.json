@@ -1,0 +1,79 @@
+{
+  "id": "ad-l2-sorty-rates",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "fx": {
+    "hook": "2 OF THESE ARE ACTUALLY GOOD"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Let's rate your\n*saved reels.*",
+      "mood": "smug",
+      "vo": "Okay. Let's rate some saved reels."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1000 a day dropshipping",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A thousand a day? That's a best case. Plenty of stores lose money."
+    },
+    {
+      "type": "react",
+      "quote": "Someone built a free AI agent that finds you clients",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "A free AI that finds clients? Real. It's on GitHub, and you approve every email."
+    },
+    {
+      "type": "react",
+      "quote": "Help sellers skip agent fees and take a cut",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Skip agent fees and take a cut? In WA, that needs a licence."
+    },
+    {
+      "type": "react",
+      "quote": "this is the trick",
+      "mood": "sad",
+      "verdict": "NO DETAILS",
+      "verdictColor": "gate",
+      "vo": "This is the trick. That's the whole caption. Thanks, I guess."
+    },
+    {
+      "type": "react",
+      "quote": "Rank higher on Google Maps",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "payoff": true,
+      "vo": "Rank higher on Google Maps? Real. Pick a specific category, post real photos, reply to reviews."
+    },
+    {
+      "type": "talk",
+      "text": "Want me to\n*rate yours?*",
+      "mood": "happy",
+      "wave": true,
+      "vo": "Want me to rate yours? I'll sort every save you've got."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "SaveSort. Free. Link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 3130,
+  "duration": 30.945
+}

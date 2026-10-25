@@ -1,0 +1,79 @@
+{
+  "id": "ad-l3-sorty-rules",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.1,
+  "fx": {
+    "hook": "RULE 3 SAVES YOU MONEY"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "3 rules before\nyou *save a reel.*",
+      "mood": "smug",
+      "vo": "Three rules before you save another reel."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "No steps in the caption?\n*Saving won't help.*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      },
+      "vo": "One. If the caption has no steps, saving it won't help you."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "\"Comment GUIDE\"?\nIt's often *free elsewhere.*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Two. Comment guide? The info is often out there, free."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Big money claim?\n*Red flag.*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true,
+      "vo": "Three. A big money claim? That's a red flag, not a plan."
+    },
+    {
+      "type": "stat",
+      "value": 7,
+      "label": "of my 156 saves\nwere *hype or scams*",
+      "color": "warn",
+      "mascot": {
+        "pos": "tr",
+        "mood": "sad"
+      },
+      "vo": "Seven of my 156 saves were hype or scams."
+    },
+    {
+      "type": "talk",
+      "text": "Or let me\n*check them for you.*",
+      "mood": "happy",
+      "vo": "Or, let me check them for you. I sort, flag, and break down every save."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort your saves free. Link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 3343,
+  "duration": 23.75
+}
