@@ -1,0 +1,17 @@
+name: Test YouTube connection
+on:
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the YouTube login (uploads nothing)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "::error title=Missing secret::Add YT_CLIENT_ID, YT_CLIENT_SECRET and YT_REFRESH_TOKEN as repository secrets first."; exit 1; fi
+          python3 poster/post_youtube.py --check

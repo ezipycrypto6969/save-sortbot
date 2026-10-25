@@ -1,6 +1,6 @@
 # Weekly content run (instructions for Claude)
 
-You are the content side of the SaveSort Instagram bot. GitHub Actions posts whatever is in `queue/` at its `post_at` time. Your job, once a week: keep at least **14 reels queued ahead** (2 a day, 12:30 and 19:30 Perth time, AWST = UTC+8), each rendered, checked and uploaded.
+You are the content side of the SaveSort Instagram bot. GitHub Actions posts whatever is in `queue/` at its `post_at` time. Each reel also goes to YouTube Shorts in the same run (`poster/post_youtube.py`, once the YT_* secrets exist). Your job, once a week: keep at least **14 reels queued ahead** (2 a day, 12:30 and 19:30 Perth time, AWST = UTC+8), each rendered, checked and uploaded.
 
 ## Steps
 
@@ -10,7 +10,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
 4. Render each: `python3 engine/build.py queue/<id>.json out/<id> --stills`. Exit code 2 = unknown words: rephrase the line, or add the word's phonemes to `models/custom.json` (copy the notation style of similar words in `models/us_gold.json`).
 5. **Check every reel.** Open `out/<id>/stills/scene-*.png` and look at each one: no text cut off, overflowing or overlapping, stamp not covering the card text, nothing in the bottom 20% or right 150px. Fix the spec (shorter words, fewer items) and rebuild until clean.
 6. Upload videos: `bash engine/publish_media.sh` rebuilds the `media` branch with one `<id>.mp4` per still-queued item (from `out/<id>/reel.mp4`) and force-pushes it. Render any queued item whose video is missing first. Don't commit `out/` to main.
-7. Commit the queue JSON files, `content/ideas.md` and any `models/custom.json` changes, then push.
+7. Give every new item a `yt_title` (punchy, under 70 characters, no emoji). Commit the queue JSON files, `content/ideas.md` and any `models/custom.json` changes, then push.
 8. Message the owner: a short list of next week's posts (date, time, title) and a reminder that they can delete a queue file to cancel a post or set the repo variable `PAUSED` to `true` to stop all posting.
 
 ## Spec format
@@ -22,6 +22,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
   "format": "breakdown",
   "status": "queued",
   "voice": "af_heart",
+  "yt_title": "Optional YouTube title, under 70 characters (otherwise the caption's first line is used)",
   "caption": "Hook line.\n\nThe value, in 3–6 short lines or a numbered list.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#tag1 #tag2 #tag3",
   "scenes": [ { "type": "...", "vo": "Spoken line.", ...fields } ]
 }

@@ -1,4 +1,4 @@
-name: Post next reel
+name: Post next reel (Instagram + YouTube)
 on:
   schedule:
     # 12:20 and 19:20 Perth time (AWST = UTC+8). GitHub can start scheduled runs a few minutes late.
@@ -21,7 +21,18 @@ jobs:
           PAUSED: ${{ vars.PAUSED }}
           DRY_RUN: ${{ vars.DRY_RUN }}
         run: python3 poster/post.py
+      - name: Upload the same reel to YouTube Shorts
+        if: always()
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          PAUSED: ${{ vars.PAUSED }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+        run: python3 poster/post_youtube.py
       - name: Save posted status
+        if: always()
         run: |
           git config user.name "savesort-bot"
           git config user.email "savesort-bot@users.noreply.github.com"
