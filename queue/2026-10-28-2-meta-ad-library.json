@@ -4,13 +4,17 @@
   "format": "tool",
   "status": "queued",
   "voice": "af_heart",
-  "caption": "Stop paying for ad spy tools. Meta gives you this for free. 🔍\n\nMeta Ad Library shows every ad running on Facebook and Instagram.\n1. Search a competitor or keyword\n2. Set the country to Australia\n3. Look for ads running for months: brands keep paying for what works\n4. Copy the idea, never the ad itself\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#metaads #marketing #smallbusiness #facebookads",
+  "speed": 1.22,
+  "music": "sfx",
+  "caption": "Stop paying for ad spy tools. Meta gives you this for free. 🔍\n\nMeta Ad Library shows every ad running on Facebook and Instagram.\n1. Search a competitor or keyword\n2. Pick your country\n3. Look for ads running for months: brands keep paying for what works\n4. Copy the idea, never the ad itself\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#metaads #marketing #smallbusiness #facebookads",
   "scenes": [
     {
-      "type": "quote",
+      "type": "react",
       "quote": "Comment TIER for a tool to spy on any brand's ads",
-      "stamp": "GATED GUIDE",
-      "stampColor": "gate",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
       "vo": "This reel sells a paid spy tool. Meta made a free one."
     },
     {
@@ -23,7 +27,7 @@
       "heading": "How to use it",
       "items": [
         "Search a competitor",
-        "Set country to Australia",
+        "Pick your country",
         "Find ads running for months",
         "Copy the idea, not the ad"
       ],
@@ -33,9 +37,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 4343,
-  "duration": 12.919
+  ]
 }

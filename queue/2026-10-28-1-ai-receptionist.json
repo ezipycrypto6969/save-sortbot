@@ -4,13 +4,17 @@
   "format": "breakdown",
   "status": "queued",
   "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
   "caption": "Tradies miss calls on the tools. Every missed call is a missed job. 📞\n\nThe side hustle: build an AI receptionist that answers 24/7 and books jobs.\n1. Pick one niche: tradies, dentists, salons, mechanics\n2. Collect their hours, services and FAQs\n3. Build it in Vapi or Retell\n4. Demo it with THEIR business details\n5. Free trial, then setup fee + monthly\n\nTell callers it's an AI and check call-recording rules.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#sidehustle #aiagents #smallbusiness #tradies",
   "scenes": [
     {
-      "type": "quote",
+      "type": "react",
       "quote": "Comment VOICE for the free guide",
-      "stamp": "GATED GUIDE",
-      "stampColor": "gate",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
       "vo": "Another reel hiding the guide. Fine. I'll do it."
     },
     {
@@ -39,9 +43,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 4016,
-  "duration": 18.75
+  ]
 }

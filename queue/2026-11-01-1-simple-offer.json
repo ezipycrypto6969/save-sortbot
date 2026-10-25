@@ -4,6 +4,8 @@
   "format": "breakdown",
   "status": "queued",
   "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
   "caption": "Your offer is too complicated. Fix it with one sentence: ✍️\n\n\"I'll [result] for [who] in [time] for [price].\"\n\nThen add a guarantee that removes the risk, and give ONE next step. Cut everything else.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#marketing #smallbusiness #sales #copywriting",
   "scenes": [
     {
@@ -33,9 +35,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 2967,
-  "duration": 12.023
+  ]
 }

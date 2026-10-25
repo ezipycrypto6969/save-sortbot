@@ -4,14 +4,17 @@
   "format": "breakdown",
   "status": "queued",
   "voice": "af_heart",
-  "caption": "\"Comment HARVEY for the repo\" 🙄 It's free and public. Here's what it is.\n\nHarvey is an open-source sales agent that runs on Claude Code on your own computer:\n1. Finds local businesses\n2. Checks their website and scores them\n3. Writes a personal cold email\n4. Waits for YOU to approve every send\n\nRuns on your Claude plan, no API bill. In Australia, cold emails must follow the Spam Act: business addresses only, your name, an unsubscribe link.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#claudeai #aiagents #sidehustle #coldemail",
+  "speed": 1.22,
+  "music": "sfx",
+  "caption": "\"Comment HARVEY for the repo\" 🙄 It's free and public. Here's what it is.\n\nHarvey is an open-source sales agent that runs on Claude Code on your own computer:\n1. Finds local businesses\n2. Checks their website and scores them\n3. Writes a personal cold email\n4. Waits for YOU to approve every send\n\nRuns on your Claude plan, no API bill. Cold email has rules in most countries: use business addresses, say who you are, include an unsubscribe link.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#claudeai #aiagents #sidehustle #coldemail",
   "scenes": [
     {
-      "type": "quote",
+      "type": "react",
       "quote": "Comment HARVEY and I'll send you the repo",
-      "note": "It's free and public on GitHub.",
-      "stamp": "GATED GUIDE",
-      "stampColor": "gate",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
       "vo": "This reel wanted a comment for a free GitHub link. Here it is."
     },
     {
@@ -34,17 +37,19 @@
     },
     {
       "type": "title",
-      "text": "Follow the\n*Spam Act.*",
+      "text": "You approve\n*every email.*",
       "bg": "ink",
-      "vo": "And in Australia, follow the Spam Act. Business emails only."
+      "vo": "And nothing sends until you approve it."
     },
     {
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 4528,
-  "duration": 18.548
+  ]
 }

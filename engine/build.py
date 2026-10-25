@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import g2p, tts, music  # noqa: E402
 
-MIN = {"hook": 1.6, "quote": 2.2, "title": 1.6, "steps": 3.0, "stat": 2.2, "checks": 2.4, "count": 1.4, "talk": 1.8, "react": 2.6, "end": 1.8}
+MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6}
 
 
 def caption_chunks(lines, max_words=3):
@@ -60,10 +60,10 @@ def main(spec_path, out_dir, stills=False):
     t = 0.0; lines = []; cuts = []; hits = []; ticks = []
     vo_track = []
     for sc in spec["scenes"]:
-        audio = tts.speak(sc["_ph"], voice, sc.get("speed", spec.get("speed", 1.1))) if sc.get("vo") else np.zeros(0, np.float32)
+        audio = tts.speak(sc["_ph"], voice, sc.get("speed", spec.get("speed", 1.2))) if sc.get("vo") else np.zeros(0, np.float32)
         vlen = len(audio) / tts.SR
-        lead = 0.12
-        dur = max(sc.get("min", MIN[sc["type"]]), vlen + lead + 0.28)
+        lead = 0.06  # fast pace: voice starts almost on the cut, short tail
+        dur = max(sc.get("min", MIN[sc["type"]]), vlen + lead + 0.14)
         sc["start"], sc["end"] = round(t, 3), round(t + dur, 3)
         cuts.append(t)
         if sc.get("vo"):
@@ -88,7 +88,7 @@ def main(spec_path, out_dir, stills=False):
     tl = {"dur": total, "scenes": spec["scenes"], "fx": fx, "caps": caption_chunks(lines), "mascot": spec.get("mascot", True)}
     # 3. sound: voice track first (the mascot lip-syncs to it), then music ducked under it
     SR = music.SR
-    bed = music.make(total, cuts, hits, ticks, end_at=spec["scenes"][-1]["start"], seed=zlib.crc32(spec.get("id", "").encode()) % 1000)
+    bed = music.make(total, cuts, hits, ticks, end_at=spec["scenes"][-1]["start"], seed=zlib.crc32(spec.get("id", "").encode()) % 1000, mode=spec.get("music", "sfx"))
     vo = np.zeros(len(bed), np.float32)
     for start, a in vo_track:
         up = resample_poly(a, SR, tts.SR).astype(np.float32); i = int(start * SR); j = min(len(vo), i + len(up))

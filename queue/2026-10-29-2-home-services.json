@@ -4,7 +4,9 @@
   "format": "breakdown",
   "status": "queued",
   "voice": "af_heart",
-  "caption": "Everyone wants an AI startup. Meanwhile homeowners will happily pay someone to clean gutters and wash high windows. 🪜\n\nThe playbook:\n1. Pick one service\n2. Get an ABN (free) and public liability insurance\n3. Set up your Google Business Profile\n4. On every job: door hangers on the street, a yard sign, and ask for a review\n\nWorking at heights is dangerous. Follow WorkSafe guidance.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#homeservices #sidehustle #perth #smallbusiness",
+  "speed": 1.22,
+  "music": "sfx",
+  "caption": "Everyone wants an AI startup. Meanwhile homeowners will happily pay someone to clean gutters and wash high windows. 🪜\n\nThe playbook:\n1. Pick one service\n2. Register your business and get public liability insurance\n3. Set up your Google Business Profile\n4. On every job: door hangers on the street, a yard sign, and ask for a review\n\nWorking at heights is dangerous. Follow your local safety rules.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#homeservices #sidehustle #perth #smallbusiness",
   "scenes": [
     {
       "type": "hook",
@@ -24,11 +26,11 @@
       "heading": "The playbook",
       "items": [
         "Pick one service",
-        "Get an ABN and insurance",
+        "Register and get insured",
         "Set up Google Maps",
         "Door hangers on every job"
       ],
-      "vo": "Pick one service. Get an ABN and insurance. Get on Google Maps. Hit the whole street."
+      "vo": "Pick one service. Register and get insured. Get on Google Maps. Hit the whole street."
     },
     {
       "type": "title",
@@ -40,9 +42,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 2600,
-  "duration": 15.664
+  ]
 }

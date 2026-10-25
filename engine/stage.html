@@ -140,7 +140,7 @@ window.render=function(t){
       pop(d.querySelector(".head"),0.05,lt,0.2,1.2);
       [...d.querySelectorAll(".step")].forEach((r,k)=>{const at=sc.itemTimes[k]-sc.start;const p=(lt-at)/0.28;r.style.opacity=p<0?0:1;r.style.transform=`translateY(${p<0?60:60*(1-ease(p))}px)`;});
     } else if(sc.type==="stat"){
-      d.querySelector(".num").textContent=(sc.prefix||"")+Math.round(sc.value*ease((lt-0.1)/1.0))+(sc.suffix||"");
+      d.querySelector(".num").textContent=(sc.prefix||"")+Math.round(sc.value*ease((lt-0.05)/0.6))+(sc.suffix||"");
       pop(d.querySelector(".lab"),0.3,lt,0.22,1.2);
     } else if(sc.type==="checks"){
       pop(d.querySelector(".head"),0.05,lt,0.2,1.2);

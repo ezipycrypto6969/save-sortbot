@@ -4,13 +4,17 @@
   "format": "scam-watch",
   "status": "queued",
   "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
   "caption": "There is no \"ADHD Executive Function Mode\" in Claude. 🚫\n\nBut the prompts in that reel actually work:\n1. Break a task into steps under 1 minute, give me only the first\n2. Act as my body double and check in every 10 minutes\n3. Turn this boring task into a quest with a reward\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#adhd #productivity #claudeai #aitips",
   "scenes": [
     {
-      "type": "quote",
+      "type": "react",
       "quote": "BREAKING: Claude has an ADHD Executive Function Mode",
-      "stamp": "BE CAREFUL",
-      "stampColor": "warn",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
       "vo": "Breaking news. Claude does not have an ADHD mode."
     },
     {
@@ -33,9 +37,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 4205,
-  "duration": 14.102
+  ]
 }

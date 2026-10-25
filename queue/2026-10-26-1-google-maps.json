@@ -7,12 +7,12 @@
   "caption": "This reel told me to \"comment for the guide\" 🙄 So here's the guide, free.\n\nHow to rank higher on Google Maps:\n1. Pick the most specific category\n2. Fill in every field: services, areas, hours\n3. Post real photos every week\n4. Ask every customer for a review and reply to all of them\n\nNever buy fake reviews. Google deletes them.\n\nFound in my own saved reels, sorted by SaveSort. Sort yours free, link in bio.\n\n#localseo #googlebusinessprofile #smallbusiness #tradies #savedreels",
   "scenes": [
     {
-      "type": "quote",
+      "type": "react",
       "quote": "Your Google profile will rank way higher now",
       "label": "SAVED REEL SAYS",
-      "note": "Then: comment for the guide.",
-      "stamp": "GATED GUIDE",
-      "stampColor": "gate",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
       "vo": "This reel wanted me to comment for the guide. Here it is, free."
     },
     {
@@ -33,21 +33,25 @@
       "vo": "Pick the most specific category. Fill in every field. Post real photos weekly. And reply to every single review."
     },
     {
-      "type": "quote",
+      "type": "react",
       "quote": "Buy 50 five-star reviews",
       "label": "DON'T",
-      "note": "Google deletes them, and fake reviews are illegal here.",
-      "stamp": "BE CAREFUL",
-      "stampColor": "warn",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
       "vo": "Buying reviews? Mate. Google deletes them."
     },
     {
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
   ],
-  "cover_offset_ms": 4358,
-  "duration": 18.415
+  "speed": 1.22,
+  "music": "sfx"
 }

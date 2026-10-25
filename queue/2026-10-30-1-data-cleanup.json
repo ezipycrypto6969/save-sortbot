@@ -4,7 +4,9 @@
   "format": "tool",
   "status": "queued",
   "voice": "af_heart",
-  "caption": "A saved reel said someone used AI to scrub their personal data off the internet in a weekend. Here's the free version. 🧹\n\n1. Check your email on haveibeenpwned.com and change breached passwords\n2. Find old accounts and how to delete them on justdeleteme.xyz\n3. Use Google's \"Results about you\" to remove your phone and address from search\n4. Ask Claude to draft the deletion requests\n\nIn Australia, the Privacy Act gives you the right to access and correct your data.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#privacy #cybersecurity #aitools #onlinesafety",
+  "speed": 1.22,
+  "music": "sfx",
+  "caption": "A saved reel said someone used AI to scrub their personal data off the internet in a weekend. Here's the free version. 🧹\n\n1. Check your email on haveibeenpwned.com and change breached passwords\n2. Find old accounts and how to delete them on justdeleteme.xyz\n3. Use Google's \"Results about you\" to remove your phone and address from search\n4. Ask Claude to draft the deletion requests\n\nPrivacy laws in many countries give you the right to see and delete your data.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#privacy #cybersecurity #aitools #onlinesafety",
   "scenes": [
     {
       "type": "quote",
@@ -33,9 +35,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 4702,
-  "duration": 13.106
+  ]
 }

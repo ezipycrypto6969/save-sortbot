@@ -4,6 +4,8 @@
   "format": "reveal",
   "status": "queued",
   "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
   "caption": "22 of my 156 saved reels hid the actual info behind \"comment GUIDE\" or \"DM me\". 🙄\n\nSaveSort flags those and works out what they were hinting at, so you get the guide without the DM funnel.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity",
   "scenes": [
     {
@@ -19,7 +21,11 @@
       "value": 22,
       "label": "of my saves did this",
       "color": "warn",
-      "vo": "Twenty two of my saved reels did this."
+      "vo": "Twenty two of my saved reels did this.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      }
     },
     {
       "type": "title",
@@ -30,9 +36,11 @@
       "type": "end",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
-      "vo": "Sort your own saves free. Link in bio."
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
     }
-  ],
-  "cover_offset_ms": 2662,
-  "duration": 10.527
+  ]
 }

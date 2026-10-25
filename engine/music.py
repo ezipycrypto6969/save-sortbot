@@ -5,7 +5,8 @@ from scipy.signal import butter, sosfilt
 SR = 48000
 
 
-def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0):
+def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0, mode="sfx"):
+    """mode: "full" = beat + bass + melody + effects; "sfx" = effects only (whooshes, hits, ticks); "none" = silence."""
     rng = np.random.default_rng(seed)
     N = int(SR * dur)
     L = np.zeros(N); R = np.zeros(N)
@@ -62,27 +63,30 @@ def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0):
         return sum(np.sin(2 * np.pi * f * h * t) / h for h in (1, 2, 3, 4)) * env(n, 0.003, 0.18) * 0.25
 
     beat = 0.5
-    first_cut = cuts[1] if len(cuts) > 1 else 2.0
-    for k in range(int(dur / beat) + 1):
-        tb = k * beat
-        if end_at - 0.3 <= tb < end_at: continue
-        if tb < first_cut:
-            if k % 2 == 0: add(kick(), tb, 0.8)
-        else:
-            add(kick(), tb, 1.0)
-            if k % 2 == 1: add(clap(), tb, 0.5, 0.05)
-            if k % 4 == 3: add(hat(True), tb + beat / 2, 0.22, 0.4)
-        add(hat(), tb + beat / 2, 0.32, -0.3)
-    notes = [root, root * 1.189, root * 0.891, root, root * 1.335, root * 1.189]
-    for b in range(int(dur / 2) + 1):
-        tb = b * 2.0
-        if tb < first_cut - 0.01: continue
-        for q in range(4):
-            add(bass(notes[b % len(notes)], beat * 0.9), tb + q * beat, 0.85 if q == 0 else 0.55)
-    scale = [440, 523.25, 587.33, 659.25, 783.99]
-    k = 0; tb = first_cut
-    while tb < end_at - 0.3:
-        add(pluck(scale[(k * 3) % 5]), tb, 0.45 if k % 2 == 0 else 0.25, 0.25 if k % 2 else -0.25); k += 1; tb += beat / 2
+    if mode == "full":
+        first_cut = cuts[1] if len(cuts) > 1 else 2.0
+        for k in range(int(dur / beat) + 1):
+            tb = k * beat
+            if end_at - 0.3 <= tb < end_at: continue
+            if tb < first_cut:
+                if k % 2 == 0: add(kick(), tb, 0.8)
+            else:
+                add(kick(), tb, 1.0)
+                if k % 2 == 1: add(clap(), tb, 0.5, 0.05)
+                if k % 4 == 3: add(hat(True), tb + beat / 2, 0.22, 0.4)
+            add(hat(), tb + beat / 2, 0.32, -0.3)
+        notes = [root, root * 1.189, root * 0.891, root, root * 1.335, root * 1.189]
+        for b in range(int(dur / 2) + 1):
+            tb = b * 2.0
+            if tb < first_cut - 0.01: continue
+            for q in range(4):
+                add(bass(notes[b % len(notes)], beat * 0.9), tb + q * beat, 0.85 if q == 0 else 0.55)
+        scale = [440, 523.25, 587.33, 659.25, 783.99]
+        k = 0; tb = first_cut
+        while tb < end_at - 0.3:
+            add(pluck(scale[(k * 3) % 5]), tb, 0.45 if k % 2 == 0 else 0.25, 0.25 if k % 2 else -0.25); k += 1; tb += beat / 2
+    if mode == "none":
+        return np.zeros((N, 2))
     for c in cuts[1:]: add(whoosh(), c - 0.4, 0.5)
     for h in hits: add(impact(), h, 0.9)
     for i, tt in enumerate(ticks): add(tick(1800 + 120 * (i % 8)) * 2, tt, 0.7)
@@ -91,4 +95,4 @@ def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0):
     mix = np.stack([L, R], 1)
     fade = int(0.35 * SR); mix[-fade:] *= np.linspace(1, 0, fade)[:, None]
     mix = np.tanh(mix * 0.9)
-    return mix / (np.max(np.abs(mix)) + 1e-9) * 0.89
+    return mix / (np.max(np.abs(mix)) + 1e-9) * (0.89 if mode == "full" else 0.6)  # effects sit quieter under the voice
