@@ -1,7 +1,7 @@
 """Publishes the next due reel from queue/ to Instagram (official Instagram API with Instagram Login).
 
-Runs inside GitHub Actions. Needs env: IG_USER_ID, IG_ACCESS_TOKEN, GH_TOKEN (for the release asset).
-The video for queue/<id>.json lives as asset <id>.mp4 on the GitHub release tagged "queue".
+Runs inside GitHub Actions. Needs env: IG_USER_ID, IG_ACCESS_TOKEN.
+The video for queue/<id>.json lives as <id>.mp4 on the "media" branch (rewritten weekly with only upcoming reels).
 Posts at most one reel per run. Set repo variable PAUSED=true to stop posting, DRY_RUN=true to test without posting.
 """
 import datetime as dt, glob, json, os, subprocess, sys, time, urllib.parse, urllib.request
@@ -41,7 +41,9 @@ def main():
     if not path:
         print("Nothing due."); return
     vid = f"{spec['id']}.mp4"
-    subprocess.run(["gh", "release", "download", "queue", "-p", vid, "-O", "reel.mp4", "--clobber"], check=True)
+    subprocess.run(["git", "fetch", "--depth", "1", "origin", "media"], check=True)
+    with open("reel.mp4", "wb") as f:
+        subprocess.run(["git", "show", f"FETCH_HEAD:{vid}"], stdout=f, check=True)
     size = os.path.getsize("reel.mp4")
     print(f"Posting {spec['id']} ({size/1e6:.1f} MB)")
     if DRY:
@@ -68,7 +70,6 @@ def main():
     spec.update(status="posted", posted_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                 media_id=pub["id"], permalink=info.get("permalink"))
     json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2)
-    subprocess.run(["gh", "release", "delete-asset", "queue", vid, "-y"], check=False)
     print(f"Posted: {info.get('permalink')}")
 
 

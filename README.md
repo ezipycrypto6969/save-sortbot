@@ -32,5 +32,6 @@ If a run fails, GitHub emails you.
 ## How it's built
 
 - `engine/` turns a JSON script into a reel: `stage.html` (animated scenes, rendered frame by frame with Playwright), `tts.py` (Kokoro-82M voice, Apache-2.0), `g2p.py` (pronunciation via Misaki's dictionaries, Apache-2.0), `music.py` (original synthesised music), `build.py` (puts it together).
+- Videos waiting to post live on the `media` branch (replaced weekly, so the repo stays small).
 - `poster/post.py` uploads the video with Instagram's resumable Reels upload and publishes it.
 - `AGENT.md` is the weekly playbook Claude follows. `content/ideas.md` is the idea backlog.
