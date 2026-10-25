@@ -44,5 +44,7 @@
         "mood": "happy"
       }
     }
-  ]
+  ],
+  "cover_offset_ms": 4247,
+  "duration": 11.281
 }
