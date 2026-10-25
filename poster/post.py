@@ -7,8 +7,8 @@ Posts at most one reel per run. Set repo variable PAUSED=true to stop posting, D
 import datetime as dt, glob, json, os, subprocess, sys, time, urllib.parse, urllib.request
 
 API = "https://graph.instagram.com/v21.0"
-IG_USER = os.environ["IG_USER_ID"]
-TOKEN = os.environ["IG_ACCESS_TOKEN"]
+IG_USER = os.environ["IG_USER_ID"].strip()
+TOKEN = "".join(os.environ["IG_ACCESS_TOKEN"].split())  # drop stray spaces or line breaks from pasting
 DRY = os.environ.get("DRY_RUN", "").lower() == "true"
 
 
