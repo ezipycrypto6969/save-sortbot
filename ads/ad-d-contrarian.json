@@ -39,5 +39,7 @@
       "vo": "No comment needed. Link in bio."
     }
   ],
-  "caption": ""
+  "caption": "",
+  "cover_offset_ms": 2500,
+  "duration": 11.409
 }
