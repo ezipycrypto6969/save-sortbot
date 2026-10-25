@@ -20,7 +20,11 @@ def call(method, url, params=None, data=None, headers=None):
             return json.loads(r.read() or b"{}")
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
-        raise SystemExit(f"Instagram API error {e.code} on {url.split('?')[0]}: {body}")
+        msg = f"Instagram API error {e.code} on {url.split('?')[0]}: {body}".replace(TOKEN, "***")
+        if "190" in body or "OAuth" in body:
+            msg += " -- The Instagram token is wrong or expired. Generate a new one in the Meta app and update the IG_ACCESS_TOKEN secret."
+        print(f"::error title=Instagram said no::{msg}")  # shows on the run's summary page
+        raise SystemExit(msg)
 
 
 def due_item():
