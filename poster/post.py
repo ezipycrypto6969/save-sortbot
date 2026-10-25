@@ -37,7 +37,13 @@ def due_item():
 def main():
     if os.environ.get("PAUSED", "").lower() == "true":
         print("PAUSED is set; not posting."); return
+    if DRY:  # check the token works before anything else
+        me = call("GET", f"{API}/me", {"fields": "user_id,username", "access_token": TOKEN})
+        print(f"Token OK for @{me.get('username')} (user_id {me.get('user_id')})")
     path, spec = due_item()
+    if not path and DRY:  # in test mode, rehearse with the next queued reel even if it isn't due yet
+        nxt = sorted((json.load(open(p))["post_at"], p) for p in glob.glob("queue/*.json") if json.load(open(p)).get("status") == "queued")
+        if nxt: path = nxt[0][1]; spec = json.load(open(path))
     if not path:
         print("Nothing due."); return
     vid = f"{spec['id']}.mp4"
