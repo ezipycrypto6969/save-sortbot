@@ -31,9 +31,19 @@ body{font-family:"Inter Display","Inter","Archivo",sans-serif;-webkit-font-smoot
 .logo{display:flex;align-items:center;gap:30px;font-weight:900;font-size:124px;letter-spacing:-.04em;color:#fff}
 .logo svg{width:96px;height:114px}
 .pill{align-self:flex-start;background:#fff;color:var(--deep);font-weight:900;font-size:64px;padding:30px 56px;border-radius:999px;box-shadow:0 12px 0 var(--deep);white-space:nowrap}
+/* retention overlays: progress bar, open-loop hook banner, word-by-word captions, cut flash */
+#prog{position:absolute;left:0;top:0;height:14px;width:0;background:var(--marker);z-index:20}
+#hook{position:absolute;left:90px;top:96px;z-index:20;display:none;background:var(--warn);color:#fff;font-weight:900;font-size:46px;letter-spacing:.01em;padding:16px 30px;border-radius:999px;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+#caps{position:absolute;left:90px;right:150px;top:1395px;z-index:20;display:flex;justify-content:center}
+#caps .chunk{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:0 18px;background:rgba(16,18,28,.88);border-radius:28px;padding:14px 30px;max-width:100%}
+#caps .w{font-weight:900;font-size:62px;line-height:1.15;color:#fff;letter-spacing:-.01em}
+#caps .w.on{color:var(--marker)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:30;pointer-events:none}
+.count-n{font-size:520px;font-weight:900;letter-spacing:-.06em;line-height:.9;color:var(--marker)}
 </style></head>
 <body>
 <div id="root"></div>
+<div id="prog"></div><div id="hook"></div><div id="caps"></div><div id="flash"></div>
 <script>
 const LABELS=["AI agent","side hustle","this is the trick","$1000/day","comment GUIDE","Google Maps","Meta ads","study hack","breathwork","dropshipping","stop coping","secret mode","pressure washing","tax news","gym","Claude skills","cold email","SEO tip"];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -48,7 +58,7 @@ function tiles(n){let h="";for(let i=0;i<n;i++)h+=`<div class="tile"><b>${LABELS
 function fit(el,maxW,maxH,start,min=40){let s=start;el.style.fontSize=s+"px";while(s>min&&(el.scrollWidth>maxW+2||el.scrollHeight>maxH)){s-=4;el.style.fontSize=s+"px";}}
 function build(sc,i){
   const d=document.createElement("section");d.className="scene";d.id="s"+i;
-  const bg=sc.bg||({hook:"ink",quote:"ink",title:"cobalt",steps:"paper",stat:"paper",checks:"paper",end:"cobalt"}[sc.type]);
+  const bg=sc.bg||({hook:"ink",quote:"ink",title:"cobalt",steps:"paper",stat:"paper",checks:"paper",count:"ink",end:"cobalt"}[sc.type]);
   d.classList.add("bg-"+bg);
   if(sc.type==="hook"){
     d.innerHTML=`<div class="tiles">${tiles(48)}</div><div class="scrim"></div>`+
@@ -65,6 +75,8 @@ function build(sc,i){
     d.innerHTML=`<div class="big num" style="top:520px;font-size:420px;letter-spacing:-.05em;color:var(--${sc.color||"go"})">0</div><div class="big lab" style="top:1020px;color:var(--ink)">${rich(sc.label)}</div>`;
   } else if(sc.type==="checks"){
     d.innerHTML=`<div class="big head" style="top:230px;color:var(--ink)">${rich(sc.heading)}</div><div class="card" style="top:640px;gap:46px"><div class="label">${esc(sc.label||"")}</div>${sc.items.map((t,k)=>`<div class="check"><span class="box">${CHECK(k===sc.items.length-1&&sc.lastWarn?"#E0480C":"#0F7F57")}</span>${esc(t)}</div>`).join("")}</div>`;
+  } else if(sc.type==="count"){
+    d.innerHTML=`<div class="big cn" style="top:360px"><div class="count-n">#${esc(sc.n)}</div></div><div class="big lab" style="top:900px;color:#fff">${rich(sc.label||"")}</div>`;
   } else if(sc.type==="end"){
     d.innerHTML=`<div style="position:absolute;left:90px;right:150px;top:520px;display:flex;flex-direction:column;gap:70px"><div class="logo"><svg viewBox="0 0 22 26"><path d="M2 2h18v22l-9-6.5L2 24z" fill="#fff"/></svg>SaveSort</div><div class="endline" style="font-weight:900;letter-spacing:-.035em;line-height:1.02;color:#fff">${rich(sc.line||"Sort your saves.\n*Free.*")}</div><div class="pill">${esc(sc.pill||"Link in bio →")}</div></div><div class="loop" style="position:absolute;inset:0;opacity:0"><div class="tiles">${tiles(15)}</div></div>`;
   }
@@ -89,7 +101,8 @@ window.render=function(t){
   TL.scenes.forEach((sc,i)=>{
     const d=SC[i]; const on=t>=sc.start&&(t<sc.end||(i===TL.scenes.length-1&&t<=TL.dur));
     d.style.display=on?"block":"none"; if(!on)return;
-    const lt=t-sc.start; const p0=lt/0.16; d.style.transform=`scale(${p0<1?1.07-0.07*ease(p0):1})`;
+    const lt=t-sc.start; const p0=lt/0.16; const drift=1+0.035*clamp(lt/Math.max(0.5,sc.end-sc.start));  // slow push-in so the frame never sits still
+    d.style.transform=`scale(${(p0<1?1.07-0.07*ease(p0):1)*drift})`;
     if(sc.type==="hook"){
       const tl=d.querySelector(".tiles"); tl.style.transform=`translateY(${-((lt*(sc.slow?420:1500))%2400)}px)`;
       if(sc.grey) tl.style.filter=`grayscale(${ease(lt/0.6)})`;
@@ -109,12 +122,29 @@ window.render=function(t){
     } else if(sc.type==="checks"){
       pop(d.querySelector(".head"),0.05,lt,0.2,1.2);
       [...d.querySelectorAll(".check")].forEach((el,k)=>{const at=sc.itemTimes[k]-sc.start;const p=(lt-at)/0.2;el.style.opacity=p<0?0.25:1;const sv=el.querySelector("svg");sv.style.opacity=p<0?0:1;sv.style.transform=`scale(${p<0?0:back(p)})`;el.querySelector(".box").style.borderColor=p<0?"#D7DAE4":(k===sc.items.length-1&&sc.lastWarn?"#E0480C":"#0F7F57");});
+    } else if(sc.type==="count"){
+      pop(d.querySelector(".cn"),0.0,lt,0.22,2.2); pop(d.querySelector(".lab"),0.3,lt,0.22,1.25);
     } else if(sc.type==="end"){
       pop(d.querySelector(".logo"),0.05,lt,0.25,1.3);
       const pill=d.querySelector(".pill"); const q=(lt-0.45)/0.25; pill.style.transform=`scale(${q<0?0:back(q)})`; pill.style.transformOrigin="left center";
       d.querySelector(".loop").style.opacity=clamp((t-(TL.dur-0.35))/0.33);
     }
   });
+  // progress bar (shows the video is short), cut flash, open-loop banner, captions
+  const fx=TL.fx||{};
+  const prog=document.getElementById("prog"); prog.style.display=fx.progress===false?"none":"block"; prog.style.width=(1080*clamp(t/TL.dur))+"px";
+  let flash=0; TL.scenes.forEach((sc,i)=>{ if(i>0){const p=(t-sc.start)/0.1; if(p>=0&&p<1) flash=Math.max(flash,0.55*(1-p));} });
+  document.getElementById("flash").style.opacity=fx.flash===false?0:flash;
+  const hk=document.getElementById("hook");
+  if(fx.hook&&t>=0.15&&t<(fx.hookUntil??TL.dur)){hk.style.display="block"; hk.textContent=fx.hook; const p=(t-0.15)/0.2; hk.style.transform=`scale(${p<1?0.6+0.4*back(p):1+0.03*Math.sin(t*6)})`; hk.style.transformOrigin="left center";}
+  else hk.style.display="none";
+  const caps=document.getElementById("caps"); const ch=(TL.caps||[]).find(c=>t>=c.t0&&t<c.t1);
+  if(ch&&fx.captions!==false){
+    caps.style.display="flex";
+    if(caps.dataset.k!==String(ch.t0)){caps.dataset.k=String(ch.t0); caps.innerHTML=`<div class="chunk">${ch.words.map(w=>`<span class="w">${esc(w.w)}</span>`).join("")}</div>`;}
+    [...caps.querySelectorAll(".w")].forEach((el,k)=>el.classList.toggle("on",t>=ch.words[k].t0));
+    const p=(t-ch.t0)/0.12; caps.firstChild.style.transform=`scale(${p<1?0.85+0.15*ease(p):1})`;
+  } else caps.style.display="none";
 };
 </script>
 </body></html>

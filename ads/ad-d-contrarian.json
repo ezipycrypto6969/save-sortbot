@@ -1,0 +1,43 @@
+{
+  "id": "ad-d-contrarian",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {},
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Don't comment",
+        "*GUIDE.*"
+      ],
+      "vo": "Don't comment guide."
+    },
+    {
+      "type": "title",
+      "text": "22 of my saves\nhid the *guide.*",
+      "vo": "22 of my saved reels hid the guide behind a DM."
+    },
+    {
+      "type": "checks",
+      "heading": "We find it for you",
+      "label": "EVERY BREAKDOWN",
+      "items": [
+        "The real tool",
+        "The real steps",
+        "The real cost",
+        "The catch"
+      ],
+      "lastWarn": true,
+      "vo": "SaveSort finds the real tool, the steps, the cost, and the catch."
+    },
+    {
+      "type": "end",
+      "line": "Skip the DM.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "No comment needed. Link in bio."
+    }
+  ],
+  "caption": ""
+}

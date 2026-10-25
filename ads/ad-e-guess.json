@@ -1,0 +1,48 @@
+{
+  "id": "ad-e-guess",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {
+    "hook": "GUESS BEFORE IT SHOWS"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "I saved *156 reels.*",
+        "Guess how many..."
+      ],
+      "vo": "I saved 156 reels. Guess how many were actually worth doing."
+    },
+    {
+      "type": "title",
+      "text": "Lock in\nyour *guess.*",
+      "bg": "ink",
+      "vo": "Lock in your guess. Comment it."
+    },
+    {
+      "type": "stat",
+      "value": 24,
+      "label": "were worth doing",
+      "color": "go",
+      "payoff": true,
+      "vo": "24. That's it."
+    },
+    {
+      "type": "quote",
+      "quote": "Claude has a secret Founder Thinking Mode",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "And seven were straight up hype."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort yours free. Link in bio."
+    }
+  ],
+  "caption": ""
+}

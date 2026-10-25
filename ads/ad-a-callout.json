@@ -1,0 +1,52 @@
+{
+  "id": "ad-a-callout",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {
+    "hook": "CHECK YOUR SAVED TAB"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Stop scrolling",
+        "if you have *100+ saves.*"
+      ],
+      "vo": "Stop scrolling if you've got over 100 saved reels."
+    },
+    {
+      "type": "title",
+      "text": "You'll never\nwatch them *again.*",
+      "bg": "ink",
+      "vo": "Be honest. You're never watching them again."
+    },
+    {
+      "type": "stat",
+      "value": 24,
+      "label": "of my 156 were\n*worth doing*",
+      "color": "go",
+      "vo": "Out of my 156, only 24 were worth doing."
+    },
+    {
+      "type": "checks",
+      "heading": "So I built this",
+      "label": "SAVESORT",
+      "items": [
+        "Sorts every save",
+        "Writes the steps",
+        "Flags the scams",
+        "Free to try"
+      ],
+      "vo": "It sorts them, writes the steps, and flags the scams."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Sort yours free. Link in bio."
+    }
+  ],
+  "caption": ""
+}

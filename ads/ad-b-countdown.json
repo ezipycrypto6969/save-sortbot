@@ -1,0 +1,48 @@
+{
+  "id": "ad-b-countdown",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {
+    "hook": "#1 IS ILLEGAL IN WA"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "3 saved reels",
+        "that *lied to me.*"
+      ],
+      "vo": "Three saved reels that lied to me. Number one is illegal."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "A *secret* Claude mode",
+      "vo": "Three. A secret Claude mode. It doesn't exist."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "Clone any store\n*in minutes*",
+      "vo": "Two. Clone any store in minutes. Enjoy the copyright letter."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "Skip agent fees,\n*take a cut*",
+      "payoff": true,
+      "vo": "One. Help sellers skip agent fees. In WA, that needs a licence."
+    },
+    {
+      "type": "end",
+      "line": "Spot the scams.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "SaveSort flags these for you. Link in bio."
+    }
+  ],
+  "caption": "",
+  "cover_offset_ms": 4417,
+  "duration": 17.24
+}

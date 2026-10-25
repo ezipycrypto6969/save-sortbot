@@ -15,7 +15,27 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import g2p, tts, music  # noqa: E402
 
-MIN = {"hook": 1.6, "quote": 2.2, "title": 1.6, "steps": 3.0, "stat": 2.2, "checks": 2.4, "end": 1.8}
+MIN = {"hook": 1.6, "quote": 2.2, "title": 1.6, "steps": 3.0, "stat": 2.2, "checks": 2.4, "count": 1.4, "end": 1.8}
+
+
+def caption_chunks(lines, max_words=3):
+    """Word-by-word caption timing: spread each line's words over its spoken time by length, 1-3 words per chunk."""
+    out = []
+    for a, b, text in lines:
+        words = text.replace("\n", " ").split()
+        if not words: continue
+        weights = [len(w.strip(".,!?")) + 2 for w in words]; total = sum(weights); t = a
+        timed = []
+        for w, wt in zip(words, weights):
+            d = (b - a) * wt / total; timed.append({"w": w, "t0": round(t, 3), "t1": round(t + d, 3)}); t += d
+        chunk = []
+        for i, w in enumerate(timed):
+            chunk.append(w)
+            if len(chunk) == max_words or w["w"][-1] in ".,!?" or i == len(timed) - 1:
+                out.append({"t0": chunk[0]["t0"], "t1": chunk[-1]["t1"], "words": chunk}); chunk = []
+    for i in range(len(out) - 1):  # hold each chunk until the next one starts (no flicker in short gaps)
+        if out[i + 1]["t0"] - out[i]["t1"] < 0.35: out[i]["t1"] = out[i + 1]["t0"]
+    return out
 
 
 def srt_time(t):
@@ -51,6 +71,8 @@ def main(spec_path, out_dir, stills=False):
         if sc["type"] == "quote" and sc.get("stamp"):
             sc["stampAt"] = round(min(dur - 0.4, sc.get("stampAt", max(0.6, vlen * 0.55))), 3); hits.append(t + sc["stampAt"])
         if sc["type"] == "hook": hits.append(t + 0.12 + 0.38 * (len(sc["lines"]) - 1))
+        if sc["type"] == "count": hits.append(t)
+        if sc.get("payoff") and "hookUntil" not in spec.get("fx", {}): spec.setdefault("fx", {})["hookUntil"] = round(t, 3)
         if sc["type"] == "stat": ticks += [t + 0.1 + k * (1.0 / 20) for k in range(20)]
         if sc["type"] in ("steps", "checks"):
             n = len(sc["items"]); span = max(0.6, (vlen if vlen else dur) - 0.3)
@@ -59,7 +81,9 @@ def main(spec_path, out_dir, stills=False):
         sc.pop("_ph", None)
     total = round(t, 3)
     if total > 45: print(f"warning: reel is {total:.1f}s; aim for 15–30s")
-    tl = {"dur": total, "scenes": spec["scenes"]}
+    fx = spec.get("fx", {})
+    if "hookUntil" not in fx: fx["hookUntil"] = spec["scenes"][-1]["start"]  # banner disappears at the end card
+    tl = {"dur": total, "scenes": spec["scenes"], "fx": fx, "caps": caption_chunks(lines)}
     json.dump(tl, open(os.path.join(out_dir, "timeline.json"), "w"), ensure_ascii=False, indent=1)
     # 3. picture
     sd = os.path.join(out_dir, "stills") if stills else ""

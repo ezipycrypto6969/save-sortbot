@@ -1,0 +1,54 @@
+{
+  "id": "ad-f-lying",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {
+    "hook": "WAIT FOR THE $1000/DAY ONE"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Your saved tab",
+        "is *lying to you.*"
+      ],
+      "vo": "Your saved tab is lying to you."
+    },
+    {
+      "type": "stat",
+      "value": 7,
+      "label": "of mine were\n*hype or scams*",
+      "color": "warn",
+      "vo": "Seven of mine were hype, or straight up scams."
+    },
+    {
+      "type": "quote",
+      "quote": "Make $1000 a day dropshipping",
+      "label": "SAVED REEL SAYS",
+      "note": "That's a best case. Plenty of stores lose money on ads.",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "payoff": true,
+      "vo": "A thousand a day? Best case. Plenty of stores lose money."
+    },
+    {
+      "type": "steps",
+      "heading": "SaveSort tells you",
+      "items": [
+        "What's real",
+        "What it costs",
+        "What to skip"
+      ],
+      "vo": "SaveSort tells you what's real, what it costs, and what to skip."
+    },
+    {
+      "type": "end",
+      "line": "Check your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Check yours free. Link in bio."
+    }
+  ],
+  "caption": ""
+}

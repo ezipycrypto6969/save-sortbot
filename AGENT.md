@@ -37,9 +37,22 @@ Scene types (each scene stretches to fit its `vo` line; keep each line under ~12
 | `steps` | `heading`, `items` (3–4, under 6 words each) | how-to |
 | `stat` | `value` (number), `label`, `color` go/warn, optional `prefix`/`suffix` | one number |
 | `checks` | `heading`, `label`, `items` (4), `lastWarn` true | checklist |
+| `count` | `n` (3, 2, 1), `label` | countdown lists ("3 saved reels that lied to me") |
 | `end` | `line`, `pill` | always last: "Sort your saves.\n*Free.*" / "Link in bio →" |
 
+Any scene can take `"payoff": true` to mark where the open loop is answered.
+
+Top-level `fx` (optional): `{"hook": "#1 IS ILLEGAL IN WA"}` shows an open-loop banner at the top until the `payoff` scene (or the end card). Word-by-word captions, the progress bar, cut flashes and a slow push-in are on by default (`"captions": false`, `"progress": false`, `"flash": false` turn them off). Captions show the `vo` text, so write numbers as digits in `vo` ("156", not "a hundred and fifty six").
+
 Good shape: 4–6 scenes, 15–30 seconds. Open with a hook or a quote in the first second.
+
+## Hooks and attention (use in every reel)
+
+- **First second sells it.** Frame one is the hook: a callout ("Stop scrolling if you have 100+ saves"), a bold claim ("Your saved tab is lying to you"), a countdown ("3 saved reels that lied to me"), a POV, a "don't do X", or a guessing game ("Guess how many were worth doing").
+- **Open a loop and close it late.** Promise something specific in the `fx.hook` banner or the first line ("Number one is illegal") and pay it off in the second-last scene, marked `payoff`.
+- **Specific real numbers** beat vague words. Use only true ones.
+- **Ask for one action:** a comment ("Lock in your guess. Comment it.") or the link in bio. Never both in one reel.
+- **Rotate hook types** across the week; never the same hook style twice in a row.
 
 ## Rules (non-negotiable)
 

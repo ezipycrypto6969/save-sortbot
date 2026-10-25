@@ -1,0 +1,52 @@
+{
+  "id": "ad-c-pov",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.12,
+  "fx": {
+    "hook": "POV"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "POV: you finally",
+        "open your *saved reels*"
+      ],
+      "vo": "P O V. You finally open your saved reels."
+    },
+    {
+      "type": "quote",
+      "quote": "this is the trick",
+      "label": "SAVED REEL SAYS",
+      "note": "That's the whole caption.",
+      "stamp": "NO DETAILS",
+      "stampColor": "gate",
+      "vo": "This is the trick. That's it. That's the whole caption."
+    },
+    {
+      "type": "quote",
+      "quote": "Comment GUIDE and I'll DM you",
+      "label": "SAVED REEL SAYS",
+      "stamp": "GATED GUIDE",
+      "stampColor": "gate",
+      "vo": "Comment guide for the guide. Of course."
+    },
+    {
+      "type": "stat",
+      "value": 39,
+      "suffix": "%",
+      "label": "of my saves said\n*nothing*",
+      "color": "warn",
+      "vo": "39 percent of my saves said nothing at all."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "SaveSort finds the ones worth doing. Link in bio."
+    }
+  ],
+  "caption": ""
+}
