@@ -11,8 +11,8 @@ SITE_URL (optional) is put at the top of each description.
 """
 import datetime as dt, glob, json, os, re, subprocess, sys, urllib.parse, urllib.request
 
-CID = os.environ.get("YT_CLIENT_ID", "").strip()
-SECRET = os.environ.get("YT_CLIENT_SECRET", "").strip()
+CID = "".join(os.environ.get("YT_CLIENT_ID", "").split())
+SECRET = "".join(os.environ.get("YT_CLIENT_SECRET", "").split())
 REFRESH = "".join(os.environ.get("YT_REFRESH_TOKEN", "").split())
 DRY = os.environ.get("DRY_RUN", "").lower() == "true"
 SITE = os.environ.get("SITE_URL", "").strip()
@@ -32,9 +32,13 @@ def http(method, url, data=None, headers=None, raw=False):
         with urllib.request.urlopen(req, timeout=600) as r:
             return r if raw else json.loads(r.read() or b"{}")
     except urllib.error.HTTPError as e:
-        body = e.read().decode(errors="replace")
+        body = " ".join(e.read().decode(errors="replace").split())  # one line, so the run summary shows all of it
         hint = ""
-        if "invalid_grant" in body:
+        if "invalid_client" in body or "unauthorized_client" in body:
+            hint = (" -- Google doesn't recognise the client. Check YT_CLIENT_ID and YT_CLIENT_SECRET are the NEW client's"
+                    " ID and secret (same ones you put in the OAuth Playground), with no spaces, and make a fresh refresh"
+                    " token with that same client.")
+        elif "invalid_grant" in body:
             hint = (" -- The YouTube refresh token was revoked or expired. Make a new one in the OAuth Playground"
                     " and update the YT_REFRESH_TOKEN secret. (If the Google app is still in 'Testing', publish it"
                     " to 'In production' first, or the token dies after 7 days.)")
