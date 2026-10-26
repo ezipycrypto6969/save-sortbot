@@ -1,0 +1,63 @@
+{
+ "dropzone": {
+  "x": 20,
+  "y": 354.796875,
+  "w": 350,
+  "h": 462.953125
+ },
+ "report": {
+  "top": 5001.75,
+  "h": 7385
+ },
+ "pos": {
+  "stats": {
+   "x": 195,
+   "y": 164.03125
+  },
+  "topics": {
+   "x": 195,
+   "y": 553.171875
+  },
+  "go": {
+   "x": 124.9375,
+   "y": 864.171875
+  },
+  "warn": {
+   "x": 64.3984375,
+   "y": 904.171875
+  },
+  "gate": {
+   "x": 184.8125,
+   "y": 904.171875
+  },
+  "items": {
+   "x": 195,
+   "y": 4016.921875
+  }
+ },
+ "report_go": {
+  "top": 5001.75,
+  "h": 7267
+ },
+ "report_warn": {
+  "top": 5001.75,
+  "h": 2965
+ },
+ "report_gate": {
+  "top": 5001.75,
+  "h": 5289
+ },
+ "stats": [
+  "156 saves read",
+  "30 worth doing",
+  "65 need the video",
+  "10 be careful"
+ ],
+ "chips": [
+  "All",
+  "Worth doing",
+  "Needs the video",
+  "Be careful",
+  "Gated guides (22)"
+ ]
+}

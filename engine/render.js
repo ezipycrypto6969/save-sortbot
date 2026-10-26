@@ -11,6 +11,7 @@ const fs = require('fs'), path = require('path');
   const errs = []; p.on('pageerror', e => errs.push(e.message));
   await p.goto('file://' + path.join(__dirname, 'stage.html'));
   await p.evaluate(t => window.load(t), tl);
+  await p.waitForFunction(() => [...document.images].every(i => i.complete && i.naturalWidth > 0), null, { timeout: 60000 });
   await p.waitForTimeout(200);
   if (stills) {  // one still per scene for a quick visual check
     for (const [i, s] of tl.scenes.entries()) {

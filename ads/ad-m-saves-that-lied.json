@@ -1,0 +1,168 @@
+{
+  "id": "ad-m-saves-that-lied",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "10 OF MY SAVES WERE HYPE"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Your saved tab is\n*lying to you.*",
+      "mood": "shocked",
+      "vo": "Your saved tab is lying to you. Let me show you."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1000 a day dropshipping",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A thousand a day? That's the best case. Most new stores make way less."
+    },
+    {
+      "type": "react",
+      "quote": "Claude has a secret Founder Thinking Mode",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A secret AI mode? It doesn't exist. It's just a prompt."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you the steps",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment guide? The steps were never in the reel."
+    },
+    {
+      "type": "talk",
+      "text": "So how many\nof *yours* lie?",
+      "mood": "suspicious",
+      "vo": "So how many of your saves are like this? I checked mine."
+    },
+    {
+      "type": "screen",
+      "label": "MY REAL SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.2
+        }
+      ],
+      "zoom": {
+        "at": 0.15,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 saves. 10 flagged be careful. Only 30 actually worth doing."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Tap be careful, and every hype reel is in one list."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "payoff": true,
+      "vo": "Gated guides shows the 22 that wanted a comment before the info."
+    },
+    {
+      "type": "checks",
+      "heading": "Save money too",
+      "label": "BEFORE YOU BUY THE COURSE",
+      "items": [
+        "Check the claim",
+        "Look for real steps",
+        "Skip the hype",
+        "Do the 30 that work"
+      ],
+      "lastWarn": false,
+      "vo": "Check the claim. Look for real steps. Skip the hype. Do the ones that work."
+    },
+    {
+      "type": "talk",
+      "text": "Takes *2 minutes.*\nIt's free.",
+      "mood": "happy",
+      "vo": "It takes two minutes, it's free, and it runs on your phone."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and check yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": ""
+}
