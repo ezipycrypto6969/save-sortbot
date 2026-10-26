@@ -36,7 +36,11 @@ def speak(phonemes, voice="af_heart", speed=1.1):
     names = {i.name: i for i in sess.get_inputs()}
     tok_name = "input_ids" if "input_ids" in names else "tokens"
     toks = [VOCAB[c] for c in phonemes if c in VOCAB][:510]
-    style = voices[voice][len(toks) - 1]
+    # a voice can be a blend, e.g. "am_onyx*0.6+am_puck*0.4"
+    style = 0
+    for part in voice.split("+"):
+        name, _, w = part.partition("*")
+        style = style + voices[name.strip()][len(toks) - 1] * (float(w) if w else 1.0)
     spd_int = "int" in names["speed"].type
     feeds = {tok_name: np.array([[0, *toks, 0]], dtype=np.int64),
              "style": np.asarray(style, dtype=np.float32).reshape(1, -1),
@@ -45,3 +49,13 @@ def speak(phonemes, voice="af_heart", speed=1.1):
     idx = np.where(np.abs(audio) > 0.01)[0]
     if len(idx): audio = audio[max(0, idx[0] - 600): idx[-1] + 2400]
     return audio
+
+
+def pitch(audio, semitones):
+    """Shift pitch without changing speed (ffmpeg rubberband). Positive = higher, a bit cartoony."""
+    if not semitones: return audio
+    import subprocess
+    r = subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-",
+                        "-af", f"rubberband=pitch={2 ** (semitones / 12):.5f}", "-f", "f32le", "-"],
+                       input=audio.astype(np.float32).tobytes(), capture_output=True, check=True)
+    return np.frombuffer(r.stdout, dtype=np.float32).copy()

@@ -61,6 +61,7 @@ def main(spec_path, out_dir, stills=False):
     vo_track = []
     for sc in spec["scenes"]:
         audio = tts.speak(sc["_ph"], voice, sc.get("speed", spec.get("speed", 1.2))) if sc.get("vo") else np.zeros(0, np.float32)
+        if len(audio) and spec.get("pitch"): audio = tts.pitch(audio, spec["pitch"])
         vlen = len(audio) / tts.SR
         lead = 0.06  # fast pace: voice starts almost on the cut, short tail
         dur = max(sc.get("min", MIN[sc["type"]]), vlen + lead + 0.14)
