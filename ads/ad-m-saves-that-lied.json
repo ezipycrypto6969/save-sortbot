@@ -149,9 +149,9 @@
     },
     {
       "type": "talk",
-      "text": "Takes *2 minutes.*\nIt's free.",
+      "text": "Sorts in *seconds.*\nIt's free.",
       "mood": "happy",
-      "vo": "It takes two minutes, it's free, and it runs on your phone."
+      "vo": "It sorts in seconds, it's free, and it runs on your phone."
     },
     {
       "type": "end",
@@ -164,7 +164,5 @@
       }
     }
   ],
-  "caption": "",
-  "cover_offset_ms": 3332,
-  "duration": 35.208
+  "caption": ""
 }
