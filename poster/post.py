@@ -36,15 +36,32 @@ def ig_ready(src, dst):
                     "-movflags", "+faststart", dst], check=True)
 
 
+def head(url):
+    """(status, content-type) of a URL, as seen from the runner."""
+    r = subprocess.run(["curl", "-sIL", "--max-time", "30", "-o", "/dev/null", "-w", "%{http_code} %{content_type}", url],
+                       capture_output=True, text=True)
+    code, _, ctype = r.stdout.strip().partition(" ")
+    return code, ctype
+
+
 def public_url(path, name):
-    """Instagram fetches the video from a public link. The repo is private, so put the file on a short-lived
-    public file host (deleted automatically). VIDEO_BASE_URL overrides this if you host the media yourself."""
+    """Instagram fetches the video from a public link.
+    1. VIDEO_BASE_URL (repo variable) if you host the videos yourself.
+    2. GitHub Pages for this repo's "media" branch (works once the repo is public and Pages is on).
+    3. Otherwise a short-lived public file host (deleted automatically)."""
     base = os.environ.get("VIDEO_BASE_URL", "").strip()
     if base: return base.rstrip("/") + "/" + name
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if "/" in repo:
+        owner, rname = repo.split("/", 1)
+        url = f"https://{owner.lower()}.github.io/{rname}/{name}"
+        code, ctype = head(url)
+        print(f"GitHub Pages link {url}: {code} {ctype}")
+        if code == "200" and ctype.startswith("video/"): return url
     hosts = [
-        ["curl", "-sS", "--fail", "-F", "reqtype=fileupload", "-F", "time=24h", "-F", f"fileToUpload=@{path}",
+        ["curl", "-sS", "--fail", "--max-time", "240", "-F", f"file=@{path}", "https://tmpfiles.org/api/v1/upload"],
+        ["curl", "-sS", "--fail", "--max-time", "240", "-F", "reqtype=fileupload", "-F", "time=24h", "-F", f"fileToUpload=@{path}",
          "https://litterbox.catbox.moe/resources/internals/api.php"],
-        ["curl", "-sS", "--fail", "-F", f"file=@{path}", "https://tmpfiles.org/api/v1/upload"],
     ]
     for cmd in hosts:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
@@ -53,7 +70,10 @@ def public_url(path, name):
             if out.startswith("{"):  # tmpfiles.org answers with JSON; the direct-download link has /dl/
                 try: out = json.loads(out)["data"]["url"].replace("tmpfiles.org/", "tmpfiles.org/dl/", 1).replace("http://", "https://")
                 except Exception: continue
-            if out.startswith("https://"): return out
+            if out.startswith("https://"):
+                code, ctype = head(out)
+                print(f"File host link {out}: {code} {ctype}")
+                if code == "200": return out
         print(f"File host failed ({cmd[-1]}): {r.stderr.strip()[:200]} {out[:200]}")
     raise SystemExit("Couldn't put the video on a public link for Instagram. Try again later.")
 
@@ -102,7 +122,7 @@ def main():
         st = call("GET", f"{API}/{cid}", {"fields": "status_code,status", "access_token": TOKEN})
         if st.get("status_code") == "FINISHED": break
         if st.get("status_code") in ("ERROR", "EXPIRED"):
-            print(f"::error title=Instagram couldn't process the video::{st}")
+            print(f"::error title=Instagram couldn't process the video::{st} (video link: {video_url})")
             raise SystemExit(f"Processing failed: {st}")
         time.sleep(10)
     else:

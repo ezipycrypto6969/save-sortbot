@@ -18,7 +18,7 @@ PY
 done
 [ $missing = 0 ] || { echo "Render the missing reels first."; exit 1; }
 remote=$(git remote get-url origin)
-cd "$tmp" && git init -q -b media && git add -A
+cd "$tmp" && touch .nojekyll && git init -q -b media && git add -A
 git -c user.name="savesort-bot" -c user.email="savesort-bot@users.noreply.github.com" commit -q -m "Upcoming reels"
 git push -q -f "$remote" media
 echo "media branch now has $(ls *.mp4 | wc -l) reels"
