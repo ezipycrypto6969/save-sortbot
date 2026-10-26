@@ -3,7 +3,7 @@
   "post_at": "2026-10-28T19:30:00+08:00",
   "format": "tool",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "Stop paying for ad spy tools. Meta gives you this for free. 🔍\n\nMeta Ad Library shows every ad running on Facebook and Instagram.\n1. Search a competitor or keyword\n2. Pick your country\n3. Look for ads running for months: brands keep paying for what works\n4. Copy the idea, never the ad itself\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#metaads #marketing #smallbusiness #facebookads",
@@ -45,5 +45,6 @@
     }
   ],
   "cover_offset_ms": 3912,
-  "duration": 11.112
+  "duration": 11.112,
+  "pitch": 1.5
 }

@@ -3,7 +3,7 @@
   "post_at": "2026-10-30T19:30:00+08:00",
   "format": "scam-watch",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "\"This AI can clone any ecom store in minutes.\" 🚩\n\nCopying another brand's design, photos or product text can breach copyright and trademark law. Fast way to get your store shut down.\n\nUse AI to build YOUR store faster: your own name, your own photos, your own words.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#ecommerce #shopify #dropshipping #aitools",
@@ -46,5 +46,6 @@
     }
   ],
   "cover_offset_ms": 4247,
-  "duration": 11.281
+  "duration": 11.281,
+  "pitch": 1.5
 }

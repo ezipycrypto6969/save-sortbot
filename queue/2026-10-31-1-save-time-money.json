@@ -3,7 +3,7 @@
   "post_at": "2026-10-31T12:30:00+08:00",
   "format": "product",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "You saved it to \"do it later\". Later never came. 😅\n\nOnly 24 of my 156 saved reels were worth my time. SaveSort finds those, flags the hype before you waste money on it, and gives you one clear list.\n\nLess scrolling. More doing.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#productivity #savedreels #sidehustle #timemanagement",
@@ -58,5 +58,6 @@
   ],
   "cover_offset_ms": 3564,
   "duration": 14.526,
-  "yt_title": "Stop wasting your saved reels"
+  "yt_title": "Stop wasting your saved reels",
+  "pitch": 1.5
 }

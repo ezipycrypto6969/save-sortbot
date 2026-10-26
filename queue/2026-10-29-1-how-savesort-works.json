@@ -3,7 +3,7 @@
   "post_at": "2026-10-29T12:30:00+08:00",
   "format": "product",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "Your saved reels, sorted in 30 seconds ⏱️\n\n1. Instagram → Settings → Accounts Center → Download your information\n2. Tick only \"Saved\" and download\n3. Drop the zip into SaveSort\n4. Get one list: sorted by topic, what's worth doing, what's hype, what's hiding a guide\n\nFree, and it runs in your browser. Nothing gets uploaded.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#savedreels #productivity #instagramtips #aitools",
@@ -56,5 +56,6 @@
     }
   ],
   "cover_offset_ms": 4189,
-  "duration": 16.431
+  "duration": 16.431,
+  "pitch": 1.5
 }

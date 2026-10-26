@@ -100,7 +100,7 @@ ADS = {
 
 os.makedirs("ads", exist_ok=True)
 for aid, ad in ADS.items():
-    spec = {"id": aid, "format": "ad", "status": "draft", "voice": "af_heart", "speed": 1.22, "music": "sfx",
+    spec = {"id": aid, "format": "ad", "status": "draft", "voice": "am_onyx*0.55+am_puck*0.45", "pitch": 1.5, "speed": 1.22, "music": "sfx",
             "fx": ad["fx"], "scenes": ad["scenes"], "caption": ""}
     json.dump(spec, open(f"ads/{aid}.json", "w"), ensure_ascii=False, indent=2)
 print(len(ADS), "long ads written")

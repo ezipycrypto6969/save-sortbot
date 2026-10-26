@@ -2,7 +2,8 @@
   "id": "ad-n-ai-hustles",
   "format": "ad",
   "status": "draft",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
   "speed": 1.22,
   "music": "sfx",
   "fx": {
@@ -106,7 +107,5 @@
       }
     }
   ],
-  "caption": "",
-  "cover_offset_ms": 4313,
-  "duration": 40.941
+  "caption": ""
 }

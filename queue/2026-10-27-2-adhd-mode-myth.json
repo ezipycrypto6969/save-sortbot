@@ -3,7 +3,7 @@
   "post_at": "2026-10-27T19:30:00+08:00",
   "format": "scam-watch",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "There is no \"ADHD Executive Function Mode\" in Claude. 🚫\n\nBut the prompts in that reel actually work:\n1. Break a task into steps under 1 minute, give me only the first\n2. Act as my body double and check in every 10 minutes\n3. Turn this boring task into a quest with a reward\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#adhd #productivity #claudeai #aitips",
@@ -45,5 +45,6 @@
     }
   ],
   "cover_offset_ms": 3808,
-  "duration": 12.081
+  "duration": 12.081,
+  "pitch": 1.5
 }

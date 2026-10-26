@@ -3,7 +3,7 @@
   "post_at": "2026-10-28T12:30:00+08:00",
   "format": "breakdown",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "Tradies miss calls on the tools. Every missed call is a missed job. 📞\n\nThe side hustle: build an AI receptionist that answers 24/7 and books jobs.\n1. Pick one niche: tradies, dentists, salons, mechanics\n2. Collect their hours, services and FAQs\n3. Build it in Vapi or Retell\n4. Demo it with THEIR business details\n5. Free trial, then setup fee + monthly\n\nTell callers it's an AI and check call-recording rules.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#sidehustle #aiagents #smallbusiness #tradies",
@@ -51,5 +51,6 @@
     }
   ],
   "cover_offset_ms": 3667,
-  "duration": 16.254
+  "duration": 16.254,
+  "pitch": 1.5
 }

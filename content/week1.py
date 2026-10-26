@@ -108,6 +108,6 @@ for date, slot, slug, fmt, caption, scenes in posts:
     pid = f"{date}-{slot}-{slug}"
     scenes = [restyle(s) for s in scenes]
     spec = {"id": pid, "post_at": f"{date}T{'12:30' if slot == 1 else '19:30'}:00+08:00", "format": fmt, "status": "queued",
-            "voice": "af_heart", "speed": 1.22, "music": "sfx", "caption": caption, "scenes": scenes}
+            "voice": "am_onyx*0.55+am_puck*0.45", "pitch": 1.5, "speed": 1.22, "music": "sfx", "caption": caption, "scenes": scenes}
     json.dump(spec, open(f"queue/{pid}.json", "w"), ensure_ascii=False, indent=2)
 print(len(posts), "queue files written")

@@ -3,7 +3,7 @@
   "post_at": "2026-10-27T12:30:00+08:00",
   "format": "breakdown",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "\"Comment HARVEY for the repo\" 🙄 It's free and public. Here's what it is.\n\nHarvey is an open-source sales agent that runs on Claude Code on your own computer:\n1. Finds local businesses\n2. Checks their website and scores them\n3. Writes a personal cold email\n4. Waits for YOU to approve every send\n\nRuns on your Claude plan, no API bill. Cold email has rules in most countries: use business addresses, say who you are, include an unsubscribe link.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#claudeai #aiagents #sidehustle #coldemail",
@@ -53,5 +53,6 @@
     }
   ],
   "cover_offset_ms": 4114,
-  "duration": 14.407
+  "duration": 14.407,
+  "pitch": 1.5
 }

@@ -3,7 +3,7 @@
   "post_at": "2026-11-01T19:30:00+08:00",
   "format": "tool",
   "status": "queued",
-  "voice": "af_heart",
+  "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
   "caption": "A saved reel: \"someone open sourced a computer that works when the internet goes down.\" It's real. 🛰️\n\nProject N.O.M.A.D. is free and open source:\n• Offline Wikipedia\n• A local AI assistant\n• Offline maps\n• Khan Academy courses\n\nRuns on an old PC or mini PC. Storage is the main cost.\n\nFound in my own saved reels and sorted by SaveSort. Sort yours free, link in bio.\n\n#opensource #tech #offline #prepping",
@@ -43,5 +43,6 @@
   ],
   "cover_offset_ms": 4209,
   "duration": 12.339,
-  "yt_title": "An open-source computer that works offline?"
+  "yt_title": "An open-source computer that works offline?",
+  "pitch": 1.5
 }
