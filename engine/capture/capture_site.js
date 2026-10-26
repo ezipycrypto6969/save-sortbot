@@ -51,6 +51,18 @@ const fs = require('fs'), path = require('path');
     await p.waitForTimeout(250);
     meta['report_' + k] = await tall(`report-${k}.png`);
   }
+  // one tall image per topic (tap a topic bar in the "Topics" list)
+  await p.click('.chip[data-l="all"]'); await p.waitForTimeout(200);
+  meta.topics = {};
+  const bars = await p.evaluate(() => [...document.querySelectorAll('#r-topics .bar')].map(b => ({ t: b.dataset.t, name: b.querySelector('span').innerText })));
+  for (const bar of bars.filter(b => b.t !== 'all')) {
+    const top = await p.evaluate(() => document.getElementById('report').getBoundingClientRect().top + window.scrollY - 12);
+    const at = await p.evaluate(({ t, top }) => { const r = document.querySelector(`#r-topics .bar[data-t="${t}"]`).getBoundingClientRect(); return { x: (r.x + r.width / 2) * 2, y: (r.y + window.scrollY - top + r.height / 2) * 2 }; }, { t: bar.t, top });
+    await p.click(`#r-topics .bar[data-t="${bar.t}"]`); await p.waitForTimeout(200);
+    const r = await tall(`topic-${bar.t}.png`);
+    meta.topics[bar.t] = { name: bar.name, tap: at, h: r.h };
+    await p.click('#r-topics .bar[data-t="all"]'); await p.waitForTimeout(150);
+  }
   // stats numbers for the narration
   meta.stats = await p.evaluate(() => [...document.querySelectorAll('#r-stats .rstat')].map(e => e.innerText.replace(/\n/g, ' ')));
   meta.chips = await p.evaluate(() => [...document.querySelectorAll('#r-filters .chip')].map(e => e.innerText));

@@ -1,0 +1,123 @@
+{
+  "id": "ad-q-comment-guide",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE LAST ONE IS THE WORST"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "22 of my saves\nwanted a *comment.*",
+      "mood": "shocked",
+      "vo": "22 of my saved reels wouldn't tell me anything unless I commented."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I dropped my saves into SaveSort."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Tap gated guides, and there they all are. Let's open a few."
+    },
+    {
+      "type": "react",
+      "quote": "Comment PHONE and I'll send the setup",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment phone? It connects Claude Code to an AI phone service, so it rings you. Free plan, then about 9 cents a minute."
+    },
+    {
+      "type": "react",
+      "quote": "Comment DESIGN for my 3 skills",
+      "mood": "happy",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment design? Three design skills for Claude. Free, and public anyway."
+    },
+    {
+      "type": "react",
+      "quote": "Comment SCALE to grow your business",
+      "mood": "sad",
+      "verdict": "NO DETAILS",
+      "verdictColor": "gate",
+      "vo": "Comment scale? No tip at all. Just a sales call waiting to happen.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Plot twist:\n*it was free.*",
+      "mood": "smug",
+      "vo": "Plot twist. Most of it was free all along. No comment needed."
+    },
+    {
+      "type": "checks",
+      "heading": "Before you comment",
+      "label": "30 SECOND CHECK",
+      "items": [
+        "Steps in the caption?",
+        "Search the tool's name",
+        "Is it free already?",
+        "Then decide"
+      ],
+      "lastWarn": false,
+      "vo": "Before you comment, check the caption, search the tool's name, see if it's free. Then decide."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find your gated guides.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": ""
+}

@@ -1,0 +1,110 @@
+{
+  "id": "ad-n-ai-hustles",
+  "format": "ad",
+  "status": "draft",
+  "voice": "af_heart",
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WAIT FOR THE LAST ONE"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "My saves said I'd be",
+        "*rich by Tuesday.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "My saved reels promised I'd be rich by Tuesday. It's Wednesday."
+    },
+    {
+      "type": "talk",
+      "text": "So I let SaveSort\n*fact check them.*",
+      "mood": "suspicious",
+      "vo": "So I dropped them into SaveSort to see which AI hustles are real."
+    },
+    {
+      "type": "screen",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Tap AI and tools. 33 saves. Let's check four of them."
+    },
+    {
+      "type": "react",
+      "quote": "Build an AI receptionist and sell it to local businesses",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "AI receptionist? Real. Tools like Vapi run about 30 cents a minute all in. Test it hard before you sell it."
+    },
+    {
+      "type": "react",
+      "quote": "A free AI agent that finds you clients",
+      "mood": "shocked",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "A free AI that finds clients? Real and open source. It runs on Claude Pro, 20 dollars a month. You approve every email."
+    },
+    {
+      "type": "react",
+      "quote": "Build any app with one prompt",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Any app in one prompt? Half true. Lovable's free plan gives you 5 credits a day. Big apps eat them fast."
+    },
+    {
+      "type": "react",
+      "quote": "Run 100 AI agents at once",
+      "mood": "smug",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "100 agents at once? You'll hit your limit before lunch. 3 to 5 is the useful number.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "2 real. 2 hype.\n*Still not rich.*",
+      "mood": "sad",
+      "vo": "Two real, two hype. Still not rich. But now I know where to start."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and fact check your saves free.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": ""
+}

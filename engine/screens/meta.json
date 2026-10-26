@@ -47,6 +47,88 @@
   "top": 5001.75,
   "h": 5289
  },
+ "topics": {
+  "OTHER": {
+   "name": "Everything else",
+   "tap": {
+    "x": 390,
+    "y": 776.34375
+   },
+   "h": 6522
+  },
+  "AI": {
+   "name": "AI & tools",
+   "tap": {
+    "x": 390,
+    "y": 864.34375
+   },
+   "h": 7074
+  },
+  "MKT": {
+   "name": "Marketing & ads",
+   "tap": {
+    "x": 390,
+    "y": 952.34375
+   },
+   "h": 3742
+  },
+  "LEARN": {
+   "name": "Learning",
+   "tap": {
+    "x": 390,
+    "y": 1040.34375
+   },
+   "h": 3217
+  },
+  "MIND": {
+   "name": "Mindset & motivation",
+   "tap": {
+    "x": 390,
+    "y": 1128.34375
+   },
+   "h": 2821
+  },
+  "BIZ": {
+   "name": "Business & side hustles",
+   "tap": {
+    "x": 390,
+    "y": 1216.34375
+   },
+   "h": 2715
+  },
+  "LIFE": {
+   "name": "Health & lifestyle",
+   "tap": {
+    "x": 390,
+    "y": 1304.34375
+   },
+   "h": 2459
+  },
+  "ECOM": {
+   "name": "Ecommerce",
+   "tap": {
+    "x": 390,
+    "y": 1392.34375
+   },
+   "h": 2042
+  },
+  "TECH": {
+   "name": "Tech & privacy",
+   "tap": {
+    "x": 390,
+    "y": 1480.34375
+   },
+   "h": 2391
+  },
+  "MONEY": {
+   "name": "Money & finance",
+   "tap": {
+    "x": 390,
+    "y": 1568.34375
+   },
+   "h": 2026
+  }
+ },
  "stats": [
   "156 saves read",
   "30 worth doing",
