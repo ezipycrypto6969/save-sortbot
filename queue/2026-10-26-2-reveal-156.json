@@ -58,5 +58,11 @@
     }
   ],
   "cover_offset_ms": 3146,
-  "duration": 10.684
+  "duration": 10.684,
+  "youtube": {
+    "status": "posted",
+    "video_id": "BnIq9gr963o",
+    "url": "https://youtube.com/shorts/BnIq9gr963o",
+    "posted_at": "2026-10-26T10:09:48+00:00"
+  }
 }
