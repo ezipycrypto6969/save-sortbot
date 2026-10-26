@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import g2p, tts, music  # noqa: E402
 
-MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6}
+MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6, "screen": 2.6, "path": 3.0}
 
 
 def caption_chunks(lines, max_words=3):
@@ -72,6 +72,8 @@ def main(spec_path, out_dir, stills=False):
             sc["stampAt"] = round(min(dur - 0.4, sc.get("stampAt", max(0.6, vlen * 0.55))), 3); hits.append(t + sc["stampAt"])
         if sc["type"] == "hook": hits.append(t + 0.12 + 0.38 * (len(sc["lines"]) - 1))
         if sc["type"] == "count": hits.append(t)
+        if sc["type"] == "screen": ticks += [t + a["at"] * dur for a in sc.get("taps", [])]; hits += [t + sc["drop"]["at"] * dur + 0.7] if sc.get("drop") else []
+        if sc["type"] == "path": ticks += [t + (k + 0.62) * dur / len(sc["screens"]) for k in range(len(sc["screens"]))]
         if sc["type"] == "react" and sc.get("verdict"):
             sc["verdictAt"] = round(min(dur - 0.4, sc.get("verdictAt", max(0.7, vlen * 0.6))), 3); hits.append(t + sc["verdictAt"])
         if sc.get("payoff") and "hookUntil" not in spec.get("fx", {}): spec.setdefault("fx", {})["hookUntil"] = round(t, 3)
@@ -82,7 +84,7 @@ def main(spec_path, out_dir, stills=False):
         t += dur
         sc.pop("_ph", None)
     total = round(t, 3)
-    if total > 60: print(f"warning: reel is {total:.1f}s; aim for 15–45s")
+    if total > 90: print(f"warning: reel is {total:.1f}s; aim for 15–60s")
     fx = spec.get("fx", {})
     if "hookUntil" not in fx: fx["hookUntil"] = spec["scenes"][-1]["start"]  # banner disappears at the end card
     tl = {"dur": total, "scenes": spec["scenes"], "fx": fx, "caps": caption_chunks(lines), "mascot": spec.get("mascot", True)}
@@ -116,8 +118,8 @@ def main(spec_path, out_dir, stills=False):
     wavfile.write(wav, SR, (mix * 32767).astype(np.int16))
     reel = os.path.join(out_dir, "reel.mp4")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", silent, "-i", wav, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                    "-c:a", "aac", "-b:a", "192k", "-af", "loudnorm=I=-14:TP=-1.0:LRA=9", "-ar", "48000", "-shortest",
-                    "-movflags", "+faststart", reel], check=True)
+                    "-c:a", "aac", "-b:a", "128k", "-ac", "2", "-af", "loudnorm=I=-14:TP=-1.0:LRA=9", "-ar", "48000", "-shortest",
+                    "-use_editlist", "0", "-movflags", "+faststart", reel], check=True)
     cover_t = spec["scenes"][1]["start"] + 0.9 if len(spec["scenes"]) > 1 else 1.0
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(cover_t), "-i", silent, "-frames:v", "1", "-q:v", "3", os.path.join(out_dir, "cover.jpg")], check=True)
     with open(os.path.join(out_dir, "captions.srt"), "w") as f:

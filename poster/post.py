@@ -27,6 +27,15 @@ def call(method, url, params=None, data=None, headers=None):
         raise SystemExit(msg)
 
 
+def ig_ready(src, dst):
+    """Re-mux to Instagram's Reels spec: AAC 128 kbps / 48 kHz, no MP4 edit lists, moov atom first."""
+    if subprocess.run(["which", "ffmpeg"], capture_output=True).returncode:
+        subprocess.run(["sudo", "apt-get", "install", "-y", "-qq", "ffmpeg"], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-map", "0:v:0", "-map", "0:a:0", "-c:v", "copy",
+                    "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-ac", "2", "-use_editlist", "0",
+                    "-movflags", "+faststart", dst], check=True)
+
+
 def public_url(path, name):
     """Instagram fetches the video from a public link. The repo is private, so put the file on a short-lived
     public file host (deleted automatically). VIDEO_BASE_URL overrides this if you host the media yourself."""
@@ -81,7 +90,8 @@ def main():
     if DRY:
         print("DRY_RUN: would post with caption:\n" + spec["caption"]); return
     # 1. give Instagram a public link to the video (resumable upload needs Facebook Login, so we use video_url)
-    video_url = public_url("reel.mp4", vid)
+    ig_ready("reel.mp4", "ig.mp4")
+    video_url = public_url("ig.mp4", vid)
     print(f"Video is at {video_url}")
     c = call("POST", f"{API}/{IG_USER}/media", {
         "media_type": "REELS", "video_url": video_url, "caption": spec["caption"],
