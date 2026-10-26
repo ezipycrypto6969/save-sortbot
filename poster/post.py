@@ -27,6 +27,28 @@ def call(method, url, params=None, data=None, headers=None):
         raise SystemExit(msg)
 
 
+def public_url(path, name):
+    """Instagram fetches the video from a public link. The repo is private, so put the file on a short-lived
+    public file host (deleted automatically). VIDEO_BASE_URL overrides this if you host the media yourself."""
+    base = os.environ.get("VIDEO_BASE_URL", "").strip()
+    if base: return base.rstrip("/") + "/" + name
+    hosts = [
+        ["curl", "-sS", "--fail", "-F", "reqtype=fileupload", "-F", "time=24h", "-F", f"fileToUpload=@{path}",
+         "https://litterbox.catbox.moe/resources/internals/api.php"],
+        ["curl", "-sS", "--fail", "-F", f"file=@{path}", "https://tmpfiles.org/api/v1/upload"],
+    ]
+    for cmd in hosts:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        out = r.stdout.strip()
+        if r.returncode == 0 and out:
+            if out.startswith("{"):  # tmpfiles.org answers with JSON; the direct-download link has /dl/
+                try: out = json.loads(out)["data"]["url"].replace("tmpfiles.org/", "tmpfiles.org/dl/", 1).replace("http://", "https://")
+                except Exception: continue
+            if out.startswith("https://"): return out
+        print(f"File host failed ({cmd[-1]}): {r.stderr.strip()[:200]} {out[:200]}")
+    raise SystemExit("Couldn't put the video on a public link for Instagram. Try again later.")
+
+
 def due_item():
     now = dt.datetime.now(dt.timezone.utc)
     items = []
@@ -58,19 +80,20 @@ def main():
     print(f"Posting {spec['id']} ({size/1e6:.1f} MB)")
     if DRY:
         print("DRY_RUN: would post with caption:\n" + spec["caption"]); return
-    # 1. create a resumable Reels container
+    # 1. give Instagram a public link to the video (resumable upload needs Facebook Login, so we use video_url)
+    video_url = public_url("reel.mp4", vid)
+    print(f"Video is at {video_url}")
     c = call("POST", f"{API}/{IG_USER}/media", {
-        "media_type": "REELS", "upload_type": "resumable", "caption": spec["caption"],
+        "media_type": "REELS", "video_url": video_url, "caption": spec["caption"],
         "share_to_feed": "true", "thumb_offset": spec.get("cover_offset_ms", 1500), "access_token": TOKEN})
-    cid, uri = c["id"], c["uri"]
-    # 2. upload the video bytes
-    with open("reel.mp4", "rb") as f:
-        call("POST", uri, data=f.read(), headers={"Authorization": f"OAuth {TOKEN}", "offset": "0", "file_size": str(size)})
+    cid = c["id"]
     # 3. wait for Instagram to process it
     for _ in range(60):
         st = call("GET", f"{API}/{cid}", {"fields": "status_code,status", "access_token": TOKEN})
         if st.get("status_code") == "FINISHED": break
-        if st.get("status_code") in ("ERROR", "EXPIRED"): raise SystemExit(f"Processing failed: {st}")
+        if st.get("status_code") in ("ERROR", "EXPIRED"):
+            print(f"::error title=Instagram couldn't process the video::{st}")
+            raise SystemExit(f"Processing failed: {st}")
         time.sleep(10)
     else:
         raise SystemExit("Timed out waiting for Instagram to process the video")
