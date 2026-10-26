@@ -264,5 +264,7 @@
       }
     }
   ],
-  "caption": ""
+  "caption": "",
+  "cover_offset_ms": 3570,
+  "duration": 48.888
 }
