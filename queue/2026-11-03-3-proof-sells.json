@@ -1,0 +1,127 @@
+{
+  "id": "2026-11-03-3-proof-sells",
+  "post_at": "2026-11-03T19:30:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "If you sell anything, you need proof. Here's how to get it",
+  "fx": {
+    "hook": "#1 TAKES 10 SECONDS"
+  },
+  "caption": "If you sell anything, you need proof.\n\nA saved reel said growth needs marketing, proof and branding together. Proof is the one people skip.\n1. Ask every customer for a review, with a direct link\n2. Post a before and after or a result every week\n3. Reply to every review\n\nNever buy or fake reviews. Google removes fake ones.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#smallbusiness #marketing #sidehustle #savedreels",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "If you sell anything,",
+        "*you need proof.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "If you sell anything, you need proof. Here's how to get it."
+    },
+    {
+      "type": "quote",
+      "quote": "Marketing, proof and branding. You need all three.",
+      "label": "SAVED REEL SAYS",
+      "note": "Proof is the one people skip",
+      "vo": "A saved reel said you need marketing, proof and branding. Proof gets skipped."
+    },
+    {
+      "type": "screen",
+      "label": "TAP MARKETING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MKT.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 952.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort sorted it into marketing. Three ways to get proof."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "*Reply* to every\nreview",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 3. Reply to every review. Even the grumpy ones. Especially those."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "Post a *before and\nafter* weekly",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 2. Post a before and after, or a real result, every week."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "Ask for a review.\n*Send the link.*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 1. After every job, ask for a review and send the direct link.",
+      "payoff": true
+    },
+    {
+      "type": "react",
+      "quote": "Buy 500 five star reviews",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Buying reviews? No. Google removes fake ones, and customers can tell."
+    },
+    {
+      "type": "talk",
+      "text": "Proof turns views\n*into customers.*",
+      "mood": "happy",
+      "vo": "Proof is what turns views into paying customers."
+    },
+    {
+      "type": "talk",
+      "text": "Ask today.\n*Takes 10 seconds.*",
+      "mood": "smug",
+      "vo": "Ask your last customer today. It takes 10 seconds."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

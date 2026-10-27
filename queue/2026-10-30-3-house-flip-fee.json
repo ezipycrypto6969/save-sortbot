@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-30-3-house-flip-fee",
+  "post_at": "2026-10-30T19:30:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "The house side hustle that can land you in legal trouble",
+  "fx": {
+    "hook": "THE REEL ADMITS IT"
+  },
+  "caption": "This side hustle needs a licence in a lot of places.\n\nThe saved reel: find home sellers, help them skip agent fees, take a cut.\nThe catch: the reel itself calls it a legal grey area.\nIn many places, taking a fee for selling someone's home needs a real estate licence.\n\nLegit versions: listing photos, video tours or listing copy for private sellers.\nCheck the rules where you live.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#sidehustle #realestate #savedreels #scamwatch",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "This side hustle",
+        "*needs a licence.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "This side hustle from my saves needs a licence in a lot of places."
+    },
+    {
+      "type": "quote",
+      "quote": "Help home sellers skip the agent and take a cut",
+      "label": "SAVED REEL SAYS",
+      "note": "Sounds easy",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "The pitch. Find home sellers, help them skip the agent, take a cut."
+    },
+    {
+      "type": "talk",
+      "text": "The reel says\n*grey area.* Hmm.",
+      "mood": "suspicious",
+      "vo": "Then the reel calls it a legal grey area. Mate. That's the warning."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort flagged it be careful. Here's why."
+    },
+    {
+      "type": "title",
+      "text": "Selling homes for a fee?\n*Often needs a licence.*",
+      "bg": "ink",
+      "vo": "In many places, taking a fee to sell someone's home needs a real estate licence.",
+      "payoff": true
+    },
+    {
+      "type": "checks",
+      "heading": "The risk",
+      "label": "IF YOU DO IT ANYWAY",
+      "items": [
+        "Fines",
+        "Lost fees",
+        "Banned from the industry",
+        "Angry sellers"
+      ],
+      "lastWarn": true,
+      "vo": "Get it wrong and you risk fines, losing the fee, and a ban."
+    },
+    {
+      "type": "steps",
+      "heading": "Legit versions",
+      "items": [
+        "Listing photos",
+        "Video tours",
+        "Listing copy",
+        "For private sellers"
+      ],
+      "vo": "Legit versions? Listing photos, video tours or listing copy for private sellers."
+    },
+    {
+      "type": "talk",
+      "text": "Check the rules\n*where you live.*",
+      "mood": "happy",
+      "vo": "Before any money changes hands, check the rules where you live."
+    },
+    {
+      "type": "talk",
+      "text": "Grey area means\n*not for me.*",
+      "mood": "smug",
+      "vo": "When a reel says grey area, I hear: not for me."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the hype in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "2026-10-31-2-one-line-offer",
+  "post_at": "2026-10-31T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "If nobody buys your offer, try this one sentence",
+  "fx": {
+    "hook": "THE FORMULA IS AT THE END"
+  },
+  "caption": "If nobody buys your offer, it's probably too complicated.\n\nWrite it in one sentence:\n\"I'll [result] for [who] in [time] for [price].\"\nAdd something that removes the risk.\nGive one clear next step.\nCut everything else.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#sidehustle #marketing #smallbusiness #savedreels",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Nobody buying",
+        "*your offer?*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "If nobody is buying your offer, it's probably way too complicated."
+    },
+    {
+      "type": "quote",
+      "quote": "Make your offer obvious, simple and easy to say yes to",
+      "label": "SAVED REEL SAYS",
+      "note": "Fair. But how?",
+      "vo": "One of my saves said make it obvious and simple. It didn't say how."
+    },
+    {
+      "type": "screen",
+      "label": "TAP MARKETING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MKT.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 952.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort found it in my marketing saves. Here's the how."
+    },
+    {
+      "type": "react",
+      "quote": "We offer holistic growth solutions",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Holistic growth solutions? Nobody knows what that is. Including you."
+    },
+    {
+      "type": "talk",
+      "text": "Here's the\n*sentence.*",
+      "mood": "happy",
+      "vo": "Here's the sentence. Fill in the blanks."
+    },
+    {
+      "type": "title",
+      "text": "I'll *[result]* for [who]\nin [time] for [price].",
+      "bg": "cobalt",
+      "vo": "I'll get this result, for these people, in this time, for this price.",
+      "payoff": true
+    },
+    {
+      "type": "title",
+      "text": "Reply *YES*\nto book a call.",
+      "bg": "paper",
+      "vo": "Then one next step. Reply yes to book a call. That's it."
+    },
+    {
+      "type": "steps",
+      "heading": "Fix it in 4",
+      "items": [
+        "One sentence",
+        "Remove the risk",
+        "One next step",
+        "Cut the rest"
+      ],
+      "vo": "Fix it in four. One sentence, remove the risk, one next step, cut the rest."
+    },
+    {
+      "type": "talk",
+      "text": "Short wins.\n*Every time.*",
+      "mood": "smug",
+      "vo": "Short beats clever. Every time. Try it on your next pitch today."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 4358,
+  "duration": 31.07
+}

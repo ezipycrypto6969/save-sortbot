@@ -1,0 +1,130 @@
+{
+  "id": "2026-11-02-1-phone-free-business",
+  "post_at": "2026-11-02T03:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "The next good small business gets people off their phones",
+  "fx": {
+    "hook": "#1 COSTS ALMOST NOTHING"
+  },
+  "caption": "The next good small business gets people off their phones.\n\nA saved reel said businesses that get people present will be worth a lot. Ideas that cost little to start:\n1. A phone-free run or walk club\n2. Trivia or board game nights at a cafe\n3. Hands-on workshops: pottery, cooking, woodwork\n\nStart with one event and charge per ticket.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#sidehustle #smallbusiness #community #savedreels",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "The next business:",
+        "*phones away.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "The next good small business gets people off their phones."
+    },
+    {
+      "type": "quote",
+      "quote": "Businesses that get people off their phones will be worth a lot",
+      "label": "SAVED REEL SAYS",
+      "note": "Said on a phone. In a reel.",
+      "vo": "A saved reel said this. On a phone. In a reel. Ironic."
+    },
+    {
+      "type": "screen",
+      "label": "TAP SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort filed it under business and side hustles. Here are three."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Hands-on *workshops*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 3. Hands on workshops. Pottery, cooking, woodwork. People pay to make things."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "Trivia or *board game\nnights*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 2. Trivia or board game nights. Ask a quiet cafe for a slow weeknight."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "A phone-free\n*run club*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 1. A phone free run or walk club. Start cost? Almost nothing.",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Start small",
+      "items": [
+        "One event",
+        "One social page",
+        "Charge per ticket",
+        "Repeat what works"
+      ],
+      "vo": "Start small. One event, one social page, charge per ticket. Repeat what works."
+    },
+    {
+      "type": "talk",
+      "text": "Ironically, you\n*market it online.*",
+      "mood": "smug",
+      "vo": "Yes, you'll still market it online. Ironic. Do it anyway."
+    },
+    {
+      "type": "talk",
+      "text": "People miss\n*real people.*",
+      "mood": "happy",
+      "vo": "People miss real people. That's the whole business."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the ideas in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

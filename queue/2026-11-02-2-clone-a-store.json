@@ -1,0 +1,147 @@
+{
+  "id": "2026-11-02-2-clone-a-store",
+  "post_at": "2026-11-02T07:00:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Don't use AI to clone someone else's online store",
+  "fx": {
+    "hook": "THE LAST STEP IS THE PROBLEM"
+  },
+  "caption": "Don't clone someone else's store.\n\nA saved reel (a sponsored post) said AI can clone any online store in minutes.\nAI store builders are real and handy.\nBut copying another brand's photos, text or design can breach copyright and trademark.\n\nDo this instead: study what works, then make your own photos, copy and name.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#ecommerce #shopify #aitools #scamwatch",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Don't clone",
+        "*someone's store.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Don't use AI to clone someone else's online store."
+    },
+    {
+      "type": "quote",
+      "quote": "AI clones any ecom store in minutes",
+      "label": "SAVED REEL SAYS",
+      "note": "Sponsored post",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "A sponsored reel in my saves said AI can clone any store in minutes."
+    },
+    {
+      "type": "screen",
+      "label": "TAP ECOMMERCE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-ECOM.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1392.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort put it with my online store saves. Let's split it in two."
+    },
+    {
+      "type": "react",
+      "quote": "AI builds your store from a description",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "AI store builders? Real and handy. Describe what you sell, it drafts the store."
+    },
+    {
+      "type": "react",
+      "quote": "Copy their photos, text and design",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Copying their photos, text or design? That can breach copyright and trademark.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Their photos are\n*not your photos.*",
+      "mood": "smug",
+      "vo": "Their photos are not your photos. Shocking, I know."
+    },
+    {
+      "type": "steps",
+      "heading": "Do this instead",
+      "items": [
+        "Study what sells",
+        "Shoot your own photos",
+        "Write your own copy",
+        "Pick your own name"
+      ],
+      "vo": "Instead, study what sells. Then your own photos, your own words, your own name."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort puts reels like this in be careful, so you think twice."
+    },
+    {
+      "type": "talk",
+      "text": "Original is\n*cheaper than lawyers.*",
+      "mood": "happy",
+      "vo": "Original is cheaper than lawyers."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the hype in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

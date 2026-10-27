@@ -1,0 +1,135 @@
+{
+  "id": "2026-10-30-2-ai-tutor",
+  "post_at": "2026-10-30T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Stop asking AI for answers. Make it your tutor",
+  "fx": {
+    "hook": "#1 IS THE ONE THAT WORKS"
+  },
+  "caption": "Stop asking AI for the answers.\n\nA saved reel said AI makes you a better learner. Only if you set it up like a tutor:\n1. \"Don't give me answers. Ask me one question at a time.\"\n2. \"Push back when I'm wrong.\"\n3. \"Quiz me at the end and tell me my weakest area.\"\n\nWorks on the free Claude plan.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#aitools #claude #productivity #savedreels #learning",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Stop asking AI",
+        "for *the answers.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "Stop asking AI for the answers. You're not learning anything."
+    },
+    {
+      "type": "talk",
+      "text": "My saves had a\n*better idea.*",
+      "mood": "suspicious",
+      "vo": "One of my saved reels had a better idea. Make it your tutor."
+    },
+    {
+      "type": "screen",
+      "label": "TAP LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort put it in my learning saves. Here's the setup."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "\"Don't give me\n*the answers.*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 3. Tell it: don't give me answers. Ask me one question at a time."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "\"Push back when\n*I'm wrong.*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 2. Tell it to push back when you're wrong. It stings a bit."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "\"Quiz me. Find my\n*weakest area.*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 1. At the end, ask it to quiz you and name your weakest area.",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Use it on",
+      "items": [
+        "Copywriting",
+        "Running ads",
+        "Basic coding",
+        "Anything you'll sell"
+      ],
+      "vo": "Use it on skills people pay for. Copywriting, ads, basic coding."
+    },
+    {
+      "type": "stat",
+      "value": 0,
+      "prefix": "$",
+      "label": "on the free Claude plan",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Cost? Nothing. It works on the free Claude plan."
+    },
+    {
+      "type": "talk",
+      "text": "Annoying?\n*Yes. Works?* Yes.",
+      "mood": "smug",
+      "vo": "Is it annoying? Yes. Do you actually remember it? Also yes."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

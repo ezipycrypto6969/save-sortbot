@@ -1,0 +1,129 @@
+{
+  "id": "2026-10-31-3-clean-your-data",
+  "post_at": "2026-10-31T19:30:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Google your own name. Then do these 3 free things",
+  "fx": {
+    "hook": "#1 IS BUILT INTO GOOGLE"
+  },
+  "caption": "POV: you Google your own name.\n\nThree free fixes from a saved reel:\n1. Have I Been Pwned: check if your email was in a data breach, then change those passwords\n2. JustDeleteMe: direct links to delete old accounts\n3. Google's Results about you: ask Google to remove search results showing your phone, address or email (available in many countries)\n\nAsk Claude to draft the deletion requests for you.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#privacy #cybersecurity #techtips #savedreels",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "POV: you Google",
+        "*your own name.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "POV. You Google your own name, and your phone number pops up."
+    },
+    {
+      "type": "talk",
+      "text": "My saves had\n*the fix.* Free.",
+      "mood": "happy",
+      "vo": "A saved reel had the fix. And it's all free."
+    },
+    {
+      "type": "screen",
+      "label": "TAP TECH & PRIVACY",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-TECH.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1480.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort sorted it into tech and privacy. Here's the tool list."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Have I Been Pwned:\n*breached emails*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      },
+      "vo": "Number 3. Have I Been Pwned. Type your email, see which breaches it was in."
+    },
+    {
+      "type": "talk",
+      "text": "Then change\n*those passwords.*",
+      "mood": "smug",
+      "vo": "Then change those passwords. Yes, all of them. Use a password manager."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "JustDeleteMe:\n*kill old accounts*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 2. Just Delete Me. Direct links to delete old accounts you forgot."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "Google's *Results\nabout you*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 1. Google's results about you. Ask Google to remove results showing your phone or address.",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Let AI do the boring bit",
+      "items": [
+        "List old accounts",
+        "Ask Claude for steps",
+        "Draft the requests",
+        "Send them"
+      ],
+      "vo": "Then ask Claude to draft the deletion requests. It's good at boring letters."
+    },
+    {
+      "type": "talk",
+      "text": "Less spam.\n*Fewer scams.*",
+      "mood": "happy",
+      "vo": "Less spam, fewer scam calls, and less of you floating around online."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

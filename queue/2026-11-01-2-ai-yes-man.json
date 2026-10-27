@@ -1,0 +1,128 @@
+{
+  "id": "2026-11-01-2-ai-yes-man",
+  "post_at": "2026-11-01T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "3 prompts that stop AI agreeing with everything you say",
+  "fx": {
+    "hook": "#1 HURTS A BIT"
+  },
+  "caption": "3 prompts that stop AI agreeing with everything.\n\n1. \"Argue against my plan as hard as you can.\"\n2. \"Rate this 1 to 10 and list what would make it a 10.\"\n3. \"What would a sceptical customer say?\"\n\nCatch bad ideas before a customer does.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#aitools #claude #productivity #savedreels #business",
+  "scenes": [
+    {
+      "type": "count",
+      "n": 3,
+      "label": "prompts that make\nAI *disagree with you*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "3 prompts that stop AI agreeing with everything you say."
+    },
+    {
+      "type": "quote",
+      "quote": "Stop letting AI be your yes-man",
+      "label": "SAVED REEL SAYS",
+      "note": "No details in the caption",
+      "vo": "A saved reel said stop letting AI be a yes man. It just didn't say how."
+    },
+    {
+      "type": "screen",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "It was hiding in my AI saves. SaveSort found it. Here's how."
+    },
+    {
+      "type": "talk",
+      "text": "Great idea!\n*Says AI. Always.*",
+      "mood": "smug",
+      "vo": "Every idea is a great idea, says AI. Every single time."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "\"Argue against\n*my plan.*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      },
+      "vo": "Number 3. Argue against my plan as hard as you can."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "\"Rate it 1 to 10.\n*What makes it 10?*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 2. Rate this 1 to 10, and list what would make it a 10."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "\"What would a\n*sceptical customer* say?\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 1. What would a sceptical customer say? That one hurts.",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Use it before",
+      "items": [
+        "You quit your job",
+        "You buy the course",
+        "You pitch a client",
+        "You spend on ads"
+      ],
+      "vo": "Use it before you buy the course, pitch a client, or spend on ads."
+    },
+    {
+      "type": "talk",
+      "text": "Better it hurts\n*here than later.*",
+      "mood": "sad",
+      "vo": "Better it hurts here than in front of a real customer."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "id": "2026-10-31-1-guess-30",
+  "post_at": "2026-10-31T03:00:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "I saved 156 reels. Guess how many were worth doing",
+  "fx": {
+    "hook": "GUESS BEFORE THE END"
+  },
+  "caption": "I saved 156 reels. Guess how many were actually worth doing.\n\nSaveSort read every one:\n30 worth doing\n65 said nothing without the video\n10 flagged be careful\n22 wanted a comment first\n\nHow: download your Instagram data, tick Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "I saved 156 reels.",
+        "*Guess how many* were useful."
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "I saved 156 reels. Guess how many were worth doing."
+    },
+    {
+      "type": "talk",
+      "text": "Lock in your\n*guess.*",
+      "mood": "happy",
+      "vo": "Lock in your guess. No changing it later."
+    },
+    {
+      "type": "title",
+      "text": "Download your data.\nTick Saved.\n*Drop the zip in.*",
+      "bg": "paper",
+      "vo": "I downloaded my Instagram data, ticked Saved, and dropped the zip into SaveSort."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "It runs in your browser. Nothing gets uploaded anywhere."
+    },
+    {
+      "type": "talk",
+      "text": "Drumroll\n*please.*",
+      "mood": "shocked",
+      "vo": "It read every single caption in seconds. Drumroll please."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. That's it. Out of 156.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing and all 30 are in one list. My actual to do list."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Tap be careful. 10 of them were hype. Bye."
+    },
+    {
+      "type": "talk",
+      "text": "If you guessed 30,\n*you're scary.*",
+      "mood": "smug",
+      "vo": "If you guessed 30, you're scary. If you guessed 100, you're kind."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and see how yours score.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 4808,
+  "duration": 30.918
+}

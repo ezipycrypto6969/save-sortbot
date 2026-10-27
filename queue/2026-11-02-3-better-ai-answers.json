@@ -1,0 +1,130 @@
+{
+  "id": "2026-11-02-3-better-ai-answers",
+  "post_at": "2026-11-02T19:30:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "4 things to tell AI before you ask it anything",
+  "fx": {
+    "hook": "MOST PEOPLE SKIP #1"
+  },
+  "caption": "4 things to tell AI before you ask it anything.\n\n1. Who you are and who it's for\n2. An example of what good looks like\n3. \"Ask me questions before you answer\"\n4. \"Give me 3 options\", then pick one and refine\n\nA saved reel promised this and the caption had nothing. Here it is.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#aitools #claude #productivity #savedreels",
+  "scenes": [
+    {
+      "type": "count",
+      "n": 4,
+      "label": "things to tell AI\n*before you ask*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "4 things to tell AI before you ask it anything."
+    },
+    {
+      "type": "quote",
+      "quote": "How to get useful answers from AI",
+      "label": "SAVED REEL SAYS",
+      "note": "Caption: nothing else",
+      "vo": "A saved reel promised better AI answers. The caption said nothing else."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort flags reels like that. 65 of mine needed the video."
+    },
+    {
+      "type": "count",
+      "n": 4,
+      "label": "Who you are.\n*Who it's for.*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 4. Say who you are and who it's for."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Show an *example*\nof good",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 3. Paste an example of what good looks like."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "\"Give me *3 options*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 2. Ask for 3 options. Pick one. Refine it."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "\"Ask me questions\n*before you answer*\"",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 1. Ask me questions before you answer. Most people skip this.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Bad answers usually\n*mean bad questions.*",
+      "mood": "smug",
+      "vo": "Bad answers usually mean bad questions. Sorry. Not sorry."
+    },
+    {
+      "type": "talk",
+      "text": "Works on every\n*AI app.*",
+      "mood": "happy",
+      "vo": "Works on any AI chat app you already use. Free plans work too."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3510,
+  "duration": 31.043
+}

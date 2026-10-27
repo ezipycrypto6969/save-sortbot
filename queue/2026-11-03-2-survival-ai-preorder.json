@@ -1,0 +1,127 @@
+{
+  "id": "2026-11-03-2-survival-ai-preorder",
+  "post_at": "2026-11-03T07:00:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Before you preorder an offline survival AI gadget, watch this",
+  "fx": {
+    "hook": "THERE'S A FREE VERSION"
+  },
+  "caption": "Don't preorder that offline survival AI gadget yet.\n\nA saved reel pushed a preorder with no specs in the caption.\nThere's a free, open-source version of the idea: Project N.O.M.A.D. Offline Wikipedia, Khan Academy courses, offline maps and a local AI, on your own hardware.\n\nCatch: you need a spare computer with plenty of storage.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#tech #opensource #prepping #scamwatch",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Don't preorder",
+        "*that survival AI.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "Don't preorder that offline survival AI gadget yet."
+    },
+    {
+      "type": "quote",
+      "quote": "Preorder the offline AI that works when the internet dies",
+      "label": "SAVED REEL SAYS",
+      "note": "No specs. No price.",
+      "stamp": "BE CAREFUL",
+      "stampColor": "warn",
+      "vo": "A saved reel pushed a preorder. No specs in the caption. No price."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort flagged it be careful. Hype with nothing to check."
+    },
+    {
+      "type": "talk",
+      "text": "There's a\n*free version.*",
+      "mood": "shocked",
+      "vo": "Here's the thing. There's a free, open source version of the same idea."
+    },
+    {
+      "type": "title",
+      "text": "Project *N.O.M.A.D.*\nFree. Open source.",
+      "bg": "cobalt",
+      "vo": "It's called Project Nomad. Free and open source.",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Works offline",
+      "items": [
+        "Offline Wikipedia",
+        "Khan Academy courses",
+        "Offline maps",
+        "A local AI"
+      ],
+      "vo": "Offline Wikipedia, Khan Academy courses, offline maps and a local AI."
+    },
+    {
+      "type": "checks",
+      "heading": "The catch",
+      "label": "WHAT YOU NEED",
+      "items": [
+        "A spare computer",
+        "Lots of storage",
+        "Internet to set up",
+        "An afternoon"
+      ],
+      "lastWarn": true,
+      "vo": "The catch. A spare computer, lots of storage, and internet to set it up."
+    },
+    {
+      "type": "talk",
+      "text": "Apocalypse ready.\n*Wallet intact.*",
+      "mood": "smug",
+      "vo": "Apocalypse ready. Wallet intact."
+    },
+    {
+      "type": "talk",
+      "text": "Check before\n*you preorder.*",
+      "mood": "happy",
+      "vo": "Before you preorder anything, search for the free version first."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the hype in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

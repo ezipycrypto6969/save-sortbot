@@ -30,7 +30,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Cost:** Bland's free Start plan, then about US$0.09 per connected minute.
 **Catch:** The full guide is gated behind 'comment PHONE'. For most people it's simpler to check running tasks from the Claude phone app.
 
-## 004 · AI & tools · breakdown
+## 004 · AI & tools · breakdown [used 2026-10-27]
 **Claim in the reel:** Dan Martell on how to get useful answers from AI models. The caption gives no detail.
 **What it really is:** The caption only says 'how to get useful answers from AI models'. Here's the general technique.
 **Steps:** Give context: who you are, what it's for, who will read it. | Show an example of what good looks like. | Ask it to ask you questions before answering. | Ask for options, then pick and refine.
@@ -92,7 +92,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Tools:** ATO Corporate Tax Transparency (https://www.ato.gov.au/about-ato/research-and-statistics/in-detail/corporate-tax-transparency)
 **Benefit:** News. For your own side hustle: get an ABN, track expenses, and claim legitimate deductions.
 
-## 017 · AI & tools · breakdown
+## 017 · AI & tools · breakdown [used 2026-10-27]
 **Claim in the reel:** Six prompts that turn Claude into a tutor who pushes back instead of handing you answers.
 **What it really is:** Prompts that make Claude teach like a tutor: asking you questions and making you work it out, instead of handing over answers. The six prompts are in the video, not the caption.
 **Steps:** Start with: 'Be my tutor for [skill]. Don't give me answers. Ask me one question at a time, push back when I'm wrong, and only explain after I've tried.' | Add: 'Quiz me at the end and tell me my weakest area.' | Use it on skills you'll sell, like copywriting, Meta ads or basic coding.
@@ -118,7 +118,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Cost:** Store ~US$30–40/mo plus ad testing budget (often A$500+).
 **Catch:** '$1,000/day' is the best case. Most stores fail on ad costs. Australian Consumer Law guarantees still apply to you as the seller: refunds, and accurate shipping times.
 
-## 023 · Ecommerce · scam-watch
+## 023 · Ecommerce · scam-watch [used 2026-10-27]
 **Claim in the reel:** Claim that 'GPT Astra' clones any ecom store in minutes (Amboras promo).
 **What it really is:** Promo for Amboras, a Y Combinator-backed AI store builder: you describe what you sell and it builds the store, writes copy and connects checkout.
 **Tools:** Amboras (https://www.amboras.com)
@@ -132,7 +132,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Benefit:** Interesting news. Nothing here is a money-maker.
 **Catch:** Models with their safety training removed will help with harmful things and are a live ethics debate. Not something to build a business on.
 
-## 028 · Business & side hustles · breakdown
+## 028 · Business & side hustles · breakdown [used 2026-10-27]
 **Claim in the reel:** Businesses that get people off their phones and present will become very valuable.
 **What it really is:** Businesses that give people a reason to put their phones down (in-person, social, present) are becoming more valuable.
 **Steps:** Ideas: phone-free run club, board-game or trivia nights, hands-on workshops (pottery, cooking, woodwork), phone-free events at cafés. | Start small: one event, a Facebook/Instagram page, charge per ticket.
@@ -162,7 +162,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **What it really is:** An app said to map 580,000+ documented public cameras (CCTV, licence-plate readers, speed and red-light cameras), viewable offline.
 **Catch:** I couldn't verify this app. Similar projects (like DeFlock) mainly cover the US. Treat it as news, not a tool.
 
-## 043 · Business & side hustles · scam-watch
+## 043 · Business & side hustles · scam-watch [used 2026-10-27]
 **Claim in the reel:** Real-estate wholesaling/assignment scheme the creator admits is a legal grey area that can cost you a licence.
 **What it really is:** A scheme to approach home sellers, help them avoid agent fees and take a cut. The creator admits it's a legal 'grey area'.
 **Tools:** WA Consumer Protection: real estate licensing (https://commerce.wa.gov.au/consumer-protection/licensing-and-registration-real-estate)
@@ -175,7 +175,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Benefit:** Business angle for you: a Perth version (directory or newsletter of local farms, markets and producers) or doing social media and websites for local farms.
 **Catch:** The app itself is US-focused.
 
-## 047 · Marketing & ads · breakdown
+## 047 · Marketing & ads · breakdown [used 2026-10-27]
 **Claim in the reel:** You need marketing, proof (testimonials) and branding together to grow a brand.
 **What it really is:** Growing a brand needs three things together: marketing (people know you exist), proof (people believe you) and branding (you stand out).
 **Steps:** Collect a testimonial or Google review after every job. | Post before-and-after or results content weekly. | Keep one consistent look and name everywhere.
@@ -187,13 +187,13 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Steps:** See the 'home services' breakdown (adamrchap). Same playbook.
 **Benefit:** Documenting your own journey on Instagram is free marketing.
 
-## 051 · AI & tools · breakdown
+## 051 · AI & tools · breakdown [used 2026-10-27]
 **Claim in the reel:** Dan Martell on stopping AI from being a yes-man.
 **What it really is:** Making AI disagree with you instead of agreeing with everything. The caption has no detail; here's the technique.
 **Steps:** 'Argue against my plan as hard as you can.' | 'Rate this 1–10 and list what would make it a 10.' | 'What would a sceptical customer say?'
 **Benefit:** Catches bad ideas and weak work before a client does.
 
-## 053 · Marketing & ads · breakdown
+## 053 · Marketing & ads · breakdown [used 2026-10-27]
 **Claim in the reel:** Making AI animated ads with Starpop.ai, plus a Claude skills swipe file.
 **What it really is:** Starpop is an AI tool for making paid social ads (scripts, AI video and images) for Meta, TikTok and YouTube.
 **Tools:** Starpop (https://starpop.ai)
@@ -231,7 +231,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Steps:** Target small local businesses, not tech people. | Sell outcomes (more bookings, fewer missed calls), not 'AI'.
 **Benefit:** Your real market is the plumber, café owner or physio who has never touched AI. They'll pay for someone to set it up for them.
 
-## 062 · Tech & privacy · scam-watch
+## 062 · Tech & privacy · scam-watch [used 2026-10-27]
 **Claim in the reel:** Offline survival AI device prototype (preorder promo).
 **What it really is:** An 'offline survival AI' gadget on preorder.
 **Steps:** Before preordering, look at Project N.O.M.A.D. (next breakdown): a free, open-source version of the same idea.
@@ -254,7 +254,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Steps:** Search your name and your family's names on Moneysmart for free. | Check for lost super through myGov.
 **Benefit:** In Australia you don't need a middle-man: the search is free.
 
-## 072 · Marketing & ads · breakdown
+## 072 · Marketing & ads · breakdown [used 2026-10-27]
 **Claim in the reel:** Make your offer obvious, simple and low-friction.
 **What it really is:** Make your offer obvious, simple and low-friction.
 **Steps:** Write your offer in one sentence: 'I'll [result] for [who] in [time] for [price].' | Add a guarantee that removes the risk. | Give one clear next step (book a call, reply YES). | Cut everything else.
@@ -307,7 +307,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **What it really is:** Being smart isn't a business model. Execution beats IQ.
 **Benefit:** Pick one breakdown on this page and do it this week.
 
-## 097 · Tech & privacy · breakdown
+## 097 · Tech & privacy · breakdown [used 2026-10-27]
 **Claim in the reel:** Open-source offline computer project that keeps working when the internet is down.
 **What it really is:** Project N.O.M.A.D., a free open-source offline 'survival computer': offline Wikipedia, a local AI assistant, offline maps and Khan Academy courses, all working with no internet.
 **Tools:** Project N.O.M.A.D. on GitHub (https://github.com/Crosstalk-Solutions/project-nomad); Hardware guide (https://projectnomad.us/hardware)
@@ -334,7 +334,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Cost:** Free.
 **Catch:** Never buy or fake reviews. Google removes them and the ACCC treats fake reviews as misleading conduct.
 
-## 127 · Tech & privacy · breakdown
+## 127 · Tech & privacy · breakdown [used 2026-10-27]
 **Claim in the reel:** Using Claude to clean your data off the internet: data-broker opt-outs, account deletions, CCPA/GDPR requests.
 **What it really is:** Using Claude to remove your personal data from the internet: data-broker listings, old accounts and breached logins.
 **Tools:** Have I Been Pwned (https://haveibeenpwned.com); JustDeleteMe (https://justdeleteme.xyz); Google 'Results about you' (https://support.google.com/websearch/answer/12719076)
@@ -378,7 +378,7 @@ Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the o
 **Tools:** Full video (https://youtu.be/_KzObeom88Y)
 **Benefit:** The real lesson: AI speeds up any research job. Security research is a career path (see the cybersecurity breakdown).
 
-## 149 · Tech & privacy · breakdown
+## 149 · Tech & privacy · breakdown [used 2026-10-27]
 **Claim in the reel:** Free satellite-tracking API, good for a coding practice project.
 **What it really is:** Free APIs that give live satellite positions. A good beginner coding project.
 **Tools:** N2YO API (https://www.n2yo.com/api/); CelesTrak (https://celestrak.org)

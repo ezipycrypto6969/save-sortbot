@@ -1,0 +1,129 @@
+{
+  "id": "2026-11-01-1-ai-actor-reviews",
+  "post_at": "2026-11-01T03:00:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "That happy customer in the ad might not be real",
+  "fx": {
+    "hook": "HOW TO SPOT ONE: AT THE END"
+  },
+  "caption": "That happy customer in the ad might not be real.\n\nA saved reel showed how fast AI makes ads with AI actors. Making ads with AI is fine.\nPresenting an AI actor as a real customer is a fake testimonial. That's misleading.\n\nThe honest version:\nUse AI for the script and the visuals\nUse real reviews from real customers\nLabel AI people as AI\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#marketing #ads #aitools #scamwatch",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "That happy customer",
+        "*isn't real.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "That happy customer in the ad? Might not be a real person."
+    },
+    {
+      "type": "quote",
+      "quote": "Make winning AI ads with AI actors in minutes",
+      "label": "SAVED REEL SAYS",
+      "note": "The tool is real",
+      "vo": "A saved reel showed AI ads with AI actors, made in minutes."
+    },
+    {
+      "type": "talk",
+      "text": "Making ads with AI?\n*Fine.*",
+      "mood": "happy",
+      "vo": "Making ads with AI? Totally fine. Lots of brands do it."
+    },
+    {
+      "type": "react",
+      "quote": "This changed my life, 5 stars! (AI actor)",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "But an AI actor saying this changed my life? That's a fake testimonial."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort flagged that one be careful. Fair call."
+    },
+    {
+      "type": "checks",
+      "heading": "Spot a fake one",
+      "label": "10 SECOND CHECK",
+      "items": [
+        "Too smooth face?",
+        "No name or place?",
+        "Same face, other brands?",
+        "Trust it less"
+      ],
+      "lastWarn": true,
+      "payoff": true,
+      "vo": "Spot one. Too smooth, no name, same face in other ads. Trust it less."
+    },
+    {
+      "type": "talk",
+      "text": "If it never blinks,\n*be suspicious.*",
+      "mood": "smug",
+      "vo": "If the customer never blinks, be suspicious."
+    },
+    {
+      "type": "steps",
+      "heading": "The honest version",
+      "items": [
+        "AI writes the script",
+        "AI makes the visuals",
+        "Real reviews only",
+        "Label AI people"
+      ],
+      "vo": "The honest version. AI for the script and visuals. Real reviews only. Label AI people."
+    },
+    {
+      "type": "talk",
+      "text": "Honest ads\n*still sell.*",
+      "mood": "happy",
+      "vo": "Honest ads still sell. And nobody has to pretend."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the hype in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3968,
+  "duration": 31.629
+}

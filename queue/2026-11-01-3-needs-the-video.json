@@ -1,0 +1,179 @@
+{
+  "id": "2026-11-01-3-needs-the-video",
+  "post_at": "2026-11-01T19:30:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Got 100+ saved reels? Most of them say nothing",
+  "fx": {
+    "hook": "THE NUMBER IS AT THE END"
+  },
+  "caption": "Got 100+ saved reels? Here's the problem.\n\nI dropped my 156 saves into SaveSort.\n65 had nothing useful in the caption: you'd have to rewatch the video.\n30 were worth doing. 10 were hype.\n\nHow: download your Instagram data, tick Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Got 100+ saves?",
+        "*Most say nothing.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Stop scrolling if you've got 100 plus saved reels."
+    },
+    {
+      "type": "talk",
+      "text": "Most of them\n*say nothing.*",
+      "mood": "suspicious",
+      "vo": "Most of them say nothing useful. You'd have to rewatch them."
+    },
+    {
+      "type": "quote",
+      "quote": "Wait for it... (no caption)",
+      "label": "SAVED REEL SAYS",
+      "note": "Thanks, very helpful",
+      "vo": "Wait for it. No caption. Thanks. Very helpful."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I dropped my 156 saves into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "First the good news. 30 worth doing, in one list."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 wanted me to comment before I got the info."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "And 65 said nothing without the video. 65!",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Sort yours",
+      "items": [
+        "Download Instagram data",
+        "Tick Saved",
+        "Drop the zip in",
+        "Done in seconds"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in. Done in seconds."
+    },
+    {
+      "type": "talk",
+      "text": "Now I know which\n*to rewatch.*",
+      "mood": "happy",
+      "vo": "Now I know which ones are worth rewatching. And which to let go."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and sort yours now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ]
+}

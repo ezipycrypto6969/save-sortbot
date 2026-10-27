@@ -1,0 +1,131 @@
+{
+  "id": "2026-11-03-1-satellite-app",
+  "post_at": "2026-11-03T03:00:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "yt_title": "Build a live satellite tracker with a free API",
+  "fx": {
+    "hook": "THE API IS FREE"
+  },
+  "caption": "POV: you build your first real app this weekend.\n\nTool of the day: the N2YO API. Free key when you sign up. It tells you which satellites are above any spot on Earth (100 of those lookups an hour on the free key).\n\n1. Make an N2YO account, generate your key\n2. Ask an AI coding tool to build a page showing what's overhead where you live\n3. Publish it and put it in your portfolio\n\nAPIs are the skill behind most automations people pay for.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#coding #api #learntocode #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "POV: you build",
+        "*your first real app.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "happy"
+      },
+      "vo": "POV. You build your first real app this weekend. It tracks satellites."
+    },
+    {
+      "type": "quote",
+      "quote": "A free satellite API, great first coding project",
+      "label": "SAVED REEL SAYS",
+      "note": "Checked: true",
+      "vo": "A saved reel said there's a free satellite API. I checked. True."
+    },
+    {
+      "type": "screen",
+      "label": "TAP TECH & PRIVACY",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-TECH.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1480.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort sorted it into tech. Here's the build."
+    },
+    {
+      "type": "stat",
+      "value": 0,
+      "prefix": "$",
+      "label": "for an N2YO API key",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true,
+      "vo": "Make a free account on the site and the API key costs nothing."
+    },
+    {
+      "type": "stat",
+      "value": 100,
+      "label": "\"what's overhead\" lookups an hour, free",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "It tells you which satellites are above any spot. 100 lookups an hour, free."
+    },
+    {
+      "type": "steps",
+      "heading": "The build",
+      "items": [
+        "Get the free key",
+        "Ask AI to code it",
+        "Show what's overhead",
+        "Publish it"
+      ],
+      "vo": "Ask an AI coding tool to build a page showing what's overhead where you live."
+    },
+    {
+      "type": "talk",
+      "text": "Claude Code does it.\n*$20 a month.*",
+      "mood": "smug",
+      "vo": "Claude Code can build it. It comes with Claude Pro, 20 dollars a month."
+    },
+    {
+      "type": "talk",
+      "text": "APIs are the\n*money skill.*",
+      "mood": "happy",
+      "vo": "Why bother? APIs are the skill behind most automations people pay for."
+    },
+    {
+      "type": "talk",
+      "text": "Also, space.\n*Space is cool.*",
+      "mood": "shocked",
+      "vo": "Also, it's space. Space is cool."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find the useful ones in your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 4514,
+  "duration": 32.885
+}
