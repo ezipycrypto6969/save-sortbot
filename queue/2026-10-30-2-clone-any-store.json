@@ -2,7 +2,7 @@
   "id": "2026-10-30-2-clone-any-store",
   "post_at": "2026-10-30T19:30:00+08:00",
   "format": "scam-watch",
-  "status": "queued",
+  "status": "skipped",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
@@ -47,5 +47,6 @@
   ],
   "cover_offset_ms": 4062,
   "duration": 10.967,
-  "pitch": 1.5
+  "pitch": 1.5,
+  "note_skip": "Owner: scrap everything under 30s (27 Oct)"
 }

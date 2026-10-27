@@ -1,0 +1,147 @@
+{
+  "id": "2026-10-30-1-boring-business",
+  "format": "long",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WAIT FOR #1"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Skip the",
+        "*AI startup.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "Skip the AI startup. My saves had better ideas. They're just boring."
+    },
+    {
+      "type": "screen",
+      "label": "TAP SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort sorted my business and side hustle saves. Here's what held up."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Gutters & high windows\n*nobody wants to do*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 3. Gutter and window cleaning. One reel says homeowners pay 250 to 300 dollars to skip it. Get insured, respect ladders."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "Pressure washing:\n*one job, whole street*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 2. Pressure washing. Do one house well and the neighbours notice. Check local rules on runoff."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "An AI receptionist\n*for trades*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true,
+      "vo": "Number 1. Plumbers and electricians miss calls on the job. An AI receptionist answers every call and books the work."
+    },
+    {
+      "type": "steps",
+      "heading": "The boring secret",
+      "items": [
+        "Inspection sheet",
+        "Job checklist",
+        "Final quality check",
+        "Every single job"
+      ],
+      "vo": "The secret that keeps them running? Written systems. An inspection sheet, a checklist, and a final check on every job."
+    },
+    {
+      "type": "screen",
+      "label": "THE REST: WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort found 30 saves like this worth doing. All in one list."
+    },
+    {
+      "type": "talk",
+      "text": "Boring?\n*Yes. Paying? Often.*",
+      "mood": "smug",
+      "vo": "Boring? Yes. Glamorous? No. Paying? Often."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and sort your saves free.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "Skip the AI startup. My saves had better ideas. They're just boring.\n\n3. Gutter and high-window cleaning (get insured, respect ladders)\n2. Pressure washing (check local runoff rules)\n1. An AI receptionist for trades, so no call gets missed\n\nThe secret: written systems. Inspection sheet, checklist, final check on every job.\n\nSort your saves free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
+  "cover_offset_ms": 4520,
+  "duration": 40.657,
+  "post_at": "2026-10-30T12:30:00+08:00",
+  "yt_title": "Boring businesses that actually pay"
+}

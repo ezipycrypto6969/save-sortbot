@@ -51,7 +51,10 @@ Any scene can take `"payoff": true` to mark where the open loop is answered.
 
 Top-level `fx` (optional): `{"hook": "#1 IS ILLEGAL IN WA"}` shows an open-loop banner at the top until the `payoff` scene (or the end card). Word-by-word captions, the progress bar, cut flashes and a slow push-in are on by default (`"captions": false`, `"progress": false`, `"flash": false` turn them off). Captions show the `vo` text, so write numbers as digits in `vo` ("156", not "a hundred and fifty six").
 
-Good shape: 4–6 scenes, 15–30 seconds. Open with a hook or a quote in the first second.
+Good shape: **30–60 seconds, never under 30** (owner's rule), 8–11 scenes. Model every reel on `content/ads_v5.py`: a hook, real SaveSort footage (`screen` scenes using the captures in `engine/screens/`, e.g. tap a filter chip or a topic), then genuinely useful, checkable info (a countdown or Sorty rating real claims), one or two dry jokes, and a CTA end card. Open with a hook or a quote in the first second.
+
+| `screen` | `label`, `segs` [{`shot`, `from`, `to`, `t0`, `t1`}], optional `taps`, `highlights`, `zoom`, `drop`, `mascot` {pos: "pl"} | real SaveSort footage in a phone (see helpers in `content/ads_v5.py`) |
+| `path` | `label`, `screens` [{`title`, `crumb`, `rows`, `pick`, `ticks`, `on`, `btn`}] | walk through a settings menu |
 
 ## Hooks and attention (use in every reel)
 

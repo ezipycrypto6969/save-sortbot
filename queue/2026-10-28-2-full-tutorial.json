@@ -1,0 +1,273 @@
+{
+  "id": "2026-10-28-2-full-tutorial",
+  "format": "long",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "SAVE THIS FOR LATER"
+  },
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Your saved reels\nare *useless.*",
+      "mood": "suspicious",
+      "vo": "Your saved reels are useless. Unless you do this."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*0* ever opened."
+      ],
+      "slow": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "I had 156 saved reels and never opened one again. Here's the fix, step by step."
+    },
+    {
+      "type": "path",
+      "label": "STEP 1 · IN INSTAGRAM",
+      "screens": [
+        {
+          "title": "Settings and activity",
+          "rows": [
+            "Accounts Center",
+            "Saved",
+            "Archive",
+            "Your activity"
+          ],
+          "pick": 0
+        },
+        {
+          "crumb": "Accounts Center",
+          "title": "Account settings",
+          "rows": [
+            "Password and security",
+            "Personal details",
+            "Your information and permissions",
+            "Ad preferences"
+          ],
+          "pick": 2
+        },
+        {
+          "crumb": "Your information and permissions",
+          "title": "Your information",
+          "rows": [
+            "Access your information",
+            "Export your information",
+            "Search history"
+          ],
+          "pick": 1
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "In Instagram, open settings. Accounts Center. Your information and permissions. Then export your information."
+    },
+    {
+      "type": "path",
+      "label": "STEP 2 · ONLY TICK SAVED",
+      "screens": [
+        {
+          "crumb": "Export your information",
+          "title": "Create export",
+          "rows": [
+            "Export to device",
+            "Transfer to destination"
+          ],
+          "pick": 0
+        },
+        {
+          "crumb": "Customize information",
+          "title": "Your Instagram activity",
+          "rows": [
+            "Saved",
+            "Likes",
+            "Comments",
+            "Messages"
+          ],
+          "ticks": true,
+          "on": [
+            0
+          ]
+        },
+        {
+          "crumb": "Export to device",
+          "title": "Confirm your export",
+          "rows": [
+            "Date range: All time",
+            "Format: HTML",
+            "Start export"
+          ],
+          "btn": 2,
+          "pick": 2
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Create export. Export to device. Customize, and tick only saved. Pick HTML, then start export."
+    },
+    {
+      "type": "talk",
+      "text": "Instagram *emails you*\nwhen it's ready.",
+      "mood": "happy",
+      "vo": "Instagram emails you when it's ready. Download the zip."
+    },
+    {
+      "type": "screen",
+      "label": "STEP 3 · DROP IT IN SAVESORT",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.3,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Now open SaveSort and drop the zip in. Don't even unzip it."
+    },
+    {
+      "type": "screen",
+      "label": "YOUR SAVES, SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.1,
+          "until": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Done. Mine read 156 saves and sorted every one by topic."
+    },
+    {
+      "type": "screen",
+      "label": "THE GOOD STUFF",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3000,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing shows the 30 you can actually act on."
+    },
+    {
+      "type": "screen",
+      "label": "THE HIDDEN GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3000,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "payoff": true,
+      "vo": "And gated guides finds the 22 that hid the info behind comment GUIDE."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you the steps",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Like this one. The steps were never in the reel. Now you know which ones to skip."
+    },
+    {
+      "type": "checks",
+      "heading": "What you get",
+      "label": "YOUR SAVESORT REPORT",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "Free, nothing uploaded"
+      ],
+      "lastWarn": false,
+      "vo": "Every save by topic. What's worth doing. What's hype. Free, and nothing gets uploaded."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Save this, then tap the link in bio.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "Save this. How to get your saved reels out of Instagram and sorted:\n\n1. Settings → Accounts Center → Your information and permissions → Export your information\n2. Create export → Export to device → Customize: tick only Saved → HTML → Start export\n3. Instagram emails you when it's ready. Download the zip\n4. Drop the zip into SaveSort (no need to unzip)\n\nFree, and nothing gets uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
+  "cover_offset_ms": 3404,
+  "duration": 46.178,
+  "post_at": "2026-10-28T19:30:00+08:00",
+  "yt_title": "How to actually use your saved reels (full tutorial)"
+}

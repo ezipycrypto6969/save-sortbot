@@ -2,7 +2,7 @@
   "id": "2026-10-28-1-ai-receptionist",
   "post_at": "2026-10-28T12:30:00+08:00",
   "format": "breakdown",
-  "status": "queued",
+  "status": "skipped",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "speed": 1.22,
   "music": "sfx",
@@ -52,5 +52,6 @@
   ],
   "cover_offset_ms": 3249,
   "duration": 14.996,
-  "pitch": 1.5
+  "pitch": 1.5,
+  "note_skip": "Owner: scrap everything under 30s (27 Oct)"
 }

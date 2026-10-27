@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-28-1-ai-hustles",
+  "format": "long",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WAIT FOR THE LAST ONE"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "My saves said I'd be",
+        "*rich by Tuesday.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "My saved reels promised I'd be rich by Tuesday. It's Wednesday."
+    },
+    {
+      "type": "talk",
+      "text": "So I let SaveSort\n*fact check them.*",
+      "mood": "suspicious",
+      "vo": "So I dropped them into SaveSort to see which AI hustles are real."
+    },
+    {
+      "type": "screen",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Tap AI and tools. 33 saves. Let's check four of them."
+    },
+    {
+      "type": "react",
+      "quote": "Build an AI receptionist and sell it to local businesses",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "AI receptionist? Real. Tools like Vapi run about 30 cents a minute all in. Test it hard before you sell it."
+    },
+    {
+      "type": "react",
+      "quote": "A free AI agent that finds you clients",
+      "mood": "shocked",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "A free AI that finds clients? Real and open source. It runs on Claude Pro, 20 dollars a month. You approve every email."
+    },
+    {
+      "type": "react",
+      "quote": "Build any app with one prompt",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Any app in one prompt? Half true. Lovable's free plan gives you 5 credits a day. Big apps eat them fast."
+    },
+    {
+      "type": "react",
+      "quote": "Run 100 AI agents at once",
+      "mood": "smug",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "100 agents at once? You'll hit your limit before lunch. 3 to 5 is the useful number.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "2 real. 2 hype.\n*Still not rich.*",
+      "mood": "sad",
+      "vo": "Two real, two hype. Still not rich. But now I know where to start."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and fact check your saves free.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "My saved reels promised I'd be rich by Tuesday. It's Wednesday.\n\n✅ AI receptionist: real (tools like Vapi run about 30c/min all in)\n✅ Free AI agent that finds clients: real, runs on Claude Pro\n⚠️ Any app in one prompt: half true, free credits run out fast\n⚠️ 100 AI agents at once: hype, 3–5 is the useful number\n\nFact check your saves free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
+  "cover_offset_ms": 4249,
+  "duration": 38.298,
+  "post_at": "2026-10-28T12:30:00+08:00",
+  "yt_title": "AI side hustles from my saves: real or hype?"
+}

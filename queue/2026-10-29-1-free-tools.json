@@ -1,0 +1,137 @@
+{
+  "id": "2026-10-29-1-free-tools",
+  "format": "long",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "#1 IS COMPLETELY FREE"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Stop paying",
+        "for *free stuff.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Half my saved reels were trying to sell me things that are free."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "I dropped my saves into SaveSort. It runs on your phone. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. Turns out a lot of the good stuff costs nothing."
+    },
+    {
+      "type": "count",
+      "n": 4,
+      "label": "Spy on any brand's ads:\n*Meta Ad Library*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Number 4. Paying for an ad spy tool? Meta's Ad Library shows every active ad. Free."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "Rank on Google Maps:\n*Business Profile*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Number 3. Google Business Profile is free. Fill every field, post photos weekly, reply to every review."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "A free *offline*\nsurvival computer",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 2. A free, open source offline computer. Offline Wikipedia, maps and a local AI. No internet needed."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "Learn cyber security:\n*free tier first*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "payoff": true,
+      "vo": "Number 1. Want to learn cyber security? Try Hack Me has a free tier. Start with Linux and networking."
+    },
+    {
+      "type": "talk",
+      "text": "My wallet\n*thanks me.*",
+      "mood": "smug",
+      "vo": "My wallet would like to thank SaveSort personally."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and find your free stuff.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "Half my saved reels were selling me things that are free:\n\n4. Meta Ad Library: every active ad, free\n3. Google Business Profile: free, and how you rank on Maps\n2. A free open-source offline computer: offline Wikipedia, maps, local AI\n1. TryHackMe: free tier to start cyber security\n\nFind the free stuff in your saves. Link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
+  "cover_offset_ms": 3808,
+  "duration": 36.259,
+  "post_at": "2026-10-29T12:30:00+08:00",
+  "yt_title": "Stop paying for free stuff"
+}

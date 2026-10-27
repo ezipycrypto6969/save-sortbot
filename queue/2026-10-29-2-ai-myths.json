@@ -1,0 +1,139 @@
+{
+  "id": "2026-10-29-2-ai-myths",
+  "format": "long",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "#4 IS THE BIGGEST LIE"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "My saves taught me",
+        "*fake AI features.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "My saved reels taught me AI features that don't exist."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort read all 156 of my saves. 10 got flagged be careful. Here are four."
+    },
+    {
+      "type": "react",
+      "quote": "Claude has a secret Founder Thinking Mode",
+      "mood": "smug",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Founder thinking mode? Not a real feature. It's a prompt wearing a costume."
+    },
+    {
+      "type": "react",
+      "quote": "Turn on ADHD Executive Function Mode",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Not a feature either. The prompts are good though. Just call them prompts."
+    },
+    {
+      "type": "react",
+      "quote": "Run 100 subagents at once",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "100 agents? You'll hit your usage limit before lunch. 3 to 5 is plenty."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1M in 90 days with AI",
+      "mood": "sad",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A million in 90 days? If that worked, they wouldn't be selling the course.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "SaveSort puts all of these in one list, so you skip them."
+    },
+    {
+      "type": "talk",
+      "text": "No secret modes.\nJust *good prompts.*",
+      "mood": "happy",
+      "vo": "No secret modes. Just good prompts, and actually doing the thing."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and check your saves free.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "caption": "My saved reels taught me AI features that don't exist.\n\n❌ \"Founder Thinking Mode\": a prompt wearing a costume\n❌ \"ADHD Executive Function Mode\": not a feature (good prompts though)\n❌ 100 subagents at once: you'll hit your limit, 3–5 is plenty\n❌ $1M in 90 days: if it worked, they wouldn't sell the course\n\nCheck your saves free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
+  "cover_offset_ms": 3647,
+  "duration": 30.594,
+  "post_at": "2026-10-29T19:30:00+08:00",
+  "yt_title": "AI features my saved reels made up"
+}
