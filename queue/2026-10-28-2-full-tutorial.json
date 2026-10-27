@@ -1,7 +1,7 @@
 {
   "id": "2026-10-28-2-full-tutorial",
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -269,5 +269,14 @@
   "cover_offset_ms": 3404,
   "duration": 46.178,
   "post_at": "2026-10-28T07:00:00+08:00",
-  "yt_title": "How to actually use your saved reels (full tutorial)"
+  "yt_title": "How to actually use your saved reels (full tutorial)",
+  "posted_at": "2026-10-27T22:57:46+00:00",
+  "media_id": "18109914047189489",
+  "permalink": "https://www.instagram.com/reel/DfA-3vsm7QR/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "SojiVGso1rU",
+    "url": "https://youtube.com/shorts/SojiVGso1rU",
+    "posted_at": "2026-10-27T22:57:49+00:00"
+  }
 }
