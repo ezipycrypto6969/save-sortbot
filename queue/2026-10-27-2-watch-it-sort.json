@@ -1,7 +1,7 @@
 {
   "id": "2026-10-27-2-watch-it-sort",
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -206,5 +206,14 @@
   "cover_offset_ms": 5141,
   "duration": 47.746,
   "post_at": "2026-10-27T19:30:00+08:00",
-  "yt_title": "I let an app sort my 156 saved reels"
+  "yt_title": "I let an app sort my 156 saved reels",
+  "posted_at": "2026-10-27T13:19:00+00:00",
+  "media_id": "18020623169977800",
+  "permalink": "https://www.instagram.com/reel/De_8ny6irp0/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "GA3VBJf0BLM",
+    "url": "https://youtube.com/shorts/GA3VBJf0BLM",
+    "posted_at": "2026-10-27T13:19:03+00:00"
+  }
 }
