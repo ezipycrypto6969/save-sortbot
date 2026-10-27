@@ -1,12 +1,14 @@
 name: Post next reel (Instagram + YouTube)
 on:
   schedule:
-    # 12:20 and 19:20 Perth time (AWST = UTC+8). GitHub can start scheduled runs a few minutes late.
-    - cron: "20 4 * * *"
-    - cron: "20 11 * * *"
-    # Backup runs 40 minutes later in case GitHub skips or delays one. Already-posted reels are never posted twice.
-    - cron: "0 5 * * *"
-    - cron: "0 12 * * *"
+    # 3 posts a day (Perth time, AWST = UTC+8): 3:00am, 7:00am and 7:30pm. Each run starts ~10 min early,
+    # with a backup 40 min later in case GitHub skips or delays one. A reel is never posted twice.
+    - cron: "47 18 * * *"   # 2:47am Perth
+    - cron: "27 19 * * *"   # backup
+    - cron: "47 22 * * *"   # 6:47am Perth
+    - cron: "27 23 * * *"   # backup
+    - cron: "17 11 * * *"   # 7:17pm Perth
+    - cron: "57 11 * * *"   # backup
   workflow_dispatch: {}
 permissions:
   contents: write
