@@ -19,7 +19,7 @@ done
 [ $missing = 0 ] || { echo "Render the missing reels first."; exit 1; }
 remote=$(git remote get-url origin)
 # the public website lives on the same GitHub Pages site (static pages only; the Pro API needs Cloudflare)
-cp site/index.html site/terms.html site/refunds.html site/page.css "$tmp/"
+cp site/public/index.html site/public/terms.html site/public/refunds.html site/public/page.css "$tmp/"
 cd "$tmp" && touch .nojekyll && git init -q -b media && git add -A
 git -c user.name="savesort-bot" -c user.email="savesort-bot@users.noreply.github.com" commit -q -m "Upcoming reels"
 git push -q -f "$remote" media
