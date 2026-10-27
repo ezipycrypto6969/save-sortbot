@@ -3,7 +3,7 @@
 Static site (`index.html`, `terms.html`, `refunds.html`) plus Pro API in `functions/` (Cloudflare Pages Functions).
 
 Deploy: Cloudflare → Workers & Pages → Create → Pages → Connect to Git → this repo.
-Build command: none. Build output directory: `site`. Root directory: `/`... set "Root directory (advanced)" to `site` so `functions/` is picked up.
+Root directory (advanced): `site`. Build command: none. Build output directory: `.` (so `functions/` is picked up as the API).
 
 Secrets (Pages project → Settings → Variables and secrets, type Secret): `STRIPE_SECRET_KEY`, `ANTHROPIC_API_KEY`, `TOKEN_SECRET`. Optional `MODEL`.
 
