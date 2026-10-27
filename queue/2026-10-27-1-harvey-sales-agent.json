@@ -54,5 +54,11 @@
   ],
   "cover_offset_ms": 4012,
   "duration": 14.337,
-  "pitch": 1.5
+  "pitch": 1.5,
+  "youtube": {
+    "status": "posted",
+    "video_id": "4F8DnuNMMb0",
+    "url": "https://youtube.com/shorts/4F8DnuNMMb0",
+    "posted_at": "2026-10-27T09:51:19+00:00"
+  }
 }
