@@ -235,6 +235,13 @@ section{padding-block:clamp(64px,9vw,112px)}
 .plan li.no{color:var(--muted)}
 .plan li.no svg{color:var(--thin)}
 .plan .fine{font-size:13px;color:var(--muted)}
+.bd{margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--surface);display:flex;flex-direction:column;gap:10px;font-size:15px}
+.bd h5{margin:0;font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.bd ol,.bd ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:4px}
+.bd .err{color:var(--warn)}
+.probar{display:none;gap:10px;align-items:center;flex-wrap:wrap;border:2px solid var(--cobalt);border-radius:14px;padding:12px 16px;margin:0 0 16px;background:var(--cobalt-soft);font-size:14px}
+.probar.on{display:flex}
+.probar code{font:12px var(--mono);word-break:break-all;max-width:100%}
 .btn-disabled{background:var(--sunk);color:var(--muted);cursor:default;box-shadow:none}
 
 /* privacy */
@@ -419,13 +426,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
           <div class="topics" id="r-topics"></div>
           <div>
             <div class="filters" id="r-filters" role="group" aria-label="Filter by label"></div>
+            <div class="probar" id="probar"><b>Pro is on.</b><span>Tap "Break it down" on any save.</span></div>
             <div class="items" id="r-items"></div>
             <div class="more" id="r-more"></div>
           </div>
         </div>
         <div class="upsell" id="upsell">
           <p><b>Want the steps, not just the sort?</b> Pro writes a full breakdown for every "Worth doing" save: the real websites and tools, how to do it, what it costs and the catch.</p>
-          <a class="btn btn-primary" href="#breakdowns">See what a breakdown looks like</a>
+          <a class="btn btn-primary" href="#pricing" id="upsell-btn">Try Pro free for 7 days</a>
         </div>
       </div>
     </div>
@@ -484,7 +492,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
           <a class="btn btn-ghost" href="#try">Sort my saves free</a>
         </div>
         <div class="plan pro">
-          <span class="badge">Launching soon</span>
+          <span class="badge">7-day free trial</span>
           <h3>Pro</h3>
           <div class="price"><b id="pro-price">$59</b><span id="pro-per">per year · about $4.92 a month</span></div>
           <ul>
@@ -492,10 +500,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>A full breakdown for every Worth doing save</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Real tools, steps, costs and catches</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Scam explanations, not just flags</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Fresh report every month</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Breakdowns for new saves every time you re-sort</li>
           </ul>
-          <span class="btn btn-disabled" aria-disabled="true">Pro opens at launch</span>
-          <p class="fine">Renews automatically. Cancel from your account in two clicks, any time.</p>
+          <a class="btn btn-primary" id="pro-buy" href="#pricing">Start 7-day free trial</a>
+          <p class="fine" id="pro-fine">Free for 7 days, then <span id="pro-then">A$59 a year</span>. Cancel before the trial ends and you pay nothing. Renews automatically; <a href="#" id="pro-manage">manage or cancel</a> any time. <a href="terms.html">Terms</a> · <a href="refunds.html">Refunds</a></p>
+          <p class="fine"><a href="#" id="pro-paste">Already Pro on another device? Use your Pro code</a></p>
         </div>
       </div>
     </div>
@@ -549,13 +558,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
     <p class="lede" style="font-size:16px">Last updated 25 October 2026.</p>
     <p>The free sorter runs entirely in your browser. The Instagram file you choose is read on your device to build your report and is never uploaded, stored or shared by SaveSort. We don't use cookies or trackers to sell or share your data.</p>
     <p>SaveSort's own social accounts are run by a posting tool that uploads SaveSort's videos to SaveSort's own Instagram, YouTube and TikTok accounts. Where it uses Google sign-in (YouTube Data API), it only uploads videos to the SaveSort channel. It doesn't access, store or share any other person's Google or YouTube data. SaveSort's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. You can review or remove an app's access to your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    <p><b>SaveSort Pro.</b> Payments and subscriptions are handled by Stripe; we never see your card details. We keep your Stripe subscription ID inside your Pro code so we can check it's active. When you tap "Break it down" on a save, only that save's caption is sent to our server and to Anthropic's Claude API to write the breakdown. It isn't stored by us, and your file and other saves never leave your device.</p>
     <p>Questions or deletion requests: eddieleafe3@gmail.com.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 SaveSort · Perth, Australia · <a href="#privacy-policy" style="color:inherit">Privacy policy</a></span>
+    <span>© 2026 SaveSort · Perth, Australia · <a href="#privacy-policy" style="color:inherit">Privacy</a> · <a href="terms.html" style="color:inherit">Terms</a> · <a href="refunds.html" style="color:inherit">Refunds</a></span>
     <span>Not affiliated with Instagram or Meta.</span>
   </div>
 </footer>
@@ -700,17 +710,22 @@ function renderItems(){
   const rows = REPORT.filter(r => (fTopic==="all"||r.topic===fTopic) && (fLabel==="all" || (fLabel==="gate" ? r.gate : r.label===fLabel)));
   const shown = rows.slice(0, 40);
   $("#r-items").innerHTML = shown.length ? shown.map(r => {
+    const i = REPORT.indexOf(r);
     const cap = r.plain ? (r.plain.length > 220 ? r.plain.slice(0, 217) + "…" : r.plain) : "No caption in your file.";
-    return `<div class="item">
+    return `<div class="item" data-i="${i}">
       <div class="meta"><span class="tag tag-topic">${esc(r.topicName)}</span>${r.label?tag(r.label):""}${r.gate?tag("gate"):""}</div>
       <p>${esc(cap)}</p>
-      <div class="actions"><a href="${esc(r.url)}" target="_blank" rel="noopener">Open reel</a>${r.label==="go"||r.gate?`<button class="locked" type="button" data-up><svg aria-hidden="true"><use href="#i-lock"/></svg>Full breakdown · Pro</button>`:""}</div>
+      <div class="actions"><a href="${esc(r.url)}" target="_blank" rel="noopener">Open reel</a>${PRO.code&&r.plain?`<button class="locked" type="button" data-bd style="color:var(--cobalt)">Break it down</button>`:r.label==="go"||r.gate?`<button class="locked" type="button" data-up><svg aria-hidden="true"><use href="#i-lock"/></svg>Full breakdown · Pro</button>`:""}</div>
+      ${r.bd?bdHTML(r.bd):""}
     </div>`; }).join("") : `<div class="item"><p>No saves match this filter.</p></div>`;
   $("#r-more").textContent = rows.length > 40 ? `Showing 40 of ${rows.length}. Narrow it down with a topic or label.` : "";
 }
 $("#r-topics").addEventListener("click", e => { const b = e.target.closest(".bar"); if (!b) return; fTopic = b.dataset.t; renderTopics(); renderItems(); });
 $("#r-filters").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; fLabel = b.dataset.l; renderFilters(); renderItems(); });
-$("#r-items").addEventListener("click", e => { if (e.target.closest("[data-up]")) $("#upsell").scrollIntoView({behavior:"smooth", block:"center"}); });
+$("#r-items").addEventListener("click", e => {
+  if (e.target.closest("[data-up]")) $("#upsell").scrollIntoView({behavior:"smooth", block:"center"});
+  const b = e.target.closest("[data-bd]"); if (b) breakdown(b);
+});
 
 /* file input */
 function showErr(msg){ const el = $("#err"); el.textContent = msg; el.hidden = !msg; }
@@ -789,7 +804,66 @@ function bill(yearly){
   $("#bill-m").setAttribute("aria-pressed", String(!yearly));
   $("#pro-price").textContent = yearly ? "$59" : "$7.99";
   $("#pro-per").textContent = yearly ? "per year · about $4.92 a month" : "per month";
+  $("#pro-then").textContent = yearly ? "A$59 a year" : "A$7.99 a month";
+  BILL = yearly ? "year" : "month"; proButtons();
 }
+/* SaveSort Pro: Stripe Payment Links (7-day free trial) + Pro codes checked by /api */
+const CONFIG = {
+  link: { year: "", month: "" },  // Stripe Payment Link URLs (each with a 7-day trial; after payment redirect to https://YOURDOMAIN/?session_id={CHECKOUT_SESSION_ID})
+  portal: "",                      // Stripe customer portal login link (manage or cancel)
+};
+let BILL = "year";
+const PRO = { code: "" };
+try { PRO.code = localStorage.getItem("savesort-pro") || ""; } catch (e) {}
+function saveCode(c){ PRO.code = c || ""; try { c ? localStorage.setItem("savesort-pro", c) : localStorage.removeItem("savesort-pro"); } catch (e) {} proButtons(); if (REPORT.length) renderItems(); }
+function proButtons(){
+  const link = CONFIG.link[BILL];
+  const buy = $("#pro-buy");
+  if (PRO.code) { buy.textContent = "Pro is on: sort your saves"; buy.href = "#try"; buy.classList.remove("btn-disabled"); }
+  else if (link) { buy.textContent = "Start 7-day free trial"; buy.href = link; buy.classList.remove("btn-disabled"); }
+  else { buy.textContent = "Checkout opening shortly"; buy.removeAttribute("href"); buy.classList.add("btn-disabled"); }
+  const m = $("#pro-manage"); if (CONFIG.portal) m.href = CONFIG.portal; else m.removeAttribute("href");
+  $("#probar").classList.toggle("on", !!PRO.code);
+}
+$("#pro-paste").addEventListener("click", e => { e.preventDefault();
+  const c = prompt("Paste your Pro code (you can copy it from the device where you started Pro):"); if (c && c.trim()) saveCode(c.trim()); });
+async function activate(){
+  const id = new URLSearchParams(location.search).get("session_id"); if (!id) return;
+  history.replaceState(null, "", location.pathname + "#try");
+  try {
+    const r = await fetch("/api/activate?session_id=" + encodeURIComponent(id)); const d = await r.json();
+    if (d.code) { saveCode(d.code); alert("Pro is on. Your Pro code (keep it to use Pro on another device):\n\n" + d.code); }
+    else alert(d.error || "Couldn't turn on Pro. Email us and we'll sort it.");
+  } catch (e) { alert("Couldn't reach SaveSort to turn on Pro. Refresh to try again."); }
+}
+const VERDICT = { worth_doing: ["go","Worth doing"], needs_video: ["thin","Needs the video"], be_careful: ["warn","Be careful"] };
+function bdHTML(b){
+  if (b.error) return `<div class="bd"><p class="err">${esc(b.error)}</p></div>`;
+  if (b.loading) return `<div class="bd"><p>Writing your breakdown…</p></div>`;
+  const v = VERDICT[b.verdict] || null;
+  const tools = (b.tools||[]).filter(t => t && t.name).map(t => `<li>${t.url && /^https:\/\//.test(t.url) ? `<a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.name)}</a>` : esc(t.name)}${t.note ? ` · ${esc(t.note)}` : ""}</li>`).join("");
+  return `<div class="bd">${v?`<div class="meta"><span class="tag ${TAGS[v[0]]?TAGS[v[0]][0]:""}">${v[1]}</span></div>`:""}
+    <p>${esc(b.what||"")}</p>
+    ${tools?`<h5>Tools</h5><ul>${tools}</ul>`:""}
+    ${(b.steps||[]).length?`<h5>Steps</h5><ol>${b.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:""}
+    ${b.cost?`<h5>Cost</h5><p>${esc(b.cost)}</p>`:""}
+    ${b.catch?`<h5>The catch</h5><p>${esc(b.catch)}</p>`:""}
+    <p class="fine" style="font-size:12px;color:var(--muted)">AI-written from the reel's caption. Check prices and rules before you spend money.</p></div>`;
+}
+async function breakdown(btn){
+  const r = REPORT[Number(btn.closest(".item").dataset.i)]; if (!r || r.bd && !r.bd.error) return;
+  r.bd = { loading: true }; renderItems();
+  try {
+    const res = await fetch("/api/breakdown", { method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ code: PRO.code, caption: r.caption || r.plain, url: r.url }) });
+    const d = await res.json();
+    if (d.code && d.code !== PRO.code) saveCode(d.code);
+    if (res.status === 403) { saveCode(""); r.bd = { error: d.error }; }
+    else r.bd = d.breakdown || { error: d.error || "Something went wrong. Try again." };
+  } catch (e) { r.bd = { error: "Couldn't reach SaveSort. Check your connection and try again." }; }
+  renderItems();
+}
+proButtons(); activate();
 $("#bill-y").addEventListener("click", () => bill(true));
 $("#bill-m").addEventListener("click", () => bill(false));
 </script>
