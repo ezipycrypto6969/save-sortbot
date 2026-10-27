@@ -62,6 +62,7 @@ def due_item():
     for p in sorted(glob.glob("queue/*.json")):
         spec = json.load(open(p))
         if spec.get("status") not in ("queued", "posted"): continue
+        if spec.get("check") == "pending": continue  # not yet passed by the claims checker
         if (spec.get("youtube") or {}).get("status") == "posted": continue
         when = dt.datetime.fromisoformat(spec["post_at"])
         if now - MAX_LATE <= when <= now + dt.timedelta(minutes=20): items.append((when, p, spec))

@@ -4,8 +4,8 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
 
 ## Steps
 
-1. `git pull`. Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled).
-2. For each new slot, write `queue/<YYYY-MM-DD>-<1|2|3>-<slug>.json` (1 = 03:00, 2 = 07:00, 3 = 19:30) (spec format below). Mix formats across the week: about 3 breakdowns, 2 scam-watch, 1 reveal, 1 "tool of the day" per 7 posts. Never two of the same format in a row.
+1. `git pull`. Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled). A reel with `"status": "held"` was rejected by the claims checker: read its `hold_reasons`, and fill its slot with a new reel that avoids those problems.
+2. For each new slot, write `queue/<YYYY-MM-DD>-<1|2|3>-<slug>.json` (1 = 03:00, 2 = 07:00, 3 = 19:30) (spec format below). Every new item gets `"check": "pending"`: the posters skip it until the separate claims checker (see `CHECKER.md`) sets it to `"passed"`. Never set `check` yourself. Mix formats across the week: about 3 breakdowns, 2 scam-watch, 1 reveal, 1 "tool of the day" per 7 posts. Never two of the same format in a row.
 3. Ideas: take unused entries from `content/ideas.md` first (mark them `[used YYYY-MM-DD]`). When fewer than 10 remain, research new ones: currently viral AI, side-hustle, money and marketing claims (web search), verify them against primary sources, and add them to the backlog in the same format.
 4. Render each: `python3 engine/build.py queue/<id>.json out/<id> --stills`. Exit code 2 = unknown words: rephrase the line, or add the word's phonemes to `models/custom.json` (copy the notation style of similar words in `models/us_gold.json`).
 5. **Check every reel.** Open `out/<id>/stills/scene-*.png` and look at each one: no text cut off, overflowing or overlapping, stamp not covering the card text, nothing in the bottom 20% or right 150px. Fix the spec (shorter words, fewer items) and rebuild until clean.
@@ -21,6 +21,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
   "post_at": "2026-10-27T19:30:00+08:00",
   "format": "breakdown",
   "status": "queued",
+  "check": "pending",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "yt_title": "Optional YouTube title, under 70 characters (otherwise the caption's first line is used)",
