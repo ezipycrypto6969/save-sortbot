@@ -1,7 +1,7 @@
 {
   "id": "2026-10-29-1-free-tools",
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -133,5 +133,14 @@
   "cover_offset_ms": 3808,
   "duration": 36.259,
   "post_at": "2026-10-28T19:30:00+08:00",
-  "yt_title": "Stop paying for free stuff"
+  "yt_title": "Stop paying for free stuff",
+  "posted_at": "2026-10-28T11:27:17+00:00",
+  "media_id": "18075898814764524",
+  "permalink": "https://www.instagram.com/reel/DfCUopKjRFL/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "08RorBbIQJ8",
+    "url": "https://youtube.com/shorts/08RorBbIQJ8",
+    "posted_at": "2026-10-28T11:27:20+00:00"
+  }
 }
