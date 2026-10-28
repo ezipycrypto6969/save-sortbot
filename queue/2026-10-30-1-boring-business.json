@@ -1,7 +1,7 @@
 {
   "id": "2026-10-30-1-boring-business",
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -143,5 +143,14 @@
   "cover_offset_ms": 4520,
   "duration": 40.657,
   "post_at": "2026-10-29T07:00:00+08:00",
-  "yt_title": "Boring businesses that actually pay"
+  "yt_title": "Boring businesses that actually pay",
+  "posted_at": "2026-10-28T22:52:25+00:00",
+  "media_id": "17962783643999130",
+  "permalink": "https://www.instagram.com/reel/DfDjC9tAgEj/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "aaDu1FBjfvk",
+    "url": "https://youtube.com/shorts/aaDu1FBjfvk",
+    "posted_at": "2026-10-28T22:52:27+00:00"
+  }
 }
