@@ -1,7 +1,7 @@
 {
   "id": "2026-10-29-2-ai-myths",
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -135,5 +135,14 @@
   "cover_offset_ms": 3647,
   "duration": 30.594,
   "post_at": "2026-10-29T03:00:00+08:00",
-  "yt_title": "AI features my saved reels made up"
+  "yt_title": "AI features my saved reels made up",
+  "posted_at": "2026-10-28T18:57:09+00:00",
+  "media_id": "18106930817365939",
+  "permalink": "https://www.instagram.com/reel/DfDIHZTjcyi/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "c9hKxVJOuls",
+    "url": "https://youtube.com/shorts/c9hKxVJOuls",
+    "posted_at": "2026-10-28T18:57:12+00:00"
+  }
 }
