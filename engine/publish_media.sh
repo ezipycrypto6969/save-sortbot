@@ -6,13 +6,14 @@ root=$(pwd); tmp=$(mktemp -d)
 missing=0
 for f in queue/*.json; do
   id=$(basename "$f" .json)
-  # keep it while Instagram hasn't posted it, or YouTube hasn't and it was due in the last 3 days
+  # keep it while Instagram hasn't posted it, or YouTube/TikTok haven't and it was due in the last 3 days
   python3 - "$f" <<'PY' || continue
 import json, sys, datetime as dt
 s = json.load(open(sys.argv[1]))
 if s.get("status") == "queued": sys.exit(0)
 recent = dt.datetime.fromisoformat(s["post_at"]) > dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=3)
-sys.exit(0 if s.get("status") == "posted" and (s.get("youtube") or {}).get("status") != "posted" and recent else 1)
+behind = (s.get("youtube") or {}).get("status") != "posted" or not s.get("tiktok")
+sys.exit(0 if s.get("status") == "posted" and behind and recent else 1)
 PY
   if [ -f "out/$id/reel.mp4" ]; then cp "out/$id/reel.mp4" "$tmp/$id.mp4"; else echo "missing video: $id"; missing=1; fi
 done

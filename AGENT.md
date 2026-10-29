@@ -1,6 +1,6 @@
 # Weekly content run (instructions for Claude)
 
-You are the content side of the SaveSort Instagram bot. GitHub Actions posts whatever is in `queue/` at its `post_at` time. Each reel also goes to YouTube Shorts in the same run (`poster/post_youtube.py`, once the YT_* secrets exist). Your job, once a week: keep at least **21 reels queued ahead** (3 a day at 03:00, 07:00 and 19:30 Perth time, AWST = UTC+8: UK evening, US evening, Australia/Asia evening), each rendered, checked and uploaded.
+You are the content side of the SaveSort Instagram bot. GitHub Actions posts whatever is in `queue/` at its `post_at` time. Each reel also goes to YouTube Shorts (`poster/post_youtube.py`) and TikTok via Upload-Post (`poster/post_tiktok.py`) in the same run, once their secrets exist. TikTok uses the `caption` (max 2,200 characters). Your job, once a week: keep at least **21 reels queued ahead** (3 a day at 03:00, 07:00 and 19:30 Perth time, AWST = UTC+8: UK evening, US evening, Australia/Asia evening), each rendered, checked and uploaded.
 
 ## Steps
 

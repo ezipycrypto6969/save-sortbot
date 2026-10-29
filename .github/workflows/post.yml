@@ -1,4 +1,4 @@
-name: Post next reel (Instagram + YouTube)
+name: Post next reel (Instagram + YouTube + TikTok)
 on:
   schedule:
     # 3 posts a day (Perth time, AWST = UTC+8): 3:00am, 7:00am and 7:30pm. Each run starts ~10 min early,
@@ -36,6 +36,14 @@ jobs:
           PAUSED: ${{ vars.PAUSED }}
           DRY_RUN: ${{ vars.DRY_RUN }}
         run: python3 poster/post_youtube.py
+      - name: Post the same reel to TikTok
+        if: always()
+        env:
+          UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
+          UPLOAD_POST_USER: ${{ vars.UPLOAD_POST_USER }}
+          PAUSED: ${{ vars.PAUSED }}
+          DRY_RUN: ${{ vars.DRY_RUN }}
+        run: python3 poster/post_tiktok.py
       - name: Save posted status
         if: always()
         run: |
