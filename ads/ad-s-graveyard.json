@@ -1,0 +1,160 @@
+{
+  "id": "ad-s-graveyard",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "AURA RESTORED AT THE END"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Your saved tab is",
+        "a *graveyard.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Your saved tab is a graveyard. And you're the ghost."
+    },
+    {
+      "type": "talk",
+      "text": "156 saves.\n*Rewatched: 0.*",
+      "mood": "sad",
+      "vo": "156 saved reels. Rewatched? Zero. Not one. Cooked."
+    },
+    {
+      "type": "title",
+      "text": "Saving it ≠\n*doing it.*",
+      "bg": "ink",
+      "vo": "Saving it is not doing it. Your brain just thinks it is."
+    },
+    {
+      "type": "talk",
+      "text": "It's giving\n*productive.*",
+      "mood": "smug",
+      "vo": "It's giving productive. It is not productive."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I dropped my saves into SaveSort. Nothing gets uploaded. Calm."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "The damage. 30 worth doing. 10 straight up hype."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1M in 90 days with AI",
+      "mood": "sad",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A million in 90 days? Bro is selling the course, not the million."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll send the steps",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment guide? The steps were never in the reel. Classic."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 real ideas. One list. Aura restored.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "I did your\n*homework.*",
+      "mood": "happy",
+      "vo": "I did your homework. You're welcome. Now go do one."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and clear out your saves.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "yt_title": "Your saved tab is a graveyard",
+  "caption": "Your saved tab is a graveyard. 💀\n\n156 saves. Rewatched: 0.\nSaveSort read them all: 30 worth doing, 10 straight-up hype, 22 hiding the steps behind \"comment GUIDE\".\n\nDownload your Instagram data, tick Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nClear out your saves free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "cover_offset_ms": 3311,
+  "duration": 31.4
+}
