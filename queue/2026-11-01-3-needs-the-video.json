@@ -2,7 +2,7 @@
   "id": "2026-11-01-3-needs-the-video",
   "post_at": "2026-10-30T03:00:00+08:00",
   "format": "reveal",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -177,5 +177,14 @@
     }
   ],
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "posted_at": "2026-10-29T18:56:55+00:00",
+  "media_id": "18118323937965749",
+  "permalink": "https://www.instagram.com/reel/DfFs47GlzTW/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "2gbJ1GN23Uc",
+    "url": "https://youtube.com/shorts/2gbJ1GN23Uc",
+    "posted_at": "2026-10-29T18:56:59+00:00"
+  }
 }
