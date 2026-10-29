@@ -1,7 +1,7 @@
 {
   "id": "2026-10-29-3-rip-saved-tab",
   "format": "ad",
-  "status": "queued",
+  "status": "posted",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -170,5 +170,14 @@
   "post_at": "2026-10-29T19:30:00+08:00",
   "check": "owner-approved",
   "checked_at": "2026-10-29T18:26:00+08:00",
-  "style": "funny-ad"
+  "style": "funny-ad",
+  "posted_at": "2026-10-29T11:27:08+00:00",
+  "media_id": "18123232861819992",
+  "permalink": "https://www.instagram.com/reel/DfE5aWLEX_x/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "3PHFPFU7wOM",
+    "url": "https://youtube.com/shorts/3PHFPFU7wOM",
+    "posted_at": "2026-10-29T11:27:11+00:00"
+  }
 }
