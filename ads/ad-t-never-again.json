@@ -1,0 +1,171 @@
+{
+  "id": "ad-t-never-again",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "You will never watch your saved reels again",
+  "caption": "You will never watch your saved reels again. Unless you do this.\n\nHow to get your saved reels out of Instagram:\nSettings → Accounts Center → Your information and permissions → Download your information → Some of your information → tick Saved → Format: HTML\n\nInstagram emails you a zip. Drop it into SaveSort without unzipping it. It runs in your browser, nothing uploaded.\n\nMy 156 saves: 30 worth doing, 10 straight-up hype, 22 hiding the steps behind \"comment GUIDE\".\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "vo": "You will never watch your saved reels again.",
+      "chunks": [
+        "You will !NEVER!",
+        "watch your saved reels",
+        "again."
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "I saved 156. Rewatched? Zero.",
+      "chunks": [
+        "I saved",
+        "*156.*",
+        "Rewatched?",
+        "!ZERO.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "So I made them sort themselves. Results at the end.",
+      "chunks": [
+        "So I made them",
+        "*sort themselves.*",
+        "Results",
+        "at the end."
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "Step 1. Get your saves out of Instagram.",
+      "chunks": [
+        "STEP 1",
+        "Get your saves",
+        "out of Instagram."
+      ]
+    },
+    {
+      "kind": "crumb",
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Settings. Accounts Center. Your information and permissions. Download your information.",
+      "chunks": [
+        "Settings",
+        "Accounts Center",
+        "Your information and permissions",
+        "Download your information"
+      ]
+    },
+    {
+      "kind": "crumb",
+      "continue": true,
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Some of your information. Tick Saved. Format, HTML.",
+      "chunks": [
+        "Some of your information",
+        "Tick *Saved*",
+        "Format: *HTML*"
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "Instagram emails you a zip. Don't unzip it.",
+      "chunks": [
+        "Instagram",
+        "emails you",
+        "a *zip.*",
+        "Don't",
+        "!unzip it.!"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "Step 2. Drop it into SaveSort.",
+      "chunks": [
+        "STEP 2",
+        "Drop it into",
+        "*SaveSort.*"
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "Nothing gets uploaded. It runs in your browser.",
+      "chunks": [
+        "Nothing",
+        "gets uploaded.",
+        "Runs in",
+        "your browser."
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "The results. 30 worth doing.",
+      "chunks": [
+        "The results.",
+        "*30*",
+        "worth doing."
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "10 straight up hype.",
+      "chunks": [
+        "*10*",
+        "straight up",
+        "!hype.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "22 hid the steps behind comment guide.",
+      "chunks": [
+        "*22*",
+        "hid the steps",
+        "behind",
+        "\"comment GUIDE\""
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "Make a million in 90 days? Bro sells the course. Not the million.",
+      "chunks": [
+        "\"Make *$1M*",
+        "in 90 days\"?",
+        "Bro sells",
+        "*the course.*",
+        "Not the",
+        "!million.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "vo": "Link in bio. Sort yours before you never watch them again.",
+      "chunks": [
+        "Link in bio.",
+        "Sort yours",
+        "before you",
+        "!NEVER!",
+        "watch them again."
+      ]
+    }
+  ]
+}
