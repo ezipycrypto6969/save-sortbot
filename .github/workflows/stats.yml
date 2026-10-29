@@ -1,0 +1,30 @@
+name: Collect reel stats
+# Daily: saves views and engagement for every reel posted in the last 4 weeks (Instagram, YouTube, TikTok)
+# into its queue file, and rebuilds stats/summary.md, which the Sunday content run reads.
+on:
+  schedule:
+    - cron: "41 0 * * *"   # about 8:41am Perth
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: post-reel
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect stats
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
+        run: python3 poster/stats.py
+      - name: Save stats
+        run: |
+          git config user.name "savesort-bot"
+          git config user.email "savesort-bot@users.noreply.github.com"
+          git add queue stats
+          git diff --cached --quiet || (git commit -m "Update reel stats" && git pull --rebase -q origin main && git push)

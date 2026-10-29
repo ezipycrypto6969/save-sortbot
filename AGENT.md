@@ -4,7 +4,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
 
 ## Steps
 
-1. `git pull`. Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled). A reel with `"status": "held"` was rejected by the claims checker: read its `hold_reasons`, and fill its slot with a new reel that avoids those problems.
+1. `git pull`. Read `stats/summary.md` and `content/styles.md` first, then do **Marketing test and learn** (below) before writing anything. Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled). A reel with `"status": "held"` was rejected by the claims checker: read its `hold_reasons`, and fill its slot with a new reel that avoids those problems.
 2. For each new slot, write `queue/<YYYY-MM-DD>-<1|2|3>-<slug>.json` (1 = 03:00, 2 = 07:00, 3 = 19:30) (spec format below). Every new item gets `"check": "pending"`: the posters skip it until the separate claims checker (see `CHECKER.md`) sets it to `"passed"`. Never set `check` yourself. Mix formats across the week: about 3 breakdowns, 2 scam-watch, 1 reveal, 1 "tool of the day" per 7 posts. Never two of the same format in a row.
 3. Ideas: take unused entries from `content/ideas.md` first (mark them `[used YYYY-MM-DD]`). When fewer than 10 remain, research new ones: currently viral AI, side-hustle, money and marketing claims (web search), verify them against primary sources, and add them to the backlog in the same format.
 4. Render each: `python3 engine/build.py queue/<id>.json out/<id> --stills`. Exit code 2 = unknown words: rephrase the line, or add the word's phonemes to `models/custom.json` (copy the notation style of similar words in `models/us_gold.json`).
@@ -64,6 +64,26 @@ Good shape: **30–60 seconds, never under 30** (owner's rule), 8–11 scenes. M
 - **Specific real numbers** beat vague words. Use only true ones.
 - **Ask for one action:** a comment ("Lock in your guess. Comment it.") or the link in bio. Never both in one reel.
 - **Rotate hook types** across the week; never the same hook style twice in a row.
+
+## Marketing test and learn (every week)
+
+The goal is better marketing: more views, follows and sign-ups for SaveSort among the general public. Each week's 21 reels are a mix:
+
+- **About 14 `base` reels**: the owner's main format (see Owner feedback and the model reels in `content/styles.md`).
+- **About 4 `funny-ad` reels**: funny product ads like "RIP my saved tab".
+- **3 experiment reels** (`exp-<name>`): new marketing styles. Try 1 to 3 styles a week, pick from the ideas in `content/styles.md` or invent one, and record each in its Experiments table.
+
+Give every new reel `"style"` (one of the names above) and `"hook_type"` (e.g. `countdown`, `pov`, `bold-claim`, `question`, `guess`).
+
+**Judging (from `stats/summary.md`; only reels marked ✓, at least 3 days old):**
+- Compare an experiment's reels with the `base` median views and median engagement rate over the same period.
+- If an experiment beats the `base` median on views or engagement rate on at least 2 of its reels, run it again next week with up to 6 slots (taken from `base`). If it wins two weeks in a row, move it to Regular styles with its slot count.
+- If it loses on both measures, retire it and write why in Retired styles. Don't retry a retired style unless it's changed in a clear way.
+- Also cut a regular style's slots by 1 to 2 if it's been the worst style two weeks in a row (but keep at least 8 `base` reels a week).
+- Note which `hook_type`s do best and use more of those.
+- Early weeks with few views: don't over-react. With fewer than 3 judged reels in a style, leave it running.
+
+**In the owner message**, add a short "What worked" section: the top 3 and bottom 3 reels last week (title, views), each style's result, and what you're changing this week.
 
 ## Owner feedback (29 Oct 2026, apply to every new reel)
 

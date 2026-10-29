@@ -172,5 +172,6 @@
   ],
   "cover_offset_ms": 4808,
   "duration": 30.918,
-  "checked_at": "2026-10-29T18:16:40+08:00"
+  "checked_at": "2026-10-29T18:16:40+08:00",
+  "style": "base"
 }
