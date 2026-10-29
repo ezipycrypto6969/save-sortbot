@@ -1,0 +1,173 @@
+{
+  "id": "2026-10-29-3-rip-saved-tab",
+  "format": "ad",
+  "status": "queued",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WAIT FOR THE RESURRECTION"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "RIP",
+        "*my saved tab.*"
+      ],
+      "slow": true,
+      "grey": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "RIP my saved tab. Cause of death: watch later."
+    },
+    {
+      "type": "title",
+      "text": "Here lies: the gym plan,\nside hustle #4,\n*one pasta recipe.*",
+      "bg": "paper",
+      "vo": "Here lies the gym plan. Side hustle number 4. One pasta recipe."
+    },
+    {
+      "type": "title",
+      "text": "\"I'll watch it\n*later.*\"",
+      "bg": "ink",
+      "vo": "I'll watch it later, I said. 156 times. Rewatched? Zero."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*Is it later yet?*"
+      ],
+      "slow": true,
+      "grey": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "Wait. Is it later yet? Mate. I'm cooked."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Fine. I dropped my saves into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "THE AUTOPSY",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "The autopsy. 30 worth doing. 10 straight up hype."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1M in 90 days with AI",
+      "mood": "sad",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A million in 90 days? Bro is selling the course, not the million."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll send the steps",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment guide? 22 of my saves hid the steps like that."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 ideas, back from the dead. Aura restored.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Later is\n*now.*",
+      "mood": "happy",
+      "vo": "Later is now. Pick one. Do it today. Not later."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio before your saves die too.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "yt_title": "RIP my saved tab. Cause of death: watch later",
+  "caption": "RIP my saved tab 🪦 Cause of death: watch later.\n\nHow I finally sorted 156 saved Instagram reels:\n30 worth doing\n10 straight-up hype\n22 hiding the steps behind \"comment GUIDE\"\n\nDownload your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nLater is now. Link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "cover_offset_ms": 3303,
+  "duration": 32.399,
+  "post_at": "2026-10-29T19:30:00+08:00",
+  "check": "owner-approved",
+  "checked_at": "2026-10-29T18:26:00+08:00"
+}
