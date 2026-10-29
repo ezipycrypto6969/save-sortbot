@@ -1,0 +1,169 @@
+{
+  "id": "ad-z5-therapy",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE BREAKTHROUGH IS AT THE END"
+  },
+  "yt_title": "Tell me about your saved reels",
+  "caption": "So. Tell me about your saved reels. 🛋️\n\n\"I'll definitely watch it later\": 156 times.\n22 asked you to comment for the steps. That's a pattern.\nThe breakthrough: 30 saves actually worth doing.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Tell me about",
+        "*your saved reels.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "So. Tell me about your saved reels."
+    },
+    {
+      "type": "quote",
+      "quote": "I'll definitely watch it later",
+      "label": "PATIENT SAYS",
+      "note": "156 times",
+      "vo": "Patient says, I'll definitely watch it later. 156 times."
+    },
+    {
+      "type": "talk",
+      "text": "And how does that\n*make you feel?*",
+      "mood": "smug",
+      "vo": "And how does that make you feel? Productive? Interesting."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you the steps",
+      "mood": "suspicious",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "22 reels made you comment for the steps. That's a pattern."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1M in 90 days with AI",
+      "mood": "sad",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "And a million in 90 days? That's not hope. That's a sales funnel."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*Are you crying?*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Wait. Are you crying? Here. Have a tissue.",
+      "slow": true,
+      "grey": true
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Let's try an exercise. Drop your saves into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SESSION NOTES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Session notes. 30 worth doing. 10 pure hype."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 real goals. That's the breakthrough.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Same time\n*next week?*",
+      "mood": "happy",
+      "vo": "Homework. Do one this week. Same time next week?"
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and sort your saves free.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2689,
+  "duration": 30.36
+}

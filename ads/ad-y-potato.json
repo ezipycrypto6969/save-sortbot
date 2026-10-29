@@ -4,8 +4,8 @@
   "style": "kinetic",
   "status": "draft",
   "character": "potato",
-  "voice": "am_michael",
-  "speed": 1.2,
+  "voice": "am_fenrir",
+  "speed": 1.02,
   "yt_title": "POV: your side hustle lives in your saved tab",
   "caption": "POV: your side hustle lives in your saved tab.\n\nSaveSort sorted my 156 saves from the couch: 30 worth doing, 22 hiding the steps behind a comment.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
   "beats": [
@@ -136,5 +136,6 @@
         "from the *couch.*"
       ]
     }
-  ]
+  ],
+  "pitch": -2.5
 }

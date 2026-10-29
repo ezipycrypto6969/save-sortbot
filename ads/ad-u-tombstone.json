@@ -4,8 +4,8 @@
   "style": "kinetic",
   "status": "draft",
   "character": "tombstone",
-  "voice": "am_michael",
-  "speed": 1.2,
+  "voice": "bm_george",
+  "speed": 1.05,
   "yt_title": "Here lies my saved tab. 156 reels, never opened",
   "caption": "Here lies my saved tab. 🪦\n156 reels. Saved with love. Never opened.\n\nSaveSort dug them up: 30 worth doing, 10 straight-up hype, 22 hiding the steps behind \"comment GUIDE\".\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
   "beats": [
@@ -153,5 +153,6 @@
         "!too late.!"
       ]
     }
-  ]
+  ],
+  "pitch": -2
 }

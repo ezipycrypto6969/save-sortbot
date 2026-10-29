@@ -1,0 +1,210 @@
+{
+  "id": "ad-z3-speedrun",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WORLD RECORD AT THE END"
+  },
+  "yt_title": "Saved tab speedrun, any percent",
+  "caption": "Saved tab speedrun. Any percent. ⏱️\n\nRules: no rewatching, no commenting GUIDE.\n156 saves read. 10 hype skipped. 22 gated guides skipped. 30 worth doing.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Saved tab speedrun.",
+        "*Any percent.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Saved tab speedrun. Any percent. Timer starts now."
+    },
+    {
+      "type": "talk",
+      "text": "Rules: no\n*rewatching.*",
+      "mood": "smug",
+      "vo": "Rules. No rewatching. No commenting guide. Let's go."
+    },
+    {
+      "type": "title",
+      "text": "Step 1:\n*Download your data.*",
+      "bg": "ink",
+      "vo": "Step 1. Download your Instagram data. Tick Saved. Pick HTML."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*Is that a glitch?*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "Wait. Is that a glitch? No. It's just fast.",
+      "slow": true,
+      "grey": true
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Step 2. Drop the zip in. Don't unzip it. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SPLIT 1",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 saves read. In seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "10 hype reels. Skipped. Huge time save."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 gated guides. Skipped. Zero comments."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing. 30 saves. Run complete.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "New world record.\n*Probably.*",
+      "mood": "happy",
+      "vo": "New world record. Probably. Unverified."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and beat my time.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3808,
+  "duration": 30.121
+}

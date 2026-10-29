@@ -4,8 +4,8 @@
   "style": "kinetic",
   "status": "draft",
   "character": "goldfish",
-  "voice": "am_michael",
-  "speed": 1.2,
+  "voice": "af_sky",
+  "speed": 1.15,
   "yt_title": "3 saved reels that lied to me",
   "caption": "3 saved reels that lied to me:\n3. \"Run 100 AI agents at once\": you'll hit your usage limit fast\n2. \"Secret AI mode\": not a feature, it's a prompt\n1. \"$1000 a day dropshipping\": the best case, most stores make way less\n\nSaveSort flagged 10 of my 156 saves as be careful.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
   "beats": [
@@ -139,5 +139,6 @@
         "!Again.!"
       ]
     }
-  ]
+  ],
+  "pitch": 3
 }

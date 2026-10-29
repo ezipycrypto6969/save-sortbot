@@ -4,8 +4,8 @@
   "style": "kinetic",
   "status": "draft",
   "character": "phone",
-  "voice": "am_michael",
-  "speed": 1.2,
+  "voice": "af_nicole",
+  "speed": 1.12,
   "yt_title": "My phone has 156 saved reels and zero hope",
   "caption": "My phone has 156 saved reels and zero hope.\n\nHow to free it:\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
   "beats": [
@@ -145,5 +145,6 @@
         "*Free* your phone."
       ]
     }
-  ]
+  ],
+  "pitch": 0
 }

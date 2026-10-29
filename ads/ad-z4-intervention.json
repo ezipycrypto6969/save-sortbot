@@ -1,0 +1,188 @@
+{
+  "id": "ad-z4-intervention",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE INTERVENTION WORKS"
+  },
+  "yt_title": "This is an intervention for your saved reels",
+  "caption": "This is an intervention. It's about your saved reels. 🫂\n\n156 saved. Rewatched: zero.\nSaveSort found 30 worth doing, 65 that need the video, 10 pure hype.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "This is an",
+        "*intervention.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      },
+      "vo": "This is an intervention. It's about your saved reels."
+    },
+    {
+      "type": "talk",
+      "text": "156 saves.\n*Zero rewatched.*",
+      "mood": "sad",
+      "vo": "156 saved reels. You've rewatched zero. We're worried."
+    },
+    {
+      "type": "quote",
+      "quote": "I'll save it for later",
+      "label": "YOU, EVERY NIGHT",
+      "note": "Later never came",
+      "vo": "You said, I'll save it for later. Every single night."
+    },
+    {
+      "type": "talk",
+      "text": "We found a\n*morning routine.*",
+      "mood": "shocked",
+      "vo": "We found a morning routine in there. You sleep in."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*Don't scroll away.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "Wait. Don't scroll away. That's how this started.",
+      "slow": true,
+      "grey": true
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "We dropped them into SaveSort. Nothing gets uploaded. No judgement."
+    },
+    {
+      "type": "screen",
+      "label": "THE DAMAGE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. 65 need the video. 10 pure hype."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "sad"
+      },
+      "vo": "The hype goes in one pile. You can let it go."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And 30 keepers in one list. Look at you, healing.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "We're proud\n*of you.*",
+      "mood": "happy",
+      "vo": "We're proud of you. Now go do one of them. Today."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and start your intervention.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3638,
+  "duration": 30.02
+}

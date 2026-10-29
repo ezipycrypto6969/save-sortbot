@@ -1,0 +1,170 @@
+{
+  "id": "ad-z2-bouncer",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WHO GETS IN?"
+  },
+  "yt_title": "Sorty works the door of your to-do list",
+  "caption": "You're not on the list. 🚫\n\nI made Sorty the bouncer for my saved reels:\n\"100 AI agents at once\": not tonight\n\"Comment SCALE\": no tip, no entry\n\"AI receptionist for local businesses\": you're in\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "Sorry mate.",
+        "*Not on the list.*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "smug"
+      },
+      "vo": "Sorry mate. You're not on the list."
+    },
+    {
+      "type": "talk",
+      "text": "Sorty. Bouncer.\n*Your to-do list.*",
+      "mood": "suspicious",
+      "vo": "I'm the bouncer for your to do list. Saved reels, line up."
+    },
+    {
+      "type": "react",
+      "quote": "Run 100 AI agents at once",
+      "mood": "smug",
+      "verdict": "NOT TONIGHT",
+      "verdictColor": "warn",
+      "vo": "100 AI agents? You'll hit your limit before lunch. Not tonight."
+    },
+    {
+      "type": "react",
+      "quote": "Comment SCALE to grow your business",
+      "mood": "suspicious",
+      "verdict": "NO DETAILS",
+      "verdictColor": "gate",
+      "vo": "Comment scale? No tip. No entry."
+    },
+    {
+      "type": "react",
+      "quote": "Build an AI receptionist for local businesses",
+      "mood": "happy",
+      "verdict": "YOU'RE IN",
+      "verdictColor": "go",
+      "vo": "AI receptionist? Real tools, real demand. You're in."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*156 in the queue?*"
+      ],
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Wait. There's 156 of you out here?",
+      "slow": true,
+      "grey": true
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Fine. I'm getting backup. SaveSort sorts the line. Nothing uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "THE LINE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 checked. 10 pure hype. Bounced."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 made the list. Very important saves.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Club's\n*open.*",
+      "mood": "happy",
+      "vo": "Club's open. Go do one of them tonight. Dress code: effort."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio and check who's on your list.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2628,
+  "duration": 30.088
+}

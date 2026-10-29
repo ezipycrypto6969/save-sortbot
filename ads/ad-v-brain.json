@@ -4,8 +4,8 @@
   "style": "kinetic",
   "status": "draft",
   "character": "brain",
-  "voice": "am_michael",
-  "speed": 1.2,
+  "voice": "bm_fable",
+  "speed": 1.25,
   "yt_title": "Your brain thinks saving a reel is doing it",
   "caption": "Your brain thinks saving a reel is doing it. It isn't.\n\nI had 156 saves and had done none of them. SaveSort found the 30 actually worth doing, and flagged the hype.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
   "beats": [
@@ -157,5 +157,6 @@
         "*Thanks.*"
       ]
     }
-  ]
+  ],
+  "pitch": 1
 }
