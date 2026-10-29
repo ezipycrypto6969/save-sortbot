@@ -1,0 +1,170 @@
+{
+  "id": "ad-s-graveyard-v2",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WAIT FOR THE RESURRECTION"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "RIP",
+        "*my saved tab.*"
+      ],
+      "slow": true,
+      "grey": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "shocked"
+      },
+      "vo": "Here lies my saved tab. Cause of death: watch later."
+    },
+    {
+      "type": "title",
+      "text": "\"I'll watch it\n*later.*\"",
+      "bg": "ink",
+      "vo": "I'll watch it later, I said. 156 times. Rewatched? Zero."
+    },
+    {
+      "type": "talk",
+      "text": "It's giving\n*productive.*",
+      "mood": "smug",
+      "vo": "It's giving productive. It is not productive."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Wait.",
+        "*Is it later yet?*"
+      ],
+      "slow": true,
+      "grey": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "suspicious"
+      },
+      "vo": "Wait. Is it later yet? Mate. I'm cooked."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Fine. I dropped my saves into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "THE AUTOPSY",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "The autopsy. 30 worth doing. 10 straight up hype."
+    },
+    {
+      "type": "react",
+      "quote": "Make $1M in 90 days with AI",
+      "mood": "sad",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A million in 90 days? Bro is selling the course, not the million."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll send the steps",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment guide? 22 of my saves hid the steps like that."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 ideas, back from the dead. Aura restored.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Later is\n*now.*",
+      "mood": "happy",
+      "vo": "Later is now. Pick one and do it today."
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "vo": "Tap the link in bio before your saves die too.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "yt_title": "RIP my saved tab. Cause of death: watch later",
+  "caption": "RIP my saved tab. Cause of death: watch later. 🪦\n\n156 saves. Rewatched: 0.\nSaveSort did the autopsy: 30 worth doing, 10 straight-up hype, 22 hiding the steps behind \"comment GUIDE\".\n\nDownload your Instagram data, tick Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nLater is now. Link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "cover_offset_ms": 3614,
+  "duration": 30.922
+}
