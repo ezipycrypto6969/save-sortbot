@@ -2,7 +2,7 @@
   "id": "2026-10-30-3-house-flip-fee",
   "post_at": "2026-10-30T07:00:00+08:00",
   "format": "scam-watch",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -125,5 +125,14 @@
     }
   ],
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "posted_at": "2026-10-29T22:56:32+00:00",
+  "media_id": "18080557931460212",
+  "permalink": "https://www.instagram.com/reel/DfGITlLCpFl/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "jpJc3zdoEaQ",
+    "url": "https://youtube.com/shorts/jpJc3zdoEaQ",
+    "posted_at": "2026-10-29T22:56:34+00:00"
+  }
 }
