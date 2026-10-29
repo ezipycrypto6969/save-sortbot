@@ -65,6 +65,15 @@ Good shape: **30–60 seconds, never under 30** (owner's rule), 8–11 scenes. M
 - **Ask for one action:** a comment ("Lock in your guess. Comment it.") or the link in bio. Never both in one reel.
 - **Rotate hook types** across the week; never the same hook style twice in a row.
 
+## Owner feedback (29 Oct 2026, apply to every new reel)
+
+- **Balance the saves story and the useful content.** Don't spend most of the reel on random tips from reels and only reveal at the end that they came from saved reels. Say early (first 2–3 scenes) that these came from *your saved reels* and that SaveSort found them, then give the useful bit, then the payoff. Don't swing the other way into a pure product ad either.
+- **Always connect to the saves problem**: you saved it, forgot it, never did it. Show how SaveSort helps with that, not just the tip itself.
+- **Countdowns and ratings need context.** Before a #3/#2/#1 or a verdict, say where they came from ("I put my saves into SaveSort. 3 worth doing on proof.").
+- **Market to the general public, not AI or tech nerds.** No developer APIs, prompt-engineering tricks, gadget preorders or jargon as the main topic. Someone who could build SaveSort themselves isn't the customer.
+- **Models of the right balance:** `2026-11-01-3-needs-the-video` ("Got 100+ saved reels? Most of them say nothing") and `2026-10-30-2-comment-guide` ("What comment GUIDE actually gets you"). Read both before writing.
+- Reels with `"status": "scrapped"` were rejected by the owner; read their `scrap_reason` and don't repeat those mistakes. Never re-queue them.
+
 ## Rules (non-negotiable)
 
 - **True and checkable.** Only real tools, real prices (say AUD or USD), real rules. No invented stats, results, testimonials or user counts. If unsure, leave it out.

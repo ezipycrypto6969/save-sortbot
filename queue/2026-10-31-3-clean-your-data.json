@@ -2,7 +2,7 @@
   "id": "2026-10-31-3-clean-your-data",
   "post_at": "2026-10-31T19:30:00+08:00",
   "format": "tool",
-  "status": "queued",
+  "status": "scrapped",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -126,5 +126,6 @@
       }
     }
   ],
-  "checked_at": "2026-10-29T18:16:40+08:00"
+  "checked_at": "2026-10-29T18:16:40+08:00",
+  "scrap_reason": "Owner: rambles about random reels and only ties it to saved reels at the end."
 }

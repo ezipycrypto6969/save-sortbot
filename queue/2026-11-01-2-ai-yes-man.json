@@ -2,7 +2,7 @@
   "id": "2026-11-01-2-ai-yes-man",
   "post_at": "2026-11-01T07:00:00+08:00",
   "format": "breakdown",
-  "status": "queued",
+  "status": "scrapped",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -125,5 +125,6 @@
       }
     }
   ],
-  "checked_at": "2026-10-29T18:16:40+08:00"
+  "checked_at": "2026-10-29T18:16:40+08:00",
+  "scrap_reason": "Owner: never says how SaveSort helps with saves you forgot; random-reel talk with the saves link only at the end."
 }

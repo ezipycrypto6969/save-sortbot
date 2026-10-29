@@ -1,6 +1,6 @@
 {
   "id": "2026-11-03-3-proof-sells",
-  "post_at": "2026-11-03T19:30:00+08:00",
+  "post_at": "2026-10-31T03:00:00+08:00",
   "format": "breakdown",
   "status": "queued",
   "check": "passed",
@@ -60,7 +60,7 @@
         "pos": "pl",
         "mood": "happy"
       },
-      "vo": "SaveSort sorted it into marketing. Three ways to get proof."
+      "vo": "I put my saves into SaveSort. 3 worth doing on proof."
     },
     {
       "type": "count",
@@ -124,5 +124,7 @@
       }
     }
   ],
-  "checked_at": "2026-10-29T18:16:40+08:00"
+  "checked_at": "2026-10-29T18:16:40+08:00",
+  "cover_offset_ms": 3436,
+  "duration": 32.378
 }
