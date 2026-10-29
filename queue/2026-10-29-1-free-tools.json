@@ -142,5 +142,24 @@
     "video_id": "08RorBbIQJ8",
     "url": "https://youtube.com/shorts/08RorBbIQJ8",
     "posted_at": "2026-10-28T11:27:20+00:00"
+  },
+  "stats": {
+    "instagram": {
+      "views": 5,
+      "reach": 3,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 2.1
+    },
+    "youtube": {
+      "views": 5,
+      "likes": 0,
+      "comments": 0
+    },
+    "total_views": 10,
+    "total_engagement": 0,
+    "updated": "2026-10-29T11:22:21+00:00"
   }
 }

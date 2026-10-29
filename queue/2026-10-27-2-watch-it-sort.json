@@ -215,5 +215,24 @@
     "video_id": "GA3VBJf0BLM",
     "url": "https://youtube.com/shorts/GA3VBJf0BLM",
     "posted_at": "2026-10-27T13:19:03+00:00"
+  },
+  "stats": {
+    "instagram": {
+      "views": 116,
+      "reach": 102,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 3,
+      "avg_watch_s": 6.4
+    },
+    "youtube": {
+      "views": 7,
+      "likes": 0,
+      "comments": 0
+    },
+    "total_views": 123,
+    "total_engagement": 4,
+    "updated": "2026-10-29T11:22:21+00:00"
   }
 }
