@@ -1,0 +1,16 @@
+name: Test TikTok connection
+on:
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the Upload-Post key (posts nothing)
+        env:
+          UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
+          UPLOAD_POST_USER: ${{ vars.UPLOAD_POST_USER }}
+        run: |
+          if [ -z "$UPLOAD_POST_API_KEY" ] || [ -z "$UPLOAD_POST_USER" ]; then echo "::error title=Missing setup::Add the UPLOAD_POST_API_KEY secret and the UPLOAD_POST_USER variable first."; exit 1; fi
+          python3 poster/post_tiktok.py --check
