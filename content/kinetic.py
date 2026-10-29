@@ -14,6 +14,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ENG = os.path.join(HERE, "..", "engine")
 sys.path.insert(0, ENG)
 import g2p, tts, music  # noqa: E402
+sys.path.insert(0, HERE)
+from characters import char_img  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
 FONT = "/usr/share/fonts/opentype/inter/InterDisplay-Black.otf"
@@ -181,7 +183,10 @@ def stamp_img(text, color=RED):
 
 def build(spec_path, out_dir, stills=False):
     spec = json.load(open(spec_path)); os.makedirs(out_dir, exist_ok=True)
-    beats = spec["beats"]; voice = spec.get("voice", "am_michael"); speed = spec.get("speed", 1.18)
+    beats = spec["beats"]
+    for b in beats:
+        if "char" in b: b["ghost"] = b.pop("char")
+    voice = spec.get("voice", "am_michael"); speed = spec.get("speed", 1.18)
     bad = []
     for b in beats:
         try: b["_ph"] = g2p.phonemize(b["vo"])
@@ -231,12 +236,12 @@ def build(spec_path, out_dir, stills=False):
             b["_img"] = shadowed(rounded(im))
     for b in beats:
         if b["kind"] == "reel": b["_img"] = shadowed(fake_reel(b["caption"]))
-        if b.get("stamp"): b["_stamp"] = stamp_img(b["stamp"], RED if b.get("stampColor", "red") == "red" else YEL)
+        if b.get("stamp"): b["_stamp"] = stamp_img(b["stamp"], {"red": RED, "yellow": YEL, "green": (60, 215, 120)}[b.get("stampColor", "red")])
     wall = tile_wall(); gcache = {}
 
     def ghost(mood, m, sc):
         k = (mood, round(m * 5), sc)
-        if k not in gcache: gcache[k] = ghost_img(mood, round(m * 5) / 5, sc)
+        if k not in gcache: gcache[k] = char_img(spec.get("character", "ghost"), mood, round(m * 5) / 5, sc)
         return gcache[k]
     zipcard = rich("saves.zip", INK, 600, size=64)
     zc = Image.new("RGBA", (zipcard.width + 80, zipcard.height + 40), (0, 0, 0, 0))
@@ -306,7 +311,8 @@ def build(spec_path, out_dir, stills=False):
             place(fr, ly, W / 2 - 30 + sx, ty + sy, scale=1.22 - 0.22 * pp, rot=tilts[(id(b), idx)] * (1 - pp) * 0.6)
         if b.get("_stamp") and tt >= b["stampAt"]:
             q = ease((tt - b["stampAt"]) / 0.14)
-            place(fr, b["_stamp"], W / 2 - 30, 1080, scale=2.2 - 1.2 * q, rot=-12, alpha=min(1, 0.3 + q))
+            fit = min(1.0, 560 / b["_stamp"].width)  # long stamps shrink so they stay clear of the right edge
+            place(fr, b["_stamp"], W / 2 - 30, 1080, scale=(2.2 - 1.2 * q) * fit, rot=-12, alpha=min(1, 0.3 + q))
         g = b.get("ghost")
         if g:
             g = {"mood": g} if isinstance(g, str) else g

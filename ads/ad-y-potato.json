@@ -1,0 +1,140 @@
+{
+  "id": "ad-y-potato",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "character": "potato",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "POV: your side hustle lives in your saved tab",
+  "caption": "POV: your side hustle lives in your saved tab.\n\nSaveSort sorted my 156 saves from the couch: 30 worth doing, 22 hiding the steps behind a comment.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "char": "smug",
+      "vo": "POV. Your side hustle lives in your saved tab.",
+      "chunks": [
+        "POV:",
+        "your *side hustle*",
+        "lives in your",
+        "saved tab."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "sad",
+        "big": true
+      },
+      "vo": "Hi. I'm a couch potato. Literally.",
+      "chunks": [
+        "Hi. I'm a",
+        "*couch potato.*",
+        "Literally."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "Side hustles. AI tools. A gym plan. All untouched.",
+      "chunks": [
+        "Side hustles.",
+        "AI tools.",
+        "A gym plan.",
+        "!All untouched.!"
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "So I let an app do the sorting.",
+      "chunks": [
+        "So I let",
+        "an app",
+        "do the *sorting.*"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "Dropped my saves into SaveSort. Didn't even get up.",
+      "chunks": [
+        "Into *SaveSort.*",
+        "Didn't even",
+        "get up."
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "30 worth doing. 22 hid the steps behind a comment.",
+      "chunks": [
+        "*30* worth doing.",
+        "*22* gated."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Build an *AI receptionist* and sell it to local businesses",
+      "stamp": "WORTH DOING",
+      "stampColor": "green",
+      "vo": "Like this one. AI receptionists are real. Tools like Vapi run about 30 cents a minute.",
+      "chunks": [
+        "Real one:",
+        "*AI receptionists.*",
+        "About 30¢",
+        "a minute."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Comment *SCALE* to grow your business",
+      "stamp": "NO DETAILS",
+      "stampColor": "yellow",
+      "vo": "This one? No tip. Just a sales call waiting to happen.",
+      "chunks": [
+        "\"Comment SCALE\"?",
+        "No tip.",
+        "!Just a sales call.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "happy",
+      "vo": "Pick one. Do it today. Even potatoes can.",
+      "chunks": [
+        "Pick *one.*",
+        "Do it today.",
+        "Even potatoes can."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "happy",
+        "big": true
+      },
+      "vo": "Link in bio. Sort yours from the couch.",
+      "chunks": [
+        "Link in bio.",
+        "Sort yours",
+        "from the *couch.*"
+      ]
+    }
+  ]
+}

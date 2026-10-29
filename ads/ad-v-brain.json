@@ -1,0 +1,161 @@
+{
+  "id": "ad-v-brain",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "character": "brain",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "Your brain thinks saving a reel is doing it",
+  "caption": "Your brain thinks saving a reel is doing it. It isn't.\n\nI had 156 saves and had done none of them. SaveSort found the 30 actually worth doing, and flagged the hype.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "char": "smug",
+      "vo": "Your brain thinks saving a reel is doing it.",
+      "chunks": [
+        "Your brain thinks",
+        "*saving* a reel",
+        "is !doing! it."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "happy",
+      "vo": "Save. Tiny hit of progress. Scroll. Repeat.",
+      "chunks": [
+        "Save.",
+        "*Tiny hit*",
+        "of progress.",
+        "Scroll.",
+        "Repeat."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "shocked",
+        "big": true
+      },
+      "vo": "Hi. I'm the brain. I did this to you.",
+      "chunks": [
+        "Hi. I'm",
+        "the *brain.*",
+        "I did this",
+        "to you."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "156 saves later, I've done none of them.",
+      "chunks": [
+        "*156* saves later",
+        "I've done",
+        "!none of them.!"
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "So let's trick me back.",
+      "chunks": [
+        "So let's",
+        "*trick me* back."
+      ]
+    },
+    {
+      "kind": "crumb",
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Settings. Accounts Center. Your information and permissions.",
+      "chunks": [
+        "Settings",
+        "Accounts Center",
+        "Your information and permissions"
+      ]
+    },
+    {
+      "kind": "crumb",
+      "continue": true,
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Download your information. Some of your information. Tick Saved. Format, HTML.",
+      "chunks": [
+        "Download your information",
+        "Some of your information",
+        "Tick *Saved*",
+        "Format: *HTML*"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "Drop the zip into SaveSort. Don't unzip it.",
+      "chunks": [
+        "Drop the zip",
+        "into *SaveSort.*",
+        "Don't unzip it."
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "30 things actually worth doing. One list.",
+      "chunks": [
+        "*30* things",
+        "actually",
+        "worth doing."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Run *100 AI agents* at once",
+      "stamp": "HYPE",
+      "stampColor": "red",
+      "vo": "And this one? Flagged. Nice try.",
+      "chunks": [
+        "And this one?",
+        "!Flagged.!",
+        "Nice try."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "happy",
+      "vo": "Doing one beats saving 100.",
+      "chunks": [
+        "Doing *one*",
+        "beats saving",
+        "*100.*"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "happy",
+        "big": true
+      },
+      "vo": "Link in bio. Your brain will thank you. I'm your brain. Thanks.",
+      "chunks": [
+        "Link in bio.",
+        "Your brain",
+        "will thank you.",
+        "*Thanks.*"
+      ]
+    }
+  ]
+}

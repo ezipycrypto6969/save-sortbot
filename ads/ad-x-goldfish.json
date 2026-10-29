@@ -1,0 +1,143 @@
+{
+  "id": "ad-x-goldfish",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "character": "goldfish",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "3 saved reels that lied to me",
+  "caption": "3 saved reels that lied to me:\n3. \"Run 100 AI agents at once\": you'll hit your usage limit fast\n2. \"Secret AI mode\": not a feature, it's a prompt\n1. \"$1000 a day dropshipping\": the best case, most stores make way less\n\nSaveSort flagged 10 of my 156 saves as be careful.\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "char": "shocked",
+      "vo": "3 saved reels that lied to me. Number 1 is the worst.",
+      "chunks": [
+        "*3* saved reels",
+        "that !lied! to me.",
+        "Number 1",
+        "is the worst."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "smug",
+        "big": true
+      },
+      "vo": "I'm a goldfish. I forgot them all. You did too.",
+      "chunks": [
+        "I'm a *goldfish.*",
+        "I forgot them all.",
+        "You did too."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Run *100 AI agents* at once",
+      "stamp": "HYPE",
+      "stampColor": "red",
+      "vo": "Number 3. Run 100 AI agents at once? You'll hit your limit before lunch.",
+      "chunks": [
+        "*#3*",
+        "100 AI agents?",
+        "Limit hit",
+        "!before lunch.!"
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Claude has a secret *Founder Thinking Mode*",
+      "stamp": "NOT REAL",
+      "stampColor": "red",
+      "vo": "Number 2. A secret AI mode? Not a feature. It's a prompt in a costume.",
+      "chunks": [
+        "*#2*",
+        "A secret AI mode?",
+        "!Not a feature.!",
+        "A prompt",
+        "in a costume."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Make *$1000 a day* dropshipping",
+      "stamp": "HYPE",
+      "stampColor": "red",
+      "vo": "Number 1. A thousand a day dropshipping? That's the best case. Most stores make way less.",
+      "chunks": [
+        "*#1*",
+        "$1000 a day?",
+        "Best case.",
+        "!Most make way less.!"
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "So how do you catch them?",
+      "chunks": [
+        "So how do",
+        "you *catch* them?"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "Drop your saves into SaveSort.",
+      "chunks": [
+        "Drop your saves",
+        "into *SaveSort.*"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "It flagged 10 of mine as be careful.",
+      "chunks": [
+        "It flagged",
+        "*10* of mine",
+        "as !be careful.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "happy",
+      "vo": "Now I know which ones to skip. For 3 seconds.",
+      "chunks": [
+        "Now I know",
+        "which to skip.",
+        "For *3 seconds.*"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "happy",
+        "big": true
+      },
+      "vo": "Link in bio. Before you forget. Again.",
+      "chunks": [
+        "Link in bio.",
+        "Before you forget.",
+        "!Again.!"
+      ]
+    }
+  ]
+}

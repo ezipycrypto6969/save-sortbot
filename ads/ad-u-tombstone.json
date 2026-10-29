@@ -1,0 +1,157 @@
+{
+  "id": "ad-u-tombstone",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "character": "tombstone",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "Here lies my saved tab. 156 reels, never opened",
+  "caption": "Here lies my saved tab. 🪦\n156 reels. Saved with love. Never opened.\n\nSaveSort dug them up: 30 worth doing, 10 straight-up hype, 22 hiding the steps behind \"comment GUIDE\".\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "Here lies my saved tab.",
+      "chunks": [
+        "Here lies",
+        "my *saved tab.*"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "156 reels. Saved with love. Never opened.",
+      "chunks": [
+        "*156* reels.",
+        "Saved with love.",
+        "!Never opened.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "smug",
+        "big": true
+      },
+      "vo": "I'm the tombstone. I've seen things.",
+      "chunks": [
+        "I'm the *tombstone.*",
+        "I've seen things."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Make *$1000 a day* dropshipping",
+      "stamp": "HYPE",
+      "stampColor": "red",
+      "vo": "Like this one. A thousand a day? Buried.",
+      "chunks": [
+        "A thousand a day?",
+        "!Buried.!"
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Comment *GUIDE* and I'll DM you the steps",
+      "stamp": "GATED",
+      "stampColor": "yellow",
+      "vo": "Comment guide? The steps were never in the reel.",
+      "chunks": [
+        "\"Comment GUIDE\"?",
+        "The steps were",
+        "never in the reel."
+      ]
+    },
+    {
+      "kind": "reel",
+      "caption": "Claude has a secret *Founder Thinking Mode*",
+      "stamp": "NOT REAL",
+      "stampColor": "red",
+      "vo": "A secret AI mode? Not even a feature. Rest in peace.",
+      "chunks": [
+        "A secret AI mode?",
+        "!Not a feature.!",
+        "Rest in peace."
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "But some of them were good.",
+      "chunks": [
+        "But some",
+        "were *good.*"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "So I dropped my saves into SaveSort.",
+      "chunks": [
+        "Dropped my saves",
+        "into *SaveSort.*"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "30 worth doing. Back from the dead.",
+      "chunks": [
+        "*30* worth doing.",
+        "Back from",
+        "the dead."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "65 more said nothing without the video. Also buried.",
+      "chunks": [
+        "*65* more",
+        "said nothing",
+        "without the video.",
+        "!Also buried.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "shocked",
+      "vo": "Even I'm impressed. And I'm made of rock.",
+      "chunks": [
+        "Even I'm",
+        "*impressed.*",
+        "I'm made of rock."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "happy",
+        "big": true
+      },
+      "vo": "Link in bio. Dig yours up before it's too late.",
+      "chunks": [
+        "Link in bio.",
+        "Dig yours up",
+        "before it's",
+        "!too late.!"
+      ]
+    }
+  ]
+}

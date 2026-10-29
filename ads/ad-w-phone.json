@@ -1,0 +1,149 @@
+{
+  "id": "ad-w-phone",
+  "format": "ad",
+  "style": "kinetic",
+  "status": "draft",
+  "character": "phone",
+  "voice": "am_michael",
+  "speed": 1.2,
+  "yt_title": "My phone has 156 saved reels and zero hope",
+  "caption": "My phone has 156 saved reels and zero hope.\n\nHow to free it:\n\nDownload your Instagram data (Settings → Accounts Center → Your information and permissions → Download your information → Some of your information → Saved → HTML), then drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools",
+  "beats": [
+    {
+      "kind": "text",
+      "char": "sad",
+      "vo": "My phone has 156 saved reels and zero hope.",
+      "chunks": [
+        "My phone has",
+        "*156* saved reels",
+        "and !zero hope.!"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "shocked",
+        "big": true
+      },
+      "vo": "Hi. I'm the phone. I'm holding all of them.",
+      "chunks": [
+        "Hi. I'm",
+        "the *phone.*",
+        "I'm holding",
+        "all of them."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "smug",
+      "vo": "Comment guides. Secret AI modes. A breathing video.",
+      "chunks": [
+        "\"Comment GUIDE\"",
+        "Secret AI modes.",
+        "A breathing video."
+      ]
+    },
+    {
+      "kind": "flash",
+      "vo": "Free me. Here's how.",
+      "chunks": [
+        "Free me.",
+        "Here's *how.*"
+      ]
+    },
+    {
+      "kind": "crumb",
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Settings. Accounts Center. Your information and permissions.",
+      "chunks": [
+        "Settings",
+        "Accounts Center",
+        "Your information and permissions"
+      ]
+    },
+    {
+      "kind": "crumb",
+      "continue": true,
+      "label": "STEP 1 · IN THE INSTAGRAM APP",
+      "vo": "Download your information. Some of your information. Tick Saved. Format, HTML.",
+      "chunks": [
+        "Download your information",
+        "Some of your information",
+        "Tick *Saved*",
+        "Format: *HTML*"
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "happy",
+      "vo": "Instagram emails you a zip. Don't unzip it.",
+      "chunks": [
+        "Instagram",
+        "emails you",
+        "a *zip.*",
+        "Don't",
+        "!unzip it.!"
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "drop.png",
+      "crop": [
+        560,
+        1500
+      ],
+      "zip": true,
+      "vo": "Drop it into SaveSort. Nothing gets uploaded.",
+      "chunks": [
+        "Drop it into",
+        "*SaveSort.*",
+        "Nothing",
+        "gets uploaded."
+      ]
+    },
+    {
+      "kind": "shot",
+      "shot": "report-all.png",
+      "crop": [
+        0,
+        960
+      ],
+      "box": [
+        30,
+        118,
+        720,
+        420
+      ],
+      "bg": "cobalt",
+      "vo": "30 worth doing. 10 hype. Finally, some peace.",
+      "chunks": [
+        "*30* worth doing.",
+        "10 hype.",
+        "Finally,",
+        "some peace."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": "smug",
+      "vo": "Battery's still at 2 percent though.",
+      "chunks": [
+        "Battery's still",
+        "at !2%!",
+        "though."
+      ]
+    },
+    {
+      "kind": "text",
+      "char": {
+        "mood": "happy",
+        "big": true
+      },
+      "vo": "Link in bio. Free your phone.",
+      "chunks": [
+        "Link in bio.",
+        "*Free* your phone."
+      ]
+    }
+  ]
+}
