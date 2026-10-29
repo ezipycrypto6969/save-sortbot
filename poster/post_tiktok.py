@@ -70,7 +70,7 @@ def due_item():
         if spec.get("tiktok"): continue  # already submitted, posted or failed
         when = dt.datetime.fromisoformat(spec["post_at"])
         if now - MAX_LATE <= when <= now + dt.timedelta(minutes=20): items.append((when, p, spec))
-    return min(items)[1:] if items else (None, None)
+    return [x[1:] for x in sorted(items, reverse=True)]  # newest first, so an old leftover never blocks tonight's reel
 
 
 def main():
@@ -85,14 +85,20 @@ def main():
     for p in sorted(glob.glob("queue/*.json")):
         spec = json.load(open(p))
         if (spec.get("tiktok") or {}).get("status") == "submitted": resolve(p, spec)
-    path, spec = due_item()
-    if not path:
+    due = due_item()
+    if not due:
         print("Nothing due for TikTok."); return
     subprocess.run(["git", "fetch", "--depth", "1", "origin", "media"], check=True)
-    with open("tiktok.mp4", "wb") as f:
-        r = subprocess.run(["git", "show", f"FETCH_HEAD:{spec['id']}.mp4"], stdout=f)
-    if r.returncode:
-        print(f"::warning title=TikTok skipped::No video for {spec['id']} on the media branch."); return
+    for path, spec in due:
+        with open("tiktok.mp4", "wb") as f:
+            r = subprocess.run(["git", "show", f"FETCH_HEAD:{spec['id']}.mp4"], stdout=f, stderr=subprocess.DEVNULL)
+        if not r.returncode: break
+        # video is gone from the media branch: record it so it never blocks a later reel, then try the next one
+        print(f"::warning title=TikTok skipped::No video for {spec['id']} on the media branch; marking it skipped.")
+        spec = json.load(open(path)); spec["tiktok"] = {"status": "skipped", "message": "video not on the media branch"}
+        json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2)
+    else:
+        print("Nothing due for TikTok has a video."); return
     caption = spec["caption"][:2200]
     print(f"Posting {spec['id']} to TikTok ({os.path.getsize('tiktok.mp4')/1e6:.1f} MB)")
     if DRY:
