@@ -205,5 +205,12 @@
     "total_views": 14,
     "total_engagement": 0,
     "updated": "2026-10-30T06:22:44+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "76b42338ffe64a3d91c8e5943c6324ac",
+    "submitted_at": "2026-10-30T17:19:10+00:00",
+    "url": "https://www.tiktok.com/@aisavesort/video/7702511708874771718",
+    "message": ""
   }
 }
