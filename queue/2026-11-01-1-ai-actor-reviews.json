@@ -2,7 +2,7 @@
   "id": "2026-11-01-1-ai-actor-reviews",
   "post_at": "2026-10-31T07:00:00+08:00",
   "format": "scam-watch",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -124,5 +124,21 @@
   "checked_at": "2026-10-29T18:16:40+08:00",
   "style": "base",
   "hook_type": "question",
-  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)"
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)",
+  "posted_at": "2026-10-30T22:56:04+00:00",
+  "media_id": "17912134533304434",
+  "permalink": "https://www.instagram.com/reel/DfItEEHjmFJ/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "EoO2nxqY4es",
+    "url": "https://youtube.com/shorts/EoO2nxqY4es",
+    "posted_at": "2026-10-30T22:56:06+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "efae33bbb9734d18a02cee57d2892ada",
+    "submitted_at": "2026-10-30T22:56:11+00:00",
+    "url": "https://www.tiktok.com/@aisavesort/video/7702598502441831701",
+    "message": ""
+  }
 }
