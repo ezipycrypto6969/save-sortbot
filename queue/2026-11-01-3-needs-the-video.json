@@ -186,5 +186,24 @@
     "video_id": "2gbJ1GN23Uc",
     "url": "https://youtube.com/shorts/2gbJ1GN23Uc",
     "posted_at": "2026-10-29T18:56:59+00:00"
+  },
+  "stats": {
+    "instagram": {
+      "views": 1,
+      "reach": 1,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 1.3
+    },
+    "youtube": {
+      "views": 13,
+      "likes": 0,
+      "comments": 0
+    },
+    "total_views": 14,
+    "total_engagement": 0,
+    "updated": "2026-10-30T06:22:44+00:00"
   }
 }
