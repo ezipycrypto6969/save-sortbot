@@ -60,6 +60,24 @@ def resolve(path, spec):
     return True
 
 
+def pick_profile():
+    """The Upload-Post profile username to post as. Upload-Post wants the profile's exact `username`
+    (not its display name). If UPLOAD_POST_USER doesn't match one, fall back to the only profile with TikTok connected."""
+    profs = get("uploadposts/users").get("profiles") or []
+    rows = [(p.get("username"), p.get("display_name"), bool((p.get("social_accounts") or {}).get("tiktok")), p.get("reauth_required")) for p in profs]
+    for u, dn, tk, re_ in rows: print(f"Upload-Post profile: username={u!r} display_name={dn!r} tiktok_connected={tk} reauth_required={re_}")
+    names = [u for u, *_ in rows]
+    if USER in names: return USER
+    match = [u for u, dn, tk, _ in rows if dn and dn.strip().lower() == USER.lower() and tk]
+    tiktok = [u for u, _, tk, _ in rows if tk]
+    pick = (match or (tiktok if len(tiktok) == 1 else [None]))[0]
+    if pick:
+        print(f"::warning title=Fix UPLOAD_POST_USER::'{USER}' isn't a profile username; using '{pick}'. Set the repo variable UPLOAD_POST_USER to {pick}.")
+        return pick
+    fail(f"UPLOAD_POST_USER is '{USER}', but your Upload-Post profile usernames are {names or 'none'}"
+         f" and {'none have' if not tiktok else 'more than one has'} TikTok connected. Set UPLOAD_POST_USER to the right username.")
+
+
 def due_item():
     now = dt.datetime.now(dt.timezone.utc)
     items = []
@@ -79,8 +97,7 @@ def main():
     if os.environ.get("PAUSED", "").lower() == "true":
         print("PAUSED is set; not posting."); return
     if "--check" in sys.argv:
-        st = get("uploadposts/status", {"request_id": "connection-test"})
-        print(f"Upload-Post API key works (test lookup answered: {st.get('status') or st})"); return
+        print(f"Upload-Post API key works; posting as profile '{pick_profile()}'"); return
     # finish checking anything submitted earlier
     for p in sorted(glob.glob("queue/*.json")):
         spec = json.load(open(p))
@@ -99,12 +116,13 @@ def main():
         json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2)
     else:
         print("Nothing due for TikTok has a video."); return
+    user = pick_profile()
     caption = spec["caption"][:2200]
     print(f"Posting {spec['id']} to TikTok ({os.path.getsize('tiktok.mp4')/1e6:.1f} MB)")
     if DRY:
         print("DRY_RUN: would post with caption:\n" + caption); return
     cmd = ["curl", "-sS", "--max-time", "600", "-H", f"Authorization: Apikey {KEY}",
-           "-F", "video=@tiktok.mp4", "-F", f"user={USER}", "-F", "platform[]=tiktok",
+           "-F", "video=@tiktok.mp4", "-F", f"user={user}", "-F", "platform[]=tiktok",
            "-F", f"title={caption}", "-F", f"tiktok_title={caption}",
            "-F", "privacy_level=PUBLIC_TO_EVERYONE", "-F", "is_aigc=true",  # AI voice and animation: label it
            "-F", f"cover_timestamp={spec.get('cover_offset_ms', 1000)}", "-F", "async_upload=true",
