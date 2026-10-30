@@ -48,7 +48,8 @@ def resolve(path, spec):
     st = get("uploadposts/status", {"request_id": tk["request_id"]})
     r = tiktok_result(st) or {}
     print(f"TikTok status for {spec['id']}: {st.get('status')} {r}")
-    if st.get("status") not in DONE and r.get("success") is None: return False
+    busy = r.get("status") in ("processing", "pending", "queued", "in_progress", "uploading")
+    if busy or (st.get("status") not in DONE and r.get("success") is None): return False  # still going
     spec = json.load(open(path))  # re-read: earlier steps may have changed it
     if r.get("success"):
         spec["tiktok"].update(status="posted", url=r.get("url") or r.get("post_url") or "", message=r.get("message", ""))

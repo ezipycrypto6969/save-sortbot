@@ -184,9 +184,8 @@
     "posted_at": "2026-10-30T11:26:48+00:00"
   },
   "tiktok": {
-    "status": "failed",
     "request_id": "ab1ce2f903a04cacb3410c01e3c053b1",
     "submitted_at": "2026-10-30T12:35:44+00:00",
-    "message": "Upload is currently being processed"
+    "status": "submitted"
   }
 }
