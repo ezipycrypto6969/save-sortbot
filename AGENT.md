@@ -4,7 +4,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
 
 ## Steps
 
-1. `git pull`. Read `stats/summary.md` and `content/styles.md` first, then do **Marketing test and learn** (below) before writing anything. Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled). A reel with `"status": "held"` was rejected by the claims checker: read its `hold_reasons`, and fill its slot with a new reel that avoids those problems.
+1. `git pull`. Read `content/lessons.md`, `stats/summary.md` and `content/styles.md` first. **Follow the "Next week's instructions for the writer" in `content/lessons.md` exactly** (mix, hooks, length and the rest): a separate analyst writes them every Saturday from the real stats. Where it says nothing, use **Marketing test and learn** (below). Count `queue/*.json` with `"status": "queued"` and `post_at` in the future. Plan enough new items to cover the next 7 days with 3 per day (skip slots already filled). A reel with `"status": "held"` was rejected by the claims checker: read its `hold_reasons`, and fill its slot with a new reel that avoids those problems.
 2. For each new slot, write `queue/<YYYY-MM-DD>-<1|2|3>-<slug>.json` (1 = 03:00, 2 = 07:00, 3 = 19:30) (spec format below). Every new item gets `"check": "pending"`: the posters skip it until the separate claims checker (see `CHECKER.md`) sets it to `"passed"`. Never set `check` yourself. Mix formats across the week: about 3 breakdowns, 2 scam-watch, 1 reveal, 1 "tool of the day" per 7 posts. Never two of the same format in a row.
 3. Ideas: take unused entries from `content/ideas.md` first (mark them `[used YYYY-MM-DD]`). When fewer than 10 remain, research new ones: currently viral AI, side-hustle, money and marketing claims (web search), verify them against primary sources, and add them to the backlog in the same format.
 4. Render each: `python3 engine/build.py queue/<id>.json out/<id> --stills`. Exit code 2 = unknown words: rephrase the line, or add the word's phonemes to `models/custom.json` (copy the notation style of similar words in `models/us_gold.json`).
@@ -75,7 +75,7 @@ The goal is better marketing: more views, follows and sign-ups for SaveSort amon
 
 Give every new reel `"style"` (one of the names above) and `"hook_type"` (e.g. `countdown`, `pov`, `bold-claim`, `question`, `guess`).
 
-**Judging (from `stats/summary.md`; only reels marked ✓, at least 3 days old):**
+**Judging** is done by the analyst (`ANALYST.md`) every Saturday, using these rules. Only if `content/lessons.md` has no analysis yet, judge yourself (from `stats/summary.md`; only reels marked ✓, at least 3 days old):
 - Compare an experiment's reels with the `base` median views and median engagement rate over the same period.
 - If an experiment beats the `base` median on views or engagement rate on at least 2 of its reels, run it again next week with up to 6 slots (taken from `base`). If it wins two weeks in a row, move it to Regular styles with its slot count.
 - If it loses on both measures, retire it and write why in Retired styles. Don't retry a retired style unless it's changed in a clear way.

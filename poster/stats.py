@@ -114,6 +114,19 @@ def fetch(specs):
     print(f"Updated stats for {len(specs)} posted reels.")
 
 
+SLOTS = {"03": "3am", "07": "7am", "19": "7:30pm"}
+
+
+def watch(s, st):
+    """How long people watched, as seconds and as a share of the reel. Uses TikTok, then Instagram."""
+    dur = s.get("duration") or 0
+    w = (st.get("tiktok") or {}).get("avg_watch_s") or (st.get("instagram") or {}).get("avg_watch_s")
+    local = dt.datetime.fromisoformat(s["post_at"]).astimezone(dt.timezone(dt.timedelta(hours=8)))
+    return dict(dur=round(dur), avg_watch=w if w is not None else "-",
+                watch_pct=(f"{w / dur:.0%}" if w and dur else "-"), slot=SLOTS.get(f"{local:%H}", f"{local:%H:%M}"),
+                full=(st.get("tiktok") or {}).get("full_watch_rate"))
+
+
 def summary(all_specs):
     rows = []
     for _, s in all_specs:
@@ -123,7 +136,7 @@ def summary(all_specs):
         rows.append(dict(id=s["id"], title=(s.get("yt_title") or s.get("caption", "").split("\n")[0])[:60], style=style_of(s),
                          hook=s.get("hook_type", ""), views=v, eng=e, rate=(e / v if v else 0), settled=age >= SETTLED,
                          ig=(st.get("instagram") or {}).get("views", "-"), yt=(st.get("youtube") or {}).get("views", "-"),
-                         tt=(st.get("tiktok") or {}).get("views", "-"), days=age.days))
+                         tt=(st.get("tiktok") or {}).get("views", "-"), days=age.days, **watch(s, st)))
     rows.sort(key=lambda r: r["views"], reverse=True)
     lines = [f"# Reel performance (updated {NOW.astimezone(dt.timezone(dt.timedelta(hours=8))):%a %d %b %Y %H:%M} Perth)", "",
              "Views and engagement are summed across Instagram, YouTube and TikTok. Engagement = likes + comments + shares + saves.",
@@ -137,10 +150,13 @@ def summary(all_specs):
                      f"{statistics.median([r['rate'] for r in rs]):.1%} | {rs[0]['title']} |")
     if not by: lines.append("| (no reels old enough yet) | | | | |")
     lines += ["", "## Every posted reel (most views first)", "",
-              "| ✓ | Reel | Style | Hook | Days | Views | IG | YT | TikTok | Eng. rate | Queue file |", "|---|---|---|---|---|---|---|---|---|---|---|"]
+              "Avg watch = average seconds watched (TikTok, else Instagram); % watched = avg watch / reel length. "
+              "Low % watched with decent views means the opening loses people.", "",
+              "| ✓ | Reel | Style | Hook | Slot | Days | Views | IG | YT | TikTok | Eng. rate | Length s | Avg watch s | % watched | Queue file |",
+              "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
-        lines.append(f"| {'✓' if r['settled'] else ''} | {r['title']} | {r['style']} | {r['hook']} | {r['days']} | {r['views']:,} | "
-                     f"{r['ig']} | {r['yt']} | {r['tt']} | {r['rate']:.1%} | {r['id']} |")
+        lines.append(f"| {'✓' if r['settled'] else ''} | {r['title']} | {r['style']} | {r['hook']} | {r['slot']} | {r['days']} | {r['views']:,} | "
+                     f"{r['ig']} | {r['yt']} | {r['tt']} | {r['rate']:.1%} | {r['dur']} | {r['avg_watch']} | {r['watch_pct']} | {r['id']} |")
     os.makedirs("stats", exist_ok=True)
     open("stats/summary.md", "w").write("\n".join(lines) + "\n")
     print("Wrote stats/summary.md")
