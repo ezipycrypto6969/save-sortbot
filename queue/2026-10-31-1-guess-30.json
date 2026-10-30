@@ -2,7 +2,7 @@
   "id": "2026-10-31-1-guess-30",
   "post_at": "2026-10-30T19:30:00+08:00",
   "format": "reveal",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -173,5 +173,14 @@
   "cover_offset_ms": 4808,
   "duration": 30.918,
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "posted_at": "2026-10-30T11:26:46+00:00",
+  "media_id": "17911042677595063",
+  "permalink": "https://www.instagram.com/reel/DfHeKqHjzH8/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "XpCSkppDlOQ",
+    "url": "https://youtube.com/shorts/XpCSkppDlOQ",
+    "posted_at": "2026-10-30T11:26:48+00:00"
+  }
 }
