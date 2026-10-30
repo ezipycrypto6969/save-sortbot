@@ -15,16 +15,11 @@
   "caption": "Don't clone someone else's store.\n\nA saved reel (a sponsored post) said AI can clone any online store in minutes.\nAI store builders are real and handy.\nBut copying another brand's photos, text or design can breach copyright and trademark.\n\nDo this instead: study what works, then make your own photos, copy and name.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#ecommerce #shopify #aitools #scamwatch",
   "scenes": [
     {
-      "type": "hook",
-      "lines": [
-        "Don't clone",
-        "*someone's store.*"
-      ],
-      "mascot": {
-        "pos": "bl",
-        "mood": "shocked"
-      },
-      "vo": "Don't use AI to clone someone else's online store."
+      "type": "title",
+      "text": "This AI trick\ncould get you *sued.*",
+      "vo": "This AI trick could get you sued.",
+      "bg": "paper",
+      "clean": true
     },
     {
       "type": "quote",
@@ -145,5 +140,9 @@
     }
   ],
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "hook_type": "warning",
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)",
+  "cover_offset_ms": 2689,
+  "duration": 30.34
 }

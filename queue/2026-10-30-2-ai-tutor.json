@@ -15,16 +15,17 @@
   "caption": "Stop asking AI for the answers.\n\nA saved reel said AI makes you a better learner. Only if you set it up like a tutor:\n1. \"Don't give me answers. Ask me one question at a time.\"\n2. \"Push back when I'm wrong.\"\n3. \"Quiz me at the end and tell me my weakest area.\"\n\nWorks on the free Claude plan.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#aitools #claude #productivity #savedreels #learning",
   "scenes": [
     {
-      "type": "hook",
-      "lines": [
-        "Stop asking AI",
-        "for *the answers.*"
-      ],
-      "mascot": {
-        "pos": "bl",
-        "mood": "smug"
-      },
-      "vo": "Stop asking AI for the answers. You're not learning anything."
+      "type": "title",
+      "text": "You're using AI\n*wrong.*",
+      "vo": "You're using AI wrong.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "title",
+      "text": "Stop asking it\nfor *answers.*",
+      "vo": "Stop asking it for answers.",
+      "bg": "ink"
     },
     {
       "type": "talk",
@@ -133,5 +134,9 @@
     }
   ],
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "hook_type": "bold-claim",
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)",
+  "cover_offset_ms": 2348,
+  "duration": 30.645
 }

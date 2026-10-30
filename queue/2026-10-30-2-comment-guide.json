@@ -11,6 +11,13 @@
   },
   "scenes": [
     {
+      "type": "title",
+      "text": "Don't comment\n*GUIDE.*",
+      "vo": "Don't comment guide. Watch this first.",
+      "bg": "cobalt",
+      "clean": true
+    },
+    {
       "type": "talk",
       "text": "22 of my saves\nwanted a *comment.*",
       "mood": "shocked",
@@ -121,9 +128,11 @@
     }
   ],
   "caption": "22 of my saved reels wouldn't tell me anything unless I commented.\n\nPlot twist: most of it was free all along.\n\nBefore you comment:\n• Are the steps in the caption?\n• Search the tool's name\n• Is it free already?\n• Then decide\n\nFind your gated guides free, link in bio.\n\n#savedreels #instagramtips #productivity #aitools #sidehustle",
-  "cover_offset_ms": 4650,
-  "duration": 32.36,
+  "cover_offset_ms": 2850,
+  "duration": 34.31,
   "post_at": "2026-11-02T03:00:00+08:00",
   "yt_title": "What \"comment GUIDE\" actually gets you",
-  "style": "base"
+  "style": "base",
+  "hook_type": "warning",
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)"
 }

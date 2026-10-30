@@ -232,11 +232,12 @@ window.render=function(t){
   const prog=document.getElementById("prog"); prog.style.display=fx.progress===false?"none":"block"; prog.style.width=(1080*clamp(t/TL.dur))+"px";
   let flash=0; TL.scenes.forEach((sc,i)=>{ if(i>0){const p=(t-sc.start)/0.1; if(p>=0&&p<1) flash=Math.max(flash,0.55*(1-p));} });
   document.getElementById("flash").style.opacity=fx.flash===false?0:flash;
+  const curI=TL.scenes.findIndex(sc=>t>=sc.start&&t<sc.end); const clean=curI>=0&&TL.scenes[curI].clean;  // "clean": no banner or captions on this scene
   const hk=document.getElementById("hook");
-  if(fx.hook&&t>=0.15&&t<(fx.hookUntil??TL.dur)){hk.style.display="block"; hk.textContent=fx.hook; const p=(t-0.15)/0.2; hk.style.transform=`scale(${p<1?0.6+0.4*back(p):1+0.03*Math.sin(t*6)})`; hk.style.transformOrigin="left center";}
+  if(fx.hook&&!clean&&t>=0.15&&t<(fx.hookUntil??TL.dur)){hk.style.display="block"; hk.textContent=fx.hook; const p=(t-0.15)/0.2; hk.style.transform=`scale(${p<1?0.6+0.4*back(p):1+0.03*Math.sin(t*6)})`; hk.style.transformOrigin="left center";}
   else hk.style.display="none";
   const caps=document.getElementById("caps"); const ch=(TL.caps||[]).find(c=>t>=c.t0&&t<c.t1);
-  if(ch&&fx.captions!==false){
+  if(ch&&fx.captions!==false&&!clean){
     caps.style.display="flex";
     if(caps.dataset.k!==String(ch.t0)){caps.dataset.k=String(ch.t0); caps.innerHTML=`<div class="chunk">${ch.words.map(w=>`<span class="w">${esc(w.w)}</span>`).join("")}</div>`;}
     [...caps.querySelectorAll(".w")].forEach((el,k)=>el.classList.toggle("on",t>=ch.words[k].t0));

@@ -15,16 +15,11 @@
   "caption": "That happy customer in the ad might not be real.\n\nA saved reel showed how fast AI makes ads with AI actors. Making ads with AI is fine.\nPresenting an AI actor as a real customer is a fake testimonial. That's misleading.\n\nThe honest version:\nUse AI for the script and the visuals\nUse real reviews from real customers\nLabel AI people as AI\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#marketing #ads #aitools #scamwatch",
   "scenes": [
     {
-      "type": "hook",
-      "lines": [
-        "That happy customer",
-        "*isn't real.*"
-      ],
-      "mascot": {
-        "pos": "bl",
-        "mood": "suspicious"
-      },
-      "vo": "That happy customer in the ad? Might not be a real person."
+      "type": "title",
+      "text": "Can you spot a\n*fake customer?*",
+      "vo": "Can you spot a fake customer?",
+      "bg": "paper",
+      "clean": true
     },
     {
       "type": "quote",
@@ -124,8 +119,10 @@
       }
     }
   ],
-  "cover_offset_ms": 3968,
-  "duration": 31.629,
+  "cover_offset_ms": 2525,
+  "duration": 30.186,
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "hook_type": "question",
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)"
 }

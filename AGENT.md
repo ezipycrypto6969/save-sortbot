@@ -85,6 +85,20 @@ Give every new reel `"style"` (one of the names above) and `"hook_type"` (e.g. `
 
 **In the owner message**, add a short "What worked" section: the top 3 and bottom 3 reels last week (title, views), each style's result, and what you're changing this week.
 
+## Hooks: the first 2 seconds (owner rule, 30 Oct 2026)
+
+The first reels kept people for only 1.3–6.4 seconds of 31–48 (5–13%). They were leaving in the opening, so every reel now starts with a **cold open**:
+
+1. **Scene 1 is a `title` with `"clean": true`** (no banner, no subtitles, no mascot), on a solid background that differs from scene 2. Use `"bg": "paper"` (white) most often, since it stands out in a dark feed. Max 5 words on screen, `vo` max 8 words, about 1–1.5 seconds.
+2. **It must be one of:** a bold claim about the viewer ("You're using AI wrong."), a question they want answered ("Can you spot a fake customer?"), a warning ("This AI trick could get you sued."), a confession with a number ("10 of my saves lied to me."), or a stakes line ("No reviews? No sales."). Never generic advice or a topic label ("If you sell anything, you need proof").
+3. **Scene 2 changes the picture by about 1.3 seconds**: a different background and new words (a second `title`, a `talk`, or a `quote`). Never two scenes in a row that look the same.
+4. **Don't open on the grey saved-reels grid** (`hook` scenes) anymore. Use `hook` later in the reel if at all.
+5. **SaveSort or "my saved reels" appears by scene 3** (within about 6 seconds).
+6. Keep the `fx.hook` banner: it's hidden during the clean first scene and appears from scene 2.
+7. Set `"hook_type"` to `bold-claim`, `question`, `warning`, `confession` or `stakes` so the analyst can compare them.
+
+Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-saves-that-lied`.
+
 ## Owner feedback (29 Oct 2026, apply to every new reel)
 
 - **Balance the saves story and the useful content.** Don't spend most of the reel on random tips from reels and only reveal at the end that they came from saved reels. Say early (first 2–3 scenes) that these came from *your saved reels* and that SaveSort found them, then give the useful bit, then the payoff. Don't swing the other way into a pure product ad either.

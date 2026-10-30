@@ -15,16 +15,11 @@
   "caption": "POV: you build your first real app this weekend.\n\nTool of the day: the N2YO API. Free key when you sign up. It tells you which satellites are above any spot on Earth (100 of those lookups an hour on the free key).\n\n1. Make an N2YO account, generate your key\n2. Ask an AI coding tool to build a page showing what's overhead where you live\n3. Publish it and put it in your portfolio\n\nAPIs are the skill behind most automations people pay for.\n\nSorted by SaveSort. Sort your saves free, link in bio.\n\n#coding #api #learntocode #aitools",
   "scenes": [
     {
-      "type": "hook",
-      "lines": [
-        "POV: you build",
-        "*your first real app.*"
-      ],
-      "mascot": {
-        "pos": "bl",
-        "mood": "happy"
-      },
-      "vo": "POV. You build your first real app this weekend. It tracks satellites."
+      "type": "title",
+      "text": "What's flying\n*over your house?*",
+      "vo": "What's flying over your house right now?",
+      "bg": "cobalt",
+      "clean": true
     },
     {
       "type": "quote",
@@ -126,8 +121,10 @@
       }
     }
   ],
-  "cover_offset_ms": 4514,
-  "duration": 32.885,
+  "cover_offset_ms": 2733,
+  "duration": 31.103,
   "checked_at": "2026-10-29T18:16:40+08:00",
-  "style": "base"
+  "style": "base",
+  "hook_type": "question",
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)"
 }
