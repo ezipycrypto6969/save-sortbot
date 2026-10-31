@@ -85,6 +85,10 @@ Give every new reel `"style"` (one of the names above) and `"hook_type"` (e.g. `
 
 **In the owner message**, add a short "What worked" section: the top 3 and bottom 3 reels last week (title, views), each style's result, and what you're changing this week.
 
+## Product-first format (owner rule, 31 Oct 2026)
+
+On YouTube the two best reels by far were `2026-10-28-2-full-tutorial` (35 s average watch, 75% viewed) and `2026-10-26-2-reveal-156` (122% viewed, people rewatched it). Both lead with **the viewer's saved-reels problem** ("156 saves, 0 ever opened"), then **show SaveSort solving it on screen** (drop the zip, sorted by topic, tap Worth doing / Be careful / Gated guides), then a clear call to action. Make most `base` reels this way, modelled on those two and on `2026-10-31-3-junk-drawer-fix`, `2026-11-01-1-156-zero`, `2026-11-01-2-find-that-reel`, `2026-11-01-3-later-never-comes` and `2026-11-02-1-to-do-list`. Tips taken from saved reels are a minority, and only as proof of what SaveSort found. Use the real report numbers: 156 saves, 30 worth doing, 65 need the video, 10 be careful, 22 gated guides.
+
 ## Hooks: the first 2 seconds (owner rule, 30 Oct 2026)
 
 The first reels kept people for only 1.3–6.4 seconds of 31–48 (5–13%). They were leaving in the opening, so every reel now starts with a **cold open**:

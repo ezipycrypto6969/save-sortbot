@@ -1,0 +1,218 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "model": "2026-10-28-2-full-tutorial + 2026-10-26-2-reveal-156 (owner's best on YouTube)",
+  "id": "2026-11-01-1-156-zero",
+  "post_at": "2026-11-01T03:00:00+08:00",
+  "hook_type": "confession",
+  "fx": {
+    "hook": "WAIT FOR THE HYPE ONE"
+  },
+  "yt_title": "I saved 156 reels. I watched none of them again",
+  "caption": "I saved 156 reels. I watched none of them again. 💀\n\nSo I dropped them into SaveSort:\n✅ 30 actually worth doing\n🤷 65 said nothing without the video\n⚠️ 10 were hype\n🔒 22 hid the info behind \"comment GUIDE\"\n\nSort yours free, link in bio. Runs in your browser, nothing uploaded.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "hook",
+      "lines": [
+        "I saved",
+        "*156 reels.*"
+      ],
+      "vo": "I saved 156 reels."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Watched again:",
+        "*zero.*"
+      ],
+      "vo": "Watched them again? Zero.",
+      "slow": true,
+      "grey": true
+    },
+    {
+      "type": "screen",
+      "vo": "So I dropped them all into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Every single one, sorted by topic.",
+      "label": "YOUR SAVES, SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.1,
+          "until": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "actually *worth doing*",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "30 were actually worth doing. Past me had taste."
+    },
+    {
+      "type": "stat",
+      "value": 65,
+      "label": "said nothing\n*without the video*",
+      "color": "warn",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      },
+      "vo": "65 said nothing unless you watched the whole video."
+    },
+    {
+      "type": "screen",
+      "vo": "And 10 were straight-up hype.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "react",
+      "quote": "Make $1000 a day dropshipping",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A thousand a day? Mate. No.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "vo": "And 22 hid the steps behind comment guide.",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Most of my saves\nwere *noise.*",
+      "vo": "Turns out most of my saves were just noise.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Now I just do\n*the 30.*",
+      "vo": "Now I skip the noise and just do the 30.",
+      "mood": "smug"
+    },
+    {
+      "type": "checks",
+      "heading": "What you get",
+      "label": "YOUR SAVESORT REPORT",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "Free, nothing uploaded"
+      ],
+      "lastWarn": false,
+      "vo": "Every save by topic. What's worth doing. What's hype. Free, nothing uploaded."
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and sort yours now.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3338,
+  "duration": 32.082
+}

@@ -2,7 +2,7 @@
   "id": "2026-11-03-1-satellite-app",
   "post_at": "2026-10-31T19:30:00+08:00",
   "format": "tool",
-  "status": "queued",
+  "status": "scrapped",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -126,5 +126,6 @@
   "checked_at": "2026-10-29T18:16:40+08:00",
   "style": "base",
   "hook_type": "question",
-  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)"
+  "hook_rewrite": "2026-10-30: cold open (owner asked to fix hooks; avg watch was 1.3-6.4s)",
+  "scrap_reason": "Owner cleared the queue 31 Oct 2026 to focus on the product-first format (like the full tutorial and 156-reels reveal, best on YouTube)."
 }

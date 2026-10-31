@@ -1,0 +1,246 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "model": "2026-10-28-2-full-tutorial + 2026-10-26-2-reveal-156 (owner's best on YouTube)",
+  "id": "2026-11-01-2-find-that-reel",
+  "post_at": "2026-11-01T07:00:00+08:00",
+  "hook_type": "stakes",
+  "fx": {
+    "hook": "FOUND IT IN 2 TAPS"
+  },
+  "yt_title": "You saved that reel months ago. Here's how to find it",
+  "caption": "You saved that recipe months ago. Good luck finding it.\n\nUnless you made collections, your saved tab is one long pile, newest first.\n\nDrop your Instagram export into SaveSort and every save gets sorted by topic: health, money, learning, side hustles and more. Then tap a topic and it's there.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "You saved it\n*months ago.*",
+      "vo": "You saved that reel months ago. Good luck finding it.",
+      "mood": "sad"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*One long pile.*"
+      ],
+      "vo": "Unless you made collections, it's one long pile. Newest first.",
+      "slow": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "So I let\n*SaveSort* do it.",
+      "vo": "So I let SaveSort sort the pile for me.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "vo": "Drop in your Instagram export. That's it.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Every save, sorted by topic.",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.1,
+          "until": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "screen",
+      "label": "TAP HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1304.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Want the health stuff? Tap health and lifestyle."
+    },
+    {
+      "type": "screen",
+      "label": "TAP MONEY",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MONEY.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1568.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Money saves? One tap.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Study tips? Right there."
+    },
+    {
+      "type": "screen",
+      "label": "TAP SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Side hustle ideas? All in one place."
+    },
+    {
+      "type": "talk",
+      "text": "No more\n*scrolling back.*",
+      "vo": "No more scrolling back for twenty minutes.",
+      "mood": "smug"
+    },
+    {
+      "type": "checks",
+      "heading": "What you get",
+      "label": "YOUR SAVESORT REPORT",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "Free, nothing uploaded"
+      ],
+      "lastWarn": false,
+      "vo": "Every save by topic. What's worth doing. What's hype. Free, nothing uploaded."
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and find yours.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3494,
+  "duration": 31.126
+}

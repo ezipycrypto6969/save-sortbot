@@ -1,0 +1,269 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "model": "2026-10-28-2-full-tutorial + 2026-10-26-2-reveal-156 (owner's best on YouTube)",
+  "id": "2026-10-31-3-junk-drawer-fix",
+  "post_at": "2026-10-31T19:30:00+08:00",
+  "hook_type": "stakes",
+  "fx": {
+    "hook": "SAVE THIS FOR LATER"
+  },
+  "yt_title": "Your saved tab is a junk drawer. Here's the 60 second fix",
+  "caption": "Your saved tab is a junk drawer. Here's the fix.\n\n1. Settings → Accounts Center → Your information and permissions → Export your information\n2. Create export → Export to device → tick only Saved → HTML → Start export\n3. Instagram emails you when it's ready. Download the zip\n4. Drop the zip into SaveSort. No need to unzip\n\nEvery save sorted by topic, with the ones worth doing and the hype flagged. Free, and nothing gets uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Your saved tab\nis a *junk drawer.*",
+      "vo": "Your saved tab is a junk drawer. Here's the fix.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*0* ever opened."
+      ],
+      "vo": "I had 156 saved reels and never opened one again.",
+      "slow": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "path",
+      "label": "STEP 1 · IN INSTAGRAM",
+      "screens": [
+        {
+          "title": "Settings and activity",
+          "rows": [
+            "Accounts Center",
+            "Saved",
+            "Archive",
+            "Your activity"
+          ],
+          "pick": 0
+        },
+        {
+          "crumb": "Accounts Center",
+          "title": "Account settings",
+          "rows": [
+            "Password and security",
+            "Personal details",
+            "Your information and permissions",
+            "Ad preferences"
+          ],
+          "pick": 2
+        },
+        {
+          "crumb": "Your information and permissions",
+          "title": "Your information",
+          "rows": [
+            "Access your information",
+            "Export your information",
+            "Search history"
+          ],
+          "pick": 1
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "In Instagram, open settings. Accounts Center. Your information. Export your information."
+    },
+    {
+      "type": "path",
+      "label": "STEP 2 · ONLY TICK SAVED",
+      "screens": [
+        {
+          "crumb": "Export your information",
+          "title": "Create export",
+          "rows": [
+            "Export to device",
+            "Transfer to destination"
+          ],
+          "pick": 0
+        },
+        {
+          "crumb": "Customize information",
+          "title": "Your Instagram activity",
+          "rows": [
+            "Saved",
+            "Likes",
+            "Comments",
+            "Messages"
+          ],
+          "ticks": true,
+          "on": [
+            0
+          ]
+        },
+        {
+          "crumb": "Export to device",
+          "title": "Confirm your export",
+          "rows": [
+            "Date range: All time",
+            "Format: HTML",
+            "Start export"
+          ],
+          "btn": 2,
+          "pick": 2
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Create export. Export to device. Tick only saved. Pick HTML. Start."
+    },
+    {
+      "type": "talk",
+      "text": "Instagram *emails you*\nwhen it's ready.",
+      "vo": "Instagram emails you when it's ready. Download the zip.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "vo": "Open SaveSort and drop the zip in. Don't even unzip it.",
+      "label": "STEP 3 · DROP IT IN SAVESORT",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Done. 156 saves, sorted by topic in seconds.",
+      "label": "YOUR SAVES, SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.1,
+          "until": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Worth doing shows the 30 you can actually act on.",
+      "label": "THE GOOD STUFF",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Be careful shows the 10 that were hype.",
+      "label": "THE HYPE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "payoff": true
+    },
+    {
+      "type": "checks",
+      "heading": "What you get",
+      "label": "YOUR SAVESORT REPORT",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "Free, nothing uploaded"
+      ],
+      "lastWarn": false,
+      "vo": "Every save by topic. What's worth doing. What's hype. Free, and nothing gets uploaded."
+    },
+    {
+      "type": "end",
+      "vo": "Save this, then tap the link in bio.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3464,
+  "duration": 35.856
+}

@@ -1,0 +1,183 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "model": "2026-10-28-2-full-tutorial + 2026-10-26-2-reveal-156 (owner's best on YouTube)",
+  "id": "2026-11-02-1-to-do-list",
+  "post_at": "2026-11-02T03:00:00+08:00",
+  "hook_type": "bold-claim",
+  "fx": {
+    "hook": "STEP 3 CHANGES IT"
+  },
+  "yt_title": "Your saved reels are a to-do list you'll never do",
+  "caption": "Your saved reels are a to-do list you'll never do.\n\nHow I turned 156 saves into something useful:\n1. Drop your Instagram export into SaveSort\n2. Open Worth doing. Mine had 30\n3. Pick one. Do it this week\n4. Skip the hype ones\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Your saves are a\n*to-do list.*",
+      "vo": "Your saved reels are a to-do list you'll never do.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*Not one done.*"
+      ],
+      "vo": "I had 156. Not one done.",
+      "slow": true,
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Step 1. Drop your Instagram export into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Step 2. Open worth doing. Mine had 30.",
+      "label": "STEP 2 · WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Step 3. Pick *one.*\nDo it *this week.*",
+      "vo": "Step 3. Pick one. Do it this week. Just one.",
+      "mood": "happy",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "vo": "Step 4. Skip the hype. SaveSort flags it for you.",
+      "label": "STEP 4 · SKIP THE HYPE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "react",
+      "quote": "Make $1000 a day dropshipping",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "Like this one. A thousand a day? Skip it."
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "saves.\n*30 weeks of wins.*",
+      "color": "go",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "30 saves. That's 30 weeks of actual wins."
+    },
+    {
+      "type": "talk",
+      "text": "Past me was\n*ambitious.*",
+      "vo": "Past me was ambitious. Present me is catching up.",
+      "mood": "smug"
+    },
+    {
+      "type": "checks",
+      "heading": "What you get",
+      "label": "YOUR SAVESORT REPORT",
+      "items": [
+        "Every save, by topic",
+        "What's worth doing",
+        "What's just hype",
+        "Free, nothing uploaded"
+      ],
+      "lastWarn": false,
+      "vo": "Every save by topic. What's worth doing. What's hype. Free, nothing uploaded."
+    },
+    {
+      "type": "talk",
+      "text": "One save a week.\n*That's it.*",
+      "vo": "One save a week. That's the whole trick.",
+      "mood": "happy",
+      "wave": true
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and start with one.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3408,
+  "duration": 30.742
+}
