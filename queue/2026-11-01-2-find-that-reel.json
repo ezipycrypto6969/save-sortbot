@@ -1,6 +1,6 @@
 {
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "style": "base",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -244,5 +244,28 @@
   "cover_offset_ms": 3494,
   "duration": 32.18,
   "checked_at": "2026-10-31T09:03:00+08:00",
-  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)",
+  "posted_at": "2026-10-31T22:56:09+00:00",
+  "media_id": "18349049086284116",
+  "permalink": "https://www.instagram.com/reel/DfLR2j2gV7b/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "B9iTxdRLnB0",
+    "url": "https://youtube.com/shorts/B9iTxdRLnB0",
+    "posted_at": "2026-10-31T22:56:11+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "17621e149b2c43258ceec3bd17ea0421",
+    "submitted_at": "2026-10-31T22:56:17+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7702969631950048532",
+    "message": ""
+  }
 }
