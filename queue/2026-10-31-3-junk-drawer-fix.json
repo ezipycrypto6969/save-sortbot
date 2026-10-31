@@ -1,7 +1,7 @@
 {
   "format": "long",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "style": "base",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -265,5 +265,9 @@
     }
   ],
   "cover_offset_ms": 3464,
-  "duration": 35.856
+  "duration": 35.856,
+  "hold_reasons": [
+    "More than one call to action (AGENT.md: ask for one action, never both): end scene vo 'Save this, then tap the link in bio' asks viewers to save AND tap the link, and the fx.hook banner 'SAVE THIS FOR LATER' repeats the save ask. Keep only the link-in-bio CTA."
+  ],
+  "checked_at": "2026-10-31T09:03:00+08:00"
 }
