@@ -1,6 +1,6 @@
 {
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "style": "base",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -268,5 +268,28 @@
   "duration": 37.489,
   "checked_at": "2026-10-31T10:20:00+08:00",
   "check_note": "Held only for two calls to action; fixed exactly that (single link-in-bio CTA, banner no longer asks to save).",
-  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)",
+  "posted_at": "2026-10-31T11:26:10+00:00",
+  "media_id": "18089583926505797",
+  "permalink": "https://www.instagram.com/reel/DfKC5SjlOjD/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "cnpspXfOTek",
+    "url": "https://youtube.com/shorts/cnpspXfOTek",
+    "posted_at": "2026-10-31T11:26:12+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "9039dfeba6cb43deb63a2f24efcb7384",
+    "submitted_at": "2026-10-31T11:26:18+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7702791849802501394",
+    "message": ""
+  }
 }
