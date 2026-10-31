@@ -12,6 +12,11 @@ export default {
     if (url.pathname === "/api/breakdown" && request.method === "POST") return breakdown({ request, env });
     if (url.pathname === "/api/owner" && request.method === "POST") return owner({ request, env });
     if (url.pathname.startsWith("/api/")) return json({ error: "Not found" }, 404);
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    const type = res.headers.get("content-type") || "";
+    if (/^text\/(html|css)/.test(type) && !/charset/i.test(type)) {  // always serve pages as UTF-8
+      const r = new Response(res.body, res); r.headers.set("content-type", type + "; charset=utf-8"); return r;
+    }
+    return res;
   },
 };
