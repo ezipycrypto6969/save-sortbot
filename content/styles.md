@@ -30,7 +30,7 @@ Each week runs 3 experiment reels (1 to 3 new styles). Name them `exp-<short-nam
 
 ## Style results so far (31 Oct 2026)
 
-- `base`: 3 judged reels, median 46 views, 2.2% engagement. Saves-led base reels beat tip-led ones on Instagram (see `content/lessons.md`).
+- `base`: 3 judged reels, median 46 views, 2.2% engagement. Saves-led, on-screen-demo base reels beat tip-led ones on Instagram views and YouTube watch time (see `content/lessons.md`). Model reels for the demo: `2026-10-28-2-full-tutorial` (75% viewed on YouTube), `2026-10-26-2-reveal-156` (122%).
 - `funny-ad`: 1 reel (`rip-saved-tab`, 98 views, 1.0%), not yet judged. Keep running.
 
 ## Retired styles
