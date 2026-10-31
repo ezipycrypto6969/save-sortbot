@@ -468,10 +468,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
       </div>
       <div class="features">
         <div class="feature"><svg aria-hidden="true"><use href="#i-ribbon"/></svg><h3>Sorted by topic</h3><p>AI tools, side hustles, marketing, money, tech, fitness, mindset. Filter, search and work through one topic at a time.</p></div>
-        <div class="feature"><svg aria-hidden="true"><use href="#i-check"/></svg><h3>Step-by-step plans</h3><p>Each useful reel becomes a checklist with the real websites, setup steps and what it costs in Australian dollars where it matters.</p></div>
+        <div class="feature"><svg aria-hidden="true"><use href="#i-check"/></svg><h3>Step-by-step plans</h3><p>Pro turns any save into a checklist: the real websites and tools, the setup steps, rough costs and the catch.</p></div>
         <div class="feature"><svg aria-hidden="true"><use href="#i-x"/></svg><h3>Scam and hype flags</h3><p>Fake features, income claims and grey-area schemes are marked, with a plain reason why.</p></div>
         <div class="feature"><svg aria-hidden="true"><use href="#i-lock"/></svg><h3>Gated guides, unlocked</h3><p>"Comment SCALE for the doc" posts get decoded. We find the tool or method they're hinting at.</p></div>
-        <div class="feature"><svg aria-hidden="true"><use href="#i-arrow"/></svg><h3>Monthly refresh</h3><p>Re-upload once a month and only your new saves get added. Your report keeps growing with you.</p></div>
+        <div class="feature"><svg aria-hidden="true"><use href="#i-arrow"/></svg><h3>Re-sort any time</h3><p>Saved more reels? Export again and drop the new file in. Your report is ready in seconds.</p></div>
         <div class="feature"><svg aria-hidden="true"><use href="#i-shield"/></svg><h3>Private by design</h3><p>One file in, nothing else. No Instagram login, no contacts, no messages, no location history.</p></div>
       </div>
     </div>
@@ -483,10 +483,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
         <span class="eyebrow">Pricing · AUD</span>
         <h2>Free to sort. Pro to act.</h2>
       </div>
-      <div class="toggle" role="group" aria-label="Billing period">
-        <button type="button" id="bill-m" aria-pressed="false">Monthly</button>
-        <button type="button" id="bill-y" aria-pressed="true">Yearly<span class="save">save 38%</span></button>
-      </div>
       <div class="plans">
         <div class="plan">
           <h3>Free</h3>
@@ -495,24 +491,23 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Every save sorted by topic</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Worth doing, Needs the video and Be careful labels</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Gated-guide detector</li>
-            <li class="no"><svg aria-hidden="true"><use href="#i-x"/></svg>Full step-by-step breakdowns</li>
-            <li class="no"><svg aria-hidden="true"><use href="#i-x"/></svg>Monthly refresh</li>
+            <li class="no"><svg aria-hidden="true"><use href="#i-x"/></svg>Step-by-step breakdowns</li>
           </ul>
           <a class="btn btn-ghost" href="#try">Sort my saves free</a>
         </div>
         <div class="plan pro">
           <span class="badge">7-day free trial</span>
           <h3>Pro</h3>
-          <div class="price"><b id="pro-price">$59</b><span id="pro-per">per year · about $4.92 a month</span></div>
+          <div class="price"><b id="pro-price">$1.99</b><span id="pro-per">per week</span></div>
           <ul>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Everything in Free</li>
-            <li><svg aria-hidden="true"><use href="#i-check"/></svg>A full breakdown for every Worth doing save</li>
+            <li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited breakdowns, for any save</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Real tools, steps, costs and catches</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Scam explanations, not just flags</li>
             <li><svg aria-hidden="true"><use href="#i-check"/></svg>Breakdowns for new saves every time you re-sort</li>
           </ul>
           <a class="btn btn-primary" id="pro-buy" href="#pricing">Start 7-day free trial</a>
-          <p class="fine" id="pro-fine">Free for 7 days, then <span id="pro-then">A$59 a year</span>. Cancel before the trial ends and you pay nothing. Renews automatically; <a href="#" id="pro-manage">manage or cancel</a> any time. <a href="terms.html">Terms</a> · <a href="refunds.html">Refunds</a></p>
+          <p class="fine" id="pro-fine">Free for 7 days, then <span id="pro-then">A$1.99 a week</span>. Cancel before the trial ends and you pay nothing. Renews automatically; <a href="#" id="pro-manage">manage or cancel</a> any time. <a href="terms.html">Terms</a> · <a href="refunds.html">Refunds</a></p>
           <p class="fine"><a href="#" id="pro-paste">Already Pro on another device? Use your Pro code</a></p>
         </div>
       </div>
@@ -601,10 +596,9 @@ const TAGS = {go:["tag-go","Worth doing"],warn:["tag-warn","Be careful"],thin:["
 const $ = s => document.querySelector(s);
 /* SaveSort Pro: Stripe Payment Links (7-day free trial) + Pro codes checked by /api */
 const CONFIG = {
-  link: { year: "", month: "" },  // Stripe Payment Link URLs (each with a 7-day trial; after payment redirect to https://YOURDOMAIN/?session_id={CHECKOUT_SESSION_ID})
+  link: "",                       // Stripe Payment Link URL: A$1.99/week with a 7-day trial; after payment redirect to https://savesortai.com/?session_id={CHECKOUT_SESSION_ID}
   portal: "",                      // Stripe customer portal login link (manage or cancel)
 };
-let BILL = "year";
 const PRO = { code: "" };
 try { PRO.code = localStorage.getItem("savesort-pro") || ""; } catch (e) {}
 // show any script error under the drop box, so a problem is visible instead of "nothing happens"
@@ -818,18 +812,9 @@ $("#bd-tabs").innerHTML = BREAKDOWNS.map((b,i) => `<button class="tab" role="tab
 $("#bd-tabs").addEventListener("click", e => { const t = e.target.closest(".tab"); if (t) renderBD(Number(t.dataset.i)); });
 renderBD(0);
 
-/* pricing toggle */
-function bill(yearly){
-  $("#bill-y").setAttribute("aria-pressed", String(yearly));
-  $("#bill-m").setAttribute("aria-pressed", String(!yearly));
-  $("#pro-price").textContent = yearly ? "$59" : "$7.99";
-  $("#pro-per").textContent = yearly ? "per year · about $4.92 a month" : "per month";
-  $("#pro-then").textContent = yearly ? "A$59 a year" : "A$7.99 a month";
-  BILL = yearly ? "year" : "month"; proButtons();
-}
 function saveCode(c){ PRO.code = c || ""; try { c ? localStorage.setItem("savesort-pro", c) : localStorage.removeItem("savesort-pro"); } catch (e) {} proButtons(); if (REPORT.length) renderItems(); }
 function proButtons(){
-  const link = CONFIG.link[BILL];
+  const link = CONFIG.link;
   const buy = $("#pro-buy");
   if (PRO.code) { buy.textContent = "Pro is on: sort your saves"; buy.href = "#try"; buy.classList.remove("btn-disabled"); }
   else if (link) { buy.textContent = "Start 7-day free trial"; buy.href = link; buy.classList.remove("btn-disabled"); }
@@ -883,8 +868,9 @@ async function breakdown(btn){
   renderItems();
 }
 try { proButtons(); activate(); owner(); } catch (e) { console.error(e); }
-$("#bill-y").addEventListener("click", () => bill(true));
-$("#bill-m").addEventListener("click", () => bill(false));
+
+
+
 </script>
 
 </body>
