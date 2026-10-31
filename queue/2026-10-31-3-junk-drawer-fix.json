@@ -1,7 +1,7 @@
 {
   "format": "long",
-  "status": "held",
-  "check": "failed",
+  "status": "queued",
+  "check": "passed",
   "style": "base",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -12,10 +12,10 @@
   "post_at": "2026-10-31T19:30:00+08:00",
   "hook_type": "stakes",
   "fx": {
-    "hook": "SAVE THIS FOR LATER"
+    "hook": "THE FIX TAKES 60 SECONDS"
   },
   "yt_title": "Your saved tab is a junk drawer. Here's the 60 second fix",
-  "caption": "Your saved tab is a junk drawer. Here's the fix.\n\n1. Settings → Accounts Center → Your information and permissions → Export your information\n2. Create export → Export to device → tick only Saved → HTML → Start export\n3. Instagram emails you when it's ready. Download the zip\n4. Drop the zip into SaveSort. No need to unzip\n\nEvery save sorted by topic, with the ones worth doing and the hype flagged. Free, and nothing gets uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "caption": "Got 500 saved reels you'll never watch? Your saved tab is a junk drawer. Here's the fix.\n\n1. Settings → Accounts Center → Your information and permissions → Export your information\n2. Create export → Export to device → tick only Saved → HTML → Start export\n3. Instagram emails you when it's ready. Download the zip\n4. Drop the zip into SaveSort. No need to unzip\n\nEvery save sorted by topic, with the ones worth doing and the hype flagged. Free, and nothing gets uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
   "scenes": [
     {
       "type": "talk",
@@ -29,7 +29,7 @@
         "156 saves.",
         "*0* ever opened."
       ],
-      "vo": "I had 156 saved reels and never opened one again.",
+      "vo": "I had 156 saved reels and never opened one again. Some of you have 500.",
       "slow": true,
       "mascot": {
         "pos": "bl",
@@ -255,7 +255,7 @@
     },
     {
       "type": "end",
-      "vo": "Save this, then tap the link in bio.",
+      "vo": "Tap the link in bio and sort yours now.",
       "line": "Sort your saves.\n*Free.*",
       "pill": "Link in bio →",
       "mascot": {
@@ -265,9 +265,8 @@
     }
   ],
   "cover_offset_ms": 3464,
-  "duration": 35.856,
-  "hold_reasons": [
-    "More than one call to action (AGENT.md: ask for one action, never both): end scene vo 'Save this, then tap the link in bio' asks viewers to save AND tap the link, and the fx.hook banner 'SAVE THIS FOR LATER' repeats the save ask. Keep only the link-in-bio CTA."
-  ],
-  "checked_at": "2026-10-31T09:03:00+08:00"
+  "duration": 37.489,
+  "checked_at": "2026-10-31T10:20:00+08:00",
+  "check_note": "Held only for two calls to action; fixed exactly that (single link-in-bio CTA, banner no longer asks to save).",
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
 }

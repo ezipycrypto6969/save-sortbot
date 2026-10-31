@@ -29,7 +29,7 @@
         "156 saved.",
         "*0 done.*"
       ],
-      "vo": "I had 156 saved. Zero done.",
+      "vo": "I had 156 saved. Zero done. Some of you are on 1,000.",
       "slow": true,
       "grey": true
     },
@@ -220,6 +220,7 @@
     }
   ],
   "cover_offset_ms": 3374,
-  "duration": 30.506,
-  "checked_at": "2026-10-31T09:03:00+08:00"
+  "duration": 31.925,
+  "checked_at": "2026-10-31T09:03:00+08:00",
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
 }

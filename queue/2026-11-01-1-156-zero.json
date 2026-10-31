@@ -36,6 +36,12 @@
       "grey": true
     },
     {
+      "type": "title",
+      "text": "Got *500?*\nEven worse.",
+      "vo": "Got 500 saved? It's even worse.",
+      "bg": "paper"
+    },
+    {
       "type": "screen",
       "vo": "So I dropped them all into SaveSort.",
       "label": "DROP THE ZIP IN",
@@ -214,6 +220,7 @@
     }
   ],
   "cover_offset_ms": 3338,
-  "duration": 32.082,
-  "checked_at": "2026-10-31T09:03:00+08:00"
+  "duration": 34.171,
+  "checked_at": "2026-10-31T09:03:00+08:00",
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
 }

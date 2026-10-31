@@ -26,10 +26,10 @@
     {
       "type": "hook",
       "lines": [
-        "156 saves.",
+        "300 saves? 1,000?",
         "*One long pile.*"
       ],
-      "vo": "Unless you made collections, it's one long pile. Newest first.",
+      "vo": "300 saves? 1,000? Unless you made collections, it's one long pile.",
       "slow": true,
       "mascot": {
         "pos": "bl",
@@ -242,6 +242,7 @@
     }
   ],
   "cover_offset_ms": 3494,
-  "duration": 31.126,
-  "checked_at": "2026-10-31T09:03:00+08:00"
+  "duration": 32.18,
+  "checked_at": "2026-10-31T09:03:00+08:00",
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
 }

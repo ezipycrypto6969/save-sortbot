@@ -29,7 +29,7 @@
         "156 saves.",
         "*Not one done.*"
       ],
-      "vo": "I had 156. Not one done.",
+      "vo": "I had 156. Not one done. Past 500? You need this.",
       "slow": true,
       "mascot": {
         "pos": "bl",
@@ -179,6 +179,7 @@
     }
   ],
   "cover_offset_ms": 3408,
-  "duration": 30.742,
-  "checked_at": "2026-10-31T09:03:00+08:00"
+  "duration": 32.268,
+  "checked_at": "2026-10-31T09:03:00+08:00",
+  "owner_edit": "31 Oct: viewer-directed big-number line added (no new factual claims)"
 }
