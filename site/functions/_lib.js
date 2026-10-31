@@ -4,6 +4,7 @@
 //   ANTHROPIC_API_KEY  Claude API key
 //   TOKEN_SECRET       any long random string (signs Pro codes)
 //   MODEL              optional, defaults to claude-haiku-5-5
+//   OWNER_KEY          the owner's password for free Pro (savesortai.com/?owner=...)
 const enc = new TextEncoder();
 const b64u = buf => btoa(String.fromCharCode(...new Uint8Array(buf))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 const fromB64u = s => atob(s.replace(/-/g, "+").replace(/_/g, "/"));
@@ -36,6 +37,7 @@ export async function checkCode(env, code) {
   const [payload, sig] = code.split(".");
   if (sig !== await hmac(env.TOKEN_SECRET, payload)) return null;
   let p; try { p = JSON.parse(fromB64u(payload)); } catch { return null; }
+  if (p.sub === "owner") return { sub: "owner", code };  // the owner's free pass never needs a Stripe check
   if (Date.now() < p.chk) return { sub: p.sub, code };
   const s = await stripe(env, `subscriptions/${encodeURIComponent(p.sub)}`);  // re-check once a day
   if (!LIVE.has(s.status)) return null;

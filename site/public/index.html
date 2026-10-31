@@ -590,6 +590,17 @@ const QUOTES = [
 ];
 const TAGS = {go:["tag-go","Worth doing"],warn:["tag-warn","Be careful"],thin:["tag-thin","Needs the video"],gate:["tag-gate","Gated guide"]};
 const $ = s => document.querySelector(s);
+/* SaveSort Pro: Stripe Payment Links (7-day free trial) + Pro codes checked by /api */
+const CONFIG = {
+  link: { year: "", month: "" },  // Stripe Payment Link URLs (each with a 7-day trial; after payment redirect to https://YOURDOMAIN/?session_id={CHECKOUT_SESSION_ID})
+  portal: "",                      // Stripe customer portal login link (manage or cancel)
+};
+let BILL = "year";
+const PRO = { code: "" };
+try { PRO.code = localStorage.getItem("savesort-pro") || ""; } catch (e) {}
+// show any script error under the drop box, so a problem is visible instead of "nothing happens"
+window.addEventListener("error", e => { const el = document.getElementById("err"); if (el) { el.textContent = "Something went wrong: " + (e.message || "unknown error") + ". Try refreshing, or email us."; el.hidden = false; } });
+window.addEventListener("unhandledrejection", e => { const el = document.getElementById("err"); if (el) { el.textContent = "Something went wrong: " + ((e.reason && e.reason.message) || e.reason || "unknown error"); el.hidden = false; } });
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const tag = k => `<span class="tag ${TAGS[k][0]}">${TAGS[k][1]}</span>`;
 
@@ -807,14 +818,6 @@ function bill(yearly){
   $("#pro-then").textContent = yearly ? "A$59 a year" : "A$7.99 a month";
   BILL = yearly ? "year" : "month"; proButtons();
 }
-/* SaveSort Pro: Stripe Payment Links (7-day free trial) + Pro codes checked by /api */
-const CONFIG = {
-  link: { year: "", month: "" },  // Stripe Payment Link URLs (each with a 7-day trial; after payment redirect to https://YOURDOMAIN/?session_id={CHECKOUT_SESSION_ID})
-  portal: "",                      // Stripe customer portal login link (manage or cancel)
-};
-let BILL = "year";
-const PRO = { code: "" };
-try { PRO.code = localStorage.getItem("savesort-pro") || ""; } catch (e) {}
 function saveCode(c){ PRO.code = c || ""; try { c ? localStorage.setItem("savesort-pro", c) : localStorage.removeItem("savesort-pro"); } catch (e) {} proButtons(); if (REPORT.length) renderItems(); }
 function proButtons(){
   const link = CONFIG.link[BILL];
@@ -827,6 +830,13 @@ function proButtons(){
 }
 $("#pro-paste").addEventListener("click", e => { e.preventDefault();
   const c = prompt("Paste your Pro code (you can copy it from the device where you started Pro):"); if (c && c.trim()) saveCode(c.trim()); });
+async function owner(){  // owner's free Pro: visit savesortai.com/?owner=YOUR_OWNER_KEY once on each device
+  const k = new URLSearchParams(location.search).get("owner"); if (!k) return;
+  history.replaceState(null, "", location.pathname + "#try");
+  try { const r = await fetch("/api/owner", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ key: k }) });
+    const d = await r.json(); if (d.code) { saveCode(d.code); alert("Owner Pro is on for this device."); } else alert(d.error || "That owner key didn't work."); }
+  catch (e) { alert("Couldn't reach SaveSort. Try again."); }
+}
 async function activate(){
   const id = new URLSearchParams(location.search).get("session_id"); if (!id) return;
   history.replaceState(null, "", location.pathname + "#try");
@@ -863,7 +873,7 @@ async function breakdown(btn){
   } catch (e) { r.bd = { error: "Couldn't reach SaveSort. Check your connection and try again." }; }
   renderItems();
 }
-proButtons(); activate();
+try { proButtons(); activate(); owner(); } catch (e) { console.error(e); }
 $("#bill-y").addEventListener("click", () => bill(true));
 $("#bill-m").addEventListener("click", () => bill(false));
 </script>
