@@ -8,7 +8,7 @@ Usage: python3 poster/post_tiktok.py          post the next due reel (and finish
        python3 poster/post_tiktok.py --check  only check the API key works
 Repo variables: PAUSED=true stops posting, DRY_RUN=true rehearses without uploading.
 """
-import datetime as dt, glob, json, os, subprocess, sys, time, urllib.parse, urllib.request
+import datetime as dt, glob, json, os, zlib, subprocess, sys, time, urllib.parse, urllib.request
 
 API = "https://api.upload-post.com/api"
 KEY = "".join(os.environ.get("UPLOAD_POST_API_KEY", "").split())
@@ -34,6 +34,23 @@ def get(path, params=None):
         body = " ".join(e.read().decode(errors="replace").split())
         if e.code == 404: return {"status": "not_found", "message": body}
         fail(f"Upload-Post error {e.code} on {path}: {body}")
+
+
+def trending_sound(user, seed):
+    """A trending TikTok sound cleared for business use (TikTok Commercial Music Library), picked from the top 5.
+    It's attached at volume 0, so viewers hear only the reel's own audio. Set the repo variable TIKTOK_SOUND=off to stop."""
+    if os.environ.get("TIKTOK_SOUND", "").lower() == "off": return None
+    try:
+        url = f"{API}/uploadposts/tiktok/music/trending?" + urllib.parse.urlencode(
+            {"profile": user, "country_code": os.environ.get("TIKTOK_SOUND_COUNTRY") or "US", "date_range": "7DAY"})
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"Authorization": f"Apikey {KEY}"}), timeout=60) as r:
+            tracks = [t for t in json.loads(r.read() or b"{}").get("tracks") or [] if t.get("id")]
+    except Exception as e:
+        print(f"::warning title=No trending sound::Couldn't get TikTok's trending sounds ({e}); posting without one."); return None
+    if not tracks: return None
+    tracks.sort(key=lambda t: t.get("rank") or 99)
+    t = tracks[zlib.crc32(seed.encode()) % min(5, len(tracks))]
+    return {"id": str(t["id"]), "title": t.get("title", ""), "artist": t.get("artist", ""), "rank": t.get("rank")}
 
 
 def tiktok_result(st):
@@ -98,7 +115,14 @@ def main():
     if os.environ.get("PAUSED", "").lower() == "true":
         print("PAUSED is set; not posting."); return
     if "--check" in sys.argv:
-        print(f"Upload-Post API key works; posting as profile '{pick_profile()}'"); return
+        user = pick_profile()
+        print(f"Upload-Post API key works; posting as profile '{user}'")
+        snd = trending_sound(user, "check")
+        if snd: print(f"Trending sound check OK. Next posts get a muted trending sound, e.g. '{snd['title']}' by {snd['artist']} (#{snd['rank']}).")
+        elif os.environ.get("TIKTOK_SOUND", "").lower() != "off":
+            print("::warning title=No trending sounds::Couldn't list trending sounds; posts will go out without one. "
+                  "In Upload-Post, reconnect TikTok so it has the music permission.")
+        return
     # finish checking anything submitted earlier
     for p in sorted(glob.glob("queue/*.json")):
         spec = json.load(open(p))
@@ -122,27 +146,39 @@ def main():
     print(f"Posting {spec['id']} to TikTok ({os.path.getsize('tiktok.mp4')/1e6:.1f} MB)")
     if DRY:
         print("DRY_RUN: would post with caption:\n" + caption); return
-    cmd = ["curl", "-sS", "--max-time", "600", "-H", f"Authorization: Apikey {KEY}",
-           "-F", "video=@tiktok.mp4", "-F", f"user={user}", "-F", "platform[]=tiktok",
-           "-F", f"title={caption}", "-F", f"tiktok_title={caption}",
-           "-F", "privacy_level=PUBLIC_TO_EVERYONE", "-F", "is_aigc=true",  # AI voice and animation: label it
-           "-F", f"cover_timestamp={spec.get('cover_offset_ms', 1000)}", "-F", "async_upload=true",
-           "-F", f"external_id={spec['id']}", f"{API}/upload"]
-    out = subprocess.run(cmd, capture_output=True, text=True)
-    try: resp = json.loads(out.stdout)
-    except Exception: fail(f"Upload-Post answered: {out.stdout[:500]} {out.stderr[:300]}")
+    sound = trending_sound(user, spec["id"])
+    base = ["curl", "-sS", "--max-time", "600", "-H", f"Authorization: Apikey {KEY}",
+            "-F", "video=@tiktok.mp4", "-F", f"user={user}", "-F", "platform[]=tiktok",
+            "-F", f"title={caption}", "-F", f"tiktok_title={caption}",
+            "-F", "privacy_level=PUBLIC_TO_EVERYONE", "-F", "is_aigc=true",  # AI voice and animation: label it
+            "-F", f"cover_timestamp={spec.get('cover_offset_ms', 1000)}", "-F", "async_upload=true",
+            "-F", f"external_id={spec['id']}"]
+    # try the trending sound at volume 0, then 1 (in case 0 is refused), then no sound at all
+    tries = ([0, 1] if sound else []) + [None]
+    for vol in tries:
+        extra = [] if vol is None else ["-F", f"tiktok_music_id={sound['id']}", "-F", f"tiktok_music_volume={vol}",
+                                        "-F", "tiktok_original_sound_volume=100"]
+        if vol is not None: print(f"Adding trending sound '{sound['title']}' by {sound['artist']} (#{sound['rank']}) at volume {vol}")
+        out = subprocess.run(base + extra + [f"{API}/upload"], capture_output=True, text=True)
+        try: resp = json.loads(out.stdout)
+        except Exception: resp = {"success": False, "message": f"{out.stdout[:500]} {out.stderr[:300]}"}
+        if resp.get("request_id") or resp.get("job_id") or resp.get("success") or vol is None: break
+        print(f"::warning title=Sound refused::TikTok/Upload-Post refused the sound at volume {vol}: {json.dumps(resp)[:300]}. Retrying.")
+    if vol is None: sound = None
     rid = resp.get("request_id") or resp.get("job_id")
     if not rid:
         res = resp.get("results")
         tk = res.get("tiktok") if isinstance(res, dict) else tiktok_result(resp)
         if resp.get("success") and tk and tk.get("success"):
             spec = json.load(open(path)); spec["tiktok"] = {"status": "posted", "url": tk.get("url", "")}
+            if sound: spec["tiktok"]["sound"] = {**sound, "volume": vol}
             json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2); print("Posted to TikTok."); return
         fail(f"Upload-Post didn't accept the video: {json.dumps(resp)[:800]}")
     # record the submission straight away, so a later run can never post it twice
     spec = json.load(open(path))
     spec["tiktok"] = {"status": "submitted", "request_id": rid,
                       "submitted_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")}
+    if sound: spec["tiktok"]["sound"] = {**sound, "volume": vol}
     json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2)
     print(f"Submitted to TikTok (request {rid}); waiting for TikTok to publish it")
     for _ in range(30):  # up to ~10 minutes; if still busy, the next run picks it up

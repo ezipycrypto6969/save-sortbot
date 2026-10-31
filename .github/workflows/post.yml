@@ -41,6 +41,8 @@ jobs:
         env:
           UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
           UPLOAD_POST_USER: ${{ vars.UPLOAD_POST_USER }}
+          TIKTOK_SOUND: ${{ vars.TIKTOK_SOUND }}
+          TIKTOK_SOUND_COUNTRY: ${{ vars.TIKTOK_SOUND_COUNTRY }}
           PAUSED: ${{ vars.PAUSED }}
           DRY_RUN: ${{ vars.DRY_RUN }}
         run: python3 poster/post_tiktok.py
