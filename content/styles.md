@@ -28,10 +28,11 @@ Each week runs 3 experiment reels (1 to 3 new styles). Name them `exp-<short-nam
 - `exp-question`: asks viewers one question to comment ("How many saves do you have?").
 - `exp-stitch`: reacts to a common type of reel (paraphrased, no real creator named).
 
-## Style results so far (31 Oct 2026)
+## Style results so far (31 Oct 2026, afternoon)
 
-- `base`: 3 judged reels, median 46 views, 2.2% engagement. Saves-led, on-screen-demo base reels beat tip-led ones on Instagram views and YouTube watch time (see `content/lessons.md`). Model reels for the demo: `2026-10-28-2-full-tutorial` (75% viewed on YouTube), `2026-10-26-2-reveal-156` (122%).
-- `funny-ad`: 1 reel (`rip-saved-tab`, 98 views, 1.0%), not yet judged. Keep running.
+- `base`: 3 judged reels, median 46 views, 2.2% engagement. Saves-led, on-screen-demo base reels beat tip-led ones on Instagram views and YouTube watch time (see `content/lessons.md`). Model reels for the demo: `2026-10-28-2-full-tutorial` (75% viewed on YouTube), `2026-10-26-2-reveal-156` (122%). Early cold-open sign: `2026-11-01-1-ai-actor-reviews` held Instagram viewers 20% (6.1 s of 30) on 13 views.
+- `funny-ad`: 1 reel (`rip-saved-tab`, 135 views of which 82 TikTok; IG 43 views / 3.3 s), not yet judged. Keep running at 4 slots.
+- Note: TikTok gives every reel ~80–100 views to start, so compare styles on Instagram views and watch, not total views.
 
 ## Retired styles
 
