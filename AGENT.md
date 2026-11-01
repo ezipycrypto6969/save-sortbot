@@ -87,6 +87,7 @@ Use them to test openings: once a day at most, take a reel you've written and ad
   - **Save, because they'll need it later:** "Save this. You'll want the steps when you export your saves." Best on walkthroughs and how-tos.
   - **Like, as a vote:** "Like if your saved tab is also a graveyard." Use rarely.
   - **Link in bio, for the payoff:** "Want your own number? Sort your saves free, link in bio."
+- **Owner rule (1 Nov 2026, evening): the reason must be something the viewer gets.** "Comment your count, I'll pin the biggest" gives them nothing, so don't use pin/flex/bragging asks. Default to the link ask with a built-in payoff: "Find out how many of yours are actually worth it. Free." / "See what's hiding in yours." / "What's your number? Find out free." Use a comment ask only when commenting gets the viewer something real (an answer they want, a part 2 that's already queued).
 - **Rotate hook types** across the week; never the same hook style twice in a row.
 
 ## Marketing test and learn (every week)

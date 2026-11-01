@@ -1,56 +1,39 @@
 {
-  "id": "2026-11-07-1-saves-intervention",
-  "post_at": "2026-11-07T03:00:00+08:00",
-  "format": "ad",
+  "format": "long",
   "status": "queued",
-  "check": "passed",
-  "style": "funny-ad",
-  "opening": "saves-number",
-  "hook_type": "bold-claim",
+  "check": "pending",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
   "music": "sfx",
+  "cta": "link",
+  "model": "ads/ad-zc-got-500 (owner-approved style, 1 Nov)",
+  "id": "2026-11-03-3-stop-saving",
+  "post_at": "2026-11-03T19:30:00+08:00",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "warning",
   "fx": {
-    "hook": "THEY HAD ONE DEMAND"
+    "hook": "DON'T SAVE ANOTHER ONE YET"
   },
-  "yt_title": "My 156 saved reels staged an intervention",
-  "caption": "My saved reels staged an intervention. 156 of them. They had one demand: actually use us.\n\nSaveSort sorts every save by topic and shows the 30 worth doing.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #funny",
+  "yt_title": "Stop saving reels until you do this",
+  "caption": "Stop saving reels. Seriously.\n\nNot forever. Just until you know what's already in there. I had 156 saves: 30 worth doing, 10 pure hype, and I'd opened none of them.\n\nHow: download your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSee what's hiding in yours. Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
   "scenes": [
     {
       "type": "title",
-      "text": "156 saves staged\n*an intervention.*",
-      "vo": "156 of my saves staged an intervention.",
+      "clean": true,
       "bg": "paper",
-      "clean": true
+      "text": "Stop saving\n*reels.*",
+      "vo": "Stop saving reels."
     },
     {
       "type": "talk",
-      "text": "We need to\n*talk.*",
-      "vo": "Mate. Sit down. We need to talk.",
-      "mood": "suspicious"
-    },
-    {
-      "type": "title",
-      "text": "156 of us.\n*Zero opened.*",
-      "vo": "There are 156 of us. You opened zero. Zero.",
-      "bg": "cobalt"
-    },
-    {
-      "type": "talk",
-      "text": "You keep\n*adding more.*",
-      "vo": "And you keep adding more. Every night. In bed.",
-      "mood": "shocked"
-    },
-    {
-      "type": "talk",
-      "text": "We have\n*one demand.*",
-      "vo": "We have one demand. Actually use us. Or let us go.",
+      "text": "Okay, not forever.\nSort the *old ones* first.",
+      "vo": "Okay, not forever. Sort the ones you've already got.",
       "mood": "smug"
     },
     {
       "type": "screen",
-      "vo": "Fine. I downloaded my saves and dropped them all into SaveSort.",
       "label": "DROP THE ZIP IN",
       "segs": [
         {
@@ -66,12 +49,12 @@
       "mascot": {
         "pos": "pl",
         "mood": "happy"
-      }
+      },
+      "vo": "Drop your saves into SaveSort. It reads every single one."
     },
     {
       "type": "screen",
-      "vo": "Every save sorted. 30 worth doing. 10 be careful.",
-      "label": "SORTED",
+      "label": "MY 156 SAVES",
       "segs": [
         {
           "shot": "report-all.png",
@@ -95,13 +78,14 @@
       },
       "mascot": {
         "pos": "pl",
-        "mood": "happy"
-      }
+        "mood": "shocked"
+      },
+      "vo": "My 156 saves, counted in seconds. 30 worth doing.",
+      "payoff": true
     },
     {
       "type": "screen",
-      "vo": "Sorted by topic too. AI, marketing, learning, the lot.",
-      "label": "BY TOPIC",
+      "label": "SORTED BY TOPIC",
       "segs": [
         {
           "shot": "report-all.png",
@@ -127,41 +111,40 @@
       "mascot": {
         "pos": "pl",
         "mood": "happy"
-      }
+      },
+      "vo": "Sorted by topic. AI, marketing, money, learning and more."
     },
     {
       "type": "screen",
-      "vo": "The 30 good ones, finally in one list.",
-      "label": "TAP WORTH DOING",
+      "label": "TAP ONE TOPIC",
       "segs": [
         {
           "shot": "report-all.png",
-          "from": 1650
+          "from": 500
         },
         {
-          "shot": "report-go.png",
+          "shot": "topic-MONEY.png",
           "from": 1650,
           "to": 3200,
-          "t0": 0.3,
+          "t0": 0.35,
           "t1": 0.95
         }
       ],
       "taps": [
         {
-          "at": 0.18,
-          "x": 250,
-          "y": 1728
+          "at": 0.2,
+          "x": 390,
+          "y": 1568.34375
         }
       ],
       "mascot": {
         "pos": "pl",
-        "mood": "happy"
+        "mood": "smug"
       },
-      "payoff": true
+      "vo": "Tap money. Just those saves. Nothing else in the way."
     },
     {
       "type": "screen",
-      "vo": "And the 10 hype ones. They were politely asked to leave.",
       "label": "TAP BE CAREFUL",
       "segs": [
         {
@@ -185,27 +168,31 @@
       ],
       "mascot": {
         "pos": "pl",
-        "mood": "smug"
-      }
+        "mood": "suspicious"
+      },
+      "vo": "And 10 flagged be careful. The hype ones."
     },
     {
       "type": "talk",
-      "text": "Intervention\n*successful.*",
-      "vo": "Intervention successful. One save a week. I promise.",
+      "text": "Your saved tab isn't\na to-do list.\nIt's a *museum.*",
+      "vo": "Your saved tab isn't a to-do list. It's a museum.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "See what's hiding\nin *yours.*",
+      "vo": "See what's hiding in yours. It's free, and nothing gets uploaded.",
       "mood": "happy"
     },
     {
       "type": "end",
-      "vo": "Tap the link in bio before yours stage one.",
-      "line": "Sort your saves.\n*Free.*",
-      "pill": "Link in bio →",
+      "line": "What's in\n*yours?*",
+      "pill": "Link in bio \u2192",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
-      }
+      },
+      "vo": "Tap the link in bio and sort yours free."
     }
-  ],
-  "cover_offset_ms": 4336,
-  "duration": 33.1,
-  "checked_at": "2026-11-01T15:10:45+08:00"
+  ]
 }

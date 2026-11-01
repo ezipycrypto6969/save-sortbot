@@ -1,0 +1,196 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "link",
+  "model": "ads/ad-zc-got-500 (owner-approved style, 1 Nov)",
+  "id": "2026-11-04-3-30-useful",
+  "post_at": "2026-11-04T19:30:00+08:00",
+  "style": "base",
+  "opening": "saves-number",
+  "hook_type": "confession",
+  "fx": {
+    "hook": "WHERE DID THE OTHER 126 GO?"
+  },
+  "yt_title": "156 saved reels. Only 30 were useful",
+  "caption": "156 saved reels. Only 30 were useful.\n\nSaveSort read every one:\n30 worth doing\n65 said nothing without the video\n22 hid the steps behind a comment\n10 were hype\n\nHow: download your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "156 saves.\n*30* useful.",
+      "vo": "156 saves. Only 30 useful."
+    },
+    {
+      "type": "talk",
+      "text": "The other 126?\n*Let's talk.*",
+      "vo": "The other 126? Let's talk about them.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "I dropped all of them into SaveSort. It read every caption."
+    },
+    {
+      "type": "screen",
+      "label": "THE SCORE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "65 said nothing without watching the video again."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 hid the steps behind a comment."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "10 were pure hype. Bye."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Which leaves 30 I can actually do. One list.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Only 30.\nThe rest were *vibes.*",
+      "vo": "Only 30. The rest were just vibes.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "What's *your*\nnumber?",
+      "vo": "So what's your number? Find out free in your browser.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Find your\n*number.*",
+      "pill": "Link in bio \u2192",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ]
+}

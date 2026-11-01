@@ -1,0 +1,188 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "link",
+  "model": "ads/ad-zc-got-500 (owner-approved style, 1 Nov)",
+  "id": "2026-11-02-3-got-500",
+  "post_at": "2026-11-02T19:30:00+08:00",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "question",
+  "fx": {
+    "hook": "HOW MANY WERE ACTUALLY USEFUL?"
+  },
+  "yt_title": "Got 500 saved reels? Here's how many are actually useful",
+  "caption": "Got 500 saved reels? Be honest.\n\nI had 156 and never opened one again. SaveSort sorted them:\n30 worth doing\n10 flagged be careful\nThe rest said nothing without the video\n\nHow: download your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWant to know what's in yours? Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "Got *500*\nsaved reels?",
+      "vo": "Got 500 saved reels?"
+    },
+    {
+      "type": "talk",
+      "text": "I had 156.\nI opened *zero.*",
+      "vo": "I had 156. I opened zero of them. Ever.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "SO I DROPPED THEM IN SAVESORT",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I dropped them into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save, sorted by topic, in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing. 30 out of 156. That's it.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Be careful. 10 of them were pure hype."
+    },
+    {
+      "type": "react",
+      "label": "SAVED REEL SAYS",
+      "quote": "This AI has a secret hidden mode",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "One said an AI app has a secret hidden mode. Mate. No."
+    },
+    {
+      "type": "talk",
+      "text": "Saving a reel is\n*procrastinating*\nwith extra steps.",
+      "vo": "Saving a reel is just procrastinating with extra steps.",
+      "mood": "smug"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Want yours? Download your Instagram data, tick saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "How many of *yours*\nare worth it?",
+      "vo": "Find out how many of yours are actually worth it. Free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "What's in\n*yours?*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "cover_offset_ms": 2683,
+  "duration": 30.647
+}

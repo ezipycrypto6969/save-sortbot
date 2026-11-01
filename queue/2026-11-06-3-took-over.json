@@ -1,38 +1,39 @@
 {
-  "id": "2026-11-02-2-33-ai-saves",
-  "post_at": "2026-11-02T07:00:00+08:00",
-  "format": "breakdown",
+  "format": "long",
   "status": "queued",
-  "check": "passed",
-  "style": "base",
-  "opening": "saves-number",
-  "hook_type": "confession",
+  "check": "pending",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
   "music": "sfx",
+  "cta": "link",
+  "model": "ads/ad-zc-got-500 (owner-approved style, 1 Nov)",
+  "id": "2026-11-06-3-took-over",
+  "post_at": "2026-11-06T19:30:00+08:00",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "question",
   "fx": {
-    "hook": "1 REAL, 1 HYPE"
+    "hook": "WHAT TOOK OVER YOUR SAVES?"
   },
-  "yt_title": "I saved 33 AI reels. Here's what was actually useful",
-  "caption": "I saved 33 AI reels. I used none of them.\n\nSaveSort sorted my 156 saves by topic. AI & tools had 33. Tap it, and each one is flagged:\n• Worth doing\n• Needs the video\n• Be careful\n• Gated guide\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #ai",
+  "yt_title": "What took over your saved reels? Find out in seconds",
+  "caption": "What took over your saved reels?\n\nMine was AI and tools: 33 of my 156 saves. SaveSort sorts every save by topic and flags the 30 worth doing.\n\nHow: download your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nFind out what took over yours. Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
   "scenes": [
     {
       "type": "title",
-      "text": "I saved 33\n*AI reels.*",
-      "vo": "I saved 33 AI reels.",
+      "clean": true,
       "bg": "paper",
-      "clean": true
+      "text": "What took over\n*your* saves?",
+      "vo": "What took over your saves?"
     },
     {
       "type": "talk",
-      "text": "Used *none*\nof them.",
-      "vo": "Used none of them. Not a single one. Classic.",
-      "mood": "sad"
+      "text": "Mine? *AI and tools.*\n33 of them.",
+      "vo": "Mine? AI and tools. 33 of them.",
+      "mood": "shocked"
     },
     {
       "type": "screen",
-      "vo": "So I downloaded my Instagram saves and dropped the zip into SaveSort.",
       "label": "DROP THE ZIP IN",
       "segs": [
         {
@@ -48,12 +49,12 @@
       "mascot": {
         "pos": "pl",
         "mood": "happy"
-      }
+      },
+      "vo": "I found out by dropping my saves into SaveSort."
     },
     {
       "type": "screen",
-      "vo": "It sorted all 156 by topic. AI was the second biggest pile.",
-      "label": "SORTED BY TOPIC",
+      "label": "MY 156 SAVES",
       "segs": [
         {
           "shot": "report-all.png",
@@ -79,11 +80,11 @@
       "mascot": {
         "pos": "pl",
         "mood": "happy"
-      }
+      },
+      "vo": "It sorted all 156 by topic, in seconds."
     },
     {
       "type": "screen",
-      "vo": "Tap AI and tools. There they are. All 33, in one place.",
       "label": "TAP AI & TOOLS",
       "segs": [
         {
@@ -107,37 +108,13 @@
       ],
       "mascot": {
         "pos": "pl",
-        "mood": "shocked"
-      }
-    },
-    {
-      "type": "talk",
-      "text": "Which ones\nare *real?*",
-      "vo": "Now the fun part. Which ones are actually real?",
-      "mood": "suspicious"
-    },
-    {
-      "type": "react",
-      "quote": "Build an AI receptionist for local businesses",
-      "label": "SAVED REEL SAYS",
-      "mood": "happy",
-      "verdict": "WORTH DOING",
-      "verdictColor": "go",
-      "vo": "Answering calls for small businesses with AI? Real tools, real demand. Worth doing."
-    },
-    {
-      "type": "react",
-      "quote": "This AI has a secret founder mode",
-      "label": "SAVED REEL SAYS",
-      "mood": "smug",
-      "verdict": "BE CAREFUL",
-      "verdictColor": "warn",
-      "vo": "A secret founder mode? Not a real feature. Just a prompt in a costume.",
+        "mood": "smug"
+      },
+      "vo": "Tap AI and tools. Just those 33.",
       "payoff": true
     },
     {
       "type": "screen",
-      "vo": "Worth doing puts the real ones in one list, across every topic.",
       "label": "TAP WORTH DOING",
       "segs": [
         {
@@ -162,11 +139,11 @@
       "mascot": {
         "pos": "pl",
         "mood": "happy"
-      }
+      },
+      "vo": "Then worth doing. The 30 I can actually act on."
     },
     {
       "type": "screen",
-      "vo": "And be careful holds the hype, so you can skip it.",
       "label": "TAP BE CAREFUL",
       "segs": [
         {
@@ -191,26 +168,30 @@
       "mascot": {
         "pos": "pl",
         "mood": "suspicious"
-      }
+      },
+      "vo": "Be careful flags the 10 that were hype."
     },
     {
       "type": "talk",
-      "text": "33 saves.\n*One to-do list.*",
-      "vo": "33 saves. One short to-do list. Much better.",
+      "text": "Turns out I'm *very*\ninto AI. Who knew.",
+      "vo": "Turns out I'm very into AI. Who knew.",
       "mood": "smug"
     },
     {
+      "type": "talk",
+      "text": "What took over\n*yours?*",
+      "vo": "What took over yours? Find out free.",
+      "mood": "happy"
+    },
+    {
       "type": "end",
-      "vo": "Tap the link in bio and sort yours free.",
-      "line": "Sort your saves.\n*Free.*",
-      "pill": "Link in bio →",
+      "line": "What's in\n*yours?*",
+      "pill": "Link in bio \u2192",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
-      }
+      },
+      "vo": "Tap the link in bio and sort yours free."
     }
-  ],
-  "cover_offset_ms": 2754,
-  "duration": 36.927,
-  "checked_at": "2026-11-01T15:10:45+08:00"
+  ]
 }

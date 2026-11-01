@@ -1,0 +1,176 @@
+{
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "link",
+  "model": "ads/ad-zc-got-500 (owner-approved style, 1 Nov)",
+  "id": "2026-11-05-3-pov-later",
+  "post_at": "2026-11-05T19:30:00+08:00",
+  "style": "funny-ad",
+  "opening": "saves-number",
+  "hook_type": "pov",
+  "fx": {
+    "hook": "LATER FINALLY GOT A LIST"
+  },
+  "yt_title": "POV: you save reel number 500 'for later'",
+  "caption": "POV: you save reel number 500. For later. Obviously.\n\nLater never comes. So I let SaveSort read my 156 saves: 30 worth doing, 22 hiding the steps behind a comment, 10 pure hype.\n\nHow: download your Instagram data, tick Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nGive your later a list. Sort yours free, link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "POV: you save\nreel *500.*",
+      "vo": "POV. You save reel 500."
+    },
+    {
+      "type": "talk",
+      "text": "\"I'll do it\n*later.*\"",
+      "vo": "I'll definitely do this one later.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Later:\n*never came.*",
+      "bg": "ink",
+      "vo": "Later never came. Not once."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I let SaveSort read all of them."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 saves, sorted by topic in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "30 I can actually do. That's the real list.",
+      "payoff": true
+    },
+    {
+      "type": "react",
+      "label": "SAVED REEL SAYS",
+      "quote": "Comment GUIDE for the steps",
+      "mood": "suspicious",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "And 22 that said comment guide for the steps. Classic."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "All flagged, so I know which ones are bait."
+    },
+    {
+      "type": "talk",
+      "text": "Later finally\ngot *a list.*",
+      "vo": "Later finally got a list. Give yours one too.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Give later\n*a list.*",
+      "pill": "Link in bio \u2192",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ]
+}
