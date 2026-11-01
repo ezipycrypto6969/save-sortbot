@@ -3,7 +3,7 @@
   "post_at": "2026-11-03T07:00:00+08:00",
   "format": "scam-watch",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "style": "base",
   "opening": "viewer-hook",
   "hook_type": "warning",
@@ -170,5 +170,6 @@
     }
   ],
   "cover_offset_ms": 2995,
-  "duration": 36.485
+  "duration": 36.485,
+  "checked_at": "2026-11-01T15:10:45+08:00"
 }

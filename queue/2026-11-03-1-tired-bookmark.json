@@ -3,7 +3,7 @@
   "post_at": "2026-11-03T03:00:00+08:00",
   "format": "ad",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "style": "funny-ad",
   "opening": "saves-number",
   "hook_type": "confession",
@@ -207,5 +207,6 @@
     }
   ],
   "cover_offset_ms": 3800,
-  "duration": 36.929
+  "duration": 36.929,
+  "checked_at": "2026-11-01T15:10:45+08:00"
 }

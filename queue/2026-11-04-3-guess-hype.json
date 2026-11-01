@@ -2,8 +2,8 @@
   "id": "2026-11-04-3-guess-hype",
   "post_at": "2026-11-04T19:30:00+08:00",
   "format": "scam-watch",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "style": "base",
   "opening": "viewer-hook",
   "hook_type": "guess",
@@ -192,5 +192,9 @@
     }
   ],
   "cover_offset_ms": 2716,
-  "duration": 34.188
+  "duration": 34.188,
+  "checked_at": "2026-11-01T15:10:45+08:00",
+  "hold_reasons": [
+    "Two calls to action (rule 7, AGENT.md 'Never both in one reel'): scene 2 asks for a comment ('Comment your guess. Lock it in.') and the end card asks to sort free AND comment ('Sort yours free, then comment your number', pill 'Sort yours free')."
+  ]
 }

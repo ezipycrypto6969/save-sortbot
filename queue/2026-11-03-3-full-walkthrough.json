@@ -2,8 +2,8 @@
   "id": "2026-11-03-3-full-walkthrough",
   "post_at": "2026-11-03T19:30:00+08:00",
   "format": "long",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "style": "base",
   "opening": "saves-number",
   "hook_type": "stakes",
@@ -315,5 +315,9 @@
     }
   ],
   "cover_offset_ms": 3199,
-  "duration": 49.032
+  "duration": 49.032,
+  "checked_at": "2026-11-01T15:10:45+08:00",
+  "hold_reasons": [
+    "Two calls to action (rule 7, AGENT.md 'Never both in one reel'): end card vo asks to save AND tap the link ('Save this for later, then tap the link in bio'), with a 'SAVE THIS FOR LATER' banner plus a 'Link in bio' caption and pill."
+  ]
 }

@@ -3,7 +3,7 @@
   "post_at": "2026-11-07T19:30:00+08:00",
   "format": "long",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "style": "exp-pov",
   "opening": "saves-number",
   "hook_type": "pov",
@@ -212,5 +212,6 @@
     }
   ],
   "cover_offset_ms": 3343,
-  "duration": 34.863
+  "duration": 34.863,
+  "checked_at": "2026-11-01T15:10:45+08:00"
 }

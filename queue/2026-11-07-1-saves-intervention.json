@@ -3,7 +3,7 @@
   "post_at": "2026-11-07T03:00:00+08:00",
   "format": "ad",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "style": "funny-ad",
   "opening": "saves-number",
   "hook_type": "bold-claim",
@@ -206,5 +206,6 @@
     }
   ],
   "cover_offset_ms": 4336,
-  "duration": 33.1
+  "duration": 33.1,
+  "checked_at": "2026-11-01T15:10:45+08:00"
 }

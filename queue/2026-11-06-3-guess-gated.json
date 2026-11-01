@@ -2,8 +2,8 @@
   "id": "2026-11-06-3-guess-gated",
   "post_at": "2026-11-06T19:30:00+08:00",
   "format": "reveal",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "style": "base",
   "opening": "viewer-hook",
   "hook_type": "guess",
@@ -162,5 +162,9 @@
     }
   ],
   "cover_offset_ms": 2698,
-  "duration": 31.961
+  "duration": 31.961,
+  "checked_at": "2026-11-01T15:10:45+08:00",
+  "hold_reasons": [
+    "Two calls to action (rule 7, AGENT.md 'Never both in one reel'): scenes 3 and 10 ask for a comment ('Comment your number', 'Comment anyway') and the end card asks to sort free AND comment ('Sort yours free, then comment your number', pill 'Sort yours free')."
+  ]
 }

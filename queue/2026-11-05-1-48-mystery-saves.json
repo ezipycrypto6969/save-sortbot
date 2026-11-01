@@ -3,7 +3,7 @@
   "post_at": "2026-11-05T03:00:00+08:00",
   "format": "long",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "style": "base",
   "opening": "saves-number",
   "hook_type": "confession",
@@ -280,5 +280,6 @@
     }
   ],
   "cover_offset_ms": 3375,
-  "duration": 37.282
+  "duration": 37.282,
+  "checked_at": "2026-11-01T15:10:45+08:00"
 }
