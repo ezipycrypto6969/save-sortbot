@@ -1,0 +1,171 @@
+{
+  "id": "ad-za-hot-take",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "comment",
+  "hook_type": "bold-claim",
+  "fx": {
+    "hook": "CHANGE MY MIND AT THE END"
+  },
+  "yt_title": "Saving a reel is procrastinating with extra steps",
+  "caption": "Hot take: saving a reel is procrastinating with extra steps.\n\nI saved 156. Rewatched zero. SaveSort found 30 worth doing, 65 that need the video, 10 pure hype.\n\nSort yours free in your browser, nothing uploaded.\n\nAgree or disagree? Change my mind in the comments.\n\n#savedreels #instagramtips #productivity #hottake",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "Saving reels\n*is procrastinating.*",
+      "vo": "Saving a reel is procrastinating."
+    },
+    {
+      "type": "talk",
+      "text": "With *extra*\nsteps.",
+      "mood": "smug",
+      "vo": "With extra steps. I said what I said."
+    },
+    {
+      "type": "quote",
+      "quote": "I'll do it later",
+      "label": "ME, 156 TIMES",
+      "note": "Did it later: 0",
+      "vo": "I'll do it later, I said. 156 times. Did it later? Zero."
+    },
+    {
+      "type": "talk",
+      "text": "The gym plan.\n*The pasta.*",
+      "mood": "sad",
+      "vo": "The gym plan. The pasta recipe. Side hustle number 4. All still waiting."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "So I dropped my saves into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "THE DAMAGE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. 65 need the video. 10 pure hype."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "The hype goes in one pile. Bye."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And 30 real keepers in one list. Fine. Some saves were useful.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Still\n*procrastinating?*",
+      "mood": "suspicious",
+      "vo": "Still think saving is productive? Prove it. Change my mind in the comments."
+    },
+    {
+      "type": "end",
+      "line": "Change\n*my mind.*",
+      "pill": "Comment below ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Best argument gets a reply. Worst one too."
+    }
+  ],
+  "cover_offset_ms": 2901,
+  "duration": 30.661
+}
