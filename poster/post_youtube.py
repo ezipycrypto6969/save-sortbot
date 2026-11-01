@@ -7,7 +7,7 @@ Marks the queue file with "youtube": {"status": "posted", "video_id", "url"}.
 Usage: python3 poster/post_youtube.py          post the next due reel
        python3 poster/post_youtube.py --check  only check the login works (prints the channel name)
 Repo variables: PAUSED=true stops posting, DRY_RUN=true rehearses without uploading,
-SITE_URL (optional) is put at the top of each description.
+SITE_URL (optional, default https://savesortai.com) is put at the top of each description.
 """
 import datetime as dt, glob, json, os, re, subprocess, sys, urllib.parse, urllib.request
 
@@ -15,7 +15,7 @@ CID = "".join(os.environ.get("YT_CLIENT_ID", "").split())
 SECRET = "".join(os.environ.get("YT_CLIENT_SECRET", "").split())
 REFRESH = "".join(os.environ.get("YT_REFRESH_TOKEN", "").split())
 DRY = os.environ.get("DRY_RUN", "").lower() == "true"
-SITE = os.environ.get("SITE_URL", "").strip()
+SITE = os.environ.get("SITE_URL", "").strip() or "https://savesortai.com"
 MAX_LATE = dt.timedelta(days=3)  # don't upload reels that were due more than 3 days ago
 HIDE = [s for s in (SECRET, REFRESH) if s]
 
@@ -84,7 +84,7 @@ def title_for(spec):
 def description_for(spec):
     d = spec["caption"]
     if SITE:
-        d = re.sub(r"link in bio", "link below", d, flags=re.I)
+        d = re.sub(r"(l)ink in bio", lambda m: m.group(1) + "ink below", d, flags=re.I)
         d = f"Sort your saved reels free: {SITE}\n\n{d}"
     else:
         d = re.sub(r"link in bio", "link on our channel", d, flags=re.I)
