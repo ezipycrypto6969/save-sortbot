@@ -204,7 +204,7 @@
     {
       "type": "end",
       "line": "Give later\n*a list.*",
-      "pill": "Link in bio \u2192",
+      "pill": "Link in bio →",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
@@ -213,5 +213,5 @@
     }
   ],
   "cover_offset_ms": 2909,
-  "duration": 24.909
+  "duration": 30.979
 }
