@@ -17,6 +17,7 @@ Data: 12 posted reels in `stats/summary.md` (26–31 Oct, updated 31 Oct 14:13 P
 - **Owner's 5 product-first reels** (queued 1–2 Nov). Judge next Saturday against the tip-led reels on IG views and avg watch.
 - **Post slot.** 7:30pm got far more Instagram views (120, 112, 43) than 3am (≤18) or 7am (≤14), but also had the best topics. Needs another week. Only the owner can change times.
 - **TikTok.** Every reel stalls at the starting ~80–100 views with 1.3–2.7 s watched and 0 follows. If next week's cold opens don't lift TikTok avg watch above 3 s, TikTok needs its own approach.
+- **Asks with a reason** (owner rule from 1 Nov). Compare `cta` groups on comments, new followers and saves per 100 views once 5+ reels each are 3 days old.
 - **funny-ad.** `rip-saved-tab` 135 views (82 of them TikTok), IG 43 / 3.3 s, 1 like. Not judged yet; keep 4 slots.
 
 ## Next week's instructions for the writer
@@ -32,5 +33,5 @@ Data: 12 posted reels in `stats/summary.md` (26–31 Oct, updated 31 Oct 14:13 P
 - Include 1 full step-by-step walkthrough (export from Instagram → drop the zip → tap the filters), 45–50 s, modelled on `full-tutorial`.
 - Length: every other reel 30–40 s (never under 30). Cut tip lists, not the on-screen demo.
 - Put the guess hooks and the walkthrough in the 7:30pm slot.
-- One ask per reel: a guess reel asks for a comment ("Comment your guess") and its end card says "Sort yours free" without "link in bio"; others use the link in bio.
+- One ask per reel, always with a reason (AGENT.md "Give the ask a reason"). Mix across the 21: 6 comment (incl. the 3 guess reels, plus at least 1 hot take and 1 pick-a-side), 5 follow (at least 2 as a real part 1 → part 2 pair queued on consecutive days), 3 save (walkthrough and how-tos), 7 link in bio. Tag each reel `"cta"`. A guess reel's end card says "Sort yours free" without "link in bio".
 - Before committing, check every queue file has `"duration"` (`needs-the-video` and `house-flip-fee` posted without one). If missing, rebuild that reel.

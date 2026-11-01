@@ -63,6 +63,12 @@ Good shape: **30–60 seconds, never under 30** (owner's rule), 8–11 scenes. M
 - **Open a loop and close it late.** Promise something specific in the `fx.hook` banner or the first line ("Number one is illegal") and pay it off in the second-last scene, marked `payoff`.
 - **Specific real numbers** beat vague words. Use only true ones.
 - **Ask for one action:** a comment ("Lock in your guess. Comment it.") or the link in bio. Never both in one reel.
+- **Give the ask a reason (owner rule, 1 Nov 2026).** Never a bare "like, comment, follow". The second-last scene's `vo` says the ask *and* why the viewer would want to do it, and the end card and the caption's last line repeat it. Tag every reel `"cta": "comment" | "follow" | "save" | "link"` and rotate them across the week. Reasons that work:
+  - **Comment, to win or to argue:** a guess with a real reveal ("Comment your guess. I'll pin whoever's closest."), a pick-a-side ("Recipes or side hustles: which took over your saves? Wrong answers only."), a count flex ("Comment your saved count. Bet nobody's under 100."), or a mild hot take the viewer will want to argue with ("Saving a reel is procrastinating with extra steps. Change my mind."). Hot takes must be an honest opinion, playful, never at anyone's expense; no false claims, made-up outrage or fake drama (the claims checker holds them).
+  - **Follow, for something specific that's coming:** "Part 2 tomorrow: the 10 saves SaveSort flagged be careful. Follow so you don't miss it." Only promise a part 2 if it is already queued within 48 hours, and name what it is. Or the series promise: "I check one viral saved reel every day so you don't have to."
+  - **Save, because they'll need it later:** "Save this. You'll want the steps when you export your saves." Best on walkthroughs and how-tos.
+  - **Like, as a vote:** "Like if your saved tab is also a graveyard." Use rarely.
+  - **Link in bio, for the payoff:** "Want your own number? Sort your saves free, link in bio."
 - **Rotate hook types** across the week; never the same hook style twice in a row.
 
 ## Marketing test and learn (every week)
