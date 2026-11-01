@@ -1,7 +1,7 @@
 {
   "format": "long",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -204,5 +204,6 @@
     }
   ],
   "cover_offset_ms": 4010,
-  "duration": 30.023
+  "duration": 30.023,
+  "checked_at": "2026-11-01T18:47:49+08:00"
 }
