@@ -1,0 +1,214 @@
+{
+  "id": "2026-11-04-2-saved-tab-lying",
+  "post_at": "2026-11-04T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "bold-claim",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE WORST PART: 65"
+  },
+  "yt_title": "Your saved tab is lying to you. 65 of my 156 saves said nothing",
+  "caption": "Your saved tab is lying to you. It says you saved something useful.\n\nSaveSort read my 156 saves:\n• 30 worth doing\n• 65 said nothing without watching the video\n• 10 be careful\n• 22 gated guides\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Your saved tab\n*is lying.*",
+      "vo": "Your saved tab is lying to you.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "It says you\nsaved *something useful.*",
+      "vo": "It says you saved something useful. Did you though? Really?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*All \"useful.\"*"
+      ],
+      "slow": true,
+      "grey": true,
+      "vo": "I had 156. Every one felt useful when I saved it.",
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "So I dropped my Instagram saves into SaveSort to check.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "It read every caption. Here's the truth, in four numbers.",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "saves\n*worth doing.*",
+      "color": "go",
+      "vo": "30 worth doing. Real steps. Fine. Good, even.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "stat",
+      "value": 65,
+      "label": "saves\n*said nothing.*",
+      "color": "warn",
+      "vo": "65 said nothing. No steps, no tool, just watch the video.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "stat",
+      "value": 22,
+      "label": "saves\n*wanted a comment.*",
+      "color": "warn",
+      "vo": "22 hid the steps until you comment guide.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "And 10 were flagged be careful. Big promises, no proof.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "So skip to\n*the 30.*",
+      "vo": "So skip the noise. Go straight to the 30 that matter.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "vo": "Tap worth doing. That's your real list. One tap.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Saved tab:\n*exposed.*",
+      "vo": "Saved tab, exposed. It had it coming.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and see what yours really say.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2624,
+  "duration": 35.465
+}

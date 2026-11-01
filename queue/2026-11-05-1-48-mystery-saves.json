@@ -1,0 +1,284 @@
+{
+  "id": "2026-11-05-1-48-mystery-saves",
+  "post_at": "2026-11-05T03:00:00+08:00",
+  "format": "long",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "saves-number",
+  "hook_type": "confession",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "WHAT WAS IN THE 48"
+  },
+  "yt_title": "48 of my saved reels didn't fit any topic",
+  "caption": "48 of my saved reels didn't fit any topic. I have no idea why I saved them.\n\nSaveSort sorted my 156 saves by topic: AI & tools 33, Marketing 16, Learning 12, Mindset 12, Side hustles 9 and more. Everything else: 48.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "48 saves.\n*No idea why.*",
+      "vo": "48 saves. No idea why I saved them.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Past me had\n*a plan.* Maybe.",
+      "vo": "Past me had a plan. Probably. Hopefully.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "vo": "I downloaded my Instagram saves and dropped the zip into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "It read all 156 and sorted every single one by topic.",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "AI and tools. 33. Okay, that makes sense. I like a gadget.",
+      "label": "AI & TOOLS · 33",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Marketing and ads. 16. Also fair.",
+      "label": "MARKETING · 16",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MKT.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 952.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Learning. 12. Look at me, being educated.",
+      "label": "LEARNING · 12",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Mindset and motivation. 12. Very ambitious. Very unwatched.",
+      "label": "MINDSET · 12",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MIND.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1128.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "And everything else. 48. The mystery pile.",
+      "label": "EVERYTHING ELSE · 48",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-OTHER.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 776.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Who saves\n*this stuff?*",
+      "vo": "Who saves this stuff? Me. I do. Apparently.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "vo": "Doesn't matter. Worth doing pulls the good ones from every pile. 30 in total.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Mystery pile.\n*Solved.*",
+      "vo": "Mystery pile solved. Mostly.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and sort your mystery pile.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3375,
+  "duration": 37.282
+}

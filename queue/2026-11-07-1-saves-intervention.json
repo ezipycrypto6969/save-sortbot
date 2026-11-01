@@ -1,0 +1,210 @@
+{
+  "id": "2026-11-07-1-saves-intervention",
+  "post_at": "2026-11-07T03:00:00+08:00",
+  "format": "ad",
+  "status": "queued",
+  "check": "pending",
+  "style": "funny-ad",
+  "opening": "saves-number",
+  "hook_type": "bold-claim",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THEY HAD ONE DEMAND"
+  },
+  "yt_title": "My 156 saved reels staged an intervention",
+  "caption": "My saved reels staged an intervention. 156 of them. They had one demand: actually use us.\n\nSaveSort sorts every save by topic and shows the 30 worth doing.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #funny",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves staged\n*an intervention.*",
+      "vo": "156 of my saves staged an intervention.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "We need to\n*talk.*",
+      "vo": "Mate. Sit down. We need to talk.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "title",
+      "text": "156 of us.\n*Zero opened.*",
+      "vo": "There are 156 of us. You opened zero. Zero.",
+      "bg": "cobalt"
+    },
+    {
+      "type": "talk",
+      "text": "You keep\n*adding more.*",
+      "vo": "And you keep adding more. Every night. In bed.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "We have\n*one demand.*",
+      "vo": "We have one demand. Actually use us. Or let us go.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "vo": "Fine. I downloaded my saves and dropped them all into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Every save sorted. 30 worth doing. 10 be careful.",
+      "label": "SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Sorted by topic too. AI, marketing, learning, the lot.",
+      "label": "BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "The 30 good ones, finally in one list.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "vo": "And the 10 hype ones. They were politely asked to leave.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Intervention\n*successful.*",
+      "vo": "Intervention successful. One save a week. I promise.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio before yours stage one.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 4336,
+  "duration": 33.1
+}

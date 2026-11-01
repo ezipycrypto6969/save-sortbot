@@ -1,0 +1,203 @@
+{
+  "id": "2026-11-08-1-where-business-idea",
+  "post_at": "2026-11-08T03:00:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "question",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "FOUND: 2 TAPS"
+  },
+  "yt_title": "Where did that business idea reel go?",
+  "caption": "Where did that side hustle reel you saved go?\n\nSaveSort sorts every save by topic. Tap Business & side hustles and they're all together, each one flagged worth doing, needs the video, be careful or gated guide.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #sidehustle",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Where's that\n*business idea?*",
+      "vo": "Where did that business idea reel go?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "You saved it.\n*Somewhere.*",
+      "vo": "You saved it. Somewhere. Between a cat and a recipe.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "title",
+      "text": "Got 500 saves?\n*Good luck.*",
+      "vo": "Got 500 saves? Good luck scrolling back for that.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "vo": "Instead, drop your Instagram saves into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "It reads every caption and sorts each save by topic.",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Tap side hustles. All 9 of mine, together, each with a link.",
+      "label": "TAP SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "No more\n*scrolling back.*",
+      "vo": "No more scrolling back for 20 minutes past cats and recipes.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "vo": "Worth doing shows which ones have real steps you can follow.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "And be careful flags the hype, like a thousand a day dropshipping. Skip those.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Found it.\n*Now do it.*",
+      "vo": "Found it. Now you just have to actually do it.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and find yours.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2843,
+  "duration": 30.332
+}

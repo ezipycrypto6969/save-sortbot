@@ -1,0 +1,166 @@
+{
+  "id": "2026-11-06-3-guess-gated",
+  "post_at": "2026-11-06T19:30:00+08:00",
+  "format": "reveal",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "guess",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE ANSWER IS IN HERE"
+  },
+  "yt_title": "Guess how many of my saved reels hid the info",
+  "caption": "Guess how many of my 156 saved reels hid the steps behind 'comment GUIDE'. Comment your guess.\n\nSaveSort flags them as Gated guides, so you can see which saves actually contain the info.\n\nHow: download your Instagram data (Settings → Accounts Center → Your information and permissions → Export your information), tick only Saved, then drop the zip into SaveSort.\n\nFree, runs in your browser, nothing uploaded.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Guess: how many\n*were gated?*",
+      "vo": "Guess how many saves hid the steps?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "quote",
+      "quote": "Comment GUIDE and I'll DM you",
+      "label": "SAVED REEL SAYS",
+      "note": "No steps in the reel",
+      "vo": "You know the ones. Comment guide and I'll send it to you.",
+      "stamp": "GATED GUIDE",
+      "stampColor": "gate"
+    },
+    {
+      "type": "talk",
+      "text": "156 saves.\n*Comment a number.*",
+      "vo": "156 saves. Comment your number. Lock it in.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "vo": "I dropped my Instagram saves into SaveSort. It reads every caption.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "22. 22 saves wanted a comment before they'd tell me anything.",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "react",
+      "quote": "Comment SCALE to grow your business",
+      "label": "SAVED REEL SAYS",
+      "mood": "sad",
+      "verdict": "NO DETAILS",
+      "verdictColor": "gate",
+      "vo": "Some had no tip at all. Just a sales chat waiting."
+    },
+    {
+      "type": "talk",
+      "text": "Some were\n*fine,* actually.",
+      "vo": "To be fair, some had real steps. You just had to ask.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "vo": "Meanwhile 30 were worth doing. No comment needed. Real steps, right there.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "stat",
+      "value": 65,
+      "label": "saves\n*needed the video.*",
+      "color": "warn",
+      "vo": "And 65 said nothing unless you watch the whole video.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Guessed 22?\n*Who are you?*",
+      "vo": "If you guessed 22, who are you? Comment anyway.",
+      "mood": "shocked"
+    },
+    {
+      "type": "end",
+      "vo": "Sort yours free, then comment your number.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Sort yours free",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2698,
+  "duration": 31.961
+}

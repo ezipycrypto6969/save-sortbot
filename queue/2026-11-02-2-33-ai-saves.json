@@ -1,0 +1,215 @@
+{
+  "id": "2026-11-02-2-33-ai-saves",
+  "post_at": "2026-11-02T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "saves-number",
+  "hook_type": "confession",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "1 REAL, 1 HYPE"
+  },
+  "yt_title": "I saved 33 AI reels. Here's what was actually useful",
+  "caption": "I saved 33 AI reels. I used none of them.\n\nSaveSort sorted my 156 saves by topic. AI & tools had 33. Tap it, and each one is flagged:\n• Worth doing\n• Needs the video\n• Be careful\n• Gated guide\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #ai",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "I saved 33\n*AI reels.*",
+      "vo": "I saved 33 AI reels.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Used *none*\nof them.",
+      "vo": "Used none of them. Not a single one. Classic.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "vo": "So I downloaded my Instagram saves and dropped the zip into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "It sorted all 156 by topic. AI was the second biggest pile.",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Tap AI and tools. There they are. All 33, in one place.",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Which ones\nare *real?*",
+      "vo": "Now the fun part. Which ones are actually real?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "react",
+      "quote": "Build an AI receptionist for local businesses",
+      "label": "SAVED REEL SAYS",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "Answering calls for small businesses with AI? Real tools, real demand. Worth doing."
+    },
+    {
+      "type": "react",
+      "quote": "This AI has a secret founder mode",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A secret founder mode? Not a real feature. Just a prompt in a costume.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "vo": "Worth doing puts the real ones in one list, across every topic.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "And be careful holds the hype, so you can skip it.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "33 saves.\n*One to-do list.*",
+      "vo": "33 saves. One short to-do list. Much better.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and sort yours free.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2754,
+  "duration": 36.927
+}

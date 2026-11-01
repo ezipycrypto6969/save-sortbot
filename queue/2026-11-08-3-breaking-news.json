@@ -1,0 +1,212 @@
+{
+  "id": "2026-11-08-3-breaking-news",
+  "post_at": "2026-11-08T19:30:00+08:00",
+  "format": "ad",
+  "status": "queued",
+  "check": "pending",
+  "style": "funny-ad",
+  "opening": "saves-number",
+  "hook_type": "bold-claim",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "DEVELOPING STORY"
+  },
+  "yt_title": "Breaking: 156 saved reels found unopened",
+  "caption": "Breaking news: 156 saved reels found unopened in one saved tab.\n\nSaveSort sorted them by topic in seconds. 30 worth doing. 10 flagged be careful. 22 gated guides.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #funny",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Breaking: 156 saves\n*found unopened.*",
+      "vo": "Breaking news. 156 saves found unopened.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Reporting\n*live.*",
+      "vo": "Sorty here, reporting live from inside the saved tab.",
+      "mood": "shocked"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "Most never",
+        "*opened again.*"
+      ],
+      "slow": true,
+      "grey": true,
+      "vo": "Witnesses say most were never opened again.",
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "The owner\n*had no comment.*",
+      "vo": "The owner had no comment. He was busy saving more.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "vo": "Rescue crews downloaded the saves and dropped the lot into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "All 156 sorted in seconds. 30 worth doing.",
+      "label": "LIVE: SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "vo": "10 hype reels were taken in for questioning.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "22 refused to talk without a comment. Lawyers have been called.",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "The rest were sorted by topic and sent home to their owners.",
+      "label": "BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Back to\n*you.*",
+      "vo": "Officials urge everyone to check their own saved tab. Back to you.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and check your own tab.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 4308,
+  "duration": 32.892
+}

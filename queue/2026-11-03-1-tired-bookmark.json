@@ -1,0 +1,211 @@
+{
+  "id": "2026-11-03-1-tired-bookmark",
+  "post_at": "2026-11-03T03:00:00+08:00",
+  "format": "ad",
+  "status": "queued",
+  "check": "pending",
+  "style": "funny-ad",
+  "opening": "saves-number",
+  "hook_type": "confession",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "HE GETS A HOLIDAY"
+  },
+  "yt_title": "156 saved reels and one very tired bookmark",
+  "caption": "I'm a bookmark. I've been holding 156 saved reels. Nobody has opened one.\n\nSaveSort sorts every save by topic and flags what's worth doing, what needs the video, what's hype and what's a gated guide.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks #funny",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*I'm exhausted.*",
+      "vo": "156 saves. I am exhausted.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Hi. I'm the\n*bookmark.*",
+      "vo": "Hi. I'm Sorty. I'm the bookmark. I hold all your saves.",
+      "mood": "sad",
+      "wave": true
+    },
+    {
+      "type": "screen",
+      "vo": "This is everything I carry. 156 reels. All by myself. Every day.",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Nobody\n*opens them.*",
+      "vo": "Do you open them? No. You just add more. Every night.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "title",
+      "text": "Save 157:\n*\"for later\"*",
+      "vo": "Save number 157. For later. Sure. Later. Right.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "My back.\n*My poor back.*",
+      "vo": "I'm a ribbon. I don't even have a back. It still hurts.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "vo": "Then someone downloaded their saves and dropped the lot into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Sorted in seconds. 30 worth doing. 10 flagged be careful.",
+      "label": "SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "The 30 good ones went into one neat list. Light as a feather.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "The hype ones got their own list. I can put those down.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "I'm going on\n*holiday.*",
+      "vo": "I'm going on holiday. Please do one save while I'm gone.",
+      "mood": "happy",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and give your bookmark a break.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 3800,
+  "duration": 36.929
+}

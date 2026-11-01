@@ -1,0 +1,233 @@
+{
+  "id": "2026-11-06-1-dont-delete-saves",
+  "post_at": "2026-11-06T03:00:00+08:00",
+  "format": "tool",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "viewer-hook",
+  "hook_type": "warning",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "DO THIS FIRST"
+  },
+  "yt_title": "Don't delete your saved reels yet. Do this first",
+  "caption": "Don't mass-delete your saved reels yet. Some of them are actually worth doing.\n\nSaveSort sorted my 156: 30 worth doing, 10 be careful. Keep the good ones, clear the rest.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Don't delete\n*your saves.*",
+      "vo": "Don't delete your saved reels yet.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Not *yet.*",
+      "vo": "I know. It's tempting. Select all, gone. Not yet.",
+      "mood": "shocked"
+    },
+    {
+      "type": "title",
+      "text": "Some of them\n*are good.*",
+      "vo": "Some of them are actually good. You just can't tell which.",
+      "bg": "cobalt"
+    },
+    {
+      "type": "screen",
+      "vo": "So first, download your Instagram saves and drop the zip into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Mine had 156. 30 were worth doing.",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "You'd have\ndeleted *those.*",
+      "vo": "You'd have deleted those 30 too. Ouch.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "vo": "Tap worth doing. Keep these. Do one this week.",
+      "label": "KEEP THESE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Tap be careful. 10 hype ones. These can go.",
+      "label": "CLEAR THESE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Gated guides shows the 22 that only want a comment.",
+      "label": "YOUR CALL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Everything else is sorted by topic, so you can tidy one pile at a time.",
+      "label": "ONE PILE AT A TIME",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.6
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Clean tab.\n*Good stuff kept.*",
+      "vo": "Clean saved tab. Good stuff kept. Everyone wins.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and sort before you delete.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2651,
+  "duration": 32.621
+}

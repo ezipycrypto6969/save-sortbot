@@ -1,0 +1,204 @@
+{
+  "id": "2026-11-08-2-30-good-zero-done",
+  "post_at": "2026-11-08T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "style": "base",
+  "opening": "saves-number",
+  "hook_type": "confession",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "fx": {
+    "hook": "THE FIX IS 1 WORD"
+  },
+  "yt_title": "I had 30 good saved reels and did none of them",
+  "caption": "I had 30 saved reels actually worth doing. I'd done none of them.\n\nSaveSort found them in my 156 saves. The fix: pick one a week.\n\nFree, runs in your browser, nothing uploaded. Link in bio.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "30 good saves.\n*Zero done.*",
+      "vo": "30 good saves. Zero done.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "They were\n*buried.*",
+      "vo": "They weren't bad. They were buried under 126 others.",
+      "mood": "sad"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*Which 30?*"
+      ],
+      "slow": true,
+      "grey": true,
+      "vo": "Somewhere in 156 saves. Good luck finding which 30.",
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "So I downloaded my saves and dropped the zip into SaveSort.",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "156 read. 30 worth doing. Found in seconds.",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "Tap worth doing. All 30, one list, each with a link to the reel.",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      }
+    },
+    {
+      "type": "screen",
+      "vo": "And the 10 hype ones? Flagged be careful. Gone from the plan.",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Still\n*didn't do them.*",
+      "vo": "Then I still didn't do them. Too many at once.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "The fix:\n*one.*",
+      "vo": "The fix is one word. One.",
+      "bg": "cobalt",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "One save.\n*One week.*",
+      "vo": "Pick one save. Do it this week. Just one. That's it.",
+      "mood": "happy"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "saves.\n*30 weeks of wins.*",
+      "color": "go",
+      "vo": "30 saves. That's 30 weeks of things actually done.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Past me:\n*finally useful.*",
+      "vo": "Past me, finally useful. Present me, slightly tired.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "vo": "Tap the link in bio and pick your one.",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      }
+    }
+  ],
+  "cover_offset_ms": 2732,
+  "duration": 36.39
+}
