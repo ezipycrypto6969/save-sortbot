@@ -177,6 +177,16 @@
       "mood": "smug"
     },
     {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Here's how. Download your Instagram data, tick saved, drop the zip in."
+    },
+    {
       "type": "talk",
       "text": "What's *your*\nnumber?",
       "vo": "So what's your number? Find out free in your browser.",
@@ -192,5 +202,7 @@
       },
       "vo": "Tap the link in bio and sort yours free."
     }
-  ]
+  ],
+  "cover_offset_ms": 4010,
+  "duration": 26.553
 }

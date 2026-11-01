@@ -179,6 +179,16 @@
       "mood": "shocked"
     },
     {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Here's how. Download your Instagram data, tick saved, drop the zip in."
+    },
+    {
       "type": "talk",
       "text": "See what's hiding\nin *yours.*",
       "vo": "See what's hiding in yours. It's free, and nothing gets uploaded.",
@@ -194,5 +204,7 @@
       },
       "vo": "Tap the link in bio and sort yours free."
     }
-  ]
+  ],
+  "cover_offset_ms": 2203,
+  "duration": 26.839
 }
