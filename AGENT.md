@@ -57,6 +57,16 @@ Good shape: **30–60 seconds, never under 30** (owner's rule), 8–11 scenes. M
 | `screen` | `label`, `segs` [{`shot`, `from`, `to`, `t0`, `t1`}], optional `taps`, `highlights`, `zoom`, `drop`, `mascot` {pos: "pl"} | real SaveSort footage in a phone (see helpers in `content/ads_v5.py`) |
 | `path` | `label`, `screens` [{`title`, `crumb`, `rows`, `pick`, `ticks`, `on`, `btn`}] | walk through a settings menu |
 
+## Per-platform versions (automatic)
+
+The same video goes to all three, but `poster/platform_copy.py` tailors the text for each, because each platform rewards different things:
+
+- **Instagram** ranks Reels for new viewers mostly on **sends** (people DMing it to a friend), then watch time and likes per reach. The caption gets one "Send this to the friend with 500 saved reels 📩" line unless the reel already asks for a comment.
+- **YouTube Shorts** lives on "viewed vs swiped away" and search. The description opens with a plain searchable line and the site link, then the caption, then `#Shorts` plus 3 tags. Write `yt_title` as a searchable phrase someone would type (under 70 characters).
+- **TikTok** search reads captions, spoken words and on-screen text. The caption keeps the hook, adds a keyword line ("How to organise your Instagram saved reels, free at savesortai.com"), asks a question if there isn't one, and uses 5 hashtags. Say "savesortai.com" rather than "link in bio" in TikTok text.
+
+To hand-write a platform's text instead, add `ig_caption`, `yt_description` or `tiktok_caption` to the queue item. Keep the first second strong on every platform: it decides the swipe on all three.
+
 ## Hooks and attention (use in every reel)
 
 - **First second sells it.** Frame one is the hook: a callout ("Stop scrolling if you have 100+ saves"), a bold claim ("Your saved tab is lying to you"), a countdown ("3 saved reels that lied to me"), a POV, a "don't do X", or a guessing game ("Guess how many were worth doing").

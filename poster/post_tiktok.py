@@ -8,7 +8,7 @@ Usage: python3 poster/post_tiktok.py          post the next due reel (and finish
        python3 poster/post_tiktok.py --check  only check the API key works
 Repo variables: PAUSED=true stops posting, DRY_RUN=true rehearses without uploading.
 """
-import datetime as dt, glob, json, os, zlib, subprocess, sys, time, urllib.parse, urllib.request
+import platform_copy, datetime as dt, glob, json, os, zlib, subprocess, sys, time, urllib.parse, urllib.request
 
 API = "https://api.upload-post.com/api"
 KEY = "".join(os.environ.get("UPLOAD_POST_API_KEY", "").split())
@@ -142,7 +142,7 @@ def main():
     else:
         print("Nothing due for TikTok has a video."); return
     user = pick_profile()
-    caption = spec["caption"][:2200]
+    caption = platform_copy.tiktok_caption(spec)
     print(f"Posting {spec['id']} to TikTok ({os.path.getsize('tiktok.mp4')/1e6:.1f} MB)")
     if DRY:
         print("DRY_RUN: would post with caption:\n" + caption); return

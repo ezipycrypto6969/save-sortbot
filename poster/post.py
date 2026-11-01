@@ -4,7 +4,7 @@ Runs inside GitHub Actions. Needs env: IG_USER_ID, IG_ACCESS_TOKEN.
 The video for queue/<id>.json lives as <id>.mp4 on the "media" branch (rewritten weekly with only upcoming reels).
 Posts at most one reel per run. Set repo variable PAUSED=true to stop posting, DRY_RUN=true to test without posting.
 """
-import datetime as dt, glob, json, os, subprocess, sys, time, urllib.parse, urllib.request
+import platform_copy, datetime as dt, glob, json, os, subprocess, sys, time, urllib.parse, urllib.request
 
 API = "https://graph.instagram.com/v21.0"
 IG_USER = os.environ["IG_USER_ID"].strip()
@@ -109,13 +109,13 @@ def main():
     size = os.path.getsize("reel.mp4")
     print(f"Posting {spec['id']} ({size/1e6:.1f} MB)")
     if DRY:
-        print("DRY_RUN: would post with caption:\n" + spec["caption"]); return
+        print("DRY_RUN: would post with caption:\n" + platform_copy.ig_caption(spec)); return
     # 1. give Instagram a public link to the video (resumable upload needs Facebook Login, so we use video_url)
     ig_ready("reel.mp4", "ig.mp4")
     video_url = public_url("ig.mp4", vid)
     print(f"Video is at {video_url}")
     c = call("POST", f"{API}/{IG_USER}/media", {
-        "media_type": "REELS", "video_url": video_url, "caption": spec["caption"],
+        "media_type": "REELS", "video_url": video_url, "caption": platform_copy.ig_caption(spec),
         "share_to_feed": "true", "thumb_offset": spec.get("cover_offset_ms", 1500), "access_token": TOKEN})
     cid = c["id"]
     # 3. wait for Instagram to process it

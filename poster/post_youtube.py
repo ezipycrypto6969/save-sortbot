@@ -9,7 +9,7 @@ Usage: python3 poster/post_youtube.py          post the next due reel
 Repo variables: PAUSED=true stops posting, DRY_RUN=true rehearses without uploading,
 SITE_URL (optional, default https://savesortai.com) is put at the top of each description.
 """
-import datetime as dt, glob, json, os, re, subprocess, sys, urllib.parse, urllib.request
+import platform_copy, datetime as dt, glob, json, os, re, subprocess, sys, urllib.parse, urllib.request
 
 CID = "".join(os.environ.get("YT_CLIENT_ID", "").split())
 SECRET = "".join(os.environ.get("YT_CLIENT_SECRET", "").split())
@@ -82,13 +82,7 @@ def title_for(spec):
 
 
 def description_for(spec):
-    d = spec["caption"]
-    if SITE:
-        d = re.sub(r"(l)ink in bio", lambda m: m.group(1) + "ink below", d, flags=re.I)
-        d = f"Sort your saved reels free: {SITE}\n\n{d}"
-    else:
-        d = re.sub(r"link in bio", "link on our channel", d, flags=re.I)
-    return d.replace("<", "").replace(">", "")[:4900]
+    return platform_copy.yt_description(spec, SITE)
 
 
 def tags_for(spec):
