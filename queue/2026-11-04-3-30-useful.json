@@ -195,7 +195,7 @@
     {
       "type": "end",
       "line": "Find your\n*number.*",
-      "pill": "Link in bio \u2192",
+      "pill": "Link in bio →",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
@@ -204,5 +204,5 @@
     }
   ],
   "cover_offset_ms": 4010,
-  "duration": 26.553
+  "duration": 30.023
 }
