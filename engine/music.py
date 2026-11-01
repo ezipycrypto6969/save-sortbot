@@ -6,7 +6,7 @@ SR = 48000
 
 
 def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0, mode="sfx", events=None):
-    """mode: "full" = beat + bass + melody + effects; "sfx" = effects only (whooshes, hits, ticks); "none" = silence.
+    """mode: "full" = beat + bass + melody + effects; "soft" = calm lo-fi bed (warm chords, light kick, sparse plucks) + effects; "sfx" = effects only (whooshes, hits, ticks); "none" = silence.
     events: optional [(t, kind)] so each moment gets a fitting, varied effect (see SFX_KINDS below)."""
     rng = np.random.default_rng(seed)
     N = int(SR * dur)
@@ -86,6 +86,28 @@ def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0, mode="sfx", events=N
         k = 0; tb = first_cut
         while tb < end_at - 0.3:
             add(pluck(scale[(k * 3) % 5]), tb, 0.45 if k % 2 == 0 else 0.25, 0.25 if k % 2 else -0.25); k += 1; tb += beat / 2
+    if mode == "soft":
+        def pad(freqs, length):
+            n = int(length * SR); t = np.arange(n) / SR
+            sig = sum(np.sin(2 * np.pi * f * t) + 0.35 * np.sin(2 * np.pi * f * 2 * t + 0.4) for f in freqs)
+            a = int(0.35 * SR); r = int(0.6 * SR)
+            e = np.ones(n); e[:a] = np.linspace(0, 1, a); e[-r:] *= np.linspace(1, 0, r)
+            sig = np.convolve(sig, np.ones(24) / 24, mode="same")  # soften the top end
+            return sig * e * 0.09
+        A = 220.0
+        chords = [[A, A * 1.189, A * 1.498], [A * 0.794, A * 0.944, A * 1.189], [A * 1.189, A * 1.498, A * 1.782], [A * 0.891, A * 1.122, A * 1.335]]  # Am F C G
+        bar = 2.0
+        for b in range(int(dur / bar) + 1):
+            tb = b * bar
+            if tb >= end_at - 0.2: break
+            ch = chords[b % 4]
+            add(pad(ch, bar + 0.6), tb, 0.9)
+            add(bass(ch[0] / 4, bar * 0.9), tb, 0.35)
+            for q in range(4):
+                tq = tb + q * beat
+                if q % 2 == 0: add(kick(), tq, 0.35)
+                add(hat(), tq + beat / 2, 0.12, -0.2)
+            if b % 2 == 1: add(pluck(ch[2] * 2, 0.6), tb + 1.25, 0.18, 0.3)
     if mode == "none":
         return np.zeros((N, 2))
     if events is None:
@@ -114,7 +136,7 @@ def make(dur, cuts, hits, ticks, end_at, seed=7, root=55.0, mode="sfx", events=N
     mix = np.stack([L, R], 1)
     fade = int(0.35 * SR); mix[-fade:] *= np.linspace(1, 0, fade)[:, None]
     mix = np.tanh(mix * 0.9)
-    return mix / (np.max(np.abs(mix)) + 1e-9) * (0.89 if mode == "full" else 0.6)  # effects sit quieter under the voice
+    return mix / (np.max(np.abs(mix)) + 1e-9) * {"full": 0.89, "soft": 0.8}.get(mode, 0.6)  # effects sit quieter under the voice
 
 
 def _library(rng, env, whoosh, impact, tick, pluck):

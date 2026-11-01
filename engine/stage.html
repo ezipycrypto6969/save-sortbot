@@ -72,6 +72,10 @@ body{font-family:"Inter Display","Inter","Archivo",sans-serif;-webkit-font-smoot
 .menu .row.btn{justify-content:center;margin:40px 48px 0;border:0;border-radius:24px;background:var(--cobalt);color:#fff;font-weight:800}
 .menu .row.btn::after{content:none}
 .menu .row.pick{background:#F2F4FF}
+.sticker{position:absolute;left:90px;top:210px;background:var(--marker);color:var(--ink);font-weight:900;font-size:44px;padding:12px 30px;border-radius:999px;letter-spacing:.04em;white-space:nowrap;transform:rotate(-3deg)}
+.opts{position:absolute;left:90px;right:150px;display:flex;flex-direction:column;gap:22px}
+.opt{display:flex;gap:26px;align-items:center;background:#fff;color:var(--ink);border-radius:28px;padding:26px 32px;font-size:50px;font-weight:900;letter-spacing:-.01em;box-shadow:0 20px 40px -20px rgba(0,0,0,.5)}
+.opt .k{flex:none;width:76px;height:76px;border-radius:50%;background:var(--cobalt);color:#fff;display:flex;align-items:center;justify-content:center;font-size:42px}
 </style></head>
 <body>
 <div id="root"></div>
@@ -91,7 +95,7 @@ function tiles(n){let h="";for(let i=0;i<n;i++)h+=`<div class="tile"><b>${LABELS
 function fit(el,maxW,maxH,start,min=40){let s=start;el.style.fontSize=s+"px";while(s>min&&(el.scrollWidth>maxW+2||el.scrollHeight>maxH)){s-=4;el.style.fontSize=s+"px";}}
 function build(sc,i){
   const d=document.createElement("section");d.className="scene";d.id="s"+i;
-  const bg=sc.bg||({screen:"ink",path:"ink",hook:"ink",quote:"ink",title:"cobalt",steps:"paper",stat:"paper",checks:"paper",count:"ink",talk:"cobalt",react:"ink",end:"cobalt"}[sc.type]);
+  const bg=sc.bg||({ask:"ink",screen:"ink",path:"ink",hook:"ink",quote:"ink",title:"cobalt",steps:"paper",stat:"paper",checks:"paper",count:"ink",talk:"cobalt",react:"ink",end:"cobalt"}[sc.type]);
   d.classList.add("bg-"+bg);
   if(sc.type==="hook"){
     d.innerHTML=`<div class="tiles">${tiles(48)}</div><div class="scrim"></div>`+
@@ -116,6 +120,9 @@ function build(sc,i){
       (sc.verdict?`<div class="verdict" style="color:${vc}"><span>${esc(sc.verdict)}</span></div>`:"");
   } else if(sc.type==="count"){
     d.innerHTML=`<div class="big cn" style="top:360px"><div class="count-n">#${esc(sc.n)}</div></div><div class="big lab" style="top:900px;color:#fff">${rich(sc.label||"")}</div>`;
+  } else if(sc.type==="ask"){
+    d.innerHTML=`<div class="sticker">${esc(sc.sticker||"COMMENT BELOW")}</div><div class="big head" style="top:330px;color:#fff;white-space:normal">${rich(sc.question)}</div>`+
+      ((sc.options||[]).length?`<div class="opts">${sc.options.map((o,k)=>`<div class="opt"><span class="k">${"ABC"[k]||k+1}</span><span>${esc(o)}</span></div>`).join("")}</div>`:"");
   } else if(sc.type==="screen"){
     const segs=sc.segs; const shots=[...new Set(segs.map(g=>g.shot))];
     d.innerHTML=`<div class="phone"><div class="scr"><div class="sbar">9:41</div>${shots.map(f=>`<img data-s="${esc(f)}" src="screens/${esc(f)}">`).join("")}<div class="tapdot"></div><div class="tap"></div><div class="hl"></div></div><div class="notch"></div></div>`+(sc.label?`<div class="slabel">${esc(sc.label)}</div>`:"")+
@@ -129,7 +136,8 @@ function build(sc,i){
   d.style.display="block";
   const W=840;
   d.querySelectorAll(".line").forEach(e=>fit(e,W,200,170));
-  const head=d.querySelector(".head"); if(head) fit(head,W,sc.type==="quote"?420:330,120);
+  const head=d.querySelector(".head"); if(head) fit(head,W,sc.type==="quote"?420:(sc.type==="ask"?380:330),sc.type==="ask"?104:120);
+  if(sc.type==="ask"){const o=d.querySelector(".opts"); if(o){o.style.top=(head.offsetTop+head.offsetHeight+60)+"px"; let f=50; while(f>34&&o.offsetTop+o.offsetHeight>1360){f-=4;o.querySelectorAll(".opt").forEach(x=>x.style.fontSize=f+"px");}}}
   const q=d.querySelector(".q"); if(q){const card=q.parentElement; let s=76; q.style.fontSize=s+"px"; while(s>44&&card.scrollHeight>(sc.heading?720:900)){s-=4;q.style.fontSize=s+"px";}}
   const t=d.querySelector(".t"); if(t){fit(t,W,1100,150); t.style.top=Math.round((1600-t.scrollHeight)/2+40)+"px";}
   const list=d.querySelector(".list"); if(list){let s=46; while(s>32&&list.scrollHeight>1000){s-=2;list.querySelectorAll(".step p").forEach(p=>p.style.fontSize=s+"px");}}
@@ -219,6 +227,9 @@ window.render=function(t){
         if(lt>sc.verdictAt+0.18&&lt<sc.verdictAt+0.38){const s=Math.sin(t*120)*10; d.style.transform+=` translate(${s}px,${s/2}px)`;}}
     } else if(sc.type==="count"){
       pop(d.querySelector(".cn"),0.0,lt,0.22,2.2); pop(d.querySelector(".lab"),0.3,lt,0.22,1.25);
+    } else if(sc.type==="ask"){
+      pop(d.querySelector(".sticker"),0.0,lt,0.22,1.6); pop(d.querySelector(".head"),0.12,lt,0.24,1.2);
+      [...d.querySelectorAll(".opt")].forEach((r,k)=>{const at=(sc.itemTimes||[])[k]!=null?sc.itemTimes[k]-sc.start:0.5+k*0.4;const p=(lt-at)/0.26;r.style.opacity=p<0?0:1;r.style.transform=`translateX(${p<0?-80:-80*(1-ease(p))}px)`;});
     } else if(sc.type==="screen"){ renderScreen(sc,d,lt); }
     else if(sc.type==="path"){ renderPath(sc,d,lt); }
     else if(sc.type==="end"){

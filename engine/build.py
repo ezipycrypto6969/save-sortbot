@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import g2p, tts, music  # noqa: E402
 
-MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6, "screen": 2.6, "path": 3.0}
+MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6, "screen": 2.6, "path": 3.0, "ask": 2.8}
 
 
 def caption_chunks(lines, max_words=3):
@@ -81,7 +81,9 @@ def main(spec_path, out_dir, stills=False):
             sc["verdictAt"] = round(min(dur - 0.4, sc.get("verdictAt", max(0.7, vlen * 0.6))), 3); hits.append(t + sc["verdictAt"]); events.append((t + sc["verdictAt"], "stamp"))
         if sc.get("payoff") and "hookUntil" not in spec.get("fx", {}): spec.setdefault("fx", {})["hookUntil"] = round(t, 3)
         if sc["type"] == "stat": ticks += [t + 0.1 + k * (1.0 / 20) for k in range(20)]; events.append((t + 1.15, "statend"))
-        if sc["type"] in ("steps", "checks"):
+        if sc["type"] == "ask": events.append((t + 0.1, "hit"))
+        if sc["type"] == "ask" and sc.get("options"): sc.setdefault("items", sc["options"])
+        if sc["type"] in ("steps", "checks", "ask") and sc.get("items"):
             n = len(sc["items"]); span = max(0.6, (vlen if vlen else dur) - 0.3)
             sc["itemTimes"] = [round(t + 0.35 + k * span / n, 3) for k in range(n)]; events += [(x, "item") for x in sc["itemTimes"]]
         if sc.get("payoff"): events.append((t + 0.15, "payoff"))
@@ -118,9 +120,10 @@ def main(spec_path, out_dir, stills=False):
     silent = os.path.join(out_dir, "silent.mp4")
     subprocess.run(["node", os.path.join(HERE, "render.js"), os.path.join(out_dir, "timeline.json"), silent] + ([sd] if sd else []), check=True)
     envl = np.convolve(np.abs(vo), np.ones(2400) / 2400, mode="same")
-    duck = 1 - 0.68 * np.clip(envl / 0.04, 0, 1)
+    soft = spec.get("music", "sfx") == "soft"
+    duck = 1 - (0.45 if soft else 0.68) * np.clip(envl / 0.04, 0, 1)
     duck = np.convolve(duck, np.ones(4800) / 4800, mode="same")
-    mix = bed * (0.5 * duck)[:, None] + vo[:, None] * 1.0
+    mix = bed * ((0.62 if soft else 0.5) * duck)[:, None] + vo[:, None] * 1.0
     mix = np.tanh(mix * 1.1); mix = mix / (np.max(np.abs(mix)) + 1e-9) * 0.89
     wav = os.path.join(out_dir, "mix.wav")
     wavfile.write(wav, SR, (mix * 32767).astype(np.int16))
