@@ -46,6 +46,7 @@ def normalise(text):
         words = num_words(whole) + (" thousand" if k else "") + " dollars"
         if cents and int(cents): words += " " + num_words(cents)
         return " " + words + " "
+    t = re.sub(r"\b([a-z0-9-]+)\.(com|au|ai|io|org|net)\b", lambda m: m.group(1) + " dot " + m.group(2), t, flags=re.I)
     t = re.sub(r"(A?\$)\s?(\d[\d,]*)(?:\.(\d\d))?(k\b)?", money, t)
     t = re.sub(r"(\d+)\s*%", lambda m: m.group(1) + " percent", t)
     t = re.sub(r"(\d+)k\b", lambda m: m.group(1) + " thousand", t, flags=re.I)

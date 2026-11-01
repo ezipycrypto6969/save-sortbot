@@ -7,43 +7,54 @@
   "speed": 1.22,
   "music": "sfx",
   "cta": "follow",
-  "hook_type": "warning",
+  "hook_type": "confession",
   "fx": {
-    "hook": "WHY TO FOLLOW: AT THE END"
+    "hook": "WAIT FOR THE GYM ONE"
   },
-  "yt_title": "10 of my saved reels were pure hype",
-  "caption": "10 of my saved reels were pure hype. Big promises, no proof.\n\nSaveSort read all 156 and sorted them: 30 worth doing, 65 that need the video, 10 be careful.\n\nEvery day I check a saved reel's claim so you don't have to. Follow so the hype check comes to you.\n\n#savedreels #instagramtips #sidehustle #scamwatch",
+  "yt_title": "10 of my saved reels were hype. Gym, study, money",
+  "caption": "10 of my saved reels were pure hype. A study trick, a money promise, a gym protocol that never says what it is.\n\nSaveSort read all 156 and sorted them: 30 worth doing, 65 that need the video, 10 be careful.\n\nSort yours free at savesortai.com. Runs in your browser, nothing uploaded.\n\nI check one saved reel every day so you don't have to. Follow for those.\n\n#savedreels #instagramtips #studytips #gymtok #sidehustle",
   "scenes": [
     {
-      "type": "title",
-      "clean": true,
-      "bg": "paper",
-      "text": "10 of my saves\n*were hype.*",
-      "vo": "10 of my saved reels were hype."
+      "type": "hook",
+      "lines": [
+        "10 of my saves",
+        "*were hype.*"
+      ],
+      "vo": "10 of my saved reels were pure hype."
     },
     {
       "type": "talk",
       "text": "Big promises.\n*No proof.*",
       "mood": "suspicious",
-      "vo": "Big promises. No proof. And I saved every single one anyway."
+      "vo": "Big promises. No proof. And I saved every single one."
+    },
+    {
+      "type": "react",
+      "quote": "This study method was quietly discouraged in Japan",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A study trick Japan quietly discouraged? No source. Just a spooky story."
     },
     {
       "type": "react",
       "quote": "Make $1000 a day dropshipping",
       "label": "SAVED REEL SAYS",
-      "mood": "suspicious",
+      "mood": "shocked",
       "verdict": "BE CAREFUL",
       "verdictColor": "warn",
       "vo": "1000 a day? That's the best case. Most new stores make way less."
     },
     {
       "type": "react",
-      "quote": "Claude has a secret Founder Thinking Mode",
-      "label": "SAVED REEL SAYS",
-      "mood": "shocked",
-      "verdict": "BE CAREFUL",
+      "quote": "This protocol has been crazy lately. Too good not to share",
+      "label": "GYM REEL SAYS",
+      "mood": "smug",
+      "verdict": "NO DETAILS",
       "verdictColor": "warn",
-      "vo": "A secret AI mode? It doesn't exist. It's just a prompt."
+      "vo": "A gym protocol too good not to share? It never says what it is.",
+      "payoff": true
     },
     {
       "type": "screen",
@@ -122,8 +133,7 @@
         "pos": "pl",
         "mood": "suspicious"
       },
-      "vo": "Tap be careful and the hype is all in one pile.",
-      "payoff": true
+      "vo": "Tap be careful and all the hype is in one pile."
     },
     {
       "type": "screen",
@@ -152,26 +162,25 @@
         "pos": "pl",
         "mood": "happy"
       },
-      "vo": "The 30 worth doing? Those I can actually use.",
-      "payoff": true
+      "vo": "The 30 worth doing? Recipes, workouts, money tips I can actually use."
     },
     {
       "type": "talk",
       "text": "I check one\n*every day.*",
       "mood": "happy",
-      "vo": "Every day I check one saved reel claim, so you don't have to."
+      "vo": "I check one saved reel every day, so you don't have to. Follow for those."
     },
     {
       "type": "end",
-      "line": "Skip the hype.\n*Follow.*",
+      "line": "Sort yours free.\n*savesortai.com*",
       "pill": "Follow for daily checks",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
       },
-      "vo": "Follow, and the hype check comes straight to you. No course required."
+      "vo": "Sort your own saves free at savesortai.com."
     }
   ],
-  "cover_offset_ms": 2609,
-  "duration": 31.223
+  "cover_offset_ms": 2913,
+  "duration": 36.935
 }

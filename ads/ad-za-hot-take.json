@@ -12,7 +12,7 @@
     "hook": "CHANGE MY MIND AT THE END"
   },
   "yt_title": "Saving a reel is procrastinating with extra steps",
-  "caption": "Hot take: saving a reel is procrastinating with extra steps.\n\nI saved 156. Rewatched zero. SaveSort found 30 worth doing, 65 that need the video, 10 pure hype.\n\nSort yours free in your browser, nothing uploaded.\n\nAgree or disagree? Change my mind in the comments.\n\n#savedreels #instagramtips #productivity #hottake",
+  "caption": "Hot take: saving a reel is procrastinating with extra steps.\n\nThe gym plan. The pasta recipe. Side hustle number 4. I saved 156 reels and rewatched zero. SaveSort found 30 worth doing, 65 that need the video, 10 pure hype.\n\nSort yours free at savesortai.com. Runs in your browser, nothing uploaded.\n\nAgree or disagree? Change my mind in the comments.\n\n#savedreels #instagramtips #productivity #gymtok #recipes #hottake",
   "scenes": [
     {
       "type": "title",
@@ -153,19 +153,19 @@
       "type": "talk",
       "text": "Still\n*procrastinating?*",
       "mood": "suspicious",
-      "vo": "Still think saving is productive? Prove it. Change my mind in the comments."
+      "vo": "Still think saving is productive? Change my mind in the comments."
     },
     {
       "type": "end",
-      "line": "Change\n*my mind.*",
-      "pill": "Comment below ↓",
+      "line": "Sort yours free.\n*savesortai.com*",
+      "pill": "Change my mind ↓",
       "mascot": {
         "pos": "tr",
         "mood": "smug"
       },
-      "vo": "Best argument gets a reply. Worst one too."
+      "vo": "Then go to savesortai.com and sort yours free. See how many you'd actually use."
     }
   ],
   "cover_offset_ms": 2901,
-  "duration": 30.661
+  "duration": 32.345
 }
