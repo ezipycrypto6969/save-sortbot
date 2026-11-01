@@ -225,7 +225,7 @@
     {
       "type": "end",
       "line": "What's in\n*yours?*",
-      "pill": "Link in bio \u2192",
+      "pill": "Link in bio →",
       "mascot": {
         "pos": "tr",
         "mood": "happy"
@@ -234,5 +234,5 @@
     }
   ],
   "cover_offset_ms": 2265,
-  "duration": 23.528
+  "duration": 30.382
 }
