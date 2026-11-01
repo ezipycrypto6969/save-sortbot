@@ -67,6 +67,14 @@ The same video goes to all three, but `poster/platform_copy.py` tailors the text
 
 To hand-write a platform's text instead, add `ig_caption`, `yt_description` or `tiktok_caption` to the queue item. Keep the first second strong on every platform: it decides the swipe on all three.
 
+### Instagram trial reels (testing openings)
+
+Optional fields on a queue item:
+- `"ig_trial": true` posts it on Instagram as a **trial reel**: shown to non-followers first. With the default `"ig_trial_graduation": "SS_PERFORMANCE"`, Meta shares it with followers automatically if it does well (`"MANUAL"` leaves that to the owner in the app). If the account can't use trial reels, it posts normally.
+- `"platforms": ["instagram"]` limits a reel to certain platforms (default: all three).
+
+Use them to test openings: once a day at most, take a reel you've written and add a second version with a **different first scene only** (new hook line and on-screen text, same rest), queued at the same time with `"ig_trial": true` and `"platforms": ["instagram"]`, id ending `-b`. The weekly analysis compares the A and B openings and keeps the better style.
+
 ## Hooks and attention (use in every reel)
 
 - **First second sells it.** Frame one is the hook: a callout ("Stop scrolling if you have 100+ saves"), a bold claim ("Your saved tab is lying to you"), a countdown ("3 saved reels that lied to me"), a POV, a "don't do X", or a guessing game ("Guess how many were worth doing").
@@ -139,4 +147,4 @@ Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-
 - **Talk about the product and the payoff:** how it works (download Instagram data, tick Saved, drop the zip in), and what it does for the viewer (saves time, saves money on hype, feels lighter and more in control). Aim for at least 2 product-focused reels a week.
 - **No get-rich-quick claims** (Meta ad policy and honesty). Scam-watch posts explain why something is misleading without attacking a named person.
 - Voice tone: dry, deadpan, a bit Aussie ("Mate. No."), never mean. One joke per reel is plenty.
-- Never post more than 3 a day. If the queue already has 21+ future items, do nothing but report.
+- Never post more than 3 a day (plus at most 1 Instagram-only trial reel). If the queue already has 21+ future items, do nothing but report.

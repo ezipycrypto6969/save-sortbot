@@ -12,7 +12,7 @@ TOKEN = "".join(os.environ["IG_ACCESS_TOKEN"].split())  # drop stray spaces or l
 DRY = os.environ.get("DRY_RUN", "").lower() == "true"
 
 
-def call(method, url, params=None, data=None, headers=None):
+def call(method, url, params=None, data=None, headers=None, soft=False):
     if params: url += ("&" if "?" in url else "?") + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, data=data, method=method, headers=headers or {})
     try:
@@ -20,6 +20,8 @@ def call(method, url, params=None, data=None, headers=None):
             return json.loads(r.read() or b"{}")
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
+        if soft:
+            print(f"::warning title=Instagram option not accepted::{body[:400]}".replace(TOKEN, "***")); return None
         msg = f"Instagram API error {e.code} on {url.split('?')[0]}: {body}".replace(TOKEN, "***")
         if "190" in body or "OAuth" in body:
             msg += " -- The Instagram token is wrong or expired. Generate a new one in the Meta app and update the IG_ACCESS_TOKEN secret."
@@ -85,6 +87,7 @@ def due_item():
         spec = json.load(open(p))
         if spec.get("status") != "queued": continue
         if spec.get("check") == "pending": continue  # not yet passed by the claims checker
+        if "instagram" not in spec.get("platforms", ["instagram", "youtube", "tiktok"]): continue  # not for this platform
         when = dt.datetime.fromisoformat(spec["post_at"])
         if when <= now + dt.timedelta(minutes=20): items.append((when, p, spec))
     return min(items)[1:] if items else (None, None)
@@ -114,9 +117,15 @@ def main():
     ig_ready("reel.mp4", "ig.mp4")
     video_url = public_url("ig.mp4", vid)
     print(f"Video is at {video_url}")
-    c = call("POST", f"{API}/{IG_USER}/media", {
-        "media_type": "REELS", "video_url": video_url, "caption": platform_copy.ig_caption(spec),
-        "share_to_feed": "true", "thumb_offset": spec.get("cover_offset_ms", 1500), "access_token": TOKEN})
+    params = {"media_type": "REELS", "video_url": video_url, "caption": platform_copy.ig_caption(spec),
+              "share_to_feed": "true", "thumb_offset": spec.get("cover_offset_ms", 1500), "access_token": TOKEN}
+    c = None
+    if spec.get("ig_trial"):  # trial reel: shown to non-followers first; Meta shares it with followers if it does well
+        grad = spec.get("ig_trial_graduation", "SS_PERFORMANCE")
+        c = call("POST", f"{API}/{IG_USER}/media", {**params, "trial_params": json.dumps({"graduation_strategy": grad})}, soft=True)
+        print("Posting as a trial reel" if c else "Trial reels not available for this account; posting normally")
+    if not c:
+        c = call("POST", f"{API}/{IG_USER}/media", params)
     cid = c["id"]
     # 3. wait for Instagram to process it
     for _ in range(60):
