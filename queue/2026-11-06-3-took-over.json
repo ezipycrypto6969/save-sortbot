@@ -172,10 +172,49 @@
       "vo": "Be careful flags the 10 that were hype."
     },
     {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And 22 hid the steps behind a comment. Now I know which."
+    },
+    {
       "type": "talk",
       "text": "Turns out I'm *very*\ninto AI. Who knew.",
       "vo": "Turns out I'm very into AI. Who knew.",
       "mood": "smug"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Here's how. Download your Instagram data, tick saved, drop the zip in."
     },
     {
       "type": "talk",
@@ -193,5 +232,7 @@
       },
       "vo": "Tap the link in bio and sort yours free."
     }
-  ]
+  ],
+  "cover_offset_ms": 2265,
+  "duration": 23.528
 }

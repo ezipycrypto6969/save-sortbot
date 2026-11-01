@@ -157,6 +157,45 @@
       "vo": "All flagged, so I know which ones are bait."
     },
     {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And 10 were pure hype. Never doing those."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Here's how. Download your Instagram data, tick saved, drop the zip in."
+    },
+    {
       "type": "talk",
       "text": "Later finally\ngot *a list.*",
       "vo": "Later finally got a list. Give yours one too.",
@@ -172,5 +211,7 @@
       },
       "vo": "Tap the link in bio and sort yours free."
     }
-  ]
+  ],
+  "cover_offset_ms": 2909,
+  "duration": 24.909
 }
