@@ -57,7 +57,7 @@ def main(spec_path, out_dir, stills=False):
         print("UNKNOWN WORDS — rephrase these lines or add the words to models/custom.json:\n  " + "\n  ".join(bad))
         sys.exit(2)
     # 2. speech + timeline
-    t = 0.0; lines = []; cuts = []; hits = []; ticks = []
+    t = 0.0; lines = []; cuts = []; hits = []; ticks = []; events = []; last_mood = None
     vo_track = []
     for sc in spec["scenes"]:
         audio = tts.speak(sc["_ph"], voice, sc.get("speed", spec.get("speed", 1.2))) if sc.get("vo") else np.zeros(0, np.float32)
@@ -70,18 +70,25 @@ def main(spec_path, out_dir, stills=False):
         if sc.get("vo"):
             vo_track.append((t + lead, audio)); lines.append((t + lead, t + lead + vlen, sc["vo"]))
         if sc["type"] == "quote" and sc.get("stamp"):
-            sc["stampAt"] = round(min(dur - 0.4, sc.get("stampAt", max(0.6, vlen * 0.55))), 3); hits.append(t + sc["stampAt"])
-        if sc["type"] == "hook": hits.append(t + 0.12 + 0.38 * (len(sc["lines"]) - 1))
-        if sc["type"] == "count": hits.append(t)
-        if sc["type"] == "screen": ticks += [t + a["at"] * dur for a in sc.get("taps", [])]; hits += [t + sc["drop"]["at"] * dur + 0.7] if sc.get("drop") else []
-        if sc["type"] == "path": ticks += [t + (k + 0.62) * dur / len(sc["screens"]) for k in range(len(sc["screens"]))]
+            sc["stampAt"] = round(min(dur - 0.4, sc.get("stampAt", max(0.6, vlen * 0.55))), 3); hits.append(t + sc["stampAt"]); events.append((t + sc["stampAt"], "stamp"))
+        if sc["type"] == "hook": hits.append(t + 0.12 + 0.38 * (len(sc["lines"]) - 1)); events += [(t + 0.12 + 0.38 * (len(sc["lines"]) - 1), "hook"), (t + 0.05, "scroll")]
+        if sc["type"] == "count": hits.append(t); events.append((t, "count"))
+        if sc["type"] == "screen":
+            events += [(t + a["at"] * dur, "tap") for a in sc.get("taps", [])]
+            if sc.get("drop"): events.append((t + sc["drop"]["at"] * dur + 0.7, "drop"))
+        if sc["type"] == "path": events += [(x, "tap") for x in [t + (k + 0.62) * dur / len(sc["screens"]) for k in range(len(sc["screens"]))]]
         if sc["type"] == "react" and sc.get("verdict"):
-            sc["verdictAt"] = round(min(dur - 0.4, sc.get("verdictAt", max(0.7, vlen * 0.6))), 3); hits.append(t + sc["verdictAt"])
+            sc["verdictAt"] = round(min(dur - 0.4, sc.get("verdictAt", max(0.7, vlen * 0.6))), 3); hits.append(t + sc["verdictAt"]); events.append((t + sc["verdictAt"], "stamp"))
         if sc.get("payoff") and "hookUntil" not in spec.get("fx", {}): spec.setdefault("fx", {})["hookUntil"] = round(t, 3)
-        if sc["type"] == "stat": ticks += [t + 0.1 + k * (1.0 / 20) for k in range(20)]
+        if sc["type"] == "stat": ticks += [t + 0.1 + k * (1.0 / 20) for k in range(20)]; events.append((t + 1.15, "statend"))
         if sc["type"] in ("steps", "checks"):
             n = len(sc["items"]); span = max(0.6, (vlen if vlen else dur) - 0.3)
-            sc["itemTimes"] = [round(t + 0.35 + k * span / n, 3) for k in range(n)]; ticks += sc["itemTimes"]
+            sc["itemTimes"] = [round(t + 0.35 + k * span / n, 3) for k in range(n)]; events += [(x, "item") for x in sc["itemTimes"]]
+        if sc.get("payoff"): events.append((t + 0.15, "payoff"))
+        mood = sc.get("mood") or (sc.get("mascot") or {}).get("mood")
+        if sc["type"] in ("talk", "react") and mood in ("shocked", "sad", "smug", "suspicious") and mood != last_mood:
+            events.append((t + 0.08, "mood:" + mood))  # a comic sting when Sorty's mood changes
+        last_mood = mood if sc["type"] in ("talk", "react") else last_mood
         t += dur
         sc.pop("_ph", None)
     total = round(t, 3)
@@ -91,7 +98,7 @@ def main(spec_path, out_dir, stills=False):
     tl = {"dur": total, "scenes": spec["scenes"], "fx": fx, "caps": caption_chunks(lines), "mascot": spec.get("mascot", True)}
     # 3. sound: voice track first (the mascot lip-syncs to it), then music ducked under it
     SR = music.SR
-    bed = music.make(total, cuts, hits, ticks, end_at=spec["scenes"][-1]["start"], seed=zlib.crc32(spec.get("id", "").encode()) % 1000, mode=spec.get("music", "sfx"))
+    bed = music.make(total, cuts, hits, ticks, end_at=spec["scenes"][-1]["start"], seed=zlib.crc32(spec.get("id", "").encode()) % 1000, mode=spec.get("music", "sfx"), events=sorted(events))
     vo = np.zeros(len(bed), np.float32)
     for start, a in vo_track:
         up = resample_poly(a, SR, tts.SR).astype(np.float32); i = int(start * SR); j = min(len(vo), i + len(up))
