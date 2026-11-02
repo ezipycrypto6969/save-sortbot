@@ -1,6 +1,6 @@
 #!/bin/bash
 # Updates the "media-niche" branch so it holds the media for every niche-account item still waiting to post:
-#   <account>/<id>.mp4 for reels, <account>/<id>/slide-N.jpg for slideshows. Then force-pushes it.
+#   <account>/<id>.mp4 for reels, <account>/<id>/slide-N.jpg (+ video.mp4 for YouTube) for slideshows. Then force-pushes it.
 # Starts from what's already on the branch (so each account's writer only needs its own renders), adds or replaces
 # anything rendered locally (out/<account>/<id>/reel.mp4 or slide-*.jpg), and drops items that are no longer queued.
 set -e
@@ -15,7 +15,7 @@ for f in accounts/*/queue/*.json; do
   src="out/$acct/$id"
   if [ "$fmt" = "slideshow" ]; then
     echo "$acct/$id" >> "$keep"
-    if ls "$src"/slide-*.jpg >/dev/null 2>&1; then rm -rf "$tmp/$acct/$id"; mkdir -p "$tmp/$acct/$id"; cp "$src"/slide-*.jpg "$tmp/$acct/$id/"
+    if ls "$src"/slide-*.jpg >/dev/null 2>&1; then rm -rf "$tmp/$acct/$id"; mkdir -p "$tmp/$acct/$id"; cp "$src"/slide-*.jpg "$tmp/$acct/$id/"; [ -f "$src/video.mp4" ] && cp "$src/video.mp4" "$tmp/$acct/$id/"
     elif [ ! -f "$tmp/$acct/$id/slide-1.jpg" ]; then echo "missing slides: $acct/$id"; missing=1; fi
   else
     echo "$acct/$id.mp4" >> "$keep"

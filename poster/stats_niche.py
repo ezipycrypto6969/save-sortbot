@@ -32,19 +32,20 @@ def main():
     items = [(p, json.load(open(p))) for p in sorted(glob.glob("accounts/*/queue/*.json"))]
     if KEY:
         for p, s in items:
-            rid = (s.get("upload") or {}).get("request_id")
-            if s.get("status") != "posted" or not rid or NOW - when(s) > WINDOW: continue
+            ups = [u for u in (s.get("upload"), s.get("upload_yt")) if u and u.get("request_id")]
+            if s.get("status") != "posted" or not ups or NOW - when(s) > WINDOW: continue
             st = s.get("stats") or {}
-            for plat in (s["upload"].get("platforms") or ["instagram", "tiktok"]):
-                st[plat] = metrics(rid, plat) or st.get(plat, {})
-            st["total_views"] = sum((st.get(k) or {}).get("views", 0) or 0 for k in ("instagram", "tiktok"))
-            st["total_engagement"] = sum(sum((st.get(k) or {}).get(m, 0) or 0 for m in ("likes", "comments", "shares", "saved")) for k in ("instagram", "tiktok"))
-            st["new_followers"] = sum((st.get(k) or {}).get("new_followers", 0) or 0 for k in ("instagram", "tiktok"))
+            for u in ups:
+                for plat in (u.get("platforms") or ["instagram", "tiktok"]):
+                    st[plat] = metrics(u["request_id"], plat) or st.get(plat, {})
+            st["total_views"] = sum((st.get(k) or {}).get("views", 0) or 0 for k in ("instagram", "tiktok", "youtube"))
+            st["total_engagement"] = sum(sum((st.get(k) or {}).get(m, 0) or 0 for m in ("likes", "comments", "shares", "saved")) for k in ("instagram", "tiktok", "youtube"))
+            st["new_followers"] = sum((st.get(k) or {}).get("new_followers", 0) or 0 for k in ("instagram", "tiktok", "youtube"))
             st["updated"] = NOW.isoformat(timespec="seconds"); s["stats"] = st
             json.dump(s, open(p, "w"), ensure_ascii=False, indent=2)
         items = [(p, json.load(open(p))) for p in sorted(glob.glob("accounts/*/queue/*.json"))]
     out = [f"# Niche account performance (updated {NOW.astimezone(dt.timezone(dt.timedelta(hours=8))):%a %d %b %Y %H:%M} Perth)", "",
-           "Views and engagement summed across Instagram and TikTok. Engagement = likes + comments + shares + saves. ✓ = 3+ days old.", ""]
+           "Views and engagement summed across Instagram, TikTok and YouTube. Engagement = likes + comments + shares + saves. ✓ = 3+ days old.", ""]
     accts = sorted({p.split("/")[1] for p, _ in items})
     fmt_rows = {}
     for a in accts:
@@ -54,12 +55,12 @@ def main():
             st = s["stats"]; v = st.get("total_views", 0); e = st.get("total_engagement", 0)
             settled = NOW - when(s) >= SETTLED
             rows.append((v, f"| {'✓' if settled else ''} | {(s.get('caption') or '').split(chr(10))[0][:55]} | {s.get('format','reel')} | {s.get('style','')} | "
-                            f"{s.get('hook_type','')} | {v:,} | {(st.get('instagram') or {}).get('views','-')} | {(st.get('tiktok') or {}).get('views','-')} | "
+                            f"{s.get('hook_type','')} | {v:,} | {(st.get('instagram') or {}).get('views','-')} | {(st.get('tiktok') or {}).get('views','-')} | {(st.get('youtube') or {}).get('views','-')} | "
                             f"{e / v if v else 0:.1%} | {st.get('new_followers', 0)} | {s['id']} |"))
             if settled: fmt_rows.setdefault((a, s.get("format", "reel")), []).append((v, e / v if v else 0))
         out += [f"## {a}", ""]
         if not rows: out += ["(nothing posted yet)", ""]; continue
-        out += ["| ✓ | Post | Format | Style | Hook | Views | IG | TikTok | Eng. rate | New followers | Queue file |", "|---|---|---|---|---|---|---|---|---|---|---|"]
+        out += ["| ✓ | Post | Format | Style | Hook | Views | IG | TikTok | YT | Eng. rate | New followers | Queue file |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
         out += [r for _, r in sorted(rows, reverse=True)] + [""]
     out += ["## Format comparison (judged posts only)", "", "| Account | Format | Posts | Median views | Median engagement rate |", "|---|---|---|---|---|"]
     for (a, f), rs in sorted(fmt_rows.items()):

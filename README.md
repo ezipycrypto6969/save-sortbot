@@ -22,9 +22,9 @@ The team only drafts and recommends outside the reels: it never posts elsewhere,
 
 ## Niche accounts
 
-Besides the main account, the bot runs **SaveSort Gym**, **SaveSort Kitchen** and **SaveSort Hype Check** on Instagram and TikTok, 3 posts a day each (mostly slideshows, one reel a day), posted through Upload-Post in the same three runs as the main account. Setup and looks are in `accounts.json`, each account's plan in `accounts/<id>.md`, its queue in `accounts/<id>/queue/`, and stats in `accounts/summary.md`.
+Besides the main account, the bot runs **SaveSort Gym**, **SaveSort Kitchen** and **SaveSort Hype Check** on Instagram, TikTok and YouTube Shorts, 3 posts a day each (mostly slideshows, one reel a day; YouTube gets slideshows as short videos), posted through Upload-Post in the same three runs as the main account. Setup and looks are in `accounts.json`, each account's plan in `accounts/<id>.md`, its queue in `accounts/<id>/queue/`, and stats in `accounts/summary.md`.
 
-An account switches on by itself once its Instagram and/or TikTok is connected to its Upload-Post profile (`savesort-gym`, `savesort-kitchen`, `savesort-hypecheck`); `accounts/status.json` shows what's connected. To stop one account, delete its entry's `upload_post_profile` in `accounts.json` (or disconnect it in Upload-Post). `PAUSED` stops everything.
+An account switches on by itself once its Instagram, TikTok and/or YouTube is connected to its Upload-Post profile (`savesort-gym`, `savesort-kitchen`, `savesort-hypecheck`); `accounts/status.json` shows what's connected. To stop one account, delete its entry's `upload_post_profile` in `accounts.json` (or disconnect it in Upload-Post). `PAUSED` stops everything.
 
 ## Controls
 

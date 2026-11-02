@@ -53,6 +53,7 @@ Unless `marketing/brief.md` (the CMO's niche section) or `content/lessons.md` sa
   "style": "story", "hook_type": "tension", "cta": "comment",
   "caption": "Hook line.\n\nOne or two short lines.\n\nSaveSort finds what you saved, free at savesortai.com\n\n#tag1 #tag2 #tag3",
   "tiktok_title": "Under 90 characters",
+  "yt_title": "Searchable YouTube title, under 70 characters, no emoji",
   "slides": [
     {"type": "hook", "text": "Skipped legs *again*?", "sub": "same.", "mascot": "sad"},
     {"type": "list", "heading": "The 4 I actually do", "items": ["Goblet squat|3 x 10", "Romanian deadlift|3 x 8", "Walking lunges|3 x 12 each leg", "Calf raises|3 x 15"]},
@@ -74,6 +75,8 @@ Slideshow shape (also from Instagram's own carousel behaviour: it can re-show a 
 
 Good slideshows: **6–9 slides**, slide 1 under 6 words, one idea per slide, max ~25 words per slide, the hook's tension released on the last or second-last slide. Write as if for one tired person on their couch.
 
+Every post also goes to **YouTube Shorts** when the account's YouTube channel is connected: reels as they are, slideshows as the `video.mp4` that `engine/slides.js` makes automatically (each slide ~3 s, sliding on). Give every item a `yt_title` someone would actually search ("Leg day for beginners at the gym"), and check the first frame of `video.mp4` reads well.
+
 ## Reel spec
 
-Same as `AGENT.md`'s spec, plus `"account": "<id>"`, `"format": "reel"`, `"platforms": ["instagram", "tiktok"]`. Same voice, cold open, length (30–60 s) and Sorty rules, but the topic comes from the account's playbook.
+Same as `AGENT.md`'s spec, plus `"account": "<id>"`, `"format": "reel"` (all three platforms by default). Same voice, cold open, length (30–60 s) and Sorty rules, but the topic comes from the account's playbook.

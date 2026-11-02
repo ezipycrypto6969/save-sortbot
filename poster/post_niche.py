@@ -44,9 +44,9 @@ def captions(spec):
     return ig[:2200], tt[:2200], title
 
 
-def resolve(path, spec):
+def resolve(path, spec, key="upload"):
     """Check an earlier async upload; record each platform's result."""
-    st = get("uploadposts/status", {"request_id": spec["upload"]["request_id"]})
+    st = get("uploadposts/status", {"request_id": spec[key]["request_id"]})
     res = st.get("results") or []
     if isinstance(res, dict): res = [{"platform": k, **v} for k, v in res.items()]
     busy = [r for r in res if r.get("status") in ("processing", "pending", "queued", "in_progress", "uploading")]
@@ -55,7 +55,7 @@ def resolve(path, spec):
     out = {r.get("platform"): {"success": bool(r.get("success")), "url": r.get("url") or r.get("post_url") or "",
                                "message": r.get("message") or r.get("error") or ""} for r in res if r.get("platform")}
     ok = [p for p, r in out.items() if r["success"]]
-    spec["upload"].update(results=out, status="posted" if ok and len(ok) == len(out) else "partial" if ok else "failed")
+    spec[key].update(results=out, status="posted" if ok and len(ok) == len(out) else "partial" if ok else "failed")
     save(path, spec)
     for p, r in out.items():
         if not r["success"]: say("error", f"{spec['id']} didn't post to {p}", r["message"] or "unknown reason")
@@ -82,12 +82,35 @@ def media(acct, spec):
                 if subprocess.run(["git", "show", f"FETCH_HEAD:{acct}/{spec['id']}/slide-{i}.jpg"], stdout=f, stderr=subprocess.DEVNULL).returncode:
                     return None
             files.append(dst)
-        return files
+        vid = f"/tmp/{spec['id']}-video.mp4"
+        with open(vid, "wb") as f:
+            got = not subprocess.run(["git", "show", f"FETCH_HEAD:{acct}/{spec['id']}/video.mp4"], stdout=f, stderr=subprocess.DEVNULL).returncode
+        return files + ([vid] if got else [])
     dst = f"/tmp/{spec['id']}.mp4"
     with open(dst, "wb") as f:
         if subprocess.run(["git", "show", f"FETCH_HEAD:{acct}/{spec['id']}.mp4"], stdout=f, stderr=subprocess.DEVNULL).returncode:
             return None
     return [dst]
+
+
+def submit(cmd):
+    out = subprocess.run(cmd, capture_output=True, text=True)
+    try: return json.loads(out.stdout)
+    except Exception: return {"success": False, "message": f"{out.stdout[:400]} {out.stderr[:200]}"}
+
+
+def record(path, key, resp, plats, acct):
+    """Save the outcome of one upload call under spec[key]. Returns True if Upload-Post accepted it."""
+    rid = resp.get("request_id") or resp.get("job_id")
+    spec = json.load(open(path))
+    if rid: spec[key] = {"status": "submitted", "request_id": rid, "platforms": plats, "submitted_at": NOW.isoformat(timespec="seconds")}
+    elif resp.get("success"): spec[key] = {"status": "posted", "platforms": plats, "results": resp.get("results")}
+    else:
+        spec[key] = {"status": "failed", "platforms": plats, "message": json.dumps(resp)[:500]}
+        say("error", f"Upload-Post refused {acct}/{spec['id']} ({', '.join(plats)})", json.dumps(resp)[:500])
+    if spec[key]["status"] != "failed": spec.update(status="posted", posted_at=NOW.isoformat(timespec="seconds"))
+    save(path, spec)
+    return spec[key]["status"] != "failed"
 
 
 def post(acct, profile, platforms, path, spec, files):
@@ -96,40 +119,46 @@ def post(acct, profile, platforms, path, spec, files):
     if not plats:
         print(f"{spec['id']}: none of its platforms are connected yet; leaving it queued."); return
     slideshow = spec.get("format") == "slideshow"
-    print(f"Posting {acct}/{spec['id']} ({'slideshow, %d slides' % len(files) if slideshow else 'reel'}) to {', '.join(plats)}")
-    if DRY:
-        print(f"DRY_RUN: Instagram caption:\n{ig}\n--- TikTok caption:\n{tt}"); return
-    cmd = ["curl", "-sS", "--max-time", "600", "-H", f"Authorization: Apikey {KEY}", "-H", f"Idempotency-Key: {spec['id']}",
-           "-F", f"user={profile}", "-F", f"title={ig}", "-F", "async_upload=true",
-           "-F", f"external_id={spec['id']}", "-F", "privacy_level=PUBLIC_TO_EVERYONE"]
-    for p in plats: cmd += ["-F", f"platform[]={p}"]
+    photos = [f for f in files if f.endswith(".jpg")]
+    video = next((f for f in files if f.endswith(".mp4")), None)
+    yt_title = (spec.get("yt_title") or title)[:100]
+    yt_desc = (spec.get("yt_description") or f"{yt_title}\n\n{re.sub(r'(?i)link in bio', 'savesortai.com', spec.get('caption', ''))}\n\n#Shorts")[:4900]
+    base = ["curl", "-sS", "--max-time", "600", "-H", f"Authorization: Apikey {KEY}", "-F", f"user={profile}",
+            "-F", "async_upload=true", "-F", "privacy_level=PUBLIC_TO_EVERYONE"]
+    yt_fields = ["-F", f"youtube_title={yt_title}", "-F", f"youtube_description={yt_desc}", "-F", "privacyStatus=public",
+                 "-F", "selfDeclaredMadeForKids=false"]
+    calls = []  # (key, platforms, curl command)
     if slideshow:
-        for f in files: cmd += ["-F", f"photos[]=@{f}"]
-        cmd += ["-F", f"tiktok_title={title}", "-F", f"tiktok_description={tt}", "-F", "auto_add_music=true", "-F", "photo_cover_index=0", f"{API}/upload_photos"]
+        social = [p for p in plats if p != "youtube"]
+        if social:
+            cmd = base + ["-H", f"Idempotency-Key: {spec['id']}", "-F", f"title={ig}", "-F", f"external_id={spec['id']}"]
+            for p in social: cmd += ["-F", f"platform[]={p}"]
+            for f in photos: cmd += ["-F", f"photos[]=@{f}"]
+            calls.append(("upload", social, cmd + ["-F", f"tiktok_title={title}", "-F", f"tiktok_description={tt}",
+                                                   "-F", "auto_add_music=true", "-F", "photo_cover_index=0", f"{API}/upload_photos"]))
+        if "youtube" in plats and video:  # YouTube Shorts takes video only: the slideshow as a short video
+            calls.append(("upload_yt", ["youtube"], base + ["-H", f"Idempotency-Key: {spec['id']}-yt", "-F", f"title={yt_title}",
+                          "-F", f"external_id={spec['id']}-yt", "-F", "platform[]=youtube", "-F", f"video=@{video}"] + yt_fields + ["-F", "containsSyntheticMedia=false", f"{API}/upload"]))
     else:
-        cmd += ["-F", f"video=@{files[0]}", "-F", f"tiktok_title={tt}", "-F", "is_aigc=true",  # AI voice and animation: label it
-                "-F", f"cover_timestamp={spec.get('cover_offset_ms', 1000)}", f"{API}/upload"]
-    out = subprocess.run(cmd, capture_output=True, text=True)
-    try: resp = json.loads(out.stdout)
-    except Exception: resp = {"success": False, "message": f"{out.stdout[:400]} {out.stderr[:200]}"}
-    rid = resp.get("request_id") or resp.get("job_id")
-    spec = json.load(open(path))
-    if rid:
-        spec.update(status="posted", posted_at=NOW.isoformat(timespec="seconds"))
-        spec["upload"] = {"status": "submitted", "request_id": rid, "platforms": plats, "submitted_at": NOW.isoformat(timespec="seconds")}
-        save(path, spec)
-        for _ in range(15):  # up to ~5 minutes, then the next run finishes the check
-            time.sleep(20)
-            resolve(path, json.load(open(path)))
-            if json.load(open(path))["upload"]["status"] != "submitted": break
-    elif resp.get("success"):
-        spec.update(status="posted", posted_at=NOW.isoformat(timespec="seconds"))
-        spec["upload"] = {"status": "posted", "platforms": plats, "results": resp.get("results")}
-        save(path, spec)
-    else:
-        spec["upload"] = {"status": "failed", "message": json.dumps(resp)[:500]}
-        save(path, spec)
-        say("error", f"Upload-Post refused {acct}/{spec['id']}", json.dumps(resp)[:500])
+        cmd = base + ["-H", f"Idempotency-Key: {spec['id']}", "-F", f"title={ig}", "-F", f"external_id={spec['id']}"]
+        for p in plats: cmd += ["-F", f"platform[]={p}"]
+        cmd += ["-F", f"video=@{video}", "-F", f"tiktok_title={tt}", "-F", "is_aigc=true",  # AI voice and animation: label it
+                "-F", f"cover_timestamp={spec.get('cover_offset_ms', 1000)}"]
+        if "youtube" in plats: cmd += yt_fields + ["-F", "containsSyntheticMedia=true"]
+        calls.append(("upload", plats, cmd + [f"{API}/upload"]))
+    if not calls:
+        print(f"{spec['id']}: nothing to post it with yet (no slides or video for its connected platforms)."); return
+    print(f"Posting {acct}/{spec['id']} ({'slideshow, %d slides' % len(photos) if slideshow else 'reel'}) to "
+          + "; ".join(", ".join(c[1]) for c in calls))
+    if DRY:
+        print(f"DRY_RUN: Instagram caption:\n{ig}\n--- TikTok caption:\n{tt}\n--- YouTube title: {yt_title}"); return
+    keys = [k for k, plats_, cmd in calls if record(path, k, submit(cmd), plats_, acct)]
+    for _ in range(15):  # up to ~5 minutes, then the next run finishes the check
+        if not keys: break
+        time.sleep(20)
+        for k in list(keys):
+            resolve(path, json.load(open(path)), k)
+            if json.load(open(path))[k]["status"] != "submitted": keys.remove(k)
 
 
 def main():
@@ -145,7 +174,7 @@ def main():
     status = {}
     for a in accounts:
         user, connected, reauth = by_name.get(a["upload_post_profile"].lower(), (None, [], None))
-        live = [p for p in a.get("platforms", ["instagram", "tiktok"]) if p in connected]
+        live = [p for p in a.get("platforms", ["instagram", "tiktok", "youtube"]) if p in connected]
         status[a["id"]] = {"profile": user, "connected": live, "ready": bool(user and live),
                            "reauth_required": bool(reauth), "checked": NOW.isoformat(timespec="seconds")}
         if reauth: say("warning", f"Reconnect {a['name']}", f"Upload-Post says profile '{user}' needs reconnecting.")
@@ -160,7 +189,8 @@ def main():
         st = status[a["id"]]
         for p in sorted(glob.glob(f"accounts/{a['id']}/queue/*.json")):
             s = json.load(open(p))
-            if (s.get("upload") or {}).get("status") == "submitted": resolve(p, s)
+            for k in ("upload", "upload_yt"):
+                if (s.get(k) or {}).get("status") == "submitted": resolve(p, json.load(open(p)), k)
         if not st["ready"]: continue
         items = due(a["id"])
         if not items: print(f"{a['name']}: nothing due."); continue

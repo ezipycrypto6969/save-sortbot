@@ -1,5 +1,5 @@
 {
-  "_help": "Every account the bot posts for. 'main' is the original SaveSort account (posted by poster/post.py, post_youtube.py, post_tiktok.py from queue/). Niche accounts are posted through Upload-Post (poster/post_niche.py) from accounts/<id>/queue/, to whichever of Instagram and TikTok are connected to their Upload-Post profile. They switch on by themselves once connected: see accounts/status.json. Niche posts go out in the same three runs as the main account (03:00, 07:00 and 19:30 Perth), one per account per run.",
+  "_help": "Every account the bot posts for. 'main' is the original SaveSort account (posted by poster/post.py, post_youtube.py, post_tiktok.py from queue/). Niche accounts are posted through Upload-Post (poster/post_niche.py) from accounts/<id>/queue/, to whichever of Instagram, TikTok and YouTube Shorts are connected to their Upload-Post profile. They switch on by themselves once connected: see accounts/status.json. Slideshows go to YouTube as a short video (engine/slides.js makes it). Niche posts go out in the same three runs as the main account (03:00, 07:00 and 19:30 Perth), one per account per run.",
   "accounts": [
     {
       "id": "main",
@@ -17,7 +17,8 @@
       "upload_post_profile": "savesort-gym",
       "platforms": [
         "instagram",
-        "tiktok"
+        "tiktok",
+        "youtube"
       ],
       "posts_per_day": 3,
       "slots": [
@@ -39,7 +40,8 @@
       "upload_post_profile": "savesort-kitchen",
       "platforms": [
         "instagram",
-        "tiktok"
+        "tiktok",
+        "youtube"
       ],
       "posts_per_day": 3,
       "slots": [
@@ -61,7 +63,8 @@
       "upload_post_profile": "savesort-hypecheck",
       "platforms": [
         "instagram",
-        "tiktok"
+        "tiktok",
+        "youtube"
       ],
       "posts_per_day": 3,
       "slots": [
