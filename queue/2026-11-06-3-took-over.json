@@ -21,9 +21,16 @@
   "scenes": [
     {
       "type": "title",
-      "text": "500 saves?\nYour tab is *haunted.*",
-      "vo": "500 saved reels? Your saved tab is haunted.",
+      "text": "*500*\nsaved reels?",
+      "vo": "500 saved reels?",
       "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "title",
+      "text": "Your tab is\n*haunted.*",
+      "vo": "Your saved tab is haunted.",
+      "bg": "ink",
       "clean": true
     },
     {
@@ -233,8 +240,8 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 2408,
-  "duration": 30.993,
+  "cover_offset_ms": 2486,
+  "duration": 32.579,
   "checked_at": "2026-11-01T18:47:49+08:00",
   "hook_source": "content/hookgen.py",
   "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",

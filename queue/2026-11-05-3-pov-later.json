@@ -21,9 +21,16 @@
   "scenes": [
     {
       "type": "title",
-      "text": "I broke\n*156 promises.*",
-      "vo": "Every saved reel is a promise. I broke 156.",
+      "text": "Every save is\na *promise.*",
+      "vo": "Every saved reel is a promise.",
       "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "title",
+      "text": "I broke\n*156.*",
+      "vo": "I broke 156.",
+      "bg": "ink",
       "clean": true
     },
     {
@@ -212,8 +219,8 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 3085,
-  "duration": 31.155,
+  "cover_offset_ms": 2634,
+  "duration": 32.811,
   "checked_at": "2026-11-01T18:47:49+08:00",
   "hook_source": "content/hookgen.py",
   "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",

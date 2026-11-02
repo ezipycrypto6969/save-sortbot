@@ -104,6 +104,17 @@ def generate(family=None, seed=None):
     return mixed
 
 
+def scenes_for(h):
+    """The hook as clean title scene(s). A line over 6 words is split into two beats (white, then dark) at its first
+    sentence break, so the picture changes after ~1.5 s while the whole line is kept."""
+    one = {"type": "title", "text": h["text"], "vo": h["vo"], "bg": "paper", "clean": True}
+    m = re.match(r"^(.+?[.?!:])\s+(.+)$", h["vo"])
+    if len(h["vo"].split()) <= 6 or not m: return [one]
+    a, b = m.group(1), m.group(2)
+    return [{"type": "title", "text": a, "vo": a, "bg": "paper", "clean": True},
+            {"type": "title", "text": "*" + b + "*", "vo": b, "bg": "ink", "clean": True}]
+
+
 def score(hooks):
     """Score each hook's vo with team/tools/hookscore.py (if present). Adds h["score"]."""
     tool = os.path.join("team", "tools", "hookscore.py")
@@ -132,8 +143,8 @@ def main():
     for h in hooks: (rest if h["tid"] in seen else first).append(h); seen.add(h["tid"])
     hooks = (first + rest)[:a.n]
     if a.json:
-        print(json.dumps([{"type": "title", "text": h["text"], "vo": h["vo"], "bg": "paper", "clean": True,
-                           "_hook_type": "crazy-" + h["family"], "_hook_score": h.get("score")} for h in hooks], ensure_ascii=False, indent=1))
+        print(json.dumps([{"hook_type": "crazy-" + h["family"], "hook_score": h.get("score"), "scenes": scenes_for(h)}
+                          for h in hooks], ensure_ascii=False, indent=1))
     else:
         for i, h in enumerate(hooks, 1):
             print(f"{i:>2}. {h.get('score', '-'):>5} [{h['family']}] {h['text'].replace(chr(10), ' / ')}   ->  \"{h['vo']}\"")

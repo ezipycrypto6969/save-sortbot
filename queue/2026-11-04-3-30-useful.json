@@ -21,9 +21,16 @@
   "scenes": [
     {
       "type": "title",
-      "text": "Crime scene:\n*156 victims.*",
-      "vo": "Your saved tab is a crime scene. 156 victims.",
+      "text": "Your saved tab\nis a *crime scene.*",
+      "vo": "Your saved tab is a crime scene.",
       "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "title",
+      "text": "*156*\nvictims.",
+      "vo": "156 victims.",
+      "bg": "ink",
       "clean": true
     },
     {
@@ -203,8 +210,8 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 4539,
-  "duration": 33.007,
+  "cover_offset_ms": 2639,
+  "duration": 33.262,
   "checked_at": "2026-11-01T18:47:49+08:00",
   "hook_source": "content/hookgen.py",
   "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",
