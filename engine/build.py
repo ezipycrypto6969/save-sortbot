@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import g2p, tts, music  # noqa: E402
 
-MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6, "screen": 2.6, "path": 3.0, "ask": 2.8}
+MIN = {"hook": 1.3, "quote": 1.8, "title": 1.2, "steps": 2.4, "stat": 1.6, "checks": 2.0, "count": 1.1, "talk": 1.3, "react": 2.0, "end": 1.6, "screen": 2.6, "path": 3.0, "rec": 2.5, "ask": 2.8}
 
 
 def caption_chunks(lines, max_words=3):
