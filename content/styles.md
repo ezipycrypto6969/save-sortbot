@@ -15,6 +15,7 @@ Each week runs 3 experiment reels (1 to 3 new styles). Name them `exp-<short-nam
 
 | Style | Started | Idea | Status | Result |
 |---|---|---|---|---|
+| `exp-crazy-hook` | week of 9 Nov 2026 | Over-the-top cold-open hooks from `content/hooks.md` (funeral, fake warnings, calling the viewer out, impossible challenges), then the normal SaveSort demo. Owner request. 3 slots. | running | judge Sat 21 Nov |
 | `exp-pov` | week of 2 Nov 2026 | Relatable POV of the saved-tab problem ("POV: you open your saved tab looking for one recipe"), then SaveSort finds it. 2 slots. | running | judge Sat 14 Nov |
 | `exp-before-after` | week of 2 Nov 2026 | The messy saved tab, then the sorted SaveSort list (real screens only). 1 slot. | running | judge Sat 14 Nov |
 

@@ -21,7 +21,7 @@ Data: 12 posted reels in `stats/summary.md` (26–31 Oct, updated 31 Oct 14:13 P
 - **funny-ad.** `rip-saved-tab` 135 views (82 of them TikTok), IG 43 / 3.3 s, 1 like. Not judged yet; keep 4 slots.
 
 ## Next week's instructions for the writer
-- Mix: base 14, funny-ad 4, experiments 3 (`exp-pov` 2, `exp-before-after` 1) — total 21
+- Mix: base 11, funny-ad 4, experiments 6 (`exp-pov` 2, `exp-before-after` 1, `exp-crazy-hook` 3 from `content/hooks.md`, owner request 2 Nov) — total 21
 - Every reel follows the AGENT.md cold open: scene 1 is a clean `title`, max 5 words on screen, vo max 8 words; never open on the grey `hook` grid.
 - Base reels, 7/7 split on the first line, tagged `"opening"`:
   - 7 × `"opening": "saves-number"`: the first line is the saved-reels problem with a number ("I saved 156 reels.", "Got 500 saved reels?", "156 saves. Zero used.").
