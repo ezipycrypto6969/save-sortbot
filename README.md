@@ -15,9 +15,16 @@ SaveSort has a 100-specialist AI marketing department in `team/` (10 departments
 | Sat 4:13pm | Head of insights (`ANALYST.md`) | Studies the week's stats, writes `content/lessons.md` |
 | Sat 6:47pm | CMO + 9 department leads (`team/CMO.md`) | Picks the bottleneck and the campaign, writes `marketing/brief.md`, your to-do list in `marketing/owner-actions.md`, and drafts in `marketing/drafts/` |
 | Sun 9:38am | Content writer (`AGENT.md`) + creative review panel (`team/REVIEW.md`) | Writes 21 reels from the brief; every reel must pass the panel before it's rendered |
-| Sun 3:07pm | Fact-checker (`CHECKER.md`) | Verifies every claim; holds anything untrue |
+| Sun 10:41am–12:53pm | Niche writers (`accounts/NICHE.md`) | One per account (gym, kitchen, hype check): 14 slideshows + 7 reels each a week |
+| Sun 3:07pm | Fact-checker (`CHECKER.md`) | Verifies every claim on every account; holds anything untrue |
 
 The team only drafts and recommends outside the reels: it never posts elsewhere, messages anyone, changes the website or spends money without you.
+
+## Niche accounts
+
+Besides the main account, the bot runs **SaveSort Gym**, **SaveSort Kitchen** and **SaveSort Hype Check** on Instagram and TikTok, 3 posts a day each (mostly slideshows, one reel a day), posted through Upload-Post in the same three runs as the main account. Setup and looks are in `accounts.json`, each account's plan in `accounts/<id>.md`, its queue in `accounts/<id>/queue/`, and stats in `accounts/summary.md`.
+
+An account switches on by itself once its Instagram and/or TikTok is connected to its Upload-Post profile (`savesort-gym`, `savesort-kitchen`, `savesort-hypecheck`); `accounts/status.json` shows what's connected. To stop one account, delete its entry's `upload_post_profile` in `accounts.json` (or disconnect it in Upload-Post). `PAUSED` stops everything.
 
 ## Controls
 

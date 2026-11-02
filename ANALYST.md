@@ -6,7 +6,7 @@ You only edit `content/lessons.md` and `content/styles.md`. Never edit reels, th
 
 ## 1. Gather the evidence
 
-- `git pull`, then read `stats/summary.md`, `content/styles.md`, the current `content/lessons.md` and `AGENT.md` (for the owner's rules).
+- `git pull`, then read `stats/summary.md`, `accounts/summary.md` (the niche accounts), `content/styles.md`, the current `content/lessons.md` and `AGENT.md` (for the owner's rules).
 - Open the queue file of every posted reel from the last 14 days. Each holds the full script (`scenes`, `vo` lines, `fx.hook`, `caption`), its `style`, `hook_type`, `post_at`, `duration` and `stats`.
 - Judge only reels at least 3 days old (✓ in the summary). Newer ones can be mentioned as early signs.
 
@@ -51,6 +51,10 @@ Rewrite it in this shape, keeping it short (under ~80 lines):
 ```
 
 Move a lesson from "Testing now" to "Do more of" or "Stop doing" only when the evidence supports it. Drop lessons that later data disproves, and say so in your report. Never contradict the owner's rules in `AGENT.md` (balance, general public, no AI-nerd topics, 30s minimum length).
+
+### Niche accounts
+
+Add a short `## Niche accounts` section at the end of `content/lessons.md` (counts towards the length limit): per account (gym, kitchen, hype check), the best and worst posts, slideshow vs reel, which slideshow `style` and hook worked, and 2–3 specific instructions for that account's writer (`accounts/NICHE.md` follows them). Compare each account only with itself: new accounts start from zero.
 
 ## 4. Update `content/styles.md`
 

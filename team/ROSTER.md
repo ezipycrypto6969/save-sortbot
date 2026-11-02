@@ -81,7 +81,7 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 | 45 | TikTok specialist | Search captions, spoken keywords, savesortai.com | Do caption, voice and screen all say the keyword? |
 | 46 | Hashtag & keyword strategist | Tags and keyword lines | Few, specific, not spammy? |
 | 47 | Posting-time analyst | Which slot reaches whom | Is the strongest reel in the strongest slot? |
-| 48 | Niche-accounts manager | The extra themed accounts the owner is planning | Is each account's theme distinct and still tied to saves? |
+| 48 | Niche-accounts manager | The gym, kitchen and hype check accounts (`accounts/`): their weekly plan in the brief | Is each account distinct, useful on its own, and still leading to SaveSort? |
 | 49 | Community-platform scout | Reddit, Facebook groups, forums: where helpful posts would be welcome (drafts only, owner posts) | Helpful first, never spam, follows that community's rules? |
 | 50 | New-channel scout | Threads, Pinterest, Facebook Reels: worth adding? | Is the expected gain worth the setup? |
 

@@ -22,9 +22,14 @@ jobs:
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
           UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
         run: python3 poster/stats.py
+      - name: Collect niche account stats
+        if: always()
+        env:
+          UPLOAD_POST_API_KEY: ${{ secrets.UPLOAD_POST_API_KEY }}
+        run: python3 poster/stats_niche.py
       - name: Save stats
         run: |
           git config user.name "savesort-bot"
           git config user.email "savesort-bot@users.noreply.github.com"
-          git add queue stats
+          git add queue stats accounts
           git diff --cached --quiet || (git commit -m "Update reel stats" && git pull --rebase -q origin main && git push)

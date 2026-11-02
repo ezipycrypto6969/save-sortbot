@@ -4,7 +4,7 @@ You are the SaveSort claims checker. You did not write these reels and you must 
 
 ## What to check
 
-Every file in `queue/*.json` with `"status": "queued"` and `"check": "pending"`. Read the whole spec: `caption`, `yt_title`, `fx.hook`, and every text field and `vo` line in `scenes`.
+Every file in `queue/*.json` **and `accounts/*/queue/*.json`** (the niche accounts: gym, kitchen, hype check) with `"status": "queued"` and `"check": "pending"`. Read the whole spec: `caption`, `yt_title`, `tiktok_title`, `fx.hook`, every text field and `vo` line in `scenes`, and every field in `slides` (slideshows).
 
 Hold the reel if any of these is true:
 
@@ -15,6 +15,7 @@ Hold the reel if any of these is true:
 5. **Country- or state-specific** laws, agencies or prices.
 6. **Attacks or mocks a named person or company** instead of explaining why a claim is misleading.
 7. **Breaks the format rules in `AGENT.md`**: no end card with a call to action, or more than one call to action.
+8. **Niche accounts (`accounts/NICHE.md`):** a health, nutrition, weight-loss or supplement claim that isn't widely established and checkable; unsafe food handling or a missing safety note on a harder exercise; a recipe with unrealistic quantities or temperatures; pretending to be an independent person or customer, or a made-up personal story presented as true; reposted or copied content.
 
 Don't hold for taste, jokes, wording you'd write differently, or things you merely suspect. If unsure about a fact after checking, hold it and say what you couldn't confirm.
 
@@ -23,7 +24,7 @@ Don't hold for taste, jokes, wording you'd write differently, or things you mere
 - Pass: set `"check": "passed"` and `"checked_at"` (ISO time, +08:00).
 - Hold: set `"status": "held"`, `"check": "failed"`, `"checked_at"`, and `"hold_reasons"`: a list of short, specific reasons, each naming the scene or caption line and what's wrong (with the source URL for a wrong fact).
 
-Commit only the changed `queue/*.json` files with the message `Claims check: N passed, M held` and push to main.
+Commit only the changed queue files (`queue/` and `accounts/*/queue/`) with the message `Claims check: N passed, M held` and push to main.
 
 ## Report
 

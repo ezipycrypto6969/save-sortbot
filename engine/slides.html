@@ -1,0 +1,82 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+:root{--cobalt:#2C3BE3;--deep:#1C27A8;--ink:#10121C;--paper:#F3F4F8;--go:#0F7F57;--gosoft:#DDF2E8;--warn:#E0480C;--warnsoft:#FCE6DA;--gate:#8A5A00;--marker:#FFE14A;--muted:#585E71;--line:#D7DAE4;--accent:#FFE14A}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+body{font-family:"Inter Display","Inter","Archivo",sans-serif;-webkit-font-smoothing:antialiased}
+.slide{position:absolute;inset:0;padding:110px 96px 120px;display:flex;flex-direction:column;justify-content:center;gap:44px}
+.bg-ink{background:var(--ink);color:#fff}.bg-paper{background:var(--paper);color:var(--ink)}.bg-cobalt{background:var(--cobalt);color:#fff}
+.bg-photo{color:#fff}
+.mark{background:var(--accent);color:var(--ink);padding:0 .1em;border-radius:.12em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.kicker{font-family:"DejaVu Sans Mono",monospace;font-weight:700;font-size:34px;letter-spacing:.04em;text-transform:uppercase;opacity:.75}
+.huge{font-weight:900;font-size:124px;line-height:.98;letter-spacing:-.035em}
+.big{font-weight:900;font-size:88px;line-height:1.02;letter-spacing:-.03em}
+.mid{font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.015em}
+.body{font-weight:600;font-size:44px;line-height:1.3;opacity:.9}
+.sub{font-weight:700;font-size:46px;line-height:1.25;opacity:.85}
+.items{display:flex;flex-direction:column;gap:26px}
+.item{display:flex;gap:30px;align-items:flex-start;font-weight:800;font-size:52px;line-height:1.15;letter-spacing:-.01em}
+.item .n{flex:none;width:78px;height:78px;border-radius:50%;background:var(--cobalt);color:#fff;font-size:42px;display:flex;align-items:center;justify-content:center;margin-top:-4px}
+.bg-cobalt .item .n{background:#fff;color:var(--cobalt)}
+.item small{display:block;font-weight:600;font-size:38px;opacity:.75;margin-top:8px;letter-spacing:0}
+.num{font-weight:900;font-size:380px;line-height:.85;letter-spacing:-.06em}
+.pill{align-self:flex-start;background:var(--accent);color:var(--ink);font-weight:900;font-size:50px;padding:20px 40px;border-radius:999px}
+.tag{position:absolute;left:96px;top:72px;font-family:"DejaVu Sans Mono",monospace;font-weight:700;font-size:30px;opacity:.6;letter-spacing:.03em}
+.count{position:absolute;right:96px;top:72px;font-family:"DejaVu Sans Mono",monospace;font-weight:700;font-size:30px;opacity:.6}
+.stamp{align-self:flex-start;border:8px solid currentColor;border-radius:18px;padding:10px 26px;font-weight:900;font-size:56px;letter-spacing:.04em;transform:rotate(-4deg)}
+.st-warn{color:var(--warn)}.st-go{color:#5FD3A2}.st-gate{color:#F2C45B}
+.bg-paper .st-go{color:var(--go)}.bg-paper .st-gate{color:var(--gate)}
+.card{background:#fff;color:var(--ink);border-radius:40px;padding:56px;box-shadow:0 40px 80px -30px rgba(0,0,0,.45);display:flex;flex-direction:column;gap:26px}
+.phonewrap{display:flex;gap:56px;align-items:center}
+.phone{flex:none;width:460px;height:930px;border-radius:64px;background:#000;padding:16px;box-shadow:0 40px 90px -20px rgba(0,0,0,.6)}
+.scr{width:100%;height:100%;border-radius:50px;overflow:hidden;background:#fff;position:relative}
+.scr img{width:100%;display:block;position:absolute;left:0}
+.side{display:flex;flex-direction:column;gap:30px}
+.side .mid{font-size:56px}
+#mascot{position:absolute;z-index:5}
+.photo{position:absolute;inset:0;background-size:cover;background-position:center}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,18,28,.25),rgba(16,18,28,.85))}
+</style>
+<script src="mascot.js"></script>
+</head><body>
+<script>
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const rich=s=>esc(s).replace(/\*(.+?)\*/g,'<span class="mark">$1</span>').replace(/\n/g,"<br>");
+const DEF={hook:"ink",list:"paper",point:"paper",stat:"paper",screen:"ink",verdict:"ink",quote:"ink",end:"cobalt",text:"paper"};
+window.show=function(deck,i){
+  const sc=deck.slides[i], th=deck.theme||{};
+  if(th.accent) document.documentElement.style.setProperty("--accent",th.accent);
+  if(th.main) document.documentElement.style.setProperty("--cobalt",th.main);
+  document.body.innerHTML="";
+  const bg=sc.bg||(i===0&&th.hookBg)||DEF[sc.type]||"paper";
+  const d=document.createElement("div"); d.className="slide bg-"+bg; document.body.appendChild(d);
+  let h="";
+  if(sc.type==="hook"){
+    h=(sc.kicker?`<div class="kicker">${esc(sc.kicker)}</div>`:"")+`<div class="huge">${rich(sc.text)}</div>`+(sc.sub?`<div class="sub">${rich(sc.sub)}</div>`:"");
+  }else if(sc.type==="list"){
+    h=`<div class="big">${rich(sc.heading)}</div><div class="items">${sc.items.map((t,k)=>{const [a,b]=String(t).split("|");return `<div class="item"><span class="n">${k+1}</span><div>${esc(a)}${b?`<small>${esc(b)}</small>`:""}</div></div>`}).join("")}</div>`;
+  }else if(sc.type==="point"){
+    h=(sc.n!=null?`<div class="num" style="font-size:200px;color:var(--cobalt)">${esc(sc.n)}</div>`:"")+`<div class="big">${rich(sc.title)}</div>`+(sc.body?`<div class="body">${rich(sc.body)}</div>`:"")+(sc.stamp?`<div class="stamp st-${sc.stampColor||"warn"}">${esc(sc.stamp)}</div>`:"");
+  }else if(sc.type==="stat"){
+    h=`<div class="num" style="color:var(--${sc.color||"cobalt"})">${esc(sc.value)}</div><div class="big">${rich(sc.label)}</div>`+(sc.body?`<div class="body">${rich(sc.body)}</div>`:"");
+  }else if(sc.type==="quote"){
+    h=`<div class="kicker">${esc(sc.label||"Saved reel says")}</div><div class="card"><div class="mid">“${esc(sc.quote)}”</div></div>`+(sc.stamp?`<div class="stamp st-${sc.stampColor||"warn"}">${esc(sc.stamp)}</div>`:"")+(sc.note?`<div class="body">${rich(sc.note)}</div>`:"");
+  }else if(sc.type==="screen"){
+    h=`<div class="phonewrap"><div class="phone"><div class="scr"><img src="screens/${esc(sc.shot)}" style="top:${-(sc.y||0)*(428/780)}px"></div></div><div class="side">${sc.label?`<div class="kicker">${esc(sc.label)}</div>`:""}<div class="mid">${rich(sc.text||"")}</div></div></div>`;
+  }else if(sc.type==="end"){
+    h=`<div class="huge" style="font-size:110px">${rich(sc.text)}</div>`+(sc.sub?`<div class="sub">${rich(sc.sub)}</div>`:"")+`<div class="pill">${esc(sc.pill||"savesortai.com")}</div>`;
+  }else{ // text
+    h=(sc.heading?`<div class="big">${rich(sc.heading)}</div>`:"")+`<div class="body" style="font-size:50px">${rich(sc.text||"")}</div>`;
+  }
+  d.innerHTML=h;
+  if(th.handle){const t=document.createElement("div");t.className="tag";t.textContent=th.handle;d.appendChild(t);}
+  if(deck.slides.length>1&&i>0){const c=document.createElement("div");c.className="count";c.textContent=`${i+1}/${deck.slides.length}`;d.appendChild(c);}
+  if(sc.mascot){
+    const m=createMascot(document.body); if(!m.el.parentNode) document.body.appendChild(m.el);
+    const pos={br:[740,1000,280],tr:[770,30,240],bl:[40,1000,280]}[sc.mascotPos||"br"];
+    m.draw(0.6,{x:pos[0],y:pos[1],w:pos[2],mood:sc.mascot,talk:0,look:-0.3,enter:1,seed:1});
+  }
+};
+</script>
+</body></html>

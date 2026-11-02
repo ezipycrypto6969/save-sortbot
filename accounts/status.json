@@ -1,0 +1,23 @@
+{
+  "gym": {
+    "profile": null,
+    "connected": [],
+    "ready": false,
+    "reauth_required": false,
+    "checked": null
+  },
+  "kitchen": {
+    "profile": null,
+    "connected": [],
+    "ready": false,
+    "reauth_required": false,
+    "checked": null
+  },
+  "hypecheck": {
+    "profile": null,
+    "connected": [],
+    "ready": false,
+    "reauth_required": false,
+    "checked": null
+  }
+}

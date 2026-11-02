@@ -10,7 +10,7 @@ Owner rules in `AGENT.md` → truth (`CHECKER.md`) → evidence (`content/lesson
 
 ## 1. Gather
 
-`git pull`, then read: `AGENT.md`, `content/lessons.md`, `content/styles.md`, `stats/summary.md`, `content/ideas.md`, `content/hooks.md`, `team/ROSTER.md`, last week's `marketing/brief.md` and `marketing/owner-actions.md`, and the site's main page in `site/`. Skim the scripts of the top 3 and bottom 3 reels in the stats.
+`git pull`, then read: `AGENT.md`, `content/lessons.md`, `content/styles.md`, `stats/summary.md`, `content/ideas.md`, `content/hooks.md`, `team/ROSTER.md`, last week's `marketing/brief.md` and `marketing/owner-actions.md`, and the site's main page in `site/`, plus `accounts/NICHE.md`, `accounts/summary.md` and `accounts/status.json`. Skim the scripts of the top 3 and bottom 3 reels in the stats.
 
 ## 2. Convene the departments (in parallel)
 
@@ -38,7 +38,8 @@ If subagents aren't available in this session, run the departments yourself one 
 1. **The bottleneck.** Pick the one thing holding growth back most right now (for example: people leave in the first 2 s; reels get views but nobody visits the site; TikTok stuck at its starting audience). Everything this week serves fixing it.
 2. **The campaign.** One theme for the week that ties the 21 reels into a story (a series, a challenge, a recurring Sorty bit). Make sure it fits the general public, not tech people.
 3. **The slot plan.** 21 slots (7 days × 03:00 / 07:00 / 19:30 Perth), each with: style, concept, cold-open line (max 5 words), niche, `cta` and why. Must match the Mix line in `content/lessons.md` exactly. Put the 3 strongest concepts at 19:30. Mark any part 1 → part 2 pairs.
-4. **Settle disagreements** between departments in one line each (who won and why).
+4. **The niche accounts** (gym, kitchen, hype check: `accounts/`). Read `accounts/summary.md`, `accounts/status.json` and each playbook. For each connected account, give its theme for the week, the slideshow `style` mix (14 slides + 7 reels unless the evidence says otherwise), 3 hooks to try, and last week's best hook to re-run. The niche-accounts manager (#48) leads this, with D2's niche researchers (#16–#18). Accounts that aren't connected yet go in the owner's to-do.
+5. **Settle disagreements** between departments in one line each (who won and why).
 
 ## 4. Write the files
 
@@ -50,6 +51,8 @@ If subagents aren't available in this session, run the departments yourself one 
   ## This week's campaign: <theme and why>
   ## Slot plan (the writer follows this)
   | Day | Time | Style | Concept | Cold open | Niche | CTA |
+  ## Niche accounts
+  ### gym / ### kitchen / ### hypecheck: theme, style mix, 3 hooks, re-run hook, any rule
   ## Rules for this week from the team: <max 6 specific rules, each tagged with role #>
   ## Department calls: <one line per department: what it found, what you took>
   ## Decisions between departments: <...>

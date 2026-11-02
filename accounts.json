@@ -1,0 +1,81 @@
+{
+  "_help": "Every account the bot posts for. 'main' is the original SaveSort account (posted by poster/post.py, post_youtube.py, post_tiktok.py from queue/). Niche accounts are posted through Upload-Post (poster/post_niche.py) from accounts/<id>/queue/, to whichever of Instagram and TikTok are connected to their Upload-Post profile. They switch on by themselves once connected: see accounts/status.json. Niche posts go out in the same three runs as the main account (03:00, 07:00 and 19:30 Perth), one per account per run.",
+  "accounts": [
+    {
+      "id": "main",
+      "name": "SaveSort",
+      "playbook": "AGENT.md",
+      "theme": {
+        "main": "#2C3BE3",
+        "accent": "#FFE14A",
+        "handle": "savesortai.com"
+      }
+    },
+    {
+      "id": "gym",
+      "name": "SaveSort Gym",
+      "upload_post_profile": "savesort-gym",
+      "platforms": [
+        "instagram",
+        "tiktok"
+      ],
+      "posts_per_day": 3,
+      "slots": [
+        "03:00",
+        "07:00",
+        "19:30"
+      ],
+      "playbook": "accounts/gym.md",
+      "theme": {
+        "main": "#1D1F26",
+        "accent": "#C6F432",
+        "hookBg": "ink",
+        "handle": "SaveSort Gym"
+      }
+    },
+    {
+      "id": "kitchen",
+      "name": "SaveSort Kitchen",
+      "upload_post_profile": "savesort-kitchen",
+      "platforms": [
+        "instagram",
+        "tiktok"
+      ],
+      "posts_per_day": 3,
+      "slots": [
+        "03:00",
+        "07:00",
+        "19:30"
+      ],
+      "playbook": "accounts/kitchen.md",
+      "theme": {
+        "main": "#C2410C",
+        "accent": "#FFD27A",
+        "hookBg": "paper",
+        "handle": "SaveSort Kitchen"
+      }
+    },
+    {
+      "id": "hypecheck",
+      "name": "SaveSort Hype Check",
+      "upload_post_profile": "savesort-hypecheck",
+      "platforms": [
+        "instagram",
+        "tiktok"
+      ],
+      "posts_per_day": 3,
+      "slots": [
+        "03:00",
+        "07:00",
+        "19:30"
+      ],
+      "playbook": "accounts/hypecheck.md",
+      "theme": {
+        "main": "#E0480C",
+        "accent": "#FFE14A",
+        "hookBg": "ink",
+        "handle": "SaveSort Hype Check"
+      }
+    }
+  ]
+}
