@@ -12,7 +12,7 @@
   "post_at": "2026-11-04T19:30:00+08:00",
   "style": "base",
   "opening": "saves-number",
-  "hook_type": "confession",
+  "hook_type": "crazy-funeral",
   "fx": {
     "hook": "WHERE DID THE OTHER 126 GO?"
   },
@@ -21,15 +21,15 @@
   "scenes": [
     {
       "type": "title",
-      "clean": true,
+      "text": "Crime scene:\n*156 victims.*",
+      "vo": "Your saved tab is a crime scene. 156 victims.",
       "bg": "paper",
-      "text": "156 saves.\n*30* useful.",
-      "vo": "156 saves. Only 30 useful."
+      "clean": true
     },
     {
       "type": "talk",
-      "text": "The other 126?\n*Let's talk.*",
-      "vo": "The other 126? Let's talk about them.",
+      "text": "156 saves.\nOnly *30* useful.",
+      "vo": "156 saves. Only 30 useful. Where did the other 126 go?",
       "mood": "suspicious"
     },
     {
@@ -203,7 +203,10 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 4010,
-  "duration": 30.023,
-  "checked_at": "2026-11-01T18:47:49+08:00"
+  "cover_offset_ms": 4539,
+  "duration": 33.007,
+  "checked_at": "2026-11-01T18:47:49+08:00",
+  "hook_source": "content/hookgen.py",
+  "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",
+  "hook_score": 77.8
 }

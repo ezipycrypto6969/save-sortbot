@@ -12,7 +12,7 @@
   "post_at": "2026-11-03T19:30:00+08:00",
   "style": "base",
   "opening": "viewer-hook",
-  "hook_type": "warning",
+  "hook_type": "crazy-warning",
   "fx": {
     "hook": "DON'T SAVE ANOTHER ONE YET"
   },
@@ -21,15 +21,15 @@
   "scenes": [
     {
       "type": "title",
-      "clean": true,
+      "text": "Stop. Saving.\n*Reels.*",
+      "vo": "Stop. Saving. Reels. Watch this first.",
       "bg": "paper",
-      "text": "Stop saving\n*reels.*",
-      "vo": "Stop saving reels."
+      "clean": true
     },
     {
       "type": "talk",
-      "text": "Okay, not forever.\nSort the *old ones* first.",
-      "vo": "Okay, not forever. Sort the ones you've already got.",
+      "text": "Kidding.\nSort the *old ones* first.",
+      "vo": "Kidding. Sort the ones you've already got first.",
       "mood": "smug"
     },
     {
@@ -205,7 +205,10 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 2203,
-  "duration": 30.309,
-  "checked_at": "2026-11-01T18:47:49+08:00"
+  "cover_offset_ms": 2856,
+  "duration": 30.59,
+  "checked_at": "2026-11-01T18:47:49+08:00",
+  "hook_source": "content/hookgen.py",
+  "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",
+  "hook_score": 94.8
 }

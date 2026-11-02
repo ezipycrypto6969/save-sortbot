@@ -12,7 +12,7 @@
   "post_at": "2026-11-06T19:30:00+08:00",
   "style": "base",
   "opening": "viewer-hook",
-  "hook_type": "question",
+  "hook_type": "crazy-funeral",
   "fx": {
     "hook": "WHAT TOOK OVER YOUR SAVES?"
   },
@@ -21,15 +21,15 @@
   "scenes": [
     {
       "type": "title",
-      "clean": true,
+      "text": "500 saves?\nYour tab is *haunted.*",
+      "vo": "500 saved reels? Your saved tab is haunted.",
       "bg": "paper",
-      "text": "What took over\n*your* saves?",
-      "vo": "What took over your saves?"
+      "clean": true
     },
     {
       "type": "talk",
-      "text": "Mine? *AI and tools.*\n33 of them.",
-      "vo": "Mine? AI and tools. 33 of them.",
+      "text": "Mine? Haunted by\n*AI tools.* 33 of them.",
+      "vo": "Mine's haunted by AI tools. 33 of them.",
       "mood": "shocked"
     },
     {
@@ -233,7 +233,10 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 2265,
-  "duration": 30.382,
-  "checked_at": "2026-11-01T18:47:49+08:00"
+  "cover_offset_ms": 2408,
+  "duration": 30.993,
+  "checked_at": "2026-11-01T18:47:49+08:00",
+  "hook_source": "content/hookgen.py",
+  "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",
+  "hook_score": 84.4
 }

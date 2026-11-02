@@ -12,7 +12,7 @@
   "post_at": "2026-11-05T19:30:00+08:00",
   "style": "funny-ad",
   "opening": "saves-number",
-  "hook_type": "pov",
+  "hook_type": "crazy-callout",
   "fx": {
     "hook": "LATER FINALLY GOT A LIST"
   },
@@ -21,10 +21,10 @@
   "scenes": [
     {
       "type": "title",
-      "clean": true,
+      "text": "I broke\n*156 promises.*",
+      "vo": "Every saved reel is a promise. I broke 156.",
       "bg": "paper",
-      "text": "POV: you save\nreel *500.*",
-      "vo": "POV. You save reel 500."
+      "clean": true
     },
     {
       "type": "talk",
@@ -212,7 +212,10 @@
       "vo": "Tap the link in bio and sort yours free."
     }
   ],
-  "cover_offset_ms": 2909,
-  "duration": 30.979,
-  "checked_at": "2026-11-01T18:47:49+08:00"
+  "cover_offset_ms": 3085,
+  "duration": 31.155,
+  "checked_at": "2026-11-01T18:47:49+08:00",
+  "hook_source": "content/hookgen.py",
+  "owner_edit": "2 Nov: crazy hook from the generator (owner request); no new factual claims",
+  "hook_score": 81.4
 }

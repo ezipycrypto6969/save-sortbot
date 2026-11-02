@@ -131,7 +131,7 @@ Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-
 
 **Hook formulas:** draft 3 cold-open options per reel from `team/tools/hooks.json` and score them with `team/tools/hookscore.py` (see `team/REVIEW.md`); use the best, 60+ only, and record `hook_formula` and `hook_score`.
 
-**Crazy hooks:** `content/hooks.md` is a bank of over-the-top (but true) opening lines. Use it for `exp-crazy-hook` reels and whenever a cold open needs more punch; mark used hooks there.
+**Crazy hooks:** run `python3 content/hookgen.py --n 40` before writing: it generates over-the-top (but true) cold-open hooks (funeral, warning, callout, challenge, absurd) and skips any used in the last 4 weeks. Use `--json` to get ready-made `title` scenes. Score the candidates with `team/tools/hookscore.py` like any other hook, pick the best for each reel, tweak scene 2 so it flows, and set `"hook_type": "crazy-<family>"` and `"hook_source": "content/hookgen.py"`. `content/hooks.md` is the hand-written bank. Use it for `exp-crazy-hook` reels and whenever a cold open needs more punch; mark used hooks there.
 
 ## Owner feedback (29 Oct 2026, apply to every new reel)
 

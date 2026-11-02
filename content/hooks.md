@@ -1,5 +1,7 @@
 # Crazy hooks bank
 
+For hundreds more, run `python3 content/hookgen.py --n 40` (generator). Add new templates to its `T` table when a hook family wins.
+
 Wild, scroll-stopping first lines for the `exp-crazy-hook` experiment (owner request, 2 Nov 2026). Each one must still be **true**, tie straight into the saved-reels problem and land on SaveSort by scene 3. Over the top is fine. Lying isn't: no fake numbers, no fake people, no fake results.
 
 Use them as the clean cold-open `title` (AGENT.md "Hooks"): max 5 words on screen, `vo` under 10 words. Mark each used hook `[used YYYY-MM-DD]` and never reuse one within 4 weeks.
