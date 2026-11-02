@@ -228,6 +228,22 @@ def _library(rng, env, whoosh, impact, tick, pluck):
         for k in range(6):
             p = bell(float(rng.choice([2093, 2349, 2637, 3136])), 0.4) * 0.5; i = n_(0.05 * k); out[i:i + len(p)] += p[: len(out) - i]
         return out
+    # --- "hood irony" moments: original sounds in that style (nothing sampled) ---
+    def deep_boom():
+        t = t_(1.6); n = n_(1.6)
+        body = np.sin(2 * np.pi * np.cumsum(38 + 90 * np.exp(-t * 9)) / SR) * np.exp(-t * 2.2)
+        knock = bp(rng.standard_normal(n), 60, 900) * env(n, 0.0005, 0.04)
+        x = np.tanh((body * 2.2 + knock * 0.8) * 1.8)
+        tail = np.convolve(x, np.exp(-np.arange(n_(0.35)) / n_(0.08)) * 0.012, mode="full")[:n]  # a little room
+        return (x + tail) * 0.95
+    def organ_sting():
+        t = t_(1.8); n = n_(1.8); out = np.zeros(n)
+        for f in (146.83, 174.61, 220.0, 293.66):  # D minor, low and dramatic
+            out += sum(np.sin(2 * np.pi * f * h * t) / h for h in (1, 2, 3, 4)) * 0.18
+        return np.tanh(out * (np.minimum(1, t / 0.03)) * np.exp(-t * 0.9) * 1.6) * 0.55
+    def tape_stop():
+        t = t_(0.7); f = 220 * (1 - t / 0.7) ** 1.5 + 30
+        return np.tanh(saw(f, 0.7) * 1.5) * lp(np.ones(n_(0.7)), 800) * env(n_(0.7), 0.002, 0.6) * 0.35
     def flick_run():  # thumb flicking through reels
         out = np.zeros(n_(0.9))
         for k in range(5):
@@ -260,6 +276,7 @@ def _library(rng, env, whoosh, impact, tick, pluck):
         "mood:suspicious": [(hmm, 0, 0.55)],
         "scroll": [(flick_run, 0, 0.6)],
         "hit": [(impact, 0, 0.9), (stamp, 0, 0.8)],
+        "irony": [(lambda: deep_boom() + np.pad(organ_sting(), (n_(0.12), 0))[:n_(1.6)], 0, 1.0), (lambda: deep_boom() + np.pad(tape_stop(), (0, n_(0.9)))[:n_(1.6)] * 0.8, 0, 1.0)],
         "riser": [(lambda: whoosh(1.0), 1.0, 0.45), (riser, 1.0, 0.45)],
         "end": [(end_chord((659.25, 987.77)), 0, 1.0), (end_chord((523.25, 659.25, 783.99)), 0, 1.0),
                 (end_chord((587.33, 739.99, 880.0)), 0, 1.0)],

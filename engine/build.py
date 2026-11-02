@@ -88,6 +88,7 @@ def main(spec_path, out_dir, stills=False):
             sc["itemTimes"] = [round(t + 0.35 + k * span / n, 3) for k in range(n)]; events += [(x, "item") for x in sc["itemTimes"]]
         if sc.get("payoff"): events.append((t + 0.15, "payoff"))
         if sc.get("pop"): events.append((t + sc.get("popAt", 0.35), "stamp"))  # meme pop-ups land with a hit
+        if sc.get("irony"): events.append((t + sc["irony"].get("at", 0.8), "irony"))  # deep-fried zoom + boom
         mood = sc.get("mood") or (sc.get("mascot") or {}).get("mood")
         if sc["type"] in ("talk", "react") and mood in ("shocked", "sad", "smug", "suspicious") and mood != last_mood:
             events.append((t + 0.08, "mood:" + mood))  # a comic sting when Sorty's mood changes
