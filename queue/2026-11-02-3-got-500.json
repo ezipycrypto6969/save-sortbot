@@ -1,6 +1,6 @@
 {
   "format": "long",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -185,5 +185,28 @@
   ],
   "cover_offset_ms": 2683,
   "duration": 30.647,
-  "checked_at": "2026-11-01T18:47:49+08:00"
+  "checked_at": "2026-11-01T18:47:49+08:00",
+  "posted_at": "2026-11-02T11:26:44+00:00",
+  "media_id": "18114458819615872",
+  "permalink": "https://www.instagram.com/reel/DfPMh4jDvRq/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "6h8sduuRkdk",
+    "url": "https://youtube.com/shorts/6h8sduuRkdk",
+    "posted_at": "2026-11-02T11:26:49+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "eb36956b741d4f3595294537a19a6983",
+    "submitted_at": "2026-11-02T11:26:55+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7703534170206752021",
+    "message": ""
+  }
 }
