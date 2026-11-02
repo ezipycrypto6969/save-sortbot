@@ -36,7 +36,7 @@ Unless `marketing/brief.md` (the CMO's niche section) or `content/lessons.md` sa
    - slideshow: `NODE_PATH="$(npm root -g)" node engine/slides.js accounts/<id>/queue/<file>.json out/<id>/<item-id>`. Exit 3 = text overflows a slide: shorten it.
    - reel: `python3 engine/build.py accounts/<id>/queue/<file>.json out/<id>/<item-id> --stills` (same rules as `AGENT.md`, but the account's own topic).
    Look at every slide and every reel still. Fix and re-render anything cut off, crowded or hard to read.
-6. `bash engine/publish_niche.sh` (uploads media for **all** accounts' queued items, so render any missing ones first, including other accounts' if needed).
+6. `bash engine/publish_niche.sh` (adds your renders to the media-niche branch and keeps the other accounts' media that is already there).
 7. Commit only `accounts/<id>/queue/` (and `models/custom.json` if changed). Pull with rebase, push to main. Finish by 2:30pm Perth so the claims checker sees them.
 8. Report: the week's posts (day, time, format, first line), and anything the owner must do.
 
