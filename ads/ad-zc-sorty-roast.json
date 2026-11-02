@@ -9,10 +9,10 @@
   "cta": "comment",
   "hook_type": "bold-claim",
   "fx": {
-    "hook": "ONLY ONE GETS A PASS"
+    "hook": "ONE SAVE SURVIVES"
   },
-  "yt_title": "I let a bookmark roast my 156 saved reels",
-  "caption": "I let Sorty roast my 156 saved reels. He was not nice.\n\n\"This is the trick\"? What trick. A secret AI \"mode\"? Doesn't exist. $1000 a day? Best case, not your case.\n\nSaveSort sorted all 156: 30 worth doing, 65 need the video, 10 pure hype.\n\nComment your saved count and Sorty roasts it next. Or sort yours free at savesortai.com.\n\n#savedreels #roast #instagramtips #productivity #sidehustle",
+  "yt_title": "I let a bookmark roast my saved reels. No mercy.",
+  "caption": "I let Sorty roast my saved reels. No mercy.\n\n\"I believe in you, you got this! #viral\" (a fortune cookie)\nA gym \"protocol\" that never says what it is\nA study trick \"quietly discouraged in Japan\" (by who?)\nDiscipline tips that end in \"DM me COACH\"\n$1000 a day dropshipping (saved, never shipped)\n\nSaveSort: 30 of 156 worth doing. The rest is digital hoarding.\n\nComment your saved count and Sorty roasts it next. Or sort yours free at savesortai.com.\n\n#savedreels #roast #relatable #gymtok #studytok",
   "scenes": [
     {
       "type": "title",
@@ -23,71 +23,80 @@
     },
     {
       "type": "talk",
-      "text": "I'll be\n*honest.*",
+      "text": "No\n*mercy.*",
       "mood": "smug",
-      "vo": "I'm going to be honest. Brutally."
+      "vo": "No mercy. Not today."
     },
     {
       "type": "hook",
       "lines": [
         "156 saves.",
-        "*Let's go.*"
+        "*Let's be honest.*"
       ],
-      "vo": "156 saved reels. Let's go."
+      "vo": "156 saved reels. Let's be honest about them."
     },
     {
       "type": "react",
-      "quote": "this is the trick",
+      "quote": "I believe in you, you got this! #viral",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "DELETE",
+      "verdictColor": "warn",
+      "vo": "I believe in you, hashtag viral. You saved a fortune cookie."
+    },
+    {
+      "type": "react",
+      "quote": "The momentum and speed of progression from this protocol has been crazy lately",
       "label": "SAVED REEL SAYS",
       "mood": "suspicious",
-      "verdict": "NO DETAILS",
+      "verdict": "WHAT PROTOCOL?",
       "verdictColor": "warn",
-      "vo": "This is the trick. What trick? It never says."
+      "vo": "Crazy progress from this protocol. Which protocol? He never says. You saved a mystery."
     },
     {
       "type": "react",
-      "quote": "Claude has a feature called Founder Thinking Mode",
+      "quote": "This study method was quietly discouraged in Japan",
       "label": "SAVED REEL SAYS",
       "mood": "shocked",
-      "verdict": "BE CAREFUL",
+      "verdict": "ROASTED",
       "verdictColor": "warn",
-      "vo": "A founder thinking mode? Doesn't exist. Bold of you to save it."
+      "vo": "Quietly discouraged in Japan. By who? You saved a campfire story."
     },
     {
       "type": "react",
-      "quote": "BREAKING: Claude has a feature called ADHD Executive Function Mode",
+      "quote": "If you want help locking in on your goals... DM me COACH",
       "label": "SAVED REEL SAYS",
-      "mood": "shocked",
-      "verdict": "BE CAREFUL",
+      "mood": "smug",
+      "verdict": "DELETE",
       "verdictColor": "warn",
-      "vo": "An ADHD mode? Also doesn't exist. Two fake modes. Impressive."
+      "vo": "Discipline tips, then DM me coach. You saved an ad. On purpose."
     },
     {
       "type": "react",
       "quote": "scale from Zero to $1000/day w/ branded dropshipping",
       "label": "SAVED REEL SAYS",
-      "mood": "smug",
-      "verdict": "BE CAREFUL",
-      "verdictColor": "warn",
-      "vo": "1000 a day? That's the best case. Not your case."
-    },
-    {
-      "type": "react",
-      "quote": "Comment VOICE for the free guide",
-      "label": "SAVED REEL SAYS",
       "mood": "suspicious",
-      "verdict": "GATED GUIDE",
-      "verdictColor": "gate",
-      "vo": "Comment voice for the guide? The steps were never in the reel."
+      "verdict": "ROASTED",
+      "verdictColor": "warn",
+      "vo": "1000 a day dropshipping. You saved it. You've shipped zero drops."
     },
     {
       "type": "react",
-      "quote": "homeowners who will happily pay you $300 because they don't want to spend their Saturday cleaning gutters",
+      "quote": "stop coping",
+      "label": "SAVED REEL SAYS",
+      "mood": "sad",
+      "verdict": "DELETE",
+      "verdictColor": "warn",
+      "vo": "Stop coping. That's the whole caption. Honestly? Fair."
+    },
+    {
+      "type": "react",
+      "quote": "30 uncomfortable things you should do alone that build extreme confidence",
       "label": "SAVED REEL SAYS",
       "mood": "happy",
-      "verdict": "WORTH DOING",
+      "verdict": "KEEPER",
       "verdictColor": "go",
-      "vo": "Gutter cleaning for 300 dollars? Fine. This one can stay.",
+      "vo": "30 things to do alone for confidence. Fine. This one stays. Go to the movies alone.",
       "payoff": true
     },
     {
@@ -118,13 +127,13 @@
         "pos": "pl",
         "mood": "shocked"
       },
-      "vo": "30 out of 156 survived. 10 were pure hype."
+      "vo": "SaveSort says 30 of 156 are worth doing. The rest? Digital hoarding."
     },
     {
       "type": "talk",
       "text": "Your\n*turn.*",
       "mood": "smug",
-      "vo": "Your turn. Comment your saved count, and I'll roast it in the next one."
+      "vo": "Comment your saved count. I'll roast it next. Brutally."
     },
     {
       "type": "end",
@@ -134,9 +143,9 @@
         "pos": "tr",
         "mood": "smug"
       },
-      "vo": "Or sort them yourself, free, at savesortai.com."
+      "vo": "Or sort them yourself at savesortai.com. Before I see them."
     }
   ],
   "cover_offset_ms": 2260,
-  "duration": 33.445
+  "duration": 42.75
 }
