@@ -1,0 +1,168 @@
+{
+  "id": "ad-zf-four-lessons",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "save",
+  "hook_type": "confession",
+  "fx": {
+    "hook": "LESSON 1 HURTS"
+  },
+  "yt_title": "Sorting 156 saved reels taught me 4 things",
+  "caption": "Sorting my 156 saved reels taught me 4 things.\n\n4. 22 hid the steps behind \"comment GUIDE\".\n3. 65 said nothing useful without rewatching.\n2. 10 were pure hype.\n1. Only 30 were worth actually doing.\n\nSaveSort found all of it in 2 seconds, in my browser, nothing uploaded.\n\nSave this, then check your own saves free at savesortai.com.\n\n#savedreels #instagramtips #productivity #sidehustle #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "22 of my saves\n*hid the steps.*",
+      "vo": "22 of my saved reels never gave me the steps."
+    },
+    {
+      "type": "talk",
+      "text": "Sorting 156 saves\n*taught me 4 things.*",
+      "mood": "shocked",
+      "vo": "Sorting all 156 taught me 4 things. Number 1 hurts."
+    },
+    {
+      "type": "count",
+      "n": 4,
+      "label": "22 hid the steps\nbehind *comment GUIDE*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "suspicious"
+      },
+      "vo": "Number 4. 22 hid the steps behind comment guide."
+    },
+    {
+      "type": "react",
+      "quote": "Comment VOICE for the free guide",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Like this one. Comment voice for the guide. The steps were never in the reel."
+    },
+    {
+      "type": "count",
+      "n": 3,
+      "label": "65 said *nothing*\nwithout the video",
+      "mascot": {
+        "pos": "tr",
+        "mood": "sad"
+      },
+      "vo": "Number 3. 65 said nothing useful unless you rewatch the whole thing."
+    },
+    {
+      "type": "quote",
+      "quote": "Yoda was right.",
+      "label": "THE WHOLE CAPTION",
+      "note": "About what?",
+      "vo": "The whole caption. Yoda was right. About what? Never said."
+    },
+    {
+      "type": "count",
+      "n": 2,
+      "label": "10 were\n*pure hype*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "vo": "Number 2. 10 were pure hype."
+    },
+    {
+      "type": "react",
+      "quote": "scale from Zero to $1000/day w/ branded dropshipping",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "1000 a day dropshipping? That's the best case, not the usual one."
+    },
+    {
+      "type": "count",
+      "n": 1,
+      "label": "Only 30 of 156\n*worth doing*",
+      "mascot": {
+        "pos": "tr",
+        "mood": "sad"
+      },
+      "vo": "Number 1. Only 30 of my 156 saves were worth actually doing.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "THE DAMAGE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort found all of that in 2 seconds. Nothing uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And the 30 worth doing are finally in one list."
+    },
+    {
+      "type": "end",
+      "line": "Check your saves.\n*savesortai.com*",
+      "pill": "Save this ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this, then check your own saves free at savesortai.com."
+    }
+  ],
+  "cover_offset_ms": 3675,
+  "duration": 39.45
+}
