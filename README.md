@@ -6,6 +6,19 @@ Posts a reel to the SaveSort Instagram twice a day (12:20pm and 7:20pm Perth tim
 - **GitHub Actions, twice a day:** posts the next due reel through Instagram's official API and marks it posted.
 - **GitHub Actions, every Monday:** renews the Instagram access token so it never expires.
 
+## The marketing team
+
+SaveSort has a 100-specialist AI marketing department in `team/` (10 departments: strategy, research, creative, retention, platforms, copy, growth, analytics, quality, product marketing). See `team/ROSTER.md`.
+
+| When | Who | What |
+| --- | --- | --- |
+| Sat 4:13pm | Head of insights (`ANALYST.md`) | Studies the week's stats, writes `content/lessons.md` |
+| Sat 6:47pm | CMO + 9 department leads (`team/CMO.md`) | Picks the bottleneck and the campaign, writes `marketing/brief.md`, your to-do list in `marketing/owner-actions.md`, and drafts in `marketing/drafts/` |
+| Sun 9:38am | Content writer (`AGENT.md`) + creative review panel (`team/REVIEW.md`) | Writes 21 reels from the brief; every reel must pass the panel before it's rendered |
+| Sun 3:07pm | Fact-checker (`CHECKER.md`) | Verifies every claim; holds anything untrue |
+
+The team only drafts and recommends outside the reels: it never posts elsewhere, messages anyone, changes the website or spends money without you.
+
 ## Controls
 
 | You want to | Do this |
