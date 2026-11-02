@@ -1,0 +1,142 @@
+{
+  "id": "ad-zc-sorty-roast",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "comment",
+  "hook_type": "bold-claim",
+  "fx": {
+    "hook": "ONLY ONE GETS A PASS"
+  },
+  "yt_title": "I let a bookmark roast my 156 saved reels",
+  "caption": "I let Sorty roast my 156 saved reels. He was not nice.\n\n\"This is the trick\"? What trick. A secret AI \"mode\"? Doesn't exist. $1000 a day? Best case, not your case.\n\nSaveSort sorted all 156: 30 worth doing, 65 need the video, 10 pure hype.\n\nComment your saved count and Sorty roasts it next. Or sort yours free at savesortai.com.\n\n#savedreels #roast #instagramtips #productivity #sidehustle",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "Give me your\n*saved tab.*",
+      "vo": "Give me your saved tab."
+    },
+    {
+      "type": "talk",
+      "text": "I'll be\n*honest.*",
+      "mood": "smug",
+      "vo": "I'm going to be honest. Brutally."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*Let's go.*"
+      ],
+      "vo": "156 saved reels. Let's go."
+    },
+    {
+      "type": "react",
+      "quote": "this is the trick",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "NO DETAILS",
+      "verdictColor": "warn",
+      "vo": "This is the trick. What trick? It never says."
+    },
+    {
+      "type": "react",
+      "quote": "Claude has a feature called Founder Thinking Mode",
+      "label": "SAVED REEL SAYS",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "A founder thinking mode? Doesn't exist. Bold of you to save it."
+    },
+    {
+      "type": "react",
+      "quote": "BREAKING: Claude has a feature called ADHD Executive Function Mode",
+      "label": "SAVED REEL SAYS",
+      "mood": "shocked",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "An ADHD mode? Also doesn't exist. Two fake modes. Impressive."
+    },
+    {
+      "type": "react",
+      "quote": "scale from Zero to $1000/day w/ branded dropshipping",
+      "label": "SAVED REEL SAYS",
+      "mood": "smug",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "1000 a day? That's the best case. Not your case."
+    },
+    {
+      "type": "react",
+      "quote": "Comment VOICE for the free guide",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "GATED GUIDE",
+      "verdictColor": "gate",
+      "vo": "Comment voice for the guide? The steps were never in the reel."
+    },
+    {
+      "type": "react",
+      "quote": "homeowners who will happily pay you $300 because they don't want to spend their Saturday cleaning gutters",
+      "label": "SAVED REEL SAYS",
+      "mood": "happy",
+      "verdict": "WORTH DOING",
+      "verdictColor": "go",
+      "vo": "Gutter cleaning for 300 dollars? Fine. This one can stay.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "THE DAMAGE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 out of 156 survived. 10 were pure hype."
+    },
+    {
+      "type": "talk",
+      "text": "Your\n*turn.*",
+      "mood": "smug",
+      "vo": "Your turn. Comment your saved count, and I'll roast it in the next one."
+    },
+    {
+      "type": "end",
+      "line": "Sort yours free.\n*savesortai.com*",
+      "pill": "Comment your count ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "smug"
+      },
+      "vo": "Or sort them yourself, free, at savesortai.com."
+    }
+  ],
+  "cover_offset_ms": 2260,
+  "duration": 33.445
+}

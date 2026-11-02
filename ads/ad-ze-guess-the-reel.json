@@ -1,0 +1,145 @@
+{
+  "id": "ad-ze-guess-the-reel",
+  "format": "ad",
+  "status": "draft",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "cta": "comment",
+  "hook_type": "question",
+  "fx": {
+    "hook": "THE ANSWER IS AT THE END"
+  },
+  "yt_title": "Guess what my saved reels taught me (the caption never says)",
+  "caption": "Guess what these saved reels taught me. The whole caption:\n\n\"this is the trick\"\n\"stop coping\"\n\"Yoda was right.\"\n\"#fyp #discipline #motivation\"\n\nThe caption never says. 65 of my 156 saves were like this: useless without rewatching. SaveSort found every one, and the 30 worth doing.\n\nComment your best guess for the trick. Sort yours free at savesortai.com.\n\n#savedreels #guessinggame #instagramtips #relatable",
+  "scenes": [
+    {
+      "type": "title",
+      "clean": true,
+      "bg": "paper",
+      "text": "Guess what this\n*reel taught me.*",
+      "vo": "Guess what this saved reel taught me."
+    },
+    {
+      "type": "quote",
+      "quote": "this is the trick",
+      "label": "THE WHOLE CAPTION",
+      "note": "Guess the trick",
+      "vo": "The whole caption. This is the trick. Guess the trick."
+    },
+    {
+      "type": "talk",
+      "text": "Lock in\n*your guess.*",
+      "mood": "suspicious",
+      "vo": "Lock in your guess. No changing it."
+    },
+    {
+      "type": "quote",
+      "quote": "stop coping",
+      "label": "THE WHOLE CAPTION",
+      "note": "Coping with what?",
+      "vo": "Next one. Stop coping. Coping with what? It never says."
+    },
+    {
+      "type": "quote",
+      "quote": "Yoda was right.",
+      "label": "THE WHOLE CAPTION",
+      "note": "About what?",
+      "vo": "And my favourite. Yoda was right. About what? No idea."
+    },
+    {
+      "type": "quote",
+      "quote": "#fyp #discipline #motivation",
+      "label": "THE WHOLE CAPTION",
+      "note": "For what?",
+      "vo": "This one is only hashtags. Discipline. Motivation. For what?"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "65 of my saves",
+        "*said nothing.*"
+      ],
+      "vo": "65 of my 156 saves said nothing without the video."
+    },
+    {
+      "type": "screen",
+      "label": "THE DAMAGE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "SaveSort found every one. 65 need the video. 30 worth doing.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And the 30 worth doing? All in one list. Finally."
+    },
+    {
+      "type": "talk",
+      "text": "What's\n*the trick?*",
+      "mood": "smug",
+      "vo": "So what was the trick? Comment your best guess."
+    },
+    {
+      "type": "end",
+      "line": "Sort yours free.\n*savesortai.com*",
+      "pill": "Comment your guess ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "And sort your own saves, free, at savesortai.com."
+    }
+  ],
+  "cover_offset_ms": 2660,
+  "duration": 30.766
+}
