@@ -129,6 +129,8 @@ The first reels kept people for only 1.3–6.4 seconds of 31–48 (5–13%). The
 
 Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-saves-that-lied`.
 
+**Hook formulas:** draft 3 cold-open options per reel from `team/tools/hooks.json` and score them with `team/tools/hookscore.py` (see `team/REVIEW.md`); use the best, 60+ only, and record `hook_formula` and `hook_score`.
+
 **Crazy hooks:** `content/hooks.md` is a bank of over-the-top (but true) opening lines. Use it for `exp-crazy-hook` reels and whenever a cold open needs more punch; mark used hooks there.
 
 ## Owner feedback (29 Oct 2026, apply to every new reel)

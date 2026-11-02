@@ -46,7 +46,7 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 |---|---|---|---|
 | 21 | **Creative director** (lead) | The big idea of each reel and the look of the week | Is there one clear idea per reel? |
 | 22 | Concept writer | Turning research into reel concepts | Could you pitch it in one sentence? |
-| 23 | Hook writer | The cold-open line (first 1–1.5 s) | Max 5 words on screen, aimed at the viewer, makes them need the next second |
+| 23 | Hook writer | The cold-open line (first 1–1.5 s): 3 options per post from `team/tools/hooks.json`, scored with `hookscore.py` | Max 5 words on screen, aimed at the viewer, scores 60+, avoids its formula's trap |
 | 24 | Scriptwriter | The `vo` lines and scene order | Every line earns its place; cuts every 1.5–3 s |
 | 25 | Comedy writer | One dry, deadpan joke per reel | Is it actually funny, and never mean? |
 | 26 | Storyboard artist | Scene-by-scene picture changes | Does the picture change every scene? |
@@ -90,7 +90,7 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 | # | Role | Owns | Their test |
 |---|---|---|---|
 | 51 | **Copy chief** (lead) | Every word outside the video | Clear, short, sounds like a person? |
-| 52 | Caption writer | Captions per platform | Hook line first, value next, one ask last |
+| 52 | Caption writer | Captions per platform, linted with `team/tools/caption.py` | First 125 characters work alone; value next; one ask last |
 | 53 | CTA strategist | One ask per reel, with a reason the viewer gets | Does the viewer get something for doing it? |
 | 54 | Bio & link-in-bio optimiser | What happens after "link in bio" | Is the path from reel to sorter one tap? |
 | 55 | Landing page copywriter | savesortai.com headline and sections | Does the headline match what the reels promise? |
@@ -127,7 +127,7 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 | 76 | Funnel analyst | Views → profile → site → sorter use | Which step loses the most people? |
 | 77 | Platform-split analyst | What works on IG vs YT vs TikTok | Does one platform need its own approach? |
 | 78 | Creative tagger | `style`, `hook_type`, `opening`, `cta` on every reel | Is every reel tagged so it can be compared? |
-| 79 | Hook analyst | Which first lines hold people | Which hook types win, with numbers? |
+| 79 | Hook analyst | Which first lines hold people, by `hook_formula` and `hook_score` | Which formulas win on watch time, and does the score track reality for us? |
 | 80 | Scorecard keeper | The weekly scorecard in the CMO brief | Are we better than last week, honestly? |
 
 ## D9. Quality & Compliance

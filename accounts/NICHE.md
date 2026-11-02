@@ -65,7 +65,14 @@ Unless `marketing/brief.md` (the CMO's niche section) or `content/lessons.md` sa
 
 Slide types: `hook` (`text`, `sub`, `kicker`), `list` (`heading`, `items` "main|small", max 5), `point` (`n`, `title`, `body`, `stamp`, `stampColor` warn/go/gate), `stat` (`value`, `label`, `body`, `color`), `quote` (`quote`, `label`, `stamp`, `note`), `screen` (`shot` from `engine/screens/`, `y` scroll offset in capture px, `label`, `text`), `text` (`heading`, `text`), `end` (`text`, `sub`, `pill`). Any slide: `bg` (`ink`/`paper`/`cobalt`, cobalt = the account's main colour), `mascot` (a Sorty mood), `mascotPos` (`br`/`tr`/`bl`). `*word*` highlights in the account's accent colour.
 
-Good slideshows: **5–8 slides**, slide 1 under 6 words, one idea per slide, max ~25 words per slide, the hook's tension released on the last or second-last slide. Write as if for one tired person on their couch.
+Slideshow shape (also from Instagram's own carousel behaviour: it can re-show a carousel starting from slide 2 to people who skipped it, so slide 2 must work as a second cover):
+1. **Cover:** the hook, 6 words or fewer, big, kept away from the edges.
+2. **The stake:** why it matters, one sentence, readable on its own.
+3. **One idea per slide** (3–7 word headline, max ~25 words).
+4. **Recap slide:** the whole thing as one screenshot-able list (the slide people send to friends).
+5. **Release + one ask:** SaveSort's part of the story, then save, comment or follow (one).
+
+Good slideshows: **6–9 slides**, slide 1 under 6 words, one idea per slide, max ~25 words per slide, the hook's tension released on the last or second-last slide. Write as if for one tired person on their couch.
 
 ## Reel spec
 

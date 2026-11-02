@@ -21,6 +21,14 @@ From `team/ROSTER.md`: hook writer (#23), scriptwriter (#24), comedy writer (#25
 
 Truth and policy are **not** scored here: the claims checker owns them. But the panel flags anything that looks false or risky.
 
+## Before the panel: hooks and captions (`team/tools/`)
+
+1. **Three hooks per post.** The hook writer drafts 3 opening lines for every reel and slideshow, each from a different formula in `team/tools/hooks.json` (adapted to the saves problem or the account's niche; read each formula's `trap` and avoid it). Score them together: `python3 team/tools/hookscore.py hooks.txt`. Use the top one; **nothing under 60 ships** (rewrite and re-score). Record `"hook_formula": "<name>"` and `"hook_score": <n>` in the spec.
+2. **Caption lint:** `python3 team/tools/caption.py <caption file> --keywords "<2-3 search terms>"`. Fix whatever it flags, especially the first 125 characters (what shows before "… more").
+3. **Reels only:** time the `vo` lines with `python3 team/tools/beats.py <script file> --target <seconds>` and fix any beat that runs long.
+
+The hook score is a floor, not a forecast: it catches slow, vague or preamble openings but can't pick a hit. The analyst compares `hook_formula` against real watch time.
+
 ## How the writer runs it
 
 1. Spawn one subagent (not in the background) with this file, `team/ROSTER.md`, `AGENT.md`, `content/lessons.md`, `marketing/brief.md` and the list of new queue files. Tell it: you did not write these; review each reel as the panel; read-only.
