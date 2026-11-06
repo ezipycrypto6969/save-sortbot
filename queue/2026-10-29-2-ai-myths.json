@@ -147,9 +147,9 @@
   },
   "stats": {
     "instagram": {
-      "views": 15,
+      "views": 16,
       "reach": 11,
-      "likes": 0,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
@@ -160,9 +160,9 @@
       "likes": 0,
       "comments": 0
     },
-    "total_views": 45,
-    "total_engagement": 0,
-    "updated": "2026-11-05T07:19:21+00:00"
+    "total_views": 46,
+    "total_engagement": 2,
+    "updated": "2026-11-06T07:20:21+00:00"
   },
   "tiktok": {
     "status": "skipped",
