@@ -1,4 +1,4 @@
-# Niche account performance (updated Fri 06 Nov 2026 15:20 Perth)
+# Niche account performance (updated Sat 07 Nov 2026 14:32 Perth)
 
 Views and engagement summed across Instagram, TikTok and YouTube. Engagement = likes + comments + shares + saves. ✓ = 3+ days old.
 

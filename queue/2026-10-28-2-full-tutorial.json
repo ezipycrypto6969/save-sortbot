@@ -281,22 +281,22 @@
   },
   "stats": {
     "instagram": {
-      "views": 15,
-      "reach": 8,
+      "views": 16,
+      "reach": 9,
       "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 2.3
     },
     "youtube": {
       "views": 36,
       "likes": 1,
       "comments": 0
     },
-    "total_views": 51,
+    "total_views": 52,
     "total_engagement": 3,
-    "updated": "2026-11-06T07:20:21+00:00"
+    "updated": "2026-11-07T06:32:05+00:00"
   },
   "tiktok": {
     "status": "skipped",
