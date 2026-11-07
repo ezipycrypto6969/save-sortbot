@@ -1,5 +1,5 @@
 // POST /api/breakdown { code, caption, url } → { breakdown, code } for Pro members.
-import { json, checkCode } from "../_lib.js";
+import { json, checkCode, allowed } from "../_lib.js";
 
 const SYSTEM = `You write "breakdowns" of saved Instagram reels for SaveSort Pro. The user gives you a reel's caption.
 Explain what the reel is actually about and how to act on it, honestly and practically, for a worldwide audience.
@@ -19,6 +19,10 @@ export async function onRequestPost({ request, env }) {
   if (!caption) return json({ error: "This save has no caption in your file, so there's nothing to break down." }, 400);
   let who; try { who = await checkCode(env, body.code); } catch { return json({ error: "Couldn't check your Pro status. Try again." }, 502); }
   if (!who) return json({ error: "Your Pro code isn't valid or the subscription has ended." }, 403);
+  // Cap each Pro member (and each IP) so one account or script can't burn through the Claude API credit.
+  const ip = request.headers.get("cf-connecting-ip") || "unknown";
+  if (!await allowed(env.BD_LIMIT, "sub:" + who.sub) || !await allowed(env.BD_LIMIT, "ip:" + ip))
+    return json({ error: "That's a lot of breakdowns in a row. Wait a minute and try again." }, 429);
   if (!env.ANTHROPIC_API_KEY) return json({ error: "Breakdowns aren't switched on yet (the site's Claude API key is missing). Please tell us at the email below." }, 503);
   // Try the configured model, then a fallback, and retry once on overload/rate limit.
   const models = [...new Set([env.MODEL || "claude-haiku-5-5", "claude-haiku-4-5"])];

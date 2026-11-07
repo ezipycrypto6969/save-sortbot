@@ -1,7 +1,8 @@
 // GET /api/activate?session_id=cs_... → { code } after a Stripe Checkout (trial or paid) completes.
-import { json, stripe, makeCode, LIVE } from "../_lib.js";
+import { json, stripe, makeCode, LIVE, allowed } from "../_lib.js";
 
 export async function onRequestGet({ request, env }) {
+  if (!await allowed(env.OWNER_LIMIT, "activate:" + (request.headers.get("cf-connecting-ip") || "unknown"))) return json({ error: "Too many tries. Wait a minute." }, 429);
   const id = new URL(request.url).searchParams.get("session_id") || "";
   if (!/^cs_(test|live)_[A-Za-z0-9]+$/.test(id)) return json({ error: "Bad session id" }, 400);
   try {

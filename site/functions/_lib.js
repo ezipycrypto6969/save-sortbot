@@ -14,6 +14,24 @@ async function hmac(secret, data) {
   return b64u(await crypto.subtle.sign("HMAC", key, enc.encode(data)));
 }
 
+// Compare two strings without leaking how much of them matched (stops timing attacks on keys and signatures).
+export function same(a, b) {
+  if (typeof a !== "string" || typeof b !== "string") return false;
+  const x = enc.encode(a), y = enc.encode(b);
+  let d = x.length ^ y.length;
+  for (let i = 0; i < Math.max(x.length, y.length); i++) d |= (x[i] || 0) ^ (y[i] || 0);
+  return d === 0;
+}
+
+// Owner codes are tied to the current OWNER_KEY: change OWNER_KEY in Cloudflare and every old owner code stops working.
+const ownerTag = env => hmac(env.TOKEN_SECRET, "owner:" + (env.OWNER_KEY || ""));
+
+// Rate limit helper: uses a Cloudflare rate-limit binding if it exists, otherwise lets the request through.
+export async function allowed(limiter, key) {
+  if (!limiter) return true;
+  try { return (await limiter.limit({ key })).success; } catch { return true; }
+}
+
 export const json = (body, status = 200) => new Response(JSON.stringify(body), {
   status, headers: { "content-type": "application/json", "cache-control": "no-store" } });
 
@@ -25,7 +43,8 @@ export async function stripe(env, path) {
 
 // A Pro code = payload.signature. Payload holds the Stripe subscription id and when to re-check it.
 export async function makeCode(env, sub) {
-  const payload = b64u(enc.encode(JSON.stringify({ sub, chk: Date.now() + 24 * 3600e3 })));
+  const body = sub === "owner" ? { sub, own: await ownerTag(env) } : { sub, chk: Date.now() + 24 * 3600e3 };
+  const payload = b64u(enc.encode(JSON.stringify(body)));
   return payload + "." + await hmac(env.TOKEN_SECRET, payload);
 }
 
@@ -35,9 +54,9 @@ export const LIVE = new Set(["trialing", "active"]);
 export async function checkCode(env, code) {
   if (typeof code !== "string" || !code.includes(".")) return null;
   const [payload, sig] = code.split(".");
-  if (sig !== await hmac(env.TOKEN_SECRET, payload)) return null;
+  if (!same(sig, await hmac(env.TOKEN_SECRET, payload))) return null;
   let p; try { p = JSON.parse(fromB64u(payload)); } catch { return null; }
-  if (p.sub === "owner") return { sub: "owner", code };  // the owner's free pass never needs a Stripe check
+  if (p.sub === "owner") return env.OWNER_KEY && same(p.own, await ownerTag(env)) ? { sub: "owner", code } : null;  // owner pass: no Stripe check, dies when OWNER_KEY changes
   if (Date.now() < p.chk) return { sub: p.sub, code };
   const s = await stripe(env, `subscriptions/${encodeURIComponent(p.sub)}`);  // re-check once a day
   if (!LIVE.has(s.status)) return null;
