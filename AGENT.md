@@ -129,6 +129,8 @@ The first reels kept people for only 1.3–6.4 seconds of 31–48 (5–13%). The
 
 Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-saves-that-lied`.
 
+**New reel look (owner, 7 Nov 2026).** `engine/stage.html` now renders every reel in a feed-native style: dark full-bleed scenes, big centred white text with a black outline, yellow key words, TikTok-style captions, one banner at a time, and a moving wall of saved reels behind every `title` scene (so the cold open is no longer a flat white card). `bg` now only tints the scene; keep alternating it so scene 1 and 2 still look different. Check stills as usual. `"fx": {"theme": "classic"}` brings back the old look for one reel; don't use it unless the owner asks.
+
 **Hook formulas:** draft 3 cold-open options per reel from `team/tools/hooks.json` and score them with `team/tools/hookscore.py` (see `team/REVIEW.md`); use the best, 60+ only, and record `hook_formula` and `hook_score`.
 
 **Crazy hooks:** run `python3 content/hookgen.py --n 40` before writing: it generates over-the-top (but true) cold-open hooks (funeral, warning, callout, challenge, absurd) and skips any used in the last 4 weeks. Use `--json` to get ready-made `title` scenes. Score the candidates with `team/tools/hookscore.py` like any other hook, pick the best for each reel, tweak scene 2 so it flows, and set `"hook_type": "crazy-<family>"` and `"hook_source": "content/hookgen.py"`. `content/hooks.md` is the hand-written bank. Use it for `exp-crazy-hook` reels and whenever a cold open needs more punch; mark used hooks there.

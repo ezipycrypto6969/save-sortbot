@@ -24,6 +24,8 @@ Data: 20 posted reels in `stats/summary.md` (updated 07 Nov 14:32 Perth), 15 jud
 - **Crazy hooks:** 4 ran inside base/funny-ad this week (IG 27–42 views, 1.4–6.2 s, median 3.7 s vs 6.3 s for the concrete winners). Only 1 judged, so keep `exp-crazy-hook` small at 1 slot.
 
 ## Next week's instructions for the writer
+- **Post 3 a day, every day (owner, 7 Nov).** Queue all 21 slots: 03:00, 07:00 and 19:30 Perth, 8–15 Nov. Since 2 Nov only 1 a day went out because just 5 reels were queued.
+- **New reel look (owner, 7 Nov):** the engine now renders the new dark, feed-native style automatically (see AGENT.md). Don't set `theme`.
 - Mix: base 13, funny-ad 4, experiments 4 (`exp-pov` 2, `exp-before-after` 1, `exp-crazy-hook` 1) — total 21. Plus at most 5 Instagram-only trial `-b` reels (1 a day max).
 - Hooks: keep the AGENT.md cold open. Scene-1 line must name a **concrete, everyday situation with the viewer's saved reels** (a number, a lost reel, never opening them, a junk drawer). No metaphor-only lines (crime scene, haunted, promise, museum) as the first line, except the 1 `exp-crazy-hook` reel. Max 8 words.
 - Scene 2 by ~1.3 s is Sorty talking (`talk`), so there's movement and a voice right away; `screen` with SaveSort by scene 3.

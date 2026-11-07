@@ -93,10 +93,40 @@ body{font-family:"Inter Display","Inter","Archivo",sans-serif;-webkit-font-smoot
 #irony::after{content:"";position:absolute;inset:0;opacity:.35;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .meme{position:fixed;left:40px;right:40px;z-index:41;text-align:center;font-family:"Inter Display","Inter",sans-serif;font-weight:900;font-size:96px;line-height:1.02;text-transform:uppercase;color:#fff;letter-spacing:.01em;
   -webkit-text-stroke:18px #000;paint-order:stroke fill;opacity:0;pointer-events:none}
+/* ===== v2 look (owner, 7 Nov 2026): feed-native creator style. Dark full-bleed scenes, big centred white text with a black outline,
+   yellow key words, a moving saved-reels wall behind title cards, TikTok-style captions, one banner at a time. fx.theme:"classic" = old look. */
+body.v2 .bg-ink{background:radial-gradient(120% 70% at 50% 0%,#2A1F5C 0%,#0B0B10 60%)}
+body.v2 .bg-cobalt{background:radial-gradient(120% 70% at 50% 0%,#1B2C8F 0%,#090C1E 62%)}
+body.v2 .bg-paper{background:radial-gradient(120% 70% at 50% 0%,#5A4310 0%,#100D07 62%)}
+body.v2 .bg-ink,body.v2 .bg-cobalt,body.v2 .bg-paper{color:#fff}
+body.v2 .blob{display:none}
+body.v2 .big{color:#fff!important;text-align:center;letter-spacing:-.01em;-webkit-text-stroke:12px #000;paint-order:stroke fill;text-shadow:0 10px 0 rgba(0,0,0,.55)}
+body.v2 .mark{background:none;color:var(--marker);padding:0}
+body.v2 .tbg{position:absolute;inset:0;overflow:hidden}
+body.v2 .tbg .tiles{filter:saturate(.9) blur(3px)}
+body.v2 .tbg .shade{position:absolute;inset:0;background:radial-gradient(90% 55% at 50% 48%,rgba(8,8,12,.55),rgba(8,8,12,.9))}
+body.v2 .bubble{border:6px solid #000;box-shadow:0 16px 0 #000;text-align:center}
+body.v2 .bubble::after{border-top-color:#000;bottom:-50px}
+body.v2 .card{border:6px solid #000;box-shadow:0 16px 0 #000}
+body.v2 .step,body.v2 .card,body.v2 .bubble{color:var(--ink)}
+body.v2 .step{border:5px solid #000;box-shadow:0 8px 0 #000}
+body.v2 .count-n{-webkit-text-stroke:0}
+body.v2 #hook{left:0;right:0;margin:0 auto;width:max-content;top:84px;background:#000;color:var(--marker);font-size:42px;border:4px solid var(--marker);box-shadow:none}
+body.v2 .slabel{left:0;right:60px;margin:0 auto;width:max-content;top:150px;font-size:46px;border:5px solid #000;box-shadow:0 8px 0 #000;transform:rotate(-2deg)}
+body.v2 #caps{top:1370px;left:60px;right:150px}
+body.v2 #caps .chunk{background:none;padding:0;gap:0 22px}
+body.v2 #caps .w{font-size:78px;letter-spacing:.01em;-webkit-text-stroke:12px #000;paint-order:stroke fill;text-shadow:0 8px 0 rgba(0,0,0,.5);display:inline-block;transition:none}
+body.v2 #caps .w.on{color:var(--marker)}
+body.v2 .phone{box-shadow:0 0 0 6px #000,0 0 0 12px rgba(255,225,74,.9),0 60px 120px -30px rgba(0,0,0,.8)}
+body.v2 .end-col{align-items:center;text-align:center}
+body.v2 .logo{justify-content:center}
+body.v2 .pill{align-self:center;background:var(--marker);color:var(--ink);box-shadow:0 12px 0 #000;border:5px solid #000}
+#grain{position:fixed;inset:0;z-index:25;pointer-events:none;opacity:0;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
+body.v2 #grain{opacity:.16}
 </style></head>
 <body>
 <div id="root"></div>
-<div id="prog"></div><div id="hook"></div><div id="caps"></div><div id="flash"></div><div id="irony"></div><div class="meme" id="memeT" style="top:120px"></div><div class="meme" id="memeB" style="bottom:300px"></div>
+<div id="grain"></div><div id="prog"></div><div id="hook"></div><div id="caps"></div><div id="flash"></div><div id="irony"></div><div class="meme" id="memeT" style="top:120px"></div><div class="meme" id="memeB" style="bottom:300px"></div>
 <script src="mascot.js"></script>
 <script>
 const LABELS=["gym plan","pasta recipe","AI agent","meal prep","study hack","side hustle","$1000/day","skincare","budget tip","morning routine","dropshipping","cleaning hack","workout","comment GUIDE","travel hack","date ideas","secret mode","5-min dinner"];
@@ -122,7 +152,7 @@ function build(sc,i){
       `<div class="card" style="top:${sc.heading?700:520}px"><div class="label">${esc(sc.label||"SAVED REEL SAYS")}</div><div class="q" style="font-weight:900;line-height:1.05;letter-spacing:-.02em">"${esc(sc.quote)}"</div>${sc.note?`<div class="note" style="font-size:42px;color:var(--muted);line-height:1.3;font-weight:500">${esc(sc.note)}</div>`:""}</div>`+
       (sc.stamp?`<div class="stamp" style="color:${sc.stampColor==="gate"?"#F2C45B":"var(--warn)"}">${esc(sc.stamp)}</div>`:"");
   } else if(sc.type==="title"){
-    d.innerHTML=`<div class="big t" style="top:0;color:${bg==="paper"?"var(--ink)":"#fff"}">${rich(sc.text)}</div>`;
+    d.innerHTML=(V2()?`<div class="tbg"><div class="tiles">${tiles(48)}</div><div class="shade"></div></div>`:"")+`<div class="big t" style="top:0;color:${bg==="paper"?"var(--ink)":"#fff"}">${rich(sc.text)}</div>`;
   } else if(sc.type==="steps"){
     d.innerHTML=`<div class="big head" style="top:200px;color:var(--ink)">${rich(sc.heading)}</div><div class="list" style="position:absolute;left:90px;right:150px;top:560px;display:flex;flex-direction:column;gap:24px">${sc.items.map((t,k)=>`<div class="step"><span class="n">${k+1}</span><p>${esc(t)}</p></div>`).join("")}</div>`;
   } else if(sc.type==="stat"){
@@ -151,7 +181,7 @@ function build(sc,i){
   } else if(sc.type==="path"){
     d.innerHTML=(sc.label?`<div class="slabel">${esc(sc.label)}</div>`:"")+`<div class="phone"><div class="scr">${sc.screens.map((m,k)=>`<div class="menu" data-k="${k}">${m.crumb?`<div class="crumb">${esc(m.crumb)}</div>`:""}<h5>${esc(m.title)}</h5>${m.rows.map((r,j)=>`<div class="row${m.ticks?" tick":""}${m.btn===j?" btn":""}" data-j="${j}">${esc(r)}</div>`).join("")}</div>`).join("")}<div class="tapdot"></div><div class="tap"></div></div><div class="notch"></div></div>`;
   } else if(sc.type==="end"){
-    d.innerHTML=`<div style="position:absolute;left:90px;right:150px;top:520px;display:flex;flex-direction:column;gap:70px"><div class="logo"><svg viewBox="0 0 22 26"><path d="M2 2h18v22l-9-6.5L2 24z" fill="#fff"/></svg>SaveSort</div><div class="endline" style="font-weight:900;letter-spacing:-.035em;line-height:1.02;color:#fff">${rich(sc.line||"Sort your saves.\n*Free.*")}</div><div class="pill">${esc(sc.pill||"Link in bio →")}</div></div><div class="loop" style="position:absolute;inset:0;opacity:0"><div class="tiles">${tiles(15)}</div></div>`;
+    d.innerHTML=`<div class="end-col" style="position:absolute;left:90px;right:150px;top:520px;display:flex;flex-direction:column;gap:70px"><div class="logo"><svg viewBox="0 0 22 26"><path d="M2 2h18v22l-9-6.5L2 24z" fill="#fff"/></svg>SaveSort</div><div class="endline" style="font-weight:900;letter-spacing:-.035em;line-height:1.02;color:#fff">${rich(sc.line||"Sort your saves.\n*Free.*")}</div><div class="pill">${esc(sc.pill||"Link in bio →")}</div></div><div class="loop" style="position:absolute;inset:0;opacity:0"><div class="tiles">${tiles(15)}</div></div>`;
   }
   if(sc.pop){const isEmoji=!/[A-Za-z0-9]/.test(sc.pop); d.insertAdjacentHTML("beforeend",`<div class="popw ${isEmoji?"emoji":"word"}" style="${sc.popPos||""}">${esc(sc.pop)}</div>`);}
   document.getElementById("root").appendChild(d);
@@ -174,7 +204,8 @@ function build(sc,i){
   d.style.display="none";
   return d;
 }
-window.load=function(tl){TL=tl;document.getElementById("root").innerHTML="";SC=tl.scenes.map(build);};
+const V2=()=>!(TL&&TL.fx&&TL.fx.theme==="classic");
+window.load=function(tl){TL=tl;document.body.classList.toggle("v2",V2());document.getElementById("root").innerHTML="";SC=tl.scenes.map(build);};
 function pop(el,t0,t,dur=0.22,from=1.35,origin="left center"){const p=(t-t0)/dur;el.style.opacity=p<0?0:1;el.style.transform=`scale(${p<0?from:from+(1-from)*back(p)})`;el.style.transformOrigin=origin;}
 const K=716/780;  // capture px -> screen px
 function tapAt(d,lt,taps,toScr){
@@ -270,7 +301,7 @@ window.render=function(t){
     else if(sc.type==="path"){ renderPath(sc,d,lt); }
     else if(sc.type==="end"){
       pop(d.querySelector(".logo"),0.05,lt,0.25,1.3);
-      const pill=d.querySelector(".pill"); const q=(lt-0.45)/0.25; pill.style.transform=`scale(${q<0?0:back(q)})`; pill.style.transformOrigin="left center";
+      const pill=d.querySelector(".pill"); const q=(lt-0.45)/0.25; pill.style.transform=`scale(${q<0?0:back(q)})`; pill.style.transformOrigin=V2()?"center center":"left center";
       d.querySelector(".loop").style.opacity=clamp((t-(TL.dur-0.35))/0.33);
     }
   });
@@ -281,7 +312,8 @@ window.render=function(t){
   document.getElementById("flash").style.opacity=fx.flash===false?0:flash;
   const curI=TL.scenes.findIndex(sc=>t>=sc.start&&t<sc.end); const clean=curI>=0&&TL.scenes[curI].clean;  // "clean": no banner or captions on this scene
   const hk=document.getElementById("hook");
-  if(fx.hook&&!clean&&t>=0.15&&t<(fx.hookUntil??TL.dur)){hk.style.display="block"; hk.textContent=fx.hook; const p=(t-0.15)/0.2; hk.style.transform=`scale(${p<1?0.6+0.4*back(p):1+0.03*Math.sin(t*6)})`; hk.style.transformOrigin="left center";}
+  const labelled=V2()&&curI>=0&&TL.scenes[curI].label;  // v2: one banner at a time
+  if(fx.hook&&!clean&&!labelled&&t>=0.15&&t<(fx.hookUntil??TL.dur)){hk.style.display="block"; hk.textContent=fx.hook; const p=(t-0.15)/0.2; hk.style.transform=`scale(${p<1?0.6+0.4*back(p):1+0.03*Math.sin(t*6)})`; hk.style.transformOrigin="left center";}
   else hk.style.display="none";
   const caps=document.getElementById("caps"); const ch=(TL.caps||[]).find(c=>t>=c.t0&&t<c.t1);
   if(ch&&fx.captions!==false&&!clean){
