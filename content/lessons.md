@@ -1,37 +1,41 @@
-# Reel lessons (updated Sat 31 Oct 2026 afternoon, by the analyst)
+# Reel lessons (updated Sat 07 Nov 2026, by the analyst)
 
-Data: 12 posted reels in `stats/summary.md` (26–31 Oct, updated 31 Oct 14:13 Perth) plus the owner's YouTube Studio watch numbers for 7 reels. Only 3 reels are 3+ days old (✓), so almost everything here is low confidence. Too new to trust: `guess-30`, `rip-saved-tab`, `needs-the-video`, `house-flip-fee`, `ai-actor-reviews`, `ai-myths`, `free-tools`, `boring-business`, `proof-sells`.
+Data: 20 posted reels in `stats/summary.md` (updated 07 Nov 14:32 Perth), 15 judged (✓). Since 2 Nov only 1 reel a day went out (7:30pm; the owner cleared the queue), so the 3am/7am slots and last week's planned experiments got no new data.
 
-**Read TikTok views carefully.** Since TikTok started (29 Oct) every reel posted there gets about 80–100 TikTok views whatever it is about (range 81–98), people leave after 1.3–2.7 s, and no reel has brought a single follower or profile view. That is TikTok's starting test audience, not a win. Compare reels on **Instagram views and Instagram avg watch** (and YouTube watch time), not total views.
+**How to read the numbers.** TikTok still gives every reel ~70–135 views whatever it is, people leave after 1–2.5 s, and 0 reels have brought a follower or profile view. Almost every reel has exactly 2 Instagram likes and no comments, so engagement rates are noise. **Judge on Instagram views and Instagram avg watch** (and YouTube views). Ignore `156-zero`'s TikTok 43.9 s (longer than the reel: a data glitch).
 
 ## Do more of (confirmed)
-- **Show SaveSort actually sorting the saves on screen.** YouTube (owner's Studio numbers): `reveal-156` 122% viewed, `full-tutorial` 75%, `watch-it-sort` 57%, versus tip/claim reels `ai-hustles` 40%, `ai-myths` 25%, `rip-saved-tab` 20%, `needs-the-video` 14%. — confidence: medium (same pattern on 7 reels, small views)
-- **Open on the saved-reels problem with the real 156 number.** Instagram: `watch-it-sort` 120 views / 6.4 s, `guess-30` 112 / 5.9 s, `rip-saved-tab` 43 / 3.3 s. Tip-led openers got 4–18 IG views and 1.6–2.6 s. — confidence: medium-low (see the cold-open sign under Testing)
+- **Open on a concrete, relatable saved-reels problem, said by Sorty, then SaveSort sorting on screen.** The 4 best Instagram reels ever: `watch-it-sort` 121 IG views / 6.4 s, `junk-drawer-fix` 120 / 6.5 s, `guess-30` 115 / 5.8 s, `find-that-reel` 70 / 6.3 s (best 7am reel by far, and 77 YouTube views, the most ever). First lines: "I had 156 saved reels. I'd used none.", "Your saved tab is a junk drawer.", "Guess how many were worth doing.", "You saved that reel months ago." — confidence: medium
+- **Product-first beats tip-led.** Owner's product-first reels this week: 27–46 IG views, 121–157 total. Tip-led reels: 5–19 IG, 14–97 total. — confidence: medium-high
+- **"Find that one reel you saved" is a strong topic.** `find-that-reel`: top on YouTube (77) and best non-7:30pm reel on Instagram. People search for this. — confidence: low-medium (1 reel)
 
 ## Stop doing (confirmed)
-- **Tip-led reels where the saves story is a side note** (free tools, boring businesses, AI myths, sales proof). Bottom on Instagram views and lower YouTube watch. Tips appear only as proof of what SaveSort found. — confidence: medium-low
+- **Tip-led reels where the saves story is a side note** (`free-tools` 7 IG, `boring-business` 8, `proof-sells` 9, `house-flip-fee` 5). Bottom on every platform, now 3 weeks running. — confidence: medium-high
+- **Metaphor / shock openers that don't name a real situation.** "Your saved tab is a crime scene. 156 victims." (`30-useful`) held IG viewers 1.4 s, the worst this week; "Every saved reel is a promise." 3.3 s; "Stop. Saving. Reels." 4.0 s. Concrete openers this week: "500 saved reels?" 6.2 s, "Got 500 saved reels?" 4.5 s. — confidence: low-medium (5 reels, same direction as last week)
+- **Expecting cold opens to fix TikTok.** Last week's test: if cold opens didn't lift TikTok avg watch above 3 s, TikTok needs its own approach. They didn't (1.0–2.5 s, median 1.5 s). Owner decision needed (see report). — confidence: medium
 
 ## Testing now
-- **Cold open (owner rule from 30 Oct): which first line works best.** First sign: `ai-actor-reviews` (clean white title "Can you spot a fake customer?") held Instagram viewers 6.1 s of 30 (20%), the best Instagram share watched so far, but on only 13 IG views. `proof-sells` ("No reviews? No sales.") 0.8 s on 5 views. Next week every reel uses the cold open; base reels split 7/7 on what the first line says (below). We'll know when one group's median Instagram avg watch is clearly higher across 5+ reels each.
-- **Guess hook.** `guess-30` still leads (245 views, 112 on IG, 5.9 s IG watch, 1 share) but is under a day old. Next week 3 guess hooks; success = above base median IG views.
-- **Owner's 5 product-first reels** (queued 1–2 Nov). Judge next Saturday against the tip-led reels on IG views and avg watch.
-- **Post slot.** 7:30pm got far more Instagram views (120, 112, 43) than 3am (≤18) or 7am (≤14), but also had the best topics. Needs another week. Only the owner can change times.
-- **TikTok.** Every reel stalls at the starting ~80–100 views with 1.3–2.7 s watched and 0 follows. If next week's cold opens don't lift TikTok avg watch above 3 s, TikTok needs its own approach.
-- **Asks with a reason** (owner rule from 1 Nov). Compare `cta` groups on comments, new followers and saves per 100 views once 5+ reels each are 3 days old.
-- **funny-ad.** `rip-saved-tab` 135 views (82 of them TikTok), IG 43 / 3.3 s, 1 like. Not judged yet; keep 4 slots.
+- **White title card vs Sorty talking first (needs owner OK).** At 7:30pm, saves-led reels that opened with Sorty talking or the old grid got 115–121 IG views; this week's 5 that opened on the white clean title got 27–46, though topics were nearly the same (`guess-30` 115 vs `got-500` 46). Could be an account-wide drop, so not confirmed. The cold open is an owner rule: keep it unless the owner approves a test. If approved: 5 Instagram trial `-b` versions whose only change is scene 1 = Sorty `talk` with the same line. We'll know when B beats A on IG views and avg watch in 4 of 5 pairs.
+- **Concrete vs crazy cold-open lines.** Next week 5 trial `-b` reels (AGENT.md "Instagram trial reels"): A = the reel's normal line, B = a concrete relatable line (number, lost reel, junk drawer). Compare IG avg watch per pair.
+- **Guess hook.** `guess-30` is now the top reel overall (286 views, 115 IG, 1 share), but it's the only one. 2 guess reels next week; success = IG views above the week's median.
+- **Post slot.** IG median views: 7:30pm 43, 7am 16, 3am 16 (5 reels each, topics mixed). Leaning 7:30pm, medium-low. Only the owner can change times.
+- **Asks.** All 5 reels this week used the link ask; 0 comments anywhere. We can't see link clicks or sign-ups in the stats, so this can't be judged yet.
+- **exp-pov, exp-before-after:** never ran (queue cleared). Run them next week.
+- **Crazy hooks:** 4 ran inside base/funny-ad this week (IG 27–42 views, 1.4–6.2 s, median 3.7 s vs 6.3 s for the concrete winners). Only 1 judged, so keep `exp-crazy-hook` small at 1 slot.
 
 ## Next week's instructions for the writer
-- Mix: base 11, funny-ad 4, experiments 6 (`exp-pov` 2, `exp-before-after` 1, `exp-crazy-hook` 3 from `content/hooks.md`, owner request 2 Nov) — total 21
-- Every reel follows the AGENT.md cold open: scene 1 is a clean `title`, max 5 words on screen, vo max 8 words; never open on the grey `hook` grid.
-- Base reels, 7/7 split on the first line, tagged `"opening"`:
-  - 7 × `"opening": "saves-number"`: the first line is the saved-reels problem with a number ("I saved 156 reels.", "Got 500 saved reels?", "156 saves. Zero used.").
-  - 7 × `"opening": "viewer-hook"`: a question, warning or bold claim aimed at the viewer, like `ai-actor-reviews` ("Can you spot a fake customer?"). "My saved reels" or SaveSort must still appear by scene 3.
-  - Funny-ad and experiment reels: use `saves-number`.
-- Hooks: use the `guess` hook in 3 reels (never two in a row), as the clean title ("Guess how many were worth it?"), paid off with a real report number. Set `hook_type` on every reel.
-- SaveSort on screen (a `screen` scene) by scene 3, every reel.
-- At least 12 of the 21 reels are mainly SaveSort sorting saves on screen (drop the zip, sorted by topic, tap Worth doing / Be careful / Gated guides), modelled on `full-tutorial`, `watch-it-sort` and the owner's 5 product-first reels. Tips: at most 2 per reel, only after SaveSort has found them.
-- Include 1 full step-by-step walkthrough (export from Instagram → drop the zip → tap the filters), 45–50 s, modelled on `full-tutorial`.
-- Length: every other reel 30–40 s (never under 30). Cut tip lists, not the on-screen demo.
-- Put the guess hooks and the walkthrough in the 7:30pm slot.
-- One ask per reel, always with a reason (AGENT.md "Give the ask a reason"). Mix across the 21: 6 comment (incl. the 3 guess reels, plus at least 1 hot take and 1 pick-a-side), 5 follow (at least 2 as a real part 1 → part 2 pair queued on consecutive days), 3 save (walkthrough and how-tos), 7 link in bio. Tag each reel `"cta"`. A guess reel's end card says "Sort yours free" without "link in bio".
-- Before committing, check every queue file has `"duration"` (`needs-the-video` and `house-flip-fee` posted without one). If missing, rebuild that reel.
+- Mix: base 13, funny-ad 4, experiments 4 (`exp-pov` 2, `exp-before-after` 1, `exp-crazy-hook` 1) — total 21. Plus at most 5 Instagram-only trial `-b` reels (1 a day max).
+- Hooks: keep the AGENT.md cold open. Scene-1 line must name a **concrete, everyday situation with the viewer's saved reels** (a number, a lost reel, never opening them, a junk drawer). No metaphor-only lines (crime scene, haunted, promise, museum) as the first line, except the 1 `exp-crazy-hook` reel. Max 8 words.
+- Scene 2 by ~1.3 s is Sorty talking (`talk`), so there's movement and a voice right away; `screen` with SaveSort by scene 3.
+- Every base reel opens on the problem, then SaveSort sorting it on screen (drop the zip, sorted by topic, tap Worth doing / Be careful). At most 2 tips per reel, only as what SaveSort found.
+- Topics: 3 reels on "find the reel you saved" (a recipe, a workout, a gift idea), modelled on `find-that-reel`, with a how-to `yt_title` people would search ("How to find a reel you saved on Instagram").
+- 2 guess reels (not on consecutive days), modelled on `guess-30`, paid off with the real 30 out of 156; link ask with "Find out your number free".
+- 5 trial `-b` reels: same reel, only scene 1 changed to a concrete relatable line; A keeps its own line. Tag `"opening"` on both (`concrete` / `crazy` / `question`).
+- Length: 30–35 s (never under 30). People leave in the first 5 s, so trim the middle, not the demo.
+- Put the guess reels and the "find that reel" reels at 7:30pm.
+- Asks: link ask with a payoff on most reels; 2 save asks on how-to reels ("Save this for when you export your saves"). No pin/flex asks. Tag `"cta"`.
+- Check every queue file has `"duration"` before committing.
+
+## Niche accounts
+- Gym, kitchen and hype check: nothing posted yet (`accounts/status.json` shows no connected platforms; no posts in `accounts/summary.md`). No lessons yet.
+- Until there's data, writers follow `accounts/NICHE.md` and each playbook as written. Once posting: slide 1 must name a concrete situation (same lesson as the main account), and the SaveSort release slide stays last.
