@@ -10,7 +10,7 @@ Rules:
 - If the caption has no real information (only "comment X" or a teaser), say what the topic probably is, give the general technique, and set verdict to "needs_video".
 - No legal, tax or financial advice; for anything regulated say "check the rules where you live".
 - Never include the creator's name or handle. Never copy the caption.
-Reply with JSON only, no prose, matching:
+Keep the whole reply under 250 words. Reply with JSON only, no prose, no code fences, matching:
 {"what": "1-2 sentences", "verdict": "worth_doing|needs_video|be_careful", "tools": [{"name": "", "url": "", "note": ""}], "steps": ["3-6 short steps"], "cost": "short", "catch": "short"}`;
 
 export async function onRequestPost({ request, env }) {
@@ -22,33 +22,56 @@ export async function onRequestPost({ request, env }) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: "Breakdowns aren't switched on yet (the site's Claude API key is missing). Please tell us at the email below." }, 503);
   // Try the configured model, then a fallback, and retry once on overload/rate limit.
   const models = [...new Set([env.MODEL || "claude-haiku-5-5", "claude-haiku-4-5"])];
-  let r, detail = "";
-  for (const model of models) {
-    for (let attempt = 0; attempt < 2; attempt++) {
-      r = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-        body: JSON.stringify({ model, max_tokens: 900, system: SYSTEM,
-          messages: [{ role: "user", content: `Caption of the saved reel:\n"""${caption}"""` }] }),
-      });
-      if (r.ok) break;
-      detail = (await r.text()).slice(0, 300);
-      console.log(`breakdown: Anthropic API ${r.status} on ${model}: ${detail}`);  // visible in Cloudflare → Workers → save-sortbot → Logs
-      if (![429, 500, 529].includes(r.status)) break;
-      await new Promise(res => setTimeout(res, 1500));
+  const ask = async (strict) => {
+    let r, detail = "";
+    for (const model of models) {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        r = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+          body: JSON.stringify({ model, max_tokens: 2000, system: SYSTEM + (strict ? STRICT : ""),
+            messages: [{ role: "user", content: `Caption of the saved reel:\n"""${caption}"""` }] }),
+        });
+        if (r.ok) return { r };
+        detail = (await r.text()).slice(0, 300);
+        console.log(`breakdown: Anthropic API ${r.status} on ${model}: ${detail}`);  // Cloudflare → Workers → save-sortbot → Logs
+        if (![429, 500, 529].includes(r.status)) break;
+        await new Promise(res => setTimeout(res, 1500));
+      }
+      if (r.status !== 404) break;  // 404 = model not available: try the next one
     }
-    if (r.ok || r.status !== 404) break;  // 404 = model not available: try the next one
+    return { r, detail };
+  };
+  let bd;
+  for (const strict of [false, true]) {  // if the reply isn't valid JSON, ask once more, more strictly
+    const { r, detail } = await ask(strict);
+    if (!r.ok) {
+      const s = r.status, low = (detail || "").toLowerCase();
+      const msg = s === 401 || s === 403 ? "Breakdowns are down: the site's Claude API key was rejected. We're on it."
+        : low.includes("credit") ? "Breakdowns are paused: the site's Claude API account is out of credit. We're on it."
+        : s === 429 || s === 529 || s >= 500 ? "The breakdown service is busy. Try again in a minute."
+        : "Breakdowns hit an error. Try again later.";
+      return json({ error: `${msg} (code ${s})` }, 502);
+    }
+    const out = await r.json();
+    const text = (out.content || []).filter(c => c.type === "text").map(c => c.text || "").join("");
+    bd = parseBreakdown(text);
+    if (bd) break;
+    console.log(`breakdown: unreadable reply (stop_reason ${out.stop_reason}): ${text.slice(0, 400)}`);
   }
-  if (!r.ok) {
-    const s = r.status, low = detail.toLowerCase();
-    const msg = s === 401 || s === 403 ? "Breakdowns are down: the site's Claude API key was rejected. We're on it."
-      : low.includes("credit") ? "Breakdowns are paused: the site's Claude API account is out of credit. We're on it."
-      : s === 429 || s === 529 || s >= 500 ? "The breakdown service is busy. Try again in a minute."
-      : "Breakdowns hit an error. Try again later.";
-    return json({ error: `${msg} (code ${s})` }, 502);
-  }
-  const out = await r.json();
-  const text = (out.content || []).map(c => c.text || "").join("");
-  let bd; try { bd = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)); } catch { return json({ error: "Couldn't read the breakdown. Try again." }, 502); }
+  if (!bd) return json({ error: "Couldn't read the breakdown. Try again." }, 502);
   return json({ breakdown: bd, code: who.code });
+}
+
+const STRICT = `\nYour last reply couldn't be parsed. Reply with ONE JSON object only: no code fences, no comments, no text before or after it, double quotes only, no trailing commas. Keep every field short.`;
+
+// Pull the JSON object out of the reply, tolerating code fences, smart quotes around keys and trailing commas.
+function parseBreakdown(text) {
+  const a = text.indexOf("{"), b = text.lastIndexOf("}");
+  if (a < 0 || b <= a) return null;
+  let t = text.slice(a, b + 1);
+  for (const fix of [x => x, x => x.replace(/,\s*([}\]])/g, "$1"), x => x.replace(/[\u201c\u201d]/g, '"').replace(/,\s*([}\]])/g, "$1")]) {
+    try { const o = JSON.parse(fix(t)); if (o && typeof o === "object" && o.what) return o; } catch {}
+  }
+  return null;
 }
