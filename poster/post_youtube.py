@@ -113,7 +113,8 @@ def main():
     size = os.path.getsize("short.mp4")
     meta = {"snippet": {"title": title_for(spec), "description": description_for(spec),
                         "tags": tags_for(spec), "categoryId": "27"},  # 27 = Education
-            "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True}}
+            "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True,
+                       "containsSyntheticMedia": True}}  # AI voice (Sorty), owner approved 7 Nov 2026
     print(f"Uploading {spec['id']} ({size/1e6:.1f} MB) as: {meta['snippet']['title']}")
     if DRY:
         print("DRY_RUN: would upload with description:\n" + meta["snippet"]["description"]); return
