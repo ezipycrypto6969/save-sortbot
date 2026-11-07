@@ -19,13 +19,34 @@ export async function onRequestPost({ request, env }) {
   if (!caption) return json({ error: "This save has no caption in your file, so there's nothing to break down." }, 400);
   let who; try { who = await checkCode(env, body.code); } catch { return json({ error: "Couldn't check your Pro status. Try again." }, 502); }
   if (!who) return json({ error: "Your Pro code isn't valid or the subscription has ended." }, 403);
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: env.MODEL || "claude-haiku-5-5", max_tokens: 900, system: SYSTEM,
-      messages: [{ role: "user", content: `Caption of the saved reel:\n"""${caption}"""` }] }),
-  });
-  if (!r.ok) return json({ error: "The breakdown service is busy. Try again in a minute." }, 502);
+  if (!env.ANTHROPIC_API_KEY) return json({ error: "Breakdowns aren't switched on yet (the site's Claude API key is missing). Please tell us at the email below." }, 503);
+  // Try the configured model, then a fallback, and retry once on overload/rate limit.
+  const models = [...new Set([env.MODEL || "claude-haiku-5-5", "claude-haiku-4-5"])];
+  let r, detail = "";
+  for (const model of models) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      r = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+        body: JSON.stringify({ model, max_tokens: 900, system: SYSTEM,
+          messages: [{ role: "user", content: `Caption of the saved reel:\n"""${caption}"""` }] }),
+      });
+      if (r.ok) break;
+      detail = (await r.text()).slice(0, 300);
+      console.log(`breakdown: Anthropic API ${r.status} on ${model}: ${detail}`);  // visible in Cloudflare → Workers → save-sortbot → Logs
+      if (![429, 500, 529].includes(r.status)) break;
+      await new Promise(res => setTimeout(res, 1500));
+    }
+    if (r.ok || r.status !== 404) break;  // 404 = model not available: try the next one
+  }
+  if (!r.ok) {
+    const s = r.status, low = detail.toLowerCase();
+    const msg = s === 401 || s === 403 ? "Breakdowns are down: the site's Claude API key was rejected. We're on it."
+      : low.includes("credit") ? "Breakdowns are paused: the site's Claude API account is out of credit. We're on it."
+      : s === 429 || s === 529 || s >= 500 ? "The breakdown service is busy. Try again in a minute."
+      : "Breakdowns hit an error. Try again later.";
+    return json({ error: `${msg} (code ${s})` }, 502);
+  }
   const out = await r.json();
   const text = (out.content || []).map(c => c.text || "").join("");
   let bd; try { bd = JSON.parse(text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1)); } catch { return json({ error: "Couldn't read the breakdown. Try again." }, 502); }
