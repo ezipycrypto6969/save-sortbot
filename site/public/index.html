@@ -721,16 +721,18 @@ function buildReport(items, isSample, quiet){
   fTopic = "all"; fLabel = "all";
   $("#r-sample").hidden = !isSample;
   $("#r-title").textContent = isSample ? "Sample report" : "Your saves, sorted";
-  const c = k => REPORT.filter(r => r.label === k).length;
   const gates = REPORT.filter(r => r.gate).length;
+  renderStats(); renderTopics(); renderFilters(gates); renderItems();
+  $("#report").hidden = false;
+  if (!quiet) $("#report").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
+}
+function renderStats(){
+  const c = k => REPORT.filter(r => r.label === k).length;
   $("#r-stats").innerHTML =
     `<div class="rstat"><b>${REPORT.length}</b><span>saves read</span></div>`+
     `<div class="rstat go"><b>${c("go")}</b><span>worth doing</span></div>`+
     `<div class="rstat thin"><b>${c("thin")}</b><span>need the video</span></div>`+
     `<div class="rstat warn"><b>${c("warn")}</b><span>be careful</span></div>`;
-  renderTopics(); renderFilters(gates); renderItems();
-  $("#report").hidden = false;
-  if (!quiet) $("#report").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
 }
 function renderTopics(){
   const counts = {}; REPORT.forEach(r => { counts[r.topic] = counts[r.topic] || [r.topicName, 0]; counts[r.topic][1]++; });
@@ -751,7 +753,7 @@ function renderItems(){
     const i = REPORT.indexOf(r);
     const cap = r.plain ? (r.plain.length > 220 ? r.plain.slice(0, 217) + "…" : r.plain) : "No caption in your file.";
     return `<div class="item" data-i="${i}">
-      <div class="meta"><span class="tag tag-topic">${esc(r.topicName)}</span>${r.label?tag(r.label):""}${r.gate?tag("gate"):""}</div>
+      <div class="meta"><span class="tag tag-topic">${esc(r.topicName)}</span>${r.label?tag(r.label):""}${r.gate?tag("gate"):""}${r.relabeled?`<span style="font-size:12px;color:var(--muted)">Rating updated by the breakdown</span>`:""}</div>
       <p>${esc(cap)}</p>
       <div class="actions">${IGURL.test(r.url||"")?`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Open reel</a>`:""}${PRO.code&&r.plain?`<button class="locked" type="button" data-bd style="color:var(--cobalt)">Break it down</button>`:r.label==="go"||r.gate?`<button class="locked" type="button" data-up><svg aria-hidden="true"><use href="#i-lock"/></svg>Get the breakdown · A$1.99/wk</button>`:""}</div>
       ${r.bd?bdHTML(r.bd):""}
@@ -893,9 +895,8 @@ const VERDICT = { worth_doing: ["go","Worth doing"], needs_video: ["thin","Needs
 function bdHTML(b){
   if (b.error) return `<div class="bd"><p class="err">${esc(b.error)}</p></div>`;
   if (b.loading) return `<div class="bd"><p>Writing your breakdown…</p></div>`;
-  const v = VERDICT[b.verdict] || null;
   const tools = (b.tools||[]).filter(t => t && t.name).map(t => `<li>${t.url && /^https:\/\//.test(t.url) ? `<a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.name)}</a>` : esc(t.name)}${t.note ? ` · ${esc(t.note)}` : ""}</li>`).join("");
-  return `<div class="bd">${v?`<div class="meta"><span class="tag ${TAGS[v[0]]?TAGS[v[0]][0]:""}">${v[1]}</span></div>`:""}
+  return `<div class="bd">
     <p>${esc(b.what||"")}</p>
     ${tools?`<h5>Tools</h5><ul>${tools}</ul>`:""}
     ${(b.steps||[]).length?`<h5>Steps</h5><ol>${b.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>`:""}
@@ -913,6 +914,9 @@ async function breakdown(btn){
     if (d.code && d.code !== PRO.code) saveCode(d.code);
     if (res.status === 403) { saveCode(""); r.bd = { error: d.error }; }
     else r.bd = d.breakdown || { error: d.error || "Something went wrong. Try again." };
+    // one rating per reel: the breakdown read the whole caption, so its verdict replaces the quick tag
+    const v = r.bd && VERDICT[r.bd.verdict];
+    if (v && v[0] !== r.label) { r.label = v[0]; r.relabeled = true; renderStats(); }
   } catch (e) { r.bd = { error: "Couldn't reach SaveSort. Check your connection and try again." }; }
   renderItems();
 }
