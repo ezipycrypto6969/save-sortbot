@@ -1,0 +1,6 @@
+# SaveSort: everyone may crawl the site, including AI search tools, so people can find us.
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://savesortai.com/sitemap.xml
