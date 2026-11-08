@@ -2,7 +2,7 @@
   "id": "2026-11-08-3-junk-drawer",
   "post_at": "2026-11-08T19:30:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -232,5 +232,8 @@
     },
     "url": "https://www.tiktok.com/@aisavesort/video/7705760633219894548",
     "message": ""
-  }
+  },
+  "posted_at": "2026-11-08T17:07:56+00:00",
+  "media_id": "18116648288038445",
+  "permalink": "https://www.instagram.com/reel/DffQU69gLlw/"
 }
