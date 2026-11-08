@@ -2,7 +2,7 @@
   "id": "2026-11-09-2-lost-and-found",
   "post_at": "2026-11-09T07:00:00+08:00",
   "format": "funny-ad",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -214,5 +214,28 @@
   },
   "hook_score": 77.8,
   "cover_offset_ms": 2609,
-  "duration": 30.506
+  "duration": 30.506,
+  "posted_at": "2026-11-08T22:57:17+00:00",
+  "media_id": "18122025265985915",
+  "permalink": "https://www.instagram.com/reel/Dff4WBNiRP7/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "ppiOL7V_xdU",
+    "url": "https://youtube.com/shorts/ppiOL7V_xdU",
+    "posted_at": "2026-11-08T22:57:20+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "9d9c5ea740d24e838ebbdf196c765a52",
+    "submitted_at": "2026-11-08T22:57:27+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7705938628144336148",
+    "message": ""
+  }
 }
