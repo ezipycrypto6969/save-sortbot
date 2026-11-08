@@ -212,5 +212,25 @@
   },
   "hook_score": 77.8,
   "cover_offset_ms": 3509,
-  "duration": 31.901
+  "duration": 31.901,
+  "youtube": {
+    "status": "posted",
+    "video_id": "Kxf8sAxQF1I",
+    "url": "https://youtube.com/shorts/Kxf8sAxQF1I",
+    "posted_at": "2026-11-08T11:26:29+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "3526a5a350a74afe9a6356017dc0a850",
+    "submitted_at": "2026-11-08T11:26:35+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7705760633219894548",
+    "message": ""
+  }
 }

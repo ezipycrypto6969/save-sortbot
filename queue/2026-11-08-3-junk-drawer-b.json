@@ -2,7 +2,7 @@
   "id": "2026-11-08-3-junk-drawer-b",
   "post_at": "2026-11-08T19:30:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -218,5 +218,8 @@
   ],
   "trial_of": "2026-11-08-3-junk-drawer",
   "cover_offset_ms": 3509,
-  "duration": 31.901
+  "duration": 31.901,
+  "posted_at": "2026-11-08T11:26:27+00:00",
+  "media_id": "17908351314596741",
+  "permalink": "https://www.instagram.com/reel/DfepSIwI0X6/"
 }
