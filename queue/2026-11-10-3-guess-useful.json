@@ -1,0 +1,222 @@
+{
+  "id": "2026-11-10-3-guess-useful",
+  "post_at": "2026-11-10T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "The Receipt",
+  "fx": {
+    "hook": "LOCK IN YOUR GUESS"
+  },
+  "yt_title": "I saved 156 Instagram reels. How many were actually useful?",
+  "caption": "156 saved reels. Guess how many were useful?\n\nSaveSort read every one:\n30 worth doing\n65 said nothing without the video\n10 flagged be careful\n22 wanted a comment first\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*How many useful?*",
+      "vo": "156 saved reels. Guess how many were useful?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Lock in your\n*guess.*",
+      "vo": "Lock in your guess. No changing it later.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "I dropped them into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "It read every single caption and sorted them by topic, in seconds."
+    },
+    {
+      "type": "talk",
+      "text": "Drumroll\n*please.*",
+      "vo": "Okay. Drumroll please. Final answers.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. That's it. Out of 156.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. All 30 in one list."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And 10 were hype. Flagged be careful."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Guessed 30?\n*You're scary.*",
+      "vo": "If you guessed 30, you're scary.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "What's *your*\nnumber?",
+      "vo": "What's your number? Find out free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and see how yours score."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.4,
+    "rounds": 1
+  },
+  "hook_score": 62.6,
+  "cover_offset_ms": 4452,
+  "duration": 30.913
+}

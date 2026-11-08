@@ -1,0 +1,217 @@
+{
+  "id": "2026-11-09-2-lost-and-found",
+  "post_at": "2026-11-09T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "fx": {
+    "hook": "SORTY'S LOST & FOUND"
+  },
+  "yt_title": "Can't find a reel you saved for later? Sort them all free",
+  "caption": "You saved it for later. Where is it?\n\nSorty's Lost & Found desk takes your Instagram saves and sorts every one by topic. Worth doing at the front, hype in the bin.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWant your lost saves back? Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved for later?\n*Where is it?*",
+      "vo": "You saved it for later. Where is it?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Sorty's\n*Lost & Found.*",
+      "vo": "Welcome to Sorty's Lost and Found. Take a number.",
+      "mood": "happy",
+      "wave": true
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Hand over your Instagram export. Nothing gets uploaded."
+    },
+    {
+      "type": "talk",
+      "text": "Lost: 1 workout.\nLast seen: *March.*",
+      "vo": "Lost: one workout. Last seen in March. Classic.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save, sorted by topic. Lost property, finally found."
+    },
+    {
+      "type": "screen",
+      "label": "TAP HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1304.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Workouts? Shelf one. Health and lifestyle. Found it.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing goes at the front desk. 30 of my 156."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Hype? Straight to the bin. 10 of those."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Claim your\n*lost saves.*",
+      "vo": "Want your lost saves back? Claiming them is totally free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Claim yours.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 7.75,
+    "rounds": 2,
+    "note": "panel's round-2 fix applied, not re-scored"
+  },
+  "hook_score": 77.8,
+  "cover_offset_ms": 2609,
+  "duration": 30.506
+}

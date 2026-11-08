@@ -1,0 +1,215 @@
+{
+  "id": "2026-11-12-2-watched-vs-saved",
+  "post_at": "2026-11-12T07:00:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "question",
+  "opening": "concrete",
+  "hook_formula": "Head To Head",
+  "fx": {
+    "hook": "WATCHED VS SAVED"
+  },
+  "yt_title": "How to find Instagram reels you watched vs reels you saved",
+  "caption": "You can find reels you watched. Saved ones?\n\nWatched it recently? Instagram's Watch history (in Your activity) shows reels you watched.\n\nSaved it? Check Saved, and your Collections if you made them. No collections? It's one long pile. SaveSort sorts every save by topic at once.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWant all your saves sorted at once? Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Watched it? Easy.\n*Saved it?*",
+      "vo": "You can find reels you watched. Saved ones?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Watch history\nfinds *watched* ones.",
+      "vo": "Watch history finds watched ones. Saved? Check Saved and Collections.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "No collections? Drop your export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save, sorted by topic. All at once."
+    },
+    {
+      "type": "screen",
+      "label": "TAP LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Study tips? One tap."
+    },
+    {
+      "type": "screen",
+      "label": "TAP SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Side hustle ideas? One tap."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing: 30 of my 156. All at once, no scrolling.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Watched: *forgot.*\nSaved: *forgot harder.*",
+      "vo": "Watched it, forgot. Saved it, forgot harder. Fixed.",
+      "mood": "smug"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Sort *yours*\nin one go.",
+      "vo": "Want all your saves sorted at once? It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "hook_score": 62.2,
+  "cover_offset_ms": 3070,
+  "duration": 30.807
+}

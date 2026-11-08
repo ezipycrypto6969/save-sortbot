@@ -3,6 +3,21 @@
 Breakdowns from the founder's own saved reels. Each one can become a reel (breakdown or scam-watch format).
 Mark an idea `[used YYYY-MM-DD]` after it's been queued. Never name or tag the original creator; paraphrase their claim in a few words.
 
+## Everyday finds (product-first concepts, general public; added 8 Nov 2026)
+Per the 7 Nov brief (D2: the backlog is all AI/money). Each is a "lost saved reel" situation, then SaveSort sorting the pile on screen. No recipe or gift topic exists in the sorter: never show one. Check Instagram's own ways (Saved, Collections, Watch history) before claiming anything about them.
+- Find the workout you saved (Health & lifestyle topic) [used 2026-11-09]
+- Find the recipe you saved (Collections tip; no recipe topic) [used 2026-11-11]
+- Find the gift idea you saved before Christmas (Gifts collection tip; no gift topic) [used 2026-11-12]
+- Watched vs saved: Watch history finds watched reels; SaveSort sorts every save at once [used 2026-11-12]
+- How to download your saved reels from Instagram (Accounts Center steps) [used 2026-11-10]
+- Your mate sends you 40 reels a day [used 2026-11-13]
+- The study tip you saved before exams (Learning topic, 12 saves)
+- The money tip you saved in January (Money & finance topic, 4 saves; no advice, just finding it)
+- The side hustle idea you saved at 2am (Business & side hustles topic; be careful flags the hype)
+- The travel spot you saved for "one day" (no travel topic: show sorted by topic only)
+- The cleaning hack you saved and never tried (no topic claim; worth doing tab)
+- New year, same saved tab: sort before January (seasonal, late Dec)
+
 ## 000 · AI & tools · breakdown
 **Claim in the reel:** Harvey: a free, open-source Claude Code agent that finds leads (via OpenStreetMap), scores them, drafts personalised cold emails and runs your sales pipeline. Every email waits for your approval.
 **What it really is:** A free, open-source sales agent that runs on your own computer using Claude Code. It finds local businesses, checks their websites, scores each one against your ideal customer, writes a personalised cold email about something specific it found, then tracks replies and pushes each conversation toward a meeting.

@@ -1,0 +1,274 @@
+{
+  "id": "2026-11-14-3-watch-it-sort-b",
+  "post_at": "2026-11-14T19:30:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "sorty-first",
+  "hook_formula": "Cold Open Demo",
+  "fx": {
+    "hook": "WATCH IT SORT"
+  },
+  "yt_title": "How to sort your Instagram saved reels by topic (free)",
+  "caption": "Watch 156 saved reels sort themselves.\n\nI had 156 saved reels and used none. So I let SaveSort sort them. 156 in, topics out, in seconds:\n30 worth doing\n65 need the video\n10 be careful\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWant to watch yours sort? Free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Watch 156 saves\n*sort themselves.*",
+      "vo": "Watch 156 saved reels sort themselves.",
+      "bg": "paper",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "156 saved.\n*0 used.*",
+      "vo": "I had 156 saves and used none. Watch this.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop the zip in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 in. Topics out. Seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "AI and tools: 33. Apparently that's my thing."
+    },
+    {
+      "type": "screen",
+      "label": "TAP HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1304.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Health and lifestyle. One tap."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. 65 need the video."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. Used none? Now I've got 30.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "And 10 hype ones I can ignore forever."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Watch *yours*\nsort.",
+      "vo": "Want to watch yours sort? It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "hook_score": 80.2,
+  "ig_trial": true,
+  "ig_trial_graduation": "SS_PERFORMANCE",
+  "platforms": [
+    "instagram"
+  ],
+  "trial_of": "2026-11-14-3-watch-it-sort",
+  "cover_offset_ms": 3948,
+  "duration": 32.236
+}

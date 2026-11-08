@@ -1,0 +1,245 @@
+{
+  "id": "2026-11-13-1-do-not-open",
+  "post_at": "2026-11-13T03:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-crazy-hook",
+  "cta": "link",
+  "hook_type": "crazy-warning",
+  "opening": "crazy",
+  "hook_formula": "Negative Command",
+  "fx": {
+    "hook": "OPEN IT AFTER THIS"
+  },
+  "yt_title": "Don't open your Instagram saved reels until you sort them",
+  "caption": "Don't open your saved tab. Seriously.\n\nNot until you've sorted it. Mine: 156 saves, 30 worth doing, 10 hype, 22 gated behind a comment.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSee what's really in yours. Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Don't open your\n*saved tab.*",
+      "vo": "Don't open your saved tab. Seriously.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Not until\nyou've *sorted* it.",
+      "vo": "Not until you've sorted it. Trust me.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save sorted by topic, in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Mine? 33 AI and tools saves. Of course."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Now open it. Worth doing: 30 of 156.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Be careful. 10 hype reels, flagged."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "22 wanted a comment first. Skipped."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "*Now* you can\nopen it.",
+      "vo": "Okay. Now open it. Your thumb says thanks.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "See what's in\n*yours.*",
+      "vo": "See what's really in yours. It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "What's in\n*yours?*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "hook_source": "content/hookgen.py",
+  "hook_score": 87.0,
+  "cover_offset_ms": 2991,
+  "duration": 30.196
+}

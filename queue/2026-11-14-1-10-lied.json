@@ -1,0 +1,224 @@
+{
+  "id": "2026-11-14-1-10-lied",
+  "post_at": "2026-11-14T03:00:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "confession",
+  "opening": "concrete",
+  "hook_formula": "The Receipt",
+  "fx": {
+    "hook": "WAIT FOR THE WORST ONE"
+  },
+  "yt_title": "How to spot hype in your Instagram saved reels",
+  "caption": "10 of my saved reels lied to me.\n\nSaveSort flagged them be careful: big promises, no details, steps only by DM. Paraphrased, no names.\n\nIt also pulled out the 30 of my 156 with real, checkable steps.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nFind out which of yours are hype. Free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "10 of my saves\n*lied.*",
+      "vo": "10 of my saved reels lied to me.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Rude.\nBut *fixable.*",
+      "vo": "Rude. So I let SaveSort catch them.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "I dropped my Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 saves, sorted by topic, in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Tap be careful. There they are. All 10, in one list."
+    },
+    {
+      "type": "react",
+      "quote": "Huge daily sales from zero. DM me for how.",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "BE CAREFUL",
+      "verdictColor": "warn",
+      "vo": "The worst one? Huge sales from zero. Steps by DM only.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Mate.\n*No.*",
+      "vo": "No proof. No details. Mate. No.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Worth doing? 30 with real, checkable steps."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 more wanted a comment first. Also flagged."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Which of *yours*\nare hype?",
+      "vo": "Find out which of yours are hype. Checking is free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Sort your saves.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.0,
+    "rounds": 1
+  },
+  "hook_score": 81.4,
+  "cover_offset_ms": 2774,
+  "duration": 30.805
+}

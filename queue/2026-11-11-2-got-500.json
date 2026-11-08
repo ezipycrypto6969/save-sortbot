@@ -1,0 +1,235 @@
+{
+  "id": "2026-11-11-2-got-500",
+  "post_at": "2026-11-11T07:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "If This, Then Watch",
+  "fx": {
+    "hook": "WAIT FOR THE 22"
+  },
+  "yt_title": "Got 500 saved reels on Instagram? Sort them by topic free",
+  "caption": "500 saved reels and you can't find one?\n\n156 nearly broke me. Some of you are sitting on 1,000. SaveSort sorted mine by topic in seconds:\n30 worth doing\n10 be careful\n22 wanted a comment first\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSee what's hiding in yours. Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Got *500*\nsaved reels?",
+      "vo": "500 saved reels and you can't find one?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "156 broke *me.*\nSome of you: 1,000.",
+      "vo": "156 nearly broke me. Some of you are sitting on 1,000.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So I dropped mine into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "All 156, sorted by topic, in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP MARKETING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MKT.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 952.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap marketing. Just those saves, nothing else."
+    },
+    {
+      "type": "screen",
+      "label": "MY 156 SAVES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30 worth doing. 65 said nothing without the video."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. That's the list that matters."
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 hid the steps behind a comment. Now I know which.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "500 by hand?\n*There goes Saturday.*",
+      "vo": "500 saves by hand? There goes your Saturday.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "See what's in\n*yours.*",
+      "vo": "See what's hiding in your 500. It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "What's in\n*yours?*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.4,
+    "rounds": 1
+  },
+  "hook_score": 87.0,
+  "cover_offset_ms": 3346,
+  "duration": 31.242
+}

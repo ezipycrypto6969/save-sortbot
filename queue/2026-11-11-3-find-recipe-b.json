@@ -1,0 +1,170 @@
+{
+  "id": "2026-11-11-3-find-recipe-b",
+  "post_at": "2026-11-11T19:30:00+08:00",
+  "format": "find",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "question",
+  "opening": "sorty-first",
+  "hook_formula": "If This, Then Watch",
+  "fx": {
+    "hook": "THE PILE GETS SMALL"
+  },
+  "yt_title": "How to find a recipe you saved on Instagram",
+  "caption": "You saved a recipe. Find it. I'll wait.\n\nInstagram first: check Saved, and your Collections if you made them.\n\nNo collections? SaveSort sorts every save by topic and pulls out the 30 worth doing, so you're scrolling 30, not 156. There's no recipe topic yet.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWant 30 to scroll, not 156? Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #recipes #dinnerideas #productivity",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "Saved a recipe?\n*Find it.*",
+      "vo": "You saved a recipe. Find it. I'll wait.",
+      "bg": "paper",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Try Saved and\n*Collections* first.",
+      "vo": "Try Saved and Collections first. No collections? Watch this.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save gets sorted by topic, in seconds."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "No recipe topic yet. But worth doing cuts 156 to 30.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "Dinner: *served.*\nAn hour late.",
+      "vo": "30 to scroll, not 156. Dinner's only an hour late.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Tip: make a\n*Recipes* collection.",
+      "vo": "Tip: make a Recipes collection in Instagram for next time.",
+      "bg": "ink"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Shrink *your*\npile.",
+      "vo": "Want 30 to scroll, not 156? Sort yours free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Find yours.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 7.9,
+    "rounds": 2,
+    "note": "panel's round-2 fix applied, not re-scored"
+  },
+  "hook_score": 77.8,
+  "ig_trial": true,
+  "ig_trial_graduation": "SS_PERFORMANCE",
+  "platforms": [
+    "instagram"
+  ],
+  "trial_of": "2026-11-11-3-find-recipe",
+  "cover_offset_ms": 2803,
+  "duration": 31.066
+}

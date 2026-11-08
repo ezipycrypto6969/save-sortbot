@@ -1,0 +1,193 @@
+{
+  "id": "2026-11-12-3-gift-idea",
+  "post_at": "2026-11-12T19:30:00+08:00",
+  "format": "find",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Deadline",
+  "fx": {
+    "hook": "BEFORE CHRISTMAS"
+  },
+  "yt_title": "How to find a gift idea you saved on Instagram",
+  "caption": "You saved a gift idea months ago. Where?\n\nInstagram first: check Saved, and your Collections if you made them.\n\nNo collections? SaveSort sorts every save by topic into about 10 topics, so it's not one long pile. There's no gift topic yet.\n\nTip: start a Gifts collection now.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nFind yours before Christmas. Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #giftideas #christmas #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved a gift idea?\n*Where?*",
+      "vo": "You saved a gift idea months ago. Where?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Christmas is\n*coming.*",
+      "vo": "Christmas is coming. Check Saved and Collections first.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "No collections? Drop your export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "No gift topic yet. But 10 topics beat one long pile."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And worth doing pulls out the 30 with real steps in them."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Be careful flags the 10 hype ones. Skip those."
+    },
+    {
+      "type": "talk",
+      "text": "Found it. Still\n*over budget.*",
+      "vo": "Found it eventually. Still over budget. Classic.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Tip: start a\n*Gifts* collection.",
+      "vo": "Tip: start a Gifts collection now. Thank me in December.",
+      "bg": "ink",
+      "payoff": true
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Before the\n*shops close.*",
+      "vo": "Find yours before Christmas. Sorting your saves is free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Find yours.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 7.75,
+    "rounds": 2,
+    "note": "panel's round-2 fix applied, not re-scored"
+  },
+  "hook_score": 77.8,
+  "cover_offset_ms": 3147,
+  "duration": 30.714
+}

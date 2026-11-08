@@ -15,9 +15,9 @@ Each week runs 3 experiment reels (1 to 3 new styles). Name them `exp-<short-nam
 
 | Style | Started | Idea | Status | Result |
 |---|---|---|---|---|
-| `exp-crazy-hook` | week of 9 Nov 2026 | Over-the-top cold-open hooks from `content/hooks.md` (funeral, fake warnings, calling the viewer out, impossible challenges), then the normal SaveSort demo. Owner request. 1 slot (cut from 3: 4 crazy-hook reels ran inside base/funny-ad 2–6 Nov and held IG viewers 1.4–6.2 s, median 3.7 s, vs 6.3 s for concrete openers). | running | judge Sat 21 Nov |
-| `exp-pov` | week of 2 Nov 2026 | Relatable POV of the saved-tab problem ("POV: you open your saved tab looking for one recipe"), then SaveSort finds it. 2 slots. | running (not posted yet: queue cleared 1 Nov) | judge Sat 21 Nov |
-| `exp-before-after` | week of 2 Nov 2026 | The messy saved tab, then the sorted SaveSort list (real screens only). 1 slot. | running (not posted yet: queue cleared 1 Nov) | judge Sat 21 Nov |
+| `exp-crazy-hook` | week of 9 Nov 2026 | Over-the-top cold-open hooks from `content/hooks.md` (funeral, fake warnings, calling the viewer out, impossible challenges), then the normal SaveSort demo. Owner request. 1 slot (cut from 3: 4 crazy-hook reels ran inside base/funny-ad 2–6 Nov and held IG viewers 1.4–6.2 s, median 3.7 s, vs 6.3 s for concrete openers). | running (queued Fri 13 Nov 03:00: "Don't open your saved tab. Seriously.") | judge Sat 21 Nov |
+| `exp-pov` | week of 2 Nov 2026 | Relatable POV of the saved-tab problem ("POV: you open your saved tab looking for one recipe"), then SaveSort finds it. 2 slots. | running (queued Tue 10 Nov 03:00 and Sat 14 Nov 07:00) | judge Sat 21 Nov |
+| `exp-before-after` | week of 2 Nov 2026 | The messy saved tab, then the sorted SaveSort list (real screens only). 1 slot. | running (queued Thu 12 Nov 03:00) | judge Sat 21 Nov |
 
 ## Experiment ideas (general public, marketing-focused, no fake people or testimonials)
 

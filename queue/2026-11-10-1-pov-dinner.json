@@ -1,0 +1,193 @@
+{
+  "id": "2026-11-10-1-pov-dinner",
+  "post_at": "2026-11-10T03:00:00+08:00",
+  "format": "pov",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-pov",
+  "cta": "link",
+  "hook_type": "pov",
+  "opening": "concrete",
+  "hook_formula": "Mid-Sentence Start",
+  "fx": {
+    "hook": "WATCH THE PILE SHRINK"
+  },
+  "yt_title": "POV: you can't find the recipe you saved on Instagram",
+  "caption": "POV: you saved a recipe. Dinner's in 10.\n\nYou saved it. You know you did. SaveSort sorts every save by topic and pulls out the 30 worth doing, so the pile gets small fast.\n\nTip: make a Recipes collection in Instagram for next time.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSee how small your pile gets. Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "POV: dinner's\nin *10.*",
+      "vo": "POV: you saved a recipe. Dinner's in 10.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "You *saved* it.\nYou know you did.",
+      "vo": "You saved it. You know you did. Scroll. Scroll. Scroll.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Or drop your Instagram export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save sorted by topic. The pile shrinks."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 with real steps, not 156 to scroll.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And be careful flags the 10 hype ones. Skip those."
+    },
+    {
+      "type": "talk",
+      "text": "Tip: make a\n*Recipes* collection.",
+      "vo": "Tip: make a Recipes collection in Instagram. Future you says thanks.",
+      "mood": "happy"
+    },
+    {
+      "type": "title",
+      "text": "Tonight: toast.\n*Tomorrow: sorted.*",
+      "vo": "Tonight? Toast. Tomorrow? Sorted.",
+      "bg": "cobalt"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Shrink *your*\npile.",
+      "vo": "Want 30 to scroll, not 156? It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Find yours.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 7.6,
+    "rounds": 2,
+    "note": "panel's round-2 fix applied, not re-scored"
+  },
+  "hook_score": 84.4,
+  "cover_offset_ms": 3461,
+  "duration": 32.007
+}

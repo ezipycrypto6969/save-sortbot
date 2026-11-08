@@ -1,0 +1,221 @@
+{
+  "id": "2026-11-09-3-find-workout-b",
+  "post_at": "2026-11-09T19:30:00+08:00",
+  "format": "find",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "save",
+  "hook_type": "question",
+  "opening": "sorty-first",
+  "hook_formula": "If This, Then Watch",
+  "fx": {
+    "hook": "FOUND IT IN 2 TAPS"
+  },
+  "yt_title": "How to find a workout reel you saved on Instagram",
+  "caption": "You saved a workout. Where is it now?\n\nInstagram first: check Saved, and your Collections if you made them.\n\nNo collections? SaveSort sorts every save by topic. Gym and fitness saves land in Health & lifestyle, so it's 2 taps.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSave this, so the steps are here on export day.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #workout #gymtips #productivity",
+  "scenes": [
+    {
+      "type": "talk",
+      "text": "You saved a workout.\n*Where?*",
+      "vo": "You saved a workout. Where is it now?",
+      "bg": "paper",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Check Saved and\n*Collections* first.",
+      "vo": "Check Saved and Collections first. No collections? Watch this.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Every save gets sorted by topic, in seconds. All of them."
+    },
+    {
+      "type": "screen",
+      "label": "TAP HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1304.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Gym and fitness saves? They're in health and lifestyle. Tap it.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Then tap worth doing, for the ones with real steps in them."
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Be careful flags the hype ones. Skip those."
+    },
+    {
+      "type": "talk",
+      "text": "Found it.\nLegs still *hurt.*",
+      "vo": "Found it. Did it. Two days later, legs still hurt.",
+      "mood": "smug"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "*Save this* for\nexport day.",
+      "vo": "Save this, so you've got the steps when you export yours.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "Save this.\n*Find yours.*",
+      "pill": "Save for later ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this reel for when you export your saves."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.25,
+    "rounds": 2
+  },
+  "hook_score": 77.8,
+  "ig_trial": true,
+  "ig_trial_graduation": "SS_PERFORMANCE",
+  "platforms": [
+    "instagram"
+  ],
+  "trial_of": "2026-11-09-3-find-workout",
+  "cover_offset_ms": 2711,
+  "duration": 30.163
+}

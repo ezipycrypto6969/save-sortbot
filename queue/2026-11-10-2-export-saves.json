@@ -1,0 +1,193 @@
+{
+  "id": "2026-11-10-2-export-saves",
+  "post_at": "2026-11-10T07:00:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "save",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Steal",
+  "fx": {
+    "hook": "4 TAPS, THEN WAIT"
+  },
+  "yt_title": "How to download your saved reels from Instagram",
+  "caption": "Instagram will email you every save. Free. Here's how to download your saved reels.\n\n1. Instagram → Settings → Accounts Center\n2. Your information and permissions → Download your information\n3. Some of your information → tick only Saved\n4. Download to device, format HTML, date range All time\n\nInstagram emails you when the file is ready. Drop the zip into SaveSort: every save sorted by topic, in your browser, nothing uploaded.\n\nSave this, so the steps are here on export day.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #howto #productivity #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Instagram emails\n*every save.*",
+      "vo": "Instagram will email you every save. Free.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Here's\n*how.*",
+      "vo": "Here's how. A few taps in settings, then you wait.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "WHERE YOU'RE HEADED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "This is where you're headed. Every save, sorted."
+    },
+    {
+      "type": "steps",
+      "heading": "Get your file",
+      "items": [
+        "Accounts Center",
+        "Download your information",
+        "Tick only Saved",
+        "HTML, All time"
+      ],
+      "vo": "Accounts Center. Download your information. Tick only Saved. Done."
+    },
+    {
+      "type": "title",
+      "text": "Pick *HTML.*\nAll time.",
+      "vo": "HTML keeps the captions. That's what SaveSort reads.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Then you\n*wait.*",
+      "vo": "Then wait for Instagram's email. Put the kettle on.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Download the zip and drop it in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 of my 156 made the cut.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP BE CAREFUL",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Be careful flags the hype. 10 of mine."
+    },
+    {
+      "type": "talk",
+      "text": "*Save this* for\nexport day.",
+      "vo": "Save this, so the steps are right here on export day.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "line": "Save this.\n*You'll need it.*",
+      "pill": "Save for later ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this reel for when you export your saves."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "hook_score": 77.8,
+  "cover_offset_ms": 3387,
+  "duration": 30.197
+}

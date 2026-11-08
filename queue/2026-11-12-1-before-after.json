@@ -1,0 +1,227 @@
+{
+  "id": "2026-11-12-1-before-after",
+  "post_at": "2026-11-12T03:00:00+08:00",
+  "format": "before-after",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-before-after",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "Before And After, On Screen",
+  "fx": {
+    "hook": "BEFORE → AFTER"
+  },
+  "yt_title": "Instagram saved reels before and after sorting them by topic",
+  "caption": "Before: 156 saves in one pile. After: watch.\n\nBefore: newest first, no labels.\nAfter: every save sorted by topic, plus\n30 worth doing\n10 be careful\n22 gated guides\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nSee your own after. Sort yours free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*One long pile.*",
+      "vo": "Before: 156 saves in one pile. After: watch.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Here's my\n*before.*",
+      "vo": "Here's my before. Brace yourself.",
+      "mood": "sad"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "BEFORE:",
+        "*Newest first. No labels.*"
+      ],
+      "vo": "My saved reels. Newest first. No labels.",
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Then I dropped my export into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "AFTER",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "After. Every save, sorted by topic."
+    },
+    {
+      "type": "screen",
+      "label": "TAP LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Learning? One tap. 12 saves, all together."
+    },
+    {
+      "type": "screen",
+      "label": "TAP WORTH DOING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap worth doing. 30 of 156, in one list.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "TAP GATED GUIDES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "22 wanted a comment first. Now labelled."
+    },
+    {
+      "type": "talk",
+      "text": "Same saves.\n*Now with labels.*",
+      "vo": "Same 156 saves. Now with labels. Like an adult.",
+      "mood": "smug"
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "See *your*\nafter.",
+      "vo": "Want to see your own after? It's free.",
+      "mood": "happy"
+    },
+    {
+      "type": "end",
+      "line": "See your\n*after.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "Sorty's Lost & Found",
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  },
+  "hook_score": 62.6,
+  "cover_offset_ms": 4601,
+  "duration": 32.79
+}
