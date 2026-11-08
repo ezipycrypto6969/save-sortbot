@@ -264,18 +264,18 @@
       "comments": 0
     },
     "tiktok": {
-      "views": 90,
+      "views": 94,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "new_followers": 0,
       "profile_views": 0,
-      "avg_watch_s": 1,
+      "avg_watch_s": 0.99,
       "full_watch_rate": 0
     },
-    "total_views": 132,
+    "total_views": 136,
     "total_engagement": 3,
-    "updated": "2026-11-07T06:32:05+00:00"
+    "updated": "2026-11-08T06:39:05+00:00"
   }
 }
