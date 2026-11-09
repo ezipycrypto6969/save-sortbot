@@ -2,7 +2,7 @@
   "id": "2026-11-10-2-export-saves",
   "post_at": "2026-11-10T07:00:00+08:00",
   "format": "how-to",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -190,5 +190,28 @@
   },
   "hook_score": 77.8,
   "cover_offset_ms": 3387,
-  "duration": 30.197
+  "duration": 30.197,
+  "posted_at": "2026-11-09T22:56:16+00:00",
+  "media_id": "18146549116591829",
+  "permalink": "https://www.instagram.com/reel/DfidBeMgVix/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "rIe_MrZXif4",
+    "url": "https://youtube.com/shorts/rIe_MrZXif4",
+    "posted_at": "2026-11-09T22:56:20+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "bdead377cca44bc4aad8c209066783d4",
+    "submitted_at": "2026-11-09T22:56:26+00:00",
+    "sound": {
+      "id": "7647229123379972097",
+      "title": "Take Me (To The Moon)",
+      "artist": "Ian Asher & D A N N Y",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7706309462784625941",
+    "message": ""
+  }
 }
