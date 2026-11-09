@@ -123,7 +123,11 @@ def main():
     if spec.get("ig_trial"):  # trial reel: shown to non-followers first; Meta shares it with followers if it does well
         grad = spec.get("ig_trial_graduation", "SS_PERFORMANCE")
         c = call("POST", f"{API}/{IG_USER}/media", {**params, "trial_params": json.dumps({"graduation_strategy": grad})}, soft=True)
-        print("Posting as a trial reel" if c else "Trial reels not available for this account; posting normally")
+        if not c:  # posting it normally would put a near-duplicate of its A version on the grid
+            spec.update(status="skipped", skip_reason="Instagram refused the trial reel (account can't use trial reels yet); not posted as a normal reel to avoid a duplicate")
+            json.dump(spec, open(path, "w"), ensure_ascii=False, indent=2)
+            print("Trial reels not available for this account; skipped (no duplicate post)"); return
+        print("Posting as a trial reel")
     if not c:
         c = call("POST", f"{API}/{IG_USER}/media", params)
     cid = c["id"]

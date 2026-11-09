@@ -71,7 +71,7 @@ To hand-write a platform's text instead, add `ig_caption`, `yt_description` or `
 ### Instagram trial reels (testing openings)
 
 Optional fields on a queue item:
-- `"ig_trial": true` posts it on Instagram as a **trial reel**: shown to non-followers first. With the default `"ig_trial_graduation": "SS_PERFORMANCE"`, Meta shares it with followers automatically if it does well (`"MANUAL"` leaves that to the owner in the app). If the account can't use trial reels, it posts normally.
+- `"ig_trial": true` posts it on Instagram as a **trial reel**: shown to non-followers first. With the default `"ig_trial_graduation": "SS_PERFORMANCE"`, Meta shares it with followers automatically if it does well (`"MANUAL"` leaves that to the owner in the app). If the account can't use trial reels (it needs more followers; Instagram refused them on 8 Nov 2026), the -b reel is skipped, not posted normally, so it never duplicates its A version. Don't write -b reels until the account qualifies.
 - `"platforms": ["instagram"]` limits a reel to certain platforms (default: all three).
 
 Use them to test openings: once a day at most, take a reel you've written and add a second version with a **different first scene only** (new hook line and on-screen text, same rest), queued at the same time with `"ig_trial": true` and `"platforms": ["instagram"]`, id ending `-b`. The weekly analysis compares the A and B openings and keeps the better style.

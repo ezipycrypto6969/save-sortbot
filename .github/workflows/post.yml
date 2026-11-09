@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # latest main, not the commit that triggered the run: a run queued behind another must see what it already posted
       - name: Publish the next due reel
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -59,4 +61,4 @@ jobs:
           git config user.name "savesort-bot"
           git config user.email "savesort-bot@users.noreply.github.com"
           git add queue accounts
-          git diff --cached --quiet || (git commit -m "Posted reel" && git push)
+          git diff --cached --quiet || (git commit -m "Posted reel" && (git push || (git pull --rebase origin main && git push)))
