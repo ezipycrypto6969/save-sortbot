@@ -221,5 +221,19 @@
   "duration": 31.901,
   "posted_at": "2026-11-08T11:26:27+00:00",
   "media_id": "17908351314596741",
-  "permalink": "https://www.instagram.com/reel/DfepSIwI0X6/"
+  "permalink": "https://www.instagram.com/reel/DfepSIwI0X6/",
+  "stats": {
+    "instagram": {
+      "views": 45,
+      "reach": 43,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "avg_watch_s": 3.8
+    },
+    "total_views": 45,
+    "total_engagement": 1,
+    "updated": "2026-11-09T07:06:52+00:00"
+  }
 }
