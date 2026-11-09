@@ -2,7 +2,7 @@
   "id": "2026-11-14-3-watch-it-sort-b",
   "post_at": "2026-11-14T19:30:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "skipped",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -271,5 +271,6 @@
   ],
   "trial_of": "2026-11-14-3-watch-it-sort",
   "cover_offset_ms": 3948,
-  "duration": 32.236
+  "duration": 32.236,
+  "skip_reason": "Owner reported duplicate Instagram posts (9 Nov): the account is below the trial-reel follower minimum, so trial -b reels post as normal reels next to their A version."
 }
