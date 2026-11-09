@@ -2,7 +2,7 @@
   "id": "2026-11-10-1-pov-dinner",
   "post_at": "2026-11-10T03:00:00+08:00",
   "format": "pov",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -190,5 +190,28 @@
   },
   "hook_score": 84.4,
   "cover_offset_ms": 3461,
-  "duration": 32.007
+  "duration": 32.007,
+  "posted_at": "2026-11-09T18:56:54+00:00",
+  "media_id": "18095784050659967",
+  "permalink": "https://www.instagram.com/reel/DfiBlr4FEiQ/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "G6TrnYB9vMs",
+    "url": "https://youtube.com/shorts/G6TrnYB9vMs",
+    "posted_at": "2026-11-09T18:56:57+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "93ce2c3c927c4f93a9924a2154e427a7",
+    "submitted_at": "2026-11-09T18:57:14+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7706247812920429845",
+    "message": ""
+  }
 }
