@@ -189,5 +189,19 @@
   },
   "hook_score": 62.6,
   "cover_offset_ms": 3504,
-  "duration": 30.292
+  "duration": 30.292,
+  "tiktok": {
+    "status": "posted",
+    "request_id": "d35915f36ca94b8e9ab1e667e37cdfe0",
+    "submitted_at": "2026-11-10T18:43:57+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7706615457754746130",
+    "message": ""
+  }
 }
