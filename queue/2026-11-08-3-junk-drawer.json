@@ -238,32 +238,32 @@
   "permalink": "https://www.instagram.com/reel/DffQU69gLlw/",
   "stats": {
     "instagram": {
-      "views": 32,
-      "reach": 30,
+      "views": 49,
+      "reach": 45,
       "likes": 3,
       "comments": 0,
       "shares": 0,
       "saved": 0,
-      "avg_watch_s": 5.9
+      "avg_watch_s": 4.8
     },
     "youtube": {
-      "views": 43,
+      "views": 51,
       "likes": 1,
       "comments": 0
     },
     "tiktok": {
-      "views": 54,
+      "views": 65,
       "likes": 1,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "new_followers": 0,
       "profile_views": 0,
-      "avg_watch_s": 1.8,
+      "avg_watch_s": 1.75,
       "full_watch_rate": 0
     },
-    "total_views": 129,
+    "total_views": 165,
     "total_engagement": 5,
-    "updated": "2026-11-09T07:06:52+00:00"
+    "updated": "2026-11-10T07:42:28+00:00"
   }
 }
