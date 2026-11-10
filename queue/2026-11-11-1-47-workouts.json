@@ -2,7 +2,7 @@
   "id": "2026-11-11-1-47-workouts",
   "post_at": "2026-11-11T03:00:00+08:00",
   "format": "funny-ad",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -203,5 +203,14 @@
     },
     "url": "https://www.tiktok.com/@aisavesort/video/7706615457754746130",
     "message": ""
+  },
+  "posted_at": "2026-11-10T18:57:18+00:00",
+  "media_id": "18603129052071934",
+  "permalink": "https://www.instagram.com/reel/DfkmeZLARbI/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "OR9TaR06vVQ",
+    "url": "https://youtube.com/shorts/OR9TaR06vVQ",
+    "posted_at": "2026-11-10T18:57:19+00:00"
   }
 }
