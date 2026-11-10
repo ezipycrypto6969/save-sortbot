@@ -2,7 +2,7 @@
   "id": "2026-11-11-2-got-500",
   "post_at": "2026-11-11T07:00:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -232,5 +232,28 @@
   },
   "hook_score": 87.0,
   "cover_offset_ms": 3346,
-  "duration": 31.242
+  "duration": 31.242,
+  "posted_at": "2026-11-10T22:56:26+00:00",
+  "media_id": "17989318569085748",
+  "permalink": "https://www.instagram.com/reel/DflB1I9k3NT/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "SwUWbei9hRc",
+    "url": "https://youtube.com/shorts/SwUWbei9hRc",
+    "posted_at": "2026-11-10T22:56:28+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "71ba623314224c07b6b33f6daf1d9446",
+    "submitted_at": "2026-11-10T22:56:32+00:00",
+    "sound": {
+      "id": "7462757141536868369",
+      "title": "Final Game Showdown",
+      "artist": "ProdByLucK",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7706680523212524852",
+    "message": ""
+  }
 }
