@@ -50,6 +50,7 @@ Stamp lines (match the real SaveSort labels):
 - No alcohol, drugs, sex jokes, slurs, politics or real tragedies.
 - No money promises. "Paid per save" is a joke about him. Never imply viewers will make money, and never show income figures.
 - SaveSort numbers are only the real ones: 156 saves, 30 worth doing, 65 need the video, 10 be careful, 22 gated guides.
+- **Joke numbers are fine in Sorty's cartoon world** (owner, 11 Nov 2026): use oddly specific ones, never round ones ("45,676 new saves", not "1,000"). They must be obviously silly and stay on cartoon screens or in Sorty's lines about his own job. Never put them on a real SaveSort screen, never present them as a SaveSort result or user count, and never put them in the caption.
 - He's an AI voice. The caption label stays on ("Sorty's voice is AI. The saves and numbers are real.").
 - A self-own beats a roast. Let him fail at the gym, get bullied by The Algorithm, and get embarrassed.
 
