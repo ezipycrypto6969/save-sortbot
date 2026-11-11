@@ -16,3 +16,31 @@ These rules are for the Pixar-style reels made in Artlist Studio and edited in C
 11. **Script format:** a table with Time | Picture | Camera | Sorty says (and how) | SFX | Music | Make it with. Mark the music hits.
 12. **Cost cap:** at most 3 new Artlist video clips per episode (about 2,500 credits each). Everything else is still frames (about 130 credits) or free CapCut edits. Show the owner the frames before making any clips.
 13. **Never copy Trenchies itself:** no slogans, sounds or characters. No real people, brands or logos. A real creator can appear only in a real collab where they film their own part, and only if the owner changes the no-real-people rule first.
+
+## Getting people to interact (owner, 11 Nov 2026)
+People only comment, send, save or follow when they get something out of it. Every reel gives them one clear reason. These add to the "Give the ask a reason" rules in AGENT.md (no pin, flex or bragging asks).
+
+14. **One ask per reel, with a real reward.** Pick the one action that fits the reel and say what the viewer gets for doing it.
+15. **Sends beat everything on Instagram.** Build in a "that's so them" moment (the mate with 2,000 gym saves, the partner with 40 recipe reels) and name who to send it to: "Send this to the mate whose saved tab is 4 years of leg days."
+16. **Comments need a payoff.** Ask for something Sorty will actually answer: "Drop the worst reel in your saves. Sorty rates the best ones in a reply video." Only promise replies we will really make (the Ask Sorty format).
+17. **Make them play along inside the reel.** "Do it or Skip it? Call it before the stamp drops." Or a guess with a reveal late in the reel. This gets comments and rewatches without begging.
+18. **Open a loop in the first 2 seconds and close it at the end.** The reveal is the reward for watching to the end.
+19. **Running jokes make fans.** Bring back The Algorithm, the phone deadlift and the toy car so regulars recognise them and comment about them ("the Algorithm again").
+20. **Follows need a promise that's real.** "Episode 2 Friday: Sorty vs your recipe saves." Only if episode 2 is already made or queued.
+21. **Saves are for useful bits.** "Save this for when you export your saves" works on how-tos, not on comedy.
+22. **Reply fast.** Answer comments in the first hour after posting, and pin one comment that asks a real question.
+23. **Never use engagement bait.** No "comment YES", "like if…", "tag 10 friends", fake giveaways or fake drama. Meta and TikTok push these down, and they break our honesty rules.
+
+### Interaction lines for Sorty (rotate, never two in a row)
+| Line | Gets | Viewer's reward |
+|---|---|---|
+| "Send this to the mate with 2,000 saved gym reels." | send | A laugh at their mate |
+| "Send this to whoever saved 40 recipes and cooked noodles." | send | Roasting a friend |
+| "Do it or Skip it? Call it before the stamp drops." | comment, rewatch | Finding out if they were right |
+| "Guess how many of 156 were worth doing. Answer at the end." | comment, watch to end | The reveal (30) |
+| "Drop the worst reel in your saves. Sorty rates the best ones in a reply." | comment | Getting Sorty's verdict on theirs |
+| "Comment the topic your saves are drowning in. Gym, recipes or money?" | comment | Seeing they're not alone; picks the next episode |
+| "Which one's you: 30 Do it, or 65 Watch it?" | comment | Identity, "this is so me" |
+| "Episode 2 Friday: Sorty vs your recipe saves. Follow so you see it." | follow | The next episode (only if it's made) |
+| "Save this for when you export your saves." | save | The steps later |
+| "Want your own number? Sort your saves free. Link in bio." | link | Their own report |
