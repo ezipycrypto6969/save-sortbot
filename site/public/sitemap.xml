@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Every public page. Add new pages here (see site/README.md). -->
+<!-- Written by site/build.mjs. Don't edit by hand. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://savesortai.com/</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://savesortai.com/terms</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://savesortai.com/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/about</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/blog/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/blog/comment-for-the-guide-reels</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/blog/download-instagram-saved-posts</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/blog/how-to-organise-instagram-saved-posts</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/blog/spot-hype-reels</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://savesortai.com/privacy</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://savesortai.com/refunds</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://savesortai.com/terms</loc><lastmod>2026-10-27</lastmod></url>
 </urlset>

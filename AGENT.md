@@ -156,3 +156,11 @@ Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-
 - **No get-rich-quick claims** (Meta ad policy and honesty). Scam-watch posts explain why something is misleading without attacking a named person.
 - Voice tone: dry, deadpan, a bit Aussie ("Mate. No."), never mean. One joke per reel is plenty.
 - Never post more than 3 a day (plus at most 1 Instagram-only trial reel). If the queue already has 21+ future items, do nothing but report.
+
+## Website and blog (owner's rules, Nov 2026)
+
+- The site is built from `site/src/` by `node site/build.mjs`. Never edit the built pages in `site/public/` by hand. After any change in `site/src/`, run the build and commit `src/` and `public/` together (the build does not run on deploy). Full steps: `site/README.md`.
+- The site must look like a real software company's site: keep the shared header, footer, fonts and colours from `site/public/site.css`. No one-off inline styling for new pages.
+- Blog posts live in `site/src/blog/`, one file per post. Every post follows the content rules above: true and checkable claims, only the real numbers, no real people's names or handles, only features that exist today, no financial, legal or tax advice. Each post answers one question people search for and links to `/#try`.
+- The site makes no third-party requests (no Google Fonts, no trackers). Don't add any without the owner's say-so.
+- Don't rename the page hooks the reel capture script uses (listed in `site/README.md`).

@@ -1,0 +1,276 @@
+<!--{"path":"/","updated":"2026-11-11","title":"SaveSort: sort your saved Instagram reels by topic (free)","description":"SaveSort sorts your saved Instagram reels by topic and flags what's worth doing, what needs the video and what's hype. Free, in your browser.","ogDescription":"You saved 156 reels. Here are the 30 worth doing. SaveSort sorts your saved Instagram reels by topic, free, in your browser. Nothing uploaded.","scripts":["/app.js"]}-->
+<!--head-->
+<!-- Structured data. If you change an FAQ answer below that is also in here, change it here too. Don't add Pro features or prices to it (see site/README.md). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "WebSite", "@id": "https://savesortai.com/#website", "url": "https://savesortai.com/", "name": "SaveSort", "alternateName": "SaveSort AI", "inLanguage": "en", "publisher": { "@id": "https://savesortai.com/#org" } },
+    { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com", "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" } },
+    {
+      "@type": "WebApplication", "@id": "https://savesortai.com/#app", "name": "SaveSort", "url": "https://savesortai.com/",
+      "description": "Sorts your saved Instagram reels by topic and flags what's worth doing, what needs the video and what's hype. Runs in your browser; nothing is uploaded.",
+      "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "browserRequirements": "Requires a modern web browser with JavaScript",
+      "image": "https://savesortai.com/og.png",
+      "offers": { "@type": "Offer", "name": "Free sorter", "price": "0", "priceCurrency": "AUD" }
+    },
+    {
+      "@type": "FAQPage", "@id": "https://savesortai.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is this allowed by Instagram?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You download your own data with Instagram's official export tool, then choose to open it here. SaveSort never logs into your account, scrapes Instagram or touches anyone else's data." } },
+        { "@type": "Question", "name": "How do I get my saves file?", "acceptedAnswer": { "@type": "Answer", "text": "Open Instagram, then Settings, then Accounts Center. Go to Your information and permissions, then Download your information (some accounts call it Export your information). Choose your Instagram account, Some of your information, and tick Saved. Pick format HTML and create the file. When Instagram emails you, download the zip and drop it straight in. No need to unzip it." } },
+        { "@type": "Question", "name": "HTML or JSON?", "acceptedAnswer": { "@type": "Answer", "text": "Choose HTML. It includes each post's caption, which is what SaveSort reads to sort and flag your saves. JSON only includes links, so everything lands in \"Needs the video\"." } },
+        { "@type": "Question", "name": "Is SaveSort part of Instagram or Meta?", "acceptedAnswer": { "@type": "Answer", "text": "No. SaveSort is independent and isn't affiliated with Instagram or Meta." } }
+      ]
+    }
+  ]
+}
+</script>
+<!--/head-->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1><span class="before">You saved 156 reels.</span>Here are the 30 worth doing.</h1>
+      <p class="lede">SaveSort reads your Instagram saves, sorts them by topic and tells you which are worth doing, which need the video and which are hype. It's free and runs in your browser, so your file is never uploaded.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#try">Sort my saves free</a>
+        <button class="btn btn-ghost" type="button" id="hero-sample">See a sample report</button>
+      </div>
+      <ul class="trust">
+        <li><svg aria-hidden="true"><use href="#i-shield"/></svg>Uses Instagram's own data export</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>No Instagram login</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Nothing uploaded</li>
+      </ul>
+    </div>
+    <div class="board" role="img" aria-label="A Saved tab of 156 reels sorted into four groups: 30 worth doing, 65 that need the video, 10 to be careful with and 22 gated guides">
+      <div class="board-bar"><svg aria-hidden="true"><use href="#i-ribbon"/></svg><span>Saved</span><span class="count num">156 reels, sorted</span></div>
+      <div class="lanes" aria-hidden="true">
+        <div class="lane go">
+          <div class="lane-head"><span class="tag tag-go">Worth doing</span><b class="num">30</b></div>
+          <div class="card" style="--i:0;--dx:120px;--dy:60px;--rot:-7deg">Free AI agent that finds you clients</div>
+          <div class="card" style="--i:4;--dx:60px;--dy:-30px;--rot:5deg">Rank higher on Google Maps</div>
+        </div>
+        <div class="lane thin">
+          <div class="lane-head"><span class="tag tag-thin">Needs the video</span><b class="num">65</b></div>
+          <div class="card" style="--i:1;--dx:-110px;--dy:80px;--rot:6deg">"this is the trick"</div>
+          <div class="card" style="--i:5;--dx:-40px;--dy:20px;--rot:-4deg">"stop coping"</div>
+        </div>
+        <div class="lane warn">
+          <div class="lane-head"><span class="tag tag-warn">Be careful</span><b class="num">10</b></div>
+          <div class="card" style="--i:2;--dx:90px;--dy:-90px;--rot:8deg">"Claude's secret founder mode"</div>
+          <div class="card" style="--i:6;--dx:140px;--dy:-40px;--rot:-6deg">"Clone any store in minutes"</div>
+        </div>
+        <div class="lane gate">
+          <div class="lane-head"><span class="tag tag-gate">Gated guide</span><b class="num">22</b></div>
+          <div class="card" style="--i:3;--dx:-130px;--dy:-70px;--rot:-8deg">"Comment VOICE for the free guide"</div>
+          <div class="card" style="--i:7;--dx:-70px;--dy:-110px;--rot:4deg">"DM me ZERO for the full doc"</div>
+        </div>
+      </div>
+      <div class="board-foot">Real numbers from our founder's own Saved tab, October 2026.</div>
+    </div>
+  </div>
+</section>
+
+<section class="band tight" id="problem">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Saved. Never opened.</h2>
+      <p class="lede">The Saved tab is where good intentions pile up. These are real captions from one person's saves.</p>
+    </div>
+  </div>
+  <div class="graveyard" aria-label="Examples of saved reel captions">
+    <div class="track" id="track1"></div>
+    <div class="track rev" id="track2"></div>
+  </div>
+  <div class="wrap">
+    <div class="trio">
+      <div><h3>"Comment GUIDE"</h3><p>Plenty of useful reels keep the actual method behind a comment or a DM. SaveSort flags them, so you know the steps aren't in the reel before you go back to it.</p></div>
+      <div><h3>Hype dressed as tips</h3><p>"Secret modes" that don't exist, $1,000-a-day claims, grey-area schemes. You get a clear warning instead of a wasted weekend.</p></div>
+      <div><h3>No order</h3><p>AI tools next to gym clips next to tax news. Your saves come back grouped into topics you can work through one at a time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band tight" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Three steps. Most of it is waiting for Instagram's email.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <h3>Ask Instagram for your saves</h3>
+        <p>Instagram emails you a file, usually within a few hours. Choose HTML so the captions are included.</p>
+        <div class="path">Settings, <b>Accounts Center</b>, Your information and permissions, <b>Download your information</b> (or Export your information), Some of your information, <b>Saved</b>, format <b>HTML</b></div>
+      </li>
+      <li class="step">
+        <h3>Drop in the zip</h3>
+        <p>No need to unzip it. SaveSort opens only the saved-posts file inside and ignores everything else in the download.</p>
+        <div class="path">your_instagram_activity/saved/<b>saved_posts.html</b></div>
+      </li>
+      <li class="step">
+        <h3>Get your sorted report</h3>
+        <p>Free: every save sorted and flagged in seconds. Pro: a full breakdown for any save you pick.</p>
+        <div class="path">Worth doing, Needs the video, Be careful, Gated guide</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band try" id="try">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Free, no account needed</p>
+      <h2>Sort your saves in your browser.</h2>
+      <p class="lede">Drop in the zip Instagram emails you, without unzipping it. SaveSort opens only the saved-posts file inside, on your device. No file yet? Load the sample to see a real report.</p>
+    </div>
+    <label class="drop" id="drop" for="file">
+      <svg class="big" aria-hidden="true"><use href="#i-ribbon"/></svg>
+      <h3>Drop your saves file here</h3>
+      <p>The zip Instagram sends you, as is. Or just the saved_posts.html file from inside it.</p>
+      <span class="row">
+        <span class="btn btn-primary" id="choose">Choose file</span>
+        <button class="btn btn-ghost" id="sample" type="button">Load the sample report</button>
+      </span>
+      <span class="privacy-note"><svg aria-hidden="true"><use href="#i-shield"/></svg>Processed on your device. Nothing is uploaded.</span>
+      <span class="err" id="err" hidden></span>
+      <input type="file" id="file" accept=".zip,.html,.htm,.json,application/zip,application/x-zip-compressed,text/html,application/json">
+    </label>
+    <div class="getfile">
+      <div>
+        <p style="margin:0 0 8px"><b>No file yet?</b> Instagram makes it for you, free:</p>
+        <ol>
+          <li>Tick only <b>Saved</b> (under Your Instagram activity)</li>
+          <li>Date range <b>All time</b>, format <b>HTML</b></li>
+          <li>Instagram emails you when the zip is ready. Drop it anywhere on this page</li>
+        </ol>
+      </div>
+      <a class="btn btn-ghost" href="https://accountscenter.instagram.com/info_and_permissions/dyi/" target="_blank" rel="noopener">Get my file from Instagram</a>
+    </div>
+    <div class="report" id="report" hidden>
+      <div class="report-head">
+        <h3 id="r-title">Your saves, sorted</h3>
+        <span class="sample-badge" id="r-sample" hidden>Sample data from one real person's saves</span>
+      </div>
+      <div class="rstats" id="r-stats"></div>
+      <div class="report-body">
+        <div class="topics" id="r-topics"></div>
+        <div>
+          <div class="filters" id="r-filters" role="group" aria-label="Filter by label"></div>
+          <div class="lastrun" id="lastrun"><span id="lastrun-t"></span><button type="button" id="lastrun-clear">Clear it from this device</button></div>
+          <div class="probar" id="probar"><b>Pro is on.</b><span>Tap "Break it down" on any save.</span></div>
+          <div class="items" id="r-items"></div>
+          <div class="more" id="r-more"></div>
+        </div>
+      </div>
+      <div class="upsell" id="upsell">
+        <p><b>Want the steps, not just the sort?</b> Pro writes a breakdown for any save: the tools, how to do it, what it costs and the catch.</p>
+        <a class="btn btn-primary" href="#pricing" id="upsell-btn">Unlock breakdowns for A$1.99 a week</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="breakdowns">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">SaveSort Pro</p>
+      <h2>The reel says "comment for the guide". Pro gives you the steps.</h2>
+      <p class="lede">Three breakdowns of reels from our founder's saves. Pro writes yours with AI from each reel's caption, in the same shape: what it is, the tools, the steps, the cost and the catch.</p>
+    </div>
+    <div class="tabs" role="tablist" id="bd-tabs"></div>
+    <div id="bd-panel" role="tabpanel"></div>
+  </div>
+</section>
+
+<section class="band tight" id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Free to sort. Pro to act.</h2>
+      <p class="lede">Prices are in Australian dollars. The sorter is free for as long as you like, with no limit on saves.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="price"><b class="num">A$0</b><span>forever</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Every save sorted by topic</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Worth doing, Needs the video and Be careful labels</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Gated-guide detector</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Re-sort as often as you like</li>
+          <li class="no"><svg aria-hidden="true"><use href="#i-x"/></svg>Step-by-step breakdowns</li>
+        </ul>
+        <a class="btn btn-ghost" href="#try">Sort my saves free</a>
+      </div>
+      <div class="plan pro">
+        <h3>Pro</h3>
+        <div class="price"><b class="num" id="pro-price">A$1.99</b><span id="pro-per">a week</span></div>
+        <ul>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Everything in Free</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Unlimited breakdowns, for any save</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>The tools, the steps, rough costs and the catch</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>A plain reason when something looks like hype</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Works on new saves every time you re-sort</li>
+        </ul>
+        <a class="btn btn-primary" id="pro-buy" href="#pricing">Get Pro for A$1.99 a week</a>
+        <p class="fine" id="pro-fine">A$1.99 is charged when you sign up and then every week until you cancel. No lock-in: <a href="#" id="pro-manage">manage or cancel</a> any time, and get a full refund if you ask within 14 days of a charge. <a href="/terms">Terms</a> and <a href="/refunds">refunds</a>.</p>
+        <p class="fine"><a href="#" id="pro-paste">Already Pro on another device? Use your Pro code</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band night" id="privacy">
+  <div class="wrap split">
+    <div class="sec-head" style="margin:0">
+      <p class="kicker">Your data</p>
+      <h2>We read one file. That's it.</h2>
+      <p class="lede">Instagram's full export can include your logins, contacts and location history. Drop in the whole zip and SaveSort opens only the saved-posts file inside it. The free sort never leaves your device.</p>
+      <p id="privacy-policy"><a href="/privacy" style="color:#fff;font-weight:650">Read the privacy policy</a></p>
+    </div>
+    <div class="reads">
+      <div class="read-row"><span>Links and captions of your saved posts</span><span class="y">Read on your device</span></div>
+      <div class="read-row"><span>Your Instagram password or login</span><span class="n">Never</span></div>
+      <div class="read-row"><span>Messages, contacts, followers</span><span class="n">Never</span></div>
+      <div class="read-row"><span>Login history and location data</span><span class="n">Never</span></div>
+      <div class="read-row"><span>Your file, on our servers</span><span class="n">Never uploaded</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><h2>Questions</h2></div>
+    <div class="faq">
+      <details><summary>Is this allowed by Instagram?</summary><p>Yes. You download your own data with Instagram's official export tool, then choose to open it here. SaveSort never logs into your account, scrapes Instagram or touches anyone else's data.</p></details>
+      <details><summary>How do I get my saves file?</summary><ol><li>Open Instagram, then Settings, then Accounts Center.</li><li>Go to Your information and permissions, then Download your information. Some accounts call it Export your information.</li><li>Choose your Instagram account, Some of your information, and tick Saved.</li><li>Pick format HTML and create the file.</li><li>When Instagram emails you, download the zip and drop it straight in. No need to unzip it.</li></ol><p>There's a <a href="/blog/download-instagram-saved-posts">longer guide with every screen</a> on the blog.</p></details>
+      <details><summary>HTML or JSON?</summary><p>Choose HTML. It includes each post's caption, which is what SaveSort reads to sort and flag your saves. JSON only includes links, so everything lands in "Needs the video".</p></details>
+      <details><summary>Does it watch the videos?</summary><p>No. The free sort reads each save's caption, and Pro breakdowns are written by AI from the caption too. Reels with almost no caption are labelled "Needs the video" so you know which ones to watch yourself.</p></details>
+      <details><summary>How accurate is the free sort?</summary><p>It sorts by the words in each caption, so it's quick but not perfect. A gym reel that mentions "business" might land in the wrong topic. A Pro breakdown reads the whole caption and can correct the label, but it's AI-written, so check prices and claims before you spend money.</p></details>
+      <details><summary>Does it work for TikTok or YouTube saves?</summary><p>Not yet. Today SaveSort reads Instagram's saved-posts export only.</p></details>
+      <details><summary>Can I cancel Pro?</summary><p>Any time. You keep Pro until the end of the week you've paid for, and you can ask for a full refund within 14 days of a charge. See <a href="/refunds">refunds and cancellations</a>.</p></details>
+      <details><summary>Is SaveSort part of Instagram or Meta?</summary><p>No. SaveSort is independent and isn't affiliated with Instagram or Meta.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="band tight" id="guides">
+  <div class="wrap">
+    <div class="sec-head"><h2>Guides for a full Saved tab</h2></div>
+    <ul class="posts"><!--POSTS--></ul>
+    <a class="more-link" href="/blog/">All guides</a>
+  </div>
+</section>
+
+<section class="band close-band">
+  <div class="wrap">
+    <div class="copy">
+      <h2>Your saves already know what you want to do.</h2>
+      <p>Find out which ones are worth your weekend. It's free, and it takes one file.</p>
+      <a class="btn btn-light" href="#try">Sort my saves free</a>
+    </div>
+    <!--SORTY-->
+  </div>
+</section>
+
+<dialog class="modal" id="pro-dialog"><form method="dialog" id="pro-dialog-body"></form></dialog>
+<div class="dropall" id="dropall">Drop your Instagram zip to sort it</div>

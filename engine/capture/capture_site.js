@@ -11,13 +11,24 @@ const fs = require('fs'), path = require('path');
   const css = `@font-face{font-family:Archivo;src:url("${f('Archivo[wdth,wght].ttf')}");font-weight:100 900;font-stretch:62% 125%}
 @font-face{font-family:"Instrument Sans";src:url("${f('InstrumentSans[wdth,wght].ttf')}");font-weight:400 700;font-stretch:75% 100%}
 @font-face{font-family:"JetBrains Mono";src:url("${f('JetBrainsMono[wght].ttf')}");font-weight:100 800}`;
-  const b = await chromium.launch();
+  const b = await chromium.launch(process.env.CHROME_CHANNEL ? { channel: process.env.CHROME_CHANNEL } : {});
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, reducedMotion: 'reduce' });
   const p = await ctx.newPage();
   await p.route('https://fonts.googleapis.com/**', r => r.fulfill({ contentType: 'text/css', body: css }));
   await p.route('https://fonts.gstatic.com/**', r => r.abort());
   await p.route('https://cdnjs.cloudflare.com/**', r => r.fulfill({ contentType: 'text/javascript', body: '' }));
-  await p.goto('file://' + path.resolve(site));
+  // The site loads /site.css, /app.js and /fonts from its own folder, so serve that folder at a pretend address
+  // (opening the file directly would lose the styles). Nothing leaves this machine.
+  const root = path.dirname(path.resolve(site));
+  const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript', '.woff2': 'font/woff2', '.png': 'image/png' };
+  await p.route('http://savesort.local/**', r => {
+    let u = decodeURIComponent(new URL(r.request().url()).pathname);
+    if (u.endsWith('/')) u += 'index.html'; else if (!path.extname(u)) u += '.html';
+    const file = path.join(root, u);
+    if (!file.startsWith(root) || !fs.existsSync(file)) return r.fulfill({ status: 404, body: '' });
+    r.fulfill({ body: fs.readFileSync(file), contentType: types[path.extname(file)] || 'application/octet-stream' });
+  });
+  await p.goto('http://savesort.local/' + path.basename(site));
   await p.evaluate(() => document.fonts.ready);
   await p.addStyleTag({ content: '#r-items .item p{filter:blur(5px)} .nav{position:static!important} *{scroll-behavior:auto!important}' });
   await p.waitForTimeout(800);
