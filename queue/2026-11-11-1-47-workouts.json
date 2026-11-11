@@ -212,5 +212,35 @@
     "video_id": "OR9TaR06vVQ",
     "url": "https://youtube.com/shorts/OR9TaR06vVQ",
     "posted_at": "2026-11-10T18:57:19+00:00"
+  },
+  "stats": {
+    "instagram": {
+      "views": 21,
+      "reach": 18,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 4.2
+    },
+    "youtube": {
+      "views": 0,
+      "likes": 0,
+      "comments": 0
+    },
+    "tiktok": {
+      "views": 30,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "new_followers": 0,
+      "profile_views": 0,
+      "avg_watch_s": 2.81,
+      "full_watch_rate": 0
+    },
+    "total_views": 51,
+    "total_engagement": 0,
+    "updated": "2026-11-11T07:02:08+00:00"
   }
 }
