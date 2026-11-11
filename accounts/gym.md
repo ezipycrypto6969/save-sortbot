@@ -2,7 +2,7 @@
 
 **Who:** everyday gym-goers and people trying to start: the ones with 200 saved workouts and the same 3 machines every session. Not bodybuilders, not influencers.
 **Promise:** "The workouts you saved, finally done." Simple, safe routines you'll actually follow, and a way to find the ones you saved.
-**Voice:** Sorty as the slightly unfit gym buddy. Dry, encouraging, never body-shaming. No "beast mode" bro talk.
+**Voice:** Sorty as the tiny, locked-in gym rat (deadlifts a phone, PB two phones; see `content/sorty.md`). Dry, encouraging, never body-shaming. No "beast mode" bro talk.
 **Look:** near-black with lime accent (`accounts.json`).
 
 ## Slideshow formats (rotate)

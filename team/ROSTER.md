@@ -53,7 +53,7 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 | 27 | Visual designer | Backgrounds, contrast, colour rhythm (paper/cobalt/ink) | Readable on a phone in sunlight? |
 | 28 | Motion & edit lead | Cuts, zooms, taps on real SaveSort footage | Does movement point the eye at the point? |
 | 29 | Sound designer | Effects that punctuate (no beat, `"music": "sfx"`) | Varied effects, nothing annoying on repeat? |
-| 30 | Character director (Sorty) | Sorty's moods, lines and personality | Is Sorty dry, cheeky, likeable, consistent? |
+| 30 | Character director (Sorty) | Sorty's moods, lines and personality | Does Sorty match `content/sorty.md` (no filter, locked in, roasts the saves not the viewer, right catchphrases)? |
 
 ## D4. Short-form Video & Retention
 
