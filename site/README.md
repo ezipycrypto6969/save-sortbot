@@ -7,8 +7,9 @@
 Secrets (Cloudflare → Workers & Pages → save-sortbot → Settings → Variables and Secrets, type Secret):
 `STRIPE_SECRET_KEY` (restricted, read-only: Checkout Sessions, Subscriptions), `ANTHROPIC_API_KEY`, `TOKEN_SECRET`. Optional `MODEL`.
 
-Stripe: two Payment Links (A$59/year and A$7.99/month), each with a 7-day free trial, "After payment" → redirect to
-`https://savesortai.com/?session_id={CHECKOUT_SESSION_ID}`. Paste both links and the customer-portal login link into `CONFIG` in `public/index.html`.
+Stripe: one Payment Link, **A$1.99 a week** (AUD, weekly subscription, no free trial), "After payment" → redirect to
+`https://savesortai.com/?session_id={CHECKOUT_SESSION_ID}`. Paste the link and the customer-portal login link into `CONFIG` in `public/index.html`.
+The Pro price is A$1.99 a week everywhere (site, Terms, Refunds, Stripe). Never write any other Pro price.
 
 ## SEO (keep this when editing the site)
 

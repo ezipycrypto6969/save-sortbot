@@ -1,4 +1,4 @@
-// GET /api/activate?session_id=cs_... → { code } after a Stripe Checkout (trial or paid) completes.
+// GET /api/activate?session_id=cs_... → { code } after a Stripe Checkout (A$1.99/week Pro) completes.
 import { json, stripe, makeCode, LIVE, allowed } from "../_lib.js";
 
 export async function onRequestGet({ request, env }) {
