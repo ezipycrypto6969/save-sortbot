@@ -146,6 +146,8 @@ Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-
 
 ## Rules (non-negotiable)
 
+- **Label names (owner, 11 Nov 2026):** the four SaveSort labels are now **Do it** (was Worth doing), **Watch it** (was Needs the video), **Skip it** (was Be careful) and **Locked** (was Gated guide). Use them in every `vo`, verdict stamp (`"DO IT"`, `"WATCH IT"`, `"SKIP IT"`, `"LOCKED"`), caption and on-screen text. Real numbers stay: 30 Do it, 65 Watch it, 10 Skip it, 22 Locked, of 156. Re-capture `engine/screens/` with `engine/capture/capture_site.js` once the new site is live, and don't use the old captures after that.
+
 - **True and checkable.** Only real tools, real prices (say AUD or USD), real rules. No invented stats, results, testimonials or user counts. If unsure, leave it out.
 - **No real people's names or handles** from saved reels. Paraphrase a claim in a few words; never copy a creator's caption or footage.
 - **For a global audience.** No country- or state-specific laws, agencies or prices (no "in WA", no Australian acts or government sites). Prices in USD. No financial or legal advice; for anything regulated say "check the rules where you live".
