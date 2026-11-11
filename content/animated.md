@@ -22,8 +22,8 @@ People only comment, send, save or follow when they get something out of it. Eve
 
 14. **One ask per reel, with a real reward.** Pick the one action that fits the reel and say what the viewer gets for doing it.
 15. **Sends beat everything on Instagram.** Build in a "that's so them" moment (the mate with 2,000 gym saves, the partner with 40 recipe reels) and name who to send it to: "Send this to the mate whose saved tab is 4 years of leg days."
-16. **Comments need a payoff.** Ask for something Sorty will actually answer: "Drop the worst reel in your saves. Sorty rates the best ones in a reply video." Only promise replies we will really make (the Ask Sorty format).
-17. **Make them play along inside the reel.** "Do it or Skip it? Call it before the stamp drops." Or a guess with a reveal late in the reel. This gets comments and rewatches without begging.
+16. **Comments need a payoff.** Ask for something Sorty will actually answer or use. Examples: "Comment your most useless save. Sorty stamps the best 3 in Friday's reply video." / "Comment the topic drowning your saves. The top answer picks Sorty's next episode." Only promise replies and episodes we will really make (the Ask Sorty format).
+17. **Make them play along inside the reel.** Examples: "Spot the fake: one of these 3 saves is hype. Pick before Sorty stamps it." / "Count the protein reels that fly past. Answer at the end." / "Which one does Sorty skip? Lock in your pick." Pay it off later in the same reel. This gets comments and rewatches without begging.
 18. **Open a loop in the first 2 seconds and close it at the end.** The reveal is the reward for watching to the end.
 19. **Running jokes make fans.** Bring back The Algorithm, the phone deadlift and the toy car so regulars recognise them and comment about them ("the Algorithm again").
 20. **Follows need a promise that's real.** "Episode 2 Friday: Sorty vs your recipe saves." Only if episode 2 is already made or queued.
@@ -36,9 +36,10 @@ People only comment, send, save or follow when they get something out of it. Eve
 |---|---|---|
 | "Send this to the mate with 2,000 saved gym reels." | send | A laugh at their mate |
 | "Send this to whoever saved 40 recipes and cooked noodles." | send | Roasting a friend |
-| "Do it or Skip it? Call it before the stamp drops." | comment, rewatch | Finding out if they were right |
+| "Spot the fake: one of these 3 saves is hype. Pick before Sorty stamps it." | comment, rewatch | Finding out if they were right |
 | "Guess how many of 156 were worth doing. Answer at the end." | comment, watch to end | The reveal (30) |
-| "Drop the worst reel in your saves. Sorty rates the best ones in a reply." | comment | Getting Sorty's verdict on theirs |
+| "Comment your most useless save. Sorty stamps the best 3 in Friday's reply." | comment | Getting featured and judged by Sorty |
+| "Count the protein reels that fly past. Answer at the end." | comment, rewatch | Checking their count |
 | "Comment the topic your saves are drowning in. Gym, recipes or money?" | comment | Seeing they're not alone; picks the next episode |
 | "Which one's you: 30 Do it, or 65 Watch it?" | comment | Identity, "this is so me" |
 | "Episode 2 Friday: Sorty vs your recipe saves. Follow so you see it." | follow | The next episode (only if it's made) |
