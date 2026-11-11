@@ -472,7 +472,7 @@ section{scroll-margin-top:100px}
 .chip-float small{color:var(--muted);font-size:13px}
 .chip-float .dot{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;flex:none;color:#fff}
 .chip-float .dot svg{width:17px;height:17px}
-.chip-float.c1{left:-26px;top:-2px;animation-delay:-1s}
+.chip-float.c1{left:-58px;top:-22px;animation-delay:-1s}
 .chip-float.c1 .dot{background:linear-gradient(180deg,var(--orange-hot),var(--orange-deep))}
 .chip-float.c2{right:-22px;bottom:-24px;animation-delay:-3.5s}
 .chip-float.c2 .dot{background:linear-gradient(180deg,#6F7DFF,var(--sky))}
