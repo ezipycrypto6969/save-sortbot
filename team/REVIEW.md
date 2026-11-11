@@ -14,7 +14,7 @@ From `team/ROSTER.md`: hook writer (#23), scriptwriter (#24), comedy writer (#25
 | 2. Switch | Scene 2 looks clearly different and arrives by ~1.3 s. |
 | 3. Product | SaveSort or "my saved reels" appears by scene 3, ideally real `screen` footage. |
 | 4. Payoff | There's a real, useful payoff, set up early and delivered late (`payoff`). |
-| 5. Fun | One dry joke that actually lands; Sorty in character. |
+| 5. Fun | One or two jokes that actually land; Sorty in character per `content/sorty.md`. |
 | 6. Ask | One CTA, with a reason the viewer actually gets. |
 | 7. Fit | Works for the general public, on all three platforms; `yt_title` is searchable. |
 | 8. Brief | Matches its slot in `marketing/brief.md` and the rules in `content/lessons.md`. |
