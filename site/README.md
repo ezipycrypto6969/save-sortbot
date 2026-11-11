@@ -10,6 +10,8 @@
 
 ## Adding a blog post
 
+The weekly SEO worker does this by following `SEO.md` in the repo root; these are the mechanics.
+
 1. Copy an existing file in `src/blog/` and rename it. The file name is the address: `src/blog/my-topic.html` becomes `savesortai.com/blog/my-topic`. Never rename a published post (the old link would break).
 2. Fill in the details comment on the first line: `title` (for Google, under 60 characters), `h1` (the headline on the page), `short` (2 to 4 words for the footer), `description` (one sentence, under 160 characters), `date` (YYYY-MM-DD), `readMins`. When you change a post later, add `"updated": "YYYY-MM-DD"`.
 3. Write the post in plain HTML: `<p>`, `<h2>`, `<ul>`, `<ol>`, `<strong>`, `<a>`. Use `<p class="note">` for a boxed note. The headline, date and the "Sort my saves" box at the end are added for you.
@@ -26,6 +28,7 @@ Secrets (Cloudflare → Workers & Pages → save-sortbot → Settings → Variab
 
 ## SEO (keep this when editing the site)
 
+- The build checks the basics and stops if one is broken: title 60 characters or fewer, description 70 to 160, one main heading per page, no two pages with the same title, alt text on every image, and every post linking to the sorter and to another post.
 - The build gives every page its `<title>`, description, canonical address and link-preview tags from the details comment. Every page needs `title` and `description`; every page except the not-found page needs `updated` (or `date` for posts) for the sitemap.
 - `public/og.png` (1200×630) is the picture shown when someone shares savesortai.com. Only true numbers on it (156 saves, 30 worth doing).
 - The home page (`src/pages/index.html`) has JSON-LD structured data (app + FAQ). If you change an FAQ answer that's in the JSON-LD, change it there too. Don't add Pro features or prices to it. Blog posts get their own structured data from the build.

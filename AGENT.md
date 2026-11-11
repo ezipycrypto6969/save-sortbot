@@ -12,6 +12,7 @@ You are the content side of the SaveSort Instagram bot. GitHub Actions posts wha
 5. **Check every reel.** Open `out/<id>/stills/scene-*.png` and look at each one: no text cut off, overflowing or overlapping, stamp not covering the card text, nothing in the bottom 20% or right 150px. Fix the spec (shorter words, fewer items) and rebuild until clean.
 6. Upload videos: `bash engine/publish_media.sh` rebuilds the `media` branch with one `<id>.mp4` per still-queued item (from `out/<id>/reel.mp4`) and force-pushes it. Render any queued item whose video is missing first. Don't commit `out/` to main.
 7. Give every new item a `yt_title` (punchy, under 70 characters, no emoji). Commit the queue JSON files, `content/ideas.md` and any `models/custom.json` changes, then push.
+7b. **SEO worker:** after the reels are queued, follow `SEO.md` from start to finish: one new blog post a week (two at most), old posts kept current, site rebuilt and pushed, `site/seo-log.md` updated.
 8. Message the owner: a short list of next week's posts (date, time, title, panel score) and a reminder that they can delete a queue file to cancel a post or set the repo variable `PAUSED` to `true` to stop all posting.
 
 ## Spec format
@@ -161,6 +162,6 @@ Models: `2026-10-30-2-ai-tutor`, `2026-11-01-1-ai-actor-reviews`, `2026-10-31-1-
 
 - The site is built from `site/src/` by `node site/build.mjs`. Never edit the built pages in `site/public/` by hand. After any change in `site/src/`, run the build and commit `src/` and `public/` together (the build does not run on deploy). Full steps: `site/README.md`.
 - The site must look like a real software company's site: keep the shared header, footer, fonts and colours from `site/public/site.css`. No one-off inline styling for new pages.
-- Blog posts live in `site/src/blog/`, one file per post. Every post follows the content rules above: true and checkable claims, only the real numbers, no real people's names or handles, only features that exist today, no financial, legal or tax advice. Each post answers one question people search for and links to `/#try`.
+- The SEO worker (`SEO.md`) owns the blog and runs weekly as step 7b. Blog posts live in `site/src/blog/`, one file per post. Every post follows the content rules above: true and checkable claims, only the real numbers, no real people's names or handles, only features that exist today, no financial, legal or tax advice. Each post answers one question people search for and links to `/#try`.
 - The site makes no third-party requests (no Google Fonts, no trackers). Don't add any without the owner's say-so.
 - Don't rename the page hooks the reel capture script uses (listed in `site/README.md`).

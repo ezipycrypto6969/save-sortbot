@@ -38,6 +38,28 @@ const tag = k => `<span class="tag ${TAGS[k][0]}">${TAGS[k][1]}</span>`;
   $("#track2").innerHTML = make(QUOTES.slice(half));
 })();
 
+/* hero board: the examples in each group keep changing, like saves being dealt into piles (all real captions, shortened) */
+(function(){
+  const more = {
+    go: ["Free AI agent that finds you clients", "Rank higher on Google Maps", "AI phone receptionist side hustle", "Free satellite data API to practise on"],
+    thin: ['"this is the trick"', '"stop coping"', '"Yoda was right."', '"How to stop AI from being a yes man"'],
+    warn: ['"Claude\'s secret founder mode"', '"Clone any store in minutes"', '"BREAKING: ADHD Executive Function Mode"', '"it\'s a GREY AREA"'],
+    gate: ['"Comment VOICE for the free guide"', '"DM me ZERO for the full doc"', '"Comment PHONE for the full guide"', '"Comment TIER for the ad spy tool"']
+  };
+  const lanes = [...document.querySelectorAll(".lane[data-lane]")];
+  if (!lanes.length || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const at = { go: 2, thin: 2, warn: 2, gate: 2 }; let turn = 0;
+  setInterval(() => {
+    if (document.hidden) return;
+    const lane = lanes[turn++ % lanes.length], k = lane.dataset.lane, cards = lane.querySelectorAll(".card");
+    const card = cards[at[k] % cards.length]; if (!card) return;
+    card.textContent = more[k][at[k]++ % more[k].length];
+    card.classList.remove("swap"); void card.offsetWidth; card.classList.add("swap");
+  }, 1700);
+})();
+/* ticker: repeat the words so the strip loops without a gap */
+(function(){ const t = $("#ticker"); if (t) t.innerHTML = t.innerHTML.repeat(6); })();
+
 /* hero: "See a sample report" loads the sample and jumps to it */
 (function(){ const b = $("#hero-sample"); if (b) b.addEventListener("click", () => $("#sample").click()); })();
 

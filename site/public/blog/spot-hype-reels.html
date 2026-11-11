@@ -84,7 +84,7 @@
 
 <h2>A flag means "check", not "scam"</h2>
 <p>These patterns are warnings, not verdicts. One of the flagged saves had a perfectly good idea underneath the invented feature name: use an AI assistant to pressure-test a business idea before spending money on it. The claim was hype. The habit was useful.</p>
-<p>That's how SaveSort treats them too. The free sort marks these saves <strong>Be careful</strong> so you look twice. It reads captions, so it can miss things or flag a harmless post that happens to use the same words.</p>
+<p>That's how SaveSort treats them too. The <a href="/#try">free sort</a> marks these saves <strong>Be careful</strong> so you look twice. It reads captions, so it can miss things or flag a harmless post that happens to use the same words.</p>
 <p>Related: <a href="/blog/comment-for-the-guide-reels">how "comment GUIDE" reels work</a>.</p>
     <aside class="cta-box"><div><h2>Sort your own saves, free</h2><p>Drop in the file Instagram emails you. It's sorted in your browser and never uploaded.</p></div><a class="btn btn-light" href="/#try">Sort my saves free</a></aside>
   </div>
@@ -110,10 +110,22 @@
         <ul><li><a href="/about">About</a></li><li><a href="mailto:eddieleafe3@gmail.com">Contact</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/terms">Terms</a></li><li><a href="/refunds">Refunds</a></li></ul>
       </div>
     </div>
-    <div class="base"><span>© 2026 SaveSort. Made in Perth, Western Australia.</span><span>Not affiliated with Instagram or Meta.</span></div>
+    <div class="base"><span>© 2026 SaveSort. All rights reserved.</span><span>Not affiliated with Instagram or Meta.</span></div>
   </div>
 </footer>
 
-<script>document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});</script>
+<script>
+document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});
+// Movement: sections slide in as you scroll and numbers count up. Skipped for people who ask for reduced motion.
+(function(){
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  document.documentElement.classList.add("motion");
+  const els=document.querySelectorAll(".sec-head,.steps,.trio>div,.plans>.plan,.reads,.posts>li,#bd-panel,.facts,.faq,.split2>div,.stack,.cta-box,.close-band .copy");
+  els.forEach((el,i)=>{el.classList.add("reveal");const sib=[...el.parentNode.children].filter(x=>x.classList.contains("reveal")).indexOf(el);el.style.setProperty("--d",Math.max(0,sib)*90+"ms")});
+  const count=el=>{const to=+el.dataset.count,t0=performance.now(),d=1100;const tick=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.count)count(e.target);else e.target.classList.add("in")}),{rootMargin:"0px 0px -8% 0px"});
+  els.forEach(el=>io.observe(el));document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+})();
+</script>
 </body>
 </html>

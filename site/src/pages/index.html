@@ -6,7 +6,7 @@
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "WebSite", "@id": "https://savesortai.com/#website", "url": "https://savesortai.com/", "name": "SaveSort", "alternateName": "SaveSort AI", "inLanguage": "en", "publisher": { "@id": "https://savesortai.com/#org" } },
-    { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com", "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" } },
+    { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com" },
     {
       "@type": "WebApplication", "@id": "https://savesortai.com/#app", "name": "SaveSort", "url": "https://savesortai.com/",
       "description": "Sorts your saved Instagram reels by topic and flags what's worth doing, what needs the video and what's hype. Runs in your browser; nothing is uploaded.",
@@ -30,7 +30,7 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <h1><span class="before">You saved 156 reels.</span>Here are the 30 worth doing.</h1>
+      <h1><span class="before">You saved 156 reels.</span>Here are the <span class="swash">30 worth doing.<svg viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 Q100 2 200 10 T396 7"/></svg></span></h1>
       <p class="lede">SaveSort reads your Instagram saves, sorts them by topic and tells you which are worth doing, which need the video and which are hype. It's free and runs in your browser, so your file is never uploaded.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#try">Sort my saves free</a>
@@ -45,23 +45,23 @@
     <div class="board" role="img" aria-label="A Saved tab of 156 reels sorted into four groups: 30 worth doing, 65 that need the video, 10 to be careful with and 22 gated guides">
       <div class="board-bar"><svg aria-hidden="true"><use href="#i-ribbon"/></svg><span>Saved</span><span class="count num">156 reels, sorted</span></div>
       <div class="lanes" aria-hidden="true">
-        <div class="lane go">
-          <div class="lane-head"><span class="tag tag-go">Worth doing</span><b class="num">30</b></div>
+        <div class="lane go" data-lane="go">
+          <div class="lane-head"><span class="tag tag-go">Worth doing</span><b class="num" data-count="30">30</b></div>
           <div class="card" style="--i:0;--dx:120px;--dy:60px;--rot:-7deg">Free AI agent that finds you clients</div>
           <div class="card" style="--i:4;--dx:60px;--dy:-30px;--rot:5deg">Rank higher on Google Maps</div>
         </div>
-        <div class="lane thin">
-          <div class="lane-head"><span class="tag tag-thin">Needs the video</span><b class="num">65</b></div>
+        <div class="lane thin" data-lane="thin">
+          <div class="lane-head"><span class="tag tag-thin">Needs the video</span><b class="num" data-count="65">65</b></div>
           <div class="card" style="--i:1;--dx:-110px;--dy:80px;--rot:6deg">"this is the trick"</div>
           <div class="card" style="--i:5;--dx:-40px;--dy:20px;--rot:-4deg">"stop coping"</div>
         </div>
-        <div class="lane warn">
-          <div class="lane-head"><span class="tag tag-warn">Be careful</span><b class="num">10</b></div>
+        <div class="lane warn" data-lane="warn">
+          <div class="lane-head"><span class="tag tag-warn">Be careful</span><b class="num" data-count="10">10</b></div>
           <div class="card" style="--i:2;--dx:90px;--dy:-90px;--rot:8deg">"Claude's secret founder mode"</div>
           <div class="card" style="--i:6;--dx:140px;--dy:-40px;--rot:-6deg">"Clone any store in minutes"</div>
         </div>
-        <div class="lane gate">
-          <div class="lane-head"><span class="tag tag-gate">Gated guide</span><b class="num">22</b></div>
+        <div class="lane gate" data-lane="gate">
+          <div class="lane-head"><span class="tag tag-gate">Gated guide</span><b class="num" data-count="22">22</b></div>
           <div class="card" style="--i:3;--dx:-130px;--dy:-70px;--rot:-8deg">"Comment VOICE for the free guide"</div>
           <div class="card" style="--i:7;--dx:-70px;--dy:-110px;--rot:4deg">"DM me ZERO for the full doc"</div>
         </div>
@@ -71,7 +71,11 @@
   </div>
 </section>
 
-<section class="band tight" id="problem">
+<div class="ticker" aria-hidden="true">
+  <div class="track" id="ticker"><span>Worth doing</span><span>Needs the video</span><span>Be careful</span><span>Gated guide</span><span>Sorted by topic</span><span>Nothing uploaded</span><span>Free to sort</span></div>
+</div>
+
+<section class="band" id="problem">
   <div class="wrap">
     <div class="sec-head">
       <h2>Saved. Never opened.</h2>
@@ -202,6 +206,7 @@
         <a class="btn btn-ghost" href="#try">Sort my saves free</a>
       </div>
       <div class="plan pro">
+        <span class="flag">Unlimited breakdowns</span>
         <h3>Pro</h3>
         <div class="price"><b class="num" id="pro-price">A$1.99</b><span id="pro-per">a week</span></div>
         <ul>

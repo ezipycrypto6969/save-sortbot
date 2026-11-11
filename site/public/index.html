@@ -33,7 +33,7 @@
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "WebSite", "@id": "https://savesortai.com/#website", "url": "https://savesortai.com/", "name": "SaveSort", "alternateName": "SaveSort AI", "inLanguage": "en", "publisher": { "@id": "https://savesortai.com/#org" } },
-    { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com", "address": { "@type": "PostalAddress", "addressLocality": "Perth", "addressRegion": "WA", "addressCountry": "AU" } },
+    { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com" },
     {
       "@type": "WebApplication", "@id": "https://savesortai.com/#app", "name": "SaveSort", "url": "https://savesortai.com/",
       "description": "Sorts your saved Instagram reels by topic and flags what's worth doing, what needs the video and what's hype. Runs in your browser; nothing is uploaded.",
@@ -79,7 +79,7 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-copy">
-      <h1><span class="before">You saved 156 reels.</span>Here are the 30 worth doing.</h1>
+      <h1><span class="before">You saved 156 reels.</span>Here are the <span class="swash">30 worth doing.<svg viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 Q100 2 200 10 T396 7"/></svg></span></h1>
       <p class="lede">SaveSort reads your Instagram saves, sorts them by topic and tells you which are worth doing, which need the video and which are hype. It's free and runs in your browser, so your file is never uploaded.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#try">Sort my saves free</a>
@@ -94,23 +94,23 @@
     <div class="board" role="img" aria-label="A Saved tab of 156 reels sorted into four groups: 30 worth doing, 65 that need the video, 10 to be careful with and 22 gated guides">
       <div class="board-bar"><svg aria-hidden="true"><use href="#i-ribbon"/></svg><span>Saved</span><span class="count num">156 reels, sorted</span></div>
       <div class="lanes" aria-hidden="true">
-        <div class="lane go">
-          <div class="lane-head"><span class="tag tag-go">Worth doing</span><b class="num">30</b></div>
+        <div class="lane go" data-lane="go">
+          <div class="lane-head"><span class="tag tag-go">Worth doing</span><b class="num" data-count="30">30</b></div>
           <div class="card" style="--i:0;--dx:120px;--dy:60px;--rot:-7deg">Free AI agent that finds you clients</div>
           <div class="card" style="--i:4;--dx:60px;--dy:-30px;--rot:5deg">Rank higher on Google Maps</div>
         </div>
-        <div class="lane thin">
-          <div class="lane-head"><span class="tag tag-thin">Needs the video</span><b class="num">65</b></div>
+        <div class="lane thin" data-lane="thin">
+          <div class="lane-head"><span class="tag tag-thin">Needs the video</span><b class="num" data-count="65">65</b></div>
           <div class="card" style="--i:1;--dx:-110px;--dy:80px;--rot:6deg">"this is the trick"</div>
           <div class="card" style="--i:5;--dx:-40px;--dy:20px;--rot:-4deg">"stop coping"</div>
         </div>
-        <div class="lane warn">
-          <div class="lane-head"><span class="tag tag-warn">Be careful</span><b class="num">10</b></div>
+        <div class="lane warn" data-lane="warn">
+          <div class="lane-head"><span class="tag tag-warn">Be careful</span><b class="num" data-count="10">10</b></div>
           <div class="card" style="--i:2;--dx:90px;--dy:-90px;--rot:8deg">"Claude's secret founder mode"</div>
           <div class="card" style="--i:6;--dx:140px;--dy:-40px;--rot:-6deg">"Clone any store in minutes"</div>
         </div>
-        <div class="lane gate">
-          <div class="lane-head"><span class="tag tag-gate">Gated guide</span><b class="num">22</b></div>
+        <div class="lane gate" data-lane="gate">
+          <div class="lane-head"><span class="tag tag-gate">Gated guide</span><b class="num" data-count="22">22</b></div>
           <div class="card" style="--i:3;--dx:-130px;--dy:-70px;--rot:-8deg">"Comment VOICE for the free guide"</div>
           <div class="card" style="--i:7;--dx:-70px;--dy:-110px;--rot:4deg">"DM me ZERO for the full doc"</div>
         </div>
@@ -120,7 +120,11 @@
   </div>
 </section>
 
-<section class="band tight" id="problem">
+<div class="ticker" aria-hidden="true">
+  <div class="track" id="ticker"><span>Worth doing</span><span>Needs the video</span><span>Be careful</span><span>Gated guide</span><span>Sorted by topic</span><span>Nothing uploaded</span><span>Free to sort</span></div>
+</div>
+
+<section class="band" id="problem">
   <div class="wrap">
     <div class="sec-head">
       <h2>Saved. Never opened.</h2>
@@ -251,6 +255,7 @@
         <a class="btn btn-ghost" href="#try">Sort my saves free</a>
       </div>
       <div class="plan pro">
+        <span class="flag">Unlimited breakdowns</span>
         <h3>Pro</h3>
         <div class="price"><b class="num" id="pro-price">A$1.99</b><span id="pro-per">a week</span></div>
         <ul>
@@ -320,12 +325,12 @@
     <svg class="sorty" viewBox="-40 -10 280 290" role="img" aria-label="Sorty, the SaveSort bookmark mascot">
   <defs><linearGradient id="sortyBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C5CFF"/><stop offset="1" stop-color="#2433D0"/></linearGradient></defs>
   <path d="M30 150 Q0 165 -14 196" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="-14" cy="198" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/>
-  <path d="M170 150 Q204 140 216 108" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="217" cy="104" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/>
+  <g class="arm-wave"><path d="M170 150 Q204 140 216 108" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="217" cy="104" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/></g>
   <path d="M24 22 Q24 6 40 6 H160 Q176 6 176 22 V252 L100 204 L24 252 Z" fill="url(#sortyBody)" stroke="#1C27A8" stroke-width="6" stroke-linejoin="round"/>
   <ellipse cx="58" cy="36" rx="20" ry="9" fill="#fff" opacity=".22" transform="rotate(-18 58 36)"/>
   <circle cx="50" cy="130" r="12" fill="#FF8FA3" opacity=".45"/><circle cx="150" cy="130" r="12" fill="#FF8FA3" opacity=".45"/>
-  <ellipse cx="72" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="74" cy="96" r="11" fill="#10121C"/><circle cx="78" cy="91" r="3.5" fill="#fff"/>
-  <ellipse cx="128" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="130" cy="96" r="11" fill="#10121C"/><circle cx="134" cy="91" r="3.5" fill="#fff"/>
+  <g class="eyes"><ellipse cx="72" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="74" cy="96" r="11" fill="#10121C"/><circle cx="78" cy="91" r="3.5" fill="#fff"/>
+  <ellipse cx="128" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="130" cy="96" r="11" fill="#10121C"/><circle cx="134" cy="91" r="3.5" fill="#fff"/></g>
   <path d="M54 54 Q72 45 90 52M110 52 Q128 45 146 54" stroke="#10121C" stroke-width="8" stroke-linecap="round" fill="none"/>
   <path d="M78 150 Q100 174 122 150" stroke="#10121C" stroke-width="7" stroke-linecap="round" fill="none"/>
 </svg>
@@ -355,10 +360,22 @@
         <ul><li><a href="/about">About</a></li><li><a href="mailto:eddieleafe3@gmail.com">Contact</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/terms">Terms</a></li><li><a href="/refunds">Refunds</a></li></ul>
       </div>
     </div>
-    <div class="base"><span>© 2026 SaveSort. Made in Perth, Western Australia.</span><span>Not affiliated with Instagram or Meta.</span></div>
+    <div class="base"><span>© 2026 SaveSort. All rights reserved.</span><span>Not affiliated with Instagram or Meta.</span></div>
   </div>
 </footer>
 <script src="/app.js"></script>
-<script>document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});</script>
+<script>
+document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});
+// Movement: sections slide in as you scroll and numbers count up. Skipped for people who ask for reduced motion.
+(function(){
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  document.documentElement.classList.add("motion");
+  const els=document.querySelectorAll(".sec-head,.steps,.trio>div,.plans>.plan,.reads,.posts>li,#bd-panel,.facts,.faq,.split2>div,.stack,.cta-box,.close-band .copy");
+  els.forEach((el,i)=>{el.classList.add("reveal");const sib=[...el.parentNode.children].filter(x=>x.classList.contains("reveal")).indexOf(el);el.style.setProperty("--d",Math.max(0,sib)*90+"ms")});
+  const count=el=>{const to=+el.dataset.count,t0=performance.now(),d=1100;const tick=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.count)count(e.target);else e.target.classList.add("in")}),{rootMargin:"0px 0px -8% 0px"});
+  els.forEach(el=>io.observe(el));document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+})();
+</script>
 </body>
 </html>

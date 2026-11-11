@@ -23,6 +23,11 @@ function load(file) {
   let body = raw.slice(m[0].length), head = "";
   body = body.replace(/<!--head-->([\s\S]*?)<!--\/head-->\s*/, (_, h) => { head = h.trim(); return ""; });
   for (const k of ["title", "description"]) if (!meta[k]) throw new Error(file + ": needs \"" + k + "\"");
+  // SEO rules the build enforces (search results cut off anything longer)
+  if (!meta.noindex && meta.title.length > 60) throw new Error(file + ": title is " + meta.title.length + " characters; keep it to 60 or fewer");
+  if (!meta.noindex && (meta.description.length < 70 || meta.description.length > 160)) throw new Error(file + ": description is " + meta.description.length + " characters; keep it between 70 and 160");
+  if (!meta.noindex && (body.match(/<h1[\s>]/g) || []).length > 1) throw new Error(file + ": more than one <h1>");
+  if (/<img(?![^>]*\balt=)/.test(body)) throw new Error(file + ": every <img> needs alt text");
   return { meta, body, head, file };
 }
 
@@ -39,12 +44,12 @@ const ICONS = `<svg width="0" height="0" style="position:absolute" aria-hidden="
 export const SORTY = `<svg class="sorty" viewBox="-40 -10 280 290" role="img" aria-label="Sorty, the SaveSort bookmark mascot">
   <defs><linearGradient id="sortyBody" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C5CFF"/><stop offset="1" stop-color="#2433D0"/></linearGradient></defs>
   <path d="M30 150 Q0 165 -14 196" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="-14" cy="198" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/>
-  <path d="M170 150 Q204 140 216 108" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="217" cy="104" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/>
+  <g class="arm-wave"><path d="M170 150 Q204 140 216 108" stroke="#1C27A8" stroke-width="13" fill="none" stroke-linecap="round"/><circle cx="217" cy="104" r="13" fill="#FFE14A" stroke="#1C27A8" stroke-width="5"/></g>
   <path d="M24 22 Q24 6 40 6 H160 Q176 6 176 22 V252 L100 204 L24 252 Z" fill="url(#sortyBody)" stroke="#1C27A8" stroke-width="6" stroke-linejoin="round"/>
   <ellipse cx="58" cy="36" rx="20" ry="9" fill="#fff" opacity=".22" transform="rotate(-18 58 36)"/>
   <circle cx="50" cy="130" r="12" fill="#FF8FA3" opacity=".45"/><circle cx="150" cy="130" r="12" fill="#FF8FA3" opacity=".45"/>
-  <ellipse cx="72" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="74" cy="96" r="11" fill="#10121C"/><circle cx="78" cy="91" r="3.5" fill="#fff"/>
-  <ellipse cx="128" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="130" cy="96" r="11" fill="#10121C"/><circle cx="134" cy="91" r="3.5" fill="#fff"/>
+  <g class="eyes"><ellipse cx="72" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="74" cy="96" r="11" fill="#10121C"/><circle cx="78" cy="91" r="3.5" fill="#fff"/>
+  <ellipse cx="128" cy="92" rx="23" ry="27" fill="#fff" stroke="#10121C" stroke-width="4"/><circle cx="130" cy="96" r="11" fill="#10121C"/><circle cx="134" cy="91" r="3.5" fill="#fff"/></g>
   <path d="M54 54 Q72 45 90 52M110 52 Q128 45 146 54" stroke="#10121C" stroke-width="8" stroke-linecap="round" fill="none"/>
   <path d="M78 150 Q100 174 122 150" stroke="#10121C" stroke-width="7" stroke-linecap="round" fill="none"/>
 </svg>`;
@@ -124,11 +129,23 @@ ${body.trim()}
         <ul><li><a href="/about">About</a></li><li><a href="mailto:${EMAIL}">Contact</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/terms">Terms</a></li><li><a href="/refunds">Refunds</a></li></ul>
       </div>
     </div>
-    <div class="base"><span>© 2026 SaveSort. Made in Perth, Western Australia.</span><span>Not affiliated with Instagram or Meta.</span></div>
+    <div class="base"><span>© 2026 SaveSort. All rights reserved.</span><span>Not affiliated with Instagram or Meta.</span></div>
   </div>
 </footer>
 ${(meta.scripts || []).map(s => `<script src="${s}"></script>`).join("\n")}
-<script>document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});</script>
+<script>
+document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});
+// Movement: sections slide in as you scroll and numbers count up. Skipped for people who ask for reduced motion.
+(function(){
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  document.documentElement.classList.add("motion");
+  const els=document.querySelectorAll(".sec-head,.steps,.trio>div,.plans>.plan,.reads,.posts>li,#bd-panel,.facts,.faq,.split2>div,.stack,.cta-box,.close-band .copy");
+  els.forEach((el,i)=>{el.classList.add("reveal");const sib=[...el.parentNode.children].filter(x=>x.classList.contains("reveal")).indexOf(el);el.style.setProperty("--d",Math.max(0,sib)*90+"ms")});
+  const count=el=>{const to=+el.dataset.count,t0=performance.now(),d=1100;const tick=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.count)count(e.target);else e.target.classList.add("in")}),{rootMargin:"0px 0px -8% 0px"});
+  els.forEach(el=>io.observe(el));document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+})();
+</script>
 </body>
 </html>
 `;
@@ -187,6 +204,12 @@ function build() {
   </div></header>
   <section class="band tight"><div class="wrap"><ul class="posts two">${posts.map(postCard).join("")}</ul></div></section>` });
 
+  const titles = new Map();
+  for (const p of [...pages, ...posts]) { if (titles.has(p.meta.title)) throw new Error(`${p.file || p.meta.path}: same title as ${titles.get(p.meta.title)}; every page needs its own`); titles.set(p.meta.title, p.file || p.meta.path); }
+  for (const p of posts) {
+    if (!/href="\/#try"/.test(p.body) && !/href="\/"/.test(p.body)) throw new Error(p.file + ": link to the sorter (/#try) somewhere in the post");
+    if (!/href="\/blog\/[a-z0-9-]+"/.test(p.body)) throw new Error(p.file + ": link to at least one other blog post");
+  }
   const all = [...pages, ...posts.map(postPage)];
   for (const p of all) {
     p.body = p.body.replace("<!--POSTS-->", posts.slice(0, 3).map(postCard).join("")).replaceAll("<!--SORTY-->", SORTY).replaceAll("{{EMAIL}}", EMAIL);

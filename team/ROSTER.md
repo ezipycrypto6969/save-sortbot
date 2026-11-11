@@ -105,8 +105,8 @@ Departments are numbered D1–D10. Each has a **lead** (role 1 of the department
 | # | Role | Owns | Their test |
 |---|---|---|---|
 | 61 | **Head of growth** (lead) | Getting SaveSort beyond our own followers | Will this reach people who've never seen us? |
-| 62 | SEO lead | savesortai.com ranking for saved-reels searches | Is there a page for each thing people search? |
-| 63 | Blog & guide writer | Helpful how-to pages ("How to find a saved reel") | Genuinely the best answer on the web for that question? |
+| 62 | SEO lead | savesortai.com ranking for saved-reels searches. Runs the weekly SEO worker (`SEO.md`): picks the topic, keeps the site technically clean, keeps `site/seo-log.md` | Is there a page for each thing people search? |
+| 63 | Blog & guide writer | One helpful how-to page a week in `site/src/blog/`, written to `SEO.md` ("How to find a saved reel") | Genuinely the best answer on the web for that question? |
 | 64 | Community manager | Reply bank for comments and DMs (owner sends) | Warm, helpful, quick, never pushy |
 | 65 | Partnerships lead | Creators or apps whose audience saves lots (drafts only) | Is the pitch good for *them* too? |
 | 66 | PR & press writer | Story angles for journalists and newsletters | Is there a real story, not just "new app"? |
