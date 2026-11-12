@@ -1,0 +1,41 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "menlo",
+        "createdAt": "2026-11-12T22:56:32.659Z",
+        "reason": "Claude: system monospace only for real code (Pro code dialog, inline code in breakdowns), not display type"
+      },
+      {
+        "rule": "shape-assembled-illustration",
+        "value": "*",
+        "files": [
+          "site/build.mjs"
+        ],
+        "createdAt": "2026-11-12T23:04:43.789Z",
+        "reason": "Claude: Sorty is the brand mascot SVG (owner brand commitment)"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "site/public/site.css"
+        ],
+        "createdAt": "2026-11-12T23:04:48.561Z",
+        "reason": "Claude: caption wall has a visible Pause/Play button and pauses on hover/focus (WCAG 2.2.2)"
+      },
+      {
+        "rule": "radial-spotlight-glow",
+        "value": "*",
+        "files": [
+          "site/public/site.css"
+        ],
+        "createdAt": "2026-11-12T23:04:48.645Z",
+        "reason": "Claude: owner brief asks for soft light behind content; text contrast on lit areas measured 5:1+"
+      }
+    ]
+  }
+}

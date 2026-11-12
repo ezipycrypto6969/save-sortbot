@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:00:00+08:00",
+  "title": "Design System: SaveSort",
+  "extensions": {
+    "colorMeta": {
+      "ember": { "role": "primary", "displayName": "Ember Orange", "canonical": "#FF6B1A", "tonalRamp": ["#4A1A02", "#7A2A04", "#B83A06", "#F05A06", "#FF6B1A", "#FF8A3D", "#FFB98F", "#FFE8DA"] },
+      "sorty-blue": { "role": "secondary", "displayName": "Sorty Blue", "canonical": "#4C5CFF", "tonalRamp": ["#10165A", "#1C27A8", "#2433D0", "#3A4BFF", "#4C5CFF", "#7C89FF", "#B8C0FF", "#ECEEFF"] },
+      "night": { "role": "tertiary", "displayName": "Night", "canonical": "#0B1030" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#0D1233" },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#FFFFFF" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings." },
+      "body": { "displayName": "Body", "purpose": "All reading text; 16px floor on phones." },
+      "label": { "displayName": "Label", "purpose": "Do it / Watch it / Skip it / Locked tags." }
+    },
+    "shadows": [
+      { "name": "depth", "value": "0 1px 1px rgba(13,18,51,.04),0 8px 16px -8px rgba(13,18,51,.10),0 30px 60px -24px rgba(13,18,51,.20)", "purpose": "Resting panels and cards." },
+      { "name": "depth-hi", "value": "0 1px 1px rgba(13,18,51,.04),0 18px 36px -14px rgba(13,18,51,.18),0 60px 110px -40px rgba(232,80,10,.32)", "purpose": "Hero product shot, Pro card, hovered cards." },
+      { "name": "ember-glow", "value": "inset 0 1px 0 rgba(255,255,255,.55),0 12px 26px -10px rgba(240,90,6,.75)", "purpose": "Primary buttons only." }
+    ],
+    "motion": [
+      { "name": "ease-settle", "value": "cubic-bezier(.2,.8,.2,1)", "purpose": "Cards settling, reveals, board tilt." },
+      { "name": "reveal", "value": "600ms", "purpose": "Scroll reveal duration." }
+    ],
+    "breakpoints": [
+      { "name": "phone", "value": "390px" }, { "name": "tablet", "value": "768px" }, { "name": "stack", "value": "940px" }, { "name": "desktop", "value": "1440px" }
+    ]
+  },
+  "components": [
+    { "name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "The one action colour.", "html": "<a class=\"ds-btn-primary\" href=\"#\">Sort my saves free</a>", "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:48px;padding:15px 22px;border-radius:999px;font:700 16px/1 Figtree,system-ui,sans-serif;text-decoration:none;color:#0D1233;background:linear-gradient(180deg,#FF8A3D,#FF6B1A 55%,#F05A06);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 12px 26px -10px rgba(240,90,6,.75);transition:transform .15s}.ds-btn-primary:hover{transform:translateY(-2px)}.ds-btn-primary:focus-visible{outline:3px solid #4C5CFF;outline-offset:3px}" },
+    { "name": "Ghost Button", "kind": "button", "refersTo": "button-ghost", "description": "Secondary action, frosted.", "html": "<button class=\"ds-btn-ghost\">See a sample report</button>", "css": ".ds-btn-ghost{min-height:48px;padding:15px 22px;border-radius:999px;font:700 16px/1 Figtree,system-ui,sans-serif;color:#0D1233;background:rgba(255,255,255,.66);border:1px solid rgba(13,18,51,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 6px 18px -10px rgba(13,18,51,.25);cursor:pointer}.ds-btn-ghost:hover{border-color:#0D1233}.ds-btn-ghost:focus-visible{outline:3px solid #4C5CFF;outline-offset:3px}" },
+    { "name": "Label tags", "kind": "chip", "refersTo": "label-do-it", "description": "The four SaveSort labels.", "html": "<span class=\"ds-tag\" style=\"background:#0B7A53\">Do it</span> <span class=\"ds-tag\" style=\"background:#4C5CFF\">Watch it</span> <span class=\"ds-tag\" style=\"background:#C2261C\">Skip it</span> <span class=\"ds-tag\" style=\"background:#855600\">Locked</span>", "css": ".ds-tag{display:inline-flex;padding:5px 10px;border-radius:7px;color:#fff;font:750 12.5px/1 Figtree,system-ui,sans-serif;box-shadow:0 2px 0 rgba(0,0,0,.18)}" },
+    { "name": "Filter chip", "kind": "chip", "refersTo": "chip-filter", "description": "Report filters and tabs.", "html": "<button class=\"ds-chip\" aria-pressed=\"true\">All</button> <button class=\"ds-chip\" aria-pressed=\"false\">Do it</button>", "css": ".ds-chip{min-height:44px;padding:8px 16px;border-radius:999px;border:1px solid #DADDE9;background:#fff;color:#0D1233;font:650 14px Figtree,system-ui,sans-serif;cursor:pointer}.ds-chip[aria-pressed=true]{background:#0D1233;color:#fff;border-color:#0D1233}.ds-chip:focus-visible{outline:3px solid #4C5CFF;outline-offset:3px}" },
+    { "name": "Glass nav", "kind": "nav", "description": "Floating frosted pill header.", "html": "<nav class=\"ds-nav\"><b>SaveSort</b><span>How it works</span><span>Pricing</span></nav>", "css": ".ds-nav{display:flex;gap:24px;align-items:center;height:62px;padding:0 22px;border-radius:999px;background:rgba(255,255,255,.66);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.9);box-shadow:0 10px 30px -14px rgba(13,18,51,.25);font:550 15px Figtree,system-ui,sans-serif;color:#565C78}.ds-nav b{color:#0D1233;font-family:'Bricolage Grotesque',system-ui;margin-right:auto}" },
+    { "name": "Panel card", "kind": "card", "refersTo": "card-panel", "description": "Lifted white panel.", "html": "<div class=\"ds-card\"><h3>Free</h3><p>Every save sorted by topic.</p></div>", "css": ".ds-card{background:#fff;border:1px solid rgba(13,18,51,.08);border-radius:32px;padding:28px;box-shadow:0 1px 1px rgba(13,18,51,.04),0 8px 16px -8px rgba(13,18,51,.10),0 30px 60px -24px rgba(13,18,51,.20)}" }
+  ],
+  "narrative": {
+    "northStar": "Sorted Under Glass",
+    "keyCharacteristics": ["White page; orange (#FF6B1A family) is the only action colour.", "Sorty blue (#4C5CFF) in small parts only, never a full-bleed band.", "Glass and soft shadow on key objects; plain white for reading.", "One tilted product shot of the real sorted report in the hero.", "Responsive layout at 390, 768 and 1440 px. No device mockup pictures.", "Self-hosted fonts, no third-party requests."],
+    "rules": [
+      { "name": "The One Action Colour Rule", "body": "Orange means \"press this\" or \"look here first\". Never use it for decoration that competes with the primary button in the same viewport.", "section": "colors" },
+      { "name": "The Glint Rule", "body": "Sorty Blue never fills a section or a large card. If a blue area is bigger than a label or a button, it's wrong.", "section": "colors" },
+      { "name": "The Ink-on-Ember Rule", "body": "Text on orange is Ink. White text sits only on Ember Text (#C23D06) or darker.", "section": "colors" },
+      { "name": "The Balanced Headline Rule", "body": "Every heading uses text-wrap: balance and negative tracking; no orphaned single words at 390 px.", "section": "typography" },
+      { "name": "The Lifted Not Loud Rule", "body": "Glass and glow on key objects only. Reading text sits on plain Paper.", "section": "elevation" },
+      { "name": "The One Tilt Rule", "body": "Only the hero product shot is tilted in 3D. Everything else sits flat and level.", "section": "elevation" }
+    ]
+  }
+}

@@ -5,3 +5,7 @@ __pycache__/
 *.pyc
 node_modules/
 out_build.log
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+# Impeccable design-hook runtime cache
+.impeccable/hook.cache.json

@@ -70,7 +70,8 @@ function layout({ meta, body, head }, posts) {
 <meta name="description" content="${esc(meta.description)}">
 <link rel="canonical" href="${url}">
 <meta name="robots" content="${meta.noindex ? "noindex" : "index, follow, max-image-preview:large"}">
-<meta name="theme-color" content="#2C3BE3">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
 <meta property="og:type" content="${meta.type === "post" ? "article" : "website"}">
 <meta property="og:site_name" content="SaveSort">
 <meta property="og:url" content="${url}">
@@ -85,7 +86,7 @@ function layout({ meta, body, head }, posts) {
 <meta name="twitter:title" content="${esc(og)}">
 <meta name="twitter:description" content="${esc(meta.ogDescription || meta.description)}">
 <meta name="twitter:image" content="${SITE}/og.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 26'%3E%3Cpath d='M2 4a2 2 0 012-2h14a2 2 0 012 2v20l-9-6.5L2 24z' fill='%232C3BE3'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 26'%3E%3Cpath d='M2 4a2 2 0 012-2h14a2 2 0 012 2v20l-9-6.5L2 24z' fill='%234C5CFF'/%3E%3C/svg%3E">
 <link rel="alternate" type="application/rss+xml" title="SaveSort blog" href="/feed.xml">
 <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
@@ -99,7 +100,7 @@ ${ICONS}
   <div class="wrap">
     <a class="logo" href="/" aria-label="SaveSort home"><svg aria-hidden="true"><use href="#i-ribbon"/></svg>SaveSort</a>
     <ul class="nav-links">${links}</ul>
-    <a class="btn btn-primary btn-s" href="/#try">Sort my saves free</a>
+    <a class="btn btn-primary btn-s" href="/#try">Sort my saves<span class="sr"> free</span></a>
     <details class="menu">
       <summary aria-label="Menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></summary>
       <ul>${links}<li><a href="/#faq">FAQ</a></li></ul>
@@ -135,15 +136,12 @@ ${body.trim()}
 ${(meta.scripts || []).map(s => `<script src="${s}"></script>`).join("\n")}
 <script>
 document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});
-// Movement: sections slide in as you scroll and numbers count up. Skipped for people who ask for reduced motion.
+// Numbers count up once when they come into view. Skipped for people who ask for reduced motion.
 (function(){
   if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
-  document.documentElement.classList.add("motion");
-  const els=document.querySelectorAll(".sec-head,.steps,.trio>div,.plans>.plan,.reads,.posts>li,#bd-panel,.facts,.faq,.split2>div,.stack,.cta-box,.close-band .copy");
-  els.forEach((el,i)=>{el.classList.add("reveal");const sib=[...el.parentNode.children].filter(x=>x.classList.contains("reveal")).indexOf(el);el.style.setProperty("--d",Math.max(0,sib)*90+"ms")});
   const count=el=>{const to=+el.dataset.count,t0=performance.now(),d=1100;const tick=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.count)count(e.target);else e.target.classList.add("in")}),{rootMargin:"0px 0px -8% 0px"});
-  els.forEach(el=>io.observe(el));document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);count(e.target)}),{rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
 })();
 </script>
 </body>
@@ -200,7 +198,7 @@ function build() {
       blogPost: posts.map(p => ({ "@type": "BlogPosting", headline: p.meta.h1, url: SITE + p.meta.path, datePublished: p.meta.date })) }),
     body: `<header class="page-head"><div class="wrap">
     <h1>Guides for people with a full Saved tab</h1>
-    <p class="lede">How to organise your Instagram saves, get them out of the app, and tell a useful reel from a hyped one. Written from what we found in our founder's own saves.</p>
+    <p class="lede">How to organise your Instagram saves, get them out of the app, and tell a useful reel from a hyped one. Written from what we found sorting our sample report: 156 real saved reels.</p>
   </div></header>
   <section class="band tight"><div class="wrap"><ul class="posts two">${posts.map(postCard).join("")}</ul></div></section>` });
 

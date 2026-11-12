@@ -7,7 +7,8 @@
 <meta name="description" content="Terms of service for SaveSort, the free browser tool that sorts your saved Instagram reels. Run by a sole trader in Perth, Western Australia.">
 <link rel="canonical" href="https://savesortai.com/terms">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#2C3BE3">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SaveSort">
 <meta property="og:url" content="https://savesortai.com/terms">
@@ -22,7 +23,7 @@
 <meta name="twitter:title" content="SaveSort Terms of Service">
 <meta name="twitter:description" content="Terms of service for SaveSort, the free browser tool that sorts your saved Instagram reels. Run by a sole trader in Perth, Western Australia.">
 <meta name="twitter:image" content="https://savesortai.com/og.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 26'%3E%3Cpath d='M2 4a2 2 0 012-2h14a2 2 0 012 2v20l-9-6.5L2 24z' fill='%232C3BE3'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 26'%3E%3Cpath d='M2 4a2 2 0 012-2h14a2 2 0 012 2v20l-9-6.5L2 24z' fill='%234C5CFF'/%3E%3C/svg%3E">
 <link rel="alternate" type="application/rss+xml" title="SaveSort blog" href="/feed.xml">
 <link rel="preload" href="/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
@@ -43,7 +44,7 @@
   <div class="wrap">
     <a class="logo" href="/" aria-label="SaveSort home"><svg aria-hidden="true"><use href="#i-ribbon"/></svg>SaveSort</a>
     <ul class="nav-links"><li><a href="/#how">How it works</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about">About</a></li></ul>
-    <a class="btn btn-primary btn-s" href="/#try">Sort my saves free</a>
+    <a class="btn btn-primary btn-s" href="/#try">Sort my saves<span class="sr"> free</span></a>
     <details class="menu">
       <summary aria-label="Menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></summary>
       <ul><li><a href="/#how">How it works</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about">About</a></li><li><a href="/#faq">FAQ</a></li></ul>
@@ -100,15 +101,12 @@
 
 <script>
 document.addEventListener("click",e=>{const m=document.querySelector(".menu");if(m&&m.open&&(!m.contains(e.target)||e.target.closest("a")))m.open=false});
-// Movement: sections slide in as you scroll and numbers count up. Skipped for people who ask for reduced motion.
+// Numbers count up once when they come into view. Skipped for people who ask for reduced motion.
 (function(){
   if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
-  document.documentElement.classList.add("motion");
-  const els=document.querySelectorAll(".sec-head,.steps,.trio>div,.plans>.plan,.reads,.posts>li,#bd-panel,.facts,.faq,.split2>div,.stack,.cta-box,.close-band .copy");
-  els.forEach((el,i)=>{el.classList.add("reveal");const sib=[...el.parentNode.children].filter(x=>x.classList.contains("reveal")).indexOf(el);el.style.setProperty("--d",Math.max(0,sib)*90+"ms")});
   const count=el=>{const to=+el.dataset.count,t0=performance.now(),d=1100;const tick=t=>{const k=Math.min(1,(t-t0)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);if(e.target.dataset.count)count(e.target);else e.target.classList.add("in")}),{rootMargin:"0px 0px -8% 0px"});
-  els.forEach(el=>io.observe(el));document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);count(e.target)}),{rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll("[data-count]").forEach(el=>io.observe(el));
 })();
 </script>
 </body>
