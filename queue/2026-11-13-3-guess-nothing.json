@@ -2,7 +2,7 @@
   "id": "2026-11-13-3-guess-nothing",
   "post_at": "2026-11-13T19:30:00+08:00",
   "format": "guess",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -190,5 +190,28 @@
   },
   "hook_score": 62.6,
   "cover_offset_ms": 4492,
-  "duration": 30.777
+  "duration": 30.777,
+  "posted_at": "2026-11-13T11:26:34+00:00",
+  "media_id": "18182073739431991",
+  "permalink": "https://www.instagram.com/reel/DfrhP_GGHHJ/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "sWYgVzsM-ag",
+    "url": "https://youtube.com/shorts/sWYgVzsM-ag",
+    "posted_at": "2026-11-13T11:26:36+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "1c6605cd0c3c4fb9877af4942126eec6",
+    "submitted_at": "2026-11-13T11:26:41+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7707616068784737557",
+    "message": ""
+  }
 }
