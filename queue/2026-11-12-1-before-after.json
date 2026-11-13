@@ -2,7 +2,7 @@
   "id": "2026-11-12-1-before-after",
   "post_at": "2026-11-12T03:00:00+08:00",
   "format": "before-after",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -224,5 +224,58 @@
   },
   "hook_score": 62.6,
   "cover_offset_ms": 4601,
-  "duration": 32.79
+  "duration": 32.79,
+  "posted_at": "2026-11-11T18:45:18+00:00",
+  "media_id": "18391682806226121",
+  "permalink": "https://www.instagram.com/reel/DfnJ59fDoa_/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "MQdhM9zcPgc",
+    "url": "https://youtube.com/shorts/MQdhM9zcPgc",
+    "posted_at": "2026-11-11T18:45:20+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "a07e496415674f0cba624a91f66ea30a",
+    "submitted_at": "2026-11-11T18:45:26+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7706986895942831361",
+    "message": ""
+  },
+  "stats": {
+    "instagram": {
+      "views": 9,
+      "reach": 8,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 2.1
+    },
+    "youtube": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "tiktok": {
+      "views": 48,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "new_followers": 0,
+      "profile_views": 0,
+      "avg_watch_s": 1.88,
+      "full_watch_rate": 0
+    },
+    "total_views": 58,
+    "total_engagement": 2,
+    "updated": "2026-11-13T07:12:27+00:00"
+  }
 }

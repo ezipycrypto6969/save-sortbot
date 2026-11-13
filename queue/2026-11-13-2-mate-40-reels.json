@@ -2,7 +2,7 @@
   "id": "2026-11-13-2-mate-40-reels",
   "post_at": "2026-11-13T07:00:00+08:00",
   "format": "funny-ad",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -241,5 +241,58 @@
   },
   "hook_score": 80.8,
   "cover_offset_ms": 3109,
-  "duration": 30.674
+  "duration": 30.674,
+  "posted_at": "2026-11-12T22:56:32+00:00",
+  "media_id": "18259549312308586",
+  "permalink": "https://www.instagram.com/reel/DfqLb30DsFE/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "w3mGMR4kVwc",
+    "url": "https://youtube.com/shorts/w3mGMR4kVwc",
+    "posted_at": "2026-11-12T22:56:35+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "072e5c7e3c3c421f855b902bf3f991f0",
+    "submitted_at": "2026-11-12T22:56:43+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7707422762121301300",
+    "message": ""
+  },
+  "stats": {
+    "instagram": {
+      "views": 60,
+      "reach": 57,
+      "likes": 1,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 4.0
+    },
+    "youtube": {
+      "views": 1,
+      "likes": 0,
+      "comments": 0
+    },
+    "tiktok": {
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "new_followers": 0,
+      "profile_views": 0,
+      "avg_watch_s": 3.62,
+      "full_watch_rate": 0
+    },
+    "total_views": 64,
+    "total_engagement": 1,
+    "updated": "2026-11-13T07:12:27+00:00"
+  }
 }

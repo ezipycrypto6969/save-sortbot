@@ -2,7 +2,7 @@
   "id": "2026-11-13-1-do-not-open",
   "post_at": "2026-11-13T03:00:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -242,5 +242,58 @@
   "hook_source": "content/hookgen.py",
   "hook_score": 87.0,
   "cover_offset_ms": 2991,
-  "duration": 30.196
+  "duration": 30.196,
+  "posted_at": "2026-11-12T18:56:49+00:00",
+  "media_id": "17911664781572925",
+  "permalink": "https://www.instagram.com/reel/DfpwAeHkW0P/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "H0n6R9JoKXY",
+    "url": "https://youtube.com/shorts/H0n6R9JoKXY",
+    "posted_at": "2026-11-12T18:56:53+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "5463dea41ab9496296839eadc6128cee",
+    "submitted_at": "2026-11-12T18:57:01+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7707361003356425480",
+    "message": ""
+  },
+  "stats": {
+    "instagram": {
+      "views": 4,
+      "reach": 4,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "avg_watch_s": 7.4
+    },
+    "youtube": {
+      "views": 2,
+      "likes": 0,
+      "comments": 0
+    },
+    "tiktok": {
+      "views": 114,
+      "likes": 4,
+      "comments": 0,
+      "shares": 0,
+      "saved": 2,
+      "new_followers": 0,
+      "profile_views": 0,
+      "avg_watch_s": 3.16,
+      "full_watch_rate": 0.0096
+    },
+    "total_views": 120,
+    "total_engagement": 9,
+    "updated": "2026-11-13T07:12:27+00:00"
+  }
 }

@@ -71,6 +71,7 @@ These are the ways Sorty shows up. The weekly mix of 21 still comes from `conten
 Every format keeps the AGENT.md rules: open on the viewer's saved-reels problem, SaveSort on screen by scene 3, at least 30 s, a CTA with a real reason, ending on savesortai.com / link in bio.
 
 ## Animated reels (owner rule, Nov 2026)
+- **Scriptwriter rules for animated reels are in `content/animated.md`.** Follow them for every Artlist/CapCut episode.
 - Cartoon "scribbly" phone screens are fine, as long as **one real SaveSort screen (about 2 s) stays in as proof**.
 - Use sound effects from `engine/music.py` (our own) or CapCut effects cleared for commercial use. No trending songs or meme sounds.
 - No real people, brands or logos (no real cars, no real creators), even with permission. Sorty is the only famous one.
