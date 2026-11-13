@@ -2,7 +2,7 @@
   "id": "2026-11-14-2-pov-friend-1000",
   "post_at": "2026-11-14T07:00:00+08:00",
   "format": "pov",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "checked_at": "2026-11-08T15:11:12+08:00",
   "voice": "am_onyx*0.55+am_puck*0.45",
@@ -212,5 +212,28 @@
   },
   "hook_score": 81.4,
   "cover_offset_ms": 3511,
-  "duration": 30.099
+  "duration": 30.099,
+  "posted_at": "2026-11-13T22:56:38+00:00",
+  "media_id": "18100661930450848",
+  "permalink": "https://www.instagram.com/reel/DfswPmfjh7E/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "FYnjCq_RC3I",
+    "url": "https://youtube.com/shorts/FYnjCq_RC3I",
+    "posted_at": "2026-11-13T22:56:40+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "29ea69cc1c5e497caa07cae9a7da99ff",
+    "submitted_at": "2026-11-13T22:56:45+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7707793819353369864",
+    "message": ""
+  }
 }
