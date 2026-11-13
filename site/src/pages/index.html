@@ -1,4 +1,4 @@
-<!--{"path":"/","updated":"2026-11-13","title":"SaveSort: sort your saved Instagram reels by topic (free)","description":"SaveSort sorts your saved Instagram reels by topic and tells you which to do, which to watch and which to skip. Free, in your browser.","ogDescription":"You saved 156 reels. Here are the 30 worth doing. SaveSort sorts your saved Instagram reels by topic, free, in your browser. Nothing uploaded.","scripts":["/app.js"]}-->
+<!--{"path":"/","updated":"2026-11-13","title":"SaveSort: sort your saved Instagram reels (free)","description":"SaveSort sorts your saved Instagram reels by niche and type and tells you which to do, which to watch and which to skip. Free, in your browser.","ogDescription":"You saved 156 reels. Here are the 30 worth doing. SaveSort sorts your saved Instagram reels by niche and type, free, in your browser. Nothing uploaded.","scripts":["/app.js"]}-->
 <!--head-->
 <!-- Structured data. If you change an FAQ answer below that is also in here, change it here too. Don't add Pro features or prices to it (see site/README.md). -->
 <script type="application/ld+json">
@@ -9,7 +9,7 @@
     { "@type": "Organization", "@id": "https://savesortai.com/#org", "name": "SaveSort", "url": "https://savesortai.com/", "logo": "https://savesortai.com/og.png", "email": "eddieleafe3@gmail.com" },
     {
       "@type": "WebApplication", "@id": "https://savesortai.com/#app", "name": "SaveSort", "url": "https://savesortai.com/",
-      "description": "Sorts your saved Instagram reels by topic and tells you which to do, which to watch and which to skip. Runs in your browser; nothing is uploaded.",
+      "description": "Sorts your saved Instagram reels by niche and type (how-tos, tools, news, memes) and tells you which to do, which to watch and which to skip. Runs in your browser; nothing is uploaded.",
       "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any (web browser)", "browserRequirements": "Requires a modern web browser with JavaScript",
       "image": "https://savesortai.com/og.png",
       "offers": { "@type": "Offer", "name": "Free sorter", "price": "0", "priceCurrency": "AUD" }
@@ -31,7 +31,7 @@
   <div class="wrap">
     <div class="hero-copy">
       <h1><span class="before">You saved 156 reels.</span>Here are the <span class="swash">30 worth doing.<svg viewBox="0 0 400 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 Q100 2 200 10 T396 7"/></svg></span></h1>
-      <p class="lede">SaveSort reads your Instagram saves, sorts them by topic and tells you which to do, which to watch first and which to skip. It's free and runs in your browser, so your file is never&nbsp;uploaded.</p>
+      <p class="lede">SaveSort reads your Instagram saves, sorts them by niche and type and tells you which to do, which to watch first and which to skip. It's free and runs in your browser, so your file is never&nbsp;uploaded.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#try">Sort my saves free</a>
         <button class="btn btn-ghost" type="button" id="hero-sample">Try a 40-save sample</button>
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <p class="stage-note">Numbers from our sample report: one real Saved tab, October 2026. Every save is sorted by topic; labels go on the saves whose caption gives a reason, and Locked can overlap the&nbsp;others.</p>
+      <p class="stage-note">Numbers from our sample report: one real Saved tab, October 2026. Every save is sorted by niche and type; labels go on the saves whose caption gives a reason, and Locked can overlap the&nbsp;others.</p>
     </div>
   </div>
 </section>
@@ -106,7 +106,7 @@
         <li><span class="tag tag-gate">Locked</span><p><b>The method is gated.</b> "Comment GUIDE" or "DM me" stands between you and the steps.</p></li>
       </ul>
     </div>
-    <p class="legend-foot">Every save is also grouped by topic, from AI tools to gym clips to tax news, so you can work through one thing at a time.</p>
+    <p class="legend-foot">Every save is also sorted two more ways: by niche (AI, fitness, food, money and more) and by type (how-tos, tools and apps, news, motivation, brainrot and memes). Work through one pile at a time.</p>
   </div>
 </section>
 
@@ -129,7 +129,7 @@
       </li>
       <li class="step">
         <h3>Get your sorted report</h3>
-        <p>Free: every save sorted by topic and labelled in seconds. Pro: a full breakdown for any save you pick.</p>
+        <p>Free: every save sorted by niche, type and label in seconds. Pro: a full breakdown for any save you pick.</p>
         <p class="path"><b>Do it</b>, <b>Watch it</b>, <b>Skip it</b>, <b>Locked</b></p>
       </li>
     </ol>
@@ -174,6 +174,7 @@
       <div class="report-body">
         <div class="topics" id="r-topics"></div>
         <div>
+          <div class="filters types" id="r-types" role="group" aria-label="Filter by type"></div>
           <div class="filters" id="r-filters" role="group" aria-label="Filter by label"></div>
           <div class="lastrun" id="lastrun"><span id="lastrun-t"></span><button type="button" id="lastrun-clear">Clear it from this device</button></div>
           <div class="probar" id="probar"><b>Pro is on.</b><span>Tap "Break it down" on any save.</span></div>
@@ -211,7 +212,7 @@
         <h3>Free</h3>
         <div class="price"><b class="num">A$0</b><span>forever</span></div>
         <ul>
-          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Every save sorted by topic</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Every save sorted by niche and type</li>
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>Do it, Watch it and Skip it labels</li>
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>Locked-guide detector ("comment GUIDE" reels)</li>
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>Re-sort as often as you like</li>
@@ -263,7 +264,7 @@
       <details><summary>How do I get my saves file?</summary><ol><li>Open Instagram, then Settings, then Accounts Center.</li><li>Go to Your information and permissions, then Download your information. Some accounts call it Export your information.</li><li>Choose your Instagram account, Some of your information, and tick Saved.</li><li>Pick date range All time and format HTML, then create the file.</li><li>When Instagram emails you, download the zip and drop it straight in. No need to unzip it.</li></ol><p>There's a <a href="/blog/download-instagram-saved-posts">longer guide with every screen</a> on the blog.</p></details>
       <details><summary>HTML or JSON?</summary><p>Choose HTML. It includes each post's caption, which is what SaveSort reads to sort and flag your saves. JSON only includes links, so everything lands in "Watch it".</p></details>
       <details><summary>Does it watch the videos?</summary><p>No. The free sort reads each save's caption, and Pro breakdowns are written by AI from the caption too. Reels with almost no caption are labelled "Watch it" so you know which ones to watch yourself.</p></details>
-      <details><summary>How accurate is the free sort?</summary><p>It sorts by the words in each caption, so it's quick but not perfect. A gym reel that mentions "business" might land in the wrong topic. A Pro breakdown reads the whole caption and can correct the label, but it's AI-written, so check prices and claims before you spend money.</p></details>
+      <details><summary>How accurate is the free sort?</summary><p>It sorts by the words in each caption, so it's quick but not perfect. A gym reel that mentions "business" a lot might land in the wrong niche, and a joke can look like a tip. A Pro breakdown reads the whole caption and can correct the label, but it's AI-written, so check prices and claims before you spend money.</p></details>
       <details><summary>Does it work for TikTok or YouTube saves?</summary><p>Not yet. Today SaveSort reads Instagram's saved-posts export only.</p></details>
       <details><summary>Can I cancel Pro?</summary><p>Any time. You keep Pro until the end of the week you've paid for, and you can ask for a full refund within 14 days of a charge. See <a href="/refunds">refunds and cancellations</a>.</p></details>
       <details><summary>Is SaveSort part of Instagram or Meta?</summary><p>No. SaveSort is independent and isn't affiliated with Instagram or Meta.</p></details>

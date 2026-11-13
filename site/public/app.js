@@ -64,30 +64,65 @@ const tag = k => `<span class="tag ${TAGS[k][0]}">${TAGS[k][1]}</span>`;
 /* hero: "See a sample report" loads the sample and jumps to it */
 (function(){ const b = $("#hero-sample"); if (b) b.addEventListener("click", () => $("#sample").click()); })();
 
-/* classifier */
+/* classifier: every save gets a niche (what it's about), a type (what kind of reel it is) and maybe a label.
+   Niches are scored by how many of their words a caption uses, so "gym clip that mentions business" lands in Fitness. */
 const TOPICS = [
-  ["ECOM","Ecommerce",/\b(e-?com|shopify|dropship|online store|amazon fba|amboras)/i],
-  ["AI","AI & tools",/\b(ai|claude|chatgpt|gpt|gemini|agents?|prompts?|llm|openai|automation|lovable|vibe cod|anthropic)\b/i],
-  ["MKT","Marketing & ads",/\b(ads?|marketing|brand(ing)?|content creation|viral|trend|seo|google (business )?profile|leads?|followers)\b/i],
-  ["MONEY","Money & finance",/\b(tax|invest\w*|stocks?|crypto|billion\w*|wealth|financ\w*|insurance|bank\w*|hedge fund|net worth)\b/i],
-  ["TECH","Tech & privacy",/\b(cyber\w*|hack\w*|linux|python|cod(e|ing)|api|github|privacy|surveillance|sim card|dark ?web|open.?source)\b/i],
-  ["BIZ","Business & side hustles",/\b(business|startup|entrepreneur\w*|side hustle|clients?|customers?|agency|founders?|home services|pressure wash\w*)\b/i],
-  ["LEARN","Learning",/\b(study|learn\w*|explained|psychology|stoic\w*|history|philosoph\w*)\b/i],
-  ["LIFE","Health & lifestyle",/\b(health|sleep|breath\w*|gym|fitness|adhd|nutrition|cleaning|parent\w*|muay thai|screen time)\b/i],
-  ["MIND","Mindset & motivation",/\b(motivation|discipline|mindset|confidence|comfort zone|believe in you|overthinking|focus|procrastinat\w*)\b/i]
+  ["AI","AI & tools",/\b(ai|claude|chatgpt|gpt\w*|gemini|agents?|sub ?agents?|prompts?|llm|openai|automation|lovable|vibe cod\w*|anthropic|copilot|midjourney|skills?)\b/gi],
+  ["TECH","Tech & privacy",/\b(cyber\w*|hack(er|ers|ing)?|linux|python|cod(e|ing)|api|github|privacy|surveillance|sim card|dark ?web|open.?source|iphone|android|laptop|pc build|satellite|internet|tracking|trackers?|cameras?|drones?|spyware|facial recognition)\b/gi],
+  ["ECOM","Ecommerce",/\b(e-?com\w*|shopify|dropship\w*|online store|amazon fba|amboras|etsy|tiktok shop|product research)\b/gi],
+  ["BIZ","Business & side hustles",/\b(business|startup|entrepreneur\w*|side ?hustle\w*|clients?|customers?|agency|founders?|home services|pressure wash\w*|tradie|make ?money ?online|shops?|owner)\b/gi],
+  ["MONEY","Money & finance",/\b(tax|invest\w*|stocks?|crypto|billion\w*|million\w*|wealth|financ\w*|insurance|bank\w*|hedge fund|net worth|budget\w*|sav(e|ing) money|super(annuation)?|rich)\b/gi],
+  ["MKT","Marketing & ads",/\b(ads?|marketing|brand(s|ing)?|content creation|viral|seo|google (business )?profile|leads?|followers|metaads|facebookads|ugc|offer)\b/gi],
+  ["FIT","Fitness & gym",/\b(gym|fitness|workout\w*|lift\w*|squats?|deadlifts?|bench|muscle|gains|cardio|running|protein|bulk\w*|cut(ting)? phase|abs|calisthenics|pilates|yoga|muay thai|boxing)\b/gi],
+  ["FOOD","Food & cooking",/\b(recipes?|cook\w*|bak(e|ing)|meal ?prep|dinner|lunch|breakfast|kitchen|air ?fryer|pasta|chicken|sauce|dessert|snack\w*|foodie|restaurant\w*|coffee)\b/gi],
+  ["LIFE","Health & wellbeing",/\b(health\w*|sleep|breath\w*|adhd|nutrition|micronutrient\w*|metabolism|skin ?care|mental health|anxiety|stress|screen time|dopamine|protocol|supplements?)\b/gi],
+  ["STYLE","Beauty & fashion",/\b(outfits?|fashion|style|makeup|skincare|hair\w*|nails?|fits?|streetwear|sneakers?|grwm|beauty)\b/gi],
+  ["TRAVEL","Travel",/\b(travel\w*|trip|flights?|hotels?|airbnb|holiday|vacation|itinerar\w*|backpack\w*|passport|beach(es)?)\b/gi],
+  ["HOME","Home, DIY & cleaning",/\b(clean(ing)?|declutter\w*|diy|renovat\w*|garden\w*|plants?|decor\w*|furniture|bedroom|apartment|home hacks?|organi[sz](e|ing))\b/gi],
+  ["LOVE","Relationships & dating",/\b(relationships?|dating|date night|boyfriend|girlfriend|partner|marriage|crush|breakup|texting|red flags?|attachment)\b/gi],
+  ["FAMILY","Parenting & family",/\b(parent\w*|kids?|toddler\w*|baby|babies|mum|mom|dad|family|pregnan\w*)\b/gi],
+  ["LEARN","Learning & study",/\b(study|studying|learn\w*|explained|psychology|stoic\w*|history|philosoph\w*|exam\w*|uni(versity)?|school|students?|languages?|tutor|career|resume|job interview)\b/gi],
+  ["MIND","Mindset & motivation",/\b(motivation\w*|discipline\w*|mindset|confidence|comfort zone|believe in you|you got this|overthinking|focus|procrastinat\w*|productiv\w*|self ?improvement|habits?|routine|uncomfortable|self[- ]?(esteem|respect|love)|build (extreme )?confidence)\b/gi],
+  ["PETS","Pets & animals",/\b(dogs?|puppy|puppies|cats?|kittens?|pets?|animals?|vet)\b/gi],
+  ["CARS","Cars",/\b(cars?|car detailing|engine|turbo|jdm|supercar\w*|driving|motorbike\w*|mechanic)\b/gi],
+  ["GAME","Gaming",/\b(gaming|gamer|fortnite|minecraft|roblox|valorant|playstation|xbox|nintendo|steam|fps)\b/gi],
+  ["SPORT","Sport",/\b(football|soccer|nba|nfl|afl|nrl|basketball|cricket|tennis|golf|ufc|f1|formula 1|surf\w*|skate\w*)\b/gi],
+  ["MUSIC","Music",/\b(music|songs?|beats?|producer|guitar|piano|singing|rapper|album|playlist|dj)\b/gi]
 ];
 const OTHER = ["OTHER","Everything else"];
+// Type: what kind of reel it is, whatever the niche. Checked in this order; the first strong match wins.
+const TYPES = [
+  ["NEWS","News & updates",/(🚨|\bbreaking(:| news)|\bjust (announced|launched|released|dropped)\b|\bnew (update|feature|law|rule)s?\b|\bannounced\b|\baccording to\b|\b(study|report|data) (found|finds|shows|says)\b|\bnobody (is )?talking about\b)/i],
+  ["HOWTO","How-to & tips",/(\bhow to\b|\bstep[- ]by[- ]step\b|\bhere'?s how\b|\btutorial\b|\brecipe\b|\b\d+\s+(ways|tips|steps|exercises|habits)\b)/i],
+  ["TOOL","Tools & apps",/(\bgithub\b|\brepo\b|\bapps?\b|\btools?\b|\bextension\b|\bsoftware\b|\bplugin\b|\bopen.?source\b|\bapi\b|\bwebsite\b|\b\w+\.(ai|io|app)\b)/i],
+  ["HOWTO","How-to & tips",/(\bhow to\b|\bstep[- ]by[- ]step\b|\bsteps?\b|\btutorial\b|\bguide\b|\btips?\b|\bways to\b|\bhere'?s how\b|\brecipe\b|\broutine\b|\bmethod\b|\btechnique\b|\bprompts?\b|→|(^|\s)1[.)]\s|\b\d+\s+(ways|tips|steps|things|prompts|skills|tools|habits|exercises)\b)/i],
+  ["STORY","Stories & opinions",/(\bstory ?time\b|\bhot take\b|\bunpopular opinion\b|\bi (quit|spent|tried|tested|used|built|went|made|paid)\b|\bwe (spent|built|tried)\b|\bmy (journey|experience|story)\b|\bhere'?s what happened\b|\blesson\b)/i],
+  ["MOTIV","Motivation & quotes",/(\bbelieve in you\b|\byou got this\b|\bdiscipline\b|\bmotivation\b|\bmindset\b|\bnever give up\b|\bkeep going\b|\bgrind\b|\bwas right\b|💪|❤️)/i],
+  ["MEME","Brainrot & memes",/(\bpov\b|\bme when\b|\bwhen you\b|\bbro\b|\blmf?ao\b|\bbrainrot\b|\bskibidi\b|\brizz\b|\baura\b|\bsigma\b|\bdelulu\b|\bcoping\b|\bno way\b|\bfr\b|\bmeme\b|\brelatable\b|💀|😭|😂|🤣|🤡)/i],
+];
+const UNCLEAR = ["UNCLEAR","Not enough caption"];
+function niche(text){
+  let best = OTHER, top = 0;
+  for (const t of TOPICS) { const hits = new Set((text.match(t[2]) || []).map(m => m.toLowerCase())).size; if (hits > top) { best = t; top = hits; } }
+  return best;
+}
+function kind(text, plain){
+  const meme = TYPES.find(t => t[0] === "MEME");
+  if (meme[2].test(text) && plain.length < 80) return meme;
+  if (plain.length < 25 && !/#\w/.test(text)) return UNCLEAR;  // "this is the trick": the caption doesn't say
+  return TYPES.find(t => t[2].test(text)) || (plain.length < 50 ? UNCLEAR : ["INFO","Info & explainers"]);
+}
 function classify(cap){
   const text = cap || "";
   const plain = text.replace(/#[\wÀ-￿]+/g,"").replace(/\s+/g," ").trim();
-  const topic = (TOPICS.find(t => t[2].test(text)) || OTHER);
+  const topic = niche(text), type = kind(text, plain);
   let label = "";
   const hype = /(secret|breaking|🚨|\$\s?\d[\d,]*k?\s*\/\s*day|get rich|grey area|clone any|changed .{0,20}forever|feature called|nobody (is )?talking|insane method)/i.test(text);
   const gate = /(comment\s+[“"'‘]?[A-Z]{3,}|comment\s+[“"'‘][a-z]+|dm me|link in bio)/i.test(text);
   if (hype) label = "warn";
   else if (plain.length < 50) label = "thin";
   else if (plain.length > 140 && /(step|how to|github|free|prompt|guide|tool|api|→|\b1\.|setup|repo|app\b)/i.test(text)) label = "go";
-  return {topic: topic[0], topicName: topic[1], label, gate, plain};
+  return {topic: topic[0], topicName: topic[1], type: type[0], typeName: type[1], label, gate, plain};
 }
 
 /* parsing */
@@ -126,15 +161,15 @@ function parseJSON(str){
 }
 
 /* report */
-let REPORT = [], fTopic = "all", fLabel = "all";
+let REPORT = [], fTopic = "all", fLabel = "all", fType = "all";
 function buildReport(items, isSample, quiet){
   if (!isSample && !quiet) { rememberReport(items); const lr = document.getElementById("lastrun"); if (lr) lr.classList.remove("on"); }
   REPORT = items.map(x => Object.assign({}, x, classify(x.caption)));
-  fTopic = "all"; fLabel = "all";
+  fTopic = "all"; fLabel = "all"; fType = "all";
   $("#r-sample").hidden = !isSample;
   $("#r-title").textContent = isSample ? `Sample: ${items.length} saves, sorted` : "Your saves, sorted";
   const gates = REPORT.filter(r => r.gate).length;
-  renderStats(); renderTopics(); renderFilters(gates); renderItems();
+  renderStats(); renderTopics(); renderTypes(); renderFilters(gates); renderItems();
   $("#report").hidden = false;
   if (!quiet) $("#report").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start"});
 }
@@ -148,32 +183,40 @@ function renderStats(){
 }
 function renderTopics(){
   const counts = {}; REPORT.forEach(r => { counts[r.topic] = counts[r.topic] || [r.topicName, 0]; counts[r.topic][1]++; });
-  const rows = Object.entries(counts).sort((a,b) => b[1][1]-a[1][1]);
+  const rows = Object.entries(counts).sort((a,b) => (a[0]==="OTHER") - (b[0]==="OTHER") || b[1][1]-a[1][1]);
   const max = rows.length ? rows[0][1][1] : 1;
-  $("#r-topics").innerHTML = `<h4>Topics</h4>` +
-    `<button class="bar" data-t="all" aria-pressed="${fTopic==="all"}"><span>All topics</span><span class="num">${REPORT.length}</span></button>` +
+  $("#r-topics").innerHTML = `<h4>Niches</h4>` +
+    `<button class="bar" data-t="all" aria-pressed="${fTopic==="all"}"><span>All niches</span><span class="num">${REPORT.length}</span></button>` +
     rows.map(([k,[name,n]]) => `<button class="bar" data-t="${k}" aria-pressed="${fTopic===k}"><span>${esc(name)}</span><span class="num">${n}</span><span class="fill"><i style="width:${Math.max(4, n/max*100)}%"></i></span></button>`).join("");
+}
+function renderTypes(){
+  const counts = {}; REPORT.forEach(r => { counts[r.type] = counts[r.type] || [r.typeName, 0]; counts[r.type][1]++; });
+  const rows = Object.entries(counts).sort((a,b) => (a[0]==="UNCLEAR") - (b[0]==="UNCLEAR") || b[1][1]-a[1][1]);
+  $("#r-types").innerHTML = `<span class="row-label">Type</span>` +
+    `<button class="chip" data-k="all" aria-pressed="${fType==="all"}">All types</button>` +
+    rows.map(([k,[name,n]]) => `<button class="chip" data-k="${k}" aria-pressed="${fType===k}">${esc(name)} <span class="n">${n}</span></button>`).join("");
 }
 function renderFilters(gates){
   const opts = [["all","All"],["go","Do it"],["thin","Watch it"],["warn","Skip it"],["gate",`Locked (${gates ?? REPORT.filter(r=>r.gate).length})`]];
-  $("#r-filters").innerHTML = opts.map(([k,v]) => `<button class="chip" data-l="${k}" aria-pressed="${fLabel===k}">${v}</button>`).join("");
+  $("#r-filters").innerHTML = `<span class="row-label">Label</span>` + opts.map(([k,v]) => `<button class="chip" data-l="${k}" aria-pressed="${fLabel===k}">${v}</button>`).join("");
 }
 function renderItems(){
-  const rows = REPORT.filter(r => (fTopic==="all"||r.topic===fTopic) && (fLabel==="all" || (fLabel==="gate" ? r.gate : r.label===fLabel)));
+  const rows = REPORT.filter(r => (fTopic==="all"||r.topic===fTopic) && (fType==="all"||r.type===fType) && (fLabel==="all" || (fLabel==="gate" ? r.gate : r.label===fLabel)));
   const shown = rows.slice(0, 40);
   $("#r-items").innerHTML = shown.length ? shown.map(r => {
     const i = REPORT.indexOf(r);
     const cap = r.plain ? (r.plain.length > 220 ? r.plain.slice(0, 217) + "…" : r.plain) : "No caption in your file.";
     return `<div class="item" data-i="${i}">
-      <div class="meta"><span class="tag tag-topic">${esc(r.topicName)}</span>${r.label?tag(r.label):""}${r.gate?tag("gate"):""}${r.relabeled?`<span class="note">Rating updated by the breakdown</span>`:""}</div>
+      <div class="meta"><span class="tag tag-topic">${esc(r.topicName)}</span><span class="tag tag-topic">${esc(r.typeName)}</span>${r.label?tag(r.label):""}${r.gate?tag("gate"):""}${r.relabeled?`<span class="note">Rating updated by the breakdown</span>`:""}</div>
       <p>${esc(cap)}</p>
       <div class="actions">${IGURL.test(r.url||"")?`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Open reel</a>`:""}${PRO.code&&r.plain?`<button class="locked pro" type="button" data-bd>Break it down</button>`:r.label==="go"||r.gate?`<button class="locked" type="button" data-up><svg aria-hidden="true"><use href="#i-lock"/></svg>Get the breakdown with Pro</button>`:""}</div>
       ${r.bd?bdHTML(r.bd):""}
     </div>`; }).join("") : `<div class="item"><p>No saves match this filter.</p></div>`;
-  $("#r-more").textContent = rows.length > 40 ? `Showing 40 of ${rows.length}. Narrow it down with a topic or label.` : "";
+  $("#r-more").textContent = rows.length > 40 ? `Showing 40 of ${rows.length}. Narrow it down with a niche, type or label.` : "";
 }
 $("#r-topics").addEventListener("click", e => { const b = e.target.closest(".bar"); if (!b) return; fTopic = b.dataset.t; renderTopics(); renderItems(); });
 $("#r-filters").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; fLabel = b.dataset.l; renderFilters(); renderItems(); });
+$("#r-types").addEventListener("click", e => { const b = e.target.closest(".chip"); if (!b) return; fType = b.dataset.k; renderTypes(); renderItems(); });
 $("#r-items").addEventListener("click", e => {
   if (e.target.closest("[data-up]")) { if (CONFIG.link) location.href = CONFIG.link; else $("#upsell").scrollIntoView({behavior:"smooth", block:"center"}); }
   const b = e.target.closest("[data-bd]"); if (b) breakdown(b);

@@ -14,7 +14,7 @@ Their job: turn hundreds of saved reels into a short list of things worth doing,
 
 ## Product Purpose
 
-SaveSort reads the Saved file from Instagram's own data export and sorts every save by topic, with one of four labels: **Do it**, **Watch it**, **Skip it**, **Locked**. Success means a visitor drops in their zip (or loads the sample), sees their saves sorted, and acts on the Do it list. Some go on to Pro for AI breakdowns.
+SaveSort reads the Saved file from Instagram's own data export and sorts every save by niche (AI, fitness, food, money and about 20 more) and by type (How-to & tips, Tools & apps, News & updates, Info & explainers, Motivation & quotes, Brainrot & memes), with one of four labels: **Do it**, **Watch it**, **Skip it**, **Locked**. Success means a visitor drops in their zip (or loads the sample), sees their saves sorted, and acts on the Do it list. Some go on to Pro for AI breakdowns.
 
 ## Positioning
 
@@ -29,7 +29,7 @@ The sorting happens entirely in the visitor's browser. The file is never uploade
 
 ## Capabilities and Constraints
 
-- **Free sorter (live):** sorts by topic, labels Do it / Watch it / Skip it, flags Locked ("comment GUIDE" / DM gating), runs in the browser, no limit, re-sort any time, remembers the last report on the device only.
+- **Free sorter (live):** sorts by niche and by type (how-tos, tools and apps, news, explainers, motivation, brainrot and memes; captions too short to tell are marked "Not enough caption"), labels Do it / Watch it / Skip it, flags Locked ("comment GUIDE" / DM gating), runs in the browser, no limit, re-sort any time, remembers the last report on the device only.
 - **Pro (live):** A$1.99 a week through a Stripe Payment Link, no free trial. AI breakdowns (what it is, tools, steps, cost, the catch) written from a reel's caption with Anthropic's Claude. Pro code to use it on other devices. Cancel any time; full refund within 14 days of a charge.
 - **Does not exist (never promise):** TikTok or YouTube saves, watching videos or transcripts, an app, monthly refresh, accounts.
 - No third-party requests: self-hosted fonts (Bricolage Grotesque, Figtree), no analytics, strict CSP in `site/public/_headers`.
