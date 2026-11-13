@@ -1,0 +1,30 @@
+{
+  "id": "ep01",
+  "title": "A day in the life: Full-time save sorter",
+  "fps": 30,
+  "music": { "src": "ep01/music.mp3", "volume": 0.55, "duck": 0.18 },
+  "hits": [6.2, 13.6, 21.0, 28.4, 36.0],
+  "shots": [
+    { "n": 1, "start": 0.0, "end": 1.2, "kind": "black", "text": "4:59", "camera": "shake", "line": "Got *500* saved reels?", "sfx": ["tap", {"k": "tap", "at": 0.4}], "make": "CapCut-style text (free)", "picture": "Black screen, 4:59 alarm" },
+    { "n": 2, "start": 1.2, "end": 2.6, "src": null, "camera": "push", "line": "I sort them *for a living.*", "sfx": ["drop"], "make": "Clip A", "picture": "Sorty sits up in a bookmark-shaped bed inside a phone" },
+    { "n": 3, "start": 2.6, "end": 4.2, "src": null, "camera": "crash", "line": "Day in the life.", "big": "45,676 new saves", "sfx": ["scroll", {"k": "hook", "at": 0.1}], "make": "Frame", "picture": "Cartoon phone explodes with notifications" },
+    { "n": 4, "start": 4.2, "end": 5.4, "src": null, "camera": "pan", "line": "*Full-time* save sorter.", "sfx": ["tap"], "make": "Real SaveSort screen (screen recording)", "picture": "Real report: Do it 30 / Watch it 65 / Skip it 10 / Locked 22", "real": true },
+    { "n": 5, "start": 5.4, "end": 6.2, "src": null, "camera": "tilt", "line": "5am. *Locked in.*", "sfx": ["hit"], "make": "Clip B", "picture": "Gym, Sorty grips the phone barbell (no cape)" },
+    { "n": 6, "start": 6.2, "end": 8.0, "src": null, "camera": "shake", "line": "PB. *TWO* phones.", "sfx": ["hook", {"k": "mood:shocked", "at": 0.5}], "make": "Clip B", "picture": "Deadlift up, arms shaking" },
+    { "n": 7, "start": 8.0, "end": 9.8, "src": null, "camera": "wobble", "line": "Ice bath. It's a glass. *Don't.*", "sfx": ["drop", {"k": "mood:sad", "at": 0.9}], "make": "Frame", "picture": "Sorty sitting in a glass of water with ice cubes" },
+    { "n": 8, "start": 9.8, "end": 11.6, "src": null, "camera": "pan", "line": "9am. Clients. *Fourteen* sourdough recipes.", "sfx": ["tap", {"k": "tap", "at": 0.6}], "make": "Frame", "picture": "Desk, a client's Saved tab full of sourdough reels" },
+    { "n": 9, "start": 11.6, "end": 12.4, "src": null, "camera": "crash", "line": "Baked *zero.*", "sfx": ["mood:suspicious"], "make": "Same frame, cropped (free)", "picture": "Sorty side-eyes the camera" },
+    { "n": 10, "start": 12.4, "end": 13.6, "src": null, "camera": "push", "line": "Do it or Skip it? *Call it.*", "card": "Make 10k a month from your phone", "sfx": ["cut"], "make": "Frame + card", "picture": "A saved reel card slides in" },
+    { "n": 11, "start": 13.6, "end": 15.0, "src": null, "camera": "shake", "line": "Nope. *Skip it.*", "card": "Make 10k a month from your phone", "stamp": "skip", "stampAt": 0.0, "sfx": ["stamp"], "make": "Stamp (free)", "picture": "SKIP IT stamp slams on the card" },
+    { "n": 12, "start": 15.0, "end": 16.8, "src": null, "camera": "whip", "line": "That's not a guide. *That's a DM trap.*", "card": "Comment GUIDE for the full plan", "stamp": "locked", "stampAt": 0.5, "sfx": ["cut", {"k": "stamp", "at": 0.5}], "make": "Stamp (free)", "picture": "'Comment GUIDE' card, LOCKED stamp" },
+    { "n": 13, "start": 16.8, "end": 19.0, "src": null, "camera": "tilt", "line": "", "sfx": ["riser", {"k": "scroll", "at": 0.8}], "make": "Clip C", "picture": "The Algorithm (smug loading wheel) dumps a pile of reels on the desk" },
+    { "n": 14, "start": 19.0, "end": 21.0, "src": null, "camera": "push", "line": "Oh nah. Oh *NAH.*", "sfx": ["drop"], "make": "Clip C", "picture": "Sorty's head pops out of the pile" },
+    { "n": 15, "start": 21.0, "end": 22.4, "src": null, "camera": "crash", "line": "You're *COOKED.*", "sfx": ["irony"], "make": "Clip C (end)", "picture": "Sorty glares at the Algorithm" },
+    { "n": 16, "start": 22.4, "end": 25.0, "src": null, "camera": "shake", "line": "My own pile: *156.* Only *30* to actually do.", "sfx": ["scroll", {"k": "payoff", "at": 1.6}], "make": "2 frames, fast cuts", "picture": "Speed-sort montage, reels flying into 4 piles" },
+    { "n": 17, "start": 25.0, "end": 28.4, "src": null, "camera": "pan", "line": "Paid per save. *Rate's terrible.*", "sfx": ["cut"], "make": "Frame + zoom", "picture": "Toy car rolls down the desk, tiny sunglasses" },
+    { "n": 18, "start": 28.4, "end": 30.0, "src": null, "camera": "whip", "line": "Vroom vroom. *Still pulled up.*", "sfx": ["hit"], "make": "Same frame (free)", "picture": "Car skids to a stop" },
+    { "n": 19, "start": 30.0, "end": 32.0, "src": null, "camera": "push", "line": "Who saved *ANOTHER* one?", "sfx": ["tap", {"k": "mood:shocked", "at": 0.3}], "make": "Frame", "picture": "In bed, phone buzzes: +1 save" },
+    { "n": 20, "start": 32.0, "end": 36.0, "src": null, "camera": "push", "line": "Got 500 saves? See what's *actually worth doing.* Free.", "sfx": ["riser"], "make": "Reuse outro", "picture": "Sorty pushes the glowing phone at the camera" }
+  ],
+  "end": { "start": 36.0, "end": 37.5, "line": "Sorted. *Now go do one.*", "url": "savesortai.com", "sub": "free · link in bio" }
+}

@@ -2,6 +2,8 @@
 
 These rules are for the Pixar-style reels made in Artlist Studio and edited in CapCut. They come from what made the Trenchies-style animated reels work (fast, loud, a lot of movement). Sorty's personality and limits are in `content/sorty.md`. Every AGENT.md rule still applies.
 
+**How episodes are made:** script as JSON plus pictures, rendered in code by `episodes/` (Remotion). See `episodes/README.md`. CapCut is no longer needed.
+
 ## The 13 rules
 1. **Hook in the first second.** A line about the viewer's saved reels ("Got 500 saved reels?"), with a sound, on frame one.
 2. **A new picture every 1.5–2 seconds.** Aim for 18–22 cuts in 35 seconds. Get extra cuts for free with CapCut punch-ins, crops and re-used frames, not with more paid clips.
