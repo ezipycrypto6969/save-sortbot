@@ -4,7 +4,7 @@
 
 - `src/`: what you edit. `src/pages/` holds the home page, about, privacy, terms, refunds and the not-found page. `src/blog/` holds one file per blog post.
 - `build.mjs`: wraps every file in `src/` in the shared header and footer and writes the finished pages to `public/`. It also writes the blog index, `sitemap.xml` and `feed.xml`. Run it from the repo root: `node site/build.mjs` (no install needed).
-- `public/`: what Cloudflare serves. The pages in here are **built files: don't edit them by hand**, edit `src/` and run the build. Files you do edit directly in `public/`: `site.css` (all styles), `app.js` (the sorter, sample report and Pro), `robots.txt`, `_headers`, `og.png`, `fonts/`.
+- `public/`: what Cloudflare serves. The pages in here are **built files: don't edit them by hand**, edit `src/` and run the build. Files you do edit directly in `public/`: `site.css` (all styles), `app.js` (the sorter, sample report and Pro), `robots.txt`, `llms.txt` (plain fact sheet for AI tools: keep it true, see SEO.md), `_headers`, `og.png`, `fonts/`.
 - `worker.js`: Cloudflare Worker that serves `public/` and the Pro API (`/api/activate`, `/api/breakdown`, code in `functions/`).
 - Deploys automatically to Cloudflare Workers on every push to `main` (config: `wrangler.jsonc` in the repo root). The build does **not** run on deploy, so always commit `src/` and the rebuilt `public/` together.
 

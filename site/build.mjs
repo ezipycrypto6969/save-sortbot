@@ -164,7 +164,16 @@ function postPage(p) {
     { "@type": "BreadcrumbList", itemListElement: [
       { "@type": "ListItem", position: 1, name: "SaveSort", item: SITE + "/" },
       { "@type": "ListItem", position: 2, name: "Blog", item: SITE + "/blog/" },
-      { "@type": "ListItem", position: 3, name: m.h1, item: url } ] } ] });
+      { "@type": "ListItem", position: 3, name: m.h1, item: url } ] },
+    // Optional "faq": [[question, answer], ...] in a post's details. It's shown on the page AND sent as FAQ data,
+    // from the same text, so what search engines and AI tools read always matches what people see.
+    ...(m.faq && m.faq.length ? [{ "@type": "FAQPage", "@id": url + "#faq", mainEntity: m.faq.map(([q, a]) =>
+      ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : []) ] });
+  // Optional "answer": one or two plain sentences that answer the post's question directly, shown first.
+  // Search engines and AI assistants quote this kind of short, self-contained answer.
+  const answer = m.answer ? `<p class="note answer"><strong>Short answer:</strong> ${esc(m.answer)}</p>\n` : "";
+  const faq = m.faq && m.faq.length ? `<h2 id="faq">Questions</h2>\n<div class="faq">${m.faq.map(([q, a]) =>
+    `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>\n` : "";
   p.body = `<article>
   <header class="page-head"><div class="wrap narrow">
     <ol class="crumbs"><li><a href="/">SaveSort</a></li><li><a href="/blog/">Blog</a></li></ol>
@@ -173,8 +182,8 @@ function postPage(p) {
     <p class="byline">By the SaveSort team. ${m.updated && m.updated !== m.date ? "Updated " + niceDate(m.updated) : niceDate(m.date)}, ${m.readMins} min read.</p>
   </div></header>
   <div class="wrap narrow prose">
-${p.body.trim()}
-    <aside class="cta-box"><div><h2>Sort your own saves, free</h2><p>Drop in the file Instagram emails you. It's sorted in your browser and never uploaded.</p></div><a class="btn btn-light" href="/#try">Sort my saves free</a></aside>
+${answer}${p.body.trim()}
+${faq}    <aside class="cta-box"><div><h2>Sort your own saves, free</h2><p>Drop in the file Instagram emails you. It's sorted in your browser and never uploaded.</p></div><a class="btn btn-light" href="/#try">Sort my saves free</a></aside>
   </div>
 </article>`;
   return p;

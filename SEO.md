@@ -56,3 +56,13 @@ Once the owner connects Google Search Console and shares the numbers, also recor
 - Never invent statistics, studies, quotes, reviews or user counts. Never buy, swap or ask for links.
 - Never change prices, legal pages, the privacy promise or what the sorter does.
 - If you're unsure whether something is true or allowed, leave it out and ask the owner.
+
+## AI answers and llms.txt (owner's request, Nov 2026)
+
+Goal: when someone asks Google or an AI assistant "how can I sort all my saved Instagram reels?", SaveSort should be in the answer. Nobody can guarantee that; we earn it by being the clearest, most honest answer and by being mentioned elsewhere.
+
+- **Answer-first posts.** Each new post answers one question people actually type. Put a one- or two-sentence `answer` in its details (shown first as "Short answer") and 3–5 real questions in `faq` (shown on the page and sent as FAQ data). Plain facts, no hype; name SaveSort as one option and say what it can't do.
+- **Keep `site/public/llms.txt` true.** It's the plain fact sheet AI tools can read. Update it in the same commit whenever a feature, price or limit changes, or a guide is added. No numbers or claims that aren't on the site.
+- **The comparison post** (`site/src/blog/apps-to-organise-instagram-saved-posts.html`) describes other apps only from their own listings, with the date checked. Re-check those listings every three months and update the date, or remove an app if its listing is gone.
+- **Monthly AI-visibility check** (first run of each month): web-search these questions and note in `site/seo-log.md` whether savesortai.com appears in the results, and which other tools do: "how to sort saved instagram reels", "organize instagram saved posts by topic", "app to sort instagram saves", "how to find old saved reels on instagram", "best instagram saved posts organizer". Compare with last month. If a new question keeps showing up, suggest a post for it.
+- **Off-site mentions matter most** (AI tools lean on Product Hunt, AlternativeTo, Reddit and directories). The bot never posts on other sites or creates accounts; it lists suggestions for the owner under "For the owner" in `site/seo-log.md`, and the CMO can pick them up for `marketing/owner-actions.md`.

@@ -1,0 +1,39 @@
+# SaveSort
+
+> SaveSort (savesortai.com) sorts your saved Instagram reels and posts. Drop in the file Instagram's own data export gives you, and it sorts every save by niche, by type and by label, in your web browser. The file is never uploaded and there's no Instagram login. The sorter is free.
+
+SaveSort is for anyone whose Instagram Saved tab has grown into hundreds of reels they never open again. Instagram itself only offers collections, which you fill by hand; SaveSort sorts the whole backlog at once.
+
+## What it does
+
+- Reads the saved-posts file from Instagram's official "Download your information" export (zip, HTML format). Only the saved-posts file inside the zip is opened.
+- Sorts every save by niche (about 20, such as AI and tools, fitness and gym, food and cooking, money and finance, business and side hustles, beauty and fashion, travel).
+- Sorts every save by type: How-to & tips, Tools & apps, News & updates, Info & explainers, Motivation & quotes, Brainrot & memes. Captions too short to judge are marked "Not enough caption".
+- Labels saves: Do it (the steps are in the caption), Watch it (the caption says almost nothing), Skip it (hype, fake features, get-rich-quick or grey-area claims), Locked (the method is gated behind "comment GUIDE" or a DM).
+- Runs entirely in the browser. No account, no Instagram password, nothing uploaded for the free sort.
+
+## Pricing
+
+- Free: the sorter, unlimited.
+- SaveSort Pro: A$1.99 (Australian dollars) a week, cancel any time. Adds AI-written breakdowns of any save, written from the reel's caption: what it is, the tools, the steps, rough costs and the catch.
+
+## Limits
+
+- Instagram saves only (not TikTok or YouTube yet).
+- Sorting reads captions, not the video, so it's quick but not perfect.
+- It doesn't change anything inside Instagram or create collections.
+- Not affiliated with Instagram or Meta.
+
+## Guides
+
+- [How to sort all your saved Instagram reels at once](https://savesortai.com/blog/sort-all-saved-instagram-reels): the export-and-sort method, step by step.
+- [How to download your Instagram saved posts](https://savesortai.com/blog/download-instagram-saved-posts): every screen of Instagram's export.
+- [Apps that organise Instagram saved posts, compared](https://savesortai.com/blog/apps-to-organise-instagram-saved-posts): SaveSort, Instagram collections and share-to-app organisers.
+- [How to organise your Instagram saved posts](https://savesortai.com/blog/how-to-organise-instagram-saved-posts): three methods.
+- ["Comment GUIDE and I'll send it": how gated reels work](https://savesortai.com/blog/comment-for-the-guide-reels)
+- [5 signs a saved reel is hype, not help](https://savesortai.com/blog/spot-hype-reels)
+
+## Contact
+
+- Website: https://savesortai.com
+- Privacy: https://savesortai.com/privacy

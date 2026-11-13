@@ -479,3 +479,13 @@ dialog.modal .row{display:flex;flex-wrap:wrap;gap:10px}
 }
 .about{padding-top:clamp(24px,4vw,40px)}
 .center-page .cta-row{justify-content:center}
+
+/* comparison tables: on phones each row becomes a small card, label above each value */
+@media (max-width:640px){
+  .prose table.compare,.prose table.compare tbody,.prose table.compare tr,.prose table.compare td{display:block;width:100%}
+  .prose table.compare tr:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .prose table.compare tr{border:1px solid var(--hair);border-radius:var(--r-m);padding:6px 14px;margin-bottom:12px;background:#fff;box-shadow:var(--depth)}
+  .prose table.compare td{border:0;padding:6px 0}
+  .prose table.compare td:first-child{font-size:18px;padding-top:10px}
+  .prose table.compare td:not(:first-child)::before{content:attr(data-label);display:block;font:650 13px var(--body);color:var(--muted);margin-bottom:2px}
+}
