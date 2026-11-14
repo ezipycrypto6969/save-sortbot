@@ -3,9 +3,9 @@
  "title": "Ep 1: The Gym Bro's Saves",
  "fps": 30,
  "music": {
-  "src": "ep01b/music.wav",
-  "volume": 0.5,
-  "duck": 0.16
+  "src": "ep01b/sound.wav",
+  "volume": 0.6,
+  "duck": 0.2
  },
  "hits": [],
  "shots": [

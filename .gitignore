@@ -13,3 +13,4 @@ out_build.log
 # Episode clips come from the Artlist "Sorty episodes" folder (too big for git); music.wav is rebuilt by tools/build_ep01b.py
 episodes/public/*/clips/
 episodes/public/*/music.wav
+episodes/public/*/sound.wav

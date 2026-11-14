@@ -62,7 +62,7 @@ vo("v19"); fx("hook"); shot(D["v19"] + 0.15, src=C("h"), **{"from": 0.0}, tint="
 fx("hit"); shot(0.9, kind="title", text="FOLLOW FOR EP 2", sub="SORTY VS YOUR RECIPE SAVES", camera="crash")
 vo("v21"); fx("payoff", 0.9); shot(D["v21"] + 0.25, src=C("h"), **{"from": 2.6}, tint="warm")
 end = dict(start=round(t, 2), end=round(t + 1.5, 2), line="Sorted. *Now go do one.*", url="savesortai.com", sub="free · link in bio")
-spec = dict(id="ep01b", title="Ep 1: The Gym Bro's Saves", fps=30, music=dict(src="ep01b/music.wav", volume=0.5, duck=0.16),
+spec = dict(id="ep01b", title="Ep 1: The Gym Bro's Saves", fps=30, music=dict(src="ep01b/sound.wav", volume=0.6, duck=0.2),
             hits=[], shots=shots, end=end, voices=voices, sfxAt=sfx, musicMute=mute, aiTag="AI voice")
 json.dump(spec, open(os.path.join(HERE, "ep01b.json"), "w"), indent=1)
 print("length", end["end"], "shots", len(shots))
