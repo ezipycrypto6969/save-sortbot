@@ -38,3 +38,10 @@ Data: `stats/summary.md` (14 Nov 14:57 Perth). First full week at 3 a day (19 re
 ## Niche accounts
 - Gym, kitchen, hype check: still nothing posted. `accounts/status.json` shows no platforms connected for any of them, and `accounts/summary.md` has no posts. No lessons yet.
 - Until there's data, writers follow `accounts/NICHE.md` and each playbook. Slide 1 must name a concrete situation (main-account lesson), SaveSort release slide stays last, and use the new label names.
+
+## Animated Sorty episodes (owner, 14 Nov 2026)
+- Ep 1 v2 "The Gym Bro's Saves" (posted 14 Nov, 5:50pm) is the best animated reel so far, but not the finished standard yet. Keep improving every episode; keep everything that worked.
+- What worked: a story (stakes, question, twist, rehook) instead of a montage; 8 moving Kling 3 Pro clips started from our Sorty stills (about 4,000 credits); real SaveSort screens as the twist; one-word captions; cool light for the problem, gold for the win; Sorty's usual voice; build it with `episodes/tools/build_ep01b.py` + `node render.mjs`.
+- Music: the owner's own track ("reel sound ai", which he calls the bluewatercandy sound) goes under episodes. Never use someone else's sound.
+- What failed before: stills with zoom = "AI slop". Never again.
+- An animated episode still needs the claims check before posting; the owner can approve it in chat.
