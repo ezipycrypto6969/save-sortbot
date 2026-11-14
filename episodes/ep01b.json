@@ -1,0 +1,557 @@
+{
+ "id": "ep01b",
+ "title": "Ep 1: The Gym Bro's Saves",
+ "fps": 30,
+ "music": {
+  "src": "ep01b/music.wav",
+  "volume": 0.5,
+  "duck": 0.16
+ },
+ "hits": [],
+ "shots": [
+  {
+   "n": 1,
+   "start": 0.0,
+   "end": 1.71,
+   "src": "ep01b/clips/raw_a.mp4",
+   "from": 1.0,
+   "tint": "cool",
+   "camera": "push"
+  },
+  {
+   "n": 2,
+   "start": 1.71,
+   "end": 2.91,
+   "src": "ep01b/clips/raw_a.mp4",
+   "from": 3.8,
+   "camera": "crash",
+   "tint": "cool"
+  },
+  {
+   "n": 3,
+   "start": 2.91,
+   "end": 6.59,
+   "kind": "screen",
+   "screen": {
+    "src": "ep01b/screens/report-all.png",
+    "y0": 0,
+    "y1": 120
+   },
+   "camera": "none",
+   "tag": "REAL SCREEN \u00b7 OUR SAMPLE REPORT"
+  },
+  {
+   "n": 4,
+   "start": 6.59,
+   "end": 7.49,
+   "kind": "title",
+   "text": "EP 1",
+   "sub": "THE GYM BRO'S SAVES",
+   "camera": "crash"
+  },
+  {
+   "n": 5,
+   "start": 7.49,
+   "end": 8.68,
+   "src": "ep01b/clips/raw_b.mp4",
+   "from": 0.0,
+   "camera": "shake",
+   "tint": "cool"
+  },
+  {
+   "n": 6,
+   "start": 8.68,
+   "end": 10.88,
+   "src": "ep01b/clips/raw_b.mp4",
+   "from": 1.3,
+   "card": "4,317 gym reels",
+   "cardLabel": "CLIENT'S SAVED TAB",
+   "tint": "cool",
+   "camera": "push"
+  },
+  {
+   "n": 7,
+   "start": 10.88,
+   "end": 12.55,
+   "src": "ep01b/clips/raw_b.mp4",
+   "from": 3.0,
+   "card": "Leg day: 0",
+   "cardLabel": "CLIENT'S SAVED TAB",
+   "camera": "crash",
+   "tint": "cool"
+  },
+  {
+   "n": 8,
+   "start": 12.55,
+   "end": 13.4,
+   "src": "ep01b/clips/raw_b.mp4",
+   "from": 3.9,
+   "camera": "crash",
+   "tint": "red"
+  },
+  {
+   "n": 9,
+   "start": 13.4,
+   "end": 15.78,
+   "src": "ep01b/clips/raw_b.mp4",
+   "from": 0.2,
+   "tint": "red",
+   "camera": "push"
+  },
+  {
+   "n": 10,
+   "start": 15.78,
+   "end": 17.82,
+   "src": "ep01b/clips/raw_c.mp4",
+   "from": 0.0,
+   "tint": "warm",
+   "camera": "push"
+  },
+  {
+   "n": 11,
+   "start": 17.82,
+   "end": 18.98,
+   "src": "ep01b/clips/raw_d.mp4",
+   "from": 0.0,
+   "camera": "pan"
+  },
+  {
+   "n": 12,
+   "start": 18.98,
+   "end": 19.48,
+   "src": "ep01b/clips/raw_d.mp4",
+   "from": 1.3,
+   "stamp": "skip",
+   "camera": "crash"
+  },
+  {
+   "n": 13,
+   "start": 19.48,
+   "end": 19.98,
+   "src": "ep01b/clips/raw_d.mp4",
+   "from": 2.4,
+   "stamp": "watch",
+   "camera": "crash"
+  },
+  {
+   "n": 14,
+   "start": 19.98,
+   "end": 20.48,
+   "src": "ep01b/clips/raw_d.mp4",
+   "from": 3.5,
+   "stamp": "watch",
+   "camera": "crash"
+  },
+  {
+   "n": 15,
+   "start": 20.48,
+   "end": 21.18,
+   "kind": "title",
+   "text": "THURSDAY",
+   "sub": "11:58 PM",
+   "camera": "crash"
+  },
+  {
+   "n": 16,
+   "start": 21.18,
+   "end": 22.68,
+   "src": "ep01b/clips/raw_e.mp4",
+   "from": 2.9,
+   "camera": "tilt",
+   "tint": "cool"
+  },
+  {
+   "n": 17,
+   "start": 22.68,
+   "end": 24.31,
+   "src": "ep01b/clips/raw_f.mp4",
+   "from": 0.2,
+   "camera": "whip",
+   "big": "EXPORT.ZIP"
+  },
+  {
+   "n": 18,
+   "start": 24.31,
+   "end": 25.51,
+   "kind": "screen",
+   "screen": {
+    "src": "ep01b/screens/drop.png",
+    "y0": 170,
+    "y1": 200
+   },
+   "camera": "none",
+   "tag": "REAL SCREEN \u00b7 SAVESORTAI.COM"
+  },
+  {
+   "n": 19,
+   "start": 25.51,
+   "end": 26.53,
+   "kind": "screen",
+   "screen": {
+    "src": "ep01b/screens/report-all.png",
+    "y0": 0,
+    "y1": 30
+   },
+   "camera": "crash",
+   "tag": "REAL SCREEN \u00b7 OUR SAMPLE REPORT"
+  },
+  {
+   "n": 20,
+   "start": 26.53,
+   "end": 26.88,
+   "src": "ep01b/clips/raw_g.mp4",
+   "from": 0.3,
+   "camera": "crash",
+   "tint": "gold"
+  },
+  {
+   "n": 21,
+   "start": 26.88,
+   "end": 27.23,
+   "src": "ep01b/clips/raw_g.mp4",
+   "from": 1.5,
+   "camera": "crash",
+   "tint": "gold"
+  },
+  {
+   "n": 22,
+   "start": 27.23,
+   "end": 27.58,
+   "src": "ep01b/clips/raw_g.mp4",
+   "from": 2.7,
+   "camera": "crash",
+   "tint": "gold"
+  },
+  {
+   "n": 23,
+   "start": 27.58,
+   "end": 27.93,
+   "src": "ep01b/clips/raw_g.mp4",
+   "from": 3.9,
+   "camera": "crash",
+   "tint": "gold",
+   "stamp": "do"
+  },
+  {
+   "n": 24,
+   "start": 27.93,
+   "end": 29.16,
+   "src": "ep01b/clips/raw_c.mp4",
+   "from": 2.4,
+   "tint": "warm",
+   "camera": "push"
+  },
+  {
+   "n": 25,
+   "start": 29.16,
+   "end": 30.47,
+   "src": "ep01b/clips/raw_c.mp4",
+   "from": 3.6,
+   "camera": "crash",
+   "tint": "gold"
+  },
+  {
+   "n": 26,
+   "start": 30.47,
+   "end": 32.14,
+   "src": "ep01b/clips/raw_g.mp4",
+   "from": 4.2,
+   "card": "1 leg day reel",
+   "cardLabel": "CLIENT'S DO IT LIST",
+   "tint": "gold",
+   "camera": "push"
+  },
+  {
+   "n": 27,
+   "start": 32.14,
+   "end": 35.36,
+   "src": "ep01b/clips/raw_h.mp4",
+   "from": 0.0,
+   "tint": "warm",
+   "camera": "push"
+  },
+  {
+   "n": 28,
+   "start": 35.36,
+   "end": 36.26,
+   "kind": "title",
+   "text": "FOLLOW FOR EP 2",
+   "sub": "SORTY VS YOUR RECIPE SAVES",
+   "camera": "crash"
+  },
+  {
+   "n": 29,
+   "start": 36.26,
+   "end": 37.87,
+   "src": "ep01b/clips/raw_h.mp4",
+   "from": 2.6,
+   "tint": "warm",
+   "camera": "push"
+  }
+ ],
+ "end": {
+  "start": 37.87,
+  "end": 39.37,
+  "line": "Sorted. *Now go do one.*",
+  "url": "savesortai.com",
+  "sub": "free \u00b7 link in bio"
+ },
+ "voices": [
+  {
+   "src": "ep01b/vo/v01.wav",
+   "at": 0.05,
+   "dur": 1.56,
+   "text": "You saved *900* reels."
+  },
+  {
+   "src": "ep01b/vo/v02.wav",
+   "at": 1.76,
+   "dur": 1.0,
+   "text": "You watched *four.*"
+  },
+  {
+   "src": "ep01b/vo/v03.wav",
+   "at": 3.01,
+   "dur": 3.48,
+   "text": "I sorted *156* in seconds. But first, I nearly got *fired.*"
+  },
+  {
+   "src": "ep01b/vo/v05.wav",
+   "at": 7.54,
+   "dur": 1.04,
+   "text": "New client."
+  },
+  {
+   "src": "ep01b/vo/v06.wav",
+   "at": 8.73,
+   "dur": 3.77,
+   "text": "4,317 gym reels. Leg day? *Zero.*"
+  },
+  {
+   "src": "ep01b/vo/v07.wav",
+   "at": 12.6,
+   "dur": 0.62,
+   "text": "*ZERO?!*"
+  },
+  {
+   "src": "ep01b/vo/v08.wav",
+   "at": 13.45,
+   "dur": 2.23,
+   "text": "Sorted by *Friday.* Or you're *fired.*"
+  },
+  {
+   "src": "ep01b/vo/v09.wav",
+   "at": 15.83,
+   "dur": 1.89,
+   "text": "I don't judge. I sort. Then I *judge.*"
+  },
+  {
+   "src": "ep01b/vo/v10.wav",
+   "at": 17.87,
+   "dur": 1.01,
+   "text": "Fine. By *hand.*"
+  },
+  {
+   "src": "ep01b/vo/v13.wav",
+   "at": 21.53,
+   "dur": 0.8,
+   "text": "I'm *cooked.*"
+  },
+  {
+   "src": "ep01b/vo/v14.wav",
+   "at": 22.98,
+   "dur": 1.18,
+   "text": "Wait. The export *ZIP!*"
+  },
+  {
+   "src": "ep01b/vo/v15.wav",
+   "at": 24.41,
+   "dur": 1.92,
+   "text": "Drop it in. Nothing gets *uploaded.* Done."
+  },
+  {
+   "src": "ep01b/vo/v17a.wav",
+   "at": 27.98,
+   "dur": 1.13,
+   "text": "It's Thursday."
+  },
+  {
+   "src": "ep01b/vo/v17b.wav",
+   "at": 29.21,
+   "dur": 1.16,
+   "text": "I'm early. *Locked in.*"
+  },
+  {
+   "src": "ep01b/vo/v18.wav",
+   "at": 30.52,
+   "dur": 1.52,
+   "text": "One leg day in there. *One.*"
+  },
+  {
+   "src": "ep01b/vo/v19.wav",
+   "at": 32.19,
+   "dur": 3.07,
+   "text": "Send this to the mate with *4,000* gym saves and chicken legs."
+  },
+  {
+   "src": "ep01b/vo/v21.wav",
+   "at": 36.31,
+   "dur": 1.36,
+   "text": "Sorted. Now go *do one.*"
+  }
+ ],
+ "sfxAt": [
+  {
+   "k": "hook",
+   "at": 0.0,
+   "v": 0.7
+  },
+  {
+   "k": "irony",
+   "at": 1.71,
+   "v": 0.7
+  },
+  {
+   "k": "scroll",
+   "at": 3.11,
+   "v": 0.7
+  },
+  {
+   "k": "hit",
+   "at": 6.59,
+   "v": 0.7
+  },
+  {
+   "k": "drop",
+   "at": 7.49,
+   "v": 0.7
+  },
+  {
+   "k": "tap",
+   "at": 10.88,
+   "v": 0.7
+  },
+  {
+   "k": "mood-shocked",
+   "at": 12.55,
+   "v": 0.7
+  },
+  {
+   "k": "riser",
+   "at": 14.0,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 16.13,
+   "v": 0.7
+  },
+  {
+   "k": "scroll",
+   "at": 17.82,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 19.03,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 19.53,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 20.03,
+   "v": 0.7
+  },
+  {
+   "k": "tap",
+   "at": 20.48,
+   "v": 0.7
+  },
+  {
+   "k": "mood-sad",
+   "at": 21.18,
+   "v": 0.7
+  },
+  {
+   "k": "cut",
+   "at": 22.68,
+   "v": 0.7
+  },
+  {
+   "k": "mood-shocked",
+   "at": 23.03,
+   "v": 0.7
+  },
+  {
+   "k": "drop",
+   "at": 24.61,
+   "v": 0.7
+  },
+  {
+   "k": "payoff",
+   "at": 26.53,
+   "v": 0.7
+  },
+  {
+   "k": "hit",
+   "at": 26.53,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 26.55,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 26.9,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 27.25,
+   "v": 0.7
+  },
+  {
+   "k": "stamp",
+   "at": 27.6,
+   "v": 0.7
+  },
+  {
+   "k": "mood-smug",
+   "at": 29.16,
+   "v": 0.7
+  },
+  {
+   "k": "payoff",
+   "at": 30.47,
+   "v": 0.7
+  },
+  {
+   "k": "hook",
+   "at": 32.14,
+   "v": 0.7
+  },
+  {
+   "k": "hit",
+   "at": 35.36,
+   "v": 0.7
+  },
+  {
+   "k": "payoff",
+   "at": 37.16,
+   "v": 0.7
+  }
+ ],
+ "musicMute": [
+  [
+   21.179999999999996,
+   22.679999999999996
+  ]
+ ],
+ "aiTag": "AI voice"
+}

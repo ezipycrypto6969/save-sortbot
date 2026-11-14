@@ -18,3 +18,10 @@ Rules: `content/sorty.md` (character), `content/animated.md` (scriptwriter rules
 
 ## Claude Code skills
 The official Remotion agent skills are in `.claude/skills/remotion-*` (installed with `npx skills add remotion-dev/skills`).
+
+## Episode 1 v2 (`ep01b`): real motion
+- `tools/build_ep01b.py` builds `ep01b.json` from a beat list; the timing follows the voice lines, so re-recording a line re-times the edit. It also writes our own music bed (`engine/music.py`).
+- New shot fields: `from` (seconds into a clip), `tint` (`cool` problem / `warm` / `red` / `gold` win), `kind: "title"` (`text` + `sub`), `kind: "screen"` with `screen: {src, y0, y1}` (a real SaveSort screenshot scrolled inside a phone), `tag`, `cardLabel`.
+- Top-level `voices` (captions are built from these, one word at a time, `*word*` = yellow), `sfxAt`, `musicMute` and `aiTag`.
+- Clips: download the episode's videos from the Artlist folder "Sorty episodes" into `public/ep01b/clips/raw_a.mp4 … raw_h.mp4` (not in git; too big).
+- Render: `node render.mjs ep01b`.

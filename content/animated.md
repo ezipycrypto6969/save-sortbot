@@ -16,7 +16,7 @@ These rules are for the Pixar-style reels made in Artlist Studio and edited in C
 9. **Same outro every time:** Sorty pushes the glowing phone at the camera, "Sorted. Now go do one.", savesortai.com / link in bio. It lands on the last music hit.
 10. **Length:** 30–40 seconds.
 11. **Script format:** a table with Time | Picture | Camera | Sorty says (and how) | SFX | Music | Make it with. Mark the music hits.
-12. **Cost cap:** at most 3 new Artlist video clips per episode (about 2,500 credits each). Everything else is still frames (about 130 credits) or free CapCut edits. Show the owner the frames before making any clips.
+12. **Cost cap (owner approved 14 Nov 2026):** up to 8 moving clips per episode, made with Kling 3 Pro 1080p image-to-video (5 s, no audio, about 500 credits each, so about 4,000 credits an episode). Start frames are Sorty stills (about 90 credits each, reuse them). Never hold a still picture on screen. Always quote the price and get the owner's OK before generating.
 13. **Never copy Trenchies itself:** no slogans, sounds or characters. No real people, brands or logos. A real creator can appear only in a real collab where they film their own part, and only if the owner changes the no-real-people rule first.
 
 ## Getting people to interact (owner, 11 Nov 2026)
