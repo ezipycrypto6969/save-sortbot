@@ -1,81 +1,82 @@
-# Marketing brief, week of Mon 9 Nov 2026 (by the CMO)
+# Marketing brief, week of Mon 16 Nov 2026 (by the CMO)
 
-Written Sat 7 Nov from `content/lessons.md` (analyst, today), `stats/summary.md` (07 Nov 14:32 Perth) and reports from all nine departments (D2–D10). Order of authority: AGENT.md → CHECKER.md → lessons.md → this brief.
+Written Sat 14 Nov from `content/lessons.md` (analyst, today), `stats/summary.md` (14 Nov 14:57 Perth) and reports from all nine departments (D2–D10). Order of authority: AGENT.md → CHECKER.md → lessons.md → this brief.
 
-**⚠ The queue is empty.** 0 queue files are `queued`. The last reel went out Fri 6 Nov at 19:30, so nothing posts until the Sunday writer fills the queue. Writer: if your 7-day window starts Sun 8 Nov, use Sunday 15's row for Sunday 8 and carry on from Monday.
+**⚠ Two things before Sunday's writer run.**
+1. **Old label names everywhere.** 0 of 19 reels this week used Do it / Watch it / Skip it / Locked, and the 3 still-queued reels (Sat 19:30 `watch-it-sort`, Sun 03:00 `22-gated`, Sun 07:00 `lost-found-closes`) say "worth doing / be careful / gated guides". `engine/screens/` (7 Nov captures) still show the old chips. The site already shows the new names. Writer: re-capture the screens with `engine/capture/capture_site.js` **only with the real 156-save export** (4th argument). Without it the script uses the 40-caption sample, which must never be shown as the 156. If the file isn't there, keep the old screens and don't put a label name on screen over a chip that disagrees (say the number, not the label). Owner to-do #2.
+2. **Slots.** 3 queued. Sun 15 19:30 is empty, and so is all of Mon 16–Sun 22. The writer's 7 days = the 21 rows below (Sun 15 19:30 → Sun 22 07:00).
 
 ## Scorecard
-- Reels posted in the last 7 days (11): **1,670 views**, median 139. The 9 older reels: 648 views, median 52. Most of the gain is TikTok's flat ~70–135 per reel, but Instagram is up too (median 37 vs 16 views; median IG avg watch 4.5 s vs 2.2 s).
-- Median % watched: **~5%**, flat. People still leave in the first 1–2 s.
-- Best: `guess-30` "I saved 156 reels. Guess how many were worth doing" (286 views, 115 IG, 5.8 s). Worst: `proof-sells` (16 views).
-- Inside the week it's slipping: the 5 one-a-day reels since 2 Nov got a median of 37 IG views, vs 49 for 30 Oct–1 Nov.
-- Site/sorter signal: **unknown**. No link clicks, visits or sorter runs are tracked. 0 follows and 0 profile views from any reel.
+- **19 reels posted 8–14 Nov: 2,546 views** (last week 11 reels, 1,670). Median per reel 115 vs 139, but that's age: comparing only reels 3+ days old it's flat (156 vs 155.5). Instagram median 34 vs 37; IG avg watch 4.0 s vs 4.5 s. (D8 checked.)
+- Median % watched: **~6%** (last week ~5%). Mostly TikTok, which gives 49% of views and holds 1.9 s median.
+- Best: `guess-useful` "I saved 156 Instagram reels. How many were actually useful?" 241 views (129 IG, 5.3 s). Worst: `pov-friend-1000` 29 (0 days old); worst judged `lost-and-found` 75.
+- By style (median views): base 196, crazy-hook 147 (1 reel, best TikTok hold ever, 5.0 s), before-after 63, exp-pov 60.5, funny-ad 78.
+- YouTube: the 7 reels with a how-to `yt_title` had a YT median of 60; the other 11 had 3.
+- Site/sorter signal: **unknown**. Clicks and sorter runs aren't tracked. 0 profile views, 1 follower ever on TikTok.
 
 ## The bottleneck
-**People leave before second 3.** Concrete openers with Sorty talking held Instagram viewers ~6 s (`watch-it-sort`, `junk-drawer-fix`, `guess-30`, `find-that-reel`: 70–121 IG views). Metaphor and still-title openers held 1.1–3.7 s (27–46 IG views). Nothing further down the funnel matters until people stay. The site mismatch (owner to-do #2) is the next leak after that.
+**People leave in the first 2 seconds unless scene 1 hands *them* a job.** Openers that ask the viewer something about their own saves held: guess reels 4.9–5.8 s on IG; `do-not-open` ("Seriously.") 5.0 s and `47-workouts` ("Be honest.") 4.3 s on TikTok. Openers about someone else, or a set-up bit, didn't: `pov-friend-1000` 5 IG views / 1.8 s, `lost-and-found` 1.7 s, every other TikTok 0.9–2.9 s. D4 found scene 1 says 6–8 words (~2–3 s), so the first cut comes after most viewers have gone. The second leak is that nobody moves on (0 profile views); that waits until people stay.
 
-## This week's campaign: "Sorty's Lost & Found"
-Every reel is Sorty helping someone find a thing they saved and lost: a workout, a recipe, a gift idea, a money tip, the 30 worth doing. Everyone has lost a saved reel, so it's general public, not tech. It forces concrete openers ("You saved a workout. Where?"), it answers a real search (`find-that-reel` got the most YouTube views ever, 77), and it ends in the same payoff: sort yours free and find yours. The two guess reels are the week's "big reveal" episodes.
+## This week's campaign: "What's your number?"
+Every reel is about the viewer's own saves and pays off with one real number from our sample report: 30 Do it, 65 Watch it, 10 Skip it, 22 Locked, of 156. The three guess reels (Mon, Wed, Fri at 19:30) are the big reveals; the other reels ask "how many of yours…?" and end on "What's your number? Find out free." It also teaches the four new label names to anyone who sees 2–3 reels. Everyone has a pile of saves, so it fits the general public, not tech people.
 
 ## Slot plan (the writer follows this)
-Times are Perth. ★ = the 3 strongest concepts. Mix: base 13, funny-ad 4, exp-pov 2, exp-before-after 1, exp-crazy-hook 1 = 21, matching lessons.md. No part 1 → part 2 pairs this week (Instagram removed linked reels on 28 Oct, and nothing is promised). Trial `-b` reels are listed under the table.
+Times Perth. ★ = the 3 strongest. Mix (lessons.md): base 14, funny-ad 4, exp-crazy-hook 1, exp-pov 1, exp-before-after 1 = 21. No `-b` trial reels. No part 1 → part 2 pairs. Every `yt_title` is a broad how-to search (no "search", no "Sort them free", no POV/joke titles), none used twice. Cold opens are drafts: score 3 options as usual, nothing under 60 ships.
 
 | Day | Time | Style | Concept | Cold open | Niche | CTA |
 |---|---|---|---|---|---|---|
-| Mon 9 | 03:00 | base | 156 saves, 0 ever opened, then watch SaveSort sort them (stakes) | "Saved 156. Opened none." | general | link |
-| Mon 9 | 07:00 | funny-ad | Sorty runs the "Lost & Found desk" for saves people meant to watch later; quick sorter walkthrough | "Saved for later? It's later." | general | link |
-| Mon 9 | 19:30 ★ | base | Find the workout you saved: Instagram's Saved/Collections first, then SaveSort puts gym and fitness saves in Health & lifestyle. yt_title "How to find a workout reel you saved on Instagram" | "You saved a workout. Where?" | gym | save |
-| Tue 10 | 03:00 | exp-pov | POV: you open your saved tab to find one recipe at dinner time, then SaveSort sorts the pile | "POV: dinner's in 10 minutes" | food | link |
-| Tue 10 | 07:00 | base | How-to: get your Saved file from Instagram (tick only Saved, HTML, All time; Instagram emails you), then drop it in | "Instagram emails you your saves." | how-to | save |
-| Tue 10 | 19:30 ★ | base | Guess #1: guess how many of 156 were worth doing, paid off with the real 30. "Find out your number free" | "156 saves. Guess how many?" | general | link |
-| Wed 11 | 03:00 | funny-ad | "Me: saves reel. Also me: never again." Deadpan montage, then the sorter | "Saved: 47 workouts. Done: 0." (said to the viewer, not the owner's number) | gym | link |
-| Wed 11 | 07:00 | base | Got 500 saved reels? Point the big number at the viewer, then the 156 sort on screen | "Got 500 saved reels?" | general | link |
-| Wed 11 | 19:30 | base | Find the recipe you saved: Collections/Watch history first, then SaveSort sorts every save by topic (recipes have no topic yet: don't show one). yt_title "How to find a recipe you saved on Instagram" | "You saved a recipe. Find it." | food | link |
-| Thu 12 | 03:00 | exp-before-after | The messy pile (tile grid), then drop.png, then report-all stat cards. Real screens only | "156 saves. One long pile." | general | link |
-| Thu 12 | 07:00 | base | Honest: Watch history finds reels you watched; SaveSort sorts all your saves by topic at once | "Watched it? Easy. Saved it?" | how-to | link |
-| Thu 12 | 19:30 | base | Find the gift idea you saved in June (Christmas is coming). Same honest topic rule as Wed | "Saved a gift idea? Christmas." | gifts | link |
-| Fri 13 | 03:00 | exp-crazy-hook | The week's only crazy line (from `content/hookgen.py` / `content/hooks.md`), then the normal demo | writer's pick, scored 60+ | general | link |
-| Fri 13 | 07:00 | funny-ad | Sorty as the mate who sends you 40 reels a day "you NEED this", then sorts them | "Your mate sent 40 reels." | general | link |
-| Fri 13 | 19:30 ★ | base | Guess #2: guess how many of 156 said nothing without the video, paid off with the real 65 | "Guess how many said nothing?" | general | link |
-| Sat 14 | 03:00 | base | 10 of my saves were hype: Be careful tab on screen, one example paraphrased (no names) | "10 of my saves lied." | money | link |
-| Sat 14 | 07:00 | exp-pov | POV: your friend has 1,000 saved reels. Built to be sent: "send this to them" | "POV: friend has 1,000 saves" | general | link |
-| Sat 14 | 19:30 | base | Watch it sort, re-made: 156 saves in, topics out, tap Worth doing (modelled on `watch-it-sort`, best IG reel) | "I had 156 saves. Used none." | general | link |
-| Sun 15 | 03:00 | base | 22 of my saves wanted a comment first: the Gated guides tab | "22 saves wanted a comment." | money | link |
-| Sun 15 | 07:00 | funny-ad | "RIP my saved tab" style: Sorty's Lost & Found desk closes for the week | "Lost & Found closes tonight." (concrete version if it scores under 60: "Still can't find that reel?") | general | link |
-| Sun 15 | 19:30 | base | Your saved tab is a junk drawer: the 60-second fix (modelled on `junk-drawer-fix`, 120 IG views) | "Your saved tab: junk drawer." | general | link |
-
-**Instagram trial `-b` reels (5, Instagram-only, `ig_trial: true`, same time as their A):** Mon 9, Wed 11, Thu 12, Sat 14 and Sun 15 at 19:30. Default test (lessons.md): change scene 1 only, to a concrete line with a different `hook_type` (A stakes ↔ B question). Tag `"opening"` on both. **If the owner approves the Sorty-talks-first test** (owner to-do #3 is ticked in `marketing/owner-actions.md`), B instead keeps A's line and makes scene 1 a Sorty `talk`.
+| Sun 15 | 19:30 | base | Find a reel you saved: Instagram's Saved/Collections first, then SaveSort sorts every save by topic. yt "How to find a reel you saved on Instagram" | "Saved it. Can't find it?" | how-to | save |
+| Mon 16 | 03:00 | exp-crazy-hook | Callout, then Sorty "Show me the saves." and the `do-not-open` body word-for-word (only the opener changes). yt "How to go through your Instagram saved reels" | "Never opened a save? Seriously." (80.2) | general | link |
+| Mon 16 | 07:00 | base | Four labels, one sort: Sorty stamps one real caption each with Do it / Watch it / Skip it / Locked, real counts. yt "How to organize your Instagram saved reels" | "Every save gets a verdict." | general | link |
+| Mon 16 | 19:30 ★ | base | Guess #1, Do it: "Lock in your guess", payoff the real 30. Modelled on `guess-useful` | "156 saves. Guess how many?" | general | link |
+| Tue 17 | 03:00 | base | Callout #1 (`"opening": "callout"`): number at the viewer, then the real Do it list (30). yt "How to clean up your saved reels on Instagram" | "Saved 300 reels? Be honest." | general | link |
+| Tue 17 | 07:00 | funny-ad | Sorty deadpan: "for later" is now; quick sort walkthrough. yt "How to see your saved reels on Instagram" | "Saved for later? It's later." | general | link |
+| Tue 17 | 19:30 | base | How-to: get your Saved file (Saved › Download to device › All time, HTML; Instagram emails it, usually within hours; try the sample meanwhile), drop it in. yt "How to download your saved reels from Instagram" | "Instagram emails you your saves." | how-to | save |
+| Wed 18 | 03:00 | exp-pov | Second person only: "POV: you finally open your saves", then sort. Never a friend. yt "How to sort your Instagram saved reels by topic" | "POV: you open your saves" | general | link |
+| Wed 18 | 07:00 | base | Watched vs saved, re-made (80 YT): Watch history finds what you watched; SaveSort sorts what you saved. yt "How to find Instagram reels you watched vs saved" | "Watched it, or saved it?" | how-to | link |
+| Wed 18 | 19:30 ★ | base | Guess #2, Skip it: payoff the real 10 (hype). yt "How to spot hype in your Instagram saved reels" | "156 saves. How many lied?" (62.6) | money | link |
+| Thu 19 | 03:00 | base | Is it safe? What SaveSort reads vs never (no login, nothing uploaded), drop screen. yt "How to sort your Instagram saves without logging in" | "Instagram login? Never." | general | link |
+| Thu 19 | 07:00 | funny-ad | Re-run of the `47-workouts` callout with a new body; gym saves land in Health & lifestyle. yt "How to organize saved workout reels on Instagram" | "Saved 47 workouts. Be honest." | gym | link |
+| Thu 19 | 19:30 | base | Clean up before 2027: download, sort, keep the Do it list. yt "How to clean up your Instagram saved reels" | "Saved tab. Before 2027?" | general | link |
+| Fri 20 | 03:00 | exp-before-after | The pile (tile grid) → result screen (`report-all`) → then the drop. Real screens only. yt "How to sort a messy Instagram saved tab" | "156 saves. One long pile." | general | link |
+| Fri 20 | 07:00 | base | Unsaving everything? Download first, keep the Do it ones (claims check verifies the current unsave steps). yt "How to unsave all saved posts on Instagram" | "Unsaving everything? Wait." | how-to | link |
+| Fri 20 | 19:30 ★ | base | Guess #3, Locked: payoff the real 22 ("comment GUIDE" / "DM me"). yt "How to spot comment GUIDE reels in your saves" | "Guess how many were Locked?" | general | link |
+| Sat 21 | 03:00 | base | Callout #2 (`"opening": "callout"`), then tap into one real Do it save. yt "How to actually use your Instagram saved reels" | "Be honest. Opened any?" | general | link |
+| Sat 21 | 07:00 | funny-ad | 2am you saves it, 9am you never sees it again; Sorty sorts the 2am pile. yt "How to find old saved reels on Instagram" | "Saved at 2am. Gone by 9." | general | link |
+| Sat 21 | 19:30 | base | Watch it sort, re-made on new screens: 156 in, topics out, tap Do it (modelled on `watch-it-sort`). yt "How to sort Instagram saved reels into topics" | "I had 156 saves. Used none." | general | link |
+| Sun 22 | 03:00 | base | Gym saves: Do it or Skip it? Real Health & lifestyle topic screen; don't say it finds "workouts". yt "How to organize gym reels you saved on Instagram" | "Gym saves: Do it or Skip?" | gym | link |
+| Sun 22 | 07:00 | funny-ad | "Recipe graveyard": saved 40 recipes, ordered pizza. Saves sorted by topic; never show a Recipes topic (none exists). yt "How to find recipes you saved on Instagram" | "Saved 40 recipes. Ordered pizza." | food | link |
 
 ## Niche accounts
-None is connected (`accounts/status.json`: no platforms, never checked), so writers write nothing for them this week. When they connect, use this plan (#48 with #16–#18). Mix: 14 slideshows + 7 reels (19:30). There's no "last week's best hook" yet, so the 2 re-run slots are normal slots.
+None is connected (`accounts/status.json`: no platforms, never checked; no posts in `accounts/summary.md`), so writers write nothing for them this week. When they connect, #48 with #16–#18: 14 slideshows + 7 reels (19:30). No "best hook" to re-run yet, so those 2 slots are normal. Use the new label names; `accounts/hypecheck.md` still has old ones (owner to-do #4).
 ### gym
-Theme "Legs and your first week". Rotate story / routine / mistakes / saved-vs-did / beginner. Hooks: "Saved 47 leg workouts. Did zero." · "Skipped legs again this week?" · "Scared of the gym? Start here." Rule: safety note on every harder move; screens show Health & lifestyle only.
+Theme "Your first 4 weeks: 10-minute, no-equipment starts". Mix: story 3, routine 3, beginner 3, saved-vs-did 2, mistakes 2, myth 1. Hooks: "Skipped legs again this week?" · "No gym. No queue. 10 minutes." · "Saved a home workout? Do it." Rule: safety line on every harder move; screens show Health & lifestyle only.
 ### kitchen
-Theme "15-minute dinners from saved recipes". Hooks: "Saved 40 recipes. Ordered pizza." · "Rice, eggs, one sad onion." · "Sunday's recipe. It's Thursday." Rule: the sorter has no recipe topic yet, so the release slide says "sorted by topic", never "your recipes folder".
+Theme "15-minute dinners from the recipe graveyard". Mix: recipe 4, pantry 3, story 3, saved-vs-made 2, prep 2. Hooks: "Saved it Sunday. Cook it tonight." · "Rice, eggs, one sad onion." · "One shop. Five saved recipes." Rule: no Recipes topic exists; the release slide says "sorted by topic".
 ### hypecheck
-Theme "Comment GUIDE: what you really get". Hooks: "What 'comment GUIDE' really sends you" · "I saved it at 2am." · "5 signs that reel sells you." Rule: no names or handles; paraphrase only.
+Theme "Locked: what 'comment GUIDE' really sends you". Mix: gated 3, red-flags 3, verdict 3, real-cost 2, worth-it 2, story 1. Hooks: "What 'comment GUIDE' really sends you" · "5 signs that reel sells you." · "I saved it at 2am." Rule: no names or handles; paraphrase; verdicts are Skip it / Locked.
 
 ## Rules for this week from the team
-1. **Scene 1 names a concrete saved-reel situation**: a number pointed at the viewer, or a named lost item (workout, recipe, gift). Max 5 words on screen, hook score 60+. No metaphor lines except Fri 03:00. (#23, #32)
-2. **Scene 2 is always Sorty `talk`**, never a second `title`. SaveSort is on screen by scene 3, and the drop scene says "Nothing gets uploaded." (#33, #92, #95)
-3. **Find-that-reel reels stay true:** one line naming Instagram's own ways (Saved, Collections, Watch history). Never imply Instagram can't find saves. Never show a Recipes or Gifts topic (none exists). Gym and fitness saves go to Health & lifestyle. Never say "search", "step-by-step" or "monthly". (#82, #86, #94)
-4. **Every `vo` line is 12 words or fewer, and reels run 30–33 s.** Trim the middle, not the demo. Numbers as digits. (#34, #40, #89)
-5. **Tag every queue file** with `style`, `hook_type`, `opening`, `cta`, `hook_formula`, `hook_score` and `duration`. Today 0 of 45 files have `hook_formula`, and 2 posted reels lack `duration`. (#78, #79)
-6. **`yt_title` is a phrase people type** ("How to find a reel you saved on Instagram"), not the hook. End every caption with "Sorty's voice is AI. The saves and numbers are real." (#44, #83)
+1. **New label names in every `vo`, stamp, caption and on-screen line**: Do it, Watch it, Skip it, Locked. Search your queue files for "worth doing", "be careful", "gated", "needs the video" before handing to the checker: 0 hits. Sorty's old stamp lines in `content/sorty.md` are out of date; say "Straight to Skip it." / "That's Locked." (#51, #52, #86)
+2. **Scene 1 `vo` is 5 words or fewer, said to "you", names the saves; scene 2 Sorty `talk` starts by ~1.5 s and gives the viewer one job** (guess, "be honest", "not until you've sorted it"). No third-person set-ups. (#32, #24, #30)
+3. **The first SaveSort screen is a result** (`report-all` / `report-go`), not the empty drop box; show the drop after it. Check: scene-3 shot isn't `drop.png` in at least 18 of 21. (#92, #97)
+4. **Guess reels: the answer is not in the first 125 characters of the caption**, and the reveal sits in the second-to-last scene, not the middle. (#52, #36)
+5. **The steps scene says Instagram emails the file "usually within hours" and points to the 40-save sample** (call it the sample, never the 156). Include "Download to device". (#95, #57)
+6. **No joke numbers in `yt_title`, and no "follow for part 2" unless it's queued within 48 h.** AI disclosure line stays in every caption ("Sorty's voice is AI. The saves and numbers are real."; for animated episodes "Sorty's voice and animation are AI-made."). (#83, #86)
 
 ## Department calls
-- **D2 Research:** "find a saved reel" is a real search, but Instagram now has Watch history and Collections. Gift saves are seasonal now. The ideas backlog is all AI/money. → Took the honesty rule, the gift slot and the backlog note (writer: refill `content/ideas.md` with everyday finds).
-- **D3 Creative:** the best openers are Sorty saying a concrete line; title→title openers flop. → Rules 1–2; workout/recipe ideas went into the plan.
-- **D4 Retention:** the white-title cold open is untested against Sorty-first; long lines in the bottom reels. → Trial test option for the owner; rule 4.
-- **D5 Platforms:** TikTok is wasted (1.5 s, 0 follows); search titles win on YouTube; Instagram removed linked reels. → Rule 6; TikTok decision goes to the owner (not this week's to-do); niche plan above.
-- **D6 Copy:** the site contradicts the reels (312/21, 24/61/7) and sells Pro. → Owner to-do #2, `drafts/2026-11-07/site-copy.md`, new bio.
-- **D7 Growth:** no reach beyond followers; no rankable page; no recipe topic. → SEO page outline, reply bank, outreach DM and community post in drafts.
-- **D8 Analytics:** queue empty; clicks invisible; tags missing; % watched mixes TikTok in. → Queue warning up top, rule 5. Per-reel links go in the product notes for the owner.
-- **D9 Quality:** site numbers and live Pro checkout; AI-voice disclosure missing on main YouTube posts; Watch-history honesty. → Rules 3 and 6, owner to-dos #2 and #4.
-- **D10 Product:** no food/gift topic; product on screen by scene 3 in only 4 of 15 reels. → Rules 2–3; `drafts/2026-11-07/faq-and-product-notes.md`.
+- **D2 Research:** only "about you" openers hold; "The Great Lock In" trend is live; Instagram's Saved tab has no search. → Took the second-person POV, the no-"search" titles, and "recipe graveyard" wording. Did **not** take the lock-in trend (clashes with the Locked label and "Lock in your guess").
+- **D3 Creative:** openers that give the viewer a job win; Sorty's stamp lines still say old labels. → Campaign "What's your number?", rule 2, the scored guess/crazy hooks.
+- **D4 Retention:** scene 1 runs 2–3 s, past when people leave; reveal sits mid-reel. → The bottleneck, rules 2 and 4; crazy-hook body kept word-for-word so only the opener changes.
+- **D5 Platforms:** only how-to titles reach strangers on YouTube; trial reels locked until 1,000 followers. → How-to `yt_title` on all 21; bio/pins kept as the owner's open to-do; niche plan.
+- **D6 Copy:** 19/19 reels and the bio still say old labels; site has 3 stale label spots and is missing "Download to device". → Rule 1, rule 5, bio + reply bank + site copy in `drafts/2026-11-14/`.
+- **D7 Growth:** search is our only reach to strangers and the "find a saved reel" page was never published; Search Console still not connected. → Owner to-do #5; unsave-all outline, community answer and DM in drafts; unsave reel in the plan.
+- **D8 Analytics:** data healthy; Slot column uses scheduled, not actual, post time (2 evening posts went out after 1am); hook_score doesn't predict watch time. → Noted in scorecard; tracking fix and hook-score recalibration go to the owner as suggestions (product notes). The 60+ floor stays: it's an owner rule.
+- **D9 Quality:** queued reels and CHECKER.md still use old labels; Ep 1 promises an Ep 2 that isn't queued; Ep 1's TikTok has someone else's (muted) sound. → Rules 1 and 6, owner to-dos #2–#4.
+- **D10 Product:** screens show old chips; 17 of 18 reels open the product on the empty drop box. → Rule 3, owner to-do #2, FAQ sheet in drafts.
 
 ## Decisions between departments
-- **Trial test:** lessons.md (concrete vs crazy) vs D3/D4 (Sorty-first). lessons.md wins by default, since every A line is now concrete; B changes hook type. Sorty-first runs only with owner OK (it changes an owner rule).
-- **Recipe/gift reels:** D7/D10 wanted to swap them for existing topics; lessons.md asks for them. lessons.md wins on topic, D10 wins on truth: no fake topic on screen.
-- **TikTok:** D5 wants a slideshow-only test week; lessons.md says it needs its own approach. Neither can change posting, so it waits for the owner. Main reels keep going to TikTok this week.
-- **Product notes vs to-do:** D8 wants per-reel tracking links and D10 wants new topics. Both matter, but the owner gets at most 5 to-dos, so both go in `faq-and-product-notes.md` for after the site fix.
+- **Great Lock In trend (D2) vs label clarity (D3/D6):** clarity wins. "Lock" already means the Locked label and our guess scene; a third meaning confuses.
+- **Hook score gate (D8 says it's noise) vs owner rule (60+):** owner rule wins; D8's evidence goes to the owner as a suggestion.
+- **Screen re-capture now (D3/D4/D10) vs never show the sample as the 156 (CLAUDE.md):** re-capture only with the real export; otherwise speak the number, not a label, over old chips.
+- **Pro in replies (D6 reply 2) vs last week's "don't mention Pro":** PRODUCT.md says Pro is live, so the reply can mention it, but the owner OKs it first (drafts only).
