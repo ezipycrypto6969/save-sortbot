@@ -29,10 +29,15 @@ export type Shot = {
 	sub?: string; // second line on a title card
 	cardLabel?: string; // label above the card text
 	tag?: string; // small label, e.g. REAL SCREEN
+	rate?: number; // clip playback speed (0.6 = slow motion, 1.6 = faster)
+	fade?: number; // seconds to fade in from black (time jumps only)
+	laptop?: {src: string; x: number; y: number; w: number; h: number; y0: number; y1: number; label?: string}; // real screen composited onto a white in-scene screen (multiply)
+	ticker?: {label: string; from: number; to: number; clock?: boolean; sub?: string}; // counter or countdown clock on screen
+	top?: string; // small text at the top of the frame
 	src?: string | null; // public/ path to a .png/.jpg frame or .mp4 clip; empty = storyboard card
 	text?: string; // big text on a black shot
 	big?: string; // big joke text over the picture (e.g. a joke number)
-	camera?: 'push' | 'crash' | 'shake' | 'whip' | 'pan' | 'tilt' | 'wobble' | 'none';
+	camera?: 'push' | 'crash' | 'shake' | 'whip' | 'pan' | 'tilt' | 'wobble' | 'none' | 'flat' | 'drift';
 	line?: string; // Sorty's line; *words* are highlighted
 	voice?: string; // public/ path to the voice line audio
 	card?: string; // a saved-reel card shown over the shot
@@ -87,6 +92,8 @@ const Camera: React.FC<{mode: Shot['camera']; seed: number; children: React.Reac
 	let x = 0;
 	let y = 0;
 	let rot = 0;
+	if (mode === 'flat') scale = 1;
+	if (mode === 'drift') scale = interpolate(p, [0, 1], [1.0, 1.05]);
 	if (mode === 'push') scale = interpolate(p, [0, 1], [1.02, 1.14]);
 	if (mode === 'crash') scale = interpolate(f, [0, 5], [1.6, 1.08], {extrapolateRight: 'clamp'}) + p * 0.04;
 	if (mode === 'pan') x = interpolate(p, [0, 1], [-50, 50]);
@@ -194,6 +201,51 @@ const Captions: React.FC<{voices: NonNullable<EpisodeProps['voices']>}> = ({voic
 	);
 };
 
+const Laptop: React.FC<{l: NonNullable<Shot['laptop']>}> = ({l}) => {
+	const f = useCurrentFrame();
+	const {durationInFrames} = useVideoConfig();
+	const k = l.w / 390;
+	const y = interpolate(f, [0, durationInFrames - 1], [l.y0, l.y1], {easing: (t) => t * t * (3 - 2 * t)}) * k;
+	return (
+		<>
+			<div style={{position: 'absolute', left: l.x, top: l.y, width: l.w, height: l.h, overflow: 'hidden', mixBlendMode: 'multiply'}}>
+				<Img src={staticFile(l.src)} style={{position: 'absolute', left: 0, top: -y, width: l.w}} />
+			</div>
+			{l.label ? (
+				<div style={{position: 'absolute', left: l.x, top: l.y + l.h + 14, width: l.w, textAlign: 'center'}}>
+					<span style={{fontFamily: FONT, fontWeight: 800, fontSize: 26, letterSpacing: 2, color: '#0b1240', background: '#2BD18B', borderRadius: 999, padding: '6px 18px'}}>{l.label}</span>
+				</div>
+			) : null}
+		</>
+	);
+};
+
+const pad = (n: number) => String(Math.floor(n)).padStart(2, '0');
+const Ticker: React.FC<{t: NonNullable<Shot['ticker']>}> = ({t}) => {
+	const f = useCurrentFrame();
+	const {durationInFrames, fps} = useVideoConfig();
+	const p = interpolate(f, [0, Math.max(1, durationInFrames - 6)], [0, 1], {extrapolateRight: 'clamp', easing: (x) => 1 - Math.pow(1 - x, 2)});
+	const v = t.from + (t.to - t.from) * p;
+	const txt = t.clock ? `${pad(v / 3600)}:${pad((v % 3600) / 60)}:${pad(v % 60)}` : Math.round(v).toLocaleString('en-US');
+	const s = spring({frame: f, fps, config: {damping: 14}});
+	return (
+		<div style={{position: 'absolute', top: 210, left: 0, right: 0, textAlign: 'center', fontFamily: FONT, transform: `scale(${interpolate(s, [0, 1], [0.7, 1])})`, opacity: s}}>
+			<div style={{display: 'inline-block', background: 'rgba(8,10,30,.72)', borderRadius: 36, padding: '22px 46px', boxShadow: '0 20px 60px rgba(0,0,0,.4)'}}>
+				<div style={{fontSize: 34, fontWeight: 700, letterSpacing: 4, color: '#9fb0ff'}}>{t.label}</div>
+				<div style={{fontSize: 120, fontWeight: 800, color: '#fff', fontVariantNumeric: 'tabular-nums', lineHeight: 1.05}}>{txt}</div>
+				{t.sub ? <div style={{fontSize: 34, fontWeight: 700, color: '#FFD23F'}}>{t.sub}</div> : null}
+			</div>
+		</div>
+	);
+};
+
+const Fade: React.FC<{sec: number}> = ({sec}) => {
+	const f = useCurrentFrame();
+	const {fps} = useVideoConfig();
+	const o = interpolate(f, [0, sec * fps], [1, 0], {extrapolateRight: 'clamp'});
+	return <AbsoluteFill style={{background: '#000', opacity: o}} />;
+};
+
 const Picture: React.FC<{shot: Shot}> = ({shot}) => {
 	if (shot.kind === 'black')
 		return (
@@ -206,7 +258,7 @@ const Picture: React.FC<{shot: Shot}> = ({shot}) => {
 	if (!shot.src) return <StoryboardCard shot={shot} />;
 	const src = staticFile(shot.src);
 	return /\.(mp4|mov|webm)$/i.test(shot.src) ? (
-		<OffthreadVideo src={src} muted startFrom={Math.round((shot.from ?? 0) * 30)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+		<OffthreadVideo src={src} muted playbackRate={shot.rate ?? 1} startFrom={Math.round((shot.from ?? 0) * 30)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
 	) : (
 		<Img src={src} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
 	);
@@ -362,7 +414,11 @@ export const Episode: React.FC<EpisodeProps> = ({shots, end, music, voices = [],
 						{shot.card ? <Card text={shot.card} label={shot.cardLabel} /> : null}
 					</Camera>
 					{shot.tint ? <AbsoluteFill style={{background: TINTS[shot.tint], mixBlendMode: shot.tint === 'gold' || shot.tint === 'warm' ? 'soft-light' : 'multiply'}} /> : null}
+					{shot.laptop ? <Laptop l={shot.laptop} /> : null}
 					{shot.tag ? <Tag text={shot.tag} /> : null}
+					{shot.ticker ? <Ticker t={shot.ticker} /> : null}
+					{shot.top ? <div style={{position: 'absolute', top: 120, left: 0, right: 0, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 46, color: '#fff', WebkitTextStroke: '8px #000', paintOrder: 'stroke fill'}}>{shot.top}</div> : null}
+					{shot.fade ? <Fade sec={shot.fade} /> : null}
 					{shot.stamp ? (
 						<Sequence from={sec(shot.stampAt ?? 0)}>
 							<Stamp kind={shot.stamp} />

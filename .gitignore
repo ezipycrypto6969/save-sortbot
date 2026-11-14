@@ -14,3 +14,4 @@ out_build.log
 episodes/public/*/clips/
 episodes/public/*/music.wav
 episodes/public/*/sound.wav
+episodes/public/*/scenes/
