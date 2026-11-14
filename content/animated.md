@@ -33,6 +33,15 @@ People only comment, send, save or follow when they get something out of it. Eve
 22. **Reply fast.** Answer comments in the first hour after posting, and pin one comment that asks a real question.
 23. **Never use engagement bait.** No "comment YES", "like if…", "tag 10 friends", fake giveaways or fake drama. Meta and TikTok push these down, and they break our honesty rules.
 
+## From the 20-reel study (owner, 14 Nov 2026; details in `research/animation-study-2026-11.md`)
+24. **It's a series.** One character, one voice, every shot. Every episode gets a title card ("Ep 1: The 4,000 Saves") and the same ElevenLabs voice. Never switch voices between episodes.
+25. **Story Loop, not a montage.** Stakes in second one → a question the viewer wants answered → the twist → a rehook (next episode or "Part 1"). The product is the twist that solves the problem, never an interruption.
+26. **Everyday "that's so them" stories beat clever ones.** Gym saves, recipe saves, a mate, a boss, a partner. Write for the send.
+27. **Comment keyword only with a real auto-DM.** "Comment SORT and Sorty DMs you the link" is allowed only once the auto-DM really sends the link. Until then the CTA is savesortai.com / link in bio. This is the biggest lever for comments and sends we found.
+28. **Light it like the winners.** Pixar-style soft key light, warm character, cooler blue background, soft contact shadow, shallow focus, subject centred. Problem scenes are darker and cooler; the win is brighter and warmer.
+29. **Rhythm:** a calm 2–4 s setup, then 0.7–1.5 s shots, then a 0.2–0.5 s montage on the win. Captions are one word at a time, centred, outlined, with one highlight colour.
+30. **End on something real:** the last 2–3 s before the outro show the real SaveSort report with real numbers.
+
 ### Interaction lines for Sorty (rotate, never two in a row)
 | Line | Gets | Viewer's reward |
 |---|---|---|
