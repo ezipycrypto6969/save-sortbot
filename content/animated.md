@@ -56,3 +56,12 @@ People only comment, send, save or follow when they get something out of it. Eve
 | "Episode 2 Friday: Sorty vs your recipe saves. Follow so you see it." | follow | The next episode (only if it's made) |
 | "Save this for when you export your saves." | save | The steps later |
 | "Want your own number? Sort your saves free. Link in bio." | link | Their own report |
+
+## Owner feedback on Ep 1 v2 (14 Nov 2026)
+31. **The story must make people need the ending.** Not an animated tutorial. One clear goal, a ticking clock, a doubter, and a reveal. Every scene answers "what happens next?" and opens the next question.
+32. **Real SaveSort screens only near the end, and inside the scene** (on a character's laptop or phone), never as full-screen cuts. This replaces "real screen within the first 5 seconds" (rule 7) for animated episodes.
+33. **Other characters are really there.** The boss, mates and rivals are on screen, talk and react to each other. Sorty interacts with them; no voices from off-screen objects.
+34. **Smooth, seamless cuts.** Cut on movement, use match cuts and whip pans between scenes. A crash zoom or shake at most 2–3 times a reel, not on every cut. No colour flashes.
+35. **Sound effects sit under the voice** (about 40% quieter than Ep 1). One effect per moment, never three at once.
+36. **One reaction per beat.** Never stack two lines on the same word (Ep 1's "Leg day? Zero." straight into "ZERO?!"). Leave a short pause before a reaction.
+37. **Sorty's voice gets an upgrade:** better quality, a bit slower, deadpan tone, saved as one voice for every episode (owner to pick from previews).
