@@ -32,7 +32,7 @@ Check the model picker before each run, because rates change.
 7. Outside Artlist, if we outgrow it: Kling 3.0 is about US$0.08–0.17 a second at 720p and Seedance 2.0 Fast about US$0.24 a second via fal.ai and similar APIs.
 
 ## Better
-- Lock Sorty's look with the same reference image and the same written description every time. Add "no cape" except for superhero specials.
+- Lock Sorty's look with the same reference image and the same written description every time. Keep the mask and cape: he always looks like the first animation (owner, 14 Nov 2026).
 - Sorty reaction sheet: 8–10 stills made once (happy, shocked, smug, sad, suspicious, screaming, sunglasses, sweatband) and reused as start frames.
 - One ElevenLabs voice ID for Sorty. Built-in video-model audio often still sounds robotic.
 - ElevenLabs sound effects (0.5–5 s) and music, all original.

@@ -12,7 +12,7 @@ Rules: `content/sorty.md` (character), `content/animated.md` (scriptwriter rules
 5. **Render:** `npm install` once, then `npm run render -- epNN` writes `out/epNN.mp4`. `npm run studio` opens a live preview.
 
 ## Paid parts (show the owner the frames before any clips)
-- Frames: Artlist (Nano Banana, about 130 credits each, 9:16). Always reference the saved "sorty" character, and add "no cape" except for superhero specials.
+- Frames: Artlist (Nano Banana, about 130 credits each, 9:16). Always pass both Sorty reference pictures (full body + face) and keep him exactly identical, mask and cape included (`content/sorty.md`).
 - Clips: at most 3 per episode (`content/animated.md` rule 12). Use Seedance 2.5 for one 3 s hero shot at most, and a cheaper model for the rest.
 - Sound effects are free and ours: `public/sfx/` is generated from `engine/music.py` by `python3 tools/sfx_pack.py`. Names are `<kind>-1..3.wav` (cut, stamp, hook, drop, tap, payoff, scroll, hit, irony, riser, end, mood-shocked, mood-sad, mood-smug, mood-suspicious).
 

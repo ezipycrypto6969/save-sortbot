@@ -55,7 +55,7 @@ Stamp lines (match the real SaveSort labels):
 - A self-own beats a roast. Let him fail at the gym, get bullied by The Algorithm, and get embarrassed.
 
 ## Look and voice (identical everywhere)
-- **Look:** same blue bookmark shape with a notched bottom, big eyes, and the moods `happy` / `shocked` / `suspicious` / `smug` / `sad`. Props depend on the scene (a sweatband at the gym, sunglasses in the car), but the body never changes. In Artlist, always use the saved character "sorty".
+- **Look (owner, 14 Nov 2026: keep him exactly like the first animation):** the Artlist Studio "sorty" character: blue bookmark body, black eye mask, red cape, gold bookmark badge, big brown eyes. Never drop the mask or cape. In Artlist generations, pass both saved pictures of him (full body + face close-up) as references and say "keep him exactly identical". Also: same blue bookmark shape with a notched bottom, big eyes, and the moods `happy` / `shocked` / `suspicious` / `smug` / `sad`. Props depend on the scene (a sweatband at the gym, sunglasses in the car), but the body never changes. In Artlist, always use the saved character "sorty".
 - **Voice:** in bot reels, `am_onyx*0.55+am_puck*0.45` at pitch 1.5. In animated reels, always the same Artlist voice saved for "sorty". Deep but squeaky. Deadpan by default; his pitch shoots up when he's shocked or roasted ("you're COOKED"). That jump is a joke beat in itself.
 - **Delivery:** short lines, fast cuts. He reacts with his face before he talks.
 
