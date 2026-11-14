@@ -267,8 +267,8 @@
   },
   "stats": {
     "instagram": {
-      "views": 60,
-      "reach": 57,
+      "views": 69,
+      "reach": 65,
       "likes": 1,
       "comments": 0,
       "shares": 0,
@@ -276,23 +276,23 @@
       "avg_watch_s": 4.0
     },
     "youtube": {
-      "views": 1,
+      "views": 2,
       "likes": 0,
       "comments": 0
     },
     "tiktok": {
-      "views": 3,
-      "likes": 0,
+      "views": 7,
+      "likes": 2,
       "comments": 0,
       "shares": 0,
       "saved": 0,
       "new_followers": 0,
       "profile_views": 0,
-      "avg_watch_s": 3.62,
+      "avg_watch_s": 2.62,
       "full_watch_rate": 0
     },
-    "total_views": 64,
-    "total_engagement": 1,
-    "updated": "2026-11-13T07:12:27+00:00"
+    "total_views": 78,
+    "total_engagement": 3,
+    "updated": "2026-11-14T06:57:59+00:00"
   }
 }

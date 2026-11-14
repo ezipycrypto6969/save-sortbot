@@ -244,5 +244,35 @@
     },
     "url": "https://www.tiktok.com/@aisavesort/video/7707730819778907398",
     "message": ""
+  },
+  "stats": {
+    "instagram": {
+      "views": 112,
+      "reach": 105,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "avg_watch_s": 5.2
+    },
+    "youtube": {
+      "views": 60,
+      "likes": 0,
+      "comments": 0
+    },
+    "tiktok": {
+      "views": 60,
+      "likes": 2,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "new_followers": 0,
+      "profile_views": 0,
+      "avg_watch_s": 1.9,
+      "full_watch_rate": 0
+    },
+    "total_views": 232,
+    "total_engagement": 4,
+    "updated": "2026-11-14T06:57:59+00:00"
   }
 }
