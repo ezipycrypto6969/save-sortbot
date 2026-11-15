@@ -3,7 +3,7 @@
   "post_at": "2026-11-17T19:30:00+08:00",
   "format": "how-to",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -169,5 +169,6 @@
     "rounds": 2
   },
   "cover_offset_ms": 2809,
-  "duration": 30.457
+  "duration": 30.457,
+  "checked_at": "2026-11-15T15:11:26+08:00"
 }

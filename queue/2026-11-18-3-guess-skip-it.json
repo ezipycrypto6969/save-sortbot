@@ -2,8 +2,8 @@
   "id": "2026-11-18-3-guess-skip-it",
   "post_at": "2026-11-18T19:30:00+08:00",
   "format": "guess",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -197,5 +197,9 @@
     "rounds": 2
   },
   "cover_offset_ms": 3622,
-  "duration": 30.877
+  "duration": 30.877,
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "hold_reasons": [
+    "Scene 4 (react quote, labelled SAVED REEL SAYS): \"Huge daily sales from zero. No experience needed.\" The real saved caption this paraphrases (\"scale from Zero to $1000/day w/ branded dropshipping\") never says \"no experience needed\", and no save in the repo does. The caption says \"The saves and numbers are real\", so the added claim is attributed to a real save that can't be confirmed. Drop the added phrase or quote only what the save says."
+  ]
 }

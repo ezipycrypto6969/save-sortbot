@@ -2,8 +2,8 @@
   "id": "2026-11-21-3-side-hustle-saved",
   "post_at": "2026-11-21T19:30:00+08:00",
   "format": "scam-watch",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -169,5 +169,9 @@
     "rounds": 1
   },
   "cover_offset_ms": 2870,
-  "duration": 30.865
+  "duration": 30.865,
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "hold_reasons": [
+    "Scene 4 (react quote, labelled SAVED REEL SAYS): \"Huge daily sales from zero. Zero effort.\" and the vo \"Zero effort? Cap.\" The real saved caption (\"scale from Zero to $1000/day w/ branded dropshipping\") never claims zero effort, and no save in the repo does, yet the caption says \"The saves and numbers are real\". The verdict roasts a claim the save didn't make. Quote only what the save actually says."
+  ]
 }
