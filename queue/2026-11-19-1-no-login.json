@@ -1,0 +1,162 @@
+{
+  "id": "2026-11-19-1-no-login",
+  "post_at": "2026-11-19T03:00:00+08:00",
+  "format": "privacy",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "Permission",
+  "hook_score": 84.4,
+  "fx": {
+    "hook": "WHAT IT NEVER SEES"
+  },
+  "yt_title": "How to sort your Instagram saves without logging in",
+  "caption": "No login. Your saves. Sorted.\n\nSaveSort never asks for your Instagram password. It reads Instagram's own data export, opens only the saved posts file inside, and sorts it in your browser. Nothing gets uploaded.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "No login.\n*Your saves. Sorted.*",
+      "vo": "No login. Your saves. Sorted.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Your password?\n*Keep it.*",
+      "vo": "Your password? Keep it. Guess what I never see. Go on.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "156 SAVES READ",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "156 saves, sorted by topic. Zero logins. Zero passwords."
+    },
+    {
+      "type": "screen",
+      "label": "THE 30",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "The ones to actually do, in one list. 30 of 156."
+    },
+    {
+      "type": "talk",
+      "text": "Safer than your\n*screen-time report.*",
+      "vo": "Safer than your screen-time report. And way less judgy.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "It runs in your browser, on your phone. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "title",
+      "text": "It reads:\n*your Saved file.*",
+      "vo": "It reads Instagram's own export. Just the saved posts file. Nothing else.",
+      "bg": "ink"
+    },
+    {
+      "type": "title",
+      "text": "Never sees:\n*your password.*",
+      "vo": "Never your password. Never your messages. See yours free.",
+      "bg": "cobalt",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "No login.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2668,
+  "duration": 31.0
+}

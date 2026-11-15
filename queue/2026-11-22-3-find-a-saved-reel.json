@@ -1,0 +1,221 @@
+{
+  "id": "2026-11-22-3-find-a-saved-reel",
+  "post_at": "2026-11-22T19:30:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "save",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "If This, Then Watch",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "FIND IT IN 2 WAYS"
+  },
+  "yt_title": "How to find a reel you saved on Instagram",
+  "caption": "You saved it. Now find it.\n\n1. Profile, menu, Saved. Check All posts and your Collections.\n2. Hundreds of saves? Download your Saved file (Instagram emails it, usually within hours) and drop it into SaveSort: every save sorted by topic.\n\nSave this for next time you lose one.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Now find it.*",
+      "vo": "You saved it. Now find it.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Save this.\nTwo *ways.*",
+      "vo": "Two ways to find it. Save this for next time.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "WAY 2",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Way 2 looks like this. Hold that thought."
+    },
+    {
+      "type": "steps",
+      "heading": "Way 1: Instagram",
+      "items": [
+        "Profile, then menu",
+        "Tap Saved",
+        "Check All posts + Collections"
+      ],
+      "vo": "Profile. Menu. Saved. Check your collections."
+    },
+    {
+      "type": "talk",
+      "text": "No search bar.\n*Good luck.*",
+      "vo": "No search bar in there. The Algorithm hid it. Personally.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "500 saves?\n*Way 2.*",
+      "vo": "Got 500 saves? You need way 2. Trust me.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Way 2: drop your export into SaveSort. Instagram emails it, usually within hours."
+    },
+    {
+      "type": "screen",
+      "label": "TAP A TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Every save, by topic. One tap."
+    },
+    {
+      "type": "screen",
+      "label": "THE 30",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And the ones with real steps. 30 of 156.",
+      "payoff": true
+    },
+    {
+      "type": "screen",
+      "label": "THE HYPE ONES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Plus the hype ones, flagged. 10 of them."
+    },
+    {
+      "type": "talk",
+      "text": "*Save this*\nfor next time.",
+      "vo": "Save this, so next time you find it in seconds.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "line": "Save this.\n*You'll need it.*",
+      "pill": "Save for later ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this reel for next time you lose one."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.3,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2324,
+  "duration": 31.758
+}

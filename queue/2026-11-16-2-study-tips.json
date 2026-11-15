@@ -1,0 +1,195 @@
+{
+  "id": "2026-11-16-2-study-tips",
+  "post_at": "2026-11-16T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "question",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "STUDIED: ?"
+  },
+  "yt_title": "How to organize your Instagram saved reels",
+  "caption": "You saved study tips. Studied?\n\nStudy tips, revision hacks, the one about focus: saved before exams, never opened.\n\nSaveSort sorts every save by topic, so all the learning ones sit together, and flags which have real steps (Do it).\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved study tips.\n*Studied?*",
+      "vo": "You saved study tips. Studied?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Be honest.\n*Exam's Monday.*",
+      "vo": "Be honest. Exam's Monday. Where's that study tip? Anyone?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "report-all.png",
+          "from": 500,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Here. Every save, sorted by topic."
+    },
+    {
+      "type": "screen",
+      "label": "THE 30",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "The ones with real steps first: 30 of 156."
+    },
+    {
+      "type": "talk",
+      "text": "Saved before\n*every exam.*",
+      "vo": "Saved before every exam. Opened after every exam. Every time.",
+      "mood": "sad"
+    },
+    {
+      "type": "react",
+      "quote": "Wait for it... (no caption)",
+      "label": "SAVED REEL SAYS",
+      "mood": "sad",
+      "verdict": "WATCH IT",
+      "verdictColor": "go",
+      "vo": "No caption, no steps? Watch it."
+    },
+    {
+      "type": "talk",
+      "text": "I don't judge.\nI sort. *Then* I judge.",
+      "vo": "I don't judge. I sort. Then I judge. Harshly.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And Learning: one tap, every study tip together. Find yours free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Find it.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.1,
+    "rounds": 1
+  },
+  "cover_offset_ms": 2616,
+  "duration": 30.344
+}

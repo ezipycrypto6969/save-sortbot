@@ -1,0 +1,215 @@
+{
+  "id": "2026-11-18-2-to-do-list",
+  "post_at": "2026-11-18T07:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "question",
+  "opening": "concrete",
+  "hook_formula": "The Receipt",
+  "hook_score": 62.2,
+  "fx": {
+    "hook": "WHAT'S ACTUALLY ON IT?"
+  },
+  "yt_title": "How to make a to-do list from your Instagram saves",
+  "caption": "Your saves are a to-do list. Done any?\n\nEvery save is a little \"I'll do this\". SaveSort crosses off the hype (Skip it) and the comment-for-the-steps reels (Locked), so what's left is a list you can actually do.\n\nOur sample report: 156 saves, 30 Do it.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Your saves =\n*a to-do list.*",
+      "vo": "Your saves: a to-do list. Never done.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "When did you\n*tick one off?*",
+      "vo": "Be honest. When did you last tick one off?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "report-all.png",
+          "from": 500,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Step one: every save, sorted by topic."
+    },
+    {
+      "type": "talk",
+      "text": "Saving it isn't\n*doing it.*",
+      "vo": "Saving isn't doing. Trust me. I used to be the save button.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "CROSS OFF",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Cross off the hype. 10 flagged."
+    },
+    {
+      "type": "screen",
+      "label": "CROSS OFF",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And 22 that want a comment first. Cross those off too."
+    },
+    {
+      "type": "talk",
+      "text": "Sunday reset?\n*Never happens.*",
+      "vo": "Sunday reset? Never happens. This takes seconds. Literally.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "THE TO-DO LIST",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "What's left: 30 with real steps. That's the list. Make yours free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your list.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and make your list. It's free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  },
+  "cover_offset_ms": 3011,
+  "duration": 30.085
+}

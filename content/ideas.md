@@ -11,10 +11,10 @@ Per the 7 Nov brief (D2: the backlog is all AI/money). Each is a "lost saved ree
 - Watched vs saved: Watch history finds watched reels; SaveSort sorts every save at once [used 2026-11-12]
 - How to download your saved reels from Instagram (Accounts Center steps) [used 2026-11-10]
 - Your mate sends you 40 reels a day [used 2026-11-13]
-- The study tip you saved before exams (Learning topic, 12 saves)
-- The money tip you saved in January (Money & finance topic, 4 saves; no advice, just finding it)
-- The side hustle idea you saved at 2am (Business & side hustles topic; be careful flags the hype)
-- The travel spot you saved for "one day" (no travel topic: show sorted by topic only)
+- The study tip you saved before exams (Learning topic, 12 saves) [used 2026-11-15]
+- The money tip you saved in January (Money & finance topic, 4 saves; no advice, just finding it) [used 2026-11-15]
+- The side hustle idea you saved at 2am (Business & side hustles topic; be careful flags the hype) [used 2026-11-15]
+- The travel spot you saved for "one day" (no travel topic: show sorted by topic only) [used 2026-11-15]
 - The cleaning hack you saved and never tried (no topic claim; worth doing tab)
 - New year, same saved tab: sort before January (seasonal, late Dec)
 

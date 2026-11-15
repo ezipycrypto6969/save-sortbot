@@ -1,0 +1,173 @@
+{
+  "id": "2026-11-17-3-get-your-file",
+  "post_at": "2026-11-17T19:30:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "save",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Reveal",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "EVERY SAVE, ONE FILE"
+  },
+  "yt_title": "How to download your saved reels from Instagram",
+  "caption": "Instagram will send you every reel you ever saved. Free.\n\n1. Accounts Center, Your information and permissions\n2. Download your information, Some of your information, Saved\n3. Download to device, All time, HTML\n4. Instagram emails it, usually within hours\n\nWaiting? Try the sample on savesortai.com meanwhile. Then drop your zip in: SaveSort sorts every save by topic, in your browser.\n\nSave this so the steps are here on export day.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Instagram sends\n*your saves.*",
+      "vo": "Instagram sends your saves. Free.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Save this.\nYou'll *need* it.",
+      "vo": "Here's how to get them. Save this, you'll need it.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "WHERE YOU'RE HEADED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "This is where you're headed. Every save, sorted."
+    },
+    {
+      "type": "steps",
+      "heading": "Get your file",
+      "items": [
+        "Accounts Center",
+        "Download your information",
+        "Some of it: tick Saved"
+      ],
+      "vo": "Accounts Center. Download your information. Tick Saved."
+    },
+    {
+      "type": "steps",
+      "heading": "Then pick",
+      "items": [
+        "Download to device",
+        "All time",
+        "Format: HTML"
+      ],
+      "vo": "Download to device. All time. HTML."
+    },
+    {
+      "type": "talk",
+      "text": "Instagram emails it.\n*Usually within hours.*",
+      "vo": "Instagram emails it, usually within hours. Faster than you opened any save.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "title",
+      "text": "Waiting?\nTry *the sample.*",
+      "vo": "Waiting? Try the sample on the site. 40 real saves, sorted.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Then drop your zip in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "THE 30",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "The ones with real steps, in one list. 30 of 156.",
+      "payoff": true
+    },
+    {
+      "type": "talk",
+      "text": "*Save this*\nfor export day.",
+      "vo": "Save this. Unlike the other 500, you'll open it.",
+      "mood": "smug"
+    },
+    {
+      "type": "end",
+      "line": "Save this.\n*You'll need it.*",
+      "pill": "Save for later ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this reel for when you export your saves."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2809,
+  "duration": 30.457
+}

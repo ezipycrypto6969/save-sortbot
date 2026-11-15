@@ -1,0 +1,224 @@
+{
+  "id": "2026-11-21-1-saved-500-honest",
+  "post_at": "2026-11-21T03:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "callout",
+  "opening": "callout",
+  "hook_formula": "The Callout",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "OPEN ONE. JUST ONE."
+  },
+  "yt_title": "How to actually use your Instagram saved reels",
+  "caption": "You saved 500 reels. Be honest: opened any?\n\nStart with one. SaveSort sorts every save and puts the ones with real steps in one list (Do it).\n\nOur sample report: 156 saves, 30 Do it.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved 500?\n*Be honest.*",
+      "vo": "You saved 500. Be honest.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Opened\n*any?*",
+      "vo": "Opened any? Me neither. Kidding. I open all mine.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Start here. Everything sorted by topic. Watch me pick one."
+    },
+    {
+      "type": "title",
+      "text": "Pick *one.*\nJust one.",
+      "vo": "Pick one. Just one. Tonight, not Monday. Monday's fully booked.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "LEARNING",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1040.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Learning stuff? One tap. Right there."
+    },
+    {
+      "type": "screen",
+      "label": "SKIP THESE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Skip the 10 hype ones. Flagged for you."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Okay.\n*This one's real.*",
+      "vo": "Okay. This one's actually real. Rare.",
+      "mood": "happy"
+    },
+    {
+      "type": "react",
+      "quote": "Free: see every ad a brand runs in Meta's Ad Library",
+      "label": "SAVED REEL SAYS",
+      "mood": "happy",
+      "verdict": "DO IT",
+      "verdictColor": "go",
+      "vo": "Free tool, real steps. Do it."
+    },
+    {
+      "type": "screen",
+      "label": "PICK ONE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap the list. 30 with real steps. Pick your first one free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Find your\n*first one.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and find yours free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2777,
+  "duration": 30.834
+}

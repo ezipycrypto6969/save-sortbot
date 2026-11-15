@@ -1,0 +1,201 @@
+{
+  "id": "2026-11-18-3-guess-skip-it",
+  "post_at": "2026-11-18T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "The Statistic",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "HOW MANY LIED?"
+  },
+  "yt_title": "How to spot hype in your Instagram saved reels",
+  "caption": "156 saved reels. Guess how many were pure hype?\n\nLock in your guess first.\n\nSaveSort flags hype as Skip it: big promises, no real steps.\n\nThe answer in our sample report: 10 Skip it, out of 156.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*How many lied?*",
+      "vo": "156 saves. How many lied?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Lock in your\n*guess.*",
+      "vo": "Lock in your guess. Hype counts as lying.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 2950,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every single caption. Sorted by topic."
+    },
+    {
+      "type": "react",
+      "quote": "Huge daily sales from zero. No experience needed.",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "SKIP IT",
+      "verdictColor": "warn",
+      "vo": "Like this one. Huge sales from zero, no experience? Skip it."
+    },
+    {
+      "type": "talk",
+      "text": "That's not a side hustle.\n*That's a course.*",
+      "vo": "That's not a side hustle. That's a course.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "MONEY & FINANCE",
+      "segs": [
+        {
+          "shot": "topic-MONEY.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-MONEY.png",
+          "from": 1650,
+          "to": 2400,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Money saves? Sorted too. No advice, just found."
+    },
+    {
+      "type": "screen",
+      "label": "HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 2950,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Health and lifestyle. Still guessing?"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Runs in your browser. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Final\n*answer?*",
+      "vo": "Final answer? No changing it. I'm watching you.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "THE ANSWER",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "10. 10 lied. How many of yours do? Find out free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and find your number free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.3,
+    "rounds": 2
+  },
+  "cover_offset_ms": 3622,
+  "duration": 30.877
+}

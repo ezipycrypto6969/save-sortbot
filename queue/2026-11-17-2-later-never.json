@@ -1,0 +1,219 @@
+{
+  "id": "2026-11-17-2-later-never",
+  "post_at": "2026-11-17T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "Contrarian Flip",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "WHAT LATER LOOKS LIKE"
+  },
+  "yt_title": "How to see your saved reels on Instagram",
+  "caption": "Saved it for later? You never opened it.\n\nSorty's here to collect. SaveSort sorts every save by topic and tells you which ones to actually do.\n\nOur sample report: 156 saves, 30 Do it.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved for later?\n*Never opened.*",
+      "vo": "Later? You never opened it.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Good news.\nIt's *later.*",
+      "vo": "Good news. It's later. Open one. I checked the clock.",
+      "mood": "smug",
+      "wave": true
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        },
+        {
+          "shot": "report-all.png",
+          "from": 0,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "Here's what later looks like. Every single save, sorted by topic."
+    },
+    {
+      "type": "talk",
+      "text": "Your saves\n*waited.*",
+      "vo": "Your saves have been waiting since 2am. Honestly? Rude.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "MINDSET & MOTIVATION",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MIND.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1128.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Motivation reels? Saved. Not motivated. Now sorted."
+    },
+    {
+      "type": "react",
+      "quote": "Wait for it... (no caption)",
+      "label": "SAVED REEL SAYS",
+      "mood": "sad",
+      "verdict": "WATCH IT",
+      "verdictColor": "go",
+      "vo": "This one? No caption. Later can't do much with that. Watch it."
+    },
+    {
+      "type": "screen",
+      "label": "SKIP THESE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "The hype ones? Later can skip those. 10 flagged."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "LATER, SORTED",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "And later's real list: 30 to actually do. Find yours free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Later is\n*now.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2383,
+  "duration": 30.328
+}

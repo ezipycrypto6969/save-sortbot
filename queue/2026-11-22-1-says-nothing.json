@@ -1,0 +1,196 @@
+{
+  "id": "2026-11-22-1-says-nothing",
+  "post_at": "2026-11-22T03:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "65 SAID NOTHING"
+  },
+  "yt_title": "How to review your Instagram saved reels",
+  "caption": "Saved it? Says nothing. Seriously.\n\n65 of 156 saved reels in our sample hid everything in the video: no steps, no list, just \"wait for it\". SaveSort marks those Watch it, so you know to rewatch, not read.\n\nOur sample report: 65 of 156 were Watch it.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved it?\n*Says nothing.*",
+      "vo": "Saved it? Says nothing. Seriously.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Read the\n*caption.*",
+      "vo": "Read the caption. Go on. I'll wait. Still waiting.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "report-all.png",
+          "from": 500,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "SaveSort reads every single caption. Then sorts them by topic."
+    },
+    {
+      "type": "react",
+      "quote": "Wait for it... (no caption)",
+      "label": "SAVED REEL SAYS",
+      "mood": "sad",
+      "verdict": "WATCH IT",
+      "verdictColor": "go",
+      "vo": "Wait for it. Thanks. Very helpful. Watch it."
+    },
+    {
+      "type": "talk",
+      "text": "No steps.\n*Just vibes.*",
+      "vo": "No steps. Just vibes and a voiceover.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "MINDSET & MOTIVATION",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MIND.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1128.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Motivation reels? Mostly music and sunsets. One tap."
+    },
+    {
+      "type": "title",
+      "text": "Steps written down?\n*Do it.*",
+      "vo": "Steps actually written down? That's Do it.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "THE 65",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 0
+        }
+      ],
+      "highlights": [
+        {
+          "x": 30,
+          "y": 118,
+          "w": 720,
+          "h": 420,
+          "at": 0.15
+        }
+      ],
+      "zoom": {
+        "at": 0.12,
+        "s": 1.1,
+        "x": 390,
+        "y": 330
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "65 of 156 said nothing without the video. How many of yours? Find out free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and find your number. It's free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2704,
+  "duration": 30.94
+}

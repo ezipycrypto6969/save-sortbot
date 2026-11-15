@@ -1,0 +1,215 @@
+{
+  "id": "2026-11-22-2-algorithm-wins",
+  "post_at": "2026-11-22T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "warning",
+  "opening": "concrete",
+  "hook_formula": "Negative Command",
+  "hook_score": 83.2,
+  "fx": {
+    "hook": "SORTY VS THE ALGORITHM"
+  },
+  "yt_title": "How to organize saved posts on Instagram",
+  "caption": "Don't let The Algorithm win.\n\nIt feeds you reels. You save them. You never open them. Sorty sorts them by topic and flags the hype.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Don't let\n*The Algorithm win.*",
+      "vo": "Don't let The Algorithm win.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "It feeds you.\n*You save.*",
+      "vo": "It feeds you reels. You save them. Be honest. Opened any?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "report-all.png",
+          "from": 500,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "My move. Every save, sorted by topic."
+    },
+    {
+      "type": "talk",
+      "text": "Round 2.\n*It spins.*",
+      "vo": "It spins. Smugly. I sort. Faster. Much faster.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "THE HYPE ONES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "Its hype reels? Flagged. All 10 of them."
+    },
+    {
+      "type": "screen",
+      "label": "AI & TOOLS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 864.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "Its AI tool reels? One tap. Contained."
+    },
+    {
+      "type": "talk",
+      "text": "It's giving\n*loading wheel.*",
+      "vo": "It's giving loading wheel. It always is.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "SORTY WINS",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Final round: 30 of 156 with real steps. See what's in yours free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sorty wins.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and beat The Algorithm. It's free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.1,
+    "rounds": 1
+  },
+  "cover_offset_ms": 2460,
+  "duration": 30.189
+}

@@ -1,0 +1,201 @@
+{
+  "id": "2026-11-20-3-guess-locked",
+  "post_at": "2026-11-20T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "Negative Command",
+  "hook_score": 85.8,
+  "fx": {
+    "hook": "GUESS HOW MANY WERE LOCKED"
+  },
+  "yt_title": "How to spot comment GUIDE reels in your saves",
+  "caption": "Don't comment GUIDE. Guess first: how many of 156 saved reels hid the steps?\n\nLocked = the reel says \"comment GUIDE\" or \"DM me\" instead of showing the steps.\n\nThe answer in our sample report: 22 Locked, out of 156.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Don't comment GUIDE.\n*Guess first.*",
+      "vo": "Don't comment GUIDE. Guess first.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "How many hid\n*the steps?*",
+      "vo": "156 saves. How many hid the steps? Lock in your guess.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "topic-BIZ.png",
+          "from": 2100
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 2100,
+          "to": 3400,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every caption. Sorted by topic."
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you the steps",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "LOCKED",
+      "verdictColor": "gate",
+      "vo": "Like this. That's not a guide. That's a DM trap."
+    },
+    {
+      "type": "talk",
+      "text": "Comment *GUIDE.*\nDM *me.*",
+      "vo": "Comment GUIDE. DM me. Steps? Never.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "MARKETING & ADS",
+      "segs": [
+        {
+          "shot": "topic-MKT.png",
+          "from": 2100
+        },
+        {
+          "shot": "topic-MKT.png",
+          "from": 2100,
+          "to": 3400,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Marketing saves? Sorted too."
+    },
+    {
+      "type": "screen",
+      "label": "HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "topic-LIFE.png",
+          "from": 2100
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 2100,
+          "to": 3400,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Health and lifestyle. Still guessing?"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Runs in your browser. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Final\n*answer?*",
+      "vo": "Final answer? No changing it.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "THE ANSWER",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-gate.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 370,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "22. 22 were Locked. How many of yours? Find out free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and find your number free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  },
+  "cover_offset_ms": 2741,
+  "duration": 31.052
+}

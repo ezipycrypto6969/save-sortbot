@@ -1,0 +1,227 @@
+{
+  "id": "2026-11-18-1-pov-january",
+  "post_at": "2026-11-18T03:00:00+08:00",
+  "format": "pov",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-pov",
+  "cta": "link",
+  "hook_type": "pov",
+  "opening": "concrete",
+  "hook_formula": "Mid-Sentence Start",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "POV: FIND IT BY TOPIC"
+  },
+  "yt_title": "How to sort your Instagram saved reels by topic",
+  "caption": "POV: you saved a money tip in January. It's November.\n\nYou scroll back ten months. Newest first. No labels. No search.\n\nSaveSort sorts every save by topic, so the money ones sit together. No advice, just found.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "POV: you saved it\n*in January.*",
+      "vo": "POV: you saved it in January.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Ten months\n*back.*",
+      "vo": "Ten months back. Newest first. Be honest: still scrolling?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "report-all.png",
+          "from": 500,
+          "to": 1100,
+          "t0": 0.55,
+          "t1": 0.98
+        }
+      ],
+      "highlights": [
+        {
+          "x": 40,
+          "y": 570,
+          "w": 700,
+          "h": 1070,
+          "at": 0.5
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "So you sort them instead. Every save, by topic."
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "JANUARY?",
+        "*Keep scrolling.*"
+      ],
+      "vo": "Meanwhile, the old way. No labels. No search.",
+      "mascot": {
+        "pos": "bl",
+        "mood": "sad"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Your thumb's\n*done cardio.*",
+      "vo": "Your thumb's done more cardio than me. And I deadlift phones.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "THE 30",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "The ones with real steps: 30 of 156."
+    },
+    {
+      "type": "talk",
+      "text": "No advice.\n*Just found.*",
+      "vo": "No advice from me. Just found. Sorted.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "THE HYPE ONES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "suspicious"
+      },
+      "vo": "And the hype ones, flagged. You skip them."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Your file stays on your device. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "MONEY & FINANCE",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-MONEY.png",
+          "from": 1650,
+          "to": 2400,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1568.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Money and finance. One tap. There it is. Find your January save free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Find it.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and sort yours free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  },
+  "cover_offset_ms": 3034,
+  "duration": 32.683
+}

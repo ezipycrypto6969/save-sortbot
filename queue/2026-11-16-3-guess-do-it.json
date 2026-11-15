@@ -1,0 +1,192 @@
+{
+  "id": "2026-11-16-3-guess-do-it",
+  "post_at": "2026-11-16T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "Negative Command",
+  "hook_score": 83.2,
+  "fx": {
+    "hook": "LOCK IN YOUR GUESS"
+  },
+  "yt_title": "How to see which Instagram saves are worth it",
+  "caption": "156 saved reels. Guess how many you'd actually do? No cheating.\n\nLock in your guess, then watch to the end.\n\nSaveSort read every caption and sorted them by topic, with a verdict each: Do it, Watch it, Skip it or Locked.\n\nThe answer: 30 Do it, out of 156 in our sample report.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*How many useful?*",
+      "vo": "Don't cheat. 156 saves. Guess.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Lock in your\n*guess.*",
+      "vo": "How many would you actually do? Lock in your guess.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "LEARNING",
+      "segs": [
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-LEARN.png",
+          "from": 1650,
+          "to": 2950,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every single caption and sorted them by topic."
+    },
+    {
+      "type": "screen",
+      "label": "HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-LIFE.png",
+          "from": 1650,
+          "to": 2950,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Health and lifestyle. Still guessing?"
+    },
+    {
+      "type": "screen",
+      "label": "AI & TOOLS",
+      "segs": [
+        {
+          "shot": "topic-AI.png",
+          "from": 1650
+        },
+        {
+          "shot": "topic-AI.png",
+          "from": 1650,
+          "to": 2950,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "smug"
+      },
+      "vo": "AI and tools. Everyone's a founder now."
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "It runs in your browser. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "talk",
+      "text": "Changing your guess?\n*Too late.*",
+      "vo": "Changing your guess? Too late. No take-backs. I'm strict.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Drumroll.\n*Final answer?*",
+      "vo": "Drumroll please. Final answer? Last chance.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "THE ANSWER",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-go.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 250,
+          "y": 1728
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "30. Only 30 to actually do. Guessed 30? You're scary. What's yours? Find out free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and find your number free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "cover_offset_ms": 3550,
+  "duration": 30.808,
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  }
+}

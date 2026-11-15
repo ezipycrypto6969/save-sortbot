@@ -1,0 +1,173 @@
+{
+  "id": "2026-11-21-3-side-hustle-saved",
+  "post_at": "2026-11-21T19:30:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "callout",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "REAL OR HYPE?"
+  },
+  "yt_title": "How to sort Instagram saved reels into topics",
+  "caption": "You saved a side hustle? Seriously?\n\nSaveSort sorts every save by topic and flags the hype as Skip it: big promises, no real steps. Not advice, just sorting.\n\nOur sample report: 156 saves, 10 Skip it.\n\nHow to sort your Instagram saved reels: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing gets uploaded.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. The saves and numbers are real.\n\n#savedreels #instagramtips #productivity #organization #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved a side hustle?\n*Seriously?*",
+      "vo": "You saved a side hustle? Seriously?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Real or\n*hype?*",
+      "vo": "Real or hype? Guess before I check. Go on.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 500
+        },
+        {
+          "shot": "topic-BIZ.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.35,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1216.34375
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Business and side hustles. One tap. All of them together."
+    },
+    {
+      "type": "react",
+      "quote": "Huge daily sales from zero. Zero effort.",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "SKIP IT",
+      "verdictColor": "warn",
+      "vo": "Zero effort? Cap. Straight to Skip it."
+    },
+    {
+      "type": "talk",
+      "text": "Passive income?\n*Very active marketing.*",
+      "vo": "Passive income? Very active marketing. Exhausting, honestly.",
+      "mood": "smug"
+    },
+    {
+      "type": "react",
+      "quote": "Comment GUIDE and I'll DM you the steps",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "LOCKED",
+      "verdictColor": "gate",
+      "vo": "Steps by comment only? That's not a guide. That's Locked."
+    },
+    {
+      "type": "talk",
+      "text": "My side hustle?\n*Paid per save.*",
+      "vo": "My side hustle? Paid per save. The rate is terrible.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram export in. Nothing gets uploaded."
+    },
+    {
+      "type": "steps",
+      "heading": "Do yours in 3 steps",
+      "items": [
+        "Download your Instagram data",
+        "Tick only Saved",
+        "Drop the zip in"
+      ],
+      "vo": "Download your Instagram data, tick Saved, drop the zip in."
+    },
+    {
+      "type": "screen",
+      "label": "THE 10 HYPE ONES",
+      "segs": [
+        {
+          "shot": "report-all.png",
+          "from": 1650
+        },
+        {
+          "shot": "report-warn.png",
+          "from": 1650,
+          "to": 3200,
+          "t0": 0.3,
+          "t1": 0.95
+        }
+      ],
+      "taps": [
+        {
+          "at": 0.18,
+          "x": 128,
+          "y": 1808
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "shocked"
+      },
+      "vo": "10 of 156 flagged as hype. Check your side hustles free.",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Real or hype?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Tap the link in bio and check your side hustles. It's free."
+    }
+  ],
+  "campaign": "What's your number?",
+  "review": {
+    "avg": 8.3,
+    "rounds": 1
+  },
+  "cover_offset_ms": 2870,
+  "duration": 30.865
+}
