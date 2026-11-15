@@ -2,7 +2,7 @@
   "id": "2026-11-16-2-study-tips",
   "post_at": "2026-11-16T07:00:00+08:00",
   "format": "breakdown",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -192,5 +192,28 @@
   },
   "cover_offset_ms": 2616,
   "duration": 30.344,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-15T22:56:17+00:00",
+  "media_id": "18156432940591239",
+  "permalink": "https://www.instagram.com/reel/Dfx5y4iCppO/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "-BBPRWK9c88",
+    "url": "https://youtube.com/shorts/-BBPRWK9c88",
+    "posted_at": "2026-11-15T22:56:20+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "27225e80bb38475f94269a2f1339efb1",
+    "submitted_at": "2026-11-15T22:56:26+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7708534840634838278",
+    "message": ""
+  }
 }
