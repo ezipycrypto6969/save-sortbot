@@ -2,7 +2,7 @@
   "id": "2026-11-16-3-guess-do-it",
   "post_at": "2026-11-16T19:30:00+08:00",
   "format": "guess",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -189,5 +189,28 @@
     "avg": 8.1,
     "rounds": 2
   },
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-16T11:26:29+00:00",
+  "media_id": "18117613115143784",
+  "permalink": "https://www.instagram.com/reel/DfzPok_CFyL/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "AGZL9ePhTvU",
+    "url": "https://youtube.com/shorts/AGZL9ePhTvU",
+    "posted_at": "2026-11-16T11:26:33+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "9114761533ef4f03a5f5cb99852f7658",
+    "submitted_at": "2026-11-16T11:26:39+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7708729315344633108",
+    "message": ""
+  }
 }
