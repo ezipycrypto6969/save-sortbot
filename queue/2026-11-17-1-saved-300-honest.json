@@ -2,7 +2,7 @@
   "id": "2026-11-17-1-saved-300-honest",
   "post_at": "2026-11-17T03:00:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -212,5 +212,28 @@
   },
   "cover_offset_ms": 2769,
   "duration": 30.767,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-16T18:56:39+00:00",
+  "media_id": "18120223850003835",
+  "permalink": "https://www.instagram.com/reel/Df0DJC6Cmdb/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "zGAWbnPgEiY",
+    "url": "https://youtube.com/shorts/zGAWbnPgEiY",
+    "posted_at": "2026-11-16T18:56:41+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "984bf8044c19413993833d6890226301",
+    "submitted_at": "2026-11-16T18:57:18+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7708845427302386965",
+    "message": ""
+  }
 }
