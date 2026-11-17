@@ -247,12 +247,12 @@
       "avg_watch_s": 4.5
     },
     "youtube": {
-      "views": 69,
+      "views": 71,
       "likes": 1,
       "comments": 0
     },
     "tiktok": {
-      "views": 88,
+      "views": 90,
       "likes": 1,
       "comments": 0,
       "shares": 0,
@@ -262,8 +262,8 @@
       "avg_watch_s": 1.52,
       "full_watch_rate": 0
     },
-    "total_views": 209,
+    "total_views": 213,
     "total_engagement": 7,
-    "updated": "2026-11-16T07:12:32+00:00"
+    "updated": "2026-11-17T08:26:21+00:00"
   }
 }
