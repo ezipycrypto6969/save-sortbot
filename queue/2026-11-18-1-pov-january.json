@@ -2,7 +2,7 @@
   "id": "2026-11-18-1-pov-january",
   "post_at": "2026-11-18T03:00:00+08:00",
   "format": "pov",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -224,5 +224,28 @@
   },
   "cover_offset_ms": 3034,
   "duration": 32.683,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-17T18:56:45+00:00",
+  "media_id": "18111298337250524",
+  "permalink": "https://www.instagram.com/reel/Df2n-N2Chpw/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "IP1kmJw2LEw",
+    "url": "https://youtube.com/shorts/IP1kmJw2LEw",
+    "posted_at": "2026-11-17T18:56:47+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "900edd3b224440e4a04cbeadc654d113",
+    "submitted_at": "2026-11-17T18:57:04+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7709216416238538005",
+    "message": ""
+  }
 }
