@@ -2,7 +2,7 @@
   "id": "2026-11-18-2-to-do-list",
   "post_at": "2026-11-18T07:00:00+08:00",
   "format": "breakdown",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -212,5 +212,28 @@
   },
   "cover_offset_ms": 3011,
   "duration": 30.085,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-17T23:08:19+00:00",
+  "media_id": "17905408968610004",
+  "permalink": "https://www.instagram.com/reel/Df3Ew7MnG8c/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "8eGLXj7w-NA",
+    "url": "https://youtube.com/shorts/8eGLXj7w-NA",
+    "posted_at": "2026-11-17T23:08:22+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "47389242ba0248d58400268e4ec19983",
+    "submitted_at": "2026-11-17T23:08:30+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7709281209108516148",
+    "message": ""
+  }
 }
