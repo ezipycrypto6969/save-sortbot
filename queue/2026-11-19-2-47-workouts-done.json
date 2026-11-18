@@ -2,7 +2,7 @@
   "id": "2026-11-19-2-47-workouts-done",
   "post_at": "2026-11-19T07:00:00+08:00",
   "format": "funny-ad",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -212,5 +212,28 @@
   },
   "cover_offset_ms": 3025,
   "duration": 30.054,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-18T22:57:04+00:00",
+  "media_id": "18077402108758901",
+  "permalink": "https://www.instagram.com/reel/Df5oR0WkX4-/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "8_B4-8CeeMg",
+    "url": "https://youtube.com/shorts/8_B4-8CeeMg",
+    "posted_at": "2026-11-18T22:57:06+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "be5f2d68766246b3ab8e7530f03e62ba",
+    "submitted_at": "2026-11-18T22:57:11+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7709649345783614740",
+    "message": ""
+  }
 }
