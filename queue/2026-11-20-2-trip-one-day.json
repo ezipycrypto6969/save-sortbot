@@ -2,7 +2,7 @@
   "id": "2026-11-20-2-trip-one-day",
   "post_at": "2026-11-20T07:00:00+08:00",
   "format": "how-to",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -193,5 +193,28 @@
   },
   "cover_offset_ms": 2378,
   "duration": 30.072,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-19T23:03:25+00:00",
+  "media_id": "17876418864639132",
+  "permalink": "https://www.instagram.com/reel/Df8NyeFFMSo/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "jZY0NaTAlN8",
+    "url": "https://youtube.com/shorts/jZY0NaTAlN8",
+    "posted_at": "2026-11-19T23:03:27+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "f61b0424728c468d93e638412175883c",
+    "submitted_at": "2026-11-19T23:03:32+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7710022081794084148",
+    "message": ""
+  }
 }
