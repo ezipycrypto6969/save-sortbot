@@ -2,7 +2,7 @@
   "id": "2026-11-20-1-one-pile",
   "post_at": "2026-11-20T03:00:00+08:00",
   "format": "before-after",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -241,5 +241,28 @@
   },
   "cover_offset_ms": 2767,
   "duration": 30.187,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-19T18:59:05+00:00",
+  "media_id": "18129936169675501",
+  "permalink": "https://www.instagram.com/reel/Df7x0_rFJTo/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "lxxj0jUY3EU",
+    "url": "https://youtube.com/shorts/lxxj0jUY3EU",
+    "posted_at": "2026-11-19T18:59:07+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "1fd974182a744c9da10279b3c59203c8",
+    "submitted_at": "2026-11-19T18:59:14+00:00",
+    "sound": {
+      "id": "7234215160234854402",
+      "title": "Vacuum cleaner, vacuum, sucking sound, buzz(1434918)",
+      "artist": "Yoh",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7709959127321201926",
+    "message": ""
+  }
 }
