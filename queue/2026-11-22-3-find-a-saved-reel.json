@@ -2,7 +2,7 @@
   "id": "2026-11-22-3-find-a-saved-reel",
   "post_at": "2026-11-22T19:30:00+08:00",
   "format": "how-to",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -218,5 +218,28 @@
   },
   "cover_offset_ms": 2324,
   "duration": 31.758,
-  "checked_at": "2026-11-15T15:11:26+08:00"
+  "checked_at": "2026-11-15T15:11:26+08:00",
+  "posted_at": "2026-11-22T11:27:14+00:00",
+  "media_id": "17914361187571472",
+  "permalink": "https://www.instagram.com/reel/DgCsf_PggTF/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "nHHlz1uiIGw",
+    "url": "https://youtube.com/shorts/nHHlz1uiIGw",
+    "posted_at": "2026-11-22T11:27:16+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "0de591dd72054efcaee0200a810da567",
+    "submitted_at": "2026-11-22T11:27:24+00:00",
+    "sound": {
+      "id": "7234215160234854402",
+      "title": "Vacuum cleaner, vacuum, sucking sound, buzz(1434918)",
+      "artist": "Yoh",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7710955993236278548",
+    "message": ""
+  }
 }
