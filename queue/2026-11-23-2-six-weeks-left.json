@@ -2,7 +2,7 @@
   "id": "2026-11-23-2-six-weeks-left",
   "post_at": "2026-11-23T07:00:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -151,5 +151,28 @@
     "avg": 8.0,
     "rounds": 3
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-22T22:57:11+00:00",
+  "media_id": "18108696703998773",
+  "permalink": "https://www.instagram.com/reel/DgD7eFFkw-5/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "vm1Mkp9vMqM",
+    "url": "https://youtube.com/shorts/vm1Mkp9vMqM",
+    "posted_at": "2026-11-22T22:57:14+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "94069829423f4b329f4ca2e046674a38",
+    "submitted_at": "2026-11-22T22:57:22+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7711133777505815829",
+    "message": ""
+  }
 }
