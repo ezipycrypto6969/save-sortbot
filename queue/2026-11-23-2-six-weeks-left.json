@@ -3,7 +3,7 @@
   "post_at": "2026-11-23T07:00:00+08:00",
   "format": "demo",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -150,5 +150,6 @@
   "review": {
     "avg": 8.0,
     "rounds": 3
-  }
+  },
+  "checked_at": "2026-11-22T15:13:06+08:00"
 }

@@ -3,7 +3,7 @@
   "post_at": "2026-11-28T19:30:00+08:00",
   "format": "guess",
   "status": "queued",
-  "check": "pending",
+  "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -141,5 +141,6 @@
   "review": {
     "avg": 8.1,
     "rounds": 2
-  }
+  },
+  "checked_at": "2026-11-22T15:13:06+08:00"
 }

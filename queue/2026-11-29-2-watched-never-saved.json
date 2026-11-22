@@ -2,8 +2,8 @@
   "id": "2026-11-29-2-watched-never-saved",
   "post_at": "2026-11-29T07:00:00+08:00",
   "format": "how-to",
-  "status": "queued",
-  "check": "pending",
+  "status": "held",
+  "check": "failed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
   "speed": 1.22,
@@ -159,5 +159,9 @@
     "avg": 7.75,
     "rounds": 3,
     "note": "panel's round-3 fix applied after scoring; not re-reviewed"
-  }
+  },
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "hold_reasons": [
+    "Scene 6 (talk) vo: \"Watch history only helps if you remember when.\" Not true: Instagram's Reels Watch history can also be sorted by author, not just by date (TechCrunch on Instagram's launch, quoting Adam Mosseri: https://techcrunch.com/2025/10/24/instagrams-latest-feature-lets-you-go-back-see-your-watched-reels/). Wrongly describes a real feature in a how-to reel."
+  ]
 }
