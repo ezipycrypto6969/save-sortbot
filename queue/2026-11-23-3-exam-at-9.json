@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-23-3-exam-at-9",
+  "post_at": "2026-11-23T19:30:00+08:00",
+  "format": "story",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "story",
+  "opening": "concrete",
+  "hook_formula": "The Deadline",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "WILL SORTY BEAT 9AM?"
+  },
+  "yt_title": "How to find study reels you saved on Instagram",
+  "caption": "Exam at 9. Your notes are somewhere in your saves.\n\nYour Instagram saved reels, sorted by topic: here's how to find the study ones.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort. Nothing gets uploaded.\n3. Tap Learning. In our sample report, 12 study saves, in one place.\n\nFind yours free, link in bio.\n\nSend this to the friend who studies from their saved tab.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #studytips #studygram #examseason",
+  "tiktok_caption": "Exam at 9. Your notes are somewhere in your saves.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to find study reels you saved on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSend this to the friend who studies from their saved tab.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #studytips #studygram #examseason",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Exam at 9.\n*Saved notes?*",
+      "vo": "Exam at 9. Saved notes?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "8 hours.\n*I'm your tutor.*",
+      "vo": "8 hours. I'm your tutor.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "THE JOB",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Job one: find every study reel you ever saved. All of them."
+    },
+    {
+      "type": "stat",
+      "value": 156,
+      "label": "saves to search",
+      "color": "warn",
+      "vo": "156 saves. One night. And no search bar in sight.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "Easy. Wait.\nI saved *zero notes.*",
+      "vo": "Easy. Wait. I never saved a single note myself.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "The tutor.\n*Zero notes.*",
+      "vo": "The tutor has zero notes. I'm cooked. Fully cooked.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "PLAN B",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Plan B. SaveSort reads every caption and sorts the whole pile by topic."
+    },
+    {
+      "type": "talk",
+      "text": "Study stuff?\n*One topic.*",
+      "vo": "Study saves land in one topic. Watch. Tap it.",
+      "mood": "happy"
+    },
+    {
+      "type": "talk",
+      "text": "Clock check:\n*still 9.*",
+      "vo": "Clock check. It's nearly 3 in the morning. Exam's still at 9. Go.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "LEARNING: 12",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LEARN.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Learning. 12 saves, in one place. Before 9. Tutor redeemed.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 640.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Find them\n*before 9.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your study saves free, before 9. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "study",
+  "cover_offset_ms": 2617,
+  "duration": 31.301,
+  "review": {
+    "avg": 8.3,
+    "rounds": 2
+  }
+}

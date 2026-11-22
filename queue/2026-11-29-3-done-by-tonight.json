@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-29-3-done-by-tonight",
+  "post_at": "2026-11-29T19:30:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Deadline",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "BEAT THE SUNDAY CLOCK"
+  },
+  "yt_title": "How to declutter your Instagram saved posts",
+  "caption": "Saved tab. Done by Sunday.\n\nHow to declutter your Instagram saved reels in one Sunday reset.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort: sorted by topic, in your browser.\n3. Keep the Do it ones.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nSort yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #sundayreset #declutter #organization",
+  "tiktok_caption": "Saved tab. Done by Sunday.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to declutter your Instagram saved posts? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #sundayreset #declutter #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved tab.\n*Done by Sunday.*",
+      "vo": "Saved tab. Done by Sunday.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "It's *Sunday.*\nClock's out.",
+      "vo": "It's Sunday. Clock's out.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Sunday reset. Drop your Instagram saves file in."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort reads every caption. Every save, sorted by topic. Ten topics."
+    },
+    {
+      "type": "talk",
+      "text": "The Sunday reset\n*actually happened.*",
+      "vo": "The Sunday reset that actually happened. Historic.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-BIZ.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Every save in it. Side hustles, right there.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 816.3
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "text": "About a month\n*to January.*",
+      "vo": "About a month to the new year. Clock's ticking.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Keep the\n*real ones.*",
+      "vo": "Keep the real ones. Skip the hype. Here's how many made the cut.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "Drumroll.",
+      "vo": "Drumroll please. Sunday reset edition.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. That's your list. Done by tonight.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Done by tonight.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Sort yours before Sunday's over. It's free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2543,
+  "duration": 30.373,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

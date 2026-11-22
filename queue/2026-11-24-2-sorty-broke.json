@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-24-2-sorty-broke",
+  "post_at": "2026-11-24T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "Contrarian Flip",
+  "hook_score": 84.4,
+  "fx": {
+    "hook": "GUESS SORTY'S PAY"
+  },
+  "yt_title": "Where do saved reels go on Instagram",
+  "caption": "You saved 500. Sorty's broke.\n\nWhere do Instagram saved reels go? Profile, menu, Saved: one long pile. SaveSort sorts it by topic.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort. Nothing gets uploaded.\n3. Tap a topic. In our sample report, 30 of 156 were Do it.\n\nFind yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #funny #relatable #productivity",
+  "tiktok_caption": "You saved 500. Sorty's broke.\n\nGet your own Do it list, free at savesortai.com.\n\nWhere do saved reels go on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #funny #relatable #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved 500.\n*Sorty's broke.*",
+      "vo": "You saved 500. Sorty's broke.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Paid *per save*\nsorted.",
+      "vo": "I'm paid per save sorted.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Your saves live in Profile, menu, Saved. One long pile. I sort that file."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop it in, and I sort every save by topic. In your browser."
+    },
+    {
+      "type": "talk",
+      "text": "The rate?\n*Classified.*",
+      "vo": "The rate? Classified. My landlord is Storage Full.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "AI & TOOLS",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-AI.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. AI and tools. Every save in it, right there.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 464.3
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "text": "Nothing\n*uploaded.*",
+      "vo": "Nothing gets uploaded. It all stays on your device.",
+      "bg": "ink"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. The good ones.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      }
+    },
+    {
+      "type": "talk",
+      "text": "So, my pay?\n*Guess.*",
+      "vo": "So what do I get for sorting all 500? Go on. Guess.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "talk",
+      "text": "Today's pay:\n*one sugar packet.*",
+      "vo": "Today's pay? One sugar packet. Pre-workout, sorted.",
+      "mood": "smug",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sort yours.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your Do it saves free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2961,
+  "duration": 30.615,
+  "review": {
+    "avg": 8.3,
+    "rounds": 2
+  }
+}

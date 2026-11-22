@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-25-3-download-them",
+  "post_at": "2026-11-25T19:30:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "save",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "If This, Then Watch",
+  "hook_score": 80.8,
+  "fx": {
+    "hook": "SAVE THE STEPS"
+  },
+  "yt_title": "How to back up your Instagram saved reels",
+  "caption": "You saved 500. Download them.\n\nHow to back up your Instagram saved reels:\n\n1. Profile, menu, Accounts Center.\n2. Your information and permissions, Download your information (some accounts say Export).\n3. Some of your information, tick only Saved.\n4. Download to device, All time, HTML.\nInstagram emails it, usually within hours.\n\nThen drop the zip into SaveSort to sort every save by topic. No file yet? Try the sample report.\n\nSave this for when you need the steps.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #backup #howto #techtips",
+  "tiktok_caption": "You saved 500. Download them.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to back up your Instagram saved reels? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #backup #howto #techtips",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved 500.\n*Download them.*",
+      "vo": "You saved 500. Download them.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Save this.\n*Steps inside.*",
+      "vo": "Save this. Steps inside.",
+      "mood": "happy"
+    },
+    {
+      "type": "steps",
+      "heading": "Download your saves",
+      "items": [
+        "Accounts Center",
+        "Download your information",
+        "Tick only Saved",
+        "Device, All time, HTML"
+      ],
+      "vo": "Accounts Center. Download your information. Saved only. Download to device, All time, HTML."
+    },
+    {
+      "type": "talk",
+      "text": "Instagram\n*emails it.*",
+      "vo": "Instagram emails it, usually within hours. Faster than my pay arrives.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "No file yet?\n*Try the sample.*",
+      "vo": "No file yet? Try the sample report while you wait.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "File's here? Drop the zip in. Don't even unzip it."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort reads every caption and sorts your saves by topic."
+    },
+    {
+      "type": "talk",
+      "text": "Runs in your\n*browser.*",
+      "vo": "Runs in your browser. Nothing gets uploaded. Ever.",
+      "mood": "happy"
+    },
+    {
+      "type": "talk",
+      "text": "And the\n*best bit?*",
+      "vo": "And the best bit? Watch this. One tap.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "TAP A TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LIFE.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Every save you ever made, finally findable.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 904.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Save this.\n*You'll need it.*",
+      "pill": "Save for later ↓",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Save this, so the steps are here when you need them."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "how-to",
+  "cover_offset_ms": 2903,
+  "duration": 30.788,
+  "review": {
+    "avg": 8.4,
+    "rounds": 2
+  }
+}

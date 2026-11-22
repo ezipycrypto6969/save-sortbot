@@ -1,0 +1,150 @@
+{
+  "id": "2026-11-25-1-who-sees-saves",
+  "post_at": "2026-11-25T03:00:00+08:00",
+  "format": "myth",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "question",
+  "opening": "concrete",
+  "hook_formula": "The Verbatim Question",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "WHO CAN SEE YOUR SAVES?"
+  },
+  "yt_title": "Can people see what you save on Instagram",
+  "caption": "You saved it. Can the creator see?\n\nYour Instagram saved reels: creators see a save count, never who saved.\n\nWant to sort your Instagram saved reels privately too? Download your Instagram data, tick only Saved, drop the zip into SaveSort. It runs in your browser and uploads nothing.\n\nSort yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #privacy #instagramprivacy #didyouknow",
+  "tiktok_caption": "You saved it. Can the creator see?\n\nGet your own Do it list, free at savesortai.com.\n\nCan people see what you save on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #privacy #instagramprivacy #didyouknow",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Who knows?*",
+      "vo": "You saved it. Who knows?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "The creator?\n*Let's check.*",
+      "vo": "The creator? Let's check.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "STAYS ON YOUR DEVICE",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "First, SaveSort sorts your saves right here. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Your saves, sorted by topic. On your device."
+    },
+    {
+      "type": "talk",
+      "text": "2am saves?\n*Lowkey embarrassing.*",
+      "vo": "Your 2am saves? Lowkey embarrassing. So who can see them?",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "MINDSET",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-MIND.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Mindset and motivation. 12 of them.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 728.3
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "text": "The creator\n*gets a number.*",
+      "vo": "Here's the deal. Creators with insights can see how many saves a post got.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "But *who?*",
+      "vo": "But do they see who saved it? Your name? Big question.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "talk",
+      "text": "Your gym saves.\nYour 2am saves.",
+      "vo": "Your gym saves. Your 2am saves. Your seventh banana bread recipe.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "A count.\n*Never who.*",
+      "vo": "Creators see how many saved it. Never who. And SaveSort? Sees nothing. It's all on your device.",
+      "bg": "paper",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sort them.\n*Privately.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Sort yours privately, on your own device, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2261,
+  "duration": 32.758,
+  "review": {
+    "avg": 7.9,
+    "rounds": 3,
+    "note": "panel's round-3 fix applied after scoring; not re-reviewed"
+  }
+}

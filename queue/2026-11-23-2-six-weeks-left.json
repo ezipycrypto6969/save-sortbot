@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-23-2-six-weeks-left",
+  "post_at": "2026-11-23T07:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "The Deadline",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "BEAT THE NEW YEAR CLOCK"
+  },
+  "yt_title": "How to tidy up your Instagram saved posts",
+  "caption": "500 saves? Six weeks left in 2026.\n\nHere's how to tidy up your Instagram saved reels before January, without scrolling them one by one.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort: sorted by topic, in your browser.\n3. Keep the Do it ones. That's your January list.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nFind your list free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #newyeargoals #declutter #productivity",
+  "tiktok_caption": "500 saves? Six weeks left in 2026.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to tidy up your Instagram saved posts? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #newyeargoals #declutter #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved 500?\n*Six weeks left.*",
+      "vo": "Saved 500? Six weeks left.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Clock's\n*ticking.*",
+      "vo": "New year's coming. Clock's ticking.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORT IT NOW",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram saves file in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort reads every caption. Every save, sorted by topic. In seconds."
+    },
+    {
+      "type": "talk",
+      "text": "Your January list\nis *in there.*",
+      "vo": "Your January list is in there. Bet it's shorter than you think.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "title",
+      "text": "Saved in March.\n*Pays no rent.*",
+      "vo": "Saved in March. It lives here now. Pays no rent.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "TAP A TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LIFE.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Every save in it, in one place.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 904.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "Not all 500.\n*The real ones.*",
+      "vo": "You don't need all 500. Just the real ones.",
+      "mood": "happy"
+    },
+    {
+      "type": "talk",
+      "text": "How short is\n*the list?*",
+      "vo": "So how short is the real list? Here it is.",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. That's a January list.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your January list.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your Do it list before the new year. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2937,
+  "duration": 30.869,
+  "review": {
+    "avg": 8.0,
+    "rounds": 3
+  }
+}

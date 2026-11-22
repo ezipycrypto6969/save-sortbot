@@ -16,7 +16,7 @@ Per the 7 Nov brief (D2: the backlog is all AI/money). Each is a "lost saved ree
 - The side hustle idea you saved at 2am (Business & side hustles topic; be careful flags the hype) [used 2026-11-15]
 - The travel spot you saved for "one day" (no travel topic: show sorted by topic only) [used 2026-11-15]
 - The cleaning hack you saved and never tried (no topic claim; worth doing tab)
-- New year, same saved tab: sort before January (seasonal, late Dec)
+- New year, same saved tab: sort before January (seasonal, late Dec) [used 2026-11-23]
 
 ## 000 · AI & tools · breakdown
 **Claim in the reel:** Harvey: a free, open-source Claude Code agent that finds leads (via OpenStreetMap), scores them, drafts personalised cold emails and runs your sales pipeline. Every email waits for your approval.

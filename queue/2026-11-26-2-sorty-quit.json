@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-26-2-sorty-quit",
+  "post_at": "2026-11-26T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "Contrarian Flip",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "WHY DID SORTY QUIT?"
+  },
+  "yt_title": "How to keep track of reels you save on Instagram",
+  "caption": "You saved it. Sorty quit. Now he sorts.\n\nHow to keep track of your Instagram saved reels: sort them by topic, then do the good ones.\n\nDownload your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nFind yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #funny #relatable #organization",
+  "tiktok_caption": "You saved it. Sorty quit. Now he sorts.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to keep track of reels you save on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #funny #relatable #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Sorty quit.*",
+      "vo": "You saved it. Sorty quit.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "I don't save.\n*I sort.*",
+      "vo": "I don't save. I sort.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Fun fact. I used to be the save button. Billions of taps."
+    },
+    {
+      "type": "talk",
+      "text": "Billions of saves.\nOpened? *Never.*",
+      "vo": "Billions of saves. Opened? Never. Not once. Ever.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Now you drop your saves in, and I sort them by topic. In seconds. Every one."
+    },
+    {
+      "type": "title",
+      "text": "PB:\n*two phones.*",
+      "vo": "Also deadlifted two phones today. New PB.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "MARKETING & ADS",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-MKT.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Every save in it, right there.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 552.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "Nothing\n*uploaded.*",
+      "vo": "Runs in your browser. Nothing gets uploaded. Ever.",
+      "mood": "happy"
+    },
+    {
+      "type": "talk",
+      "text": "So why\n*sort?*",
+      "vo": "So why sort instead of save? Here's exactly why I quit.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. 30 worth opening. That's why I sort now.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sorted.\n*Now go do one.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your Do it saves free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2444,
+  "duration": 31.202,
+  "review": {
+    "avg": 8.0,
+    "rounds": 3
+  }
+}

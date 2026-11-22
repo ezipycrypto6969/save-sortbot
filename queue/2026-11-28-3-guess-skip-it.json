@@ -1,0 +1,145 @@
+{
+  "id": "2026-11-28-3-guess-skip-it",
+  "post_at": "2026-11-28T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "The Verbatim Question",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "GUESS BEFORE THE END"
+  },
+  "yt_title": "How to tell if a saved reel is hype",
+  "caption": "156 saves. Guess how many were hype.\n\nSkip it = your Instagram saved reels that promise big results with no proof, flagged by SaveSort.\n\nThe answer in our sample report: 10 Skip it, out of 156.\n\nSort yours: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser.\n\nFind the hype in yours, free. Link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #scamwatch #redflags #guess",
+  "tiktok_caption": "156 saves. Guess how many were hype.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to tell if a saved reel is hype? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #scamwatch #redflags #guess",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "156 saves.\n*How many lied?*",
+      "vo": "156 saves. How many lied?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Guess\n*how many.*",
+      "vo": "Guess how many.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every caption in our saves. Here are two it flagged. Your guess still counts."
+    },
+    {
+      "type": "react",
+      "quote": "finish a week’s worth of work in 4 hours",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "SKIP IT",
+      "verdictColor": "warn",
+      "vo": "A week of work in 4 hours? Cap. Big cap.",
+      "quote_source": "https://www.instagram.com/p/DZCfPPdCPjd/"
+    },
+    {
+      "type": "react",
+      "quote": "this isnt outright illegal, it's a GREY AREA",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "SKIP IT",
+      "verdictColor": "warn",
+      "vo": "A grey area? That's not a hustle. That's a warning.",
+      "quote_source": "https://www.instagram.com/reel/DdN4xhOO6Zj/"
+    },
+    {
+      "type": "talk",
+      "text": "Big promises.\n*No proof.*",
+      "vo": "Big promises. No proof. No steps. Flagged. Every time.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Every save, sorted by topic first. Then the hype gets flagged Skip it."
+    },
+    {
+      "type": "talk",
+      "text": "Lower or\n*higher?*",
+      "vo": "Lower or higher than your guess? Think about your own saved tab.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "talk",
+      "text": "Final\n*answer?*",
+      "vo": "Got it? Lock it in. Final answer.",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 10,
+      "label": "Skip it, of 156",
+      "color": "warn",
+      "vo": "10. 10 of 156 were Skip it. All hype, all flagged.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Find the hype.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find the hype in yours, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "money",
+  "quote_source": [
+    "https://www.instagram.com/p/DZCfPPdCPjd/",
+    "https://www.instagram.com/reel/DdN4xhOO6Zj/"
+  ],
+  "cover_offset_ms": 3622,
+  "duration": 30.389,
+  "review": {
+    "avg": 8.1,
+    "rounds": 2
+  }
+}

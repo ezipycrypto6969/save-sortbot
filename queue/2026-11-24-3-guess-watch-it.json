@@ -1,0 +1,145 @@
+{
+  "id": "2026-11-24-3-guess-watch-it",
+  "post_at": "2026-11-24T19:30:00+08:00",
+  "format": "guess",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "guess",
+  "opening": "concrete",
+  "hook_formula": "The Verbatim Question",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "GUESS BEFORE THE END"
+  },
+  "yt_title": "How to find saved reels you still need to watch",
+  "caption": "156 saves. Guess how many said nothing.\n\nWatch it = the caption of your Instagram saved reels gives no steps, so you'd have to rewatch the video.\n\nThe answer in our sample report: 65 Watch it, out of 156.\n\nSort yours: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser.\n\nWhat's your number? Find out free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #guess #relatable #organization",
+  "tiktok_caption": "156 saves. Guess how many said nothing.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to find saved reels you still need to watch? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #guess #relatable #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved 156.\n*Which said nothing?*",
+      "vo": "Saved 156. Which said nothing?",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Guess.\n*Lock it in.*",
+      "vo": "Guess. Lock it in.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "156 SAVES IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every caption from our 156 saves. Here are two."
+    },
+    {
+      "type": "react",
+      "quote": "this is the trick",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "WATCH IT",
+      "verdictColor": "gate",
+      "vo": "That's the whole caption. What trick? No steps.",
+      "quote_source": "https://www.instagram.com/reel/DeuGQ9Hh4TG/"
+    },
+    {
+      "type": "react",
+      "quote": "stop coping",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "WATCH IT",
+      "verdictColor": "gate",
+      "vo": "Also the whole caption. Okay, but how?",
+      "quote_source": "https://www.instagram.com/reel/Db_QgCLuJQp/"
+    },
+    {
+      "type": "talk",
+      "text": "No steps.\nJust *vibes.*",
+      "vo": "No steps. Just vibes and a voiceover.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Sorted by topic. Then flagged. Some captions were 3 words. I've read longer receipts."
+    },
+    {
+      "type": "talk",
+      "text": "Still guessing?\n*Go higher.*",
+      "vo": "Still guessing? Go higher. No, higher.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "talk",
+      "text": "Final\n*answer?*",
+      "vo": "Got your number? Lock it. Final answer.",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 65,
+      "label": "Watch it, of 156",
+      "color": "warn",
+      "vo": "65. 65 of 156 had no steps in the caption. You'd have to watch them.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your number?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your number free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "quote_source": [
+    "https://www.instagram.com/reel/DeuGQ9Hh4TG/",
+    "https://www.instagram.com/reel/Db_QgCLuJQp/"
+  ],
+  "cover_offset_ms": 3487,
+  "duration": 30.635,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

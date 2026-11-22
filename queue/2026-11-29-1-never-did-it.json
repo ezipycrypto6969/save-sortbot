@@ -1,0 +1,140 @@
+{
+  "id": "2026-11-29-1-never-did-it",
+  "post_at": "2026-11-29T03:00:00+08:00",
+  "format": "breakdown",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "confession",
+  "opening": "concrete",
+  "hook_formula": "Cost Confession",
+  "hook_score": 63.2,
+  "fx": {
+    "hook": "ONE TO DO BEFORE JANUARY"
+  },
+  "yt_title": "How to stop saving reels and start doing them",
+  "caption": "Saved it. Never did it.\n\nHow to stop saving reels and start doing them: SaveSort flags which Instagram saved reels have real steps.\n\nDownload your Instagram data, tick only Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nIn our sample report, 30 of 156 saves were Do it. Pick one before January.\n\nFind your list free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #newyeargoals #motivation #productivity",
+  "tiktok_caption": "Saved it. Never did it.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to stop saving reels and start doing them? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #newyeargoals #motivation #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved it.\n*Never did it.*",
+      "vo": "Saved it. Never did it.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Show me\n*the saves.*",
+      "vo": "Okay. Show me the saves.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your saves into SaveSort. It finds the ones with real steps."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Sorted by topic. Then the ones with real steps get flagged Do it."
+    },
+    {
+      "type": "talk",
+      "text": "Most? *Vibes.*\nSome? *Steps.*",
+      "vo": "Most saves? Just vibes. Some? Actual steps you can follow.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "react",
+      "quote": "Go to a restaurant and eat alone without using your phone.",
+      "label": "SAVED REEL SAYS",
+      "mood": "happy",
+      "verdict": "DO IT",
+      "verdictColor": "go",
+      "vo": "Like this list of challenges. Number one: this.",
+      "quote_source": "https://www.instagram.com/reel/DVutnjvDKAj/"
+    },
+    {
+      "type": "talk",
+      "text": "Okay. This one's\n*actually real.*",
+      "vo": "Okay. This one's actually real. You can do it tonight. Rare.",
+      "mood": "shocked"
+    },
+    {
+      "type": "title",
+      "text": "Before January:\n*do one.*",
+      "vo": "Before the new year? Do one. Just one. I'll wait. I'm a bookmark. I'm good at waiting.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "How many\n*like that?*",
+      "vo": "So how many saves like that are hiding in the pile?",
+      "mood": "suspicious"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. Your list is in there. Somewhere.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sorted.\n*Now go do one.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your Do it list free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "quote_source": [
+    "https://www.instagram.com/reel/DVutnjvDKAj/"
+  ],
+  "cover_offset_ms": 2275,
+  "duration": 30.707,
+  "review": {
+    "avg": 8.0,
+    "rounds": 3
+  }
+}

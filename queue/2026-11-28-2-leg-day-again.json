@@ -1,0 +1,149 @@
+{
+  "id": "2026-11-28-2-leg-day-again",
+  "post_at": "2026-11-28T07:00:00+08:00",
+  "format": "funny-ad",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "funny-ad",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "GUESS SORTY'S PB"
+  },
+  "yt_title": "How to find saved fitness reels on Instagram",
+  "caption": "You saved leg day. Again.\n\nHow to find saved fitness reels: sort your Instagram saved reels by topic. Gym saves land in Health & lifestyle.\n\nDownload your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #gymhumor #legday #fitness",
+  "tiktok_caption": "You saved leg day. Again.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to find saved fitness reels on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #gymhumor #legday #fitness",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved leg day.\n*Again.*",
+      "vo": "You saved leg day. Again.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Me? I deadlift\n*phones.*",
+      "vo": "Me? I deadlift phones.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Up at 5. Drop your saves file in first. That's the warm up."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort sorts every save by topic. In seconds. No spotter needed."
+    },
+    {
+      "type": "talk",
+      "text": "Pre-workout:\n*sugar packet.*",
+      "vo": "Pre-workout? One sugar packet. Elite. Heart rate: drum solo.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LIFE.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Gym saves land in Health and lifestyle. One tap.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 904.3
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "text": "Saved it.\n*Skipped it.*",
+      "vo": "Saved it in March. Skipped it every single Monday since. Classic.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Ice bath?\n*Glass of water.*",
+      "vo": "Ice bath? Glass of water. Recovery.",
+      "mood": "smug"
+    },
+    {
+      "type": "talk",
+      "text": "Now guess\n*my PB.*",
+      "vo": "Now guess my PB. Go on. Heaviest lift ever.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "talk",
+      "text": "My PB:\n*two phones.*",
+      "vo": "My PB? Two phones. At once. Our health pile? 8 saves. Pick one. Go.",
+      "mood": "happy",
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sorted.\n*Now go do one.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your gym saves in one tap. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "gym",
+  "cover_offset_ms": 2587,
+  "duration": 30.862,
+  "review": {
+    "avg": 8.0,
+    "rounds": 3
+  }
+}

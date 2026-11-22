@@ -1,0 +1,170 @@
+{
+  "id": "2026-11-24-1-forgot-why",
+  "post_at": "2026-11-24T03:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "confession",
+  "opening": "concrete",
+  "hook_formula": "Cost Confession",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "WHY DID YOU SAVE THEM?"
+  },
+  "yt_title": "Why did I save this? How to sort Instagram saves by topic",
+  "caption": "Saved it. Forgot why. Again.\n\nSaveSort reads your Instagram saved reels and groups them by topic, so you can see what each pile was for.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip in. Runs in your browser, nothing uploaded.\n3. Tap a topic: AI, money, study, side hustles.\n\nSee what's hiding in yours. Free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #organization #productivity #lifehacks",
+  "tiktok_caption": "Saved it. Forgot why. Again.\n\nGet your own Do it list, free at savesortai.com.\n\nWhy did I save this? How to sort Instagram saves by topic? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #organization #productivity #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved it.\n*Forgot why. Again.*",
+      "vo": "Saved it. Forgot why. Again.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Same.\n*Show me the saves.*",
+      "vo": "Same. Show me the saves.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram saves file in. SaveSort reads every caption."
+    },
+    {
+      "type": "talk",
+      "text": "It reads them\nso *you don't.*",
+      "vo": "It reads them so you don't have to. I read 156. My eyes are tired.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "AI. Money.\n*Gym. Study.*",
+      "vo": "AI tools. Money. Gym. Study. All in one long pile.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "So it sorts them by topic. Ten piles, not one."
+    },
+    {
+      "type": "talk",
+      "text": "48 in\n*Everything else.*",
+      "vo": "48 landed in Everything else. Relatable. Very relatable.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "SIDE HUSTLES",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-BIZ.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Side hustles. That's the 2am pile.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 816.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "And the reason\nyou saved them?",
+      "vo": "And the reason you saved them? Here's one. Brace yourself.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "LEARNING: 12",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LEARN.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Learning: 12 saves. Past you planned to study. Present you can start.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 640.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "What's in yours?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "See what's hiding in yours. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2640,
+  "duration": 31.11,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

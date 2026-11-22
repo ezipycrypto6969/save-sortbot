@@ -1,0 +1,155 @@
+{
+  "id": "2026-11-23-1-unsave-regret",
+  "post_at": "2026-11-23T03:00:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-crazy-hook",
+  "cta": "link",
+  "hook_type": "crazy-warning",
+  "opening": "concrete",
+  "hook_formula": "Wrong Way, Right Way",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "HOW MANY ARE KEEPERS?"
+  },
+  "yt_title": "Before you unsave Instagram saved posts, do this first",
+  "caption": "Unsaving it all? Download first.\n\nBefore you clear your Instagram saved reels, get a copy: once you unsave a post, it's gone from your Saved list.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort: every save sorted by topic, in your browser, nothing uploaded.\n3. Keep the Do it ones. Then unsave the rest.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nFind your keepers first. Free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #unsave #declutter #digitaldeclutter",
+  "tiktok_caption": "Unsaving it all? Download first.\n\nGet your own Do it list, free at savesortai.com.\n\nBefore you unsave Instagram saved posts, do this first? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #unsave #declutter #digitaldeclutter",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Unsaving all?\n*You'll regret it.*",
+      "vo": "Unsaving all? You'll regret it.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Stop.\n*Download first.*",
+      "vo": "Stop. Download them first.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "STEP 1: DOWNLOAD",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Get your Instagram data, tick Saved, and drop the zip in here."
+    },
+    {
+      "type": "talk",
+      "text": "Unsave it =\n*gone* from your list.",
+      "vo": "Unsave it, and it's gone from your list. Like my rent money.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "Some are\n*keepers.*",
+      "vo": "Because some of those saves are keepers. How many? Hold on.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort reads every caption and sorts your saves by topic. In your browser."
+    },
+    {
+      "type": "talk",
+      "text": "I don't judge.\nI sort. *Then I judge.*",
+      "vo": "I don't judge. I sort. Then I judge.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "TAP A TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-MIND.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Mindset and motivation. Everything in it, in one place, finally.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 728.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "Ready for\n*the number?*",
+      "vo": "Ready? This is the bit you keep.",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "In our sample, 30 of 156 were Do it. Keep those. Unsave the rest.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sort first.\n*Then unsave.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find your keepers first. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "hook_source": "marketing/brief.md",
+  "cover_offset_ms": 2453,
+  "duration": 30.837,
+  "review": {
+    "avg": 8.3,
+    "rounds": 2
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "2026-11-26-1-watch-them-sort",
+  "post_at": "2026-11-26T03:00:00+08:00",
+  "format": "before-after",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-before-after",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "Before And After, On Screen",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "WAIT FOR THE AFTER"
+  },
+  "yt_title": "What a sorted Instagram saved tab looks like",
+  "caption": "156 saves. Here's the after.\n\nWhat sorted Instagram saved reels look like: every save grouped by topic, in seconds.\n\nDownload your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSee your own after shot, free. Link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #beforeandafter #declutter #organization",
+  "tiktok_caption": "156 saves. Here's the after.\n\nGet your own Do it list, free at savesortai.com.\n\nWhat a sorted Instagram saved tab looks like? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #beforeandafter #declutter #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved 156?\n*Watch them sort.*",
+      "vo": "Saved 156? Watch them sort.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Before.\n*Look at it.*",
+      "vo": "Before. Look at it.",
+      "mood": "shocked"
+    },
+    {
+      "type": "hook",
+      "lines": [
+        "156 saves.",
+        "*Zero order.*"
+      ],
+      "vo": "My saved reels. 156. Zero order. Pure chaos. Total mess."
+    },
+    {
+      "type": "screen",
+      "label": "DROP",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop the zip into SaveSort. Nothing gets uploaded."
+    },
+    {
+      "type": "talk",
+      "text": "Three, two...\n*Don't look yet.*",
+      "vo": "Three. Two. Don't look yet.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Okay. It's\n*already done.*",
+      "vo": "Okay. It's already done. I didn't even get to count to one.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Ready for\n*the after?*",
+      "vo": "Ready for the after? Brace yourself. It's a lot.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Eyes\n*open.*",
+      "vo": "Okay. Eyes open in three, two...",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Biggest pile?\n*Guess.*",
+      "vo": "Guess the biggest pile. Hint: every drawer has a junk one.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "AFTER",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LEARN.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "After. Every save sorted. 10 topics. 48 in Everything else. 33 AI. 12 study. Done.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 640.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Your after shot.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "See your own after shot, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 3355,
+  "duration": 30.105,
+  "review": {
+    "avg": 7.9,
+    "rounds": 3,
+    "note": "panel's round-3 fix applied after scoring; not re-reviewed"
+  }
+}

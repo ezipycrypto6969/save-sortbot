@@ -1,0 +1,149 @@
+{
+  "id": "2026-11-27-1-one-file",
+  "post_at": "2026-11-27T03:00:00+08:00",
+  "format": "privacy",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "Insider Leak",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "WHICH FILE DOES IT READ?"
+  },
+  "yt_title": "How to sort your Instagram saves privately",
+  "caption": "You saved it. Nothing uploaded.\n\nHow to sort your Instagram saved reels privately: SaveSort opens only saved_posts.html from your Instagram export.\n\nNo Instagram login, no password. It runs in your browser and uploads nothing.\n\nDownload your Instagram data, tick only Saved, drop the zip in.\n\nSort yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #privacy #datasafety #techtips",
+  "tiktok_caption": "You saved it. Nothing uploaded.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to sort your Instagram saves privately? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #privacy #datasafety #techtips",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Nothing uploaded.*",
+      "vo": "You saved it. Nothing uploaded.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Here's what\nI *read.*",
+      "vo": "Here's what I read.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "ONE ZIP",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "You drop in the zip Instagram emails you. As is. No unzipping."
+    },
+    {
+      "type": "title",
+      "text": "It opens\n*one file.*",
+      "vo": "SaveSort opens one file inside it. Which one? Hold on.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Never your\n*login.*",
+      "vo": "It never asks for your login. No password. Ever. Not once.",
+      "mood": "smug"
+    },
+    {
+      "type": "title",
+      "text": "Uploads:\n*zero.*",
+      "vo": "And nothing gets uploaded. It runs in your browser.",
+      "bg": "paper"
+    },
+    {
+      "type": "talk",
+      "text": "Trust issues?\n*Same.*",
+      "vo": "Trust issues? Same. I live in your phone, and even I don't upload.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Then every save, sorted by topic. On your device."
+    },
+    {
+      "type": "talk",
+      "text": "So which\n*file?*",
+      "vo": "So which file does it actually read? Drumroll.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "TECH & PRIVACY",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-TECH.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "One file: your saved posts list. That's all it reads. Nothing uploaded.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1080.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Sort privately.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Sort yours privately, on your own device, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2615,
+  "duration": 30.755,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

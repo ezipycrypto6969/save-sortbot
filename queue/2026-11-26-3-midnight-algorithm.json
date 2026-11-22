@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-26-3-midnight-algorithm",
+  "post_at": "2026-11-26T19:30:00+08:00",
+  "format": "story",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "story",
+  "opening": "concrete",
+  "hook_formula": "The Deadline",
+  "hook_score": 77.8,
+  "fx": {
+    "hook": "BEAT THE ALGORITHM BY MIDNIGHT"
+  },
+  "yt_title": "How to sort Instagram saved reels fast",
+  "caption": "Midnight. The Algorithm's coming for your saves.\n\nHow to sort Instagram saved reels fast, before new reels bury the ones you meant to do.\n\n1. Download your Instagram data, tick only Saved.\n2. Drop the zip into SaveSort. Nothing uploaded.\n3. Tap a topic. In our sample report, 30 of 156 were Do it.\n\nFind yours free, link in bio.\n\nSend this to the friend whose saved tab is a black hole.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #algorithm #relatable #organization",
+  "tiktok_caption": "Midnight. The Algorithm's coming for your saves.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to sort Instagram saved reels fast? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSend this to the friend whose saved tab is a black hole.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #algorithm #relatable #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Midnight's coming.*",
+      "vo": "You saved it. Midnight's coming.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "The Algorithm\n*wants them gone.*",
+      "vo": "The Algorithm wants them gone.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "THE JOB",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "My job tonight: rescue your saves with SaveSort before midnight."
+    },
+    {
+      "type": "talk",
+      "text": "Then it drops\n*45,676 new reels.*",
+      "vo": "Then The Algorithm drops 45,676 new reels. Instantly.",
+      "mood": "shocked"
+    },
+    {
+      "type": "title",
+      "text": "Scroll.\n*Scroll. Scroll.*",
+      "vo": "So I scroll. And scroll. I'm cooked. Fully cooked.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "Wait.\n*Why am I scrolling?*",
+      "vo": "Wait. Why am I scrolling? I sort. Drop the zip.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Every save, sorted by topic. Nothing uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "AI & TOOLS",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-AI.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Tap a topic. Found. The Algorithm hates this.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 464.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "11:59.\n*Did we make it?*",
+      "vo": "11:59. Did we make it?",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "Our sample: 30 of 156 were Do it. Rescued. Before midnight.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Beat the Algorithm.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Beat The Algorithm to your own saves. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2606,
+  "duration": 31.009,
+  "review": {
+    "avg": 8.0,
+    "rounds": 3
+  }
+}

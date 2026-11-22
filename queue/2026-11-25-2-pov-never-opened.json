@@ -1,0 +1,154 @@
+{
+  "id": "2026-11-25-2-pov-never-opened",
+  "post_at": "2026-11-25T07:00:00+08:00",
+  "format": "pov",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-pov",
+  "cta": "link",
+  "hook_type": "pov",
+  "opening": "concrete",
+  "hook_formula": "Mid-Sentence Start",
+  "hook_score": 87.0,
+  "fx": {
+    "hook": "WHAT'S ACTUALLY IN THERE?"
+  },
+  "yt_title": "How to go through old Instagram saves fast",
+  "caption": "POV: you saved. Never opened.\n\nHow to go through old Instagram saved reels fast: let SaveSort sort them by topic first.\n\nDownload your Instagram data, tick only Saved, drop the zip in. Runs in your browser, nothing uploaded.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nFind yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #pov #relatable #productivity",
+  "tiktok_caption": "POV: you saved. Never opened.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to go through old Instagram saves fast? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #pov #relatable #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "POV: you saved.\n*Never opened.*",
+      "vo": "POV: you saved. Never opened.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Again.\n*And again.*",
+      "vo": "Again. And again.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "YOU, FINALLY",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "You finally download your saves. You drop the zip in."
+    },
+    {
+      "type": "title",
+      "text": "You said\n*later.*",
+      "vo": "You said later. Later never came. Your saved tab is a storage unit.",
+      "bg": "ink"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Your pile, sorted by topic. In seconds. You stare at it."
+    },
+    {
+      "type": "talk",
+      "text": "You saved\n*that?*",
+      "vo": "You saved that? At 2am? Bold.",
+      "mood": "shocked"
+    },
+    {
+      "type": "screen",
+      "label": "AI & TOOLS",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-AI.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "You tap a topic. AI and tools. There it is. The one you forgot about.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 464.3
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "text": "You finally\n*open one.*",
+      "vo": "And you finally open one. Character development.",
+      "bg": "paper"
+    },
+    {
+      "type": "talk",
+      "text": "But which ones\n*are worth it?*",
+      "vo": "But which of them are actually worth opening? You check. You hold your breath.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "In our sample, 30 of 156 were Do it. You start there. Finally.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Open one\n*today.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find the few in yours worth opening. Free, link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2725,
+  "duration": 30.767,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

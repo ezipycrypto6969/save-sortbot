@@ -1,0 +1,163 @@
+{
+  "id": "2026-11-29-2-watched-never-saved",
+  "post_at": "2026-11-29T07:00:00+08:00",
+  "format": "how-to",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "bold-claim",
+  "opening": "concrete",
+  "hook_formula": "If This, Then Watch",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "WHICH ONE NEVER VANISHES?"
+  },
+  "yt_title": "How to find a reel you watched but didn't save",
+  "caption": "You watched it. Never saved it.\n\nInstagram saved reels stay put. Watched ones are harder: check Watch history in Your activity.\n\nFor your saves: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nSort yours free, link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #howto #techtips #lifehacks",
+  "tiktok_caption": "You watched it. Never saved it.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to find a reel you watched but didn't save? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #howto #techtips #lifehacks",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You watched it.\n*Never saved.*",
+      "vo": "You watched it. Never saved.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Watched or saved?\n*Big difference.*",
+      "vo": "Watched or saved? Big difference.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "SAVED? SORTED.",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Saved reels? SaveSort sorts those by topic. Watched ones? Different story."
+    },
+    {
+      "type": "title",
+      "text": "Only watched?\n*Watch history.*",
+      "vo": "Watched but didn't save? Try your watch history. Here's where.",
+      "bg": "ink"
+    },
+    {
+      "type": "steps",
+      "heading": "Find a watched reel",
+      "items": [
+        "Profile, then menu",
+        "Your activity",
+        "Watch history"
+      ],
+      "vo": "Profile. Menu. Your activity. Watch history."
+    },
+    {
+      "type": "talk",
+      "text": "Can't remember\n*when?*",
+      "vo": "Watch history only helps if you remember when. Nobody does. Not even me.",
+      "mood": "sad"
+    },
+    {
+      "type": "title",
+      "text": "Next time:\n*save it.*",
+      "vo": "So next time you like it? Save it. Then sort it.",
+      "bg": "paper"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Download your saves. Drop the file in. Nothing gets uploaded."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Every save, sorted by topic. Ten topics. Even the 2am ones."
+    },
+    {
+      "type": "screen",
+      "label": "FOUND",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-MIND.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Watched ones fade. Saved ones stay. Every save, by topic, one tap away.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 728.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Never lose one.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Sort your saves free, so you never lose one. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "how-to",
+  "cover_offset_ms": 2467,
+  "duration": 32.206,
+  "review": {
+    "avg": 7.75,
+    "rounds": 3,
+    "note": "panel's round-3 fix applied after scoring; not re-reviewed"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "2026-11-27-3-ten-second-find",
+  "post_at": "2026-11-27T19:30:00+08:00",
+  "format": "challenge",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "exp-crazy-hook",
+  "cta": "link",
+  "hook_type": "crazy-challenge",
+  "opening": "concrete",
+  "hook_formula": "Time Collapse",
+  "hook_score": 80.8,
+  "fx": {
+    "hook": "FIND ONE IN 10 SECONDS"
+  },
+  "yt_title": "Fastest way to find a saved reel on Instagram",
+  "caption": "You saved it. Ten seconds to find it.\n\nFastest way to find a saved reel: sort your Instagram saved reels by topic, then tap one.\n\nDownload your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser, nothing uploaded.\n\nFind yours in one tap, free. Link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #challenge #lifehacks #organization",
+  "tiktok_caption": "You saved it. Ten seconds to find it.\n\nGet your own Do it list, free at savesortai.com.\n\nFastest way to find a saved reel on Instagram? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #challenge #lifehacks #organization",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "You saved it.\n*Ten seconds.*",
+      "vo": "You saved it. Ten seconds.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Find it.\n*Go.*",
+      "vo": "Find it. Go.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTY'S TURN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Your clock's running. Mine too. My zip's going in."
+    },
+    {
+      "type": "title",
+      "text": "Scrolling?\n*Cooked.*",
+      "vo": "Scrolling your saved tab? Just vibes and thumb cramp. Cooked.",
+      "bg": "ink"
+    },
+    {
+      "type": "talk",
+      "text": "No caption search.\n*Good luck.*",
+      "vo": "Saved has no search for captions. Good luck with that.",
+      "mood": "sad"
+    },
+    {
+      "type": "talk",
+      "text": "Clock's still\n*running.*",
+      "vo": "Clock's still running. Still scrolling? Thumb cramp yet?",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Me? I already dropped the zip. Every save, sorted by topic. Ten piles."
+    },
+    {
+      "type": "talk",
+      "text": "Watch.\n*One tap.*",
+      "vo": "Watch closely. One tap. That's it. That's the whole trick.",
+      "mood": "happy"
+    },
+    {
+      "type": "title",
+      "text": "Time's\n*up.*",
+      "vo": "Time's up. Did you find it? Be real. Still on March?",
+      "bg": "paper"
+    },
+    {
+      "type": "talk",
+      "text": "Here's mine.",
+      "vo": "Here's mine. Learning. The study reel. Don't blink.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "FOUND",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LEARN.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "One tap. Learning. 12 saves. Found in under ten. Easy.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 640.3
+        }
+      ],
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "One tap.\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find yours in one tap, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "hook_source": "marketing/brief.md",
+  "cover_offset_ms": 2474,
+  "duration": 30.841,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

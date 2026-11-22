@@ -1,0 +1,145 @@
+{
+  "id": "2026-11-28-1-guide-bait",
+  "post_at": "2026-11-28T03:00:00+08:00",
+  "format": "scam-watch",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "warning",
+  "opening": "concrete",
+  "hook_formula": "The Callout",
+  "hook_score": 81.4,
+  "fx": {
+    "hook": "HOW MANY HID THE STEPS?"
+  },
+  "yt_title": "What comment GUIDE reels really send you",
+  "caption": "Commented GUIDE? You saved bait.\n\nLocked = your Instagram saved reels that say \"comment a word\" or \"DM me\" instead of showing the steps.\n\nIn our sample report: 22 Locked, out of 156.\n\nSort yours: download your Instagram data, tick only Saved, drop the zip into SaveSort. Runs in your browser.\n\nSee which of yours are locked, free. Link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #commentguide #socialmediatips #onlinesafety",
+  "tiktok_caption": "Commented GUIDE? You saved bait.\n\nGet your own Do it list, free at savesortai.com.\n\nWhat comment GUIDE reels really send you? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #commentguide #socialmediatips #onlinesafety",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Commented GUIDE?\n*You saved bait.*",
+      "vo": "Commented GUIDE? You saved bait.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "That's not\n*a guide.*",
+      "vo": "That's not a guide.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort read every caption in our saves. Here are two."
+    },
+    {
+      "type": "react",
+      "quote": "Comment VOICE for the free guide",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "LOCKED",
+      "verdictColor": "gate",
+      "vo": "Like this. The guide's behind a comment. Not in the caption.",
+      "quote_source": "https://www.instagram.com/reel/DPxxLrCDgLh/"
+    },
+    {
+      "type": "react",
+      "quote": "Comment ‘TIER’ and I’ll send you a tool",
+      "label": "SAVED REEL SAYS",
+      "mood": "suspicious",
+      "verdict": "LOCKED",
+      "verdictColor": "gate",
+      "vo": "And this. The tool? Comment first. Then maybe a link.",
+      "quote_source": "https://www.instagram.com/reel/DcOHRI7uV61/"
+    },
+    {
+      "type": "talk",
+      "text": "That's not a guide.\n*That's a DM trap.*",
+      "vo": "That's not a guide. That's a DM trap.",
+      "mood": "smug"
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Every save, sorted by topic. Then the comment bait gets flagged Locked."
+    },
+    {
+      "type": "talk",
+      "text": "How many\n*hid the steps?*",
+      "vo": "So in our 156 saves, how many hid the steps? Guess.",
+      "mood": "shocked"
+    },
+    {
+      "type": "talk",
+      "text": "Higher.",
+      "vo": "Higher. No, higher. Keep going.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "stat",
+      "value": 22,
+      "label": "Locked, of 156",
+      "color": "warn",
+      "vo": "22 of 156. Locked. Comment or message first, and the steps maybe come later.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "Which are locked?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "See which of yours are locked, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "money",
+  "quote_source": [
+    "https://www.instagram.com/reel/DPxxLrCDgLh/",
+    "https://www.instagram.com/reel/DcOHRI7uV61/"
+  ],
+  "cover_offset_ms": 2636,
+  "duration": 30.419,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}

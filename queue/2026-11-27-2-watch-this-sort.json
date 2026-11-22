@@ -1,0 +1,175 @@
+{
+  "id": "2026-11-27-2-watch-this-sort",
+  "post_at": "2026-11-27T07:00:00+08:00",
+  "format": "demo",
+  "status": "queued",
+  "check": "pending",
+  "voice": "am_onyx*0.55+am_puck*0.45",
+  "pitch": 1.5,
+  "speed": 1.22,
+  "music": "sfx",
+  "style": "base",
+  "cta": "link",
+  "hook_type": "stakes",
+  "opening": "concrete",
+  "hook_formula": "Cold Open Demo",
+  "hook_score": 62.6,
+  "fx": {
+    "hook": "HOW MANY ARE WORTH IT?"
+  },
+  "yt_title": "How to group your Instagram saved reels",
+  "caption": "Saved 500? Watch this sort.\n\nHow to group your Instagram saved reels by topic, without making collections by hand.\n\nDownload your Instagram data, tick only Saved, drop the zip into SaveSort. Ten topics, in your browser, nothing uploaded.\n\nIn our sample report, 30 of 156 saves were Do it.\n\nFind yours free. Link in bio.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #organization #declutter #productivity",
+  "tiktok_caption": "Saved 500? Watch this sort.\n\nGet your own Do it list, free at savesortai.com.\n\nHow to group your Instagram saved reels? Sort your Instagram saved reels by topic, free at savesortai.com.\n\nSorty's voice is AI. Our sample report (156 saves) is real.\n\n#savedreels #instagramtips #organization #declutter #productivity",
+  "scenes": [
+    {
+      "type": "title",
+      "text": "Saved 500?\n*Watch this sort.*",
+      "vo": "Saved 500? Watch this sort.",
+      "bg": "paper",
+      "clean": true
+    },
+    {
+      "type": "talk",
+      "text": "Okay. Let's see\n*the damage.*",
+      "vo": "Okay. Let's see the damage.",
+      "mood": "suspicious"
+    },
+    {
+      "type": "screen",
+      "label": "DROP THE ZIP IN",
+      "segs": [
+        {
+          "shot": "drop.png",
+          "from": 560
+        }
+      ],
+      "drop": {
+        "at": 0.25,
+        "x": 390,
+        "y": 1180
+      },
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Drop your Instagram saves file in. Ours had 156."
+    },
+    {
+      "type": "screen",
+      "label": "SORTED BY TOPIC",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "SaveSort reads every caption. Every save, sorted by topic. Ten topics."
+    },
+    {
+      "type": "talk",
+      "text": "500? *Same deal.*\nBigger pile.",
+      "vo": "500? Same deal. Just a bigger pile.",
+      "mood": "happy"
+    },
+    {
+      "type": "screen",
+      "label": "MONEY & FINANCE",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-MONEY.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Money saves. One tap.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 1168.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "I live in your\n*phone storage.*",
+      "vo": "500 saves? I live in your phone storage. It's getting crowded.",
+      "mood": "sad"
+    },
+    {
+      "type": "screen",
+      "label": "HEALTH & LIFESTYLE",
+      "segs": [
+        {
+          "shot": "topics.png",
+          "from": 0
+        },
+        {
+          "shot": "topics-LIFE.png",
+          "from": 0,
+          "t0": 0.3
+        }
+      ],
+      "mascot": {
+        "pos": "pl",
+        "mood": "happy"
+      },
+      "vo": "Health saves. One tap.",
+      "taps": [
+        {
+          "at": 0.2,
+          "x": 390,
+          "y": 904.3
+        }
+      ]
+    },
+    {
+      "type": "talk",
+      "text": "But how many\n*are worth it?*",
+      "vo": "But how many of them are actually worth it? Guess.",
+      "mood": "shocked"
+    },
+    {
+      "type": "stat",
+      "value": 30,
+      "label": "Do it, of 156",
+      "color": "go",
+      "vo": "In our sample, 30 of 156 were Do it. The rest? Vibes.",
+      "mascot": {
+        "pos": "tr",
+        "mood": "shocked"
+      },
+      "payoff": true
+    },
+    {
+      "type": "end",
+      "line": "How many in yours?\n*Free.*",
+      "pill": "Link in bio →",
+      "mascot": {
+        "pos": "tr",
+        "mood": "happy"
+      },
+      "vo": "Find how many of yours are worth it, free. Link in bio."
+    }
+  ],
+  "campaign": "Beat the clock: six weeks to 2027",
+  "niche": "general",
+  "cover_offset_ms": 2760,
+  "duration": 31.719,
+  "review": {
+    "avg": 8.0,
+    "rounds": 2
+  }
+}
