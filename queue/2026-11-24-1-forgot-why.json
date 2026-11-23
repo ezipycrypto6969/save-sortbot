@@ -2,7 +2,7 @@
   "id": "2026-11-24-1-forgot-why",
   "post_at": "2026-11-24T03:00:00+08:00",
   "format": "demo",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -167,5 +167,28 @@
     "avg": 8.0,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-23T18:56:24+00:00",
+  "media_id": "17993094864063045",
+  "permalink": "https://www.instagram.com/reel/DgGEs6ZCsXl/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "IH5C6erRz-k",
+    "url": "https://youtube.com/shorts/IH5C6erRz-k",
+    "posted_at": "2026-11-23T18:56:26+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "8521f196b19f4ca48d9286e43fc6ca5a",
+    "submitted_at": "2026-11-23T18:56:34+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7711442812847394100",
+    "message": ""
+  }
 }
