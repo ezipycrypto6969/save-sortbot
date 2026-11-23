@@ -2,7 +2,7 @@
   "id": "2026-11-24-2-sorty-broke",
   "post_at": "2026-11-24T07:00:00+08:00",
   "format": "funny-ad",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -151,5 +151,28 @@
     "avg": 8.3,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-23T22:43:45+00:00",
+  "media_id": "18097270511484938",
+  "permalink": "https://www.instagram.com/reel/DgGeuFlFCDn/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "t25QE2vfc7I",
+    "url": "https://youtube.com/shorts/t25QE2vfc7I",
+    "posted_at": "2026-11-23T22:43:48+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "0946240b64554cfa9dc7462ea72dd6fa",
+    "submitted_at": "2026-11-23T22:44:40+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7711501600128257288",
+    "message": ""
+  }
 }
