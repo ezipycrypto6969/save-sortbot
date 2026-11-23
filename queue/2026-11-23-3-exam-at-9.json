@@ -2,7 +2,7 @@
   "id": "2026-11-23-3-exam-at-9",
   "post_at": "2026-11-23T19:30:00+08:00",
   "format": "story",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -151,5 +151,28 @@
     "avg": 8.3,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-23T11:26:31+00:00",
+  "media_id": "18068770325795774",
+  "permalink": "https://www.instagram.com/reel/DgFRNyMDTy8/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "KdTXdDUgEl8",
+    "url": "https://youtube.com/shorts/KdTXdDUgEl8",
+    "posted_at": "2026-11-23T11:26:33+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "579991cc08424c59874293898b4efe87",
+    "submitted_at": "2026-11-23T11:26:47+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7711326728509017350",
+    "message": ""
+  }
 }
