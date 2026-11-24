@@ -2,7 +2,7 @@
   "id": "2026-11-25-2-pov-never-opened",
   "post_at": "2026-11-25T07:00:00+08:00",
   "format": "pov",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -151,5 +151,28 @@
     "avg": 8.0,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-24T22:56:30+00:00",
+  "media_id": "18034176146879302",
+  "permalink": "https://www.instagram.com/reel/DgJE94bCW7y/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "b4sdlW1u9vw",
+    "url": "https://youtube.com/shorts/b4sdlW1u9vw",
+    "posted_at": "2026-11-24T22:56:32+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "ee4c758e6cad4c68a880e551c660022f",
+    "submitted_at": "2026-11-24T22:56:39+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "",
+    "message": ""
+  }
 }
