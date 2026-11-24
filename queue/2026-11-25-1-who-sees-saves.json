@@ -2,7 +2,7 @@
   "id": "2026-11-25-1-who-sees-saves",
   "post_at": "2026-11-25T03:00:00+08:00",
   "format": "myth",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -147,5 +147,28 @@
     "rounds": 3,
     "note": "panel's round-3 fix applied after scoring; not re-reviewed"
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-24T18:56:23+00:00",
+  "media_id": "17960216523335202",
+  "permalink": "https://www.instagram.com/reel/DgIpf3GnDBT/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "ITd_kg5hFeM",
+    "url": "https://youtube.com/shorts/ITd_kg5hFeM",
+    "posted_at": "2026-11-24T18:56:25+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "8383a7a82532435cb2dafd880761ad1a",
+    "submitted_at": "2026-11-24T18:56:36+00:00",
+    "sound": {
+      "id": "7234215160234854402",
+      "title": "Vacuum cleaner, vacuum, sucking sound, buzz(1434918)",
+      "artist": "Yoh",
+      "rank": 4,
+      "volume": 0
+    },
+    "url": "",
+    "message": ""
+  }
 }
