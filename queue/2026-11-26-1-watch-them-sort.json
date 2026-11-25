@@ -140,5 +140,25 @@
     "rounds": 3,
     "note": "panel's round-3 fix applied after scoring; not re-reviewed"
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "youtube": {
+    "status": "posted",
+    "video_id": "lEVwlT5-9mo",
+    "url": "https://youtube.com/shorts/lEVwlT5-9mo",
+    "posted_at": "2026-11-25T18:55:37+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "af73dee750224e898197a693f1b66987",
+    "submitted_at": "2026-11-25T18:55:53+00:00",
+    "sound": {
+      "id": "7584037896080902145",
+      "title": "Sunset in Girona",
+      "artist": "Noah Preminger & Max Light",
+      "rank": 1,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712184830229761287",
+    "message": ""
+  }
 }
