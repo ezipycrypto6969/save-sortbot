@@ -151,5 +151,25 @@
     "avg": 8.0,
     "rounds": 3
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "youtube": {
+    "status": "posted",
+    "video_id": "Q5eRn0go-Yc",
+    "url": "https://youtube.com/shorts/Q5eRn0go-Yc",
+    "posted_at": "2026-11-25T22:55:40+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "637ff6017c4344c59b109fdd9933b351",
+    "submitted_at": "2026-11-25T22:55:45+00:00",
+    "sound": {
+      "id": "7361125304804542465",
+      "title": "Prisoner",
+      "artist": "DIDKER",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712246655071849746",
+    "message": ""
+  }
 }
