@@ -2,7 +2,7 @@
   "id": "2026-11-25-3-download-them",
   "post_at": "2026-11-25T19:30:00+08:00",
   "format": "how-to",
-  "status": "queued",
+  "status": "posted",
   "check": "passed",
   "voice": "am_onyx*0.55+am_puck*0.45",
   "pitch": 1.5,
@@ -151,5 +151,28 @@
     "avg": 8.4,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "posted_at": "2026-11-25T11:26:41+00:00",
+  "media_id": "18097769507266857",
+  "permalink": "https://www.instagram.com/reel/DgKa0g3hKAM/",
+  "youtube": {
+    "status": "posted",
+    "video_id": "qIJGdf0ULVQ",
+    "url": "https://youtube.com/shorts/qIJGdf0ULVQ",
+    "posted_at": "2026-11-25T11:26:44+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "917fb1078609445685ccf6a908c3bc48",
+    "submitted_at": "2026-11-25T11:27:27+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 3,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712069270674361620",
+    "message": ""
+  }
 }
