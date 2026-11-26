@@ -247,7 +247,7 @@
       "avg_watch_s": 3.1
     },
     "youtube": {
-      "views": 3,
+      "views": 4,
       "likes": 1,
       "comments": 0
     },
@@ -259,11 +259,11 @@
       "saved": 0,
       "new_followers": 0,
       "profile_views": 0,
-      "avg_watch_s": 2.76,
+      "avg_watch_s": 2.62,
       "full_watch_rate": 0.0179
     },
-    "total_views": 119,
+    "total_views": 120,
     "total_engagement": 3,
-    "updated": "2026-11-25T09:03:50+00:00"
+    "updated": "2026-11-26T08:51:03+00:00"
   }
 }

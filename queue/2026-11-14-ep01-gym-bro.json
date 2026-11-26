@@ -39,7 +39,7 @@
       "comments": 2,
       "shares": 6,
       "saved": 3,
-      "avg_watch_s": 13.1
+      "avg_watch_s": 13.0
     },
     "youtube": {
       "views": 16,
@@ -54,11 +54,11 @@
       "saved": 2,
       "new_followers": 0,
       "profile_views": 0,
-      "avg_watch_s": 2.49,
-      "full_watch_rate": 0.0115
+      "avg_watch_s": 2.41,
+      "full_watch_rate": 0.0111
     },
     "total_views": 334,
     "total_engagement": 24,
-    "updated": "2026-11-25T09:03:50+00:00"
+    "updated": "2026-11-26T08:51:03+00:00"
   }
 }
