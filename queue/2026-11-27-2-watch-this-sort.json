@@ -172,5 +172,25 @@
     "avg": 8.0,
     "rounds": 2
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "youtube": {
+    "status": "posted",
+    "video_id": "Czv6VgipnRY",
+    "url": "https://youtube.com/shorts/Czv6VgipnRY",
+    "posted_at": "2026-11-26T22:55:39+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "d393a9c3033f4281b1cf4a66878d9e71",
+    "submitted_at": "2026-11-26T22:55:58+00:00",
+    "sound": {
+      "id": "7080646813753083905",
+      "title": "Time Back",
+      "artist": "Sinny & 7vvch",
+      "rank": 5,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712617763730132245",
+    "message": ""
+  }
 }
