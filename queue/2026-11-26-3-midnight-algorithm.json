@@ -151,5 +151,25 @@
     "avg": 8.0,
     "rounds": 3
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "youtube": {
+    "status": "posted",
+    "video_id": "HtquqvIXKEo",
+    "url": "https://youtube.com/shorts/HtquqvIXKEo",
+    "posted_at": "2026-11-26T11:25:40+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "198d2e0c537b4697b23922013744fbe3",
+    "submitted_at": "2026-11-26T11:25:46+00:00",
+    "sound": {
+      "id": "7521888697513396241",
+      "title": "Self Aware",
+      "artist": "Mark Allan Wolfe",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712439916541529351",
+    "message": ""
+  }
 }
