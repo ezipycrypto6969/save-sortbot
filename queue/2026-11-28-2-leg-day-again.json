@@ -146,5 +146,25 @@
     "avg": 8.0,
     "rounds": 3
   },
-  "checked_at": "2026-11-22T15:13:06+08:00"
+  "checked_at": "2026-11-22T15:13:06+08:00",
+  "youtube": {
+    "status": "posted",
+    "video_id": "5fa7lZ6HY14",
+    "url": "https://youtube.com/shorts/5fa7lZ6HY14",
+    "posted_at": "2026-11-27T22:55:46+00:00"
+  },
+  "tiktok": {
+    "status": "posted",
+    "request_id": "da88779a64e4451f8470a9ac71ef0392",
+    "submitted_at": "2026-11-27T22:56:26+00:00",
+    "sound": {
+      "id": "7234215160234854402",
+      "title": "Vacuum cleaner, vacuum, sucking sound, buzz(1434918)",
+      "artist": "Yoh",
+      "rank": 2,
+      "volume": 0
+    },
+    "url": "https://www.tiktok.com/@aisavesort/video/7712988950209531157",
+    "message": ""
+  }
 }
