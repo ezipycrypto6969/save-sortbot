@@ -1,31 +1,31 @@
-# Owner to-do, week of Mon 23 Nov 2026 (from the marketing council, Sat 21 Nov)
+# Owner to-do, week of Mon 30 Nov 2026 (from the marketing council, Sat 28 Nov)
 
-At most 5 items. The 4 still open from earlier weeks come first. **#5 is the only one with a deadline tonight (before 3am Perth).** Last week's Ep 1 "Follow for Ep 2" item is closed (Ep 2 is out); its TikTok sound issue moved to "When you have time".
+At most 5 items. The 4 still open from earlier weeks come first (last week's #5, the Sun 22 reel, is closed: it posted). **If you only do one thing, do #5: Instagram has posted nothing since 26 Nov.**
 
-1. **Still open (since 13 Nov): re-capture the sorter screens with your real export.** (10 min)
-   Why: every reel and both episodes this week said "Do it" out loud but showed the old chips and stat cards ("Worth doing / Needs the video / Be careful / Gated guides") from the 13 Nov captures. The writer can't fix it: it needs your real 156-save file, and the 40-caption sample must never be shown as the 156.
-   Steps: put your `saved_posts.html` somewhere Sunday's writer can reach it, or run `node engine/capture/capture_site.js <site> <fonts> engine/screens <path to saved_posts.html>` yourself, then copy the new files into the next episode's screens folder too. Optional: ask Claude to add a "Watch it" filter shot to the capture script (there isn't one, so Tuesday's Watch it guess reel can only show the number).
+1. **Still open (since 14 Nov): say yes or no to the label clean-up, and settle Pro.** (3 min to reply)
+   Why: `AGENT.md` (stamp examples), `CHECKER.md` line 11, `content/sorty.md`, `accounts/hypecheck.md` and the site headline ("30 worth doing") still use the old names while every reel says Do it. `PRODUCT.md` says Pro is live at A$1.99 a week; `AGENT.md`/`CHECKER.md` say it isn't launched and prices must be USD.
+   Steps: read `marketing/drafts/2026-11-28/site-copy.md` (3 edits, cut down from last week's 8) and reply to Claude "yes, rename the labels and apply the site copy", plus one line: "Pro is live, mention it in A$/USD" or "don't mention Pro".
 
-2. **Still open (since 7 Nov): bio, link and pins, now pinning the two episodes.** (5 min)
-   Why: the episodes hold people 13 s, three times anything else, and Ep 1 is the only reel anyone has shared. People who check the profile should see them first.
-   Steps: Instagram → Edit profile → bio: `What's your number? Ours: 156 saved reels, 30 Do it. Sort yours free, in your browser. Nothing uploaded ↓` Link: `savesortai.com/#try`. Pin Ep 1 and Ep 2 on Instagram and TikTok. TikTok bio (no link until 1,000 followers or a business account): `Sort your Instagram saved reels free at savesortai.com. Nothing uploaded.` Copy is in `marketing/drafts/2026-11-21/site-copy.md`.
+2. **Still open (since 7 Nov): profile and link, now YouTube first.** (8 min)
+   Why: YouTube is where the views are now (median 41 a reel, our best ever 442), and a Short's viewer can reach the sorter through the channel's links. The Instagram bio and pins are still undone too.
+   Steps: YouTube Studio → Customisation → Basic info: paste the channel description and add the link `savesortai.com/#try` (both in `drafts/2026-11-28/yt-channel.md`). Pin the comment from the same file on `pov-never-opened` and `forgot-why`. Then Instagram → Edit profile: bio and link from `drafts/2026-11-21/site-copy.md`; pin Ep 1 and Ep 2 on Instagram and TikTok.
 
-3. **Still open (since 14 Nov): say yes or no to the label-name clean-up, and settle Pro.** (3 min to reply)
-   Why: `CHECKER.md` (line 11), `content/sorty.md` (stamp lines 40–43, 52) and `accounts/hypecheck.md` still say worth doing / be careful / gated, and the site headline still says "30 worth doing" and leaves "Download to device" out of the steps. Also `PRODUCT.md` says Pro is live at A$1.99 a week, while `AGENT.md` and `CHECKER.md` say Pro isn't launched and prices must be in USD, so the writer and checker disagree about what can be said.
-   Steps: read `marketing/drafts/2026-11-21/site-copy.md` (exact before → after) and reply to Claude "yes, rename the labels and apply the site copy", plus one line on Pro: "Pro is live, mention it in A$/USD" or "don't mention Pro".
+3. **Still open (since 13 Nov): re-capture the sorter screens with your real export.** (10 min)
+   Why: `engine/screens/` is still the 16 Nov capture showing "worth doing / need the video / be careful / Gated guides", so no reel can show the product's best moment: one save marked Do it.
+   Steps: run `node engine/capture/capture_site.js <site> <fonts> engine/screens <path to your saved_posts.html>` (or put the file where Sunday's writer can reach it). Optional: ask Claude to add a Watch it filter shot and a single-save-card shot (details in `drafts/2026-11-28/product-notes.md`).
 
 4. **Still open (since 11 Nov): connect Google Search Console.** (5 min)
-   Why: search is our only way to strangers, and there are now 5 blog posts (with 2 more outlined) whose traffic nobody can see.
+   Why: search is now our main way to strangers, and there are 6 blog posts (one more coming Sunday) whose traffic nobody can see.
    Steps: search.google.com/search-console → Add property → Domain `savesortai.com` → add the TXT record at your domain host → Verify → Sitemaps → submit `sitemap.xml`.
 
-5. **New, tonight before 3am: check Sunday's 03:00 reel `says-nothing`.** (1 min)
-   Why: its scene-1 line ends "Seriously.", which today's lessons drop, and its quote "Wait for it... (no caption)" can't be found in any save in the repo. That's the same mistake that got 2 reels held this week, and the caption says "the saves and numbers are real".
-   Steps: if you can't confirm the quote is a real save's caption, delete `queue/2026-11-22-1-says-nothing.json` on GitHub (the slot just stays empty). Otherwise let it post.
+5. **New, most urgent: get Instagram posting again, without a flood of old reels.** (5 min)
+   Why: every Instagram run since 26 Nov 03:00 fails at `sudo apt-get install ffmpeg` (404s on the new ubuntu-26.04 runner, because the package list is never updated). 8 reels from 26–28 Nov went to YouTube/TikTok only. Fix just the install and the poster will post all 8 backed-up reels oldest-first, one per run, up to 6 a day (AGENT.md allows 3). Separately, Instagram reach fell 75% from 20 Nov in every slot and style, and the stats skip those 8 reels.
+   Steps: (a) reply to Claude: **"yes, fix the poster and the stats"**. That means: add `sudo apt-get update` before the install; give Instagram the same 3-day lateness cap YouTube has, so the stale 26–28 Nov reels are skipped on Instagram (they're already on YouTube/TikTok); count a reel in the stats when any platform posted it; add YouTube watch time. Exact change in `drafts/2026-11-28/poster-fix.md`. (b) In the Instagram app: Settings → Account Status. Note whether anything is flagged under recommendations and tell Claude what it says.
 
 **When you have time (not this week):**
-- Turn off trending TikTok sounds for episodes (Ep 1 got "Time Back" and Ep 2 got "Take Me (To The Moon)", both muted, but your rule is your own track only). Set `TIKTOK_SOUND=off` or skip `trending_sound` for episodes.
-- Add a search phrase to Ep 2's YouTube title ("Sorty Ep 2: The 10K Bet | how to sort Instagram saved reels") and put both episodes in a YouTube Shorts Series.
-- Decide the 3am slot: Instagram gets a median of 9 views there, but TikTok and YouTube don't care about slot. Option: set 03:00 reels to `"platforms": ["youtube","tiktok"]`.
-- Paste the text of real comments and DMs into a note each week. The team has no real viewer words to work from.
-- Product notes (click tracking, tag the episodes, hook-score, "Unsorted" chip) are in `marketing/drafts/2026-11-21/faq-and-product-notes.md`. Also ready there: reply bank, 2 blog outlines, a community answer, a creator DM, episode share lines.
+- Set the repo variable `TIKTOK_SOUND=off` (1 min). Every TikTok post 24–28 Nov had someone else's trending track attached at volume 0 ("Self Aware", "Time Back"...), against "everything ours".
+- Post one community answer (privacy question) from `drafts/2026-11-28/community.md`: find a real, recent thread first and follow that community's rules.
+- Paste the text of real comments and DMs into a note each week. Both best reels got 0 comments; the team still has no real viewer words.
+- Tracking idea (your call): count page loads, sample loads and finished sorts on our own Worker, no third-party script (`drafts/2026-11-28/product-notes.md`).
 - The niche accounts: create gym / kitchen / hype check on IG, TikTok and YouTube and connect the Upload-Post profiles `savesort-gym`, `savesort-kitchen`, `savesort-hypecheck`.
+- Older notes (3am slot, Ep 2 title, YouTube Series) are still in `drafts/2026-11-21/`.
